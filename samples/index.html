@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="/nr.js"></script>
+		<title>AMP Premier</title>
+		<link type="text/css" rel="stylesheet" href="resources/styles/styles.css" />
+		<script>
+			var debug = /amp-debug\=true/.test(location.search),
+			rules = document.styleSheets[0].cssRules || document.styleSheets[0].rules,
+			rule, i = 0, count = rules.length;
+			
+			if (debug) {	
+				for (; i< count; i++) {
+					rule = rules[i];
+					if (rule.selectorText == ".debug") {
+						rule.style.display = "inline";
+						break;
+					}
+				}
+			} 
+		</script>
+
+	</head>
+	<body>
+		<div class="page">
+			<div class="header">
+				<div class="header-logo"></div>
+				<div class="header-text">
+					<h1>AMP Premier</h1>
+					<h2>v2.68.16</h2>
+				</div>
+			</div>
+
+			<div class="content">
+				<h4>Akamai Media Player</h4>
+
+				<h3>Demo Page:</h3>
+				<table class="samples">
+					<tr>
+						<th width="20%">Page</th>
+						<th width="50%">Description</th>
+						<th width="30%">HTML file</th>
+					</tr>
+					<tr>
+						<td>New Relic</td>
+						<td>A demonstration player using new relic video tracking system</td>
+						<td><a href="samples/index.html?amp-debug=true&amp;amp-autoplay=false&nrvideo-debug=true">index.html</a>
+					</tr>
+		    </table>
+			</div>
+		</div>
+	</body>
+</html>

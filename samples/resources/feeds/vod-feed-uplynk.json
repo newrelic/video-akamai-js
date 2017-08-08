@@ -1,0 +1,66 @@
+{
+	"@attributes" : {
+		"version" : "2.0"
+	},
+	"channel" : {
+		"category" : "",
+		"pubDate" : "Wed, 03 Aug 2011 10:00:21 -0400",
+		"language" : "en",
+		"ttl" : "10",
+		"item" : {
+			"title" : "AMP Premier - Uplynk",
+			"link" : "http://akamai.com/player.html",
+			"description" : "AMP Premier Player",
+			"category" : "",
+			"pubDate" : "Wed, 03 Aug 2011 10:00:21 -0400",
+			"guid" : "0_47zwv0ls",
+			"media-status":
+			{
+				"@attributes" : {
+					"state": "blocked",
+					"reason": "customauth"
+				}
+			},
+			"media-group" : {
+				"media-content" : {
+					"@attributes" : {
+						"isDefault" : "true",
+						"url" : "http://content-ause4.uplynk.com/preplay2/d77493a37329498495e2a08904bfde84/aeafdc5430712b1dd52a14d5ec17c623/1hz6oMHbsfWTM5FMpdX9fb6eocYoUN7aLR6SBf26yOEW.m3u8?pbs=1902ca995e6c42a09b01fb7ddf890fec&amp;euid=A7ACB26B-3EF9-4FDF-A100-901E1E73CBD6_000_0_002-2_lf",
+						"type" : "video/mp4",
+						"medium" : "video",
+						"duration" : "600"
+					}
+				},
+				"media-title" : "Elephant Dreams",
+				"media-description" : "Elephant Dreams",
+				"media-embed" : {
+					"@attributes" : {
+						"url" : "http://player.js",
+						"width" : "604",
+						"height" : "341"
+					},
+					"media-param" : {
+						"@attributes" : {
+							"name" : "type"
+						},
+						"#text" : "text/javascript"
+					}
+				},
+				"media-subTitle": {
+					"@attributes": {
+						"type": "application/ttml+xml",
+						"lang": "en",
+						"href": ""
+					}
+				},
+				"media-thumbnail" : {
+					"@attributes" : {
+						"url" : "../resources/images/elephant-dreams.jpg",
+						"width" : "604",
+						"height" : "341"
+					}
+				}
+			}
+		}
+	}
+}
