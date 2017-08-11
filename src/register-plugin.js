@@ -13,5 +13,7 @@
 * Optional player mode(s) in which the plugin can be used.
 */
 akamai.amp.AMP.registerPlugin('newrelic', function createNewRelicTracker (player, config) {
-  nrvideo.Core.addTracker(new nrvideo.AmpTracker(player, config))
+  var tracker = new nrvideo.AmpTracker(player, config)
+  nrvideo.Core.addTracker(tracker)
+  tracker.sendPlayerInit()
 })

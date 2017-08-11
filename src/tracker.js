@@ -1,5 +1,6 @@
 import * as nrvideo from 'newrelic-video-core'
 import AmpAdsTracker from './adstracker'
+import {version} from '../package.json'
 
 export default class AmpTracker extends nrvideo.Tracker {
   setPlayer (player) {
@@ -10,6 +11,10 @@ export default class AmpTracker extends nrvideo.Tracker {
 
   getTrackerName () {
     return 'akamai-media-player'
+  }
+
+  getTrackerVersion () {
+    return version
   }
 
   getPlayhead () {
@@ -83,7 +88,6 @@ export default class AmpTracker extends nrvideo.Tracker {
       'timedmetadata'
     ])
 
-    this.player.addEventListener('playstatechange', (e) => { nrvideo.Log.debug(e) })
     this.player.addEventListener('ready', this.onReady.bind(this))
     this.player.addEventListener('playrequest', this.onPlayrequest.bind(this))
     this.player.addEventListener('started', this.onStarted.bind(this))
@@ -107,15 +111,9 @@ export default class AmpTracker extends nrvideo.Tracker {
     this.player.removeEventListener('mediasequenceended', this.onEnded)
   }
 
-  onAdded () {
-    if (this.player.ads) {
-      this.sendPlayerInit()
-    }
-  }
-
   onReady () {
     this.sendPlayerReady()
-    this.adsTracker = new AmpAdsTracker(this.player)
+    this.setAdsTracker(new AmpAdsTracker(this.player))
   }
 
   onPlayrequest () {
