@@ -10,6 +10,58 @@ export default class AmpAdsTracker extends nrvideo.Tracker {
     return version
   }
 
+  getPlayerVersion () {
+    if (this.parentTracker) return this.parentTracker.getPlayerVersion()
+  }
+
+  getPlayhead () {
+    return null
+  }
+
+  getTitle () {
+    return this.title
+  }
+
+  getRenditionHeight () {
+    return this.height
+  }
+
+  getRenditionWidth () {
+    return this.width
+  }
+
+  getSrc () {
+    return this.src
+  }
+
+  getAdPosition () {
+    if (this.position === 'preroll') {
+      return nrvideo.Constants.AdPositions.PRE
+    } else if (this.position === 'midroll') {
+      return nrvideo.Constants.AdPositions.MID
+    } else if (this.position === 'postroll') {
+      return nrvideo.Constants.AdPositions.POST
+    }
+  }
+
+  getDuration () {
+    return this.duration
+  }
+
+  setValues (e) {
+    if (e && e.data) {
+      if (e.data.metadata) {
+        this.title = e.data.metadata.getTitle()
+        this.src = e.data.metadata.getMediaUrl()
+        this.height = e.data.metadata.getHeight() || e.data.metadata.getVastMediaWidth()
+        this.width = e.data.metadata.getWidth() || e.data.metadata.getVastMediaHeight()
+      }
+      this.position = e.data.type
+      this.duration = e.data.duration
+      this.partner = e.data.partner
+    }
+  }
+
   registerListeners () {
     if (this.player.ads) {
       nrvideo.Log.debugCommonVideoEvents(this.player.ads, [
@@ -62,53 +114,65 @@ export default class AmpAdsTracker extends nrvideo.Tracker {
     }
   }
 
-  onBreakStart () {
+  onBreakStart (e) {
+    this.setValues(e)
     this.sendAdBreakStart()
   }
 
-  onBreakEnd () {
+  onBreakEnd (e) {
+    this.setValues(e)
     this.sendAdBreakEnd()
   }
 
-  onFirstQuartile () {
+  onFirstQuartile (e) {
+    this.setValues(e)
     this.sendAdQuartile({quartile: 1})
   }
 
-  onMidPoint () {
+  onMidPoint (e) {
+    this.setValues(e)
     this.sendAdQuartile({quartile: 2})
   }
 
-  onThirdQuartile () {
+  onThirdQuartile (e) {
+    this.setValues(e)
     this.sendAdQuartile({quartile: 3})
   }
 
-  onPlay () {
-    this.sendStart()
+  onPlay (e) {
+    this.setValues(e)
+    this.sendStart({ adPartner: this.partner })
   }
 
-  onSkipped () {
+  onSkipped (e) {
+    this.setValues(e)
     this.sendEnd({skipped: true})
   }
 
-  onEnded () {
+  onEnded (e) {
+    this.setValues(e)
     this.sendEnd()
   }
 
-  onRequest () {
+  onRequest (e) {
+    this.setValues(e)
     this.sendRequest()
   }
 
-  onLoaded () {
+  onLoaded (e) {
+    this.setValues(e)
     this.sendRequest()
   }
 
-  onClick () {}
+  onClick (e) {}
 
-  onPause () {
+  onPause (e) {
+    this.setValues(e)
     this.sendPause()
   }
 
-  onPlaying () {
+  onPlaying (e) {
+    this.setValues(e)
     this.sendResume()
   }
 }

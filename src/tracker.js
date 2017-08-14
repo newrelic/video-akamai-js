@@ -113,7 +113,7 @@ export default class AmpTracker extends nrvideo.Tracker {
 
   onReady () {
     this.sendPlayerReady()
-    this.setAdsTracker(new AmpAdsTracker(this.player))
+    this.setAdsTracker(new AmpAdsTracker(this.player, { tag: null }))
   }
 
   onPlayrequest () {
