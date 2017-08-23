@@ -90,24 +90,24 @@ export default class AmpTracker extends nrvideo.Tracker {
 
     this.player.addEventListener('ready', this.onReady.bind(this))
     this.player.addEventListener('playrequest', this.onPlayrequest.bind(this))
-    this.player.addEventListener('started', this.onStarted.bind(this))
     this.player.addEventListener('pause', this.onPause.bind(this))
     this.player.addEventListener('playing', this.onPlaying.bind(this))
     this.player.addEventListener('seeking', this.onSeeking.bind(this))
     this.player.addEventListener('seeked', this.onSeeked.bind(this))
     this.player.addEventListener('error', this.onError.bind(this))
+    this.player.addEventListener('waiting', this.onWaiting.bind(this))
     this.player.addEventListener('mediasequenceended', this.onEnded.bind(this))
   }
 
   unregisterListeners () {
     this.player.removeEventListener('ready', this.onReady)
     this.player.removeEventListener('playrequest', this.onPlayrequest)
-    this.player.removeEventListener('started', this.onStarted)
     this.player.removeEventListener('pause', this.onPause)
     this.player.removeEventListener('playing', this.onPlaying)
     this.player.removeEventListener('seeking', this.onSeeking)
     this.player.removeEventListener('seeked', this.onSeeked)
     this.player.removeEventListener('error', this.onError)
+    this.player.removeEventListener('waiting', this.onWaiting)
     this.player.removeEventListener('mediasequenceended', this.onEnded)
   }
 
@@ -120,12 +120,12 @@ export default class AmpTracker extends nrvideo.Tracker {
     this.sendRequest()
   }
 
-  onStarted () {
-    this.sendStart()
-  }
-
   onPlaying () {
-    this.sendResume()
+    if (!this.adsTracker || !this.adsTracker.state.isRequested) {
+      this.sendStart()
+      this.sendResume()
+      this.sendBufferEnd()
+    }
   }
 
   onPause () {
@@ -146,6 +146,15 @@ export default class AmpTracker extends nrvideo.Tracker {
 
   onEnded () {
     this.sendEnd()
+  }
+
+  onWaiting () {
+    if (
+      this.tag.networkState === this.tag.NETWORK_LOADING &&
+      this.tag.readyState < this.tag.HAVE_FUTURE_DATA
+    ) {
+      this.sendBufferStart()
+    }
   }
 }
 
