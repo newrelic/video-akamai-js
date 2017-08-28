@@ -14,16 +14,18 @@ npm i -g standard
 ```
 
 ## NPM Commands
-Remember to run ```npm install``` the first time.
+Remember to run `npm install` the first time.
 
-Run ```npm run build``` to build the solution. You can find the output inside ```dist``` folder.
+Run `npm run build` to build the solution. You can find the output inside `dist` folder.
 
-Run ```npm run watch``` to watch the files inside ```src``` and run a build everytime a file is changed.
+Run `npm run watch` to watch the files inside `src` and run a build everytime a file is changed.
 
-Use ```build:dev``` and ```watch:dev``` to generate human-readable dist files.
+Use `build:dev` and `watch:dev` to generate human-readable dist files.
 
-Use ```npm run test``` to run tests and coverage.
+Use `npm run test` to run tests and coverage.
 
-Use ```npm run doc``` to generate documentation page.
+Use `npm run doc` to generate documentation page.
 
-Use ```npm run clean``` to clear any generated files.
+Use `npm run zip` to generate a deployable zip file. Its password will be `newrelic`.
+
+Use `npm run clean` to clear any generated files.
