@@ -9,6 +9,7 @@
     ],
     "globals": {
         "newrelic": true,
-        "nrvideo": true
+        "nrvideo": true,
+        "akamai": true
     }
 }
