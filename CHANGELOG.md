@@ -6,5 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## Unreleased
 
+## [0.1.1] - 2017/10/24
+### Library
+- Upgrade to use `newrelic-rvideo-core` 0.5+
+
+
 ## [0.1.0] - 
 - First Version

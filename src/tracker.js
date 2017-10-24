@@ -2,7 +2,7 @@ import * as nrvideo from 'newrelic-video-core'
 import AmpAdsTracker from './adstracker'
 import {version} from '../package.json'
 
-export default class AmpTracker extends nrvideo.Tracker {
+export default class AmpTracker extends nrvideo.VideoTracker {
   setPlayer (player) {
     this.player = player
     this.tag = player.getMediaElement()
