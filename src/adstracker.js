@@ -126,17 +126,17 @@ export default class AmpAdsTracker extends nrvideo.VideoTracker {
 
   onFirstQuartile (e) {
     this.setValues(e)
-    this.sendAdQuartile({quartile: 1})
+    this.sendAdQuartile({ quartile: 1 })
   }
 
   onMidPoint (e) {
     this.setValues(e)
-    this.sendAdQuartile({quartile: 2})
+    this.sendAdQuartile({ quartile: 2 })
   }
 
   onThirdQuartile (e) {
     this.setValues(e)
-    this.sendAdQuartile({quartile: 3})
+    this.sendAdQuartile({ quartile: 3 })
   }
 
   onPlay (e) {
@@ -146,7 +146,7 @@ export default class AmpAdsTracker extends nrvideo.VideoTracker {
 
   onSkipped (e) {
     this.setValues(e)
-    this.sendEnd({skipped: true})
+    this.sendEnd({ skipped: true })
   }
 
   onEnded (e) {
