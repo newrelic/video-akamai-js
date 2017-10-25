@@ -9,6 +9,5 @@ All notable changes to this project will be documented in this file.
 ### Library
 - Upgrade to use `newrelic-rvideo-core` 0.5+
 
-
-## [0.1.0] - 
+## [0.1.0]
 - First Version
