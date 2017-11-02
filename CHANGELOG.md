@@ -2,6 +2,11 @@
 All notable changes to this project will be documented in this file.
 
 ## Unreleased
+
+## [0.2.0] - 2017/11/02
+### Add
+- Add support for `AD_CLICK`.
+
 ### Change
 - Add a check for `akamai` lib before registering plugin and fires a warning if it is not present.
 

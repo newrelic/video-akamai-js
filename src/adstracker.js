@@ -67,6 +67,7 @@ export default class AmpAdsTracker extends nrvideo.VideoTracker {
       nrvideo.Log.debugCommonVideoEvents(this.player.ads, [
         'breakstart',
         'breakend',
+        'adclicked',
         'containercreated',
         'firstquartile',
         'midpoint',
@@ -85,7 +86,7 @@ export default class AmpAdsTracker extends nrvideo.VideoTracker {
       this.player.ads.addEventListener('firstquartile', this.onFirstQuartile.bind(this))
       this.player.ads.addEventListener('midpoint', this.onMidPoint.bind(this))
       this.player.ads.addEventListener('thirdquartile', this.onThirdQuartile.bind(this))
-      this.player.ads.addEventListener('click', this.onClick.bind(this))
+      this.player.ads.addEventListener('adclicked', this.onClick.bind(this))
       this.player.ads.addEventListener('play', this.onPlay.bind(this))
       this.player.ads.addEventListener('skipped', this.onSkipped.bind(this))
       this.player.ads.addEventListener('ended', this.onEnded.bind(this))
@@ -103,7 +104,7 @@ export default class AmpAdsTracker extends nrvideo.VideoTracker {
       this.player.ads.removeEventListener('firstquartile', this.onFirstQuartile)
       this.player.ads.removeEventListener('midpoint', this.onMidPoint)
       this.player.ads.removeEventListener('thirdquartile', this.onThirdQuartile)
-      this.player.ads.removeEventListener('click', this.onClick)
+      this.player.ads.removeEventListener('adclicked', this.onClick)
       this.player.ads.removeEventListener('play', this.onPlay)
       this.player.ads.removeEventListener('skipped', this.onSkipped)
       this.player.ads.removeEventListener('ended', this.onEnded)
@@ -164,7 +165,10 @@ export default class AmpAdsTracker extends nrvideo.VideoTracker {
     this.sendRequest()
   }
 
-  onClick (e) {}
+  onClick (e) {
+    this.setValues(e)
+    this.sendAdClick({ url: 'unknown' })
+  }
 
   onPause (e) {
     this.setValues(e)
