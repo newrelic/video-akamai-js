@@ -1,7 +1,14 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+
+## [0.3.0] - 2017/11/02
+### Change
+- Buffer events reported during ads will be now reported as `AD_BUFFER_START/END`.
+- Error events reported during ads will be now reported as `AD_ERROR`.
+
+### Library
+- Use lib `0.8+`.
 
 ## [0.2.0] - 2017/11/02
 ### Add

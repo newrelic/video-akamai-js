@@ -94,6 +94,7 @@ export default class AmpAdsTracker extends nrvideo.VideoTracker {
       this.player.ads.addEventListener('loaded', this.onLoaded.bind(this))
       this.player.ads.addEventListener('pause', this.onPause.bind(this))
       this.player.ads.addEventListener('playing', this.onPlaying.bind(this))
+      this.player.ads.addEventListener('error', this.onError.bind(this))
     }
   }
 
@@ -112,6 +113,7 @@ export default class AmpAdsTracker extends nrvideo.VideoTracker {
       this.player.ads.removeEventListener('loaded', this.onLoaded)
       this.player.ads.removeEventListener('pause', this.onPause)
       this.player.ads.removeEventListener('playing', this.onPlaying)
+      this.player.ads.removeEventListener('error', this.onError)
     }
   }
 
@@ -178,5 +180,9 @@ export default class AmpAdsTracker extends nrvideo.VideoTracker {
   onPlaying (e) {
     this.setValues(e)
     this.sendResume()
+  }
+
+  onError (e) {
+    this.sendError()
   }
 }

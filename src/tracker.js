@@ -125,6 +125,8 @@ export default class AmpTracker extends nrvideo.VideoTracker {
       this.sendStart()
       this.sendResume()
       this.sendBufferEnd()
+    } else {
+      this.adsTracker.sendBufferEnd()
     }
   }
 
@@ -141,7 +143,11 @@ export default class AmpTracker extends nrvideo.VideoTracker {
   }
 
   onError () {
-    this.sendError()
+    if (this.adsTracker && this.adsTracker.state.isStarted) {
+      this.adsTracker.sendError()
+    } else {
+      this.sendError()
+    }
   }
 
   onEnded () {
@@ -153,7 +159,11 @@ export default class AmpTracker extends nrvideo.VideoTracker {
       this.tag.networkState === this.tag.NETWORK_LOADING &&
       this.tag.readyState < this.tag.HAVE_FUTURE_DATA
     ) {
-      this.sendBufferStart()
+      if (this.adsTracker && this.adsTracker.state.isStarted) {
+        this.adsTracker.sendBufferStart()
+      } else {
+        this.sendBufferStart()
+      }
     }
   }
 }
