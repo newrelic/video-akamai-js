@@ -6740,8 +6740,8 @@ Config.create = function(overrides) {
 
 Config.defaults = {
   paths: {
-    player: "https://akamai-demo.herokuapp.com/amp.premier/",
-    resources: "https://akamai-demo.herokuapp.com/resources/"
+    player: "../amp.premier/",
+    resources: "../resources/"
   },
   resources: [
     {

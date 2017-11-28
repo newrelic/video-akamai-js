@@ -16,7 +16,6 @@ if (typeof akamai !== 'undefined') {
   akamai.amp.AMP.registerPlugin('newrelic', function createNewRelicTracker (player, config) {
     var tracker = new nrvideo.AmpTracker(player, config)
     nrvideo.Core.addTracker(tracker)
-    tracker.sendPlayerInit()
   })
 } else {
   nrvideo.Log.warn('Could not find akamai library to register this Tracker.')
