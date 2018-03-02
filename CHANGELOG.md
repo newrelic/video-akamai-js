@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 
 
+## [0.4.0] - 2018/03/02
+## Add
+- Add support for amp v2.86+
+
 ## [0.3.0] - 2017/11/02
 ### Change
 - Buffer events reported during ads will be now reported as `AD_BUFFER_START/END`.
