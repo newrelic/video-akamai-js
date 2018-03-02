@@ -85,7 +85,7 @@
 					"@attributes": {
 						"type": "application/ttml+xml",
 						"lang": "en",
-						"href": ""
+						"href": "captioning.xml"
 					}
 				},
 				"media-thumbnail" : {
@@ -99,4 +99,3 @@
 		}
 	}
 }
-

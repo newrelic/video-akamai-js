@@ -2,7 +2,6 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<script type="text/javascript" src="/nr.js"></script>
 		<title>AMP Premier</title>
 		<link type="text/css" rel="stylesheet" href="resources/styles/styles.css" />
 		<script>
@@ -10,7 +9,7 @@
 			rules = document.styleSheets[0].cssRules || document.styleSheets[0].rules,
 			rule, i = 0, count = rules.length;
 			
-			if (debug) {	
+			if (debug) {
 				for (; i< count; i++) {
 					rule = rules[i];
 					if (rule.selectorText == ".debug") {

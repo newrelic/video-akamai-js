@@ -1,4 +1,4 @@
-body, html 
+body, html
 {
 	margin: 0px;
 	padding: 0px;
@@ -17,12 +17,12 @@ iframe
 {
 	border: none;
 	background-color: #000000;
-}	
+}
 
 h1
 {
 	font-size: 18px;
-	color: #F59A19;	
+	color: #F59A19;
 }
 
 h2
@@ -79,7 +79,7 @@ textarea
 
 .section-header-label
 {
-	font-weight: bold;	
+	font-weight: bold;
 }
 
 .section-header-button
@@ -199,7 +199,7 @@ a:visited, a:active
 
 p
 {
-	margin-bottom: 25px;	
+	margin-bottom: 25px;
 }
 
 .sample-label-text
@@ -232,7 +232,7 @@ p
 .sample-footer
 {
 	width: 100%;
-	text-align:	center;	
+	text-align:	center;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -268,11 +268,11 @@ p
 	background-color: #CCC;
 	padding: 20px;
 	margin-left: -20px;
-	
+
 	border-top-style: solid;
 	border-top-width: 1px;
 	border-top-color: #666666;
-	
+
 	border-bottom-style: solid;
 	border-bottom-width: 1px;
 	border-bottom-color: #AAAAAA;
@@ -303,6 +303,14 @@ p
 	width: 200px;
 	height: 113px;
 	cursor: pointer;
+	background: #2e2e2e; /* Old browsers */
+	background: -moz-linear-gradient(top, #2e2e2e 0%, #3c3c3c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2e2e2e), color-stop(100%,#3c3c3c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #2e2e2e 0%,#3c3c3c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #2e2e2e 0%,#3c3c3c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #2e2e2e 0%,#3c3c3c 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #2e2e2e 0%,#3c3c3c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e2e2e', endColorstr='#3c3c3c',GradientType=0 ); /* IE6-9 */
 }
 
 .sample-item-thumb
@@ -325,11 +333,11 @@ p
 
 .sample-menu-item.selected
 {
-	background-color: #0069B1;
+	background: #0069B1;
 	color: #FFFFFF;
 	pointer-events: none;
 }
-            
+
 .sample-menu-r1
 {
 	top: 10px;
@@ -340,17 +348,17 @@ p
 	top: 138px;
 }
 
-.sample-menu-c1 
+.sample-menu-c1
 {
     left: 75px;
 }
 
-.sample-menu-c2 
+.sample-menu-c2
 {
     left: 298px;
 }
 
-.sample-menu-c3 
+.sample-menu-c3
 {
 	right: 75px;
 }

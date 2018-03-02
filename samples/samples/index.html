@@ -8,54 +8,33 @@
 
 		<!--Player-->
 		<link type="text/css" rel="stylesheet" href="../resources/styles/styles.css" />
-		<script type="text/javascript" src="../resources/js/menu.js"></script>
 		<script type="text/javascript" src="../amp.premier/amp.premier.min.js"></script>
 		<script type="text/javascript">
 			var amp, config, value, tracker
-			menu = new FeedMenu(),
-			feeds = [
-        		"../resources/feeds/vod-feed.json",
-        		"../resources/feeds/vod-feed-hinted.json",
-        		"../resources/feeds/live-feed.json"
-        	];
-
+			
 			function loadHandler(event) {
-				menu.create(document.getElementById("sample-menu"), feeds, true);
-
-				var xhr = new XMLHttpRequest();
-				xhr.open("GET", "../amp.premier/amp.premier.json");
-				xhr.onreadystatechange = function () {
-					if (xhr.readyState != 4)
-						return;
-						
-					config = JSON.parse(xhr.responseText);
-										config.rules = {
-						android_4_gets_m3u8: {
-							regexp: "Android 4"
-						}
-					};
+				var config = {
+					media : {
+            title : "Custom Plugin",
+            poster : '../resources/images/hd_world.jpg',
+            source : [{
+              src : "http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m",
+              type : "video/f4m"
+            }, {
+              src : "http://transdemohls-vh.akamaihd.net/i/Customer%20Demo/delivery/18/e6/18e66de8-1d2e-4fa8-8d68-521f578ce942/ITWLongClip_1080_8M_,3000k,3500k,260k,4001k,3700k,1600k,925k,700k,450k,3300k,2700k,1000k,2300k,.mp4.csmil/master.m3u8?start=0&end=108",
+              type : "application/x-mpegURL"
+            }]
+					},
 					
-					if (config.flash != null)
-						config.flash.static.enabled = (akamai.amp.utils.QueryString.static == "true");
-					
-					value = akamai.amp.utils.QueryString["amp-autoplay"];
-					if (value != null)
-						config.autoplay = (value == "true");
-						
-					value = akamai.amp.utils.QueryString["amp-cast-id"];
-					if (value != null)
-  					config.chromecast.applicationID = value;
-					
-					// Start NR tracker
-					config.plugins = {
+					// Add NR plugin
+					plugins: {
 						newrelic: {
 							resources: [{ src:'../../dist/newrelic-video-akamai.min.js', type: 'text/javascript' }]
 						}
 					}
+				}
 					
-					amp = akamai.amp.AMP.create("akamai-media-player", config, readyHandler);
-				};
-				xhr.send();
+				amp = akamai.amp.AMP.create("akamai-media-player", config, readyHandler);
 			}
 
 			function readyHandler(event) {

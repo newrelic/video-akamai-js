@@ -1,7 +1,14 @@
 !function(e){var r=e.babelHelpers={};r.typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},r.jsx=function(){var e="function"==typeof Symbol&&Symbol.for&&Symbol.for("react.element")||60103;return function(r,t,n,o){var i=r&&r.defaultProps,u=arguments.length-3;if(t||0===u||(t={}),t&&i)for(var a in i)void 0===t[a]&&(t[a]=i[a]);else t||(t=i||{});if(1===u)t.children=o;else if(u>1){for(var f=Array(u),l=0;l<u;l++)f[l]=arguments[l+3];t.children=f}return{$$typeof:e,type:r,key:void 0===n?null:""+n,ref:null,props:t,_owner:null}}}(),r.asyncIterator=function(e){if("function"==typeof Symbol){if(Symbol.asyncIterator){var r=e[Symbol.asyncIterator];if(null!=r)return r.call(e)}if(Symbol.iterator)return e[Symbol.iterator]()}throw new TypeError("Object is not async iterable")},r.asyncGenerator=function(){function e(e){this.value=e}function r(r){function t(e,r){return new Promise(function(t,o){var a={key:e,arg:r,resolve:t,reject:o,next:null};u?u=u.next=a:(i=u=a,n(e,r))})}function n(t,i){try{var u=r[t](i),a=u.value;a instanceof e?Promise.resolve(a.value).then(function(e){n("next",e)},function(e){n("throw",e)}):o(u.done?"return":"normal",u.value)}catch(e){o("throw",e)}}function o(e,r){switch(e){case"return":i.resolve({value:r,done:!0});break;case"throw":i.reject(r);break;default:i.resolve({value:r,done:!1})}i=i.next,i?n(i.key,i.arg):u=null}var i,u;this._invoke=t,"function"!=typeof r.return&&(this.return=void 0)}return"function"==typeof Symbol&&Symbol.asyncIterator&&(r.prototype[Symbol.asyncIterator]=function(){return this}),r.prototype.next=function(e){return this._invoke("next",e)},r.prototype.throw=function(e){return this._invoke("throw",e)},r.prototype.return=function(e){return this._invoke("return",e)},{wrap:function(e){return function(){return new r(e.apply(this,arguments))}},await:function(r){return new e(r)}}}(),r.asyncGeneratorDelegate=function(e,r){function t(t,n){return o=!0,n=new Promise(function(r){r(e[t](n))}),{done:!1,value:r(n)}}var n={},o=!1;return"function"==typeof Symbol&&Symbol.iterator&&(n[Symbol.iterator]=function(){return this}),n.next=function(e){return o?(o=!1,e):t("next",e)},"function"==typeof e.throw&&(n.throw=function(e){if(o)throw o=!1,e;return t("throw",e)}),"function"==typeof e.return&&(n.return=function(e){return t("return",e)}),n},r.asyncToGenerator=function(e){return function(){var r=e.apply(this,arguments);return new Promise(function(e,t){function n(o,i){try{var u=r[o](i),a=u.value}catch(e){return void t(e)}return u.done?void e(a):Promise.resolve(a).then(function(e){n("next",e)},function(e){n("throw",e)})}return n("next")})}},r.classCallCheck=function(e,r){if(!(e instanceof r))throw new TypeError("Cannot call a class as a function")},r.createClass=function(){function e(e,r){for(var t=0;t<r.length;t++){var n=r[t];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(r,t,n){return t&&e(r.prototype,t),n&&e(r,n),r}}(),r.defineEnumerableProperties=function(e,r){for(var t in r){var n=r[t];n.configurable=n.enumerable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,t,n)}return e},r.defaults=function(e,r){for(var t=Object.getOwnPropertyNames(r),n=0;n<t.length;n++){var o=t[n],i=Object.getOwnPropertyDescriptor(r,o);i&&i.configurable&&void 0===e[o]&&Object.defineProperty(e,o,i)}return e},r.defineProperty=function(e,r,t){return r in e?Object.defineProperty(e,r,{value:t,enumerable:!0,configurable:!0,writable:!0}):e[r]=t,e},r.extends=Object.assign||function(e){for(var r=1;r<arguments.length;r++){var t=arguments[r];for(var n in t)Object.prototype.hasOwnProperty.call(t,n)&&(e[n]=t[n])}return e},r.get=function e(r,t,n){null===r&&(r=Function.prototype);var o=Object.getOwnPropertyDescriptor(r,t);if(void 0===o){var i=Object.getPrototypeOf(r);return null===i?void 0:e(i,t,n)}if("value"in o)return o.value;var u=o.get;if(void 0!==u)return u.call(n)},r.inherits=function(e,r){if("function"!=typeof r&&null!==r)throw new TypeError("Super expression must either be null or a function, not "+typeof r);e.prototype=Object.create(r&&r.prototype,{constructor:{value:e,enumerable:!1,writable:!0,configurable:!0}}),r&&(Object.setPrototypeOf?Object.setPrototypeOf(e,r):e.__proto__=r)},r.instanceof=function(e,r){return null!=r&&"undefined"!=typeof Symbol&&r[Symbol.hasInstance]?r[Symbol.hasInstance](e):e instanceof r},r.interopRequireDefault=function(e){return e&&e.__esModule?e:{default:e}},r.interopRequireWildcard=function(e){if(e&&e.__esModule)return e;var r={};if(null!=e)for(var t in e)Object.prototype.hasOwnProperty.call(e,t)&&(r[t]=e[t]);return r.default=e,r},r.newArrowCheck=function(e,r){if(e!==r)throw new TypeError("Cannot instantiate an arrow function")},r.objectDestructuringEmpty=function(e){if(null==e)throw new TypeError("Cannot destructure undefined")},r.objectWithoutProperties=function(e,r){var t={};for(var n in e)r.indexOf(n)>=0||Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n]);return t},r.possibleConstructorReturn=function(e,r){if(!e)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return!r||"object"!=typeof r&&"function"!=typeof r?e:r},r.selfGlobal="undefined"==typeof e?self:e,r.set=function e(r,t,n,o){var i=Object.getOwnPropertyDescriptor(r,t);if(void 0===i){var u=Object.getPrototypeOf(r);null!==u&&e(u,t,n,o)}else if("value"in i&&i.writable)i.value=n;else{var a=i.set;void 0!==a&&a.call(o,n)}return n},r.slicedToArray=function(){function e(e,r){var t=[],n=!0,o=!1,i=void 0;try{for(var u,a=e[Symbol.iterator]();!(n=(u=a.next()).done)&&(t.push(u.value),!r||t.length!==r);n=!0);}catch(e){o=!0,i=e}finally{try{!n&&a.return&&a.return()}finally{if(o)throw i}}return t}return function(r,t){if(Array.isArray(r))return r;if(Symbol.iterator in Object(r))return e(r,t);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),r.slicedToArrayLoose=function(e,r){if(Array.isArray(e))return e;if(Symbol.iterator in Object(e)){for(var t,n=[],o=e[Symbol.iterator]();!(t=o.next()).done&&(n.push(t.value),!r||n.length!==r););return n}throw new TypeError("Invalid attempt to destructure non-iterable instance")},r.taggedTemplateLiteral=function(e,r){return Object.freeze(Object.defineProperties(e,{raw:{value:Object.freeze(r)}}))},r.taggedTemplateLiteralLoose=function(e,r){return e.raw=r,e},r.temporalRef=function(e,r,t){if(e===t)throw new ReferenceError(r+" is not defined - temporal dead zone");return e},r.temporalUndefined={},r.toArray=function(e){return Array.isArray(e)?e:Array.from(e)},r.toConsumableArray=function(e){if(Array.isArray(e)){for(var r=0,t=Array(e.length);r<e.length;r++)t[r]=e[r];return t}return Array.from(e)}}("undefined"==typeof global?self:global);
 try{var ce=new window.CustomEvent("test");ce.preventDefault();if(!0!==ce.defaultPrevented)throw Error("Could not prevent default");}catch(e){var CustomEvent=function(d,a){var b,c;a=a||{bubbles:!1,cancelable:!1,detail:void 0};b=document.createEvent("CustomEvent");b.initCustomEvent(d,a.bubbles,a.cancelable,a.detail);c=b.preventDefault;b.preventDefault=function(){c.call(this);try{Object.defineProperty(this,"defaultPrevented",{get:function(){return!0}})}catch(f){this.defaultPrevented=!0}};return b};CustomEvent.prototype=
 window.Event.prototype;window.CustomEvent=CustomEvent};
+/*! DOMTokenlist shim | Copyright 2016 Jonathan Wilsson and Bogdan Chadkin. */
+"undefined"!=typeof window&&function(e){"use strict";if(e.DOMTokenList){var t=document.createElement("a").classList,n=DOMTokenList.prototype,i=n.add,o=n.remove,r=n.toggle;t.add("c1","c2");var s=function(e){return function(){var t,n=arguments;for(t=0;t<n.length;t+=1)e.call(this,n[t])}};t.contains("c2")||(n.add=s(i),n.remove=s(o)),t.toggle("c1",!0)||(n.toggle=function(e,t){return void 0===t?r.call(this,e):((t?i:o).call(this,e),!!t)})}}(window),"undefined"!=typeof window&&function(e){"use strict";var t=[],n=function(e,n){var i;if(t.indexOf)return t.indexOf.call(e,n);for(i=0;i<e.length;i++)if(e[i]===n)return i;return-1},i=function(e){var t=/[\u0009\u000A\u000C\u000D\u0020]/;if(""===e||t.test(e))throw new Error("Token must not be empty or contain whitespace.")},o=function(e,t){var n,i=this,o=[];if(e&&t&&(i.element=e,i.prop=t,e[t]))for(o=e[t].replace(/^\s+|\s+$/g,"").split(/\s+/),n=0;n<o.length;n++)i[n]=o[n];i.length=o.length};o.prototype={add:function(){var e,n=this,o=arguments;for(e=0;e<o.length;e++)i(o[e]),n.contains(o[e])||t.push.call(n,o[e]);n.element&&(n.element[n.prop]=n)},contains:function(e){return i(e),-1!==n(this,e)},item:function(e){return this[e]||null},remove:function(){var e,o,r=arguments,s=this;for(o=0;o<r.length;o++)i(r[o]),e=n(s,r[o]),-1!==e&&t.splice.call(s,e,1);s.element&&(s.element[s.prop]=s)},toggle:function(e,t){var n=this;return n.contains(e)?t?!0:(n.remove(e),!1):t===!1?!1:(n.add(e),!0)},toString:function(){return t.join.call(this," ")}},e.DOMTokenList=o}(window),"undefined"!=typeof window&&function(){"use strict";"classList"in document.createElement("a")||Object.defineProperty(Element.prototype,"classList",{get:function(){return new DOMTokenList(this,"className")}})}(),"undefined"!=typeof window&&function(){"use strict";if(!("relList"in document.createElement("a"))){var e,t=[HTMLAnchorElement,HTMLAreaElement,HTMLLinkElement],n=function(){return new DOMTokenList(this,"rel")};for(e=0;e<t.length;e++)Object.defineProperty(t[e].prototype,"relList",{get:n})}}(),"undefined"!=typeof window&&function(){"use strict";if("undefined"!=typeof SVGElement){var e=document.createElementNS("http://www.w3.org/2000/svg","svg");"classList"in e&&!window.QUnit||Object.defineProperty(SVGElement.prototype,"classList",{get:function(){return"string"==typeof this.className?new DOMTokenList(this,"className"):"string"==typeof this.className.baseVal?new DOMTokenList(this.className,"baseVal"):void 0}})}}();
+
 !function(t,e){if(!t.ES6Promise){t.ES6Promise=e();t.ES6Promise.polyfill()}}(this,function(){"use strict";function t(t){return"function"==typeof t||"object"==typeof t&&null!==t}function e(t){return"function"==typeof t}function n(t){I=t}function r(t){J=t}function o(){return function(){return process.nextTick(a)}}function i(){return"undefined"!=typeof H?function(){H(a)}:c()}function s(){var t=0,e=new V(a),n=document.createTextNode("");return e.observe(n,{characterData:!0}),function(){n.data=t=++t%2}}function u(){var t=new MessageChannel;return t.port1.onmessage=a,function(){return t.port2.postMessage(0)}}function c(){var t=setTimeout;return function(){return t(a,1)}}function a(){for(var t=0;t<G;t+=2){var e=$[t],n=$[t+1];e(n),$[t]=void 0,$[t+1]=void 0}G=0}function f(){try{var t=require,e=t("vertx");return H=e.runOnLoop||e.runOnContext,i()}catch(n){return c()}}function l(t,e){var n=arguments,r=this,o=new this.constructor(p);void 0===o[et]&&k(o);var i=r._state;return i?!function(){var t=n[i-1];J(function(){return x(i,o,t,r._result)})}():E(r,o,t,e),o}function h(t){var e=this;if(t&&"object"==typeof t&&t.constructor===e)return t;var n=new e(p);return g(n,t),n}function p(){}function v(){return new TypeError("You cannot resolve a promise with itself")}function d(){return new TypeError("A promises callback cannot return that same promise.")}function _(t){try{return t.then}catch(e){return it.error=e,it}}function y(t,e,n,r){try{t.call(e,n,r)}catch(o){return o}}function m(t,e,n){J(function(t){var r=!1,o=y(n,e,function(n){r||(r=!0,e!==n?g(t,n):S(t,n))},function(e){r||(r=!0,j(t,e))},"Settle: "+(t._label||" unknown promise"));!r&&o&&(r=!0,j(t,o))},t)}function b(t,e){e._state===rt?S(t,e._result):e._state===ot?j(t,e._result):E(e,void 0,function(e){return g(t,e)},function(e){return j(t,e)})}function w(t,n,r){n.constructor===t.constructor&&r===l&&n.constructor.resolve===h?b(t,n):r===it?j(t,it.error):void 0===r?S(t,n):e(r)?m(t,n,r):S(t,n)}function g(e,n){e===n?j(e,v()):t(n)?w(e,n,_(n)):S(e,n)}function A(t){t._onerror&&t._onerror(t._result),P(t)}function S(t,e){t._state===nt&&(t._result=e,t._state=rt,0!==t._subscribers.length&&J(P,t))}function j(t,e){t._state===nt&&(t._state=ot,t._result=e,J(A,t))}function E(t,e,n,r){var o=t._subscribers,i=o.length;t._onerror=null,o[i]=e,o[i+rt]=n,o[i+ot]=r,0===i&&t._state&&J(P,t)}function P(t){var e=t._subscribers,n=t._state;if(0!==e.length){for(var r=void 0,o=void 0,i=t._result,s=0;s<e.length;s+=3)r=e[s],o=e[s+n],r?x(n,r,o,i):o(i);t._subscribers.length=0}}function T(){this.error=null}function M(t,e){try{return t(e)}catch(n){return st.error=n,st}}function x(t,n,r,o){var i=e(r),s=void 0,u=void 0,c=void 0,a=void 0;if(i){if(s=M(r,o),s===st?(a=!0,u=s.error,s=null):c=!0,n===s)return void j(n,d())}else s=o,c=!0;n._state!==nt||(i&&c?g(n,s):a?j(n,u):t===rt?S(n,s):t===ot&&j(n,s))}function C(t,e){try{e(function(e){g(t,e)},function(e){j(t,e)})}catch(n){j(t,n)}}function O(){return ut++}function k(t){t[et]=ut++,t._state=void 0,t._result=void 0,t._subscribers=[]}function Y(t,e){this._instanceConstructor=t,this.promise=new t(p),this.promise[et]||k(this.promise),B(e)?(this._input=e,this.length=e.length,this._remaining=e.length,this._result=new Array(this.length),0===this.length?S(this.promise,this._result):(this.length=this.length||0,this._enumerate(),0===this._remaining&&S(this.promise,this._result))):j(this.promise,q())}function q(){return new Error("Array Methods must be provided an Array")}function F(t){return new Y(this,t).promise}function D(t){var e=this;return new e(B(t)?function(n,r){for(var o=t.length,i=0;i<o;i++)e.resolve(t[i]).then(n,r)}:function(t,e){return e(new TypeError("You must pass an array to race."))})}function K(t){var e=this,n=new e(p);return j(n,t),n}function L(){throw new TypeError("You must pass a resolver function as the first argument to the promise constructor")}function N(){throw new TypeError("Failed to construct 'Promise': Please use the 'new' operator, this object constructor cannot be called as a function.")}function U(t){this[et]=O(),this._result=this._state=void 0,this._subscribers=[],p!==t&&("function"!=typeof t&&L(),this instanceof U?C(this,t):N())}function W(){var t=void 0;if("undefined"!=typeof global)t=global;else if("undefined"!=typeof self)t=self;else try{t=Function("return this")()}catch(e){throw new Error("polyfill failed because global object is unavailable in this environment")}var n=t.Promise;if(n){var r=null;try{r=Object.prototype.toString.call(n.resolve())}catch(e){}if("[object Promise]"===r&&!n.cast)return}t.Promise=U}var z=void 0;z=Array.isArray?Array.isArray:function(t){return"[object Array]"===Object.prototype.toString.call(t)};var B=z,G=0,H=void 0,I=void 0,J=function(t,e){$[G]=t,$[G+1]=e,G+=2,2===G&&(I?I(a):tt())},Q="undefined"!=typeof window?window:void 0,R=Q||{},V=R.MutationObserver||R.WebKitMutationObserver,X="undefined"==typeof self&&"undefined"!=typeof process&&"[object process]"==={}.toString.call(process),Z="undefined"!=typeof Uint8ClampedArray&&"undefined"!=typeof importScripts&&"undefined"!=typeof MessageChannel,$=new Array(1e3),tt=void 0;tt=X?o():V?s():Z?u():void 0===Q&&"function"==typeof require?f():c();var et=Math.random().toString(36).substring(16),nt=void 0,rt=1,ot=2,it=new T,st=new T,ut=0;return Y.prototype._enumerate=function(){for(var t=this.length,e=this._input,n=0;this._state===nt&&n<t;n++)this._eachEntry(e[n],n)},Y.prototype._eachEntry=function(t,e){var n=this._instanceConstructor,r=n.resolve;if(r===h){var o=_(t);if(o===l&&t._state!==nt)this._settledAt(t._state,e,t._result);else if("function"!=typeof o)this._remaining--,this._result[e]=t;else if(n===U){var i=new n(p);w(i,t,o),this._willSettleAt(i,e)}else this._willSettleAt(new n(function(e){return e(t)}),e)}else this._willSettleAt(r(t),e)},Y.prototype._settledAt=function(t,e,n){var r=this.promise;r._state===nt&&(this._remaining--,t===ot?j(r,n):this._result[e]=n),0===this._remaining&&S(r,this._result)},Y.prototype._willSettleAt=function(t,e){var n=this;E(t,void 0,function(t){return n._settledAt(rt,e,t)},function(t){return n._settledAt(ot,e,t)})},U.all=F,U.race=D,U.resolve=h,U.reject=K,U._setScheduler=n,U._setAsap=r,U._asap=J,U.prototype={constructor:U,then:l,"catch":function(t){return this.then(null,t)}},U.polyfill=W,U.Promise=U,U});
+"function"!=typeof Object.assign&&(Object.assign=function(c){if(null==c)throw new TypeError("Cannot convert undefined or null to object");c=Object(c);for(var e=1;e<arguments.length;e++){var b=arguments[e];if(null!=b)for(var d in b)Object.prototype.hasOwnProperty.call(b,d)&&(c[d]=b[d])}return c});
+Array.prototype.findIndex||Object.defineProperty(Array.prototype,"findIndex",{value:function(c,e){if(null==this)throw new TypeError('"this" is null or not defined');var b=Object(this),d=b.length>>>0;if("function"!==typeof c)throw new TypeError("predicate must be a function");for(var a=0;a<d;){if(c.call(e,b[a],a,b))return a;a++}return-1}});
+Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{value:function(c,e){if(null==this)throw new TypeError('"this" is null or not defined');var b=Object(this),d=b.length>>>0;if(0===d)return!1;var a=e|0;for(a=Math.max(0<=a?a:d-Math.abs(a),0);a<d;){var f=b[a],g=c;if(f===g||"number"===typeof f&&"number"===typeof g&&isNaN(f)&&isNaN(g))return!0;a++}return!1}});
+
 (function(n){function i(a,d){this.setNotifyMethod(a);this.setNotifyContext(d)}function j(a,d,b){this.name=a;this.body=d;this.type=b}function k(){}function m(){}function l(){this.subCommands=[];this.initializeMacroCommand()}function g(a,d){this.mediatorName=a||this.constructor.NAME;this.viewComponent=d}function h(a,d){this.proxyName=a||this.constructor.NAME;null!=d&&this.setData(d)}function b(a){if(null!=b.instanceMap[a])throw Error(b.MULTITON_MSG);this.initializeNotifier(a);b.instanceMap[a]=this;
 this.initializeFacade()}function c(a){if(null!=c.instanceMap[a])throw Error(c.MULTITON_MSG);this.multitonKey=a;c.instanceMap[this.multitonKey]=this;this.mediatorMap=[];this.observerMap=[];this.initializeView()}function e(a){if(e.instanceMap[a])throw Error(e.MULTITON_MSG);this.multitonKey=a;e.instanceMap[a]=this;this.proxyMap=[];this.initializeModel()}function f(a){if(null!=f.instanceMap[a])throw Error(f.MULTITON_MSG);this.multitonKey=a;f.instanceMap[this.multitonKey]=this;this.commandMap=[];this.initializeController()}
 function p(a,d,b){for(var a=a.split("."),b=b||o.global,c,e,f=0,g=a.length;f<g;f++)c=b,e=a[f],b=null==b[e]?b[e]={}:b[e];return null==d?b:c[e]=d}null==n&&(n=window);if(!n.puremvc){i.prototype.setNotifyMethod=function(a){this.notify=a};i.prototype.setNotifyContext=function(a){this.context=a};i.prototype.getNotifyMethod=function(){return this.notify};i.prototype.getNotifyContext=function(){return this.context};i.prototype.notifyObserver=function(a){this.getNotifyMethod().call(this.getNotifyContext(),
@@ -137,7 +144,7 @@ var  global, version, _ref;
 if ((_ref = window.AKAMAI_MEDIA_PLAYER) == null) {
   window.AKAMAI_MEDIA_PLAYER = new AkamaiSDKManager();
 }
-version = "AMP Premier v2.68.16";
+version = "AMP Premier v2.94.5";
 if (!(window.AKAMAI_MEDIA_PLAYER[version] != null)) {
   global = window.AKAMAI_MEDIA_PLAYER[version] = {};
   /* Start JS Lib
@@ -179,15 +186,17 @@ function QueryString() {}
 
 QueryString.construct = function() {
   var key, value, vars;
-  vars = this.deserialize(window.location.search);
+  vars = this.decode(window.location.search);
+  QueryString.typed = {};
   for (key in vars) {
     value = vars[key];
     QueryString[key] = value;
+    QueryString.typed[key] = this.parse(value);
   }
   return true;
 };
 
-QueryString.serialize = function(obj, prefix) {
+QueryString.encode = function(obj, prefix) {
   var k, p, str, v;
   str = [];
   for (p in obj) {
@@ -196,21 +205,67 @@ QueryString.serialize = function(obj, prefix) {
       continue;
     }
     k = (prefix ? prefix + "[" + p + "]" : p);
-    str.push((typeof v === "object" ? this.serialize(v, k) : encodeURIComponent(k) + "=" + encodeURIComponent(v)));
+    str.push((typeof v === "object" ? this.encode(v, k) : encodeURIComponent(k) + "=" + encodeURIComponent(v)));
   }
   return str.join("&");
 };
 
-QueryString.deserialize = function(uri) {
-  var results;
+QueryString.decode = function(uri) {
+  var results,
+    _this = this;
   if (uri != null) {
     results = {};
     uri = uri.replace(/^[^?]*\?/, "");
     uri.replace(new RegExp("([^?=&]+)(=([^&]*))?", "g"), function($0, $1, $2, $3) {
-      results[decodeURIComponent($1)] = decodeURIComponent($3);
+      var key, value;
+      key = decodeURIComponent($1);
+      value = decodeURIComponent($3);
+      if (/~/.test(value)) {
+        value = _this.decodeObject(value);
+      }
+      results[key] = value;
     });
   }
   return results;
+};
+
+QueryString.decodeObject = function(uri) {
+  var results,
+    _this = this;
+  if (uri != null) {
+    results = {};
+    uri.replace(/([^:~]+)(:([^~]*))?/g, function($0, $1, $2, $3) {
+      results[decodeURIComponent($1)] = _this.parse(decodeURIComponent($3));
+    });
+  }
+  return results;
+};
+
+QueryString.parse = function(value) {
+  var temp;
+  if (typeof value === "object") {
+    return value;
+  }
+  if (value === "undefined") {
+    return true;
+  }
+  temp = value.toLowerCase();
+  if (temp === "true" || temp === "false") {
+    return temp === "true";
+  }
+  if (temp === "null") {
+    return null;
+  }
+  temp = parseFloat(value);
+  if (!isNaN(temp)) {
+    return temp;
+  }
+  try {
+    temp = JSON.parse(value);
+    return temp;
+  } catch (error) {
+    return value;
+  }
 };
 
 QueryString.constructed = QueryString.construct();
@@ -288,9 +343,9 @@ ModuleProxy.prototype.setData = function(data) {
 */
 ModuleProxy.prototype.destroy = function() {};
 
-/** 
+/**
  * The Module class.
- *   
+ *
  * @param {Object}  config        The configuration object
  * @param {Object}  viewComponent The player's container element
  * @constructor
@@ -299,9 +354,13 @@ ModuleProxy.prototype.destroy = function() {};
 */
 function Module(viewComponent) {
   this.viewComponent = viewComponent;
-  Module.__super__.constructor.call(this, this.getModuleName() + "-" + Date.now());
+  this.performance = {
+    init: Date.now()
+  };
+  Module.__super__.constructor.call(this, this.getModuleName() + "-" + Utils.createUID());
   this.dispatcher = new EventDispatcher(this);
-  this.logger = Logger;
+  this.transformer = new Transformer();
+  this.logger = Logger.instance;
   this.moduleMap = {};
 }
 
@@ -327,34 +386,39 @@ Module.prototype.onerror = null;
 
 Module.prototype.parentModule = null;
 
+Module.prototype.performance = null;
+
+Module.prototype.transformer = null;
+
 /**
  * Initialization function.
- * 
+ *
  * @param {Object}  config  The plugin's configuration object.
 */
 Module.prototype.initialize = function(config, parentModule) {
   this.config = config;
   this.parentModule = parentModule;
-  this.loadModuleResources();
+  this.loadModuleResources().then(this.resourcesLoaded.bind(this))["catch"](this.resourcesError.bind(this));
 };
 
 /**
 */
-Module.prototype.loadModuleResources = function() {
-  var resource, _i, _len, _ref, _ref1;
-  if (!((_ref = this.config.resources) != null ? _ref.length : void 0) > 0) {
-    this.resourcesLoaded();
-    return;
+Module.prototype.loadModuleResources = function(resources) {
+  var resource, _i, _len;
+  if (resources == null) {
+    resources = this.config.resources;
   }
-  _ref1 = this.config.resources;
-  for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
-    resource = _ref1[_i];
+  if (!(resources != null ? resources.length : void 0) > 0) {
+    return Promise.resolve();
+  }
+  for (_i = 0, _len = resources.length; _i < _len; _i++) {
+    resource = resources[_i];
     resource.src = this.evaluatePaths(resource.src);
     if (resource.debug != null) {
       resource.debug = this.evaluatePaths(resource.debug);
     }
   }
-  AMP.addResources(this.config.resources, this.resourcesLoaded.bind(this), this.resourcesError.bind(this));
+  return AMP.addResources(resources);
 };
 
 /**
@@ -366,16 +430,16 @@ Module.prototype.evaluatePaths = function(path) {
   }
   paths = this.config.paths || ((_ref = this.parentModule) != null ? (_ref1 = _ref.config) != null ? _ref1.paths : void 0 : void 0);
   if (paths != null) {
-    path = path.replace(/#{paths\.[^}]*}/g, function(match) {
-      return DataBinding["eval"](match, null, null, null, paths);
+    path = DataBinding["eval"](path, {
+      paths: paths
     });
   }
   return path;
 };
 
-/** 
+/**
  * The resources failed to load.
- * 
+ *
  * @private
 */
 Module.prototype.resourcesError = function(error) {
@@ -384,9 +448,9 @@ Module.prototype.resourcesError = function(error) {
   }
 };
 
-/** 
+/**
  * The resources have finished loaded, load the extensions.
- * 
+ *
  * @private
 */
 Module.prototype.resourcesLoaded = function() {
@@ -577,7 +641,7 @@ Module.prototype.once = function(type, func) {
 */
 Module.prototype.logEvent = function(event) {
   var prefix;
-  if (/(timeupdate|progress)/.test(event.type) === true) {
+  if (/(timeupdate|progress|fragmentloaded|fragmentloadstart)/.test(event.type) === true) {
     return;
   }
   prefix = this.getModuleName().toUpperCase();
@@ -599,6 +663,16 @@ Module.prototype.dispatchEvent = function(event) {
 };
 
 /**
+ * Dispathes an event, triggering all event listener of the event's type.
+ *
+ * @param {!String} type    The type of event to dispatch.
+ * @param {Object=} detail  Data to pass along with the event.
+*/
+Module.prototype.dispatch = function(type, detail) {
+  this.dispatchEvent(new Event(type, detail));
+};
+
+/**
  * Removes a listener for a given event type.
  *
  * @param {!string}  type  A string representing the event's type.
@@ -611,8 +685,39 @@ Module.prototype.removeEventListener = function(type, func) {
 };
 
 /**
+ * Adds a transform for a given type.
+ *
+ * @param {!string}  type  A string representing the event's type.
+ * @param {!Function} func  A function to call when the event is triggered.
+*/
+Module.prototype.addTransform = function(type, transform) {
+  return this.transformer.addTransform(type, transform);
+};
+
+/**
+ * Performs a transform for a given type
+ *
+ * @param {!String} type The tranform type
+ * @param {!Object} value The value to be transformed
+*/
+Module.prototype.transform = function(type, value) {
+  return this.transformer.transform(type, value);
+};
+
+/**
+ * Removes a transform for a given type.
+ *
+ * @param {!string}  type  A string representing the tranform's type.
+ * @param {!Function} transform  A function or Transform object to call when the type is triggered.
+ * @return {?Function} the transform that was removed if any
+*/
+Module.prototype.removeTransform = function(type, transform) {
+  return this.transformer.removeTransform(type, tranform);
+};
+
+/**
  * Creates a new EventDispatcher
- * 
+ *
  * @constructor
  * @private
  * @implements {IEventDispatcher}
@@ -651,38 +756,39 @@ EventDispatcher.prototype.once = function(type, func) {
 };
 
 /**
- * Dispathes and event, triggering all event listener of the event's type.
+ * Dispathes an event, triggering all event listener of the event's type.
  *
  * @param {!IEvent} event The event to dispatch.
 */
 EventDispatcher.prototype.dispatchEvent = function(event) {
-  var listener, listeners, remove, _i, _j, _len, _len1;
+  var index, listener, listeners, _i, _len, _ref;
   listeners = this._listenerMap[event.type];
   listener = this._target["on" + event.type];
   event.target = this._target;
-  remove = null;
   if (listener != null) {
     listener.apply(this._target, [event]);
   }
   if (!(listeners != null)) {
     return;
   }
-  for (_i = 0, _len = listeners.length; _i < _len; _i++) {
-    listener = listeners[_i];
+  _ref = listeners.slice();
+  for (index = _i = 0, _len = _ref.length; _i < _len; index = ++_i) {
+    listener = _ref[index];
     listener.apply(this._target, [event]);
     if (listener.once === true) {
-      if (remove == null) {
-        remove = [];
-      }
-      remove.push(listener);
+      listeners.splice(index, 1);
     }
   }
-  if ((remove != null ? remove.length : void 0) > 0) {
-    for (_j = 0, _len1 = remove.length; _j < _len1; _j++) {
-      listener = remove[_j];
-      listeners.splice(listeners.indexOf(listener), 1);
-    }
-  }
+};
+
+/**
+ * Dispathes an event, triggering all event listener of the event's type.
+ *
+ * @param {!String} type    The type of event to dispatch.
+ * @param {Object=} detail  Data to pass along with the event.
+*/
+EventDispatcher.prototype.dispatch = function(type, detail) {
+  this.dispatchEvent(new Event(type, detail));
 };
 
 /**
@@ -716,18 +822,17 @@ EventDispatcher.prototype.removeEventListener = function(type, func, capture) {
 function TrackList(list) {
   this.list = list != null ? list : [];
   TrackList.__super__.constructor.call(this);
+  this.dispatcher = new EventDispatcher(this);
   this.handlers = {
     change: this.changeHandler.bind(this)
   };
 }
 
 
-__extends(TrackList, EventDispatcher);
+__extends(TrackList, Array);
 
 
 TrackList.prototype.onchange = null;
-
-TrackList.prototype.list = null;
 
 /**
 */
@@ -736,9 +841,27 @@ TrackList.prototype.changeHandler = function(event) {
 };
 
 /**
+*/
+TrackList.prototype.addEventListener = function(type, func, capture) {
+  this.dispatcher.addEventListener(type, func, capture);
+};
+
+/**
+*/
+TrackList.prototype.dispatchEvent = function(event) {
+  this.dispatcher.dispatchEvent(event);
+};
+
+/**
+*/
+TrackList.prototype.removeEventListener = function(type, func, capture) {
+  return this.dispatcher.removeEventListener(type, func, capture);
+};
+
+/**
  * @param {string} key
  *     The key
- * 
+ *
  * @param {Object} value
  *     The value
 */
@@ -746,7 +869,7 @@ TrackList.prototype.add = function(track, dispatch) {
   if (dispatch == null) {
     dispatch = true;
   }
-  this.list.push(track);
+  this.push(track);
   track.addEventListener("change", this.handlers.change);
   if (dispatch === true) {
     this.dispatchEvent({
@@ -755,50 +878,23 @@ TrackList.prototype.add = function(track, dispatch) {
   }
 };
 
-TrackList.prototype.set = function(list) {
-  var index, track, _i, _len;
-  this.clear();
-  if (!(list != null) || list.length === 0) {
-    return;
-  }
-  for (index = _i = 0, _len = list.length; _i < _len; index = ++_i) {
-    track = list[index];
-    this.add(track, false);
-    this[index] = null;
-    delete this[index];
-  }
-  this.dispatchEvent({
-    type: "addtrack"
-  });
-};
-
 /**
  * @param {string} key
  *     The module's key
- * 
- * @return {Object}
- *     The item at the given key.
-*/
-TrackList.prototype.item = function(index) {
-  return this.list[index];
-};
-
-/**
- * @param {string} key
- *     The module's key
- * 
+ *
  * @return {Object}
  *     The item.
 */
-TrackList.prototype.remove = function(index, dispatch) {
-  var track;
+TrackList.prototype.remove = function(track, dispatch) {
+  var index;
   if (dispatch == null) {
     dispatch = true;
   }
-  if (!(__indexOf.call(this, index) >= 0)) {
+  index = this.indexOf(track);
+  if (index === -1) {
     return;
   }
-  track = this.list.splice(index, 1);
+  this.splice(index, 1);
   track.removeEventListener("change", this.handlers.change);
   if (dispatch === true) {
     this.dispatchEvent({
@@ -809,46 +905,27 @@ TrackList.prototype.remove = function(index, dispatch) {
 };
 
 TrackList.prototype.clear = function() {
-  var index, track, _i, _len;
-  if (this.list.length === 0) {
+  var index, _i, _len;
+  if (this.length === 0) {
     return;
   }
-  for (index = _i = 0, _len = this.length; _i < _len; index = ++_i) {
-    track = this[index];
-    this.remove(track, false);
-    this.list[index] = null;
-    delete this.list[index];
+  for (_i = 0, _len = this.length; _i < _len; _i++) {
+    index = this[_i];
+    this.remove(this[this.length - 1], false);
   }
   this.dispatchEvent({
     type: "removetrack"
   });
 };
 
-TrackList.prototype.forEach = function(func, scope) {
-  var index, item, _i, _len, _ref;
-  if (!(func != null)) {
-    return;
-  }
-  _ref = this.list;
-  for (index = _i = 0, _len = _ref.length; _i < _len; index = ++_i) {
-    item = _ref[index];
-    func.call(scope, item, index, this.list);
-  }
-};
-
 TrackList.prototype.getTrackById = function(id) {
-  var track, _i, _len, _ref;
-  _ref = this.list;
-  for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-    track = _ref[_i];
+  var track, _i, _len;
+  for (_i = 0, _len = this.length; _i < _len; _i++) {
+    track = this[_i];
     if (track.id === id) {
       return track;
     }
   }
-};
-
-TrackList.prototype.getLength = function() {
-  return this.list.length;
 };
 
 /** 
@@ -995,82 +1072,141 @@ function ResourceManager() {
 __extends(ResourceManager, Manager);
 
 
-/**
- * @override
-*/
-ResourceManager.prototype.add = function(resource, callback, onerror) {
-  var item, onload, src;
-  src = Logger.enabled && (resource.debug != null) ? resource.debug : resource.src;
-  item = this.item(src);
-  if (resource.enabled === false || (item != null ? item.loaded : void 0) === true) {
-    callback();
-    return;
-  }
-  if ((item != null ? item.loaded : void 0) === false) {
-    item.callbacks.push(callback);
-    return;
-  }
-  resource.loaded = false;
-  resource.callbacks = [callback];
-  onload = this.resourceLoaded.bind(resource);
-  ResourceManager.__super__.add.call(this, src, resource);
-  if (resource.type === Utils.mimeTypes.js) {
-    Utils.loadScript(src, onload, document.body, onerror);
-    return;
-  }
-  if (resource.type === Utils.mimeTypes.css) {
-    Utils.loadStyleSheet(src);
-  }
-  onload();
+ResourceManager.prototype.js = function(src, resource) {
+  return Utils.loadScript(src, document.body);
+};
+
+ResourceManager.prototype.css = function(src, resource) {
+  var _this = this;
+  return new Promise(function(resolve, reject) {
+    try {
+      Utils.loadStyleSheet(src);
+    } catch (error) {
+      reject();
+    }
+    resolve(resource);
+  });
+};
+
+ResourceManager.prototype.json = function(src, resource) {
+  var _this = this;
+  return Utils.requestJson(resource.src).then(function(data) {
+    resource.data = data;
+    return resource;
+  });
 };
 
 /**
- *
+ * @override
 */
-ResourceManager.prototype.resourceLoaded = function() {
-  var callback, callbacks, _i, _len;
-  this.loaded = true;
-  callbacks = this.callbacks;
-  this.callbacks = null;
-  delete this.callbacks;
-  for (_i = 0, _len = callbacks.length; _i < _len; _i++) {
-    callback = callbacks[_i];
-    callback();
+ResourceManager.prototype.require = function(id) {
+  var item,
+    _this = this;
+  item = this.item(id);
+  if (!(item != null)) {
+    if (typeof id === "string") {
+      return this.add({
+        src: id
+      });
+    } else if (id.src != null) {
+      return this.add(id);
+    } else {
+      return Promise.resolve(id);
+    }
+  } else if (typeof item === "function") {
+    Manager.prototype.add.call(this, id, null);
+    return Promise.resolve().then(function() {
+      return item();
+    });
+  } else if (typeof item.then === "function") {
+    return item;
+  } else {
+    return Promise.resolve(item);
   }
-  callbacks = null;
+};
+
+/**
+ * @override
+*/
+ResourceManager.prototype.add = function(resource) {
+  var id, item, promise, src, type,
+    _this = this;
+  if (resource.enabled === false) {
+    return Promise.resolve();
+  }
+  src = Logger.instance.enabled && (resource.debug != null) ? resource.debug : resource.src;
+  id = resource.id || src;
+  if (resource.defer === true) {
+    resource.defer = false;
+    ResourceManager.__super__.add.call(this, id, this.add.bind(this, resource));
+    return Promise.resolve();
+  }
+  item = this.item(id);
+  if (item != null) {
+    if (typeof item.then === "function") {
+      return item;
+    } else {
+      return Promise.resolve(item);
+    }
+  }
+  type = resource.type || Utils.getMimeType(src);
+  if (type === Utils.mimeTypes.js || /javascript/.test(type)) {
+    promise = this.js(src, resource);
+  } else if (type === Utils.mimeTypes.css) {
+    promise = this.css(src, resource);
+  } else if (type === Utils.mimeTypes.json || /json/.test(type)) {
+    promise = this.json(src, resource);
+  } else if (type !== Utils.mimeTypes.swf) {
+    promise = Utils.request(src);
+  }
+  if (!(promise != null)) {
+    return Promise.resolve();
+  }
+  promise = promise.then(function(resource) {
+    Manager.prototype.add.call(_this, id, resource);
+    return resource;
+  });
+  ResourceManager.__super__.add.call(this, id, promise);
+  return promise;
 };
 
 /**
  * @param {Array.<akamai.amp.Resource>} resource
  *    The resource
- * 
+ *
  * @param {Function} callback
 */
-ResourceManager.prototype.addResources = function(resources, callback, onerror) {
-  var complete, index, next,
+ResourceManager.prototype.addResources = function(resources) {
+  var asyncs, promise, promises, resource, _i, _len,
     _this = this;
   if (!(resources != null ? resources.length : void 0) > 0) {
-    callback();
-    return;
+    return Promise.resolve();
   }
-  index = 0;
-  next = function() {
-    _this.add(resources[index], complete, onerror);
-  };
-  complete = function() {
-    index++;
-    if (index >= resources.length) {
-      callback();
+  promises = [];
+  asyncs = [];
+  for (_i = 0, _len = resources.length; _i < _len; _i++) {
+    resource = resources[_i];
+    if (resource instanceof Array) {
+      promises.push(this.addResources.bind(this, resource));
+    } else if (resource.async === true) {
+      asyncs.push(this.add(resource));
     } else {
-      next();
+      promises.push(this.add.bind(this, resource));
     }
-  };
-  next();
+  }
+  if (asyncs.length > 0) {
+    promise = Promise.all(asyncs);
+  } else {
+    promise = Promise.resolve();
+  }
+  return promise.then(function() {
+    return Utils.chain(promises);
+  });
 };
 
 /**
  * The PluginsInitializedCommand class.
- *   
+ *
  * @constructor
  * @private
  * @extends {puremvc.SimpleCommand}
@@ -1085,25 +1221,21 @@ __extends(PluginsInitializedCommand, puremvc.SimpleCommand);
 
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
 PluginsInitializedCommand.prototype.execute = function(notification) {
-  var media, _ref;
+  this.facade.performance.ready = Date.now();
   this.sendNotification(Notifications.READY, this.facade.config);
-  media = (_ref = this.facade.config) != null ? _ref.media : void 0;
-  if (media != null) {
-    setTimeout(this.sendNotification.bind(this, Notifications.SET_MEDIA, media), 0);
-  }
 };
 
-/** 
- * The PlayerCommand class. Base class for commands that need access 
+/**
+ * The PlayerCommand class. Base class for commands that need access
  * to the application state or the media
- *   
+ *
  * @constructor
  * @private
  * @extends {puremvc.SimpleCommand}
@@ -1232,10 +1364,10 @@ ToggleFullScreenCommand.prototype.execute = function(notification) {
   this.sendNotification(Notifications.CHANGE_DISPLAY_STATE, state);
 };
 
-/** 
- * The PlayerCommand class. Base class for commands that need access 
+/**
+ * The PlayerCommand class. Base class for commands that need access
  * to the application state or the media
- *   
+ *
  * @constructor
  * @private
  * @extends {puremvc.SimpleCommand}
@@ -1257,7 +1389,7 @@ PlayerEventCommand.prototype.dispatchEvent = function(type, detail) {
     detail = type.getBody() != null ? type.getBody() : {};
     type = type.getName();
   }
-  event = new Event(type, detail);
+  event = new Event(type.toLowerCase(), detail);
   this.sendNotification(Notifications.DISPATCH_EVENT, event);
 };
 
@@ -1265,15 +1397,28 @@ PlayerEventCommand.prototype.dispatchEvent = function(type, detail) {
  *
 */
 PlayerEventCommand.prototype.dispatchEventAfterCommand = function(type, detail) {
-  setTimeout(this.dispatchEvent.bind(this, type, detail), 0);
+  var _this = this;
+  return new Promise(function(resolve, reject) {
+    var callback;
+    callback = function() {
+      try {
+        _this.dispatchEvent(type, detail);
+        resolve();
+      } catch (error) {
+        _this.facade.logger.error(error);
+        reject(error);
+      }
+    };
+    return setTimeout(callback, 0);
+  });
 };
 
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
 PlayerEventCommand.prototype.execute = function(notification) {
@@ -1441,7 +1586,7 @@ ChangeLoopCommand.prototype.execute = function(notification) {
 
 /**
  * The ChangeVolumeCommand class.
- *   
+ *
  * @constructor
  * @private
  * @extends {amp.player.controller.PlayerCommand}
@@ -1456,19 +1601,23 @@ __extends(ChangeVolumeCommand, PlayerCommand);
 
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
 ChangeVolumeCommand.prototype.execute = function(notification) {
-  this.playback.setVolume(notification.getBody());
+  var volume;
+  volume = Utils.clamp(notification.getBody(), 0, 1);
+  if (this.playback.getVolume() !== volume) {
+    this.playback.setVolume(volume);
+  }
 };
 
 /**
  * The MediaValidatedCommand class.
- *   
+ *
  * @constructor
  * @private
  * @extends {puremvc.SimpleCommand}
@@ -1483,24 +1632,47 @@ __extends(MediaValidatedCommand, PlayerCommand);
 
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
 MediaValidatedCommand.prototype.execute = function(notification) {
-  var media;
+  var canAutoPlay, container, media, mediaElement, muted, playsinline, unmute,
+    _this = this;
   media = notification.getBody();
+  mediaElement = this.facade.getMediaElement();
   this.sendNotification(Notifications.MEDIA_CHANGE, media);
-  if (this.applicationState.getLocked() === false && this.facade.getAutoplay() === true) {
-    setTimeout(this.sendNotification.bind(this, Notifications.PLAY), 0);
+  if (this.applicationState.getPlaybackTarget() !== "amp") {
+    return;
+  }
+  canAutoPlay = this.applicationState.getLocked() === false && this.facade.getAutoplay() === true;
+  playsinline = this.config.getPlaysInline();
+  if ((playsinline != null)) {
+    mediaElement.playsInline = playsinline;
+  }
+  muted = this.config.getMuted();
+  if (muted != null) {
+    this.playback.setMuted(muted);
+  }
+  if (canAutoPlay && muted) {
+    container = this.facade.getContainer();
+    unmute = function() {
+      _this.config.setMuted(false);
+      _this.facade.setMuted(false);
+      container.removeEventListener("click", unmute);
+    };
+    container.addEventListener("click", unmute);
+  }
+  if (canAutoPlay) {
+    setTimeout(this.sendNotification.bind(this, Notifications.PLAY, true), 0);
   }
 };
 
 /**
  * The SeekCommand class.
- *   
+ *
  * @constructor
  * @private
  * @extends {puremvc.SimpleCommand}
@@ -1515,37 +1687,38 @@ __extends(SeekCommand, PlayerCommand);
 
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
 SeekCommand.prototype.execute = function(notification) {
-  var time, video,
+  var time,
     _this = this;
   time = notification.getBody();
-  if (time === 0 && this.media.getType() === Utils.mimeTypes.m3u8) {
-    time = 0.25;
-  }
-  if (time === this.playback.getCurrentTime()) {
-    return;
-  }
-  this.sendNotification(Notifications.WAITING);
-  this.sendNotification(Notifications.DISPLAY_TIME, {
-    currentTime: time,
-    duration: this.playback.getDuration()
-  });
-  this.sendNotification(Notifications.CHANGE_ACTIVE_STATE, ActiveState.ACTIVE);
-  video = this.facade.getMediaElement();
-  this.applicationState.pausedBeforeSeek = video.paused;
-  if (video.readyState === 0) {
-    video.once("loadedmetadata", function(event) {
-      _this.playback.setCurrentTime(time);
+  this.facade.transform(TransformType.SEEK, time).then(function(time) {
+    var video;
+    if (time === 0 && _this.media.getType() === Utils.mimeTypes.m3u8) {
+      time = 0.25;
+    }
+    if (time === _this.playback.getCurrentTime()) {
+      return;
+    }
+    if (_this.playback.getStarted() === true) {
+      _this.sendNotification(Notifications.WAITING);
+    }
+    _this.sendNotification(Notifications.DISPLAY_TIME, {
+      currentTime: time,
+      duration: _this.playback.getDuration()
     });
-  } else {
-    this.playback.setCurrentTime(time);
-  }
+    _this.sendNotification(Notifications.CHANGE_ACTIVE_STATE, ActiveState.ACTIVE);
+    video = _this.facade.getMediaElement();
+    _this.playback.setCurrentTime(time);
+    if (_this.playback.getStarted() !== true) {
+      _this.sendNotification(Notifications.TIME_CHANGE, time);
+    }
+  });
 };
 
 /**
@@ -1573,6 +1746,7 @@ __extends(SeekingCommand, PlayerEventCommand);
 */
 SeekingCommand.prototype.execute = function(notification) {
   if (this.applicationState.getSeeking() === true) {
+    this.applicationState.setSeekRequested(true);
     return;
   }
   if (this.applicationState.getEnded()) {
@@ -1587,7 +1761,7 @@ SeekingCommand.prototype.execute = function(notification) {
 
 /**
  * The SeekedCommand class.
- *   
+ *
  * @constructor
  * @private
  * @extends {puremvc.SimpleCommand}
@@ -1602,10 +1776,10 @@ __extends(SeekedCommand, PlayerEventCommand);
 
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
 SeekedCommand.prototype.execute = function(notification) {
@@ -1618,11 +1792,17 @@ SeekedCommand.prototype.execute = function(notification) {
     var state;
     _this.applicationState.setSeeking(false);
     _this.dispatchEvent(notification);
-    state = _this.applicationState.pausedBeforeSeek === true || _this.facade.retrieveProxy(PlaybackProxy.NAME).getPaused() === true ? PlayState.PAUSED : PlayState.PLAYING;
+    _this.applicationState.setSeekRequested(false);
+    _this.sendNotification(UserNotifications.SEEKED, notification.getBody());
+    if (_this.applicationState.getPlayState() === PlayState.READY) {
+      return;
+    }
     if (_this.applicationState.displayState === "full-screen" && _this.applicationState.device === "ipad" && _this.facade.retrieveProxy(PlaybackProxy.NAME).getPaused() !== _this.facade.getMediaElement().paused) {
       state = _this.facade.getMediaElement().paused === true ? PlayState.PAUSED : PlayState.PLAYING;
     }
-    _this.sendNotification(Notifications.CHANGE_PLAY_STATE, state);
+    if ((state != null) && state !== "undefined") {
+      _this.sendNotification(Notifications.CHANGE_PLAY_STATE, state);
+    }
   }, 1);
 };
 
@@ -1727,7 +1907,7 @@ EndedCommand.prototype.execute = function(notification) {
 
 /**
  * The StartCommand class.
- *   
+ *
  * @constructor
  * @private
  * @extends {amp.player.controller.PlayerCommand}
@@ -1742,10 +1922,10 @@ __extends(StartCommand, PlayerCommand);
 
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
 StartCommand.prototype.execute = function(notification) {
@@ -1808,6 +1988,9 @@ __extends(WaitingCommand, PlayerEventCommand);
  * @override
 */
 WaitingCommand.prototype.execute = function(notification) {
+  if (this.applicationState.getWaiting()) {
+    return;
+  }
   this.applicationState.setWaiting(true);
   WaitingCommand.__super__.execute.call(this, notification);
 };
@@ -1962,7 +2145,7 @@ RecordContentChangeCommand.prototype.execute = function(notification) {
 
 /**
  * The TimeupdateCommand class.
- *   
+ *
  * @constructor
  * @private
  * @extends {puremvc.SimpleCommand}
@@ -1977,16 +2160,16 @@ __extends(TimeUpdateCommand, PlayerEventCommand);
 
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
 TimeUpdateCommand.prototype.execute = function(notification) {
   this.sendNotification(Notifications.DISPLAY_TIME, {
-    currentTime: this.playback.getCurrentTime(),
-    duration: this.playback.getDuration()
+    currentTime: this.applicationState.getCurrentTime(),
+    duration: this.applicationState.getDuration()
   });
   TimeUpdateCommand.__super__.execute.call(this, notification);
 };
@@ -2238,6 +2421,129 @@ LockCommand.prototype.execute = function(notification) {
 };
 
 /**
+ * The SeekCommand class.
+ *
+ * @constructor
+ * @private
+ * @extends {puremvc.SimpleCommand}
+*/
+function GoLiveCommand() {
+  GoLiveCommand.__super__.constructor.call(this);
+}
+
+
+__extends(GoLiveCommand, PlayerCommand);
+
+
+/**
+ * Executes the command.
+ *
+ * @param {puremvc.Notification} notification
+ *    The notification.
+ *
+ * @override
+*/
+GoLiveCommand.prototype.execute = function(notification) {
+  var _base;
+  if (typeof (_base = this.playback).goLive === "function") {
+    _base.goLive();
+  }
+};
+
+/**
+ * The TimeChangeCommand class.
+ *
+ * @constructor
+ * @private
+ * @extends {puremvc.SimpleCommand}
+*/
+function TimeChangeCommand() {
+  TimeChangeCommand.__super__.constructor.call(this);
+}
+
+
+__extends(TimeChangeCommand, PlayerCommand);
+
+
+/**
+ * Executes the command.
+ *
+ * @param {puremvc.Notification} notification
+ *    The notification.
+ *
+ * @override
+*/
+TimeChangeCommand.prototype.execute = function(notification) {
+  var time,
+    _this = this;
+  time = notification.getBody();
+  if (time.currentTime != null) {
+    this.facade.transform(TransformType.TIME, time.currentTime).then(function(time) {
+      return _this.applicationState.setCurrentTime(time);
+    });
+  }
+  if (time.duration != null) {
+    this.facade.transform(TransformType.TIME, time.duration).then(function(time) {
+      return _this.applicationState.setDuration(time);
+    });
+  }
+};
+
+/**
+ * The TimedMetadataCommand class.
+ *
+ * @constructor
+ * @private
+ * @extends {puremvc.SimpleCommand}
+*/
+function TimedMetadataCommand() {
+  TimedMetadataCommand.__super__.constructor.call(this);
+}
+
+
+__extends(TimedMetadataCommand, PlayerEventCommand);
+
+
+/**
+ * Executes the command.
+ *
+ * @param {puremvc.Notification} notification
+ *    The notification.
+ *
+ * @override
+*/
+TimedMetadataCommand.prototype.execute = function(notification) {
+  var body, detail, type, value;
+  type = notification.getName();
+  body = notification.getBody();
+  detail = {
+    startTime: body.startTime,
+    endTime: body.endTime,
+    type: body.type,
+    track: body.track,
+    value: {
+      key: body.value.key,
+      data: body.value.data,
+      info: body.value.info
+    }
+  };
+  value = detail.value;
+  try {
+    if (!(value.info != null)) {
+      if (typeof value.data === "string") {
+        value.info = value.data;
+      } else if (value.data instanceof ArrayBuffer) {
+        value.info = Utils.arrayBufferToString(value.data);
+      }
+    }
+  } catch (error) {
+    this.facade.logger.log("[AMP ERROR]: Could not parse timed metadata");
+  }
+  notification.body = detail;
+  TimedMetadataCommand.__super__.execute.call(this, notification);
+};
+
+/**
  * The ChangeActiveStateCommand class.
  *   
  * @constructor
@@ -2268,14 +2574,13 @@ ChangeActiveStateCommand.prototype.execute = function(notification) {
 
 /**
  * The ChangeDisplayStateCommand class.
- *   
+ *
  * @constructor
  * @private
  * @extends {amp.player.controller.PlayerEventCommand}
 */
 function ChangeDisplayStateCommand() {
   ChangeDisplayStateCommand.__super__.constructor.call(this);
-  this.keyHandler = this.keypress.bind(this);
 }
 
 
@@ -2284,35 +2589,21 @@ __extends(ChangeDisplayStateCommand, PlayerEventCommand);
 
 ChangeDisplayStateCommand.interval = null;
 
-ChangeDisplayStateCommand.keyHandler = null;
-
-ChangeDisplayStateCommand.prototype.keypress = function(event) {
-  switch (event.keyCode || event.which || event.charCode) {
-    case 27:
-      break;
-    case 32:
-      if (!this.facade.getEnded()) {
-        if (this.facade.getPaused()) {
-          this.facade.play();
-        } else {
-          this.facade.pause();
-        }
-      }
-  }
-};
-
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
 ChangeDisplayStateCommand.prototype.execute = function(notification) {
   var core, fullscreen, state, view,
     _this = this;
   state = notification.getBody();
+  if (state === this.applicationState.getDisplayState()) {
+    return;
+  }
   this.applicationState.setDisplayState(state);
   if (this.config.getFullscreen().mode === FullscreenMode.EXTERNAL) {
     this.sendNotifications(state);
@@ -2320,37 +2611,7 @@ ChangeDisplayStateCommand.prototype.execute = function(notification) {
   }
   core = this.facade.getMediaElement();
   view = this.facade.getViewComponent();
-  fullscreen = {};
-  if (view.webkitRequestFullScreen != null) {
-    fullscreen.enter = view.webkitRequestFullScreen.bind(view);
-    fullscreen.exit = document.webkitExitFullscreen != null ? document.webkitExitFullscreen.bind(document) : document.webkitCancelFullScreen.bind(document);
-    fullscreen.event = "onwebkitfullscreenchange";
-    fullscreen.element = "webkitFullscreenElement";
-    fullscreen.error = "webkitfullscreenerror";
-  } else if (view.requestFullscreen != null) {
-    fullscreen.enter = view.requestFullscreen.bind(view);
-    fullscreen.exit = document.exitFullscreen != null ? document.exitFullscreen.bind(document) : document.cancelFullscreen.bind(document);
-    fullscreen.event = "onfullscreenchange";
-    fullscreen.element = "fullscreenElement";
-    fullscreen.error = "fullscreenerror";
-  } else if (view.mozRequestFullScreen != null) {
-    fullscreen.enter = view.mozRequestFullScreen.bind(view);
-    fullscreen.exit = document.mozCancelFullScreen.bind(document);
-    fullscreen.event = "onmozfullscreenchange";
-    fullscreen.element = "mozFullscreenElement";
-    fullscreen.error = "mozfullscreenerror";
-  } else if (view.msRequestFullscreen != null) {
-    fullscreen.enter = view.msRequestFullscreen.bind(view);
-    fullscreen.exit = document.msExitFullscreen.bind(document);
-    fullscreen.event = "MSFullscreenChange";
-    fullscreen.element = "msFullscreenElement";
-    fullscreen.error = "MSFullscreenError";
-  } else if (core.webkitEnterFullscreen != null) {
-    fullscreen.enter = core.webkitEnterFullscreen.bind(core);
-    fullscreen.exit = core.webkitExitFullscreen.bind(core);
-    fullscreen.event = null;
-    fullscreen.error = null;
-  }
+  fullscreen = Utils.getFullScreenApi(view, core);
   if (state === DisplayState.FULL_SCREEN) {
     if (fullscreen.event != null) {
       if (view.mozRequestFullScreen != null) {
@@ -2379,11 +2640,7 @@ ChangeDisplayStateCommand.prototype.execute = function(notification) {
       document.addEventListener(fullscreen.error, this.facade.logger.error.bind(this.facade.logger));
     }
     fullscreen.enter();
-    this.playback.keyHandler = this.keypress.bind(this);
-    window.addEventListener("keypress", this.playback.keyHandler);
   } else if (state === DisplayState.NORMAL) {
-    window.removeEventListener("keypress", this.playback.keyHandler);
-    this.playback.keyHandler = null;
     if (fullscreen != null) {
       if (typeof fullscreen.exit === "function") {
         fullscreen.exit();
@@ -2474,6 +2731,34 @@ ToggleActiveCommand.prototype.execute = function(notification) {
 function Track(data) {
   this.data = data != null ? data : {};
   Track.__super__.constructor.call(this);
+  Object.defineProperties(this, {
+    kind: {
+      get: this.getKind,
+      enumerable: true,
+      configurable: false
+    },
+    label: {
+      get: this.getLabel,
+      enumerable: true,
+      configurable: false
+    },
+    language: {
+      get: this.getLanguage,
+      enumerable: true,
+      configurable: false
+    },
+    id: {
+      get: this.getId,
+      enumerable: true,
+      configurable: false
+    },
+    enabled: {
+      get: this.getEnabled,
+      set: this.setEnabled,
+      enumerable: true,
+      configurable: false
+    }
+  });
 }
 
 
@@ -2509,6 +2794,16 @@ Track.prototype.changeEnabled = function(value) {};
 
 Track.prototype.getEnabled = function() {
   return this.data.enabled;
+};
+
+Track.prototype.flatten = function() {
+  return {
+    kind: this.getKind(),
+    label: this.getLabel(),
+    language: this.getLanguage(),
+    id: this.getId(),
+    enabled: this.getEnabled()
+  };
 };
 
 function XMLUtils() {}
@@ -2605,9 +2900,9 @@ TracksProxy.prototype.getTextTracks = function() {
   return this.data.textTracks;
 };
 
-/** 
+/**
  * The base player class.
- *   
+ *
  * @param {Object} config
  * @param {Object} viewComponent
  * @constructor
@@ -2616,7 +2911,6 @@ TracksProxy.prototype.getTextTracks = function() {
 */
 function Player(viewComponent) {
   Player.__super__.constructor.call(this, viewComponent);
-  this.initTime = Date.now();
 }
 
 
@@ -2650,12 +2944,266 @@ Player.prototype.createModel = function() {
   this.registerProxy(this.bindings);
   this.security = new SecurityProxy();
   this.registerProxy(this.security);
-  this.mediaProxy = new MediaProxy();
+  this.mediaProxy = new MediaProxy(this.config);
   this.registerProxy(this.mediaProxy);
   this.params = new ParamsProxy(this.config.params);
   this.registerProxy(this.params);
   this.configuration = new ConfigurationProxy(this.config);
   this.registerProxy(this.configuration);
+};
+
+/** @override
+*/
+Player.prototype.resourcesLoaded = function() {
+  Player.__super__.resourcesLoaded.call(this);
+  Object.defineProperties(this, {
+    src: {
+      get: this.getSrc,
+      set: this.setSrc,
+      enumerable: true,
+      configurable: false
+    },
+    media: {
+      get: this.getMedia,
+      set: this.setMedia,
+      enumerable: true,
+      configurable: false
+    },
+    currentTime: {
+      get: this.getCurrentTime,
+      set: this.setCurrentTime,
+      enumerable: true,
+      configurable: false
+    },
+    autoplay: {
+      get: this.getAutoplay,
+      set: this.setAutoplay,
+      enumerable: true,
+      configurable: false
+    },
+    duration: {
+      get: this.getDuration,
+      enumerable: true,
+      configurable: false
+    },
+    playState: {
+      get: this.getPlayState,
+      enumerable: true,
+      configurable: false
+    },
+    seeking: {
+      get: this.getSeeking,
+      enumerable: true,
+      configurable: false
+    },
+    paused: {
+      get: this.getPaused,
+      enumerable: true,
+      configurable: false
+    },
+    ended: {
+      get: this.getEnded,
+      enumerable: true,
+      configurable: false
+    },
+    volume: {
+      get: this.getVolume,
+      set: this.setVolume,
+      enumerable: true,
+      configurable: false
+    },
+    muted: {
+      get: this.getMuted,
+      set: this.setMuted,
+      enumerable: true,
+      configurable: false
+    },
+    mediaElement: {
+      get: this.getMediaElement,
+      enumerable: true,
+      configurable: false
+    },
+    textTracks: {
+      get: (function() {
+        return this.getMediaElement().textTracks;
+      }),
+      enumerable: true,
+      configurable: false
+    },
+    audioTracks: {
+      get: this.getAudioTracks,
+      enumerable: true,
+      configurable: false
+    },
+    container: {
+      get: this.getContainer,
+      enumerable: true,
+      configurable: false
+    },
+    loop: {
+      get: this.getLoop,
+      set: this.setLoop,
+      enumerable: true,
+      configurable: false
+    },
+    displayState: {
+      get: this.getDisplayState,
+      set: this.setDisplayState,
+      enumerable: true,
+      configurable: false
+    },
+    playbackRate: {
+      get: this.getPlaybackRate,
+      set: this.setPlaybackRate,
+      enumerable: true,
+      configurable: false
+    },
+    language: {
+      get: this.getLanguage,
+      set: this.setLanguage,
+      enumerable: true,
+      configurable: false
+    },
+    localization: {
+      get: (function() {
+        return this.retrieveProxy(LocalizationProxy.NAME);
+      }),
+      enumerable: true,
+      configurable: false
+    },
+    version: {
+      get: this.getVersion,
+      enumerable: true,
+      configurable: false
+    },
+    error: {
+      get: this.getError,
+      enumerable: true,
+      configurable: false
+    },
+    hidden: {
+      get: this.getHidden,
+      set: this.setHidden,
+      enumerable: true,
+      configurable: false
+    },
+    waiting: {
+      get: this.getWaiting,
+      set: this.setWaiting,
+      enumerable: true,
+      configurable: false
+    },
+    busy: {
+      get: this.getBusy,
+      set: this.setBusy,
+      enumerable: true,
+      configurable: false
+    },
+    cues: {
+      get: this.getCues,
+      set: this.setCues,
+      enumerable: true,
+      configurable: false
+    },
+    quality: {
+      get: this.getQuality,
+      set: this.setQuality,
+      enumerable: true,
+      configurable: false
+    },
+    qualityMode: {
+      get: this.getQualityMode,
+      set: this.setQualityMode,
+      enumerable: true,
+      configurable: false
+    },
+    qualityLevels: {
+      get: this.getQualityLevels,
+      enumerable: true,
+      configurable: false
+    },
+    debug: {
+      get: this.getDebug,
+      enumerable: true,
+      configurable: false
+    },
+    settings: {
+      get: this.getSettings,
+      enumerable: true,
+      configurable: false
+    },
+    mode: {
+      get: this.getMode,
+      enumerable: true,
+      configurable: false
+    },
+    buffering: {
+      get: this.getBuffering,
+      enumerable: true,
+      configurable: false
+    },
+    width: {
+      get: this.getWidth,
+      enumerable: true,
+      configurable: false
+    },
+    height: {
+      get: this.getHeight,
+      enumerable: true,
+      configurable: false
+    },
+    videoWidth: {
+      get: this.getVideoWidth,
+      enumerable: true,
+      configurable: false
+    },
+    videoHeight: {
+      get: this.getVideoHeight,
+      enumerable: true,
+      configurable: false
+    },
+    defaultMediaTransform: {
+      get: (function() {
+        return this.mediaProxy.transform;
+      }),
+      enumerable: true,
+      configurable: false
+    },
+    absoluteCurrentTime: {
+      get: this.getAbsoluteCurrentTime,
+      set: this.setAbsoluteCurrentTime,
+      enumerable: true,
+      configurable: false
+    },
+    absoluteDuration: {
+      get: this.getAbsoluteDuration,
+      enumerable: true,
+      configurable: false
+    },
+    playbackTarget: {
+      get: this.getPlaybackTarget,
+      set: this.setPlaybackTarget,
+      enumerable: true,
+      configurable: false
+    }
+  });
+};
+
+/** @override
+*/
+Player.prototype.createView = function() {
+  this._settings = new SettingsMediator();
+  this.registerMediator(this._settings);
+};
+
+/** @override
+*/
+Player.prototype.createController = function() {
+  Player.__super__.createController.call(this);
+  this.registerCommand(Notifications.CHANGE_SETTINGS, ChangeSettingsCommand);
+  this.registerCommand(Notifications.SETTINGS_CHANGE, PlayerEventCommand);
+  this.registerCommand(Notifications.CUES_CHANGE, PlayerEventCommand);
+  this.registerCommand(Notifications.DESTROY, PlayerEventCommand);
 };
 
 /** @override
@@ -2675,6 +3223,18 @@ Player.prototype.getPlayerType = function() {
 */
 Player.prototype.getVersion = function() {
   return AMP.getVersion();
+};
+
+/**
+*/
+Player.prototype.getDebug = function() {
+  return this.config.debug;
+};
+
+/**
+*/
+Player.prototype.getMode = function() {
+  return this.config.mode;
 };
 
 /**
@@ -2711,6 +3271,16 @@ Player.prototype.setLanguage = function(value) {
 };
 
 /**
+*/
+Player.prototype.getLocalizedString = function(value, context) {
+  try {
+    return this.retrieveProxy(LocalizationProxy.NAME).getString(value, context);
+  } catch (error) {
+    return value;
+  }
+};
+
+/**
  * @return {HTMLObject|HTMLMediaElement} The media playback DOM element.
 */
 Player.prototype.getMediaElement = function() {
@@ -2735,6 +3305,7 @@ Player.prototype.setMediaElement = function(value) {
     };
     value.once = value.once.bind(value);
   }
+  value.amp = this;
   return value;
 };
 
@@ -2751,21 +3322,26 @@ Player.prototype.getContainer = function() {
 Player.prototype.getAudioTracks = function() {};
 
 /**
- * @param   {string}  binding
- *    A data bound string to evaluate.
- * 
- * @return {Object} 
+ * @param   {Object}  binding
+ *    A data bound object to evaluate.
+ *
+ * @param   {?Object}  context
+ *    Context object to pass to the bindings
+ *
+ * @return {Object}
  *    The evaluated result
 */
-Player.prototype.evaluateBinding = function(binding) {};
+Player.prototype.evaluateBindings = function(binding, context) {
+  return DataBinding.evaluateBindings(binding, Utils.override(this.bindings.data, context));
+};
 
 /**
  * Determines if the core can play a given mimeType.
- * 
+ *
  * @param   {string}  type
  *    The mimetype to check.
- * 
- * @return  {string}  "" 
+ *
+ * @return  {string}  ""
  *    if the core can't play the mimeType
 */
 Player.prototype.canPlayType = function(type) {};
@@ -2797,56 +3373,56 @@ Player.prototype.end = function() {};
 
 /**
  * Sets user params.
- * 
+ *
  * @param {Object} value The user params object.
 */
 Player.prototype.setParams = function(value) {};
 
 /**
  * Gets user params.
- * 
+ *
  * @return {Object} The user params object.
 */
 Player.prototype.getParams = function() {};
 
 /**
  * Sets auto play flag.
- * 
+ *
  * @param {boolean} value The autoplay flash.
 */
 Player.prototype.setAutoplay = function(value) {};
 
 /**
  * Gets auto play flag.
- * 
+ *
  * @return {boolean} The autoplay flash.
 */
 Player.prototype.getAutoplay = function() {};
 
 /**
  * Sets player's loop flag.
- * 
+ *
  * @param {boolean} value The loop flag.
 */
 Player.prototype.setLoop = function(value) {};
 
 /**
  * Gets player's loop flag.
- * 
+ *
  * @return {boolean} The loop flag.
 */
 Player.prototype.getLoop = function() {};
 
 /**
  * Sets player's muted value.
- * 
+ *
  * @param {boolean} value The muted value.
 */
 Player.prototype.setMuted = function(value) {};
 
 /**
  * Gets player's muted value.
- * 
+ *
  * @return {boolean} The muted value.
 */
 Player.prototype.getMuted = function() {};
@@ -2867,135 +3443,204 @@ Player.prototype.unmute = function() {
 
 /**
  * Sets the media object.
- * 
+ *
  * @param {Object} value The media object for the video to play.
 */
-Player.prototype.setMedia = function(value) {
-  var source, src, _ref, _ref1;
-  src = value.src;
-  source = (_ref = value.source) != null ? (_ref1 = _ref[0]) != null ? _ref1.src : void 0 : void 0;
-  if ((!(src != null) || src === "") && (!(source != null) || source === "")) {
-    throw new Error("[AMP ERROR] Invalid Media");
-  }
-};
+Player.prototype.setMedia = function(value) {};
 
 /**
  * Gets the media object.
- * 
+ *
  * @return {Object} The media object for the video to play.
 */
 Player.prototype.getMedia = function() {};
 
 /**
  * Sets the current time of the video.
- * 
+ *
  * @param {number} value The desired time to seek to.
 */
 Player.prototype.setCurrentTime = function(value) {};
 
 /**
  * Gets the current time of the video.
- * 
+ *
  * @return {number} The current playhead time.
 */
 Player.prototype.getCurrentTime = function() {};
 
 /**
+ * Sets the current time of the video.
+ *
+ * @param {number} value The desired time to seek to.
+*/
+Player.prototype.setAbsoluteCurrentTime = function(value) {
+  return this.setCurrentTime(value);
+};
+
+/**
+ * Gets the current time of the video.
+ *
+ * @return {number} The current playhead time.
+*/
+Player.prototype.getAbsoluteCurrentTime = function() {
+  return this.getCurrentTime();
+};
+
+/**
  * Gets the current time of the video as a UTC timestamp.
- * 
+ *
  * @return {number} The current playhead time as a UTC timestamp.
 */
 Player.prototype.getCurrentTimeUTC = function() {};
 
 /**
  * Gets the current time of the video.
- * 
+ *
  * @return {number} The current time of the video.
 */
 Player.prototype.getDuration = function() {};
 
 /**
+ * Gets the current time of the video.
+ *
+ * @return {number} The current time of the video.
+*/
+Player.prototype.getAbsoluteDuration = function() {
+  return this.getDuration();
+};
+
+/**
  * Sets the source url of video.
- * 
+ *
  * @param {string} value The source url of the video to play.
 */
 Player.prototype.setSrc = function(value) {};
 
 /**
  * Gets the source url of video.
- * 
+ *
  * @return {string} The source url of the video to play.
 */
 Player.prototype.getSrc = function() {};
 
 /**
  * Sets the source url of video.
- * 
+ *
  * @param {Array.<Object>} value An array of source objects to choose from.
 */
 Player.prototype.setSource = function(value) {};
 
 /**
  * Gets the source url of video.
- * 
+ *
  * @return {Array.<Object>} An array of source objects to choose from.
 */
 Player.prototype.getSource = function() {};
 
 /**
  * Sets the source url of video.
- * 
+ *
  * @param {number} value The source url of the video to play.
 */
 Player.prototype.setVolume = function(value) {};
 
 /**
  * Gets the source url of video.
- * 
+ *
  * @return {number} The volume a number between 0 and 1.
 */
 Player.prototype.getVolume = function() {};
 
 /**
- * Gets the source url of video.
- * 
- * @return {boolean} The source url of the video.
+ * The seeking flag.
+ *
+ * @return {boolean} The seeking flag.
 */
 Player.prototype.getSeeking = function() {};
 
 /**
- * Gets the source url of video.
- * 
- * @return {boolean} The source url of the video.
+ * The paused flag.
+ *
+ * @return {boolean} The paused flag.
 */
 Player.prototype.getPaused = function() {};
 
 /**
- * Gets the source url of video.
- * 
- * @return {number} The source url of the video.
+ * The ended flag.
+ *
+ * @return {boolean} The ended flag.
 */
 Player.prototype.getEnded = function() {};
 
 /**
+ * The buffering flag.
+ *
+ * @return {boolean} The buffering flag.
+*/
+Player.prototype.getBuffering = function() {
+  return this.appState.getBuffering();
+};
+
+/**
  * Sets the player's display state.
- * 
- * @param {DisplayState} value 
+ *
+ * @param {DisplayState} value
  *    The display state.
 */
 Player.prototype.setDisplayState = function(value) {};
 
 /**
  * Returns the player's display state.
- * 
+ *
  * @return {DisplayState}
  *    The display state.
 */
 Player.prototype.getDisplayState = function() {};
 
 /**
+ * Returns the player's waiting state.
+ *
+ * @return {boolean}
+ *    The waiting state.
+*/
+Player.prototype.getWaiting = function() {
+  return this.appState.getWaiting();
+};
+
+/**
+ * Sets the player's waiting state.
+ *
+ * @param {boolean} value
+ *    The waiting state.
+*/
+Player.prototype.setWaiting = function(value) {
+  return this.appState.setWaiting(value);
+};
+
+/**
+ * Returns the player's busy state.
+ *
+ * @return {boolean}
+ *    The busy state.
+*/
+Player.prototype.getBusy = function() {
+  return this.appState.getBusy();
+};
+
+/**
+ * Sets the player's busy state.
+ *
+ * @param {boolean} value
+ *    The busy state.
+*/
+Player.prototype.setBusy = function(value) {
+  return this.appState.setBusy(value);
+};
+
+/**
  * Returns the player error.
- * 
+ *
  * @return {Error}
  *    The Error
 */
@@ -3011,7 +3656,7 @@ Player.prototype.enterFullScreen = function() {};
 */
 Player.prototype.exitFullScreen = function() {};
 
-/** 
+/**
  * Show the player
 */
 Player.prototype.setHidden = function(value) {
@@ -3041,46 +3686,176 @@ Player.prototype.setHidden = function(value) {
   }
 };
 
-/** 
+/**
  * Hide the player
 */
 Player.prototype.getHidden = function() {
   return this.appState.getHidden();
 };
 
-/** 
+/**
+ * The player's width
+*/
+Player.prototype.getWidth = function() {
+  var _ref;
+  return (_ref = this.getViewComponent()) != null ? _ref.offsetWidth : void 0;
+};
+
+/**
+ * The player's height
+*/
+Player.prototype.getHeight = function() {
+  var _ref;
+  return (_ref = this.getViewComponent()) != null ? _ref.offsetWidth : void 0;
+};
+
+/**
+ * The media's source width
+*/
+Player.prototype.getVideoWidth = function() {
+  var _ref;
+  return (_ref = this.getMediaElement()) != null ? _ref.videoWidth : void 0;
+};
+
+/**
+ * The media's source height
+*/
+Player.prototype.getVideoHeight = function() {
+  var _ref;
+  return (_ref = this.getMediaElement()) != null ? _ref.videoHeight : void 0;
+};
+
+/**
  * Records a content change
- * 
+ *
  * @param {Object} content
  *    An object representing the new content
 */
 Player.prototype.recordContentChange = function(content) {};
 
-/** 
+/**
  * Sets the rate of playback.
 */
 Player.prototype.setPlaybackRate = function() {};
 
-/** 
+/**
  * Gets the rate of playback.
 */
 Player.prototype.getPlaybackRate = function() {};
 
-/** 
+/**
+ * Sets the list of cues.
+*/
+Player.prototype.setCues = function(value) {
+  this.mediaProxy.setCues(value);
+  return value;
+};
+
+/**
+ * Gets the list of cues.
+*/
+Player.prototype.getCues = function() {
+  return this.mediaProxy.getCues();
+};
+
+/**
+ *
+*/
+Player.prototype.setQuality = function(value) {};
+
+/**
+ *
+*/
+Player.prototype.getQuality = function() {};
+
+/**
+ *
+*/
+Player.prototype.getQualityLevels = function() {};
+
+/**
+ *
+*/
+Player.prototype.getQualityMode = function() {};
+
+/**
+ *
+*/
+Player.prototype.setQualityMode = function(value) {};
+
+/**
  * Gets the play state.
 */
 Player.prototype.getPlaystate = function() {};
 
-/** 
- * Gets the play state.
+/**
+ *
 */
-Player.prototype.authorize = function(authorization) {
-  return this.security.authorize(authorization);
+Player.prototype.getPlaybackTarget = function() {
+  return this.appState.getPlaybackTarget();
 };
 
-/** 
+/**
+ *
+*/
+Player.prototype.setPlaybackTarget = function(value) {
+  this.appState.setPlaybackTarget(value);
+};
+
+/**
+ * Gets the list of media transforms
+*/
+Player.prototype.getMediaTransforms = function() {
+  return this.mediaProxy.getTransforms();
+};
+
+/**
+ * Authorizes a protected stream
+*/
+Player.prototype.authorize = function(authorization) {
+  this.security.authorize(authorization);
+};
+
+/**
+ * Force the player into live mode during DVR playback
+*/
+Player.prototype.goLive = function() {};
+
+/**
+ *
+*/
+Player.prototype.appendChild = function(element) {
+  this.mediator.addLayer(element);
+};
+
+/**
+ *
+*/
+Player.prototype.removeChild = function(element) {
+  this.mediator.removeLayer(element);
+};
+
+/**
+ *
+*/
+Player.prototype.getSettings = function() {
+  var _ref;
+  return ((_ref = this._settings) != null ? _ref.getSettings() : void 0) || {
+    change: function() {}
+  };
+};
+
+/**
+ * @override
+*/
+Player.prototype.destroy = function() {
+  this.sendNotification(Notifications.DESTROY);
+  Player.__super__.destroy.call(this);
+};
+
+/**
  * The HTMLPlayer class.
- * 
+ *
  * @param {Object} viewComponent
  * @constructor
  * @private
@@ -3129,12 +3904,15 @@ HTMLPlayer.prototype.createModel = function() {
   this.registerProxy(this.tracks);
   this.appState.setRenderMode(RenderMode.HTML);
   this.bindings.initialize();
+  this.fps = Utils.override(FPS, this.config.fps);
 };
 
 /** @override
 */
 HTMLPlayer.prototype.createView = function() {
-  this.registerMediator(new PlayerMediator("html5", this.getViewComponent()));
+  HTMLPlayer.__super__.createView.call(this);
+  this.mediator = new PlayerMediator("html5", this.getViewComponent());
+  this.registerMediator(this.mediator);
   this.registerMediator(new PluginAdapter());
   this.registerMediator(new VideoLayerMediator());
   this.registerMediator(new OverlayLayerMediator());
@@ -3159,6 +3937,7 @@ HTMLPlayer.prototype.createController = function() {
   this.registerCommand(Notifications.MEDIA_CHANGE, MediaChangeCommand);
   this.registerCommand(Notifications.UPDATE_DATA_BINDINGS, UpdateDataBindingsCommand);
   this.registerCommand(Notifications.START, StartCommand);
+  this.registerCommand(Notifications.TIME_CHANGE, TimeChangeCommand);
   this.registerCommand(Notifications.SEEK, SeekCommand);
   this.registerCommand(Notifications.SEEKING, SeekingCommand);
   this.registerCommand(Notifications.SEEKED, SeekedCommand);
@@ -3180,7 +3959,6 @@ HTMLPlayer.prototype.createController = function() {
   this.registerCommand(Notifications.REGISTER_PLAYBACK_CORE, RegisterPlaybackCoreCommand);
   this.registerCommand(UserNotifications.TOGGLE_PLAY_PAUSE, TogglePlayPauseCommand);
   this.registerCommand(UserNotifications.SEEK, SeekCommand);
-  this.registerCommand(Notifications.CHANGE_PLAYBACK_TARGET, ChangePlaybackTargetCommand);
   this.registerCommand(Notifications.PLAYBACK_TARGET_CHANGE, PlaybackTargetChangeCommand);
   this.registerCommand(Notifications.RECORD_CONTENT_CHANGE, RecordContentChangeCommand);
   this.registerCommand(Notifications.TIME_UPDATE, TimeUpdateCommand);
@@ -3189,6 +3967,9 @@ HTMLPlayer.prototype.createController = function() {
   this.registerCommand(Notifications.PLAY_REQUEST, PlayRequestCommand);
   this.registerCommand(Notifications.HAS_POST_CONTENT, HasPostContentCommand);
   this.registerCommand(Notifications.LOCK, LockCommand);
+  this.registerCommand(UserNotifications.GO_LIVE, GoLiveCommand);
+  this.registerCommand(Notifications.BUFFERING_CHANGE, BufferingChangeCommand);
+  this.registerCommand(Notifications.TIMED_METADATA, TimedMetadataCommand);
   this.registerCommand(Notifications.PLAY_STATE_CHANGE, PlayerEventCommand);
   this.registerCommand(Notifications.PROGRESS, PlayerEventCommand);
   this.registerCommand(Notifications.CAN_PLAY, PlayerEventCommand);
@@ -3200,19 +3981,24 @@ HTMLPlayer.prototype.createController = function() {
   this.registerCommand(Notifications.MEDIUM_CHANGE, PlayerEventCommand);
   this.registerCommand(Notifications.TEMPORAL_TYPE_CHANGE, PlayerEventCommand);
   this.registerCommand(Notifications.LANGUAGE_CHANGE, PlayerEventCommand);
-  this.registerCommand(Notifications.PLAYBACK_TARGET_AVAILABLE, PlayerEventCommand);
+  this.registerCommand(Notifications.PLAYBACK_TARGET_AVAILABILITY_CHANGE, PlayerEventCommand);
   this.registerCommand(SecurityNotifications.AUTHORIZE, PlayerEventCommand);
   this.registerCommand(SecurityNotifications.AUTHORIZATION_FAILED, PlayerEventCommand);
+  this.registerCommand(SecurityNotifications.AUTHENTICATION_FAILED, PlayerEventCommand);
+  this.registerCommand(SecurityNotifications.AUTHORIZATION_EXPIRED, PlayerEventCommand);
   this.registerCommand(Notifications.FAIL_OVER_ATTEMPT, PlayerEventCommand);
   this.registerCommand(Notifications.IS_LIVE, PlayerEventCommand);
-  this.registerCommand(Notifications.TIMED_METADATA, PlayerEventCommand);
   this.registerCommand(Notifications.PAUSED, PlayerEventCommand);
   this.registerCommand(Notifications.STALLED, PlayerEventCommand);
-  this.registerCommand(Notifications.BITRATE_CHANGE, PlayerEventCommand);
-  this.registerCommand(Notifications.BITRATE_CHANGING, PlayerEventCommand);
-  this.registerCommand(Notifications.BITRATE_LEVELS_LOADED, PlayerEventCommand);
-  this.registerCommand(Notifications.MUTED, PlayerEventCommand);
+  this.registerCommand(Notifications.QUALITY_CHANGE, PlayerEventCommand);
+  this.registerCommand(Notifications.QUALITY_SWITCHED, PlayerEventCommand);
+  this.registerCommand(Notifications.QUALITY_CHANGING, PlayerEventCommand);
+  this.registerCommand(Notifications.QUALITY_LEVELS_LOADED, PlayerEventCommand);
+  this.registerCommand(Notifications.MUTE_CHANGE, PlayerEventCommand);
   this.registerCommand(Notifications.RESUME, PlayerEventCommand);
+  this.registerCommand(Notifications.FRAGMENT_LOAD_START, PlayerEventCommand);
+  this.registerCommand(Notifications.FRAGMENT_LOADED, PlayerEventCommand);
+  this.registerCommand(Notifications.AUTOPLAY_BLOCKED, PlayerEventCommand);
   this.registerCommand(Notifications.MEDIA_SEQUENCE_STARTED, PlayerEventCommand);
   this.registerCommand(Notifications.MEDIA_SEQUENCE_ENDED, MediaSequenceEndedCommand);
   this.registerCommand(Notifications.ENABLE_VIDEO_EVENTS, EnableVideoEventsCommand);
@@ -3227,23 +4013,18 @@ HTMLPlayer.prototype.setMediaElement = function(value) {
   if (mediaElement != null) {
     mediaElement.removeEventListener("webkitpresentationmodechanged", this.presentationModeChanged);
   }
-  HTMLPlayer.__super__.setMediaElement.call(this, value);
-  value.playsInline = this.configuration.getPlaysInLine();
   value.addEventListener("webkitpresentationmodechanged", this.presentationModeChanged);
+  HTMLPlayer.__super__.setMediaElement.call(this, value);
   return value;
 };
 
-/** 
+/**
  * HACK: Fix for iOS 10 manipulating controls property incorrectly after leaving fullscreen
 */
 HTMLPlayer.prototype.presentationModeChanged = function(event) {
   if ("inline" === event.target.webkitPresentationMode) {
     event.target.controls = false;
   }
-};
-
-HTMLPlayer.prototype.evaluateBinding = function(binding) {
-  return this.bindings.evaluateBinding(binding);
 };
 
 HTMLPlayer.prototype.recordContentChange = function(content) {
@@ -3295,7 +4076,7 @@ HTMLPlayer.prototype.setAutoplay = function(value) {
 HTMLPlayer.prototype.getAutoplay = function() {
   var autoPlay, playbackProxy, _ref;
   playbackProxy = this.retrieveProxy(PlaybackProxy.NAME);
-  autoPlay = playbackProxy.initialized && (this.configuration.getAutoplay() || ((_ref = this.getMedia()) != null ? _ref.autoplay : void 0) === true);
+  autoPlay = ((Utils.isAutoplaySupported() && this.configuration.getMuted()) || playbackProxy.initialized) && (this.configuration.getAutoplay() || ((_ref = this.getMedia()) != null ? _ref.autoplay : void 0) === true);
   return autoPlay;
 };
 
@@ -3318,7 +4099,6 @@ HTMLPlayer.prototype.getMuted = function() {
 };
 
 HTMLPlayer.prototype.setMedia = function(value) {
-  HTMLPlayer.__super__.setMedia.call(this, value);
   this.sendNotification(Notifications.SET_MEDIA, value);
   return value;
 };
@@ -3333,10 +4113,23 @@ HTMLPlayer.prototype.setCurrentTime = function(value) {
 };
 
 HTMLPlayer.prototype.getCurrentTime = function() {
+  return this.appState.getCurrentTime();
+};
+
+HTMLPlayer.prototype.setAbsoluteCurrentTime = function(value) {
+  this.sendNotification(Notifications.SEEK, value);
+  return value;
+};
+
+HTMLPlayer.prototype.getAbsoluteCurrentTime = function() {
   return this.retrieveProxy(PlaybackProxy.NAME).getCurrentTime();
 };
 
 HTMLPlayer.prototype.getDuration = function() {
+  return this.appState.getDuration();
+};
+
+HTMLPlayer.prototype.getAbsoluteDuration = function() {
   return this.mediaProxy.getDuration();
 };
 
@@ -3404,7 +4197,13 @@ HTMLPlayer.prototype.exitFullScreen = function() {
 };
 
 HTMLPlayer.prototype.setPlaybackRate = function(value) {
+  var _ref;
+  if (((_ref = this.ads) != null ? _ref.inProgress : void 0) === true || value === this.getMediaElement().playbackRate) {
+    return;
+  }
+  this.appState.setPlaybackRate(value);
   this.getMediaElement().playbackRate = value;
+  this.dispatchEvent(new Event(Events.PLAYBACK_RATE_CHANGE, value));
 };
 
 HTMLPlayer.prototype.getPlaybackRate = function() {
@@ -3423,11 +4222,26 @@ HTMLPlayer.prototype.getQuality = function() {
   return this.retrieveProxy(PlaybackProxy.NAME).getQuality();
 };
 
-/** 
+HTMLPlayer.prototype.getQualityMode = function() {
+  return this.retrieveProxy(PlaybackProxy.NAME).getQualityMode();
+};
+
+HTMLPlayer.prototype.setQualityMode = function(value) {
+  return this.retrieveProxy(PlaybackProxy.NAME).setQualityMode(value);
+};
+
+/**
  * Gets the play state.
 */
 HTMLPlayer.prototype.getPlayState = function() {
   return this.appState.getPlayState();
+};
+
+/**
+ * Force the player into live mode during DVR playback
+*/
+HTMLPlayer.prototype.goLive = function() {
+  return this.retrieveProxy(PlaybackProxy.NAME).goLive();
 };
 
 /**
@@ -3477,6 +4291,7 @@ var FlashNotifications = {
   FAIL_OVER_ATTEMPT: "mediaPlayerFailoverAttempt",
   ELEMENT_EVENT: "mediaPlayerElementEvent",
   PLAY: "mediaPlayerResumeOrPausePlayback",
+  BUFFERING_CHANGE: "mediaPlayerBufferingChanged",
   APPLICATION_STATE_CHANGE: "mediaPlayerApplicationStateChange",
   INITIALIZED: "mediaPlayerInitialized",
   FULLSCREEN_CHANGE: "mediaPlayerFullscreenChange",
@@ -3501,7 +4316,7 @@ var FlashNotifications = {
 
 /**
  * PlaybackProxy constructor.
- * 
+ *
  * @constructor
  * @private
  * @extends {puremvc.Proxy}
@@ -3545,12 +4360,13 @@ function PlaybackProxy() {
     "stalled": this.onstalled.bind(this)
   };
   this.resume = {
-    event: Utils.getIEVersion() === -1 ? "loadedmetadata" : "canplaythrough",
+    event: Utils.getIEVersion() === -1 || Utils.getIEVersion() === 11 ? "loadedmetadata" : "canplaythrough",
     listener: this.resumestart.bind(this)
   };
   this.textTrackHandlers = {
     "addtrack": this.onaddtrack.bind(this)
   };
+  this.onneedkey = this.onneedkey.bind(this);
 }
 
 
@@ -3559,7 +4375,7 @@ __extends(PlaybackProxy, puremvc.Proxy);
 
 /**
  * The name of the this Proxy.
- * 
+ *
  * @static
  * @type {string}
 */
@@ -3585,12 +4401,12 @@ PlaybackProxy.prototype.activeCuesIndex = 0;
 
 PlaybackProxy.prototype.id3CueType = null;
 
-/**     
+/**
  * The current time of the video in seconds. Value must be between currentTime and duration.
- * 
+ *
  * @param {Number} value
  *    The new currentTime value in seconds
- * @returns {Number} 
+ * @returns {Number}
  *    The currentTime value in seconds
  * @type {Number}
 */
@@ -3634,7 +4450,7 @@ PlaybackProxy.prototype.resumestart = function(event) {
     _this = this;
   video = this.getMediaElement();
   this.handlers.durationchange(event);
-  if (this.data.currentTime > 0) {
+  if (this.data.currentTime > 0 && this.data.ended !== true) {
     setTimeout(function() {
       _this.seek(_this.data.currentTime).then(_this.resumecomplete.bind(_this));
     }, 50);
@@ -3663,50 +4479,30 @@ PlaybackProxy.prototype.onaddtrack = function(event) {
     return;
   }
   track.mode = "hidden";
-  this.id3CueType = window.VTTCue ? "VTTCue" : "textTrackCue";
   track.addEventListener("cuechange", function(event) {
-    var cue, id3, _i, _len, _ref, _ref1, _ref2, _ref3, _ref4, _ref5;
-    if ((_ref = event.target) != null ? (_ref1 = _ref.activeCues) != null ? _ref1.length : void 0 : void 0) {
-      cue = event.target.activeCues[_this.activeCuesIndex++];
-      if (_this.activeCuesIndex === event.target.activeCues.length) {
-        _this.activeCuesIndex = 0;
+    var cue, previousCue, _i, _len, _ref;
+    _ref = event.target.activeCues;
+    for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+      cue = _ref[_i];
+      if (!(previousCue !== cue)) {
+        continue;
       }
-      if (!(cue.value != null) && (cue.text != null)) {
-        cue.value = JSON.parse(cue.text);
-      }
-      id3 = {
-        startTime: cue.startTime,
-        endTime: cue.endTime,
-        key: (_ref2 = cue.value) != null ? _ref2.key : void 0,
-        info: (_ref3 = cue.value) != null ? _ref3.info : void 0,
-        data: cue.value
-      };
-    } else if (_this.playbackCoreName === "hls" && _this.id3CueType === "VTTCue") {
-      _ref4 = event.target.cues;
-      for (_i = 0, _len = _ref4.length; _i < _len; _i++) {
-        cue = _ref4[_i];
-        if ((Math.round(cue['startTime']) <= (_ref5 = Math.round(_this.getMediaElement().currentTime)) && _ref5 <= Math.ceil(cue['endTime'])) && (id3 = JSON.parse(cue.text))) {
-          break;
-        }
-      }
+      _this.sendNotification(Notifications.TIMED_METADATA, cue);
+      previousCue = cue;
     }
-    if (!(id3 != null)) {
-      return;
-    }
-    return _this.sendNotification(Notifications.TIMED_METADATA, id3);
   });
 };
 
 PlaybackProxy.prototype.ontimeupdate = function(event) {
-  var _ref;
-  if (((_ref = this.facade.ads) != null ? _ref.getInProgress() : void 0) === true) {
+  var currentTime, _ref;
+  currentTime = event.target.currentTime;
+  if (((_ref = this.facade.ads) != null ? _ref.inProgress : void 0) === true) {
     return;
   }
-  this.data.currentTime = event.target.currentTime;
-  this.sendNotification(Notifications.TIME_UPDATE, this.data.currentTime);
-  if (this.getMediaElement().ended === true && this.facade.appState.getEnded() === false) {
-    this.onended();
-  }
+  this.data.currentTime = currentTime;
+  this.sendNotification(Notifications.TIME_CHANGE, {
+    currentTime: currentTime
+  });
 };
 
 PlaybackProxy.prototype.ondurationchange = function(event) {
@@ -3734,7 +4530,7 @@ PlaybackProxy.prototype.onplaying = function(event) {
 };
 
 PlaybackProxy.prototype.onpause = function(event) {
-  if (this.getMediaElement().ended === true) {
+  if (this.getMediaElement().ended === true || this.facade.playState === PlayState.READY) {
     return;
   }
   if (this.data.waiting === true && this.playbackCoreName === "hls") {
@@ -3752,8 +4548,14 @@ PlaybackProxy.prototype.onloadeddata = function(event) {
 };
 
 PlaybackProxy.prototype.onwaiting = function(event) {
+  var video;
   this.data.waiting = true;
   this.sendNotification(Notifications.WAITING);
+  video = this.getMediaElement();
+  if (video.seeking === false && video.readyState === 2 && video.networkState === 2) {
+    video.once("playing", this.sendNotification.bind(this, Notifications.BUFFERING_CHANGE, false));
+    this.sendNotification(Notifications.BUFFERING_CHANGE, true);
+  }
 };
 
 PlaybackProxy.prototype.onstalled = function(event) {
@@ -3761,14 +4563,19 @@ PlaybackProxy.prototype.onstalled = function(event) {
 };
 
 PlaybackProxy.prototype.onseeking = function(event) {
+  var currentTime;
   this.getMediaElement().removeEventListener("timeupdate", this.handlers.timeupdate);
+  currentTime = event.target.currentTime;
+  this.sendNotification(Notifications.TIME_CHANGE, {
+    currentTime: currentTime
+  });
   this.data.seeking = true;
   this.sendNotification(Notifications.SEEKING);
 };
 
 PlaybackProxy.prototype.onseeked = function(event) {
   this.data.seeking = false;
-  this.sendNotification(Notifications.SEEKED);
+  this.sendNotification(Notifications.SEEKED, event.target.currentTime);
   this.getMediaElement().addEventListener("timeupdate", this.handlers.timeupdate);
 };
 
@@ -3801,16 +4608,15 @@ PlaybackProxy.prototype.oncanplay = function(event) {
 };
 
 PlaybackProxy.prototype.oncanplaythrough = function(event) {
+  this.createTracks();
   this.sendNotification(Notifications.CAN_PLAY_THROUGH);
   this.sendNotification(Notifications.PROGRESS, this.getDuration());
 };
 
 PlaybackProxy.prototype.onloadedmetadata = function(event) {
   this.metadataloaded = true;
-  this.createTracks();
   this.sendNotification(Notifications.ENABLE_FULL_SCREEN);
   this.sendNotification(Notifications.LOADED_METADATA);
-  this.applyTextTrackHandlers(true);
 };
 
 PlaybackProxy.prototype.applyTextTrackHandlers = function(data) {
@@ -3824,14 +4630,29 @@ PlaybackProxy.prototype.applyTextTrackHandlers = function(data) {
 /** @override
 */
 PlaybackProxy.prototype.createTracks = function() {
-  var audio, count, index, track, tracks, _i, _len;
+  var audio, changeEnabled, count, index, item, track, tracks, _i, _len;
   audio = this.getMediaElement().audioTracks;
   tracks = this.facade.retrieveProxy(TracksProxy.NAME).getAudioTracks();
+  changeEnabled = function(track, enabled) {
+    var _this = this;
+    this.facade.tracks.getAudioTracks().forEach(function(track) {
+      return track.data.enabled = false;
+    });
+    if (enabled !== true) {
+      return;
+    }
+    return this.facade.tracks.getAudioTracks()[track.id].data.enabled = true;
+  };
   if (audio != null) {
     count = audio.length || 0;
     for (index = _i = 0, _len = audio.length; _i < _len; index = ++_i) {
-      track = audio[index];
-      tracks.add(new Track(track), index + 1 === count);
+      item = audio[index];
+      if (Utils.fieldIsUnique(tracks, 'id', item.id) === false) {
+        continue;
+      }
+      track = new Track(item);
+      track.changeEnabled = changeEnabled.bind(this, track);
+      tracks.add(track, index + 1 === count);
     }
   }
 };
@@ -3857,19 +4678,26 @@ PlaybackProxy.prototype.getStarted = function() {
   return this.data.started;
 };
 
-/**     
+/**
  * The playback core
- * 
+ *
  * @param {HTMLVideoElement} value
  *    The new playback core
- * @returns {HTMLVideoElement} 
+ * @returns {HTMLVideoElement}
  *    The playback core
  * @type {HTMLVideoElement}
- * 
+ *
  * @private
 */
 PlaybackProxy.prototype.getMediaElement = function() {
   return this.facade.getMediaElement();
+};
+
+/**
+ *
+*/
+PlaybackProxy.prototype.canPlayMedium = function(medium) {
+  return medium === "video";
 };
 
 /**
@@ -3881,7 +4709,7 @@ PlaybackProxy.prototype.canPlayTemporalType = function(temporalType) {
 
 /**
  * Determines if the core can play a given mimeType.
- * 
+ *
  * @return {String} "" if the core can't play the mimeType
 */
 PlaybackProxy.prototype.canPlayType = function(mimeType) {
@@ -3896,10 +4724,10 @@ PlaybackProxy.prototype.canPlayType = function(mimeType) {
   return canPlay;
 };
 
-/**     
+/**
  * Indicates whether or not the video is playing.
- * 
- * @returns {Boolean} 
+ *
+ * @returns {Boolean}
  *    The playing value
  * @type {Boolean}
 */
@@ -3907,10 +4735,10 @@ PlaybackProxy.prototype.getPaused = function() {
   return this.data.paused;
 };
 
-/**     
+/**
  * Indicates whether or not the video is playing.
- * 
- * @returns {Boolean} 
+ *
+ * @returns {Boolean}
  *    The playing value
  * @type {Boolean}
 */
@@ -3918,12 +4746,12 @@ PlaybackProxy.prototype.getSeeking = function() {
   return this.data.seeking;
 };
 
-/**     
+/**
  * The current time of the video in seconds. Value must be between currentTime and duration.
- * 
+ *
  * @param {Number} value
  *    The new currentTime value in seconds
- * @returns {Number} 
+ * @returns {Number}
  *    The currentTime value in seconds
  * @type {Number}
 */
@@ -3954,7 +4782,7 @@ PlaybackProxy.prototype.seek = function(time) {
     try {
       video = _this.getMediaElement();
       seeked = function() {
-        setTimeout(resolve, 10);
+        setTimeout(resolve, 10, time);
       };
       video.once("seeked", seeked);
       video.currentTime = time;
@@ -3973,28 +4801,41 @@ PlaybackProxy.prototype.seek = function(time) {
   });
 };
 
-/**     
+/**
+*/
+PlaybackProxy.prototype.goLive = function() {
+  var mediaElement, time;
+  mediaElement = this.getMediaElement();
+  time = mediaElement.duration === Infinity ? mediaElement.seekable.end(0) : mediaElement.duration;
+  mediaElement.currentTime = time;
+};
+
+/**
  * The current time of the video in seconds. Value must be between currentTime and duration.
- * 
+ *
  * @param {Number} value
  *    The new currentTime value in seconds
- * @returns {Number} 
+ * @returns {Number}
  *    The currentTime value in seconds
  * @type {Number}
 */
 PlaybackProxy.prototype.getVolume = function() {
-  return this.getMediaElement().volume;
+  var mediaElement;
+  mediaElement = this.getMediaElement();
+  if (mediaElement.muted === true) {
+    return 0;
+  } else {
+    return mediaElement.volume;
+  }
 };
 
 PlaybackProxy.prototype.setVolume = function(value) {
   if (this.getMuted() && value > 0) {
-    this.setMuted(false);
+    this.setMuted(false, false);
   } else if (!this.getMuted() && value === 0) {
-    this.setMuted(true);
+    this.setMuted(true, false);
   }
-  if ((0 <= value && value <= 1) && value !== this.getMediaElement().volume) {
-    this.sendNotification(Notifications.VOLUME_CHANGE, this.getMediaElement().volume = value);
-  }
+  this.sendNotification(Notifications.VOLUME_CHANGE, this.getMediaElement().volume = value);
   return value;
 };
 
@@ -4004,28 +4845,34 @@ PlaybackProxy.prototype.getMuted = function() {
   return this.data.muted;
 };
 
-PlaybackProxy.prototype.setMuted = function(value) {
+PlaybackProxy.prototype.setMuted = function(value, changeVolume) {
   var volume;
+  if (changeVolume == null) {
+    changeVolume = true;
+  }
   if (this.data.muted === value) {
     return;
   }
   this.data.muted = value;
-  this.getMediaElement().muted = value;
   if (this.data.muted === true) {
     this.data.volume = this.getVolume();
     volume = 0;
   } else {
     volume = this.data.volume;
   }
-  this.sendNotification(Notifications.CHANGE_VOLUME, volume);
-  this.sendNotification(Notifications.MUTED, this.data.muted);
+  this.getMediaElement().muted = value;
+  if (changeVolume === true) {
+    this.sendNotification(Notifications.CHANGE_VOLUME, volume);
+    this.sendNotification(Notifications.VOLUME_CHANGE, volume);
+  }
+  this.sendNotification(Notifications.MUTE_CHANGE, this.data.muted);
   return value;
 };
 
 /**
  * The duration of the video in seconds.
- *     
- * @returns {Number} 
+ *
+ * @returns {Number}
  *    The duration of the video
  * @type {Number}
 */
@@ -4037,6 +4884,8 @@ PlaybackProxy.prototype.getDuration = function() {
  * Instructs the core to play.
 */
 PlaybackProxy.prototype.play = function() {
+  var promise,
+    _this = this;
   if (this.data.started !== true) {
     this.data.started = true;
     this.setEnabled(true);
@@ -4051,7 +4900,12 @@ PlaybackProxy.prototype.play = function() {
   if (this.getPaused()) {
     this.sendNotification(Notifications.RESUME);
   }
-  this.getMediaElement().play();
+  promise = this.getMediaElement().play();
+  if ((promise != null ? promise["catch"] : void 0) != null) {
+    promise["catch"](function(error) {
+      return _this.sendNotification(Notifications.AUTOPLAY_BLOCKED);
+    });
+  }
 };
 
 /**
@@ -4080,18 +4934,24 @@ PlaybackProxy.prototype.load = function() {
   element.addEventListener("loadedmetadata", this.handlers.loadedmetadata);
   element.addEventListener("durationchange", this.handlers.durationchange);
   element.addEventListener("canplaythrough", this.handlers.canplaythrough);
+  element.addEventListener("webkitneedkey", this.onneedkey);
   element.addEventListener("error", this.handlers.error);
+  this.applyTextTrackHandlers(true);
   this.applySrc();
 };
 
 PlaybackProxy.prototype.applySrc = function() {
-  var element, src, _ref;
+  var element, muted, src, _ref;
   src = this.getSrc();
   if (!(src != null) || src === "") {
     this.sendNotification(Notifications.ERROR, "The value of src is not supported: " + value);
   }
   element = this.getMediaElement();
   element.src = src;
+  muted = element.muted;
+  if (muted === true) {
+    this.data.muted = true;
+  }
   if (Utils.isIPad() && ((_ref = Utils.getIOSversion()) != null ? _ref[0] : void 0) < 8) {
     setTimeout(element.load.bind(element), 100);
   } else {
@@ -4107,8 +4967,12 @@ PlaybackProxy.prototype.getQualityLevels = function() {
   return [];
 };
 
+PlaybackProxy.prototype.getQualityMode = function() {};
+
+PlaybackProxy.prototype.setQualityMode = function(value) {};
+
 PlaybackProxy.prototype.destroy = function() {
-  var element, key, value, _ref;
+  var element, key, value, _ref, _ref1;
   element = this.getMediaElement();
   _ref = this.handlers;
   for (key in _ref) {
@@ -4116,6 +4980,89 @@ PlaybackProxy.prototype.destroy = function() {
     element.removeEventListener(key, value);
   }
   element.removeEventListener(this.resume.event, this.resume.listener);
+  element.removeEventListener("webkitneedkey", this.onneedkey);
+  if ((_ref1 = element.textTracks) != null) {
+    _ref1.removeEventListener("addtrack", this.textTrackHandlers.addtrack);
+  }
+};
+
+/**
+  The EME specification (https://dvcs.w3.org/hg/html-media/raw-file/tip/encrypted-media/encrypted-media.html)
+  is supported starting OSX 10.10 and greater.
+*/
+PlaybackProxy.prototype.onneedkey = function(event) {
+  var contentId, fps, initData, keySystem, keys, serverUrl, video,
+    _this = this;
+  video = event.target;
+  keySystem = Utils.getKeySystem();
+  keys = this.facade.mediaProxy.getKeys()[keySystem];
+  fps = this.facade.fps;
+  if (!(keys != null) || keySystem !== "com.apple.fps.1_0") {
+    return;
+  }
+  initData = event.initData;
+  contentId = fps.extractContentId(initData, keys);
+  serverUrl = fps.extractServerUrl(initData, keys);
+  fps.requestCertificate(keys).then(function(cert) {
+    return fps.concatInitDataIdAndCertificate(initData, contentId, cert);
+  }).then(function(initData) {
+    var session;
+    if (!WebKitMediaKeys.isTypeSupported(keySystem, "video/mp4")) {
+      throw "Key System not supported";
+    }
+    if (!(video.webkitKeys != null)) {
+      video.webkitSetMediaKeys(new WebKitMediaKeys(keySystem));
+    }
+    if (!(video.webkitKeys != null)) {
+      throw "Could not create MediaKeys";
+    }
+    session = video.webkitKeys.createSession("video/mp4", initData);
+    if (!(session != null)) {
+      throw "Could not create key session";
+    }
+    session.addEventListener("webkitkeymessage", function(event) {
+      fps.requestLicense(event.message, contentId, serverUrl, keys).then(function(key) {
+        session.update(key);
+      })["catch"](function(error) {
+        _this.facade.logger.error("[AMP DRM] A key request error was encountered.", error);
+      });
+    });
+    session.addEventListener("webkitkeyadded", function(event) {
+      _this.facade.logger.log("[AMP DRM] Decryption key was added to session.");
+    });
+    session.addEventListener("webkitkeyerror", function(event) {
+      _this.facade.logger.log("[AMP DRM] A decryption key error was encountered.", event);
+    });
+  })["catch"](function(error) {
+    _this.facade.logger.error(error);
+  });
+};
+
+/**
+ * The FlashPluginsInitializedCommand class.
+ *
+ * @constructor
+ * @private
+ * @extends {puremvc.SimpleCommand}
+*/
+function FlashPluginsInitializedCommand() {
+  FlashPluginsInitializedCommand.__super__.constructor.call(this);
+}
+
+
+__extends(FlashPluginsInitializedCommand, puremvc.SimpleCommand);
+
+
+/**
+ * Executes the command.
+ *
+ * @param {puremvc.Notification} notification
+ *    The notification.
+ *
+ * @override
+*/
+FlashPluginsInitializedCommand.prototype.execute = function(notification) {
+  setTimeout(this.facade.pluginsinitialized.bind(this.facade), 0);
 };
 
 /**
@@ -4148,41 +5095,36 @@ FlashStartCommand.prototype.execute = function(notification) {
 };
 
 /**
- * The RegisterPlaybackCoreCommand class.
- *   
+ * The WaitingCommand class.
+ *
  * @constructor
  * @private
- * @extends {amp.player.controller.PlayerEventCommand}
+ * @extends {puremvc.SimpleCommand}
 */
-function ChangePlaybackTargetCommand() {
-  ChangePlaybackTargetCommand.__super__.constructor.call(this);
+function BufferingChangeCommand() {
+  BufferingChangeCommand.__super__.constructor.call(this);
 }
 
 
-__extends(ChangePlaybackTargetCommand, PlayerCommand);
+__extends(BufferingChangeCommand, PlayerEventCommand);
 
 
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
-ChangePlaybackTargetCommand.prototype.execute = function(notification) {
-  var target;
-  target = notification.getBody();
-  this.applicationState.setPlaybackTarget(target);
-  if (target !== "amp") {
-    if (this.applicationState.getPlayState() !== PlayState.PAUSED) {
-      this.facade.pause();
-    }
-  } else {
-    if (this.applicationState.getPlayState() === PlayState.PLAYING) {
-      this.facade.play();
-    }
+BufferingChangeCommand.prototype.execute = function(notification) {
+  var buffering;
+  buffering = notification.getBody();
+  if (this.applicationState.getBuffering() === buffering) {
+    return;
   }
+  this.applicationState.setBuffering(buffering);
+  BufferingChangeCommand.__super__.execute.call(this, notification);
 };
 
 function LocalizationWrapper(player, config) {
@@ -4207,8 +5149,8 @@ LocalizationWrapper.NAME = "LocalizationWrapper";
 
 /**
 */
-LocalizationWrapper.prototype.getString = function(key) {
-  return this.proxy.getString(key);
+LocalizationWrapper.prototype.getString = function(key, context) {
+  return this.proxy.getString(key, context);
 };
 
 /** @override
@@ -4526,9 +5468,9 @@ LayerMediator.prototype.removeLayer = function() {
   this.sendNotification(Notifications.REMOVE_LAYER, this.viewComponent);
 };
 
-/** 
+/**
  * @constructor
- * @extends {LayerMediator} 
+ * @extends {LayerMediator}
  * @private
 */
 function VideoLayerMediator() {
@@ -4574,14 +5516,14 @@ VideoLayerMediator.prototype.handleNotification = function(notification) {
         this.mediator = null;
         this.mediaElement = body;
       }
-      this.facade.setMediaElement(this.mediaElement);
       if (this.mediaElement != null) {
+        this.facade.setMediaElement(this.mediaElement);
         this.viewComponent.appendChild(this.mediaElement);
       }
   }
 };
 
-/** 
+/**
  * @constructor
  * @private
  * @extends {ModuleMediator}
@@ -4812,8 +5754,8 @@ PlaybackTargetChangeCommand.prototype.execute = function(notification) {
 };
 
 /**
- * The AISFlashAuthenticatedCommand class.
- *   
+ * The FlashAuthorizedCommand class.
+ *
  * @constructor
  * @private
  * @extends {puremvc.SimpleCommand}
@@ -4828,28 +5770,25 @@ __extends(FlashAuthorizedCommand, PlayerEventCommand);
 
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
 FlashAuthorizedCommand.prototype.execute = function(notification) {
-  var src;
+  var media;
   FlashAuthorizedCommand.__super__.execute.call(this, notification);
-  src = this.media.getData().src || "";
-  if (src.indexOf(".smil") === -1) {
-    this.facade.loadAuthorized();
-  } else {
-    this.facade.getMediaElement().authenticationComplete({
-      media: this.media.getData()
-    });
-  }
+  media = Utils.clone(this.media.getData());
+  media.src = this.media.getSrc();
+  this.facade.getMediaElement().authenticationComplete({
+    media: media
+  });
 };
 
 /**
  * PlaybackCoreProxy constructor.
- * 
+ *
  * @constructor
  * @private
  * @extends {PlaybackProxy}
@@ -4877,6 +5816,14 @@ PlaybackCoreProxy.prototype.config = null;
 */
 PlaybackCoreProxy.prototype.onRegister = function() {
   this.mediaProxy = this.facade.retrieveProxy(MediaProxy.NAME);
+};
+
+/**
+*/
+PlaybackCoreProxy.prototype.getUseMAE = function() {
+  var maeConfig;
+  maeConfig = this.config.mae;
+  return (maeConfig != null) && maeConfig.enabled !== false;
 };
 
 /**
@@ -5093,9 +6040,9 @@ FlashPlaybackProxy.prototype.load = function() {
   this.player.load();
 };
 
-/** 
+/**
  * The FlashPlayer class
- *   
+ *
  * @param {Object} viewComponent
  * @constructor
  * @private
@@ -5163,11 +6110,36 @@ FlashPlayer.prototype.initialize = function(config, parentModule) {
   FlashPlayer.__super__.initialize.call(this, this.config, this.parentModule);
 };
 
+/**
+*/
+FlashPlayer.prototype.loadModuleResources = function(resources) {
+  var _this = this;
+  return FlashPlayer.__super__.loadModuleResources.call(this, resources).then(function() {
+    var key, locales, promises, update, value;
+    locales = _this.config.locales;
+    promises = [];
+    update = function(key, resource) {
+      locales[key] = resource.data;
+    };
+    for (key in locales) {
+      value = locales[key];
+      if (typeof value === "string") {
+        promises.push(AMP.addResource({
+          src: _this.evaluatePaths(value),
+          type: Utils.mimeTypes.json
+        }).then(update.bind(_this, key))["catch"](function(error) {
+          return Promise.resolve();
+        }));
+      }
+    }
+    return Promise.all(promises);
+  });
+};
+
 /** @override
 */
-FlashPlayer.prototype.createFramework = function() {
+FlashPlayer.prototype.pluginsinitialized = function() {
   var attributes, expressInstallSWF, flash, params, swf, swfs, version, xml, _ref;
-  FlashPlayer.__super__.createFramework.call(this);
   flash = this.config.flash || {};
   swfs = ((_ref = flash["static"]) != null ? _ref.enabled : void 0) === true ? flash["static"] : flash;
   swf = this.debug && (swfs.debug != null) ? swfs.debug : swfs.swf || "amp.swf";
@@ -5221,7 +6193,7 @@ FlashPlayer.prototype.playback = null;
 FlashPlayer.prototype.flashPlugins = [
   {
     id: "AkamaiAdvancedStreamingPlugin",
-    src: "http://players.edgesuite.net/flash/plugins/osmf/advanced-streaming-plugin/v3.10/osmf2.0/AkamaiAdvancedStreamingPlugin.swf",
+    src: "//sslplayers-vh.akamaihd.net/flash/plugins/osmf/advanced-streaming-plugin/v3.10/osmf2.0/AkamaiAdvancedStreamingPlugin.swf",
     absolute: true,
     host: "osmf",
     main: "com.akamai.osmf.AkamaiAdvancedStreamingPluginInfo",
@@ -5265,7 +6237,9 @@ FlashPlayer.prototype.createModel = function() {
 /** @override
 */
 FlashPlayer.prototype.createView = function() {
-  this.registerMediator(new FlashPlayerMediator(this.getViewComponent()));
+  FlashPlayer.__super__.createView.call(this);
+  this.mediator = new FlashPlayerMediator(this.getViewComponent());
+  this.registerMediator(this.mediator);
   this.registerMediator(new VideoLayerMediator());
   this.registerMediator(new OverlayLayerMediator());
   this.registerMediator(new LocalizationWrapper(this, this.config));
@@ -5274,7 +6248,19 @@ FlashPlayer.prototype.createView = function() {
 /** @override
 */
 FlashPlayer.prototype.createController = function() {
+  var _ref,
+    _this = this;
   FlashPlayer.__super__.createController.call(this);
+  if (((_ref = this.config.plugins) != null ? _ref.react : void 0) != null) {
+    this.registerCommand(Notifications.CHANGE_DISPLAY_STATE, ChangeDisplayStateCommand);
+    this.getDisplayState = function() {
+      return _this.appState.getDisplayState();
+    };
+    this.setDisplayState = function(value) {
+      return _this.sendNotification(Notifications.CHANGE_DISPLAY_STATE, value);
+    };
+  }
+  this.registerCommand(PluginNotifications.PLUGINS_INITIALIZED, FlashPluginsInitializedCommand);
   this.registerCommand(SecurityNotifications.AUTHORIZE, PlayerEventCommand);
   this.registerCommand(SecurityNotifications.AUTHORIZED, FlashAuthorizedCommand);
   this.registerCommand(Notifications.CHANGE_PLAY_STATE, ChangePlayStateCommand);
@@ -5284,9 +6270,11 @@ FlashPlayer.prototype.createController = function() {
   this.registerCommand(Notifications.PLAY, PlayerEventCommand);
   this.registerCommand(Notifications.PLAY_REQUEST, PlayerEventCommand);
   this.registerCommand(FlashNotifications.FLASH_CREATED, PlayerEventCommand);
-  this.registerCommand(Notifications.CHANGE_PLAYBACK_TARGET, ChangePlaybackTargetCommand);
   this.registerCommand(Notifications.PLAYBACK_TARGET_CHANGE, PlaybackTargetChangeCommand);
   this.registerCommand(Notifications.UPDATE_DATA_BINDINGS, UpdateDataBindingsCommand);
+  this.registerCommand(Notifications.BUFFERING_CHANGE, BufferingChangeCommand);
+  this.registerCommand(FlashNotifications.CREATE_XML, PlayerEventCommand);
+  this.registerCommand(FlashNotifications.CREATE_FLASH_VARS, PlayerEventCommand);
 };
 
 /** @override
@@ -5366,14 +6354,16 @@ FlashPlayer.prototype.getModules = function() {
 /** @override
 */
 FlashPlayer.prototype.createPlugins = function() {
-  var def, feature, key, plugin, register, _ref;
+  var def, feature, init, key, plugin, plugins, promises, register, type, _ref,
+    _this = this;
+  type = this.getPlayerType();
   _ref = AMP.plugins;
   for (key in _ref) {
     register = _ref[key];
     if (!((key in this.config) && (this.config[key] != null) && !(this.config[key].enabled === false))) {
       continue;
     }
-    def = register[this.getPlayerType()];
+    def = register[type];
     if (!(def != null)) {
       this.logger.debug("[AMP] Plugin could not be found: " + key);
       continue;
@@ -5394,10 +6384,52 @@ FlashPlayer.prototype.createPlugins = function() {
       continue;
     }
   }
-  if (this.config.flash.view != null) {
-    this.flashView = Utils.override(this.flashView, this.config.flash.view);
+  plugins = this.config.plugins || {};
+  promises = [];
+  for (key in plugins) {
+    init = plugins[key];
+    if (!((init != null) && init.enabled !== false)) {
+      continue;
+    }
+    plugin = function(player, config, key) {
+      return _this.loadResources(config.resources).then(function() {
+        def = AMP.plugins[key][type];
+        if (!(def != null)) {
+          throw new Error("[AMP] Plugin could not be found: " + key);
+        }
+        return def(player, config, key).then(function(result) {
+          _this.logger.debug("[AMP] Plugin registered: " + key);
+          return {
+            key: key,
+            value: result
+          };
+        });
+      })["catch"](function(error) {
+        return _this.logger.error("[AMP] Plugin could not be created: " + key + ". " + error);
+      });
+    };
+    promises.push(plugin.bind(null, this, init, key));
   }
-  this.sendNotification(PluginNotifications.PLUGINS_INITIALIZED, this.plugins);
+  promises = promises.map(function(item) {
+    return item();
+  });
+  Promise.all(promises).then(function(plugins) {
+    var plugin, _i, _len;
+    if (_this.config.flash.view != null) {
+      _this.flashView = Utils.override(_this.flashView, _this.config.flash.view);
+    }
+    for (_i = 0, _len = plugins.length; _i < _len; _i++) {
+      plugin = plugins[_i];
+      if (!(plugin != null)) {
+        continue;
+      }
+      _this[plugin.key] = plugin.value;
+      _this.plugins[plugin.key] = plugin.value;
+    }
+    return _this.sendNotification(PluginNotifications.PLUGINS_INITIALIZED, _this.plugins);
+  })["catch"](function(error) {
+    return _this.logger.error(error);
+  });
 };
 
 /**
@@ -5588,7 +6620,7 @@ FlashPlayer.prototype.createXML = function(config) {
     xml: xml
   });
   parseResources = function(config) {
-    var key, plugins, resource, resources, value, _i, _len;
+    var key, plugins, resource, resources, value, _i, _len, _ref1;
     resources = config.resources;
     plugins = [];
     if ((resources instanceof Array) && ((resources != null ? resources.length : void 0) > 0)) {
@@ -5620,6 +6652,13 @@ FlashPlayer.prototype.createXML = function(config) {
     for (key in config) {
       value = config[key];
       if (key !== "flash" && ((resources = value != null ? value.resources : void 0) != null) && (resources instanceof Array) && (resources.length > 0)) {
+        plugins = plugins.concat(parseResources(value));
+      }
+    }
+    _ref1 = config.plugins;
+    for (key in _ref1) {
+      value = _ref1[key];
+      if (((resources = value != null ? value.resources : void 0) != null) && (resources instanceof Array) && (resources.length > 0)) {
         plugins = plugins.concat(parseResources(value));
       }
     }
@@ -5742,7 +6781,8 @@ FlashPlayer.prototype.createdHandler = function(obj) {
 /**
 */
 FlashPlayer.prototype.eventHandler = function(eventName, body) {
-  var error, event, helper, media, state, type, update, _ref, _ref1, _ref2, _ref3;
+  var error, event, helper, media, state, type, update, _ref, _ref1, _ref2, _ref3,
+    _this = this;
   if (this.logEvents && !this.excludedFlashEvents.test(eventName)) {
     this.logger.log("[AMP FLASH EVENT] " + eventName, body);
   }
@@ -5817,6 +6857,7 @@ FlashPlayer.prototype.eventHandler = function(eventName, body) {
         break;
       case FlashNotifications.PLAY_REQUEST:
         this.sendNotification(Notifications.PLAY_REQUEST);
+        this.setPlayState("playing");
         type = Notifications.MEDIA_SEQUENCE_STARTED;
         this.loaded = true;
         this._ended = false;
@@ -5827,11 +6868,12 @@ FlashPlayer.prototype.eventHandler = function(eventName, body) {
         }
         break;
       case FlashNotifications.ENDED:
-        type = state = Notifications.ENDED;
-        this._ended = true;
+        type = Notifications.ENDED;
         break;
       case FlashNotifications.MEDIA_SEQUENCE_ENDED:
         type = Notifications.MEDIA_SEQUENCE_ENDED;
+        state = Notifications.ENDED;
+        this._ended = true;
         break;
       case FlashNotifications.PAUSED:
         type = "pause";
@@ -5843,6 +6885,9 @@ FlashPlayer.prototype.eventHandler = function(eventName, body) {
           type = state = "waiting";
         }
         break;
+      case FlashNotifications.BUFFERING_CHANGE:
+        this.sendNotification(Notifications.BUFFERING_CHANGE, body);
+        return;
       case FlashNotifications.DURATION_CHANGE:
         if (!isNaN(body.time)) {
           if (body.time === 0) {
@@ -5850,13 +6895,18 @@ FlashPlayer.prototype.eventHandler = function(eventName, body) {
           }
           type = "durationchange";
           body = body.time;
+          setTimeout(function() {
+            _this.setCues(_this.getCues().slice());
+          }, 0);
         }
         break;
       case FlashNotifications.VOLUME_CHANGE:
         type = "volumechange";
+        body = body.volume;
         break;
       case FlashNotifications.TIME_UPDATE:
         type = "timeupdate";
+        body = body.currentTime;
         break;
       case FlashNotifications.SEEKING_CHANGE:
         if (this.appState.getSeeking() === false && body.seeking === false) {
@@ -5908,7 +6958,7 @@ FlashPlayer.prototype.eventHandler = function(eventName, body) {
     if (type != null) {
       if (type === "error") {
         error = body.error || body;
-        this.error("Flash Error", error);
+        this.logError("Flash Error", error);
       }
       this.sendNotification(type, body);
       this.sendNotification(Notifications.DISPATCH_EVENT, new Event(type, body));
@@ -5920,11 +6970,11 @@ FlashPlayer.prototype.eventHandler = function(eventName, body) {
       this.setPlayState(state);
     }
   } catch (error) {
-    this.error("Event Error: " + eventName, error);
+    this.logError("Event Error: " + eventName, error);
   }
 };
 
-FlashPlayer.prototype.error = function(msg, error) {
+FlashPlayer.prototype.logError = function(msg, error) {
   this.logger.error("[AMP FLASH ERROR]", msg, error);
 };
 
@@ -5957,19 +7007,25 @@ FlashPlayer.prototype.getPlayState = function() {
  * Initializes the player to a given set of parameters
 */
 FlashPlayer.prototype.setMedia = function(value) {
-  FlashPlayer.__super__.setMedia.call(this, value);
+  var _this = this;
   if (this.getPlayState() != null) {
     this.setPlayState("ready");
   }
-  this.mediaProxy.setData(value);
-  if (value.src != null) {
-    this.setSrc(value.src);
-  }
-  if ((value.source != null) && value.source.length > 0) {
-    this.setSource(value.source);
-  }
-  this.sendNotification(Notifications.MEDIA_CHANGE, value);
-  this.load(this.mediaProxy.getData());
+  value = this.mediaProxy.transform(value);
+  this.transform(TransformType.MEDIA, value).then(function(result) {
+    value = result;
+    _this.mediaProxy.setData(value);
+    if (value.src != null) {
+      _this.setSrc(value.src);
+    }
+    if ((value.source != null) && value.source.length > 0) {
+      _this.setSource(value.source);
+    }
+    _this.sendNotification(Notifications.MEDIA_CHANGE, value);
+    return _this.load(_this.mediaProxy.getData());
+  })["catch"](function(error) {
+    return _this.sendNotification(Notifications.ERROR, error);
+  });
   return value;
 };
 
@@ -5983,32 +7039,28 @@ FlashPlayer.prototype.getMedia = function() {
  * Loads the video.
  *
 */
-FlashPlayer.prototype.load = function(data) {
-  var media;
-  if (data == null) {
-    data = {};
-  }
+FlashPlayer.prototype.load = function() {
+  var data, key, media, value;
   media = this.mediaProxy.getData();
-  if (data.autoplay == null) {
-    data.autoplay = this.config.autoplay;
-  }
-  this.loadAuthorized = this._loadAuthorized.bind(this, media, data);
   this.security.setMedia(media);
   if (this.security.getAuthorized()) {
-    this.loadAuthorized(data);
+    this.loaded = true;
+    data = Utils.clone(media);
+    if (data.autoplay == null) {
+      data.autoplay = this.config.autoplay;
+    }
+    for (key in data) {
+      value = data[key];
+      if (value === void 0) {
+        delete data[key];
+      }
+    }
+    this.getMediaElement().loadURL(this.mediaProxy.getSrc(), data);
   } else {
     this.sendNotification(SecurityNotifications.AUTHORIZE, {
-      media: media,
-      data: data
+      media: media
     });
   }
-};
-
-/**
-*/
-FlashPlayer.prototype._loadAuthorized = function(media, data) {
-  this.loaded = true;
-  this.getMediaElement().loadURL(this.mediaProxy.getSrc(), data);
 };
 
 /**
@@ -6033,7 +7085,7 @@ FlashPlayer.prototype.setMuted = function(value) {
       this.getMediaElement().unmute();
     }
   } catch (error) {
-    this.error("Flash muted error", error);
+    this.logError("Flash muted error", error);
   }
   return value;
 };
@@ -6079,10 +7131,10 @@ FlashPlayer.prototype.getAutoplay = function() {
 
 /**
  * The url to the video.
- * 
- * @param {String} value 
+ *
+ * @param {String} value
  *    The new title of the video
- * @returns {Boolean} 
+ * @returns {Boolean}
  *    The title of the video
  * @type {String}
 */
@@ -6199,19 +7251,6 @@ FlashPlayer.prototype.getFlashJSON = function() {
   return JSON.parse(decodeURIComponent(this.flashvars.settings_json));
 };
 
-FlashPlayer.prototype.evaluateBinding = function(str) {
-  var value;
-  value = this.getMediaElement().evaluateBinding(str);
-  if (value != null) {
-    try {
-      value = JSON.parse(value);
-    } catch (error) {
-
-    }
-  }
-  return value;
-};
-
 FlashPlayer.prototype.canPlayType = function(mimeType) {
   if (__indexOf.call(Utils.flashTypes, mimeType) >= 0) {
     return "maybe";
@@ -6252,7 +7291,8 @@ FlashPlayer.prototype.setParams = function(value) {
 };
 
 FlashPlayer.prototype.getVolume = function() {
-  return this.getMediaElement().getVolume();
+  var _ref;
+  return ((_ref = this.getMediaElement()) != null ? typeof _ref.getVolume === "function" ? _ref.getVolume() : void 0 : void 0) || 0;
 };
 
 FlashPlayer.prototype.setVolume = function(value, scope) {
@@ -6317,70 +7357,24 @@ FlashPlayer.prototype.setQuality = function(value) {
 };
 
 FlashPlayer.prototype.getQuality = function() {
-  return this.getMediaElement().getQuality();
+  var quality;
+  try {
+    quality = this.getMediaElement().getQuality();
+  } catch (error) {
+
+  }
+  return quality;
 };
 
 FlashPlayer.prototype.getQualityLevels = function() {
-  return this.getMediaElement().getQualityLevels();
-};
-
-Events = {
-  LOADED_METADATA: "loadedmetadata",
-  READY: "ready",
-  ERROR: "error",
-  ENDED: "ended",
-  STARTED: "started",
-  DURATION_CHANGE: "durationchange",
-  SEEKING: "seeking",
-  SEEKED: "seeked",
-  TIME_UPDATE: "timeupdate",
-  LOAD_START: "loadstart",
-  LOADED_DATA: "loadeddata",
-  CAN_PLAY: "canplay",
-  CAN_PLAY_THROUGH: "canplaythrough",
-  PROGRESS: "progress",
-  MEDIA_CHANGE: "mediachange",
-  WAITING: "waiting",
-  STALLED: "stalled",
-  PLAY: "play",
-  PLAYING: "playing",
-  PAUSE: "pause",
-  PAUSED: "paused",
-  PLAY_REQUEST: "playrequest",
-  MEDIUM_CHANGE: "mediumchange",
-  TEMPORAL_TYPE_CHANGE: "temporaltypechange",
-  VOLUME_CHANGE: "volumechange",
-  FAIL_OVER_ATTEMPT: "failoverattempt",
-  PLAYBACK_TARGET_CHANGE: "playbacktargetchange",
-  PLAYBACK_TARGET_AVAILABLE: "playbacktargetavailable",
-  RECORD_CONTENT_CHANGE: "recordcontentchange",
-  IS_LIVE: "islive",
-  CONTENT_CHANGED: "contentchanged",
-  BITRATE_CHANGE: "bitratechange",
-  BITRATE_CHANGING: "bitratechanging",
-  BITRATE_LEVELS_LOADED: "bitratelevelsloaded",
-  MEDIA_SEQUENCE_STARTED: "mediasequencestarted",
-  MEDIA_SEQUENCE_ENDED: "mediasequenceended",
-  MEDIA_SEQUENCE_ABORTED: "mediasequenceaborted",
-  LANGUAGE_CHANGE: "languagechange",
-  TIMED_METADATA: "timedmetadata",
-  VIEW_CREATED: "viewcreated",
-  MUTED: "muted",
-  RESUME: "resume",
-  PLAY_STATE_CHANGE: "playstatechange",
-  FULL_SCREEN_CHANGE: "fullscreenchange",
-  init: function() {
-    var key, value;
-    this.values = [];
-    for (key in this) {
-      value = this[key];
-      if (key !== "values" && key !== "init") {
-        this.values.push(value);
-      }
-    }
+  var levels, _base;
+  try {
+    levels = (typeof (_base = this.getMediaElement()).getQualityLevels === "function" ? _base.getQualityLevels() : void 0) || [];
+  } catch (error) {
+    levels = [];
   }
+  return levels;
 };
-Events.init();
 
 /**
  * The ModuleAdapter class.
@@ -6452,6 +7446,168 @@ ModuleAdapter.prototype.handleNotification = function(notification) {
   this.module.sendNotification(notification.getName(), notification.getBody(), notification.getType());
 };
 
+Events = {
+  LOADED_METADATA: "loadedmetadata",
+  READY: "ready",
+  ERROR: "error",
+  ENDED: "ended",
+  STARTED: "started",
+  DURATION_CHANGE: "durationchange",
+  SEEKING: "seeking",
+  SEEKED: "seeked",
+  TIME_UPDATE: "timeupdate",
+  LOAD_START: "loadstart",
+  LOADED_DATA: "loadeddata",
+  CAN_PLAY: "canplay",
+  CAN_PLAY_THROUGH: "canplaythrough",
+  PROGRESS: "progress",
+  MEDIA_CHANGE: "mediachange",
+  WAITING: "waiting",
+  BUFFERING_CHANGE: "bufferingchange",
+  STALLED: "stalled",
+  PLAY: "play",
+  PLAYING: "playing",
+  PAUSE: "pause",
+  PAUSED: "paused",
+  PLAY_REQUEST: "playrequest",
+  MEDIUM_CHANGE: "mediumchange",
+  TEMPORAL_TYPE_CHANGE: "temporaltypechange",
+  VOLUME_CHANGE: "volumechange",
+  FAIL_OVER_ATTEMPT: "failoverattempt",
+  PLAYBACK_TARGET_CHANGE: "playbacktargetchange",
+  PLAYBACK_TARGET_AVAILABILITY_CHANGE: "playbacktargetavailabilitychange",
+  RECORD_CONTENT_CHANGE: "recordcontentchange",
+  IS_LIVE: "islive",
+  CONTENT_CHANGED: "contentchanged",
+  PLAYBACK_RATE_CHANGE: "playbackratechange",
+  SETTINGS_CHANGE: "settingschange",
+  QUALITY_CHANGE: "qualitychange",
+  QUALITY_CHANGING: "qualitychanging",
+  QUALITY_SWITCHED: "qualityswitched",
+  QUALITY_MODE_CHANGE: "qualitymodechange",
+  QUALITY_LEVELS_LOADED: "qualitylevelsloaded",
+  MEDIA_SEQUENCE_STARTED: "mediasequencestarted",
+  MEDIA_SEQUENCE_ENDED: "mediasequenceended",
+  MEDIA_SEQUENCE_ABORTED: "mediasequenceaborted",
+  AUTOPLAY_BLOCKED: "autoplayblocked",
+  LANGUAGE_CHANGE: "languagechange",
+  TIMED_METADATA: "timedmetadata",
+  CUES_CHANGE: "cueschange",
+  VIEW_CREATED: "viewcreated",
+  MUTE_CHANGE: "mutechange",
+  RESUME: "resume",
+  PLAY_STATE_CHANGE: "playstatechange",
+  FULL_SCREEN_CHANGE: "fullscreenchange",
+  BUSY: "busy",
+  DESTROY: "destroy",
+  init: function() {
+    var key, value;
+    this.values = [];
+    for (key in this) {
+      value = this[key];
+      if (key !== "values" && key !== "init") {
+        this.values.push(value);
+      }
+    }
+  }
+};
+Events.init();
+
+/**
+ * Creates a new Transformer
+ *
+ * @constructor
+ * @private
+*/
+function Transformer(_target) {
+  this._target = _target != null ? _target : this;
+  this._transformMap = {};
+}
+
+/**
+ * Adds a transform for a given type.
+ *
+ * @param {!string}  type  A string representing the event's type.
+ * @param {!Function} transform  A function to call when the event is triggered.
+*/
+Transformer.prototype.addTransform = function(type, transform) {
+  var _base;
+  if (!(transform != null) || !(type != null)) {
+    return;
+  }
+  if ((_base = this._transformMap)[type] == null) {
+    _base[type] = [];
+  }
+  if (this._transformMap[type].indexOf(transform) !== -1) {
+    return;
+  }
+  this._transformMap[type].push(transform);
+  this.sort(type);
+};
+
+/**
+ * Sorts the transform list by priority. Higher priority Transforms
+ * are executed first.
+ *
+ * @param {!String} type The tranform type
+*/
+Transformer.prototype.sort = function(type, func) {
+  var _this = this;
+  if (func == null) {
+    func = function(a, b) {
+      var aP, bP;
+      aP = a.priority || 0;
+      bP = b.priority || 0;
+      if (aP > bP) {
+        return -1;
+      } else if (aP < bP) {
+        return 1;
+      } else {
+        return 0;
+      }
+    };
+  }
+  return this._transformMap[type].sort(func);
+};
+
+/**
+ * Performs a transform for a given type
+ *
+ * @param {!String} type The tranform type
+ * @param {!Object} value The value to be transformed
+*/
+Transformer.prototype.transform = function(type, value) {
+  var transforms;
+  transforms = this._transformMap[type];
+  if (!(transforms != null)) {
+    return Promise.resolve(value);
+  }
+  return Utils.transform(transforms, value);
+};
+
+/**
+ * Removes a transform for a given type.
+ *
+ * @param {!string}  type  A string representing the tranform's type.
+ * @param {!Function} transform  A function or Transform object to call when the type is triggered.
+ * @return {?Function} the transform that was removed if any
+*/
+Transformer.prototype.removeTransform = function(type, transform) {
+  var index, transforms;
+  if (!(transform != null) || !(type != null)) {
+    return;
+  }
+  transforms = this._transformMap[type];
+  if (!(transforms != null)) {
+    return;
+  }
+  index = transforms != null ? transforms.indexOf(transform) : void 0;
+  if (index === -1) {
+    return;
+  }
+  return transforms.splice(index, 1);
+};
+
 /**
  * @constructor
 */
@@ -6462,42 +7618,14 @@ function DataBinding() {}
  * @type {RegExp}
  * @const
 */
-DataBinding.SINGLE = /^\s*#{([^#{}]+)}\s*$/;
+DataBinding.SINGLE = /^\s*[#\$]{([^\$#{}]+)}\s*$/;
 
 /**
  * @private
  * @type {RegExp}
  * @const
 */
-DataBinding.TOKEN = /#{([^#}]*)}/g;
-
-/**
- * @private
- * @type {string}
- * @const
-*/
-DataBinding.RETURN = "return ";
-
-/**
- * @private
- * @type {string}
- * @const
-*/
-DataBinding.EVENT = "event";
-
-/**
- * @private
- * @type {string}
- * @const
-*/
-DataBinding.ELEMENT = "element";
-
-/**
- * @private
- * @type {string}
- * @const
-*/
-DataBinding.PATHS = "paths";
+DataBinding.TOKEN = /[#\$]{([^\$#}]*)}/g;
 
 /**
  * Evaluate a data bound string.
@@ -6508,24 +7636,32 @@ DataBinding.PATHS = "paths";
  * @param {?Object} context
  *   The context object used as "global" when evaluating the binding.
  *
- * @param {?Object} event
- *   An optional event object to expose to the binding.
- *
  * @return {string}
  *   The evaluated result
 */
-DataBinding["eval"] = function(binding, context, event, element, paths) {
-  var result, single, _ref;
+DataBinding["eval"] = function(binding, context) {
+  var _this = this;
   if (!(binding != null)) {
     return binding;
   }
-  single = (_ref = this.SINGLE.exec(binding)) != null ? _ref[1] : null;
-  result = single != null ? this.evalBinding(single, context, event, element, paths) : this.evalString(binding, context, event, element, paths);
-  return result;
+  if (this.SINGLE.test(binding)) {
+    try {
+      return this.exec(binding.replace(this.SINGLE, "$1"), context);
+    } catch (error) {
+      return binding;
+    }
+  }
+  return binding.replace(this.TOKEN, function(match, token, offset, string) {
+    try {
+      return _this.exec(token, context);
+    } catch (error) {
+      return match;
+    }
+  });
 };
 
 /**
- * Evaluate a data bound string.
+ * Execute a data bound string.
  *
  * @param {string} binding
  *   The data bound string.
@@ -6533,71 +7669,52 @@ DataBinding["eval"] = function(binding, context, event, element, paths) {
  * @param {?Object} context
  *   The context object used as "global" when evaluating the binding.
  *
- * @param {?Object} event
- *   An optional event object to expose to the binding.
- *
  * @return {string}
  *   The evaluated result
- *
- * @private
 */
-DataBinding.evalString = function(binding, context, event, element, paths) {
-  return binding.replace(this.TOKEN, this.replaceBinding.bind(this, context, event, element, paths));
+DataBinding.exec = function(binding, context) {
+  return (new Function("with (this) { return " + binding + " }")).bind(context)();
 };
 
 /**
- * @private
-*/
-DataBinding.replaceBinding = function(context, event, element, paths, match, token, offset, string) {
-  return this.evalBinding(token, context, event, element, paths);
-};
-
-/**
- * Evaluate a data bound string.
+ * Evaluate a data bound object.
  *
- * @param {string} binding
- *   The data bound string.
+ * @param {Object} binding
+ *   The data bound object.
  *
- * @param {?Object} context
- *   The context object used as "this" when evaluating the binding.
+ * @param {Object} context
+ *   The context object used as "global" when evaluating the binding.
  *
- * @param {?Object} event
- *   An optional event object to expose to the binding.
- *
- * @return {string}
+ * @return {Object}
  *   The evaluated result
- *
- * @private
 */
-DataBinding.evalBinding = function(binding, context, event, element, paths) {
-  var result;
-  try {
-    result = this.exec(binding, context, event, element, paths);
-  } catch (error) {
-    result = '#{' + binding + '}';
+DataBinding.evaluateBindings = function(value, context, clone) {
+  var key,
+    _this = this;
+  if (clone == null) {
+    clone = true;
   }
-  return result;
-};
-
-/**
- * Execute a data binding.
- *
- * @param {string} binding
- *   The data bound string.
- *
- * @param {?Object} context
- *   The context object used as "this" when evaluating the binding.
- *
- * @param {?Object} event
- *   An optional event object to expose to the binding.
- *
- * @return {string}
- *   The evaluated result
- *
- * @private
-*/
-DataBinding.exec = function(binding, context, event, element, paths) {
-  return (new Function(this.EVENT, this.ELEMENT, this.PATHS, this.RETURN + binding)).bind(context)(event, element, paths);
+  if (!(value != null)) {
+    return;
+  }
+  if (typeof value === "object") {
+    clone = clone === true ? JSON.parse(JSON.stringify(value)) : value;
+    if (value instanceof Array) {
+      return clone.map(function(item) {
+        return _this.evaluateBindings(item, context, false);
+      });
+    } else {
+      value = {};
+      for (key in clone) {
+        value[key] = this.evaluateBindings(clone[key], context, false);
+      }
+      return value;
+    }
+  } else if (typeof value === "string") {
+    return this["eval"](value, context);
+  } else {
+    return value;
+  }
 };
 
 /**
@@ -6655,13 +7772,17 @@ var Notifications = {
   CHANGE_MEDIA: "changeMedia",
   SET_MEDIA: "setmedia",
   MEDIA_VALIDATED: "mediavalidated",
+  CHANGE_SETTINGS: "changesettings",
   UPDATE_DATA_BINDINGS: "updatedatabindings",
   CHANGE_VOLUME: "changevolume",
   CHANGE_MUTED: "changemuted",
   TOGGLE_MUTED: "togglemuted",
+  CHANGE_TIME: "changetime",
+  TIME_CHANGE: "timechange",
   SEEK: "seek",
   CHANGE_DURATION: "changeduration",
   CHANGE_AUTOPLAY: "changeAutoplay",
+  AUTOPLAY_CHANGE: "autoplaychange",
   CHANGE_LOOP: "changeLoop",
   PLAYBACK_CORE_CHANGE: "playbackCoreChange",
   START: "start",
@@ -6682,8 +7803,6 @@ var Notifications = {
   REMOVE_APPLICATION_STATE: "removeApplicationState",
   DISPATCH_EVENT: "dispatchEvent",
   CHANGE_PARAMS: "changeParams",
-  ADD_CUE_POINTS: "addCuePoints",
-  REMOVE_CUE_POINTS: "removeCuePoints",
   INITIALIZED: "initialized",
   REGISTER_PLAYBACK_CORE: "registerPlaybackCore",
   REMOVE_PLAYBACK_CORE: "removePlaybackCore",
@@ -6711,22 +7830,62 @@ Notifications.init();
 
 /**
  * The Config class
- * 
+ *
  * @param Object} overrides
  *    Config overrides
- * 
+ *
  * @constructor
 */
 function Config(overrides) {
-  var config, key, value;
+  var config, key, react, value;
   if (overrides == null) {
     overrides = {};
+  }
+  if (!(akamai.amp.AMP.plugins.controls != null)) {
+    react = {
+      plugins: {
+        react: {
+          resources: [
+            {
+              src: "https://unpkg.com/react@15/dist/react.min.js",
+              debug: "https://unpkg.com/react@15/dist/react.js",
+              type: "text/javascript"
+            }, {
+              src: "https://unpkg.com/react-dom@15/dist/react-dom.min.js",
+              debug: "https://unpkg.com/react-dom@15/dist/react-dom.js",
+              type: "text/javascript"
+            }, {
+              src: "https://unpkg.com/prop-types/prop-types.min.js",
+              debug: "https://unpkg.com/prop-types/prop-types.min.js",
+              type: "text/javascript"
+            }, {
+              src: '#{paths.plugins}react/React.min.css',
+              debug: '#{paths.plugins}react/React.css',
+              type: "text/css"
+            }, {
+              src: '#{paths.plugins}react/React.min.js',
+              debug: '#{paths.plugins}react/React.js',
+              type: "text/javascript"
+            }
+          ],
+          autoHide: 3
+        }
+      }
+    };
+    overrides = Utils.override(react, overrides);
   }
   config = Utils.override(Config.defaults, overrides);
   if (/amp\-debug\=true/.test(location.search.toLowerCase()) === true) {
     config.debug = true;
   }
+  if (typeof QueryString.amp === "object") {
+    config = Utils.override(config, QueryString.amp);
+  }
   config.mode = Utils.getPlaybackMode(config.mode);
+  if (Utils.getIEVersion() === 9) {
+    config.plugins.react = null;
+    config.flash.view = Utils.override(config.flash.view, Config.flashView);
+  }
   config.version = AMP.getVersion();
   for (key in config) {
     value = config[key];
@@ -6740,13 +7899,17 @@ Config.create = function(overrides) {
 
 Config.defaults = {
   paths: {
+    base: "../",
+    root: "../",
     player: "../amp.premier/",
+    plugins: "../akamai/amp/",
     resources: "../resources/"
   },
   resources: [
     {
       src: '#{paths.player}amp.premier.css',
-      type: "text/css"
+      type: "text/css",
+      async: true
     }
   ],
   rules: {
@@ -6754,18 +7917,18 @@ Config.defaults = {
       regexp: "Android 4"
     }
   },
+  attributes: {},
+  settings: {},
   autoplay: true,
-  playsinline: false,
   loop: false,
+  playsinline: null,
+  muted: null,
   target: "_blank",
   domain: "akamai.com",
   fullscreen: {},
-  controls: {},
   contextmenu: {},
-  volumepanel: {
-    direction: "vertical"
-  },
   captioning: {},
+  controls: {},
   playoverlay: {},
   hls: {
     resources: [
@@ -6779,16 +7942,15 @@ Config.defaults = {
       startLevel: -1
     },
     data: {
-      enableWorker: true,
-      enableSoftwareAES: true
+      enableWorker: true
     }
   },
   dash: {
     resources: [
       {
         type: "text/javascript",
-        src: "//cdn.dashjs.org/v2.1.1/dash.all.min.js",
-        debug: "//cdn.dashjs.org/v2.1.1/dash.all.debug.js"
+        src: "//cdn.dashjs.org/v2.6.4/dash.all.min.js",
+        debug: "//cdn.dashjs.org/v2.6.4/dash.all.debug.js"
       }
     ],
     buffer: 1
@@ -6820,36 +7982,33 @@ Config.defaults = {
     },
     view: {
       attributes: {
-        skin: '#{paths.player}premier.assets.swf'
+        skin: '#{paths.player}amp.chromeless.assets.swf'
       },
       elements: {
-        infoOverlay: {
-          attributes: {
-            style: "top: 0px;"
-          }
-        },
+        controls: {},
         adOptions: {
           attributes: {
-            style: "backgroundColor: 'rgba(0, 0, 0, 1)'"
+            style: "backgroundColor: 'rgba(0, 0, 0, 0)'"
           },
           elements: {
-            adChoices: {
-              attributes: {
-                target: "http://www.akamai.com/"
-              }
-            },
-            adCountdown: {},
-            adCount: {}
+            adChoices: null,
+            adCountdown: null,
+            adCount: null
           }
         },
         endSlate: {
           attributes: {
-            enabled: "true",
+            enabled: false,
             hideElements: "brandingLogo|viewAll"
           }
         },
-        replayView: {},
-        bufferingView: {}
+        loadingView: {
+          attributes: {
+            enabled: false,
+            style: "backgroundColor: 'rgba(0, 0, 0, 0)'; color: 'rgba(0, 0, 0, 0)'",
+            radius: 0
+          }
+        }
       }
     }
   },
@@ -6883,16 +8042,27 @@ Config.defaults = {
       MSG_ENTER_FULLSCREEN: "Enter Fullscreen",
       MSG_EXIT_FULLSCREEN: "Exit Fullscreen",
       MSG_MUTE: "Mute",
+      MSG_JUMP_BACK: "Jump Back",
+      MSG_JUMP_AHEAD: "Jump Ahead",
       MSG_VOLUME: "Volume",
       MSG_REPLAY: "Replay",
       MSG_SETTINGS: "Settings",
       MSG_SHARE: "Share",
+      MSG_CLOSED_CAPTIONING: "Closed Captioning",
+      MSG_SLIDER: "Slider",
+      MSG_SEEK: "Seek",
+      MSG_OF: "of",
+      MSG_AD: "Ad",
       MSG_PREVIEW: "Preview",
       MSG_CURRENT: "Current",
       MSG_SEEK_TO: "Seek to",
       MSG_LIVE: "LIVE",
-      MSG_DEFAULT_ERROR_MESSAGE: "Sorry, we were unable to play the media you selected. Please try again, or select alternate media.",
-      MSG_ERROR_PREFIX: "Error encountered:",
+      MSG_ERROR: "Error",
+      MSG_ERROR_ABORTED: "Media Aborted",
+      MSG_ERROR_DECODE: "Decode Error",
+      MSG_ERROR_NETWORK: "Network Error",
+      MSG_ERROR_SRC: "Source not supported",
+      MSG_ERROR_DEFAULT: "An error has occurred",
       MSG_STREAM_NOT_FOUND: "Stream not found",
       MSG_CURRENT_WORKING_BANDWIDTH: "Current working bandwidth",
       MSG_CURRENT_BITRATE_PLAYING: "Current bitrate playing",
@@ -6923,172 +8093,238 @@ Config.defaults = {
       MSG_CC_APPLY: "Apply",
       MSG_CC_PREVIEW_TEXT: "Lorem ipsum dolor sit amet..",
       MSG_EN: "English",
+      MSG_ENG: "English",
       MSG_ES: "Spanish",
+      MSG_SPA: "Spanish",
       MSG_DE: "German",
+      MSG_DEU: "German",
+      MSG_GER: "German",
       MSG_FR: "French",
+      MSG_FRE: "French",
+      MSG_FRA: "French",
       MSG_IT: "Italian",
+      MSG_ITA: "Italian",
       MSG_RU: "Russian",
+      MSG_RUS: "Russian",
       MSG_ZH: "Chinese",
-      MSG_CHROMECAST_MESSAGE: "Video playing on another screen",
+      MSG_ZHO: "Chinese",
+      MSG_CHI: "Chinese",
+      MSG_JA: "Japanese",
+      MSG_JPN: "Japanese",
+      MSG_KO: "Korean",
+      MSG_KOR: "Korean",
+      MSG_CHROMECAST_MESSAGE: "Video playing on ${device}",
       MSG_RETRY_MESSAGE: "Content not yet available, retrying in",
       MSG_SECONDS: "seconds",
       MSG_RETRY_FAILED: "Retry failed",
       MSG_RECOMMENDATIONS_TITLE: "Recommended",
-      MSG_VIEWER_ID: "Viewer ID: "
+      MSG_VIEWER_ID: "Viewer ID: ",
+      MSG_SIGN_IN: "Sign In",
+      MSG_PREVIEW_INFO: "Free Preview",
+      MSG_PREVIEW_EXPIRES: "Expires in",
+      MSG_UNKNOWN: "Unknown"
     },
-    es: {
-      MSG_TIME_SEPARATOR: " / ",
-      MSG_EMAIL_TO: "a",
-      MSG_EMAIL_FROM: "de",
-      MSG_EMAIL_VIDEO: "Enviar este vídeo",
-      MSG_EMAIL_MESSAGE_DEFAULT: "Echa un vistazo a este video de xxx",
-      MSG_EMAIL_MESSAGE: "mensaje",
-      MSG_EMAIL_ADDRESS_INVALID: "Dirección de correo electrónico no válida",
-      MSG_EMAIL_MESSAGE_INVALID: "Por favor limite su mensaje a 500 caracteres o menos.",
-      MSG_EMAIL_CHARACTERS_REMAINING_TEXT: "personajes de la izquierda",
-      MSG_EMAIL_SEND_FAILURE: "El mensaje no pudo ser enviado.",
-      MSG_EMAIL_SEND_SUCCESS_MESSAGE: "Tu email ha sido enviado!",
-      MSG_SHARE_VIDEO_TEXT: "Comparte este vídeo...",
-      MSG_POST_TEXT: "enviar",
-      MSG_EMBED_TEXT: "incrustar",
-      MSG_LINK_TEXT: "enlace",
-      MSG_SHARE_CONNECT_FAILURE: "No se puede conectar. Por favor, inténtelo de nuevo.",
-      MSG_SHARE_CONTENT_DISABLED: "Compartir e incrustar están desactivados.",
-      MSG_VERSION_TEXT: "versión",
-      MSG_BUFFERING_TEXT: "el almacenamiento en búfer",
-      MSG_CUSTOMIZE_CLIP_POINTS: "Personalizar el inicio y el punto final del video.",
-      MSG_PAUSE: "Pausa",
-      MSG_PLAY: "Reproducir",
-      MSG_REWIND: "Retroceder",
-      MSG_PLAYBACK_RATE: "Playback Rate",
-      MSG_FULLSCREEN: "Pantalla completa",
-      MSG_ENTER_FULLSCREEN: "Ir a pantalla completa",
-      MSG_EXIT_FULLSCREEN: "Exit Fullscreen",
-      MSG_MUTE: "Silencio",
-      MSG_VOLUME: "Volumen",
-      MSG_REPLAY: "Reproducir de nuevo",
-      MSG_SETTINGS: "Configuraciones",
-      MSG_SHARE: "Compartir",
-      MSG_PREVIEW: "vista previa",
-      MSG_CURRENT: "corriente",
-      MSG_SEEK_TO: "Tratar de",
-      MSG_LIVE: "EN VIVO",
-      MSG_DEFAULT_ERROR_MESSAGE: "Lo sentimos, no hemos podido jugar los medios de comunicación seleccionados. Por favor, inténtelo de nuevo, o seleccionar los medios de comunicación alternativos.",
-      MSG_ERROR_PREFIX: "Se produjo un error:",
-      MSG_STREAM_NOT_FOUND: "Stream que no se encuentra",
-      MSG_CURRENT_WORKING_BANDWIDTH: "Ancho de banda actual de trabajo",
-      MSG_CURRENT_BITRATE_PLAYING: "Tasa de bits de reproducción actual",
-      MSG_MAX_BITRATE_AVAILABLE: "Tasa de bits máxima disponible",
-      MSG_NOT_AVAILABLE: "No está disponible",
-      MSG_GO_LIVE: "IR A VIVIR",
-      MSG_NEXT_VIDEO: "El próximo video comienza en: ",
-      MSG_RECOMMENDED: "Recomendado",
-      MSG_CC: "CC",
-      MSG_VIEW_ALL: "ver todo ",
-      MSG_VIDEO: " vídeos.",
-      MSG_EN: "Inglés",
-      MSG_ES: "Español",
-      MSG_DE: "Alemán",
-      MSG_FR: "Francés",
-      MSG_IT: "Italiano",
-      MSG_RU: "Ruso",
-      MSG_ZH: "Chino",
-      MSG_RETRY_MESSAGE: "Content not yet available, retrying in",
-      MSG_SECONDS: "seconds",
-      MSG_RETRY_FAILED: "Retry failed",
-      MSG_RECOMMENDATIONS_TITLE: "Recomendado",
-      MSG_VIEWER_ID: "Viewer ID: "
+    es: '#{paths.player}es.json',
+    fr: '#{paths.player}fr.json'
+  }
+};
+
+Config.flashView = {
+  attributes: {
+    skin: '#{paths.player}premier.assets.swf'
+  },
+  elements: {
+    infoOverlay: {
+      attributes: {
+        style: "top: 0px;"
+      }
+    },
+    adOptions: {
+      attributes: {
+        style: "backgroundColor: 'rgba(0, 0, 0, 1)'"
+      },
+      elements: {
+        adChoices: {
+          attributes: {
+            target: "http://www.akamai.com/"
+          }
+        },
+        adCountdown: {},
+        adCount: {}
+      }
+    },
+    endSlate: {
+      attributes: {
+        enabled: true,
+        hideElements: "brandingLogo|viewAll"
+      }
+    },
+    replayView: {},
+    bufferingView: {},
+    controls: {
+      attributes: {
+        height: "28",
+        itemMargin: "5",
+        scrubPosition: "inline"
+      },
+      elements: {
+        replayBtn: {},
+        playPauseBtn: {},
+        streamTimeIndicator: {
+          attributes: {
+            exclude: "live"
+          },
+          elements: {
+            streamTime: {},
+            streamDuration: {}
+          }
+        },
+        rewindBtn: {},
+        scrubBar: {
+          attributes: {
+            style: "height: 18px;"
+          }
+        },
+        progressBar: {
+          attributes: {
+            style: "background: linear-gradient(90deg, #FF0000, #1B1B1B);"
+          }
+        },
+        loadedBar: {
+          attributes: {
+            style: "background: linear-gradient(90deg, #00FF00, #1B1B1B);"
+          }
+        },
+        liveIndicator: {},
+        timeLocationIndicator: {},
+        goLiveBtn: {},
+        statsBtn: {},
+        volumeBar: {
+          attributes: {
+            color: "#CA2127"
+          }
+        },
+        volumeBtn: {},
+        fullscreenBtn: {}
+      }
     }
   }
 };
 
-function ITokenized() {}
-
 /**
- * The tokenized data structure
+ * @enum {string}
+ * @const
+ * @private
 */
-ITokenized.prototype.data = null;
 
-/**
- * The literal value after compiliation
-*/
-ITokenized.prototype.value = null;
+var DisplayState = {
+  /**
+   * Constant representing the normal display state
+  */
 
-/**
- * The original data structure
-*/
-ITokenized.prototype.source = null;
+  NORMAL: "normal",
+  /**
+   * Constant representing the full screen display state
+  */
 
-/**
- *
-*/
-ITokenized.prototype.parse = function(data) {};
-
-/**
- * Compiles the tokenized values in the data property
- * and saves them to the value property. As a convenience
- * this function returns the value property.
- * 
- * @param context         An object who's properties can be called from within a token
- * @param suppressErrors  Flag indicating wether or not to suppress errors. Useful when certain context items are known not to exist.
- * @return                The compile value object.
-*/
-ITokenized.prototype.compile = function(context, suppressErrors) {
-  if (context == null) {
-    context = {};
-  }
-  if (suppressErrors == null) {
-    suppressErrors = false;
-  }
+  FULL_SCREEN: "full-screen"
 };
 
 /**
+ * The DataBoundConfigurationProxy class.
+ *
  * @constructor
  * @private
- * @extends {ITokenized}
- * @param {string} source
+ * @extends {ModuleProxy}
+ * @param {Object} data
 */
-function TokenizedBase(source) {
-  if (source != null) {
-    this.parse(source);
-  }
+function DataBoundConfigurationProxy(data) {
+  DataBoundConfigurationProxy.__super__.constructor.call(this, data);
+  this.value = {};
 }
 
 
-__extends(TokenizedBase, ITokenized);
+__extends(DataBoundConfigurationProxy, ModuleProxy);
 
 
-/**
- * The tokenized data structure
+/** @static
 */
-TokenizedBase.prototype.data = null;
+DataBoundConfigurationProxy.NAME = ModuleProxy.NAME;
 
-/**
- * The literal value after compiliation
-*/
-TokenizedBase.prototype.value = null;
+DataBoundConfigurationProxy.prototype.bindings = null;
 
-/**
- * The original data structure
-*/
-TokenizedBase.prototype.source = null;
+DataBoundConfigurationProxy.prototype.configurationName = null;
 
-/**
- * Populates the data property with tokenized values
- * 
- * @param   {Array.<Object>|Object|string|number|boolean} source  The tokenized data structure.
- * @return  {Object} The parsed data structure.
-*/
-TokenizedBase.prototype.parse = function(source) {
-  var value;
-  if (source instanceof Array) {
-    value = new TokenizedArray(source);
-  } else if (source instanceof Object) {
-    value = new TokenizedObject(source);
-  } else {
-    value = new TokenizedValue(source);
+DataBoundConfigurationProxy.prototype.contextName = null;
+
+DataBoundConfigurationProxy.prototype.contextData = null;
+
+DataBoundConfigurationProxy.prototype.value = null;
+
+DataBoundConfigurationProxy.prototype.getConfigurationName = function() {
+  return this.configurationName;
+};
+
+DataBoundConfigurationProxy.prototype.getConfigurationData = function() {
+  return this.value || {};
+};
+
+DataBoundConfigurationProxy.prototype.getContextName = function() {
+  return this.contextName;
+};
+
+DataBoundConfigurationProxy.prototype.getContextData = function() {
+  return this.contextData;
+};
+
+DataBoundConfigurationProxy.prototype.onRegister = function() {
+  var base;
+  base = this.facade.player || this.facade;
+  if (!(this.getConfigurationName() != null)) {
+    this.configurationName = this.facade.moduleName;
   }
-  return value;
+  this.bindings = base.retrieveProxy(DataBindingProxy.NAME);
+  this.bindings.registerConfiguration(this);
+  if (!(this.getContextName() != null)) {
+    return;
+  }
+  this.bindings.registerContext(this);
+  this.value = DataBinding.evaluateBindings(this.data, this.bindings.getData());
+};
+
+DataBoundConfigurationProxy.prototype.setData = function(data) {
+  var key, value, _ref;
+  if (data == null) {
+    data = {};
+  }
+  this.data = {};
+  _ref = this.getDefaults();
+  for (key in _ref) {
+    value = _ref[key];
+    this.data[key] = key in data ? data[key] : value;
+  }
+  return this.data;
+};
+
+DataBoundConfigurationProxy.prototype.getValue = function(key) {
+  this.bindings.update();
+  this.value[key] = DataBinding.evaluateBindings(this.data[key], this.bindings.getData());
+  return this.value[key];
+};
+
+DataBoundConfigurationProxy.prototype.compile = function(context, suppressErrors) {
+  if (suppressErrors == null) {
+    suppressErrors = false;
+  }
+  if (!(context != null)) {
+    context = this.bindings.getData();
+  }
+  if ((this.contextName != null) && (this.contextData != null)) {
+    context = Utils.clone(context);
+    context[this.contextName] = this.contextData;
+  }
+  this.value = DataBinding.evaluateBindings(this.data, this.bindings.getData());
+  return this.value;
 };
 
 /**
@@ -7100,7 +8336,43 @@ TokenizedBase.prototype.parse = function(source) {
 var SecurityNotifications = {
   AUTHORIZATION_FAILED: "authorizationfailed",
   AUTHORIZE: "authorize",
-  AUTHORIZED: "authorized"
+  AUTHORIZED: "authorized",
+  AUTHENTICATION_FAILED: "authenticationfailed",
+  AUTHENTICATE: "authenticate",
+  AUTHENTICATED: "authenticated",
+  AUTHORIZATION_EXPIRED: "authorizationexpired"
+};
+
+/**
+ * @constructor
+ * @private
+*/
+function ParamsProxy(data) {
+  ParamsProxy.__super__.constructor.call(this, data);
+}
+
+
+__extends(ParamsProxy, DataBoundConfigurationProxy);
+
+
+/** @static
+*/
+ParamsProxy.NAME = "ParamsProxy";
+
+ParamsProxy.prototype.defaults = {};
+
+ParamsProxy.prototype.configurationName = "params";
+
+/** @override
+*/
+ParamsProxy.prototype.setData = function(data) {
+  var key, value;
+  this.data = {};
+  for (key in data) {
+    value = data[key];
+    this.data[key] = data[key];
+  }
+  return this.data;
 };
 
 /** 
@@ -7375,7 +8647,7 @@ EventHandler.prototype.trigger = function(event) {
 */
 /**
  * Creates a new instance of MediaProxy.
- * 
+ *
  * @constructor
  * @private
 */
@@ -7426,8 +8698,20 @@ ConfigurationProxy.prototype.setData = function(value) {
 /**
  * Plays iniline
 */
-ConfigurationProxy.prototype.getPlaysInLine = function() {
+ConfigurationProxy.prototype.getPlaysInline = function() {
   return this.data.playsinline;
+};
+
+/**
+ * Plays iniline
+*/
+ConfigurationProxy.prototype.getMuted = function() {
+  return this.data.muted;
+};
+
+ConfigurationProxy.prototype.setMuted = function(value) {
+  this.data.muted = value;
+  return value;
 };
 
 /**
@@ -7457,12 +8741,12 @@ ConfigurationProxy.prototype.setLoop = function(value) {
 /**
  * End Slate.
 */
-ConfigurationProxy.prototype.getEndSlate = function() {
-  return this.data.endslate;
+ConfigurationProxy.prototype.getSettings = function() {
+  return this.data.settings;
 };
 
-ConfigurationProxy.prototype.setEndSlate = function(value) {
-  this.data.endslate = value;
+ConfigurationProxy.prototype.setSettings = function(value) {
+  this.data.settings = value;
   return value;
 };
 
@@ -7546,6 +8830,213 @@ ConfigurationProxy.prototype.setFullscreen = function(value) {
 };
 
 /**
+ * @constructor
+ * @private
+ * @extends {ModuleMediator}
+*/
+function SettingsMediator() {
+  SettingsMediator.__super__.constructor.call(this, this.NAME);
+  this.namespace = "akamai_amp";
+  this.defaults = {
+    volume: 1,
+    captions: {
+      visible: false,
+      fontFamily: "'Courier New', Courier, 'Nimbus Mono L', 'Cutive Mono', monospace",
+      size: "small",
+      scroll: "popout",
+      fontColor: "rgba(255,255,255,1)",
+      edgeType: "text-shadow: 0px 0px 0px",
+      edgeColor: "rgba(0,0,0,0)",
+      backgroundColor: "rgba(0,0,0,0)",
+      windowColor: "rgba(0,0,0,0.5)"
+    }
+  };
+}
+
+
+__extends(SettingsMediator, puremvc.Mediator);
+
+
+SettingsMediator.NAME = "SettingsMediator";
+
+/** @override
+*/
+SettingsMediator.prototype.onRegister = function() {
+  var config, data, settings;
+  config = this.facade.retrieveProxy(ModuleProxy.NAME).getSettings() || {};
+  if (config.namespace != null) {
+    this.namespace = config.namespace;
+  }
+  this.settings = Utils.override(config.defaults, this.defaults);
+  try {
+    data = localStorage.getItem(this.namespace);
+    if (data != null) {
+      settings = JSON.parse(data);
+    }
+  } catch (_error) {}
+  this.save(settings);
+};
+
+/** @override
+*/
+SettingsMediator.prototype.listNotificationInterests = function() {
+  return [Notifications.READY, Notifications.VOLUME_CHANGE, Notifications.CHANGE_AUTOPLAY];
+};
+
+/** @override
+*/
+SettingsMediator.prototype.handleNotification = function(notification) {
+  var body, name, value;
+  name = notification.getName();
+  body = notification.getBody();
+  switch (name) {
+    case Notifications.READY:
+      value = this.settings.volume;
+      if (value != null) {
+        this.sendNotification(Notifications.CHANGE_VOLUME, value);
+      }
+      value = this.settings.autoplay;
+      if (value != null) {
+        this.sendNotification(Notifications.CHANGE_AUTOPLAY, value);
+      }
+      break;
+    case Notifications.CHANGE_AUTOPLAY:
+      if (this.settings.autoplay === body) {
+        return;
+      }
+      this.change({
+        autoplay: body
+      });
+      break;
+    case Notifications.VOLUME_CHANGE:
+      if (this.settings.volume === body) {
+        return;
+      }
+      this.change({
+        volume: body
+      });
+  }
+};
+
+/**
+*/
+SettingsMediator.prototype.change = function(settings) {
+  var captions, changes, edgeColor, edgeType, fontFamily;
+  if (!(settings != null) || typeof settings !== "object" || settings instanceof Array) {
+    return;
+  }
+  changes = Utils.diff(this.settings, settings);
+  if (!(changes != null)) {
+    return;
+  }
+  captions = changes.captions;
+  if (captions != null) {
+    edgeColor = captions.edgeColor || "";
+    if (edgeColor === "none") {
+      captions.edgeColor = "rgba(0,0,0,0)";
+    }
+    edgeType = captions.edgeType;
+    if (edgeType != null) {
+      switch (edgeType.toLowerCase()) {
+        case "none":
+          edgeType = "text-shadow: 0px 0px 0px";
+          break;
+        case "depressed":
+          edgeType = "text-shadow: 0px 1px 0px";
+          break;
+        case "left drop shadow":
+          edgeType = "text-shadow: -3px 3px 2px";
+          break;
+        case "raised":
+          edgeType = "text-shadow: 0px 1px 1px";
+          break;
+        case "right drop shadow":
+          edgeType = "text-shadow: 3px 3px 2px";
+          break;
+        case "uniform":
+          edgeType = "text-shadow: 0px 0px 4px";
+      }
+      captions.edgeType = edgeType;
+    }
+    if (captions.fontSize != null) {
+      captions.size = captions.fontSize;
+      delete captions.fontSize;
+    }
+    fontFamily = captions.fontFamily;
+    if (fontFamily != null) {
+      if (this.fontFamily == null) {
+        this.fontFamily = {
+          "Monospaced Serif": "Courier New, Courier, Nimbus Mono L, Cutive Mono, monospace",
+          "Proportional Serif": "Times New Roman, Times, Georgia, Cambria, PT Serif Caption, serif",
+          "Monospaced Sans-Serif": "Deja Vu Sans Mono, Lucida Console, Monaco, Consolas, PT Mono, monospace",
+          "Proportional Sans-Serif": "Roboto, Arial Unicode Ms, Arial, Helvetica, Verdana, PT Sans Caption, sans-serif",
+          "Casual": "Comic Sans MS, Impact, Handlee, fantasy",
+          "Cursive": "Monotype Corsiva, URW Chancery L, Apple Chancery, Dancing Script, cursive",
+          "Small Capitals": "Arial Unicode Ms, Arial, Helvetica, Verdana, Marcellus SC, sans-serif; font-variant: small-caps"
+        };
+      }
+      if (typeof fontFamily === "object") {
+        this.fontFamily = Utils.override(this.fontFamily, fontFamily);
+      } else if (typeof fontFamily === "string") {
+        if (Object.keys(this.fontFamily).indexOf(fontFamily) !== -1) {
+          captions.fontFamily = this.fontFamily[fontFamily];
+        }
+      }
+    }
+  }
+  this.save(changes);
+  this.sendNotification(Notifications.SETTINGS_CHANGE, changes);
+};
+
+/**
+*/
+SettingsMediator.prototype.getSettings = function() {
+  return Object.freeze(Object.assign({
+    defaults: Object.assign({}, this.defaults),
+    change: this.change.bind(this)
+  }, this.settings));
+};
+
+/**
+*/
+SettingsMediator.prototype.save = function(settings) {
+  this.settings = Utils.override(this.settings, settings);
+  try {
+    localStorage.setItem(this.namespace, JSON.stringify(this.settings));
+  } catch (_error) {}
+};
+
+/**
+ * The ChangeAutoplayCommand class.
+ *
+ * @constructor
+ * @private
+ * @extends {amp.player.controller.PlayerCommand}
+*/
+function ChangeSettingsCommand() {
+  ChangeSettingsCommand.__super__.constructor.call(this);
+}
+
+
+__extends(ChangeSettingsCommand, PlayerCommand);
+
+
+/**
+ * Executes the command.
+ *
+ * @param {puremvc.Notification} notification
+ *    The notification.
+ *
+ * @override
+*/
+ChangeSettingsCommand.prototype.execute = function(notification) {
+  var _ref;
+  if ((_ref = this.facade.retrieveMediator(SettingsMediator.NAME)) != null) {
+    _ref.change(notification.getBody());
+  }
+};
+
+/**
  * AudioPlaybackProxy constructor.
  * 
  * @constructor
@@ -7576,6 +9067,13 @@ AudioPlaybackProxy.prototype.onRemove = function() {
   this.facade.createMediaElement();
 };
 
+/**
+ *
+*/
+AudioPlaybackProxy.prototype.canPlayMedium = function(medium) {
+  return medium === "audio";
+};
+
 /** @override
 */
 AudioPlaybackProxy.prototype.canPlayType = function(mimeType) {
@@ -7585,63 +9083,117 @@ AudioPlaybackProxy.prototype.canPlayType = function(mimeType) {
   return "";
 };
 
-/**
- * @constructor
- * @private
- * @extends {TokenizedBase}
- * @param {Array.<Object>} data
-*/
-function TokenizedArray(data) {
-  TokenizedArray.__super__.constructor.call(this, data);
-}
+function FPS() {}
 
+FPS.extractContentId = function(initData, keys) {
+  var link;
+  link = document.createElement('a');
+  link.href = Utils.arrayToString(initData);
+  return link.hostname;
+};
 
-__extends(TokenizedArray, TokenizedBase);
+FPS.extractServerUrl = function(initData, keys) {
+  return keys.serverURL || keys.serverUrl;
+};
 
+FPS.requestCertificate = function(keys) {
+  var request;
+  request = {
+    url: keys.cert,
+    responseType: "arraybuffer",
+    headers: {
+      "Pragma": "Cache-Control: no-cache",
+      "Cache-Control": "max-age=0"
+    }
+  };
+  return Utils.request(request).then(function(xhr) {
+    return new Uint8Array(xhr.response);
+  });
+};
 
-/**
- *
-*/
-TokenizedArray.prototype.parse = function(data) {
-  var index, token, _i, _len;
-  this.data = [];
-  for (index = _i = 0, _len = data.length; _i < _len; index = ++_i) {
-    token = data[index];
-    this.data[index] = TokenizedArray.__super__.parse.call(this, token);
+FPS.concatInitDataIdAndCertificate = function(initData, id, cert) {
+  var buffer, certArray, dataView, idArray, initDataArray, offset;
+  if (typeof id === "string") {
+    id = Utils.stringToArray(id);
   }
-  return this.data;
+  offset = 0;
+  buffer = new ArrayBuffer(initData.byteLength + 4 + id.byteLength + 4 + cert.byteLength);
+  dataView = new DataView(buffer);
+  initDataArray = new Uint8Array(buffer, offset, initData.byteLength);
+  initDataArray.set(initData);
+  offset += initData.byteLength;
+  dataView.setUint32(offset, id.byteLength, true);
+  offset += 4;
+  idArray = new Uint16Array(buffer, offset, id.length);
+  idArray.set(id);
+  offset += idArray.byteLength;
+  dataView.setUint32(offset, cert.byteLength, true);
+  offset += 4;
+  certArray = new Uint8Array(buffer, offset, cert.byteLength);
+  certArray.set(cert);
+  return new Uint8Array(buffer, 0, buffer.byteLength);
+};
+
+FPS.requestLicense = function(message, contentId, serverUrl, keys) {
+  var key, request, value, _ref,
+    _this = this;
+  request = {
+    url: serverUrl,
+    method: "POST",
+    responseType: "text",
+    headers: {
+      "Content-type": "application/x-www-form-urlencoded"
+    },
+    data: "spc=" + (Utils.base64EncodeUint8Array(message)) + "&assetId=" + (encodeURIComponent(contentId))
+  };
+  if (keys.httpRequestHeaders != null) {
+    _ref = keys.httpRequestHeaders;
+    for (key in _ref) {
+      value = _ref[key];
+      request.headers[key] = value;
+    }
+  }
+  if (typeof keys.withCredentials === "boolean") {
+    request.withCredentials = keys.withCredentials;
+  }
+  return Utils.request(request).then(function(xhr) {
+    var keyText;
+    keyText = xhr.responseText.trim();
+    if (keyText.substr(0, 5) === "<ckc>" && keyText.substr(-6) === "</ckc>") {
+      keyText = keyText.slice(5, -6);
+    }
+    return Utils.base64DecodeUint8Array(keyText);
+  })["catch"](function(error) {
+    throw "The license request failed.";
+  });
 };
 
 /**
- *
+ * @enum {string}
+ * @const
 */
-TokenizedArray.prototype.compile = function(context, suppressErrors) {
-  var index, token, _i, _len, _ref;
-  if (context == null) {
-    context = {};
-  }
-  if (suppressErrors == null) {
-    suppressErrors = false;
-  }
-  this.value = [];
-  _ref = this.data;
-  for (index = _i = 0, _len = _ref.length; _i < _len; index = ++_i) {
-    token = _ref[index];
-    try {
-      this.value[index] = token.compile(context, suppressErrors);
-    } catch (error) {
-      this.value[index] = null;
-      if (!suppressErrors) {
-        Logger.error(error);
-      }
-    }
-  }
-  return this.value;
+
+var TransformType = {
+  /**
+   *
+  */
+
+  TIME: "time",
+  /**
+   *
+  */
+
+  SEEK: "seek",
+  /**
+   *
+  */
+
+  MEDIA: "media"
 };
 
 /**
  * DVRPlaybackProxy constructor.
- * 
+ *
  * @constructor
  * @private
  * @extends {PlaybackCoreProxy}
@@ -7697,13 +9249,48 @@ DVRPlaybackProxy.prototype.canPlayTemporalType = function(temporalType) {
   return temporalType === "dvr";
 };
 
+/**
+*/
+DVRPlaybackProxy.prototype.getDuration = function() {
+  var mediaElement;
+  mediaElement = this.getMediaElement();
+  if (mediaElement.duration === Infinity) {
+    this.updateDuration();
+  }
+  return this.data.duration;
+};
+
+/**
+*/
+DVRPlaybackProxy.prototype.getStartTime = function() {
+  return this.getMediaElement().seekable.start(0);
+};
+
+/**
+*/
+DVRPlaybackProxy.prototype.getFragmentDuration = function() {
+  return 10;
+};
+
+/**
+*/
+DVRPlaybackProxy.prototype.getLiveTime = function() {
+  return this.getDuration() - this.getFragmentDuration();
+};
+
+/**
+*/
+DVRPlaybackProxy.prototype.isLive = function() {
+  return this.getStartTime() + this.getCurrentTime() >= this.getLiveTime();
+};
+
 /** @override
 */
 DVRPlaybackProxy.prototype.seek = function(value) {
-  if (value == null) {
-    value = this.data.currentTime;
-  }
-  this.getMediaElement().currentTime = value + this.getMediaElement().seekable.start(0);
+  var _this = this;
+  return DVRPlaybackProxy.__super__.seek.call(this, value + this.getStartTime()).then(function(time) {
+    _this.sendNotification(Notifications.IS_LIVE, _this.isLive());
+  });
 };
 
 /**
@@ -7716,8 +9303,10 @@ DVRPlaybackProxy.prototype.updateCurrentTime = function() {
   }
   currentTime = this.getMediaElement().currentTime;
   this.data.currentTime = currentTime - seekable.start(0);
-  this.sendNotification(Notifications.TIME_UPDATE, this.data.currentTime);
-  this.mediaProxy.setIsLive(currentTime >= seekable.end(0));
+  this.sendNotification(Notifications.TIME_CHANGE, {
+    currentTime: this.data.currentTime
+  });
+  this.mediaProxy.setIsLive(this.isLive());
 };
 
 /**
@@ -7797,16 +9386,24 @@ DataBindingContext.prototype.getContextData = function() {
 
 /**
  * Creates a new instance of PlayerProxy.
- * 
+ *
  * @constructor
  * @private
  * @extends {DataBindingContext}
 */
 function PlayerProxy(defaultPlaybackCore, getPlaybackOrder) {
+  var _this = this;
   this.defaultPlaybackCore = defaultPlaybackCore;
   this.getPlaybackOrder = getPlaybackOrder;
   PlayerProxy.__super__.constructor.call(this);
   this.playbackCoreMap = [];
+  if (this.getPlaybackOrder == null) {
+    this.getPlaybackOrder = function(order) {
+      if (/Edge|Android/.test(navigator.userAgent)) {
+        return ["audio", "hls", "dash", "dvr", "default"];
+      }
+    };
+  }
 }
 
 
@@ -7911,14 +9508,19 @@ PlayerProxy.prototype.removePlaybackCore = function(name) {
 /**
 */
 PlayerProxy.prototype.setPlaybackCore = function(media) {
-  var core, playbackCore, playbackProxy, _i, _len, _ref;
+  var core, error, playbackCore, playbackProxy, _i, _len, _ref;
   _ref = this.playbackCoreMap;
   for (_i = 0, _len = _ref.length; _i < _len; _i++) {
     core = _ref[_i];
-    if (core.canPlayTemporalType(media.temporalType) === true && core.canPlayType(media.type) !== "") {
+    if (core.canPlayMedium(media.medium) === true && core.canPlayTemporalType(media.temporalType) === true && core.canPlayType(media.type) !== "") {
       playbackCore = core;
       break;
     }
+  }
+  if (!(playbackCore != null)) {
+    error = new Error();
+    error.code = MediaError.MEDIA_ERR_SRC_NOT_SUPPORTED;
+    throw error;
   }
   playbackProxy = this.facade.retrieveProxy(PlaybackProxy.NAME);
   if (playbackProxy !== playbackCore) {
@@ -7950,41 +9552,22 @@ PlayerProxy.prototype.canPlayType = function(type) {
 
 /**
  * Gets the context data for this proxy.
- * 
+ *
  * @returns {Object} The contenxt data for this proxy
  * @override
 */
 PlayerProxy.prototype.getContextData = function() {
-  var configProxy, element, mediaProxy, playbackProxy;
-  configProxy = this.facade.retrieveProxy(ConfigurationProxy.NAME);
-  playbackProxy = this.facade.retrieveProxy(PlaybackProxy.NAME);
-  mediaProxy = this.facade.retrieveProxy(MediaProxy.NAME);
-  element = this.facade.getViewComponent();
-  return {
-    width: element.offsetWidth,
-    height: element.offsetHeight,
-    mode: "html5",
-    autoplay: configProxy.getAutoplay(),
-    domain: configProxy.getDomain(),
-    name: configProxy.getName(),
-    currentTime: playbackProxy.getCurrentTime(),
-    duration: playbackProxy.getDuration(),
-    version: configProxy.getVersion(),
-    timecode: {
-      duration: Utils.formatTimecode(mediaProxy.getDuration()),
-      currentTime: Utils.formatTimecode(playbackProxy.getCurrentTime())
-    }
-  };
+  return this.facade;
 };
 
 /**
  * Creates a new instance of MediaProxy. Used to track metadata associated with the video such as src, title and duration.
- * 
+ *
  * @constructor
  * @private
  * @extends {DataBindingContext}
 */
-function MediaProxy() {
+function MediaProxy(config) {
   this.data = {
     metadata: {}
   };
@@ -8013,32 +9596,34 @@ MediaProxy.prototype.authorized = true;
 
 /**
  * Gets the context data for this proxy.
- * 
+ *
  * @returns {Object} The contenxt data for this proxy
  * @override
 */
 MediaProxy.prototype.getContextData = function() {
-  return {
-    width: this.getWidth(),
-    height: this.getHeight(),
-    title: this.getTitle(),
-    description: this.getDescription(),
-    src: this.getSrc(),
-    duration: this.getDuration(),
-    guid: this.getGUID(),
-    isLive: this.getIsLive(),
-    metadata: this.getMetadata(),
-    temporalType: this.getTemporalType(),
-    poster: this.getPoster(),
-    category: this.getCategory(),
-    scenes: this.getScenes()
-  };
+  return this.data;
 };
 
 /**
  * Sets the data for this proxy.
- * 
- * @param {Object} value 
+ *
+ * @param {Object} value
+ *    The new data for this proxy
+ * @override
+*/
+MediaProxy.prototype.getData = function() {
+  var data;
+  data = Utils.clone(MediaProxy.__super__.getData.call(this));
+  if (!(data.authorization != null)) {
+    data.authorization = Utils.clone(this.facade.security.data);
+  }
+  return data;
+};
+
+/**
+ * Sets the data for this proxy.
+ *
+ * @param {Object} value
  *    The new data for this proxy
  * @override
 */
@@ -8046,45 +9631,97 @@ MediaProxy.prototype.setData = function(value) {
   if (this.data && this.facade.getCurrentTime() < this.facade.getDuration()) {
     this.sendNotification(Notifications.MEDIA_SEQUENCE_ABORTED);
   }
-  this.value = value;
   this.started = false;
-  this.data.autoplay = value.autoplay;
-  this.data.type = value.type;
+  this.setAutoplay(value.autoplay);
+  this.setType(value.type);
   this.setIsLive(value.isLive);
-  this.setTemporalType(value.temporalType || "vod");
+  this.setTemporalType(value.temporalType);
   if (value.source != null) {
     this.setSource(value.source);
   }
   if (value.src != null) {
     this.setSrc(value.src);
   }
-  this.data.title = value.title;
-  if (value.duration != null) {
-    this.setDuration(value.duration);
-  }
-  this.data.poster = value.poster;
-  this.data.guid = value.guid;
-  this.data.link = value.link;
-  this.data.embed = value.embed;
-  this.data.width = value.width;
-  this.data.height = value.height;
-  this.data.category = value.category;
-  this.data.startTime = value.startTime;
-  this.data.description = value.description;
-  this.data.status = value.status || {};
-  this.data.category = value.category;
-  this.data.metadata = value.metadata || {};
-  this.data.authorization = value.authorization;
-  if (value.medium != null) {
-    this.setMedium(value.medium);
-  }
+  this.setTitle(value.title);
+  this.setDuration(value.duration);
+  this.setPoster(value.poster);
+  this.setGUID(value.guid);
+  this.setLink(value.link);
+  this.setEmbed(value.embed);
+  this.setWidth(value.width);
+  this.setHeight(value.height);
+  this.setCategory(value.category);
+  this.setStartTime(value.startTime);
+  this.setDescription(value.description);
+  this.setStatus(value.status);
+  this.setCategory(value.category);
+  this.setMetadata(value.metadata);
+  this.setAuthorization(value.authorization);
+  this.setMedium(value.medium);
   this.setPubDate(value.pubDate);
   this.setTrack(value.track);
   this.setScenes(value.scenes);
   this.setKeys(value.keys);
-  return value;
+  this.setCues(value.cues);
+  this.setRestriction(value.restriction);
+  return this.data;
 };
 
+/**
+ *
+*/
+MediaProxy.prototype.transform = function(media) {
+  var index, item, playerProxy, scene, time, _i, _len, _ref, _ref1,
+    _this = this;
+  if (!(media.src != null) && ((_ref = media.source) != null ? _ref.length : void 0) > 0) {
+    playerProxy = this.facade.retrieveProxy(PlayerProxy.NAME) || this.facade;
+    if (playerProxy != null) {
+      item = Utils.selectSource(media.source, function(type) {
+        return playerProxy.canPlayType(type);
+      });
+    }
+    if (((item != null ? item.src : void 0) != null) && item.src !== "") {
+      media.src = item.src;
+      media.type = item.type;
+    }
+  }
+  if (media.type == null) {
+    media.type = Utils.getMimeType(media.src);
+  }
+  if (!(media.medium != null)) {
+    media.medium = /audio/.test(media.type) ? "audio" : "video";
+  }
+  if (media.temporalType == null) {
+    media.temporalType = "vod";
+  }
+  media.isLive = media.temporalType === "live" || media.temporalType === "dvr";
+  if (media.scenes != null) {
+    _ref1 = media.scenes;
+    for (index = _i = 0, _len = _ref1.length; _i < _len; index = ++_i) {
+      scene = _ref1[index];
+      scene.start = isNaN(time = Utils.flattenTimecode(scene.sceneStartTime)) ? 0 : time;
+      scene.end = isNaN(time = Utils.flattenTimecode(scene.sceneEndTime)) ? 0 : time;
+      scene.title = scene.sceneTitle || "";
+      scene.description = scene.sceneDescription || "";
+      scene.position = index + 1;
+    }
+  }
+  if (media.startTime == null) {
+    media.startTime = 0;
+  }
+  if (media.status == null) {
+    media.status = {};
+  }
+  if (media.metadata == null) {
+    media.metadata = {};
+  }
+  media.originalSrc = media.src;
+  return media;
+};
+
+/**
+ *
+*/
 MediaProxy.prototype.updateData = function(data) {
   var key, value;
   for (key in data) {
@@ -8097,10 +9734,10 @@ MediaProxy.prototype.updateData = function(data) {
 
 /**
  * The global unique identifier for this to the video.
- * 
- * @param {String} value 
+ *
+ * @param {String} value
  *    The new guid of the video
- * @returns {String} 
+ * @returns {String}
  *    The guid of the video
  * @type {String}
 */
@@ -8116,12 +9753,16 @@ MediaProxy.prototype.getLink = function() {
   return this.data.link;
 };
 
-MediaProxy.prototype.setLint = function(value) {
+MediaProxy.prototype.setLink = function(value) {
   return this.data.link = value;
 };
 
 MediaProxy.prototype.getStartTime = function() {
-  return this.data.startTime || 0;
+  return this.data.startTime;
+};
+
+MediaProxy.prototype.setStartTime = function(value) {
+  return this.data.startTime = value;
 };
 
 MediaProxy.prototype.getEmbed = function() {
@@ -8161,15 +9802,18 @@ MediaProxy.prototype.getStatus = function() {
 };
 
 MediaProxy.prototype.setStatus = function(value) {
+  if (value == null) {
+    value = {};
+  }
   return this.data.status = value;
 };
 
 /**
  * The url to the video.
- * 
- * @param {String} value 
+ *
+ * @param {String} value
  *    The new title of the video
- * @returns {Boolean} 
+ * @returns {Boolean}
  *    The title of the video
  * @type {String}
 */
@@ -8178,10 +9822,7 @@ MediaProxy.prototype.getSrc = function() {
 };
 
 MediaProxy.prototype.setSrc = function(value) {
-  this.data.src = value;
-  if ((this.data.src != null) && !(this.data.type != null)) {
-    return this.setType(Utils.getMimeType(this.data.src));
-  }
+  return this.data.src = value;
 };
 
 /**
@@ -8192,10 +9833,7 @@ MediaProxy.prototype.getType = function() {
 };
 
 MediaProxy.prototype.setType = function(value) {
-  var medium;
-  this.data.type = value;
-  medium = /audio/.test(this.data.type) ? "audio" : "video";
-  return this.setMedium(medium);
+  return this.data.type = value;
 };
 
 /**
@@ -8232,24 +9870,7 @@ MediaProxy.prototype.getSource = function() {
 };
 
 MediaProxy.prototype.setSource = function(value) {
-  var item, playerProxy,
-    _this = this;
-  if (!(value != null) || value.length < 1) {
-    return;
-  }
-  this.data.source = value;
-  playerProxy = this.facade.retrieveProxy(PlayerProxy.NAME) || this.facade;
-  if (playerProxy != null) {
-    item = Utils.selectSource(value, function(type) {
-      return playerProxy.canPlayType(type);
-    });
-  }
-  if (((item != null ? item.src : void 0) != null) && item.src !== "") {
-    this.setSrc(item.src);
-    return this.setType(item.type);
-  } else {
-    throw new Error("No valid source could be found");
-  }
+  return this.data.source = value;
 };
 
 /**
@@ -8263,12 +9884,12 @@ MediaProxy.prototype.setTrack = function(value) {
   return this.data.track = value;
 };
 
-/**     
+/**
  * The title of the video.
- * 
- * @param {String} value 
+ *
+ * @param {String} value
  *    The new title of the video
- * @returns {Boolean} 
+ * @returns {Boolean}
  *    The title of the video
  * @type {String}
 */
@@ -8280,7 +9901,7 @@ MediaProxy.prototype.setTitle = function(value) {
   return this.data.title = value;
 };
 
-/**     
+/**
  * The native width of the video.
 */
 MediaProxy.prototype.getWidth = function() {
@@ -8291,7 +9912,7 @@ MediaProxy.prototype.setWidth = function(value) {
   return this.data.width = value;
 };
 
-/**     
+/**
  * The native width of the video.
 */
 MediaProxy.prototype.getHeight = function() {
@@ -8302,12 +9923,12 @@ MediaProxy.prototype.setHeight = function(value) {
   return this.data.height = value;
 };
 
-/**     
+/**
  * The description of the video.
- * 
- * @param {String} value 
+ *
+ * @param {String} value
  *    The new description of the video
- * @returns {Boolean} 
+ * @returns {Boolean}
  *    The description of the video
  * @type {String}
 */
@@ -8331,12 +9952,12 @@ MediaProxy.prototype.setCategory = function(value) {
 };
 
 /**
- * The duration of the video. This property is used in situations where the 
+ * The duration of the video. This property is used in situations where the
  * duration cannot be determined from the video (i.e. before metadata is loaded)
- *      
- * @param {Number} value 
+ *
+ * @param {Number} value
  *    The new duration of the video
- * @returns {Number} 
+ * @returns {Number}
  *    The duration of the video
  * @type {Number}
 */
@@ -8346,7 +9967,7 @@ MediaProxy.prototype.getDuration = function(value) {
 
 MediaProxy.prototype.setDuration = function(value) {
   var ua;
-  if (value === 0 || this.value.temporalType === "live") {
+  if (value === 0 || this.data.temporalType === "live") {
     return;
   }
   ua = navigator.userAgent;
@@ -8355,7 +9976,9 @@ MediaProxy.prototype.setDuration = function(value) {
   }
   if (value !== this.data.duration) {
     this.data.duration = value;
-    this.sendNotification(Notifications.DURATION_CHANGE, value);
+    this.sendNotification(Notifications.TIME_CHANGE, {
+      duration: value
+    });
   }
   if (value === Infinity) {
     this.setTemporalType("live");
@@ -8364,11 +9987,11 @@ MediaProxy.prototype.setDuration = function(value) {
 };
 
 /**
- * The poster image for the video. 
- * 
- * @param {String} value 
+ * The poster image for the video.
+ *
+ * @param {String} value
  *    The url of the new poster image
- * @returns {String} 
+ * @returns {String}
  *    The url of the poster image
  * @type {String}
 */
@@ -8378,7 +10001,6 @@ MediaProxy.prototype.getPoster = function(value) {
 
 MediaProxy.prototype.setPoster = function(value) {
   this.data.poster = value;
-  return value;
 };
 
 /**
@@ -8389,11 +10011,9 @@ MediaProxy.prototype.getIsLive = function() {
 };
 
 MediaProxy.prototype.setIsLive = function(value) {
-  var previous;
   if (value === this.data.isLive) {
     return;
   }
-  previous = this.data.isLive;
   this.data.isLive = value;
   this.sendNotification(Notifications.IS_LIVE, value);
   return value;
@@ -8417,7 +10037,6 @@ MediaProxy.prototype.setTemporalType = function(value) {
     previous: previous,
     value: value
   });
-  this.setIsLive(this.data.temporalType === "live" || this.data.temporalType === "dvr");
 };
 
 /**
@@ -8428,19 +10047,26 @@ MediaProxy.prototype.getScenes = function() {
 };
 
 MediaProxy.prototype.setScenes = function(value) {
-  var index, scene, time, _i, _len;
-  if (!(value != null)) {
+  return this.data.scenes = value;
+};
+
+/**
+ *
+*/
+MediaProxy.prototype.getCues = function() {
+  return this.data.cues;
+};
+
+MediaProxy.prototype.setCues = function(value) {
+  if (value == null) {
+    value = [];
+  }
+  if (this.data.cues === value) {
     return;
   }
-  for (index = _i = 0, _len = value.length; _i < _len; index = ++_i) {
-    scene = value[index];
-    scene.start = isNaN(time = Utils.flattenTimecode(scene.sceneStartTime)) ? 0 : time;
-    scene.end = isNaN(time = Utils.flattenTimecode(scene.sceneEndTime)) ? 0 : time;
-    scene.title = scene.sceneTitle || "";
-    scene.description = scene.sceneDescription || "";
-    scene.position = index + 1;
-  }
-  this.data.scenes = value;
+  this.data.cues = value;
+  this.sendNotification(Notifications.CUES_CHANGE, value);
+  return value;
 };
 
 /**
@@ -8463,17 +10089,42 @@ MediaProxy.prototype.getScene = function(currentTime) {
 /**
  *
 */
-MediaProxy.prototype.setKeys = function(value) {
-  this.data.keys = value;
-};
-
 MediaProxy.prototype.getKeys = function() {
   return this.data.keys;
 };
 
+MediaProxy.prototype.setKeys = function(value) {
+  this.data.keys = value;
+};
+
+/**
+ *
+*/
+MediaProxy.prototype.getAuthorization = function() {
+  return this.data.authorization;
+};
+
+MediaProxy.prototype.setAuthorization = function(value) {
+  this.data.authorization = value;
+};
+
+/**
+ *
+*/
+MediaProxy.prototype.getRestriction = function() {
+  return this.data.restriction;
+};
+
+MediaProxy.prototype.setRestriction = function(value) {
+  if (value == null) {
+    value = [];
+  }
+  this.data.restriction = value;
+};
+
 /**
  * Creates a new instance of SecurityProxy.
- * 
+ *
  * @constructor
  * @private
  * @extends {puremvc.Proxy}
@@ -8481,6 +10132,13 @@ MediaProxy.prototype.getKeys = function() {
 function SecurityProxy() {
   SecurityProxy.__super__.constructor.call(this, this.constructor.NAME, {});
   this.setupHDN1();
+  Object.defineProperties(this, {
+    authorized: {
+      get: this.getAuthorized,
+      enumerable: true,
+      configurable: false
+    }
+  });
 }
 
 
@@ -8519,8 +10177,10 @@ SecurityProxy.prototype.setupHDN1 = function() {
 /**
 */
 SecurityProxy.prototype.setMedia = function(media) {
+  var authorized;
   this.setSession(null);
-  this.setAuthorized(media.status.state !== "blocked");
+  authorized = media.status.state !== "blocked" && media.restriction.length === 0;
+  this.setAuthorized(authorized);
   this.setAuthorization(media.authorization);
 };
 
@@ -8538,6 +10198,9 @@ SecurityProxy.prototype.getAuthorization = function() {
 };
 
 SecurityProxy.prototype.setAuthorization = function(value) {
+  if ((value != null ? value.token : void 0) != null) {
+    this.setAuthorized(true);
+  }
   this.data = value || {};
   if (this.data.expiration != null) {
     this.setExpiration(this.data.expiration);
@@ -8585,11 +10248,16 @@ SecurityProxy.prototype.setExpiration = function(value) {
 */
 SecurityProxy.prototype.startTimeout = function() {
   var _this = this;
-  this.timeout = setTimeout(function() {
-    _this.sendNotification(SecurityNotifications.AUTHORIZE, {
-      media: _this.facade.getMedia()
-    });
-  }, this.getExpiration() - Date.now());
+  Utils.getUTC().then(function(time) {
+    var timeout;
+    timeout = function() {
+      _this.sendNotification(SecurityNotifications.AUTHORIZATION_EXPIRED);
+      _this.sendNotification(SecurityNotifications.AUTHORIZE, {
+        media: _this.facade.getMedia()
+      });
+    };
+    return _this.timeout = setTimeout(timeout, _this.getExpiration() - time);
+  });
 };
 
 /**
@@ -8630,12 +10298,12 @@ SecurityProxy.prototype.createURL = function(url) {
 /**
 */
 SecurityProxy.prototype.getAuthorized = function() {
-  return this.authorized;
+  return this._authorized;
 };
 
 SecurityProxy.prototype.setAuthorized = function(value) {
   this.stopTimeout();
-  this.authorized = value;
+  this._authorized = value;
   return value;
 };
 
@@ -8648,430 +10316,6 @@ SecurityProxy.prototype.getSession = function() {
 SecurityProxy.prototype.setSession = function(value) {
   this.session = value;
   return value;
-};
-
-/**
- * @constructor
- * @private
- * @extends {Error}
- * @param {string} msg
-*/
-function TokenizationError(msg) {
-  this.message = TokenizationError.MESSAGE + msg;
-}
-
-
-__extends(TokenizationError, Error);
-
-
-TokenizationError.MESSAGE = "Tokenization Error: Could not find token value for: ";
-
-/**
- * @constructor
- * @private
- * @extends {TokenizedBase}
- * @param {string|number|boolean} source
-*/
-function Literal(source) {
-  Literal.__super__.constructor.call(this, source);
-}
-
-
-__extends(Literal, TokenizedBase);
-
-
-/**
- * Populates the data property with tokenized values
- * 
- * @param   source  The tokenized data structure.
- * @return          The parsed data structure.
-*/
-Literal.prototype.parse = function(data) {
-  this.source = this.data = this.value = data;
-  return data;
-};
-
-/**
- * Compiles the tokenized values in the data property
- * and saves them to the value property. As a convenience
- * this function returns the value property.
- * 
- * @param context     An object who's properties can be called from within a token
- * @param suppressErrors  Flag indicating wether or not to suppress errors. Useful when certain context items are known not to exist.
- * @return          The compile value object.
-*/
-Literal.prototype.compile = function(context, suppressErrors) {
-  if (context == null) {
-    context = null;
-  }
-  if (suppressErrors == null) {
-    suppressErrors = false;
-  }
-  return this.value;
-};
-
-/**
- * @constructor
- * @private
- * @extends {TokenizedBase}
- * @param {string} source
-*/
-function Token(source) {
-  Token.__super__.constructor.call(this, source);
-}
-
-
-__extends(Token, TokenizedBase);
-
-
-/**
- * The function used to evaluate a token value
-*/
-Token.prototype.exec = null;
-
-/**
- *
-*/
-Token.prototype.parse = function(source) {
-  this.source = this.data = source;
-  this.exec = new Function("context", 'var value; with(context){value = ' + this.data + ';}return value;');
-  return this.data;
-};
-
-/**
- *
-*/
-Token.prototype.compile = function(context, suppressErrors) {
-  if (context == null) {
-    context = {};
-  }
-  if (suppressErrors == null) {
-    suppressErrors = false;
-  }
-  if (!(this.exec != null)) {
-    return this.value;
-  }
-  try {
-    this.value = this.exec(context);
-  } catch (error) {
-    this.value = null;
-    if (!suppressErrors) {
-      throw new TokenizationError(this.data);
-    }
-  }
-  return this.value;
-};
-
-/**
- * @constructor
- * @private
- * @extends {TokenizedBase}
- * @param {string} source
-*/
-function TokenizedValue(source) {
-  this.token = new RegExp(this.tokenStart.source + "([^#]*)" + this.tokenEnd.source, "g");
-  TokenizedValue.__super__.constructor.call(this, source);
-}
-
-
-__extends(TokenizedValue, TokenizedBase);
-
-
-/**
- * The function used to evaluate a token value
-*/
-TokenizedValue.prototype.exec = null;
-
-/**
- * The literal value after compiliation
-*/
-TokenizedValue.prototype.tokenStart = /#{/;
-
-TokenizedValue.prototype.tokenEnd = /}/;
-
-TokenizedValue.prototype.token = null;
-
-/**
- *
-*/
-TokenizedValue.prototype.parse = function(source) {
-  var piece, pieces, placeholder, spacer, temp, token, tokens, _i, _len;
-  this.source = source;
-  this.data = [];
-  if (this.token.test(this.source)) {
-    tokens = [];
-    placeholder = "<<>>";
-    spacer = null;
-    temp = this.source.replace(this.token, function(match, token, offset, string) {
-      tokens.push(token);
-      spacer = placeholder;
-      if ((0 < offset && offset < string.length - match.length)) {
-        spacer += placeholder;
-      }
-      return spacer;
-    });
-    pieces = temp.split(placeholder);
-    token = 0;
-    for (_i = 0, _len = pieces.length; _i < _len; _i++) {
-      piece = pieces[_i];
-      if (piece === "" && tokens[token]) {
-        this.data.push(new Token(tokens[token]));
-        token++;
-      } else {
-        if (piece !== "") {
-          this.data.push(new Literal(piece));
-        }
-      }
-    }
-    if (this.data.length === 1) {
-      this.data = this.data[0];
-    }
-  } else {
-    this.data = new Literal(source);
-  }
-  return this.data;
-};
-
-/**
- *
-*/
-TokenizedValue.prototype.compile = function(context, suppressErrors) {
-  var token, _i, _len, _ref;
-  if (context == null) {
-    context = {};
-  }
-  if (suppressErrors == null) {
-    suppressErrors = false;
-  }
-  if (!(this.data != null)) {
-    return this.value;
-  }
-  try {
-    if (this.data instanceof ITokenized) {
-      this.value = this.data.compile(context, suppressErrors);
-    } else {
-      this.value = "";
-      _ref = this.data;
-      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        token = _ref[_i];
-        this.value += token.compile(context, suppressErrors);
-      }
-    }
-  } catch (error) {
-    this.value = null;
-    if (!suppressErrors) {
-      throw new TokenizationError(this.source);
-    }
-  }
-  return this.value;
-};
-
-/**
- * @constructor
- * @private
- * @extends {TokenizedBase}
- * @param {Object} source
-*/
-function TokenizedObject(source) {
-  TokenizedObject.__super__.constructor.call(this, source);
-}
-
-
-__extends(TokenizedObject, TokenizedBase);
-
-
-/**
- *
-*/
-TokenizedObject.prototype.parse = function(source) {
-  var key, token;
-  this.source = source;
-  this.data = {};
-  for (key in source) {
-    token = source[key];
-    this.data[key] = TokenizedObject.__super__.parse.call(this, token);
-  }
-  return this.data;
-};
-
-/**
- *
-*/
-TokenizedObject.prototype.compile = function(context, suppressErrors) {
-  var key, value, _ref;
-  if (context == null) {
-    context = {};
-  }
-  if (suppressErrors == null) {
-    suppressErrors = false;
-  }
-  this.value = {};
-  _ref = this.data;
-  for (key in _ref) {
-    value = _ref[key];
-    try {
-      this.value[key] = value.compile(context, suppressErrors);
-    } catch (error) {
-      this.value[key] = null;
-      Logger.error(error);
-    }
-  }
-  return this.value;
-};
-
-/**
- * @enum {string}
- * @const
- * @private
-*/
-
-var DisplayState = {
-  /**
-   * Constant representing the normal display state
-  */
-
-  NORMAL: "normal",
-  /**
-   * Constant representing the full screen display state
-  */
-
-  FULL_SCREEN: "full-screen"
-};
-
-/**
- * The DataBoundConfigurationProxy class.
- *   
- * @constructor
- * @private
- * @extends {ModuleProxy}
- * @param {Object} data
-*/
-function DataBoundConfigurationProxy(data) {
-  DataBoundConfigurationProxy.__super__.constructor.call(this, data);
-}
-
-
-__extends(DataBoundConfigurationProxy, ModuleProxy);
-
-
-/** @static
-*/
-DataBoundConfigurationProxy.NAME = ModuleProxy.NAME;
-
-DataBoundConfigurationProxy.prototype.bindings = null;
-
-DataBoundConfigurationProxy.prototype.configurationName = null;
-
-DataBoundConfigurationProxy.prototype.configurationData = null;
-
-DataBoundConfigurationProxy.prototype.contextName = null;
-
-DataBoundConfigurationProxy.prototype.contextData = null;
-
-DataBoundConfigurationProxy.prototype.value = null;
-
-DataBoundConfigurationProxy.prototype.getConfigurationName = function() {
-  return this.configurationName;
-};
-
-DataBoundConfigurationProxy.prototype.getConfigurationData = function() {
-  return this.configurationData.value || {};
-};
-
-DataBoundConfigurationProxy.prototype.getContextName = function() {
-  return this.contextName;
-};
-
-DataBoundConfigurationProxy.prototype.getContextData = function() {
-  return this.contextData;
-};
-
-DataBoundConfigurationProxy.prototype.onRegister = function() {
-  var base;
-  base = this.facade.player || this.facade;
-  if (!(this.getConfigurationName() != null)) {
-    this.configurationName = this.facade.moduleName;
-  }
-  this.bindings = base.retrieveProxy(DataBindingProxy.NAME);
-  this.bindings.registerConfiguration(this);
-  if (!(this.getContextName() != null)) {
-    return;
-  }
-  this.bindings.registerContext(this);
-};
-
-DataBoundConfigurationProxy.prototype.setData = function(data) {
-  var key, value, _ref;
-  if (data == null) {
-    data = {};
-  }
-  this.data = {};
-  _ref = this.getDefaults();
-  for (key in _ref) {
-    value = _ref[key];
-    this.data[key] = key in data ? data[key] : value;
-  }
-  this.configurationData = new TokenizedObject(this.data);
-  return this.data;
-};
-
-DataBoundConfigurationProxy.prototype.getValue = function(key) {
-  var _ref;
-  this.bindings.update();
-  this.value[key] = (_ref = this.configurationData.data[key]) != null ? _ref.compile(this.bindings.getData()) : void 0;
-  return this.value[key];
-};
-
-DataBoundConfigurationProxy.prototype.compile = function(context, suppressErrors) {
-  if (suppressErrors == null) {
-    suppressErrors = false;
-  }
-  if (!(this.configurationData != null)) {
-    return null;
-  }
-  if (!(context != null)) {
-    context = this.bindings.getData();
-  }
-  if ((this.contextName != null) && (this.contextData != null)) {
-    context = Utils.clone(context);
-    context[this.contextName] = this.contextData;
-  }
-  this.configurationData.compile(context, suppressErrors);
-  this.value = this.configurationData.value;
-  return this.configurationData.value;
-};
-
-/** 
- * @constructor 
- * @private
-*/
-function ParamsProxy(data) {
-  ParamsProxy.__super__.constructor.call(this, data);
-}
-
-
-__extends(ParamsProxy, DataBoundConfigurationProxy);
-
-
-/** @static
-*/
-ParamsProxy.NAME = "ParamsProxy";
-
-ParamsProxy.prototype.defaults = {};
-
-ParamsProxy.prototype.configurationName = "params";
-
-/** @override
-*/
-ParamsProxy.prototype.setData = function(data) {
-  var key, value, _ref;
-  this.data = ((_ref = this.configurationData) != null ? _ref.source : void 0) || {};
-  for (key in data) {
-    value = data[key];
-    this.data[key] = data[key];
-  }
-  this.configurationData = new TokenizedObject(this.data);
-  return this.data;
 };
 
 /**
@@ -9118,8 +10362,8 @@ var PlayState = {
   ERROR: "error"
 };
 
-/** 
- * @constructor 
+/**
+ * @constructor
  * @private
 */
 function DataBindingProxy() {
@@ -9201,16 +10445,6 @@ DataBindingProxy.prototype.removeConfiguration = function(name) {
 
 /**
 */
-DataBindingProxy.prototype.evaluateBinding = function(str) {
-  var tokenizedObject;
-  this.update();
-  tokenizedObject = new TokenizedValue(str);
-  tokenizedObject.compile(this.data);
-  return tokenizedObject.value;
-};
-
-/**
-*/
 DataBindingProxy.prototype.update = function(contexts) {
   var context, key, name, value, _ref, _ref1;
   this.data.now = Date.now();
@@ -9239,7 +10473,7 @@ DataBindingProxy.prototype.compile = function(contexts, suppressErrors) {
     suppressErrors = false;
   }
   this.update(contexts);
-  context = Utils.clone(this.data);
+  context = this.data;
   paramsName = this.paramsProxy.getConfigurationName();
   _ref = this.configurationMap;
   for (name in _ref) {
@@ -9300,16 +10534,17 @@ var PluginNotifications = {
   PLUGINS_INITIALIZED: "pluginsinitialized"
 };
 
-/** 
+/**
  * Used to track the various states of the player like full screen mode and active state (controls visible).
- * 
- * @constructor 
+ *
+ * @constructor
  * @private
  * @extends {puremvc.Proxy}
 */
 function ApplicationStateProxy() {
   ApplicationStateProxy.__super__.constructor.call(this);
   this.device = Utils.getDevice();
+  this.time = {};
 }
 
 
@@ -9322,7 +10557,7 @@ ApplicationStateProxy.NAME = "ApplicationStateProxy";
 
 /** @private
 */
-ApplicationStateProxy.prototype.displayState = null;
+ApplicationStateProxy.prototype.displayState = DisplayState.NORMAL;
 
 ApplicationStateProxy.prototype.playState = null;
 
@@ -9332,7 +10567,11 @@ ApplicationStateProxy.prototype.activeState = null;
 
 ApplicationStateProxy.prototype.seeking = false;
 
+ApplicationStateProxy.prototype.seekrequested = false;
+
 ApplicationStateProxy.prototype.waiting = false;
+
+ApplicationStateProxy.prototype.busy = false;
 
 ApplicationStateProxy.prototype.isUserActive = false;
 
@@ -9350,17 +10589,21 @@ ApplicationStateProxy.prototype.mediaElement = null;
 
 ApplicationStateProxy.prototype.hidden = false;
 
-ApplicationStateProxy.prototype.pausedBeforeSeek = false;
-
 ApplicationStateProxy.prototype.ended = false;
+
+ApplicationStateProxy.prototype.buffering = false;
+
+ApplicationStateProxy.prototype.time = null;
+
+ApplicationStateProxy.prototype.playbackRate = 1;
 
 /**
  * Flag indicating whether or not the media will have additional
  * content playback after the media playback is complete
- *      
- * @param {Boolean} value 
+ *
+ * @param {Boolean} value
  *    The post content flag
- * @returns {Boolean} 
+ * @returns {Boolean}
  *    The post content flag
  * @type {Boolean}
 */
@@ -9374,10 +10617,10 @@ ApplicationStateProxy.prototype.setHasPostContent = function(value) {
 
 /**
  * Flag indicating whether or not the media playback is complete
- *      
- * @param {Boolean} value 
+ *
+ * @param {Boolean} value
  *    The ended flag
- * @returns {Boolean} 
+ * @returns {Boolean}
  *    The ended flag
  * @type {Boolean}
 */
@@ -9394,13 +10637,13 @@ ApplicationStateProxy.prototype.setEnded = function(value) {
 
 /**
  * The player's display state. Valid options are:
- * 
+ *
  * ApplicationStateProxy.FULL_SCREEN
  * ApplicationStateProxy.NORMAL
- *      
- * @param {String} value 
+ *
+ * @param {String} value
  *    The new display state of the player
- * @returns {String} 
+ * @returns {String}
  *    The display state of the player
  * @type {String}
 */
@@ -9423,13 +10666,13 @@ ApplicationStateProxy.prototype.setDisplayState = function(value) {
 
 /**
  * The player's display state. Valid options are:
- * 
+ *
  * ApplicationStateProxy.FULL_SCREEN
  * ApplicationStateProxy.NORMAL
- *      
- * @param {String} value 
+ *
+ * @param {String} value
  *    The new display state of the player
- * @returns {String} 
+ * @returns {String}
  *    The display state of the player
  * @type {String}
 */
@@ -9439,6 +10682,9 @@ ApplicationStateProxy.prototype.getPlayState = function() {
 
 ApplicationStateProxy.prototype.setPlayState = function(value) {
   var previous;
+  if (this.getWaiting() === true) {
+    this.setWaiting(false);
+  }
   if (value === this.playState) {
     return;
   }
@@ -9451,17 +10697,14 @@ ApplicationStateProxy.prototype.setPlayState = function(value) {
   switch (value) {
     case PlayState.PLAYING:
       this.sendNotification(Notifications.DISPATCH_EVENT, new Event("playing"));
-      break;
-    case PlayState.ENDED:
-      this.pausedBeforeSeek = false;
   }
 };
 
 /**
  * The player's device.
  *
- * 
- * @returns {String} 
+ *
+ * @returns {String}
  *    The display state of the player
  * @type {String}
 */
@@ -9469,12 +10712,12 @@ ApplicationStateProxy.prototype.getDevice = function() {
   return this.device;
 };
 
-/**     
+/**
  * Indicates whether or not the player is seeking
  *
  * @param {Boolean} value
  *    The seeking flag
- * @returns {Boolean} 
+ * @returns {Boolean}
  *    The seeking flag
  * @type {Boolean}
 */
@@ -9492,12 +10735,34 @@ ApplicationStateProxy.prototype.setSeeking = function(value) {
   }
 };
 
-/**     
+/**
+ * Indicates whether or not a seek has been requested.
+ * This is only set when a seek is requested while
+ * a previously requested seek is in progress
+ *
+ * @param {Boolean} value
+ *    The seekrequested flag
+ * @returns {Boolean}
+ *    The seekrequested flag
+ * @type {Boolean}
+*/
+ApplicationStateProxy.prototype.getSeekRequested = function() {
+  return this.seekrequested;
+};
+
+ApplicationStateProxy.prototype.setSeekRequested = function(value) {
+  if (value === this.seekrequested) {
+    return;
+  }
+  this.seekrequested = value;
+};
+
+/**
  * Indicates whether or not the player is waiting
  *
  * @param {Boolean} value
  *    The waiting flag
- * @returns {Boolean} 
+ * @returns {Boolean}
  *    The waiting flag
  * @type {Boolean}
 */
@@ -9516,26 +10781,47 @@ ApplicationStateProxy.prototype.setWaiting = function(value) {
   this.sendNotification(note, PlayState.WAITING);
   if (this.waiting === true) {
     mediaElement = this.facade.getMediaElement();
-    handler = function() {
-      mediaElement.removeEventListener("timeupdate", handler);
-      mediaElement.removeEventListener("playing", handler);
-      mediaElement.removeEventListener("ended", handler);
+    handler = function(event) {
+      _this.facade.removeEventListener("playing", handler);
+      _this.facade.removeEventListener("canplaythrough", handler);
+      _this.facade.removeEventListener("ended", handler);
       _this.setWaiting(false);
     };
-    mediaElement.addEventListener("timeupdate", handler);
-    mediaElement.addEventListener("playing", handler);
-    mediaElement.addEventListener("ended", handler);
+    this.facade.addEventListener("playing", handler);
+    this.facade.addEventListener("canplaythrough", handler);
+    this.facade.addEventListener("ended", handler);
   }
 };
 
-/**     
+/**
+ * Indicates whether or not the player is busy
+ *
+ * @param {Boolean} value
+ *    The busy flag
+ * @returns {Boolean}
+ *    The busy flag
+ * @type {Boolean}
+*/
+ApplicationStateProxy.prototype.getBusy = function() {
+  return this.busy;
+};
+
+ApplicationStateProxy.prototype.setBusy = function(value) {
+  if (value === this.busy) {
+    return;
+  }
+  this.busy = value;
+  this.sendNotification(Notifications.DISPATCH_EVENT, new Event("busy", value));
+};
+
+/**
  * Indicates whether or not the player is locked.
- * A lock player will not autoplay even if configured 
+ * A lock player will not autoplay even if configured
  * to do so.
  *
  * @param {Boolean} value
  *    The locked flag
- * @returns {Boolean} 
+ * @returns {Boolean}
  *    The locked flag
  * @type {Boolean}
 */
@@ -9547,13 +10833,30 @@ ApplicationStateProxy.prototype.setLocked = function(value) {
   this.locked = value;
 };
 
-/**     
+/**
+ * Indicates whether or not the player is buffering.
+ *
+ * @param {Boolean} value
+ *    The buffering flag
+ * @returns {Boolean}
+ *    The buffering flag
+ * @type {Boolean}
+*/
+ApplicationStateProxy.prototype.getBuffering = function() {
+  return this.buffering;
+};
+
+ApplicationStateProxy.prototype.setBuffering = function(value) {
+  this.buffering = value;
+};
+
+/**
  * Indicates whether or not the user is currently interacting with the player
  *
  * @param {Boolean} value
- *    
- * @returns {Boolean} 
- *    
+ *
+ * @returns {Boolean}
+ *
  * @type {Boolean}
 */
 ApplicationStateProxy.prototype.getIsUserActive = function() {
@@ -9566,12 +10869,12 @@ ApplicationStateProxy.prototype.setIsUserActive = function(value) {
   }
 };
 
-/**     
+/**
  * The core type used for rendering the video.
  *
  * @param {String} value
  *    The new currentTime value in seconds
- * @returns {Number} 
+ * @returns {Number}
  *    The currentTime value in seconds
  * @type {Number}
 */
@@ -9587,16 +10890,16 @@ ApplicationStateProxy.prototype.setRenderMode = function(value) {
 
 /**
  * The medium the player is currently playing. Valid options are:
- * 
+ *
  * "audio"
  * "video"
- * 
- * @param {String} value 
+ *
+ * @param {String} value
  *    The new medium
- * 
- * @returns {String} 
+ *
+ * @returns {String}
  *    The current medium
- * 
+ *
  * @type {String}
 */
 ApplicationStateProxy.prototype.getMedium = function() {
@@ -9619,12 +10922,12 @@ ApplicationStateProxy.prototype.setMedium = function(value) {
 /**
  * The player's volume as a value between 0 and 1.
  *
- * @param {Number} value 
+ * @param {Number} value
  *    The new volume
- * 
- * @returns {Number} 
+ *
+ * @returns {Number}
  *    The current volume
- * 
+ *
  * @type {Number}
 */
 ApplicationStateProxy.prototype.getVolume = function() {
@@ -9641,12 +10944,12 @@ ApplicationStateProxy.prototype.setVolume = function(value) {
 /**
  * The playback target. i.e. "amp", "chromecast", "airplay"
  *
- * @param {Number} value 
+ * @param {Number} value
  *    The new volume
- * 
- * @returns {Number} 
+ *
+ * @returns {Number}
  *    The current volume
- * 
+ *
  * @type {Number}
 */
 ApplicationStateProxy.prototype.getPlaybackTarget = function() {
@@ -9660,6 +10963,15 @@ ApplicationStateProxy.prototype.setPlaybackTarget = function(value) {
   }
   previous = this.playbackTarget;
   this.playbackTarget = value;
+  if (value !== "amp") {
+    if (this.getPlayState() !== PlayState.PAUSED) {
+      this.facade.pause();
+    }
+  } else {
+    if (this.getPlayState() === PlayState.PLAYING) {
+      this.facade.play();
+    }
+  }
   this.sendNotification(Notifications.PLAYBACK_TARGET_CHANGE, {
     previous: previous,
     value: this.playbackTarget
@@ -9668,10 +10980,10 @@ ApplicationStateProxy.prototype.setPlaybackTarget = function(value) {
 
 /**
  * The active state of the player. Used to display controls.
- *      
- * @param {Boolean} value 
+ *
+ * @param {Boolean} value
  *    The new active state of the video
- * @returns {Boolean} 
+ * @returns {Boolean}
  *    The active state of the video
  * @type {Boolean}
 */
@@ -9694,10 +11006,10 @@ ApplicationStateProxy.prototype.setActiveState = function(value) {
 
 /**
  * The player's media element
- *      
- * @param {HTMLElement} value 
+ *
+ * @param {HTMLElement} value
  *    The new media element
- * @returns {HTMLElement} 
+ * @returns {HTMLElement}
  *    The media element
  * @type {HTMLElement}
 */
@@ -9720,10 +11032,10 @@ ApplicationStateProxy.prototype.setMediaElement = function(value) {
 
 /**
  * The player's hidden state
- *      
- * @param {Boolean} value 
+ *
+ * @param {Boolean} value
  *    The new hidden state
- * @returns {Boolean} 
+ * @returns {Boolean}
  *    The hidden state
  * @type {Boolean}
 */
@@ -9742,6 +11054,68 @@ ApplicationStateProxy.prototype.setHidden = function(value) {
     previous: previous,
     value: this.hidden
   });
+};
+
+/**
+ * The media's current time
+ *
+ * @param {Number} value
+ *    The new current time
+ * @returns {Number}
+ *    The current time
+ * @type {Number}
+*/
+ApplicationStateProxy.prototype.getCurrentTime = function() {
+  return this.time.currentTime;
+};
+
+ApplicationStateProxy.prototype.setCurrentTime = function(value) {
+  if (value === this.time.currentTime) {
+    return;
+  }
+  this.time.currentTime = value;
+  this.sendNotification(Notifications.TIME_UPDATE, value);
+};
+
+/**
+ * The media's duration
+ *
+ * @param {Number} value
+ *    The new duration
+ * @returns {Number}
+ *    The duration
+ * @type {Number}
+*/
+ApplicationStateProxy.prototype.getDuration = function() {
+  return this.time.duration;
+};
+
+ApplicationStateProxy.prototype.setDuration = function(value) {
+  if (value === this.time.duration) {
+    return;
+  }
+  this.time.duration = value;
+  this.sendNotification(Notifications.DURATION_CHANGE, value);
+};
+
+/**
+ * The playback rate
+ *
+ * @param {Number} value
+ *     The new playback rate
+ * @returns {Number}
+ *     The playback rate
+ * @type {Number}
+*/
+ApplicationStateProxy.prototype.getPlaybackRate = function() {
+  return this.playbackRate;
+};
+
+ApplicationStateProxy.prototype.setPlaybackRate = function(value) {
+  if (value === this.playbackRate) {
+    return;
+  }
+  this.playbackRate = value;
 };
 
 /**
@@ -9873,12 +11247,14 @@ var UserNotifications = {
   TOGGLE_PLAY_PAUSE: "usertogglePlayPause",
   PLAY: "userplay",
   PAUSE: "userpause",
-  SEEK: "userseek"
+  SEEK: "userseek",
+  SEEKED: "userseeked",
+  GO_LIVE: "usergolive"
 };
 
-/** 
+/**
  * The PluginProxy class.
- *   
+ *
  * @param {Object} config
  * @constructor
  * @private
@@ -9973,9 +11349,9 @@ var Namespace = {
   PREFIX: "akamai-"
 };
 
-/** 
+/**
  * The Plugin class. Acts as a base for plugins.
- * 
+ *
  * @constructor
  * @private
  * @extends {Module}
@@ -9992,7 +11368,7 @@ Plugin.prototype.player = null;
 
 Plugin.prototype.proxy = null;
 
-/** 
+/**
  * @override
 */
 Plugin.prototype.initialize = function(config, player) {
@@ -10011,13 +11387,12 @@ Plugin.prototype.isAvailable = function() {
 */
 Plugin.prototype.loadModuleResources = function() {
   if (!this.isAvailable()) {
-    this.resourcesLoaded();
-    return;
+    return Promise.resolve();
   }
-  Plugin.__super__.loadModuleResources.call(this);
+  return Plugin.__super__.loadModuleResources.call(this);
 };
 
-/** 
+/**
  * @override
 */
 Plugin.prototype.resourcesLoaded = function() {
@@ -10038,6 +11413,7 @@ Plugin.prototype.onRegister = function() {
       }
     }
   }
+  this.performance.ready = Date.now();
   this.sendNotification(PluginNotifications.PLUGIN_REGISTERED, this);
 };
 
@@ -10123,23 +11499,27 @@ __extends(ChangeMediaCommand, PlayerCommand);
 */
 ChangeMediaCommand.prototype.execute = function(notification) {
   var media;
-  media = notification.getBody();
-  this.playback.setEnabled(false);
-  this.playback.pause();
-  this.sendNotification(Notifications.HAS_POST_CONTENT, false);
-  this.sendNotification(Notifications.CHANGE_PLAY_STATE, PlayState.READY);
-  this.sendNotification(Notifications.CHANGE_ACTIVE_STATE, ActiveState.ACTIVE);
   try {
-    this.media.setData(media);
+    media = this.media.setData(notification.getBody());
   } catch (error) {
     this.sendNotification(Notifications.ERROR, error.message);
+    return;
   }
   this.sendNotification(Notifications.UPDATE_DATA_BINDINGS);
+  media = this.media.getData();
+  this.security.setMedia(media);
+  if (this.security.getAuthorized()) {
+    this.sendNotification(SecurityNotifications.AUTHORIZED, this.security.getAuthorization());
+  } else {
+    this.sendNotification(SecurityNotifications.AUTHORIZE, {
+      media: media
+    });
+  }
 };
 
 /**
  * The SetMediaCommand class.
- *   
+ *
  * @constructor
  * @private
  * @extends {amp.player.controller.PlayerCommand}
@@ -10154,32 +11534,70 @@ __extends(SetMediaCommand, PlayerCommand);
 
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
 SetMediaCommand.prototype.execute = function(notification) {
-  var media;
+  var media, _ref,
+    _this = this;
   media = notification.getBody();
+  this.applicationState.setBuffering(false);
   this.applicationState.setEnded(false);
-  this.sendNotification(Notifications.CHANGE_PLAY_STATE, PlayState.READY);
-  this.sendNotification(Notifications.CHANGE_MEDIA, media);
-  media = this.media.getData();
-  this.security.setMedia(media);
-  if (this.security.getAuthorized()) {
-    this.sendNotification(SecurityNotifications.AUTHORIZED, this.security.getAuthorization());
-  } else {
-    this.sendNotification(SecurityNotifications.AUTHORIZE, {
-      media: media
-    });
+  this.playback.setEnabled(false);
+  this.playback.pause();
+  if ((_ref = this.tracks) != null) {
+    _ref.clear();
   }
+  this.sendNotification(Notifications.HAS_POST_CONTENT, false);
+  this.sendNotification(Notifications.CHANGE_PLAY_STATE, PlayState.READY);
+  this.sendNotification(Notifications.CHANGE_ACTIVE_STATE, ActiveState.ACTIVE);
+  media = this.media.transform(media);
+  this.facade.transform(TransformType.MEDIA, media).then(function(result) {
+    return _this.sendNotification(Notifications.CHANGE_MEDIA, result);
+  })["catch"](function(error) {
+    return _this.sendNotification(Notifications.ERROR, error);
+  });
+};
+
+/**
+ * The MediaChangeCommand class.
+ *
+ * @constructor
+ * @private
+ * @extends {amp.player.controller.PlayerEventCommand}
+*/
+function MediaChangeCommand() {
+  MediaChangeCommand.__super__.constructor.call(this);
+}
+
+
+__extends(MediaChangeCommand, PlayerEventCommand);
+
+
+/**
+ * Executes the command.
+ *
+ * @param {puremvc.Notification} notification
+ *    The notification.
+ *
+ * @override
+*/
+MediaChangeCommand.prototype.execute = function(notification) {
+  var media, playback;
+  media = notification.getBody();
+  this.playerCore.setPlaybackCore(media);
+  playback = this.playerCore.getActivePlaybackCore() || this.player.playback;
+  playback.reset();
+  playback.setCurrentTime(media.startTime || 0);
+  MediaChangeCommand.__super__.execute.call(this, notification);
 };
 
 /**
  * The ChangeDurationCommand class.
- *   
+ *
  * @constructor
  * @private
  * @extends {amp.player.controller.PlayerCommand}
@@ -10194,10 +11612,10 @@ __extends(ChangeDurationCommand, PlayerCommand);
 
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
 ChangeDurationCommand.prototype.execute = function(notification) {
@@ -10211,7 +11629,7 @@ ChangeDurationCommand.prototype.execute = function(notification) {
 
 /**
  * The ErrorCommand class.
- *   
+ *
  * @constructor
  * @private
  * @extends {amp.player.controller.PlayerEventCommand}
@@ -10226,25 +11644,27 @@ __extends(ErrorCommand, PlayerEventCommand);
 
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
 ErrorCommand.prototype.execute = function(notification) {
-  var core;
+  var core, error;
   this.playback.destroy();
   core = this.playback.getMediaElement();
   EventHandler.clear(core);
-  this.logger.error("[AMP ERROR]", notification.getBody());
+  error = notification.getBody();
+  this.logger.error("[AMP ERROR]", error);
   this.sendNotification(Notifications.CHANGE_PLAY_STATE, PlayState.ERROR);
+  this.facade.error = error;
   ErrorCommand.__super__.execute.call(this, notification);
 };
 
 /**
  * The ReadyCommand class.
- *   
+ *
  * @constructor
  * @private
  * @extends {puremvc.SimpleCommand}
@@ -10259,14 +11679,15 @@ __extends(ReadyCommand, PlayerEventCommand);
 
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
 ReadyCommand.prototype.execute = function(notification) {
-  var volume, _ref;
+  var volume, _ref,
+    _this = this;
   volume = (_ref = this.facade.config) != null ? _ref.volume : void 0;
   if (volume != null) {
     this.sendNotification(Notifications.CHANGE_VOLUME, volume);
@@ -10278,7 +11699,13 @@ ReadyCommand.prototype.execute = function(notification) {
   this.sendNotification(Notifications.CHANGE_DISPLAY_STATE, DisplayState.NORMAL);
   this.sendNotification(Notifications.CHANGE_PLAY_STATE, PlayState.READY);
   this.sendNotification(Notifications.CHANGE_ACTIVE_STATE, ActiveState.ACTIVE);
-  this.dispatchEventAfterCommand(notification);
+  this.dispatchEventAfterCommand(notification).then(function() {
+    var media, _ref1;
+    media = (_ref1 = _this.facade.config) != null ? _ref1.media : void 0;
+    if (media != null) {
+      return _this.sendNotification(Notifications.SET_MEDIA, media);
+    }
+  });
 };
 
 /**
@@ -10341,38 +11768,6 @@ ChangeParamsCommand.prototype.execute = function(notification) {
 };
 
 /**
- * The MediaChangeCommand class.
- *   
- * @constructor
- * @private
- * @extends {amp.player.controller.PlayerEventCommand}
-*/
-function MediaChangeCommand() {
-  MediaChangeCommand.__super__.constructor.call(this);
-}
-
-
-__extends(MediaChangeCommand, PlayerEventCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-MediaChangeCommand.prototype.execute = function(notification) {
-  var media;
-  media = notification.getBody();
-  this.playerCore.setPlaybackCore(media);
-  this.playback.reset();
-  this.playback.setCurrentTime(media.startTime || 0);
-  MediaChangeCommand.__super__.execute.call(this, notification);
-};
-
-/**
  * The OverlayLayerMediator class.
  * 
  * @constructor
@@ -10429,7 +11824,7 @@ OverlayLayerMediator.prototype.handleNotification = function(notification) {
   }
 };
 
-/** 
+/**
  * @constructor
  * @private
 */
@@ -10451,8 +11846,8 @@ PluginAdapter.prototype.registered = null;
 
 /**
  * Registers the appropriate pipes and listeners when
- * this class is registered 
- * 
+ * this class is registered
+ *
  * @override
 */
 PluginAdapter.prototype.onRegister = function() {
@@ -10462,7 +11857,7 @@ PluginAdapter.prototype.onRegister = function() {
 /**
  * Overridden so this class may subscribe to all notifications
  * @return An Array
- * 
+ *
  * @override
 */
 PluginAdapter.prototype.listNotificationInterests = function() {
@@ -10473,13 +11868,14 @@ PluginAdapter.prototype.listNotificationInterests = function() {
  * Handles notifications of interest to this mediator. Note that
  * the default declaration is to allow the super to handle the
  * note. This leaves the base JunctionMediator to handle things
- * like ACCEPT_INPUT_PIPE and ACCEPT_OUTPUT_PIPE  
- * 
+ * like ACCEPT_INPUT_PIPE and ACCEPT_OUTPUT_PIPE
+ *
  * @param note An INotification
  * @override
 */
 PluginAdapter.prototype.handleNotification = function(notification) {
-  var body, config, def, feature, init, initialize, key, name, plugin, plugins, type, value, _ref;
+  var body, config, def, init, initialize, key, name, plugin, plugins, type, value, _ref,
+    _this = this;
   name = notification.getName();
   body = notification.getBody();
   switch (name) {
@@ -10519,7 +11915,7 @@ PluginAdapter.prototype.handleNotification = function(notification) {
           continue;
         }
         initialize = function(player, config, key, resolve, reject) {
-          return AMP.loadResources(init.resources).then(function() {
+          return _this.facade.loadResources(config.resources).then(function() {
             def = AMP.plugins[key][type];
             if (!(def != null)) {
               reject("[AMP] Plugin could not be found: " + key);
@@ -10534,10 +11930,6 @@ PluginAdapter.prototype.handleNotification = function(notification) {
       });
       break;
     case PluginNotifications.PLUGIN_REGISTERED:
-      feature = typeof body.getFeatureName === "function" ? body.getFeatureName() : void 0;
-      if (feature != null) {
-        this.facade[feature] = body;
-      }
       this.onpluginregistered(body.getModuleName(), body);
   }
 };
@@ -10562,9 +11954,14 @@ PluginAdapter.prototype.onpluginerror = function(key, error) {
 };
 
 PluginAdapter.prototype.onpluginregistered = function(key, plugin) {
+  var feature;
   this.registered++;
   this.facade.logger.debug("[AMP] Plugin registered: " + key);
   this.facade[key] = plugin;
+  feature = (typeof plugin.getFeatureName === "function" ? plugin.getFeatureName() : void 0) || plugin.feature;
+  if (feature != null) {
+    this.facade[feature] = plugin;
+  }
   this.initializedCheck();
 };
 
@@ -10683,7 +12080,7 @@ ClassList.toggle = function(className, element, prefix) {
 
 /**
  * The LocalizationProxy class. Used to track player localization settings.
- * 
+ *
  * @constructor
  * @private
  * @extends {DataBindingContext}
@@ -10737,7 +12134,7 @@ LocalizationProxy.prototype.onRegister = function() {
 
 /**
  * Gets the context data for this proxy.
- * 
+ *
  * @returns {Object} The contenxt data for this proxy
  * @override
 */
@@ -10753,9 +12150,11 @@ LocalizationProxy.prototype.getLanguage = function() {
 };
 
 LocalizationProxy.prototype.setLanguage = function(value) {
-  this.data.language = value;
-  this.setLocale(value);
-  this.sendNotification(Notifications.LANGUAGE_CHANGE, value);
+  var _this = this;
+  this.setLocale(value).then(function() {
+    _this.data.language = value;
+    _this.sendNotification(Notifications.LANGUAGE_CHANGE, value);
+  });
   return value;
 };
 
@@ -10763,14 +12162,32 @@ LocalizationProxy.prototype.setLanguage = function(value) {
  *
 */
 LocalizationProxy.prototype.setLocale = function(value) {
-  this.localeId = value;
-  this.locale = this.data.locales[this.localeId];
-  if (!(this.locale != null)) {
-    this.localeId = value.substring(0, 2);
-    this.locale = this.data.locales[this.localeId];
-  }
-  this.facade.l10n = this.locale;
-  return value;
+  var _this = this;
+  return new Promise(function(resolve, reject) {
+    var complete, locale, localeId;
+    complete = function() {
+      _this.localeId = localeId;
+      _this.locale = _this.facade.l10n = _this.data.locales[localeId];
+      resolve();
+    };
+    localeId = value;
+    locale = _this.data.locales[localeId];
+    if (!(locale != null)) {
+      localeId = value.substring(0, 2);
+      locale = _this.data.locales[localeId];
+    }
+    if (typeof locale === "string") {
+      return AMP.addResource({
+        src: _this.facade.evaluatePaths(locale),
+        type: Utils.mimeTypes.json
+      }).then(function(resource) {
+        _this.data.locales[localeId] = resource.data;
+        return complete();
+      });
+    } else {
+      return complete();
+    }
+  });
 };
 
 LocalizationProxy.prototype.getLocaleId = function() {
@@ -10792,15 +12209,23 @@ LocalizationProxy.prototype.setLocales = function(value) {
 /**
  *
 */
-LocalizationProxy.prototype.getString = function(key) {
-  var locale;
-  locale = this.locale || this.data.locales.en;
-  return locale[key] || "";
+LocalizationProxy.prototype.getString = function(key, context) {
+  var locale, str;
+  try {
+    locale = this.locale || this.data.locales.en;
+    str = locale[key] || key;
+    if (context != null) {
+      str = DataBinding.evaluateBindings(str, context);
+    }
+    return str;
+  } catch (error) {
+    return "";
+  }
 };
 
 /**
  * Retrieves the full language name in the player's current language setting.
- * 
+ *
  * @param   {string}  lang  The language code.
  * @return  {string}        The full name of the language according to the player's current language setting.
 */
@@ -10937,11 +12362,11 @@ ExternalPlayCommand.prototype.execute = function(notification) {
   ExternalPlayCommand.__super__.execute.call(this, notification);
 };
 
-/** 
+/**
  * The ExternalPlayer class.
- *   
+ *
  * @constructor
- * @private 
+ * @private
  * @extends {Player}
  * @param {Object} config
  * @param {Object} viewComponent
@@ -11006,11 +12431,6 @@ ExternalPlayer.prototype.createController = function() {
 */
 ExternalPlayer.prototype.createMediaElement = function() {
   return document.createElement("div");
-};
-
-ExternalPlayer.prototype.evaluateBinding = function(str) {
-  var _ref;
-  return (_ref = this.retrieveProxy(DataBindingProxy.NAME)) != null ? _ref.evaluateBinding(str) : void 0;
 };
 
 ExternalPlayer.prototype.canPlayType = function(mimeType) {
@@ -11116,6 +12536,280 @@ ExternalPlayer.prototype.getPaused = function() {
 
 ExternalPlayer.prototype.getEnded = function() {
   return false;
+};
+
+/**
+ * Event constructor.
+ *
+ * @param {!string}  type  A string representing the event's type.
+ * @param {Object=} detail  Data to pass along with the event.
+ * @constructor
+ * @private
+*/
+function Event(type, detail) {
+  this.type = type;
+  if (detail != null) {
+    this.detail = this.data = detail;
+  }
+}
+
+/**
+ * The event's type.
+ * 
+ * @type {string}
+*/
+Event.prototype.type = null;
+
+/**
+ * The event's target
+ * 
+ * @type {Object}
+*/
+Event.prototype.target = null;
+
+/**
+ * Collection of event specific details.
+ * 
+ * @type {Object}
+*/
+Event.prototype.detail = null;
+
+function Logger(enabled) {
+  this.enabled = enabled;
+  if (!this.enabled) {
+    this.log = this.trace = this.debug = this.info = this.warn = this.error = this.fatal = function() {};
+  }
+}
+
+Logger.prototype.log = function() {
+  try {
+    if (arguments.length > 1 && (arguments[1] != null)) {
+      console.log.apply(console, arguments);
+    } else {
+      console.log(arguments[0]);
+    }
+  } catch (error) {
+
+  }
+};
+
+Logger.prototype.trace = function() {
+  try {
+    console.trace.apply(console, arguments);
+  } catch (error) {
+
+  }
+};
+
+Logger.prototype.debug = function() {
+  try {
+    console.log.apply(console, arguments);
+  } catch (error) {
+    this.log.apply(this, arguments);
+  }
+};
+
+Logger.prototype.info = function() {
+  try {
+    console.info.apply(console, arguments);
+  } catch (error) {
+
+  }
+};
+
+Logger.prototype.warn = function() {
+  try {
+    console.warn.apply(console, arguments);
+  } catch (error) {
+
+  }
+};
+
+Logger.prototype.error = function() {
+  try {
+    console.error.apply(console, arguments);
+  } catch (error) {
+    this.log.apply(this, arguments);
+  }
+};
+
+Logger.prototype.fatal = function() {
+  try {
+    console.fatal.apply(console, arguments);
+  } catch (error) {
+
+  }
+};
+
+/**
+ * Poller class
+ *
+ * @constructor
+ * @private
+ * @extends {EventDispatcher}
+ * @param {string} url
+ * @param {number} interval
+ * @param {string} type
+ * @param {Object} headers
+*/
+function Poller(url, interval, type, headers) {
+  this.url = url;
+  this.interval = interval != null ? interval : 10000;
+  this.type = type != null ? type : null;
+  this.headers = headers != null ? headers : null;
+  Poller.__super__.constructor.call(this);
+}
+
+
+__extends(Poller, EventDispatcher);
+
+
+Poller.prototype.timeout = null;
+
+Poller.prototype.interval = null;
+
+Poller.prototype.url = null;
+
+Poller.prototype.lastModified = null;
+
+Poller.prototype.contentLenght = null;
+
+Poller.prototype.data = null;
+
+Poller.prototype.text = null;
+
+Poller.prototype.type = null;
+
+Poller.prototype.headers = null;
+
+Poller.prototype.useHeadRequest = true;
+
+Poller.prototype.xhr = null;
+
+/**
+*/
+Poller.prototype.start = function() {
+  if ((this.url != null) && this.url !== "") {
+    this.poll();
+  }
+};
+
+/**
+*/
+Poller.prototype.poll = function() {
+  var xhr,
+    _this = this;
+  xhr = Utils.getXHR();
+  if (!this.useHeadRequest) {
+    this.updateData();
+  } else {
+    xhr.onload = function(event) {
+      var contentLength, lastModified;
+      if (xhr.status === 304) {
+        _this.invoke();
+        return;
+      }
+      lastModified = xhr.getResponseHeader("Last-Modified");
+      contentLength = xhr.getResponseHeader("Content-Length");
+      if ((!(lastModified != null) && !(contentLength != null)) || ((lastModified != null) && lastModified !== _this.lastModified) || ((contentLength != null) && contentLength !== _this.contentLength)) {
+        _this.lastModified = lastModified;
+        _this.contentLength = contentLength;
+        _this.updateData();
+      } else {
+        _this.invoke();
+      }
+    };
+    xhr.onerror = function(event) {
+      _this.error(event);
+    };
+    xhr.open("HEAD", Utils.cacheBust(this.url), false);
+    this.applyHeaders();
+    if (this.lastModified != null) {
+      xhr.setRequestHeader("If-Modified-Since", this.lastModified);
+    }
+    xhr.send();
+  }
+};
+
+/**
+*/
+Poller.prototype.applyHeaders = function() {
+  if (!(this.headers != null)) {
+    return;
+  }
+  this.xhr.setRequestHeaders(this.headers);
+};
+
+/**
+*/
+Poller.prototype.updateData = function() {
+  var xhr,
+    _this = this;
+  xhr = Utils.getXHR();
+  xhr.open("GET", Utils.cacheBust(this.url), true);
+  xhr.onload = function(event) {
+    var text;
+    text = xhr.responseText;
+    _this.setText(text);
+    _this.invoke();
+  };
+  xhr.onerror = function(event) {
+    _this.error(event);
+  };
+  this.applyHeaders();
+  return xhr.send();
+};
+
+/**
+*/
+Poller.prototype.setText = function(value) {
+  var data;
+  if (value !== this.text) {
+    this.text = value;
+    data = this.text;
+    if (this.type === Utils.mimeTypes.json) {
+      try {
+        data = this.xhr.response;
+      } catch (error) {
+        data = this.text;
+      }
+    }
+    this.setData(data);
+  }
+  return value;
+};
+
+/**
+*/
+Poller.prototype.setData = function(value) {
+  if (value !== this.data) {
+    this.data = value;
+    this.dispatchEvent(new Event("datachange", this.data));
+  }
+  return value;
+};
+
+/**
+*/
+Poller.prototype.error = function(error) {
+  Logger.error(event);
+  this.stop();
+};
+
+/**
+*/
+Poller.prototype.invoke = function() {
+  var _this = this;
+  this.stop();
+  this.timeout = setTimeout(function() {
+    _this.poll();
+  }, this.interval);
+};
+
+/**
+*/
+Poller.prototype.stop = function() {
+  clearTimeout(this.timeout);
 };
 
 function FeedVO() {
@@ -11251,43 +12945,76 @@ MediaVO.prototype.scenes = null;
 
 MediaVO.prototype.startTime = null;
 
-/**
- * Event constructor.
- *
- * @param {!string}  type  A string representing the event's type.
- * @param {Object=} detail  Data to pass along with the event.
- * @constructor
- * @private
-*/
-function Event(type, detail) {
-  this.type = type;
-  if (detail != null) {
-    this.detail = this.data = detail;
-  }
+function IdleUtil(element, timeout) {
+  this.element = element;
+  this.timeout = timeout;
+  IdleUtil.__super__.constructor.call(this);
+  this.resetHandler = this.reset.bind(this);
 }
 
-/**
- * The event's type.
- * 
- * @type {string}
-*/
-Event.prototype.type = null;
+
+__extends(IdleUtil, EventDispatcher);
+
+
+IdleUtil.prototype.events = ["mousemove", "mousedown", "keypress", "DOMMouseScroll", "mousewheel", "touchmove", "MSPointerMove"];
+
+IdleUtil.prototype.resetHandler = null;
+
+IdleUtil.prototype.element = null;
+
+IdleUtil.prototype.timeout = null;
+
+IdleUtil.prototype.active = true;
+
+IdleUtil.prototype.timeoutId = null;
+
+IdleUtil.prototype.applyListeners = function(action) {
+  var event, _i, _len, _ref;
+  if (action == null) {
+    action = "add";
+  }
+  _ref = this.events;
+  for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+    event = _ref[_i];
+    this.element["" + action + "EventListener"](event, this.resetHandler);
+  }
+};
+
+IdleUtil.prototype.start = function(timeout) {
+  if (timeout != null) {
+    this.timeout = timeout;
+  }
+  this.stop();
+  this.applyListeners("add");
+  this.timeoutId = setTimeout(this.setActive.bind(this, false), this.timeout);
+};
+
+IdleUtil.prototype.stop = function() {
+  this.applyListeners("remove");
+  clearTimeout(this.timeoutId);
+};
+
+IdleUtil.prototype.reset = function() {
+  this.setActive(true);
+  this.start();
+};
+
+IdleUtil.prototype.setActive = function(value) {
+  if (value === this.active) {
+    return;
+  }
+  this.active = value;
+  this.dispatchEvent(new Event("activechange", {
+    active: this.active
+  }));
+  return value;
+};
+
+IdleUtil.prototype.getActive = function() {
+  return this.active;
+};
 
 /**
- * The event's target
- * 
- * @type {Object}
-*/
-Event.prototype.target = null;
-
-/**
- * Collection of event specific details.
- * 
- * @type {Object}
-*/
-Event.prototype.detail = null;
-
-/** 
  * @constructor
  * @private
 */
@@ -11295,8 +13022,8 @@ function MRSSHelper() {}
 
 /**
 */
-MRSSHelper.prototype.getFeed = function(url, onload, onerror) {
-  return Utils.getJson(url, onload, onerror);
+MRSSHelper.prototype.getFeed = function(url) {
+  return Utils.getFeed(url);
 };
 
 /**
@@ -11383,7 +13110,7 @@ MRSSHelper.prototype.createFeed = function(json) {
 /**
 */
 MRSSHelper.prototype.createMedia = function(item) {
-  var atts, category, content, key, label, mediaContent, mediaVO, node, source, track, value, _i, _j, _k, _len, _len1, _len2, _ref, _ref1, _ref2;
+  var atts, category, content, key, label, mediaContent, mediaVO, node, restriction, source, track, value, _i, _j, _k, _l, _len, _len1, _len2, _len3, _ref, _ref1, _ref2;
   try {
     mediaVO = new MediaVO();
     mediaContent = this.getMediaNode(item, 'content');
@@ -11433,14 +13160,29 @@ MRSSHelper.prototype.createMedia = function(item) {
         reason: node['@attributes'].reason
       };
     }
+    node = this.getMediaNode(item, "restriction", false);
+    if (node != null) {
+      if (!(node instanceof Array)) {
+        node = [node];
+      }
+      mediaVO.restriction = [];
+      for (_j = 0, _len1 = node.length; _j < _len1; _j++) {
+        restriction = node[_j];
+        mediaVO.restriction.push({
+          relationship: restriction["@attributes"].relationship,
+          type: restriction["@attributes"].type,
+          value: restriction["#text"].split(" ")
+        });
+      }
+    }
     mediaVO.category = item.category;
     if (!(mediaVO.category instanceof Array)) {
       mediaVO.category = [mediaVO.category];
     }
     node = this.getMediaNode(item, "category", false);
     if (node != null) {
-      for (_j = 0, _len1 = node.length; _j < _len1; _j++) {
-        category = node[_j];
+      for (_k = 0, _len2 = node.length; _k < _len2; _k++) {
+        category = node[_k];
         if ((category["#text"] != null) && category["#text"] !== "") {
           mediaVO.category.push(category["#text"]);
         }
@@ -11467,8 +13209,8 @@ MRSSHelper.prototype.createMedia = function(item) {
       if (!(node instanceof Array)) {
         node = [node];
       }
-      for (_k = 0, _len2 = node.length; _k < _len2; _k++) {
-        track = node[_k];
+      for (_l = 0, _len3 = node.length; _l < _len3; _l++) {
+        track = node[_l];
         if (track["@attributes"] != null) {
           mediaVO.track.push({
             src: track["@attributes"].href,
@@ -11484,7 +13226,7 @@ MRSSHelper.prototype.createMedia = function(item) {
       category = [category];
     }
     mediaVO.isLive = item.temporalType === "live" || ((category != null) && category.join(",").indexOf("live_stream") !== -1);
-    mediaVO.temporalType = mediaVO.isLive ? "live" : "vod";
+    mediaVO.temporalType = mediaVO.isLive ? "live" : item.temporalType || "vod";
     for (key in item) {
       value = item[key];
       if (!(key in mediaVO)) {
@@ -11497,79 +13239,41 @@ MRSSHelper.prototype.createMedia = function(item) {
   return mediaVO;
 };
 
-function Logger() {}
+function Cookies() {}
 
-Logger.enabled = false;
-
-Logger.enable = function(enabled) {
-  if (enabled == null) {
-    enabled = /debug\=true/.test(location.search.toLowerCase());
+Cookies.setCookie = function(name, value, days, path, domain) {
+  var expires;
+  value = escape(value);
+  if (days != null) {
+    expires = new Date();
+    expires.setDate(expires.getDate() + days);
+    value += "; expires=" + expires.toUTCString();
   }
-  this.enabled = enabled;
-  if (!this.enabled) {
-    this.log = this.trace = this.debug = this.info = this.warn = this.error = this.fatal = function() {};
+  if (domain != null) {
+    value += "; domain=" + domain;
   }
-  return enabled;
+  if (path != null) {
+    value += "; path=" + path;
+  }
+  return document.cookie = name + "=" + value;
 };
 
-Logger.log = function() {
-  try {
-    if (arguments.length > 1 && (arguments[1] != null)) {
-      console.log.apply(console, arguments);
-    } else {
-      console.log(arguments[0]);
+Cookies.getCookie = function(name) {
+  var cookie, cookies, index, key, value, _i, _len;
+  cookies = document.cookie.split(";");
+  for (_i = 0, _len = cookies.length; _i < _len; _i++) {
+    cookie = cookies[_i];
+    index = cookie.indexOf("=");
+    key = cookie.substr(0, index).replace(/^\s+|\s+$/g, "");
+    value = unescape(cookie.substr(index + 1));
+    if (key === name) {
+      return value;
     }
-  } catch (error) {
-
   }
 };
 
-Logger.trace = function() {
-  try {
-    console.trace.apply(console, arguments);
-  } catch (error) {
-
-  }
-};
-
-Logger.debug = function() {
-  try {
-    console.log.apply(console, arguments);
-  } catch (error) {
-    this.log.apply(this, arguments);
-  }
-};
-
-Logger.info = function() {
-  try {
-    console.info.apply(console, arguments);
-  } catch (error) {
-
-  }
-};
-
-Logger.warn = function() {
-  try {
-    console.warn.apply(console, arguments);
-  } catch (error) {
-
-  }
-};
-
-Logger.error = function() {
-  try {
-    console.error.apply(console, arguments);
-  } catch (error) {
-    this.log.apply(this, arguments);
-  }
-};
-
-Logger.fatal = function() {
-  try {
-    console.fatal.apply(console, arguments);
-  } catch (error) {
-
-  }
+Cookies.deleteCookie = function(name) {
+  return this.setCookie(name, "", -1);
 };
 
 /**
@@ -11738,6 +13442,106 @@ XHR.isCORS = function(url) {
   return location.protocol !== protocol || location.hostname !== hostname || location.port !== port && !(location.port === "" && port === "80");
 };
 
+/**
+ * Constructs a new Timer object with the specified delay and repeatCount states.
+*/
+function Timer(delay, repeatCount) {
+  var _this = this;
+  this.delay = delay;
+  this.repeatCount = repeatCount != null ? repeatCount : 0;
+  Timer.__super__.constructor.call(this);
+  this._running = false;
+  this._currentCount = 0;
+  this._timeout = null;
+  this._startTime = null;
+  this._currentTime = 0;
+  this.tick = this.tick.bind(this);
+  this.next = setTimeout.bind(null, this.tick, this.delay);
+  Object.defineProperties(this, {
+    currentCount: {
+      get: function() {
+        return _this._currentCount;
+      },
+      enumerable: true,
+      configurable: false
+    },
+    running: {
+      get: function() {
+        return _this._running;
+      },
+      enumerable: true,
+      configurable: false
+    },
+    time: {
+      get: function() {
+        return _this._currentTime + (Date.now() - _this._startTime);
+      },
+      enumerable: true,
+      configurable: false
+    }
+  });
+}
+
+
+__extends(Timer, EventDispatcher);
+
+
+/**
+ * Stops the timer, if it is running, and sets the currentCount property back to 0, like the reset button of a stopwatch.
+*/
+Timer.prototype.reset = function() {
+  this.stop();
+  this._currentCount = 0;
+  this._currentTime = 0;
+  this._startTime = null;
+};
+
+/**
+ * Starts the timer, if it is not already running.
+*/
+Timer.prototype.start = function() {
+  var delay;
+  if (this._running === true) {
+    return;
+  }
+  delay = this.delay - (this._currentTime - (this.delay * this._currentCount));
+  this._running = true;
+  this._timeout = setTimeout(this.tick, delay);
+};
+
+/**
+ * Stops the timer.
+*/
+Timer.prototype.stop = function() {
+  if (this._running === false) {
+    return;
+  }
+  clearTimeout(this._timeout);
+  this._currentTime += Date.now() - this._startTime;
+  this._timeout = null;
+  this._running = false;
+};
+
+/**
+ *
+*/
+Timer.prototype.tick = function() {
+  var complete;
+  clearTimeout(this._timeout);
+  complete = this.repeatCount !== 0 && this._currentCount >= this.repeatCount;
+  this._currentCount++;
+  this._currentTime += this.delay;
+  this._startTime = Date.now();
+  if (complete === false) {
+    this._timeout = this.next();
+  }
+  this.dispatchEvent(new Event("timer", this));
+  if (complete === true) {
+    this.stop();
+    this.dispatchEvent(new Event("complete", this));
+  }
+};
+
 function Utils() {}
 
 Utils.blankImage = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAMAAAAoyzS7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NjI2QkJDQTBCMzQ4MTFFMUFERDJBRkRGQUQwNTcxRTIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NjI2QkJDQTFCMzQ4MTFFMUFERDJBRkRGQUQwNTcxRTIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowODg4NjdFQkIzNDgxMUUxQUREMkFGREZBRDA1NzFFMiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDowODg4NjdFQ0IzNDgxMUUxQUREMkFGREZBRDA1NzFFMiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pu0++ecAAAAGUExURf///wAAAFXC034AAAABdFJOUwBA5thmAAAADElEQVR42mJgAAgwAAACAAFPbVnhAAAAAElFTkSuQmCC";
@@ -11808,8 +13612,12 @@ Utils.getPlaybackMode = function(mode) {
     mode = this.isHTMLFirst() ? PlaybackMode.HTML : PlaybackMode.AUTO;
   }
   if (mode !== PlaybackMode.AUTO) {
-    if (mode === PlaybackMode.FLASH && !this.hasFlash()) {
-      mode = PlaybackMode.NONE;
+    if (mode === PlaybackMode.FLASH && (!this.hasFlash() || typeof FlashPlayer === "undefined")) {
+      if (this.supportsHTML5Video()) {
+        mode = PlaybackMode.HTML;
+      } else {
+        mode = PlaybackMode.NONE;
+      }
     }
     return mode;
   }
@@ -11853,7 +13661,7 @@ Utils.getSafariVersion = function() {
   var rv, ua;
   rv = -1;
   ua = navigator.userAgent;
-  if (/Safari\/[0-9\.]+$/.test(ua) && (/Version\/([0-9])/.exec(ua) != null)) {
+  if (/Safari\/[0-9\.]+$/.test(ua) && (/Version\/([0-9]+\.[0-9]+) Safari/.exec(ua) != null)) {
     rv = parseFloat(RegExp.$1);
   }
   return rv;
@@ -11861,6 +13669,16 @@ Utils.getSafariVersion = function() {
 
 Utils.isChrome = function() {
   return /Chrom(e|ium)/.test(navigator.userAgent);
+};
+
+Utils.getChromeVersion = function() {
+  var rv, ua;
+  rv = -1;
+  ua = navigator.userAgent;
+  if (/Chrome( Mobile)?\/([0-9\.]+)/.test(ua)) {
+    rv = parseFloat(ua.match(/Chrome( Mobile)?\/([0-9\.]+)/)[2].split(".").slice(0, 2).join("."));
+  }
+  return rv;
 };
 
 Utils.isHTMLFirst = function() {
@@ -11906,6 +13724,22 @@ Utils.selectSource = function(sources, canPlayType) {
     item = sources[_j];
     if (canPlayType(item.type || Utils.getMimeType(item.src)) !== "") {
       return item;
+    }
+  }
+  return null;
+};
+
+Utils.getSourceByType = function(media, type) {
+  var source, sources, _i, _len;
+  sources = media.source != null ? media.source.slice() : [];
+  if (!(media.type != null)) {
+    media.type = Utils.getMimeType(media.src);
+  }
+  sources.unshift(media);
+  for (_i = 0, _len = sources.length; _i < _len; _i++) {
+    source = sources[_i];
+    if (source.type === type) {
+      return source;
     }
   }
   return null;
@@ -11968,13 +13802,13 @@ Utils.isHTML5 = function() {
 
 Utils.isIOS = function() {
   var iOSRegEx, isIOS;
-  iOSRegEx = /iPad|iPhone|iPod/i;
+  iOSRegEx = /iP(hone|od|ad)/i;
   return isIOS = iOSRegEx.test(navigator.platform) || iOSRegEx.test(navigator.userAgent);
 };
 
 Utils.getIOSversion = function() {
   var ver;
-  if (/iP(hone|od|ad)/.test(navigator.platform)) {
+  if (this.isIOS()) {
     ver = navigator.appVersion.match(/OS (\d+)_(\d+)_?(\d+)?/);
     return [parseInt(ver[1], 10), parseInt(ver[2], 10), parseInt(ver[3] || 0, 10)];
   }
@@ -12056,7 +13890,7 @@ Utils.xmlToJson = function(xml) {
 
 /**
  * Returns a platform specific XHR object.
- * 
+ *
  * @static
 */
 Utils.getXHR = function() {
@@ -12065,7 +13899,7 @@ Utils.getXHR = function() {
 
 /**
  * Retrieves a remote text file
- * 
+ *
  * @static
 */
 Utils.get = function(url, client, headers) {
@@ -12098,31 +13932,19 @@ Utils.get = function(url, client, headers) {
 
 /**
  * Retrieves a remote text file
- * 
+ *
  * @static
 */
-Utils.getUTC = function(oncomplete, onerror) {
-  var client,
-    _this = this;
-  if (typeof oncomplete !== "function") {
-    return;
-  }
-  try {
-    client = {
-      onload: function(event) {
-        oncomplete(parseInt(event.target.responseText) * 1000);
-      },
-      onerror: onerror
-    };
-    this.get("//time.akamai.com", client);
-  } catch (error) {
-    onerror(error);
-  }
+Utils.getUTC = function() {
+  var _this = this;
+  return this.request("//time.akamai.com").then(function(xhr) {
+    return parseInt(xhr.responseText) * 1000;
+  });
 };
 
 /**
  * Posts a string to NetStorage.
- * 
+ *
  * @static
 */
 Utils.send = function(url, data, client, headers) {
@@ -12152,7 +13974,7 @@ Utils.send = function(url, data, client, headers) {
 
 /**
  * Request an http resource
- * 
+ *
  * @static
 */
 Utils.request = function(options) {
@@ -12161,7 +13983,7 @@ Utils.request = function(options) {
     options = {};
   }
   return new Promise(function(resolve, reject) {
-    var xhr;
+    var key, value, xhr, _ref;
     if (typeof options === "string") {
       options = {
         url: options
@@ -12170,53 +13992,100 @@ Utils.request = function(options) {
     if (!(options.method != null)) {
       options.method = "GET";
     }
-    xhr = Utils.getXHR();
-    xhr.withCredentials = options.withCredentials;
+    xhr = new XMLHttpRequest();
+    xhr.open(options.method, options.url);
     xhr.onload = function() {
       return resolve(xhr);
     };
-    xhr.onerror = reject;
-    xhr.open(options.method, options.url);
-    if (options.headers != null) {
-      xhr.setRequestHeaders(options.headers);
+    xhr.onerror = function(event) {
+      return reject(event);
+    };
+    xhr.withCredentials = options.withCredentials;
+    if (options.responseType != null) {
+      try {
+        xhr.responseType = options.responseType;
+      } catch (error) {
+
+      }
     }
-    return xhr.send(options.data);
+    if (options.headers != null) {
+      _ref = options.headers;
+      for (key in _ref) {
+        value = _ref[key];
+        if ((key != null) && (value != null)) {
+          xhr.setRequestHeader(key, value);
+        }
+      }
+    }
+    return xhr.send(options.data || options.body);
+  });
+};
+
+/**
+ * Request an http resource
+ *
+ * @static
+*/
+Utils.requestText = function(options) {
+  var _this = this;
+  if (options == null) {
+    options = {};
+  }
+  return this.request(options).then(function(xhr) {
+    return xhr.responseText;
+  });
+};
+
+/**
+ * Request an http resource
+ *
+ * @static
+*/
+Utils.requestJson = function(options) {
+  var _this = this;
+  if (options == null) {
+    options = {};
+  }
+  return this.requestText(options).then(function(text) {
+    return JSON.parse(text);
   });
 };
 
 /**
  * Attaches a JavaScript file to the head of the document.
- * 
+ *
  * @static
 */
-Utils.loadScript = function(src, onload, parent, onerror) {
-  var head, script;
-  head = parent || document.getElementsByTagName("head")[0];
-  script = document.createElement("script");
-  script.type = 'text/javascript';
-  if (onload != null) {
+Utils.loadScript = function(src, parent) {
+  var _this = this;
+  return new Promise(function(resolve, reject) {
+    var head, script;
+    head = parent || document.getElementsByTagName("head")[0];
+    script = document.createElement("script");
+    script.type = 'text/javascript';
     if (script.addEventListener) {
-      script.onload = onload;
-      if (onerror != null) {
-        script.onerror = onerror;
-      }
+      script.onload = function() {
+        resolve(script);
+      };
+      script.onerror = function(event) {
+        reject(event);
+      };
     } else if (script.readyState) {
       script.onreadystatechange = function(event) {
         if (this.readyState === 'loaded' || this.readyState === 'complete') {
           this.onreadystatechange = null;
-          onload();
+          resolve(script);
         }
       };
     }
-  }
-  script.src = src;
-  head.appendChild(script);
-  return script;
+    script.src = src;
+    head.appendChild(script);
+  });
 };
 
 /**
  * Attaches a CSS file to the head of the document.
- * 
+ *
  * @static
 */
 Utils.loadStyleSheet = function(href) {
@@ -12224,7 +14093,7 @@ Utils.loadStyleSheet = function(href) {
   head = document.getElementsByTagName("head")[0];
   link = document.createElement("link");
   link.rel = "stylesheet";
-  link.type = 'text/css';
+  link.type = "text/css";
   link.href = href;
   return head.appendChild(link);
 };
@@ -12261,7 +14130,10 @@ Utils.read = function(url, client, type, headers) {
 };
 
 Utils.getFileExtension = function(url) {
-  return url.replace(/\?.*/, "").split('.').pop();
+  if (url == null) {
+    url = "";
+  }
+  return url.replace(/\?.*/, "").replace(/\#.*/, "").split('.').pop();
 };
 
 Utils.getResponseHeader = function(url, header, client) {
@@ -12302,14 +14174,14 @@ Utils.getResponseHeaders = function(url, headers, client) {
 
 /**
  * Determines if the device supports touch events
- * 
+ *
  * @static
 */
 Utils.isTouch = null;
 
 /**
  * Determines if the device supports touch events
- * 
+ *
  * @static
 */
 Utils.isTouchDevice = function() {
@@ -12326,7 +14198,7 @@ Utils.isTouchDevice = function() {
 
 /**
  * Forces a number between a min and a max
- * 
+ *
  * @static
 */
 Utils.clamp = function(value, min, max) {
@@ -12341,7 +14213,7 @@ Utils.clamp = function(value, min, max) {
 
 /**
  * Beacons a url via an img tag
- * 
+ *
  * @static
 */
 Utils.beacon = function(url, beaconId) {
@@ -12364,13 +14236,13 @@ Utils.beacon = function(url, beaconId) {
 
 /**
  * Calculates offset Left and Top
- * 
+ *
  * @static
 */
 Utils.getElementOffset = function(element, root) {
   var height, left, scrollLeft, scrollTop, top, width;
   if (root == null) {
-    root = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullscreenElement;
+    root = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
   }
   left = 0;
   top = 0;
@@ -12399,10 +14271,10 @@ Utils.getElementOffset = function(element, root) {
 /**
  * Override the properties of a base object with the values
  * of an override object.
- * 
+ *
  * @param {Object} base     The base object.
  * @param {Object} overrides  key/value overrides
- * @return {Object} 
+ * @return {Object}
  * @static
 */
 Utils.override = function(base, overrides, clone) {
@@ -12435,8 +14307,59 @@ Utils.override = function(base, overrides, clone) {
 };
 
 /**
+ * Diffs two objects.
+ *
+ * @param {Object} oldObj The old object.
+ * @param {Object} newObj The new object.
+ * @return {Object?}
+ * @static
+*/
+Utils.diff = function(oldObj, newObj) {
+  var changes, diff, key, old, value;
+  if (!(newObj != null)) {
+    return null;
+  }
+  if (!(oldObj != null) && (newObj != null)) {
+    return newObj;
+  }
+  changes = {};
+  for (key in newObj) {
+    value = newObj[key];
+    if ((old = oldObj[key]) !== value) {
+      if (!(old != null)) {
+        changes[key] = value;
+      } else {
+        switch (typeof value) {
+          case "string":
+          case "number":
+          case "boolean":
+          case "function":
+            changes[key] = value;
+            break;
+          case "object":
+            if (value instanceof Array) {
+              if (old.length !== value.length) {
+                changes[key] = value;
+              }
+            } else {
+              diff = this.diff(old, value);
+              if (diff != null) {
+                changes[key] = diff;
+              }
+            }
+        }
+      }
+    }
+  }
+  if (Object.keys(changes).length === 0) {
+    return null;
+  }
+  return changes;
+};
+
+/**
  * Clones an object.
- * 
+ *
  * @param {Object} obj The object to be cloned.
  * @return {Object}
  * @static
@@ -12483,7 +14406,7 @@ Utils.clone = function(obj, deepCopy) {
 
 /**
  * Takes a time in seconds and converts it to timecode.
- * 
+ *
  * @param   {Number}  time  The time in seconds to be formatted.
  * @return  {String}  A SMTP formatted string.
 */
@@ -12508,7 +14431,7 @@ Utils.formatTimecode = function(time, duration) {
 
 /**
  * Converts a time in seconds to a string and adds a zero in front of any number lower than 10.
- * 
+ *
  * @param Number time The number to be zero filled.
 */
 Utils.formatZeroFill = function(time) {
@@ -12522,7 +14445,7 @@ Utils.formatZeroFill = function(time) {
 
 /**
  * Converts timecode to seconds.
- * 
+ *
  * @param   {string}  timeCode        A SMTP formatted string.
  * @param   {number}  [framerate=30]  The frame rate. Used to calculate milliseconds.
  * @return  {number}                  The number of seconds represented by the time code
@@ -12558,7 +14481,7 @@ Utils.flattenTimecode = function(timeCode, framerate) {
 
 /**
  * Adds a cache busting query string parameter to a url.
- * 
+ *
  * @param String url The url.
  * @param String key The name of the query string variable
  * @param Object value The value of the query string variable
@@ -12593,28 +14516,15 @@ Utils.trim = function(str) {
 
 /**
 */
-Utils.getJson = function(url, onload, onerror) {
-  var xhr;
-  xhr = Utils.getXHR();
-  xhr.open("GET", url);
-  xhr.onload = function(event) {
-    var feed;
-    if (xhr.responseType === "document") {
-      feed = Utils.xmlToJson(xhr.responseXML);
+Utils.getFeed = function(url) {
+  var _this = this;
+  return this.request(url).then(function(xhr) {
+    if (xhr.responseType === "document" || /^</.test(xhr.responseText)) {
+      return Utils.xmlToJson(xhr.responseXML);
     } else {
-      feed = xhr.response;
+      return JSON.parse(xhr.responseText);
     }
-    if (typeof onload === "function") {
-      onload(feed);
-    }
-  };
-  xhr.onerror = function(event) {
-    if (typeof onerror === "function") {
-      onerror(event);
-    }
-  };
-  xhr.send();
-  return xhr;
+  });
 };
 
 /**
@@ -12640,7 +14550,7 @@ Utils.getSource = function(url, onload, onerror) {
       onload(source);
     }
   };
-  Utils.getJson(url, feedloadedHandler, onerror);
+  Utils.getFeed(url).then(feedloadedHandler)["catch"](onerror);
 };
 
 /**
@@ -12792,8 +14702,8 @@ Utils.createFlashObject = function(flash, parent) {
  * Creates a unique id.
  *
  * @param   {number=}   base
- *    The base to use for representing a numeric value. 
- * 
+ *    The base to use for representing a numeric value.
+ *
  * @return  {string}
  *    The unique id.
 */
@@ -12807,6 +14717,280 @@ Utils.createUID = function(base) {
   max = base * len - 1;
   rand = Math.round(Math.random() * max + base);
   return (rand.toString(16) + date.toString(16)).toUpperCase();
+};
+
+/**
+ * Chains an array of promises sequentially
+ *
+ * @param   {Array}   promises
+ *    The list of promises
+ *
+ * @param   {Object}   data
+ *    Data to be passes from promise to promise
+ *
+ * @return  {Promise}
+ *    The promise chain
+*/
+Utils.chain = function(promises, data) {
+  var chain, promise, _i, _len;
+  chain = Promise.resolve(data);
+  for (_i = 0, _len = promises.length; _i < _len; _i++) {
+    promise = promises[_i];
+    chain = chain.then(promise);
+  }
+  return chain;
+};
+
+/**
+ * Asynchronously transform an object using an array of Promises
+ *
+ * @param   {Array}   promises
+ *    The list of promises
+ *
+ * @param   {Object}   data
+ *    Data to be passes from promise to promise
+ *
+ * @return  {Promise}
+ *    The transformed object
+*/
+Utils.transform = function(promises, data) {
+  var _this = this;
+  promises = promises.map(function(item) {
+    if (typeof item.transform === "function") {
+      return item.transform;
+    } else {
+      return item;
+    }
+  });
+  return this.chain(promises, data);
+};
+
+/**
+ * Converts an array buffer to UTF-8 string.
+ *
+ * @param   {ArrayBuffer}   arrayBuffer
+ *    The ArrayBuffer
+ *
+ * @return  {String}
+ *    The UTF-8 string
+*/
+Utils.arrayBufferToString = function(arrayBuffer) {
+  return String.fromCharCode.apply(null, new Uint8Array(arrayBuffer));
+};
+
+/**
+ * Parses a JSON Web Token
+ *
+ * @param {String} jwt
+ *
+ * @return {Object}
+ *    The parsed JSON Web Token as an object
+*/
+Utils.parseJWT = function(jwt) {
+  var parts;
+  parts = jwt.split(".");
+  return {
+    header: JSON.parse(atob(parts[0])),
+    payload: JSON.parse(atob(parts[1])),
+    signature: parts[2]
+  };
+};
+
+/**
+ *
+*/
+Utils.getFullScreenApi = function(container, video) {
+  var fullscreen;
+  fullscreen = {};
+  if (container.webkitRequestFullScreen != null) {
+    fullscreen.enter = container.webkitRequestFullScreen.bind(container);
+    fullscreen.exit = document.webkitExitFullscreen != null ? document.webkitExitFullscreen.bind(document) : document.webkitCancelFullScreen.bind(document);
+    fullscreen.event = "onwebkitfullscreenchange";
+    fullscreen.element = "webkitFullscreenElement";
+    fullscreen.error = "webkitfullscreenerror";
+  } else if (container.requestFullscreen != null) {
+    fullscreen.enter = container.requestFullscreen.bind(container);
+    fullscreen.exit = document.exitFullscreen != null ? document.exitFullscreen.bind(document) : document.cancelFullscreen.bind(document);
+    fullscreen.event = "onfullscreenchange";
+    fullscreen.element = "fullscreenElement";
+    fullscreen.error = "fullscreenerror";
+  } else if (container.mozRequestFullScreen != null) {
+    fullscreen.enter = container.mozRequestFullScreen.bind(container);
+    fullscreen.exit = document.mozCancelFullScreen.bind(document);
+    fullscreen.event = "onmozfullscreenchange";
+    fullscreen.element = "mozFullscreenElement";
+    fullscreen.error = "mozfullscreenerror";
+  } else if (container.msRequestFullscreen != null) {
+    fullscreen.enter = container.msRequestFullscreen.bind(container);
+    fullscreen.exit = document.msExitFullscreen.bind(document);
+    fullscreen.event = "MSFullscreenChange";
+    fullscreen.element = "msFullscreenElement";
+    fullscreen.error = "MSFullscreenError";
+  } else if (video.webkitEnterFullscreen != null) {
+    fullscreen.enter = video.webkitEnterFullscreen.bind(video);
+    fullscreen.exit = video.webkitExitFullscreen.bind(video);
+    fullscreen.event = null;
+    fullscreen.error = null;
+  }
+  return fullscreen;
+};
+
+/**
+*/
+Utils.stringToArray = function(string) {
+  var array, buffer, i, _i, _ref;
+  buffer = new ArrayBuffer(string.length * 2);
+  array = new Uint16Array(buffer);
+  for (i = _i = 0, _ref = string.length - 1; 0 <= _ref ? _i <= _ref : _i >= _ref; i = 0 <= _ref ? ++_i : --_i) {
+    array[i] = string.charCodeAt(i);
+  }
+  return array;
+};
+
+/**
+*/
+Utils.arrayToString = function(array) {
+  return String.fromCharCode.apply(null, new Uint16Array(array.buffer));
+};
+
+/**
+*/
+Utils.base64DecodeUint8Array = function(input) {
+  var array, i, raw, rawLength, _i, _ref;
+  raw = window.atob(input);
+  rawLength = raw.length;
+  array = new Uint8Array(new ArrayBuffer(rawLength));
+  for (i = _i = 0, _ref = rawLength - 1; 0 <= _ref ? _i <= _ref : _i >= _ref; i = 0 <= _ref ? ++_i : --_i) {
+    array[i] = raw.charCodeAt(i);
+  }
+  return array;
+};
+
+/**
+*/
+Utils.base64EncodeUint8Array = function(input) {
+  var keyStr = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
+    var output = "";
+    var chr1, chr2, chr3, enc1, enc2, enc3, enc4;
+    var i = 0;
+
+    while (i < input.length) {
+      chr1 = input[i++];
+      chr2 = i < input.length ? input[i++] : Number.NaN; // Not sure if the index
+      chr3 = i < input.length ? input[i++] : Number.NaN; // checks are needed here
+
+      enc1 = chr1 >> 2;
+      enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+      enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+      enc4 = chr3 & 63;
+
+      if (isNaN(chr2)) {
+        enc3 = enc4 = 64;
+      } else if (isNaN(chr3)) {
+        enc4 = 64;
+      }
+      output += keyStr.charAt(enc1) + keyStr.charAt(enc2) + keyStr.charAt(enc3) + keyStr.charAt(enc4);
+    };
+  return output;
+};
+
+/**
+*/
+Utils.getKeySystem = function() {
+  var ua;
+  ua = navigator.userAgent;
+  if (/Edge/.test(ua) || /Trident/.test(ua)) {
+    return "com.microsoft.playready";
+  } else if (/Chrome/.test(ua) || /Firefox/.test(ua)) {
+    return "com.widevine.alpha";
+  } else {
+    return "com.apple.fps.1_0";
+  }
+};
+
+/**
+*/
+Utils.isAutoplaySupported = function() {
+  var supported;
+  supported = true;
+  if (this.isIOS()) {
+    if (this.getSafariVersion() !== -1) {
+      supported = this.getIOSversion()[0] >= 10;
+    } else if (this.isChrome()) {
+      supported = this.getChromeVersion() >= 53;
+    }
+  }
+  if (this.isChrome() && this.isAndroid()) {
+    supported = this.getChromeVersion() >= 53;
+  }
+  return supported;
+};
+
+/**
+*/
+Utils.fieldIsUnique = function(items, field, compare) {
+  var index, isUnique, item, _i, _len;
+  isUnique = true;
+  for (index = _i = 0, _len = items.length; _i < _len; index = ++_i) {
+    item = items[index];
+    if (item !== null && item !== void 0 && item[field] !== null && item[field] !== void 0 && item[field].toString().toLowerCase() === compare.toString().toLowerCase()) {
+      isUnique = false;
+      break;
+    }
+  }
+  return isUnique;
+};
+
+/**
+*/
+Utils.toCamelCase = function(str) {
+  return str.replace(/-([a-z])/g, function(g) {
+    return g[1].toUpperCase();
+  });
+};
+
+/**
+*/
+Utils.toHyphenated = function(str) {
+  return str.replace(/([A-Z])/g, function(g) {
+    return "-" + g[0].toLowerCase();
+  });
+};
+
+/**
+ * Creates an HTML element.
+ *
+ * @param   {?(string|Array.<string>)}  classes
+ * @param   {?DOMElement}  parent
+ * @param   {?string} text
+ * @param   {?string|DOMElement}  element
+ * @return  {DOMElement}
+*/
+Utils.createElement = function(classes, parent, text, element) {
+  var classList, item, _i, _len;
+  if (element == null) {
+    element = "div";
+  }
+  if (typeof element === "string") {
+    element = document.createElement(element);
+  }
+  classList = element.classList;
+  if (classes != null) {
+    if (typeof classes === "string") {
+      classes = [classes];
+    }
+    for (_i = 0, _len = classes.length; _i < _len; _i++) {
+      item = classes[_i];
+      classList.add(item);
+    }
+  }
+  if (text != null) {
+    element.textContent = text;
+  }
+  if (parent != null) {
+    parent.appendChild(element);
+  }
+  return element;
 };
 
 /**
@@ -12987,182 +15171,924 @@ AMPConfig.prototype.setReadyState = function(state) {
   }
 };
 
-/** 
+/**
+ * The CaptionCue class.
+ *   
+ * @constructor
+ * @private
+ * @param {number} startTime  The start time of the cue in seconds
+ * @param {number} endTime    The end time of the cue in seconds
+ * @param {number} text       The text of the cue
+*/
+function CaptionCue(startTime, endTime, id) {
+  this.startTime = startTime;
+  this.endTime = endTime;
+  this.id = id;
+}
+
+CaptionCue.prototype.id = null;
+
+CaptionCue.prototype.startTime = null;
+
+CaptionCue.prototype.endTime = null;
+
+CaptionCue.prototype.text = null;
+
+CaptionCue.prototype.html = null;
+
+CaptionCue.prototype.align = null;
+
+/**
+ * @enum {string}
+ * @const
+ * @private
+*/
+
+var FeatureNotifications = {
+  REGISTER_FEATURE: "registerfeature"
+};
+
+function SRTParser() {}
+
+/**
+ * Parses a SRT (subrip) file into CaptionCue objects and attaches them to a given track.
+ *
+ * @param   {CaptionTrack}  track The caption track to populate
+ * @param   {String}        txt   The text of the srt file
+ * @return  {CaptionTrack}        The populated caption track
+*/
+SRTParser.prototype.parse = function(track, txt) {
+  var caption, captions, cue, end, index, parts, start, text, times, _i, _len;
+  txt = txt.replace(/\r/g, '');
+  captions = txt.split("\n\n");
+  for (_i = 0, _len = captions.length; _i < _len; _i++) {
+    caption = captions[_i];
+    parts = caption.split("\n");
+    try {
+      index = parts[0];
+      times = parts[1].match(/([0-9:\,]+)\s*-->\s*([0-9:\,]+)/).slice(1);
+      start = Utils.flattenTimecode(times[0]);
+      end = Utils.flattenTimecode(times[1]);
+      text = parts.slice(2);
+    } catch (err) {
+      Logger.instance.warn("SRT Parsing Warning");
+    }
+    cue = new CaptionCue(start, end, "cue_" + index);
+    cue.html = "<p>" + text.join("<br />") + "</p>";
+    cue.text = text.join("\n");
+    track.cues.push(cue);
+  }
+  return track;
+};
+
+function WebVTTParser() {}
+
+/**
+ * Parses a SRT (subrip) file into CaptionCue objects and attaches them to a given track.
+ *
+ * @param   {CaptionTrack}  track The caption track to populate
+ * @param   {String}        txt   The text of the srt file
+ * @return  {CaptionTrack}        The populated caption track
+*/
+WebVTTParser.prototype.parse = function(track, txt) {
+  var caption, captions, cue, end, index, parts, settings, start, text, times, _i, _len;
+  txt = txt.replace(/\r/g, '');
+  captions = txt.split("\n\n");
+  index = 0;
+  if (/^WEBVTT/.test(captions[0])) {
+    captions.shift();
+  }
+  for (_i = 0, _len = captions.length; _i < _len; _i++) {
+    caption = captions[_i];
+    if (!(caption !== "")) {
+      continue;
+    }
+    parts = caption.trim().split("\n");
+    try {
+      index = /^[0-9]+$/.test(parts[0]) ? parts.shift() : ++index;
+      times = parts[0].match(/([0-9:\.]+)\s*-->\s*([0-9:\.]+)([^\n]*)/).slice(1);
+      settings = times[2];
+      start = Utils.flattenTimecode(times[0]);
+      end = Utils.flattenTimecode(times[1]);
+      text = parts.slice(1);
+      cue = new CaptionCue(start, end, "cue_" + index);
+      cue.html = "<p>" + text.join("<br />") + "</p>";
+      cue.text = text.join("\n");
+      if (settings != null) {
+        settings.replace(/\s*([A-Za-z]+)\s*:\s*([\w\-\%]+)/g, function(match, $1, $2) {
+          cue[$1] = $2;
+          return "";
+        });
+      }
+      track.cues.push(cue);
+    } catch (err) {
+      Logger.instance.error("WebVTT Parse Error");
+    }
+  }
+  return track;
+};
+
+function SMPTETTParser() {}
+
+/**
+ * Parses a SMPTETT file into CaptionCue objects and attaches them to a given track.
+ * 
+ * @param   {CaptionTrack}  track The caption track to populate
+ * @param   {XMLDocument}   xml   The SMPTETT xml document
+ * @return  {CaptionTrack}        The populated caption track
+*/
+SMPTETTParser.prototype.parse = function(track, xml) {
+  var captions, lang, styledElements, styles, tt,
+    _this = this;
+  if (typeof xml === "string") {
+    xml = XMLUtils.parse(xml);
+  }
+  styles = Array.prototype.slice.call(xml.querySelectorAll("styling style"));
+  styles.forEach(function(item, index, list) {
+    var attributes, id, style;
+    style = "";
+    id = item.getAttribute("id") || item.getAttribute("xml:id");
+    attributes = Array.prototype.slice.call(item.attributes);
+    attributes.forEach(function(item, index, array) {
+      if (item.prefix === "tts") {
+        return style += Utils.formatStyleName(item.localName) + ":" + item.nodeValue + ";";
+      }
+    });
+    track.styles[id] = style;
+  });
+  styledElements = Array.prototype.slice.call(xml.querySelectorAll("body [style]"));
+  styledElements.forEach(function(item, index, array) {
+    var id;
+    id = item.getAttribute("style");
+    item.setAttribute("style", track.styles[id]);
+  });
+  tt = xml.querySelector("tt");
+  lang = tt.getAttribute("lang") || tt.getAttribute("xml:lang");
+  if (track.language === void 0 || track.language === null) {
+    track.language = lang;
+  }
+  captions = Array.prototype.slice.call(xml.querySelectorAll("body p[begin]"));
+  captions.forEach(function(item, index, array) {
+    var align, cue, end, start, text;
+    start = item.getAttribute("begin");
+    item.removeAttribute("begin");
+    if (item.getAttribute("end") != null) {
+      end = item.getAttribute("end");
+      item.removeAttribute("end");
+    } else if (captions[index + 1] != null) {
+      end = captions[index + 1].getAttribute("begin");
+    }
+    cue = new CaptionCue(Utils.flattenTimecode(start), Utils.flattenTimecode(end), "cue_" + index);
+    align = item.getAttributeNS("http://www.w3.org/ns/ttml#styling", "textAlign");
+    if (align != null) {
+      cue.align = align === "center" ? "middle" : align;
+      item.removeAttributeNS("http://www.w3.org/ns/ttml#styling", "textAlign");
+    }
+    text = XMLUtils.serialize(item);
+    text = text.replace(/\s*xmlns="[^"]*"/, "");
+    cue.html = text;
+    text = text.replace(/^<p[^>]*>/, "");
+    text = text.replace(/<\/p>$/, "");
+    text = text.replace(/<br\/>/, "\n");
+    text = text.replace(/<span style="([^"]*)"/, "<c.$1");
+    text = text.replace(/<\/span>/, "</c>");
+    cue.text = text;
+    track.cues.push(cue);
+  });
+  return track;
+};
+
+/**
  * @constructor
  * @private
 */
-function OverlayMediator() {
-  OverlayMediator.__super__.constructor.call(this, null, null, null, null);
+function LiveCaptionProxy() {
+  var com,
+    _this = this;
+  this.captions = [];
+  this.head = document.getElementsByTagName("head")[0];
+  com = window.com || {};
+  com.akamai = com.akamai || {};
+  com.akamai.amp = com.akamai.amp || {};
+  com.akamai.amp.plugins = com.akamai.amp.plugins || {};
+  com.akamai.amp.plugins.subply = com.akamai.amp.plugins.subply || {};
+  com.akamai.amp.plugins.subply.response = function(json) {
+    _this.parse(json);
+    _this.poll();
+  };
+  if (!(window.com != null)) {
+    window.com = com;
+  }
+  LiveCaptionProxy.__super__.constructor.call(this, this.constructor.NAME);
 }
 
 
-__extends(OverlayMediator, ComponentMediator);
+__extends(LiveCaptionProxy, puremvc.Proxy);
 
 
-OverlayMediator.prototype.componentType = "overlay";
-
-/**
- * Registers the overlay.
- * 
- * @override
+/** @static
 */
-OverlayMediator.prototype.onRegister = function() {
-  OverlayMediator.__super__.onRegister.call(this);
-  this.registerOverlay();
+LiveCaptionProxy.NAME = "LiveCaptionProxy";
+
+LiveCaptionProxy.prototype.data = {
+  base: "http://test.plymedia.com.s3.amazonaws.com/online/Akamai_",
+  interval: 1000
 };
 
-/**
- * Removes the overlay.
- * 
- * @override
-*/
-OverlayMediator.prototype.onRemove = function() {
-  OverlayMediator.__super__.onRemove.call(this);
-  this.removeOverlay();
-};
+LiveCaptionProxy.prototype.caption = null;
+
+LiveCaptionProxy.prototype.head = null;
+
+LiveCaptionProxy.prototype.script = null;
+
+LiveCaptionProxy.prototype.timeout = null;
 
 /**
  *
 */
-OverlayMediator.prototype.registerOverlay = function() {
-  this.sendNotification(Notifications.ADD_OVERLAY, this.viewComponent);
+LiveCaptionProxy.prototype.getURL = function() {
+  return this.data.url;
 };
 
-/**
- *
-*/
-OverlayMediator.prototype.removeOverlay = function() {
-  this.sendNotification(Notifications.REMOVE_OVERLAY, this.viewComponent);
-};
-
-function IdleUtil(element, timeout) {
-  this.element = element;
-  this.timeout = timeout;
-  IdleUtil.__super__.constructor.call(this);
-  this.resetHandler = this.reset.bind(this);
-}
-
-
-__extends(IdleUtil, EventDispatcher);
-
-
-IdleUtil.prototype.events = ["mousemove", "mousedown", "keypress", "DOMMouseScroll", "mousewheel", "touchmove", "MSPointerMove"];
-
-IdleUtil.prototype.resetHandler = null;
-
-IdleUtil.prototype.element = null;
-
-IdleUtil.prototype.timeout = null;
-
-IdleUtil.prototype.active = true;
-
-IdleUtil.prototype.timeoutId = null;
-
-IdleUtil.prototype.applyListeners = function(action) {
-  var event, _i, _len, _ref;
-  if (action == null) {
-    action = "add";
-  }
-  _ref = this.events;
-  for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-    event = _ref[_i];
-    this.element["" + action + "EventListener"](event, this.resetHandler);
-  }
-};
-
-IdleUtil.prototype.start = function(timeout) {
-  if (timeout != null) {
-    this.timeout = timeout;
-  }
-  this.stop();
-  this.applyListeners("add");
-  this.timeoutId = setTimeout(this.setActive.bind(this, false), this.timeout);
-};
-
-IdleUtil.prototype.stop = function() {
-  this.applyListeners("remove");
-  clearTimeout(this.timeoutId);
-};
-
-IdleUtil.prototype.reset = function() {
-  this.setActive(true);
-  this.start();
-};
-
-IdleUtil.prototype.setActive = function(value) {
-  if (value === this.active) {
-    return;
-  }
-  this.active = value;
-  this.dispatchEvent(new Event("activechange", {
-    active: this.active
-  }));
+LiveCaptionProxy.prototype.setURL = function(value) {
+  this.data.url = value;
   return value;
 };
 
-IdleUtil.prototype.getActive = function() {
-  return this.active;
+LiveCaptionProxy.prototype.start = function() {
+  this.send();
 };
 
-function LocalizationConstants() {}
+LiveCaptionProxy.prototype.poll = function() {
+  var timeout,
+    _this = this;
+  timeout = setTimeout(function() {
+    _this.send();
+  }, this.data.interval || 1000);
+};
 
-LocalizationConstants.MSG_LIVE = "MSG_LIVE";
+LiveCaptionProxy.prototype.send = function() {
+  var _this = this;
+  if (this.script != null) {
+    this.head.removeChild(this.script);
+  }
+  this.script = Utils.loadScript(this.data.base + this.data.url + ".js?nocache=" + Date.now()).then(function(script) {
+    return _this.script = script;
+  })["catch"](function(error) {
+    return _this.facade.logger.error("[AMP CAPTIONING ERROR]", error);
+  });
+};
 
-LocalizationConstants.MSG_REPLAY = "MSG_REPLAY";
+LiveCaptionProxy.prototype.stop = function() {
+  clearTimeout(timeout);
+};
 
-LocalizationConstants.MSG_BUFFERING = "MSG_BUFFERING_TEXT";
+/**
+ *
+*/
+LiveCaptionProxy.prototype.parse = function(response) {
+  var html, text, _i, _len, _ref;
+  if (response.Stream !== this.data.url) {
+    return;
+  }
+  if ((this.caption != null) && this.caption.id >= response.Ticks) {
+    return;
+  }
+  this.caption = new CaptionCue(Utils.flattenTimecode(response.From), Utils.flattenTimecode(response.To), response.Ticks);
+  this.caption.text = response.Text;
+  html = "";
+  _ref = response.Text.split("\n");
+  for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+    text = _ref[_i];
+    if (html !== "") {
+      html += "<br />";
+    }
+    html += "<span>" + text + "</span>";
+  }
+  this.caption.html = "<p>" + html + "</p>";
+  this.sendNotification(CaptioningNotifications.CUE_CHANGE, [this.caption]);
+  return this.caption;
+};
 
-LocalizationConstants.MSG_CC = "MSG_CC";
+/**
+ * @constructor
+*/
+function AMP() {}
 
-LocalizationConstants.MSG_CC_TITLE = "MSG_CC_TITLE";
+/**
+ * Create a player based on the configuration object and container.
+ *
+ * @param {string|HTMLElement} container
+ *    The id of the div the player will be attached to.
+ *
+ * @param {?(Object|string)} config
+ *    The configuration override object.
+ *
+ * @param {?Function} onready
+ *    Optional ready handler.
+ *
+ * @return {Player}
+ *
+*/
+AMP.create = function(container, config, onready) {
+  var element, initTime, player, version;
+  initTime = Date.now();
+  if (typeof container === "string") {
+    element = document.getElementById(container);
+    if (!(element != null)) {
+      element = document.querySelector(container);
+    }
+  } else {
+    element = container;
+  }
+  if (!(element != null)) {
+    throw new Error("[AMP ERROR] Invalid container. Could not find DOM element: " + container);
+  }
+  config = config instanceof Config ? config : Config.create(config);
+  Logger.instance = new Logger(config.debug);
+  version = this.getVersion();
+  if (element.dataset == null) {
+    element.dataset = {};
+  }
+  element.dataset["amp.version"] = version;
+  Logger.instance.log("[AMP] " + version);
+  player = this.createPlayer(config, element);
+  player.initTime = initTime;
+  element.amp = player;
+  player.request = this.request.bind(this);
+  player.require = this.require.bind(this);
+  player.loadResources = player.loadModuleResources.bind(player);
+  player.onready = onready;
+  player.initialize(config);
+  return player;
+};
 
-LocalizationConstants.MSG_CC_LANGUAGE = "MSG_CC_LANGUAGE";
+/**
+ *
+*/
+AMP.createPlayer = function(config, container) {
+  var player;
+  player = this.players[config.mode];
+  if (player != null) {
+    player = new player(container);
+  }
+  return player;
+};
 
-LocalizationConstants.MSG_CC_PRESETS = "MSG_CC_PRESETS";
+/**
+ * Returns the version string for this player library.
+ *
+ * @return {string} The version string.
+*/
+AMP.getVersion = function() {
+  return this.VERSION;
+};
 
-LocalizationConstants.MSG_CC_FONT = "MSG_CC_FONT";
+/**
+ * The player version string
+ *
+ * @type {string}
+ * @private
+ * @static
+*/
+AMP.VERSION = "AMP Premier v2.94.5";
 
-LocalizationConstants.MSG_CC_EDGE = "MSG_CC_EDGE";
+/**
+ * @private
+*/
+AMP.defaults = new AMPConfig();
 
-LocalizationConstants.MSG_CC_SIZE = "MSG_CC_SIZE";
+/**
+ * @private
+*/
+AMP.plugins = [];
 
-LocalizationConstants.MSG_CC_SCROLL = "MSG_CC_SCROLL";
+/**
+ * @private
+*/
+AMP.players = {};
 
-LocalizationConstants.MSG_CC_COLOR = "MSG_CC_COLOR";
+/**
+ * Loads a default configuration object from a url.
+ *
+ * @param {string} url
+ *    A url to a configuration json file to use at the defaults object.
+ *
+ * @param {?Function} loaded
+ *    Callback function triggered when the file has been loaded and
+ *    sucessfully parsed.
+ *
+ * @param {?Function} error
+ *    Callback function triggered when the file has failed to load
+ *    or cannot be parsed.
+ *
+ * @param {boolean} [withCredentials=false]
+ *    Whether or not to use credntials when making XMLHttpRequest.
+ *
+ * @static
+*/
+AMP.loadDefaults = function(url, loaded, error, withCredentials) {
+  if (withCredentials == null) {
+    withCredentials = false;
+  }
+  if (loaded != null) {
+    this.defaults.addEventListener("load", loaded);
+  }
+  if (error != null) {
+    this.defaults.addEventListener("error", error);
+  }
+  this.defaults.load(url, withCredentials);
+};
 
-LocalizationConstants.MSG_CC_BACKGROUND = "MSG_CC_BACKGROUND";
+/**
+ * Returns the playback mode best suited for the current environment.
+ *
+ * @return {PlaybackMode}
+ *    The playback mode.
+ *
+ * @static
+*/
+AMP.getPlaybackMode = function() {
+  return Utils.getPlaybackMode();
+};
 
-LocalizationConstants.MSG_CC_EDGE = "MSG_CC_EDGE";
+/**
+ * @private
+ * @static
+*/
+AMP.registerPlayer = function(mode, player) {
+  this.players[mode] = player;
+};
 
-LocalizationConstants.MSG_CC_WINDOW = "MSG_CC_WINDOW";
+/**
+ * Registers a plugin factory function. This function is
+ * called when akamai.amp.AMP.create is called and the
+ * config object contains the plugin key.
+ *
+ * @param {String} key
+ *    The plugin key. Used to configure the plugin.
+ *
+ * @param {String|Array.<String>} mode
+ *    The player mode(s) in which the plugin can be used.
+ *
+ * @param {Function} factory
+ *
+ * @static
+*/
+AMP.registerPlugin = function(id, mode, plugin) {
+  var item, _base, _i, _len, _ref;
+  if ((_base = this.plugins)[id] == null) {
+    _base[id] = {};
+  }
+  if (typeof mode === "function") {
+    _ref = [plugin, mode], mode = _ref[0], plugin = _ref[1];
+  }
+  if (typeof mode === "string") {
+    mode = [mode];
+  }
+  if (!(mode != null)) {
+    mode = ["html", "flash"];
+  }
+  for (_i = 0, _len = mode.length; _i < _len; _i++) {
+    item = mode[_i];
+    this.plugins[id][item] = plugin;
+  }
+};
 
-LocalizationConstants.MSG_CC_OPACITY = "MSG_CC_OPACITY";
+/**
+ * @type {akamai.amp.ResourceManager}
+ * @private
+*/
+AMP.resourceManager = null;
 
-LocalizationConstants.MSG_CC_SHOW_ADVANCED = "MSG_CC_SHOW_ADVANCED";
+/**
+ * Short cut getter for the global renderer manager
+ *
+ * @return {akamai.amp.ResourceManager}
+ *
+ * @static
+ * @private
+*/
+AMP.getResourceManager = function() {
+  if (!(this.resourceManager != null)) {
+    this.resourceManager = new ResourceManager();
+  }
+  return this.resourceManager;
+};
 
-LocalizationConstants.MSG_CC_HIDE_ADVANCED = "MSG_CC_HIDE_ADVANCED";
+/**
+ * @param {akamai.amp.Resource} resource
+ *    The resource definition
+ *
+ * @param {Function} callback
+ *
+ * @static
+ * @private
+*/
+AMP.addResource = function(resource) {
+  return this.getResourceManager().add(resource);
+};
 
-LocalizationConstants.MSG_CC_RESET = "MSG_CC_RESET";
+/**
+ * @param {Array.<akamai.amp.Resource>} resources
+ *    The list of resources
+ *
+ * @param {Function} callback
+ *
+ * @static
+ * @private
+*/
+AMP.addResources = function(resources) {
+  return this.getResourceManager().addResources(resources);
+};
 
-LocalizationConstants.MSG_CC_CANCEL = "MSG_CC_CANCEL";
+/**
+ * Request a http resource.
+ *
+ * @param {String|Object} options
+ *    A url string or an object containing the following properties:
+ *
+ * @return {Promise.<XHR>}
+ *     Promise which resolves to a XHR object
+ *
+ * @static
+*/
+AMP.request = function(options) {
+  return Utils.request(options);
+};
 
-LocalizationConstants.MSG_CC_APPLY = "MSG_CC_APPLY";
+/**
+ * Request a http json resource.
+ *
+ * @param {String|Object} options
+ *    A url string or an object containing the following properties:
+ *
+ * @return {Promise.<Object>}
+ *     Promise which resolves to a js object
+ *
+ * @static
+*/
+AMP.requestJson = function(options) {
+  return Utils.requestJson(options);
+};
 
-LocalizationConstants.MSG_CC_PREVIEW_TEXT = "MSG_CC_PREVIEW_TEXT";
+/**
+ * Loads resource from url or cache
+ *
+ * @param {String} id
+ *    A url or id of the resource
+ *
+ * @return {Promise.<Object>}
+ *     Promise which resolves to an object
+ *
+ * @static
+*/
+AMP.require = function(id) {
+  return this.resourceManager.require(id);
+};
 
-LocalizationConstants.MSG_SECONDS = "MSG_SECONDS";
+/**
+ * @param {!string} key
+ *     The resource's key
+ *
+ * @return {akamai.amp.Resource}
+ *     The resource definition
+ *
+ * @static
+ * @private
+*/
+AMP.getResource = function(key) {
+  return this.getResourceManager().item(key);
+};
 
-LocalizationConstants.MSG_RECOMMENDATIONS_TITLE = "MSG_RECOMMENDATIONS_TITLE";
+/**
+ * @param {!string} key
+ *     The resource's key
+ *
+ * @return {Function}
+ *     The resource's constructor
+ *
+ * @static
+ * @private
+*/
+AMP.removeResource = function(key) {
+  return this.getResourceManager().remove(key);
+};
 
-LocalizationConstants.MSG_NEXT_VIDEO = "MSG_NEXT_VIDEO";
+/**
+ * Evaluate a data bound object.
+ *
+ * @param {Object} binding
+ *   The data bound object.
+ *
+ * @param {Object} context
+ *   The context object used as "global" when evaluating the binding.
+ *
+ * @return {string}
+ *   The evaluated result
+*/
+AMP.evaluateBindings = function(value, context) {
+  return DataBinding.evaluateBindings(value, context);
+};
 
-LocalizationConstants.MSG_NEXT_AD = "MSG_NEXT_AD";
 
-LocalizationConstants.MSG_TIME_SEPARATOR = "MSG_TIME_SEPARATOR";
+AMP.registerPlayer("html", HTMLPlayer);
+AMP.registerPlayer("flash", FlashPlayer);
+AMP.registerPlayer("none", InstallPlayer);
+AMP.registerPlayer("external", ExternalPlayer);
 
-LocalizationConstants.MSG_VIEW_ALL = "MSG_VIEW_ALL";
+/**
+ * @constructor
+ * @private
+ * @extends {amp.player.controller.PlayerCommand}
+*/
+function PluginCommand() {
+  PluginCommand.__super__.constructor.call(this);
+}
 
-LocalizationConstants.MSG_VIDEO = "MSG_VIDEO";
+
+__extends(PluginCommand, PlayerCommand);
+
+
+PluginCommand.prototype.plugin = null;
+
+PluginCommand.prototype.proxy = null;
+
+/** @override
+*/
+PluginCommand.prototype.initializeNotifier = function(key) {
+  PluginCommand.__super__.initializeNotifier.call(this, key);
+  this.proxy = this.facade.retrieveProxy(ModuleProxy.NAME);
+  this.plugin = this.facade;
+};
+
+/**
+ * The CaptioningChangeMediaCommand class.
+ *   
+ * @constructor
+ * @private
+ * @extends {amp.plugins.PluginCommand}
+*/
+function CaptioningChangeMediaCommand() {
+  CaptioningChangeMediaCommand.__super__.constructor.call(this);
+}
+
+
+__extends(CaptioningChangeMediaCommand, PluginCommand);
+
+
+/**
+ * Executes the command.
+ * 
+ * @param {puremvc.Notification} notification 
+ *    The notification.
+ * 
+ * @override
+*/
+CaptioningChangeMediaCommand.prototype.execute = function(notification) {
+  var media, track;
+  media = notification.getBody();
+  track = notification.getBody().track;
+  this.proxy.setTracks(track);
+  if (!(track != null)) {
+    this.sendNotification(CaptioningNotifications.ENABLED, false);
+    return;
+  }
+  this.proxy.selectRenderer(media);
+  this.sendNotification(CaptioningNotifications.ENABLED, true);
+};
+
+/**
+ * @constructor
+ * @private
+ * @extends {amp.player.controller.PlayerCommand}
+*/
+function PluginEventCommand() {
+  PluginEventCommand.__super__.constructor.call(this);
+}
+
+
+__extends(PluginEventCommand, PluginCommand);
+
+
+/**
+ *
+*/
+PluginEventCommand.prototype.dispatchEvent = function(type, detail) {
+  var event, name, _base;
+  if (typeof type !== "string") {
+    detail = type.getBody();
+    if (!(detail != null)) {
+      detail = {};
+    }
+    type = type.getName();
+  }
+  name = typeof (_base = this.plugin).getFeatureName === "function" ? _base.getFeatureName() : void 0;
+  if ((name != null) && name !== "auth") {
+    type = type.replace(new RegExp("^(" + name + ")"), "");
+  }
+  name = this.plugin.getModuleName();
+  type = type.replace(new RegExp("^(" + name + ")"), "");
+  event = new Event(type, detail);
+  this.sendNotification(Notifications.DISPATCH_EVENT, event);
+};
+
+/**
+ *
+*/
+PluginEventCommand.prototype.dispatchEventAfterCommand = function(type, detail) {
+  setTimeout(this.dispatchEvent.bind(this, type, detail), 0);
+};
+
+/**
+ * Executes the command.
+ *
+ * @param {puremvc.Notification} notification
+ *    The notification.
+ *
+ * @override
+*/
+PluginEventCommand.prototype.execute = function(notification) {
+  this.dispatchEvent(notification);
+};
+
+/**
+ * The CaptioningEnabledCommand class.
+ *
+ * @constructor
+ * @private
+ * @extends {amp.plugins.PluginEventCommand}
+*/
+function CaptioningEnabledCommand() {
+  CaptioningEnabledCommand.__super__.constructor.call(this);
+}
+
+
+__extends(CaptioningEnabledCommand, PluginEventCommand);
+
+
+/**
+ * Executes the command.
+ *
+ * @param {puremvc.Notification} notification
+ *    The notification.
+ *
+ * @override
+*/
+CaptioningEnabledCommand.prototype.execute = function(notification) {
+  this.proxy.setEnabled(notification.getBody());
+  CaptioningEnabledCommand.__super__.execute.call(this, notification);
+};
+
+/**
+ * @enum {string}
+ * @const
+ * @private
+*/
+
+var UserSettingsNotifications = {
+  SETTING_CHANGE: "settingchange",
+  UPDATE_SETTINGS: "updatesettings"
+};
+
+/**
+ * The ChangeVisibilityCommand class.
+ *
+ * @constructor
+ * @private
+ * @extends {amp.plugins.PluginEventCommand}
+*/
+function CaptioningVisibilityChangeCommand() {
+  CaptioningVisibilityChangeCommand.__super__.constructor.call(this);
+}
+
+
+__extends(CaptioningVisibilityChangeCommand, PluginEventCommand);
+
+
+/**
+ * Executes the command.
+ *
+ * @param {puremvc.Notification} notification
+ *    The notification.
+ *
+ * @override
+*/
+CaptioningVisibilityChangeCommand.prototype.execute = function(notification) {
+  var hidden;
+  hidden = !notification.getBody();
+  if (hidden === this.proxy.getHidden()) {
+    return;
+  }
+  this.proxy.setHidden(hidden);
+  CaptioningVisibilityChangeCommand.__super__.execute.call(this, notification);
+};
+
+/**
+ * The CaptioningTimeUpdateCommand class.
+ *   
+ * @constructor
+ * @private
+ * @extends {amp.plugins.PluginCommand}
+*/
+function CaptioningTimeUpdateCommand() {
+  CaptioningTimeUpdateCommand.__super__.constructor.call(this);
+}
+
+
+__extends(CaptioningTimeUpdateCommand, PluginCommand);
+
+
+/**
+ * Executes the command.
+ * 
+ * @param {puremvc.Notification} notification 
+ *    The notification.
+ * 
+ * @override
+*/
+CaptioningTimeUpdateCommand.prototype.execute = function(notification) {
+  var active, changed, cue, cues, index, time, track, _i, _len;
+  time = notification.getBody();
+  track = this.proxy.getTrack();
+  if (!(track != null)) {
+    return;
+  }
+  active = track.activeCues;
+  cues = track.cues;
+  changed = false;
+  for (_i = 0, _len = cues.length; _i < _len; _i++) {
+    cue = cues[_i];
+    if (time >= cue.startTime && time < cue.endTime) {
+      if (!(__indexOf.call(active, cue) >= 0)) {
+        active.push(cue);
+        changed = true;
+      }
+    } else {
+      index = active.indexOf(cue);
+      if (index !== -1) {
+        active.splice(index, 1);
+        changed = true;
+      }
+    }
+  }
+  if (changed === true) {
+    this.sendNotification(CaptioningNotifications.CUE_CHANGE, active);
+  }
+};
+
+/**
+ * The CaptioningStartedCommand class.
+ *   
+ * @constructor
+ * @private
+ * @extends {puremvc.SimpleCommand}
+*/
+function CaptioningStartedCommand() {
+  CaptioningStartedCommand.__super__.constructor.call(this);
+}
+
+
+__extends(CaptioningStartedCommand, puremvc.SimpleCommand);
+
+
+/**
+ * Executes the command.
+ * 
+ * @param {puremvc.Notification} notification 
+ *    The notification.
+ * 
+ * @override
+*/
+CaptioningStartedCommand.prototype.execute = function(notification) {
+  var proxy, track, _ref;
+  proxy = this.facade.retrieveProxy(CaptioningProxy.NAME);
+  track = proxy.getTrack();
+  if (!(track != null) && ((_ref = proxy.getTracks()) != null ? _ref.length : void 0) > 0) {
+    track = proxy.autoSelectTrack();
+  }
+  if ((track != null ? track.isLive : void 0) === true) {
+    this.facade.removeCommand(Notifications.TIME_UPDATE);
+    proxy = this.facade.retrieveProxy(LiveCaptionProxy.NAME);
+    if (!(proxy != null)) {
+      proxy = new LiveCaptionProxy();
+      this.facade.registerProxy(proxy);
+    }
+    proxy.setURL(track.src);
+    proxy.start();
+  }
+};
+
+/** 
+ * @private
+*/
+
+CaptionParsers = {
+  "application/ttml+xml": new SMPTETTParser(),
+  "application/x-subrip": new SRTParser(),
+  "text/vtt": new WebVTTParser(),
+  undefined: new SMPTETTParser()
+};
 
 /** 
  * @param {FlashPlayer} player
@@ -13293,1165 +16219,950 @@ PluginWrapper.prototype.handleNotification = function(notification) {
 PluginWrapper.prototype.destroy = function() {};
 
 /**
- * The ControlsPlayCommand class.
- *   
+ * The CaptionTrack class.
+ *
  * @constructor
  * @private
- * @extends {puremvc.SimpleCommand}
+ * @param {?Object} track A generic track object.
 */
-function ControlsPlayCommand() {
-  ControlsPlayCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ControlsPlayCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ControlsPlayCommand.prototype.execute = function(notification) {
-  var controls;
-  controls = this.facade.retrieveProxy(ControlsProxy.NAME);
-  controls.start();
-};
-
-/**
- * The ControlsPauseCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function ControlsPauseCommand() {
-  ControlsPauseCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ControlsPauseCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ControlsPauseCommand.prototype.execute = function(notification) {
-  var controls;
-  controls = this.facade.retrieveProxy(ControlsProxy.NAME);
-  controls.stop();
-};
-
-/**
- * The ControlsActiveStateChangeCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function ControlsActiveStateChangeCommand() {
-  ControlsActiveStateChangeCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ControlsActiveStateChangeCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ControlsActiveStateChangeCommand.prototype.execute = function(notification) {
-  var app, body, controls;
-  controls = this.facade.retrieveProxy(ControlsProxy.NAME);
-  app = this.facade.player.retrieveProxy(ApplicationStateProxy.NAME);
-  body = notification.getBody();
-  if (body.value === ActiveState.ACTIVE && app.getPlayState() !== PlayState.READY && Utils.getDevice() !== "desktop") {
-    controls.start();
-  }
-};
-
-/**
- * @constructor
- * @private
- * @extends {amp.player.controller.PlayerCommand}
-*/
-function PluginCommand() {
-  PluginCommand.__super__.constructor.call(this);
-}
-
-
-__extends(PluginCommand, PlayerCommand);
-
-
-PluginCommand.prototype.plugin = null;
-
-PluginCommand.prototype.proxy = null;
-
-/** @override
-*/
-PluginCommand.prototype.initializeNotifier = function(key) {
-  PluginCommand.__super__.initializeNotifier.call(this, key);
-  this.proxy = this.facade.retrieveProxy(ModuleProxy.NAME);
-  this.plugin = this.facade;
-};
-
-/**
- * The ControlsAdBreakEndCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function ControlsAdBreakEndCommand() {
-  ControlsAdBreakEndCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ControlsAdBreakEndCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ControlsAdBreakEndCommand.prototype.execute = function(notification) {
-  if (this.plugin.config["native"] === true) {
-    this.player.getMediaElement().controls = true;
+function CaptionTrack(track, onload) {
+  var xhr,
+    _this = this;
+  CaptionTrack.__super__.constructor.call(this, {
+    kind: track.kind,
+    label: track.label || this.srclang || this.kind,
+    language: track.srclang
+  });
+  this.src = track.src;
+  this.type = track.type;
+  this.cues = track.cues || [];
+  this.styles = track.styles || {};
+  this.activeCues = [];
+  this.isLive = /live-subply/.test(this.type);
+  if ((this.src != null) && this.src !== "" && !this.isLive) {
+    xhr = Utils.get(this.src, {
+      onload: function() {
+        try {
+          CaptionParsers[_this.type].parse(_this, xhr.response);
+        } catch (error) {
+          Logger.instance.error("Could not parse caption track: " + _this.src);
+          return;
+        }
+        if (typeof onload === "function") {
+          onload();
+        }
+      },
+      onerror: function() {
+        Logger.instance.error("Could not load caption track: " + _this.src);
+      }
+    });
   } else {
-    this.proxy.adBreakEnd();
+    setTimeout(onload, 1);
   }
-};
-
-/**
- * The ControlsMediaValidatedCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function ControlsMediaValidatedCommand() {
-  ControlsMediaValidatedCommand.__super__.constructor.call(this);
 }
 
 
-__extends(ControlsMediaValidatedCommand, puremvc.SimpleCommand);
+__extends(CaptionTrack, Track);
 
 
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ControlsMediaValidatedCommand.prototype.execute = function(notification) {
-  var element, media, src;
-  media = notification.getBody();
-  src = media.poster;
-  element = this.facade.player.getMediaElement();
-  if ((src != null) && src !== "") {
-    element.poster = src;
-  }
-  element.src = media.src;
-  if (this.facade.player.getAutoplay() !== true) {
-    this.facade.applyClickHandler();
-  }
-};
+CaptionTrack.prototype.src = null;
 
-/**
- * The ControlsStartedCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function ControlsStartedCommand() {
-  ControlsStartedCommand.__super__.constructor.call(this);
-}
+CaptionTrack.prototype.cues = null;
 
+CaptionTrack.prototype.activeCues = null;
 
-__extends(ControlsStartedCommand, puremvc.SimpleCommand);
+CaptionTrack.prototype.type = null;
 
+CaptionTrack.prototype.styles = null;
 
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ControlsStartedCommand.prototype.execute = function(notification) {
-  this.facade.applyClickHandler(false);
-};
-
-/**
- * The ControlsActiveStateChangeCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function ControlsStartCommand() {
-  ControlsStartCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ControlsStartCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ControlsStartCommand.prototype.execute = function(notification) {
-  var controls;
-  controls = this.facade.retrieveProxy(ControlsProxy.NAME);
-  controls.start();
-};
-
-/**
- * The ControlsAdBreakStartCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function ControlsAdBreakStartCommand() {
-  ControlsAdBreakStartCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ControlsAdBreakStartCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ControlsAdBreakStartCommand.prototype.execute = function(notification) {
-  if (this.plugin.config["native"] === true) {
-    this.player.getMediaElement().controls = false;
-  } else {
-    this.proxy.adBreakStart();
-  }
-};
+CaptionTrack.prototype.isLive = false;
 
 /** 
- * The ControlsWrapper class.
- *   
  * @constructor
  * @private
- * @extends {PluginWrapper}
- * @param   {FlashPlayer}   player  The FlashPlayer
- * @param   {Object}        config  The plugin config
 */
-function ControlsWrapper(player, config) {
-  ControlsWrapper.__super__.constructor.call(this, player, config);
+function OverlayMediator() {
+  OverlayMediator.__super__.constructor.call(this, null, null, null, null);
 }
 
 
-__extends(ControlsWrapper, PluginWrapper);
+__extends(OverlayMediator, ComponentMediator);
 
 
-ControlsWrapper.NAME = "ControlsWrapper";
+OverlayMediator.prototype.componentType = "overlay";
 
-ControlsWrapper.prototype.mode = "auto";
-
-ControlsWrapper.prototype.autoHide = 5;
-
-ControlsWrapper.prototype.flashView = {
-  elements: {
-    controls: {
-      attributes: {
-        height: "28",
-        itemMargin: "5",
-        scrubPosition: "inline"
-      },
-      elements: {
-        replayBtn: {},
-        playPauseBtn: {},
-        streamTimeIndicator: {
-          attributes: {
-            exclude: "live"
-          },
-          elements: {
-            streamTime: {},
-            streamDuration: {}
-          }
-        },
-        rewindBtn: {},
-        scrubBar: {
-          attributes: {
-            style: "height: 18px;"
-          }
-        },
-        progressBar: {
-          attributes: {
-            style: "background: linear-gradient(90deg, #FF0000, #1B1B1B);"
-          }
-        },
-        loadedBar: {
-          attributes: {
-            style: "background: linear-gradient(90deg, #00FF00, #1B1B1B);"
-          }
-        },
-        liveIndicator: {},
-        timeLocationIndicator: {},
-        goLiveBtn: {},
-        statsBtn: {},
-        volumeBar: {
-          attributes: {
-            color: "#CA2127"
-          }
-        },
-        volumeBtn: {},
-        fullscreenBtn: {}
-      }
-    }
-  }
-};
-
-/** @override
+/**
+ * Registers the overlay.
+ * 
+ * @override
 */
-ControlsWrapper.prototype.listNotificationInterests = function() {
-  return ControlsWrapper.__super__.listNotificationInterests.apply(this, arguments).concat([Notifications.MEDIUM_CHANGE]);
+OverlayMediator.prototype.onRegister = function() {
+  OverlayMediator.__super__.onRegister.call(this);
+  this.registerOverlay();
 };
 
 /**
+ * Removes the overlay.
+ * 
+ * @override
 */
-ControlsWrapper.prototype.handleNotification = function(notification) {
-  var body, mode, name;
-  ControlsWrapper.__super__.handleNotification.call(this, notification);
-  name = notification.getName();
-  body = notification.getBody();
-  switch (name) {
-    case Notifications.MEDIUM_CHANGE:
-      mode = /audio/.test(body) ? "persistent" : this.mode;
-      this.setMode(mode);
-  }
-};
-
-/** @override
-*/
-ControlsWrapper.prototype.createFlashVars = function(flashvars) {
-  if (this.config.mode != null) {
-    this.mode = flashvars.controls_mode = this.config.mode;
-  }
-  if ((this.config.admode != null) && this.config.admode !== this.config.mode) {
-    flashvars.ads_auto_fit = true;
-  }
-  return flashvars;
-};
-
-ControlsWrapper.prototype.createXML = function(xml) {
-  var controls, _ref, _ref1;
-  controls = (_ref = this.player.flashView) != null ? (_ref1 = _ref.elements) != null ? _ref1.controls : void 0 : void 0;
-  if (!(controls != null)) {
-    return;
-  }
-  if (controls.attributes["autoHideDelay"] != null) {
-    this.autoHide = controls.attributes["autoHideDelay"];
-  } else {
-    if (this.config.autoHide != null) {
-      this.autoHide = this.config.autoHide;
-      controls.attributes["autoHideDelay"] = this.config.autoHide;
-    }
-  }
-  return xml;
+OverlayMediator.prototype.onRemove = function() {
+  OverlayMediator.__super__.onRemove.call(this);
+  this.removeOverlay();
 };
 
 /**
+ *
 */
-ControlsWrapper.prototype.getMode = function() {
-  return this.mode;
+OverlayMediator.prototype.registerOverlay = function() {
+  this.sendNotification(Notifications.ADD_OVERLAY, this.viewComponent);
 };
 
-ControlsWrapper.prototype.setMode = function(value) {
-  if (value === this.mode) {
+/**
+ *
+*/
+OverlayMediator.prototype.removeOverlay = function() {
+  this.sendNotification(Notifications.REMOVE_OVERLAY, this.viewComponent);
+};
+
+/**
+ * The CaptioningProxy class
+ *
+ * @constructor
+ * @private
+ * @extends {PluginProxy}
+ * @param   {Object}  config  The configuration object.
+*/
+function CaptioningProxy(config) {
+  this.activeCaptions = [];
+  this.providers = {};
+  this.tracks = [];
+  this.rendererMap = [];
+  this.track = {};
+  CaptioningProxy.__super__.constructor.call(this, config);
+}
+
+
+__extends(CaptioningProxy, PluginProxy);
+
+
+/** @static
+*/
+CaptioningProxy.NAME = ModuleProxy.NAME;
+
+CaptioningProxy.TEXT_TRACK_RENDERER = "caption-text";
+
+CaptioningProxy.prototype.defaults = {
+  useNative: false,
+  crossorigin: null
+};
+
+CaptioningProxy.prototype.enabled = false;
+
+CaptioningProxy.prototype.hidden = true;
+
+CaptioningProxy.prototype.tracks = null;
+
+CaptioningProxy.prototype.track = null;
+
+CaptioningProxy.prototype.activeCaptions = null;
+
+CaptioningProxy.prototype.captions = null;
+
+CaptioningProxy.prototype.loaded = true;
+
+CaptioningProxy.prototype.rendererMap = null;
+
+/**
+ *
+*/
+CaptioningProxy.prototype.getUseNative = function() {
+  return this.getValue("useNative");
+};
+
+/**
+ *
+*/
+CaptioningProxy.prototype.getCrossOrigin = function() {
+  return this.getValue("crossorigin");
+};
+
+/**
+ *
+*/
+CaptioningProxy.prototype.getTracks = function() {
+  return this.tracks;
+};
+
+CaptioningProxy.prototype.setTracks = function(value) {
+  var count, item, loaded, track, trackLoaded, _i, _len,
+    _this = this;
+  this.tracks = [];
+  this.track = null;
+  if (!(value != null)) {
     return;
   }
-  try {
-    this.mode = value;
-    this.player.mediaElement.setPlayerProperty("controlsMode", value);
-  } catch (error) {
-    this.facade.logger.error("[AMP CONTROLS ERROR]", error);
+  count = value.length;
+  loaded = 0;
+  trackLoaded = function() {
+    loaded++;
+    if (loaded === count) {
+      _this.sendNotification(CaptioningNotifications.TRACKS_LOADED, _this.tracks);
+      _this.autoSelectTrack();
+    }
+  };
+  for (_i = 0, _len = value.length; _i < _len; _i++) {
+    item = value[_i];
+    track = new CaptionTrack(item, trackLoaded);
+    this.tracks.push(track);
   }
   return value;
 };
 
-ControlsWrapper.prototype.getAutoHide = function() {
-  return this.autoHide;
-};
-
-/** 
- * @constructor
- * @private
+/**
 */
-function ControlsProxy(config) {
-  ControlsProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(ControlsProxy, ModuleProxy);
-
-
-ControlsProxy.NAME = ModuleProxy.NAME;
-
-ControlsProxy.prototype.defaults = {
-  mode: "auto",
-  autoHide: 3,
-  admode: null
-};
-
-ControlsProxy.prototype.timeout = null;
-
-ControlsProxy.prototype.appState = null;
-
-ControlsProxy.prototype.controls = null;
-
-ControlsProxy.prototype.interactiveElement = null;
-
-ControlsProxy.prototype.idleUtil = null;
-
-ControlsProxy.prototype.initializeNotifier = function(key) {
-  ControlsProxy.__super__.initializeNotifier.call(this, key);
-  this.appState = this.facade.player.retrieveProxy(ApplicationStateProxy.NAME);
-  this.controls = this.facade.retrieveMediator(ApplicationStateProxy.NAME);
-};
-
-ControlsProxy.prototype.onRegister = function() {
-  var _this = this;
-  ControlsProxy.__super__.onRegister.call(this);
-  if (this.config.mode != null) {
-    this.changeMode(this.config.mode);
+CaptioningProxy.prototype.registerRenderer = function(value) {
+  if (!(value != null)) {
+    return;
   }
-  this.interactiveElement = this.facade.player.getContainer();
-  if (Utils.getDevice() === "desktop") {
-    EventHandler.create(this.interactiveElement, "mouseenter", function() {
-      _this.stop();
-      if (_this.appState.activeState !== ActiveState.ACTIVE) {
-        _this.sendNotification(Notifications.CHANGE_ACTIVE_STATE, ActiveState.ACTIVE);
-      }
-    });
-    EventHandler.create(this.interactiveElement, "mouseleave", function() {
-      _this.start();
-    });
-    this.idleUtil = new IdleUtil(this.facade.player.getViewComponent(), this.data.autoHide * 1000);
-    this.idleUtil.addEventListener("activechange", function(event) {
-      var state;
-      state = event.detail.active !== true ? ActiveState.INACTIVE : ActiveState.ACTIVE;
-      _this.sendNotification(Notifications.CHANGE_ACTIVE_STATE, state);
-    });
-    this.idleUtil.start();
-    EventHandler.create(this.facade.player.getMediaElement(), "click", function() {
-      _this.sendNotification(UserNotifications.TOGGLE_PLAY_PAUSE);
-    });
-  } else {
-    EventHandler.create(this.interactiveElement, EventHandler.CLICK, function() {
-      _this.sendNotification(Notifications.TOGGLE_ACTIVE);
-    });
+  value.proxy = this;
+  this.rendererMap.push(value);
+};
+
+/**
+*/
+CaptioningProxy.prototype.retrieveRenderer = function(name) {
+  var value, _i, _len, _ref;
+  _ref = this.rendererMap;
+  for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+    value = _ref[_i];
+    if (value.getRendererName() === name) {
+      return value;
+    }
   }
 };
 
-ControlsProxy.prototype.setMode = function(value) {
-  if (this.data.mode === value) {
+/**
+*/
+CaptioningProxy.prototype.removeRenderer = function(name) {
+  var index, value;
+  value = this.retrieveRenderer(name);
+  value.proxy = null;
+  if (!(value != null)) {
+    return null;
+  }
+  index = this.rendererMap.indexOf(value);
+  this.rendererMap.splice(index, 1);
+  return value;
+};
+
+/**
+ *
+*/
+CaptioningProxy.prototype.getRenderer = function() {
+  return this.renderer;
+};
+
+CaptioningProxy.prototype.setRenderer = function(value) {
+  if (value === this.renderer) {
     return value;
   }
-  this.changeMode(value);
+  if (this.renderer != null) {
+    this.facade.removeMediator(CaptioningProxy.TEXT_TRACK_RENDERER);
+  }
+  this.renderer = value;
+  if (this.renderer != null) {
+    this.facade.registerMediator(this.renderer);
+  }
   return value;
 };
 
-ControlsProxy.prototype.changeMode = function(value) {
-  if (this.data.mode === "auto") {
-    this.stop();
-  }
-  this.facade.sendNotification(Notifications.REMOVE_APPLICATION_STATE, "controls-" + this.data.mode);
-  this.data.mode = value;
-  this.facade.sendNotification(Notifications.ADD_APPLICATION_STATE, "controls-" + this.data.mode);
-};
-
-ControlsProxy.prototype.getMode = function() {
-  return this.data.mode;
-};
-
-ControlsProxy.prototype.setAutoHide = function(value) {
-  this.data.autoHide = value;
-  return value;
-};
-
-ControlsProxy.prototype.getAutoHide = function() {
-  return this.data.autoHide;
-};
-
-ControlsProxy.prototype.adBreakStart = function() {
-  if (this.data.admode != null) {
-    this.config.mode = this.getMode();
-    this.setMode(this.data.admode);
-  }
-};
-
-ControlsProxy.prototype.adBreakEnd = function() {
-  if (this.data.admode != null) {
-    this.setMode(this.config.mode);
-  }
-};
-
-ControlsProxy.prototype.start = function() {
-  this.stop();
-  if (this.data.mode !== "auto") {
+/**
+ *
+*/
+CaptioningProxy.prototype.selectRenderer = function(media) {
+  var item, renderer, track, tracks, _i, _j, _len, _len1, _ref;
+  renderer = null;
+  tracks = media.track;
+  if (!(tracks != null)) {
     return;
   }
-  this.timeout = setTimeout(this.hide.bind(this), this.data.autoHide * 1000);
-};
-
-ControlsProxy.prototype.stop = function() {
-  clearTimeout(this.timeout);
-  this.timeout = null;
-};
-
-ControlsProxy.prototype.hide = function() {
-  if (this.data.mode !== "auto") {
-    return;
-  }
-  if ((this.appState.getIsUserActive() === true || Utils.isMouseOverElement(this.facade.viewComponent)) && this.appState.getDisplayState() !== DisplayState.FULL_SCREEN) {
-    this.start();
-    return;
-  }
-  this.facade.sendNotification(Notifications.CHANGE_ACTIVE_STATE, ActiveState.INACTIVE);
-};
-
-/**
- * @constructor
- * @private
- * @extends {OverlayMediator}
-*/
-function TitleBarMediator() {
-  TitleBarMediator.__super__.constructor.call(this);
-}
-
-
-__extends(TitleBarMediator, OverlayMediator);
-
-
-TitleBarMediator.prototype.componentName = "title-bar";
-
-TitleBarMediator.prototype.title = null;
-
-TitleBarMediator.prototype.description = null;
-
-/**
- * @override
-*/
-TitleBarMediator.prototype.onRegister = function() {
-  TitleBarMediator.__super__.onRegister.call(this);
-  this.title = this.create("title-text");
-  this.description = this.create("description-text");
-};
-
-/**
- * @override
-*/
-TitleBarMediator.prototype.listNotificationInterests = function() {
-  return [Notifications.CHANGE_MEDIA];
-};
-
-/**
- * @override
-*/
-TitleBarMediator.prototype.handleNotification = function(notification) {
-  var metadata, title;
-  switch (notification.getName()) {
-    case Notifications.CHANGE_MEDIA:
-      metadata = notification.getBody();
-      title = this.facade.player.evaluateBinding(metadata.title);
-      if (!(title != null) || title === "" || title === "undefined") {
-        this.classList.add("hidden");
-      } else {
-        this.title.innerHTML = title;
-        this.description.innerHTML = metadata.description ? metadata.description : "";
-        this.classList.remove("hidden");
+  for (_i = 0, _len = tracks.length; _i < _len; _i++) {
+    track = tracks[_i];
+    _ref = this.rendererMap;
+    for (_j = 0, _len1 = _ref.length; _j < _len1; _j++) {
+      item = _ref[_j];
+      if (!(item.canUseResource(track) === true)) {
+        continue;
       }
+      renderer = item;
+      break;
+    }
+    if (renderer != null) {
+      break;
+    }
   }
+  this.setRenderer(renderer);
+  return renderer;
 };
 
 /**
- * ErrorLayerMediator class.
+ *
+*/
+CaptioningProxy.prototype.getTrack = function() {
+  return this.track;
+};
+
+CaptioningProxy.prototype.setTrack = function(value) {
+  this.track = value;
+  this.captions = this.track.cues;
+  this.activeCaptions = [];
+  this.sendNotification(Notifications.CHANGE_SETTINGS, {
+    captions: {
+      track: this.track.flatten()
+    }
+  });
+  this.sendNotification(CaptioningNotifications.TRACK_SELECTED, this.track);
+  return value;
+};
+
+/**
+ *
+*/
+CaptioningProxy.prototype.selectTrackByIndex = function(index) {
+  var track;
+  if ((0 <= index && index < this.tracks.length)) {
+    track = this.tracks[index];
+    this.setTrack(track);
+  }
+  return track;
+};
+
+/**
+ *
+*/
+CaptioningProxy.prototype.selectTrackByLanguage = function(lang) {
+  var item, track, _i, _len, _ref;
+  _ref = this.tracks;
+  for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+    item = _ref[_i];
+    if (!(item.language === lang)) {
+      continue;
+    }
+    track = item;
+    break;
+  }
+  if (track != null) {
+    this.setTrack(track);
+  }
+  return track;
+};
+
+/**
+ *
+*/
+CaptioningProxy.prototype.getHidden = function() {
+  return this.hidden;
+};
+
+CaptioningProxy.prototype.setHidden = function(value) {
+  this.hidden = value;
+  return value;
+};
+
+/**
+ *
+*/
+CaptioningProxy.prototype.getEnabled = function() {
+  return this.enabled;
+};
+
+CaptioningProxy.prototype.setEnabled = function(value) {
+  this.enabled = value;
+  return value;
+};
+
+/**
+ *
+*/
+CaptioningProxy.prototype.autoSelectTrack = function() {
+  var lang, track, _ref;
+  lang = (_ref = this.facade.player.retrieveProxy(LocalizationProxy.NAME)) != null ? _ref.getLanguage() : void 0;
+  if (lang != null) {
+    lang = lang.split("-").shift();
+    track = this.selectTrackByLanguage(lang);
+  }
+  if (!(track != null)) {
+    track = this.tracks[0];
+    this.setTrack(track);
+  }
+  return track;
+};
+
+/** 
+ * PluginMediator class.
  *   
  * @constructor
- * @extends {LayerMediator}
  * @private
+ * @extends {OverlayMediator}
 */
-function ErrorLayerMediator() {
-  ErrorLayerMediator.__super__.constructor.call(this);
+function PluginComponentMediator(componentName, componentType, parent, element) {
+  PluginComponentMediator.__super__.constructor.call(this, componentName, componentType, parent, element);
 }
 
 
-__extends(ErrorLayerMediator, LayerMediator);
+__extends(PluginComponentMediator, ComponentMediator);
 
 
-ErrorLayerMediator.prototype.message = null;
-
-ErrorLayerMediator.prototype.componentName = "error";
+/** @override
+*/
+PluginComponentMediator.prototype.initializeNotifier = function(key) {
+  PluginComponentMediator.__super__.initializeNotifier.call(this, key);
+  this.plugin = this.facade.retrieveProxy(ModuleProxy.NAME);
+  this.media = this.facade.player.retrieveProxy(MediaProxy.NAME);
+};
 
 /**
- * @override
+ * The CaptioningMediator class.
+ *
+ * @constructor
+ * @private
+ * @extends {PluginMediator}
+ * @param {Object} viewComponent
 */
-ErrorLayerMediator.prototype.onRegister = function() {
-  ErrorLayerMediator.__super__.onRegister.call(this);
-  this.message = this.create("error-message");
+function CaptioningNativeMediator(viewComponent) {
+  CaptioningNativeMediator.__super__.constructor.call(this, viewComponent);
+}
+
+
+__extends(CaptioningNativeMediator, LocalizedMediator);
+
+
+CaptioningNativeMediator.prototype.video = null;
+
+CaptioningNativeMediator.prototype.index = -1;
+
+CaptioningNativeMediator.prototype.plugin = null;
+
+CaptioningNativeMediator.prototype.parallelement = null;
+
+CaptioningNativeMediator.prototype.paralleltimer = null;
+
+CaptioningNativeMediator.prototype.paddingvalue = 6;
+
+CaptioningNativeMediator.prototype.cueChangeListener = null;
+
+CaptioningNativeMediator.prototype.lineheight = 34;
+
+CaptioningNativeMediator.prototype.playerDefaultHeight = 648;
+
+CaptioningNativeMediator.NAME = CaptioningProxy.TEXT_TRACK_RENDERER;
+
+/**
+*/
+CaptioningNativeMediator.prototype.getRendererName = function() {
+  return "native";
+};
+
+/**
+*/
+CaptioningNativeMediator.prototype.canUseResource = function(resource) {
+  var hasNative, type, types, useNative;
+  if (!(resource != null)) {
+    return false;
+  }
+  hasNative = document.createElement("video").textTracks != null;
+  if (!hasNative) {
+    return false;
+  }
+  types = [Utils.mimeTypes.vtt, Utils.mimeTypes.cea608, Utils.mimeTypes.cea708];
+  type = resource.type;
+  if (type === types[1] || type === types[2]) {
+    return true;
+  }
+  useNative = /iphone|ipad/.test(Utils.getDevice()) || this.proxy.getUseNative();
+  if (!useNative) {
+    return false;
+  }
+  return types.indexOf(resource.type) !== -1;
 };
 
 /**
  * @override
 */
-ErrorLayerMediator.prototype.listNotificationInterests = function() {
-  return [Notifications.ERROR];
+CaptioningNativeMediator.prototype.onRegister = function() {
+  this.plugin = this.facade.retrieveProxy(CaptioningProxy.NAME);
+  this.cueChangeListener = this.cueChange.bind(this);
+  if (Utils.getSafariVersion() < 0) {
+    this.facade.player.getMediaElement().textTracks.addEventListener("addtrack", this.updateTrack.bind(this));
+  }
+  this.facade.player.getMediaElement().textTracks.addEventListener("cuechange", this.cueChangeListener);
+  if ((this.plugin != null) && (this.plugin.config != null) && !this.plugin.config.hasOwnProperty('useparallelrendering')) {
+    this.plugin.config.useparallelrendering = false;
+  }
+};
+
+/** @override
+*/
+CaptioningNativeMediator.prototype.onRemove = function() {
+  if ((this.viewComponent != null) && (this.parallelelment != null)) {
+    this.viewComponent.removeChild(this.parallelement);
+    this.facade.player.getMediaElement().textTracks.removeEventListener("addtrack", this.updateTrack);
+    this.facade.player.getMediaElement().textTracks.removeEventListener("cuechange", this.cueChangeListener);
+  }
 };
 
 /**
  * @override
 */
-ErrorLayerMediator.prototype.handleNotification = function(notification) {
-  var error, msg;
+CaptioningNativeMediator.prototype.listNotificationInterests = function() {
+  return [CaptioningNotifications.VISIBILITY_CHANGE, CaptioningNotifications.TRACK_SELECTED, CaptioningNotifications.TRACKS_LOADED, Notifications.LOADED_METADATA, Notifications.CAN_PLAY_THROUGH, AdNotifications.BREAK_START];
+};
+
+/**
+ * @override
+*/
+CaptioningNativeMediator.prototype.handleNotification = function(notification) {
+  var body, crossorigin, element, track, video, _i, _len, _ref;
+  body = notification.getBody();
   switch (notification.getName()) {
-    case Notifications.ERROR:
-      error = notification.getBody();
-      msg = "Error: ";
-      switch (error.code) {
-        case MediaError.MEDIA_ERR_ABORTED:
-          msg += "Media was aborted.";
-          break;
-        case MediaError.MEDIA_ERR_DECODE:
-          msg += "Decode Error.";
-          break;
-        case MediaError.MEDIA_ERR_NETWORK:
-          msg += "Network Error.";
-          break;
-        case MediaError.MEDIA_ERR_SRC_NOT_SUPPORTED:
-          msg += "Source not supported.";
-          break;
-        default:
-          msg += error;
+    case CaptioningNotifications.TRACKS_LOADED:
+      this.tracks = body;
+      break;
+    case CaptioningNotifications.TRACK_SELECTED:
+      if (this.facade.player.getMediaElement().textTracks.length) {
+        track = this.facade.player.getMediaElement().textTracks[this.index];
       }
-      this.message.textContent = msg;
-  }
-};
-
-/** 
- * @constructor
- * @extends {OverlayMediator}
- * @private
-*/
-function LoadingOverlayMediator() {
-  LoadingOverlayMediator.__super__.constructor.call(this);
-}
-
-
-__extends(LoadingOverlayMediator, OverlayMediator);
-
-
-LoadingOverlayMediator.prototype.componentName = "loading";
-
-/**
- * @constructor
- * @private
- * @extends {OverlayMediator}
-*/
-function WaitingOverlayMediator() {
-  WaitingOverlayMediator.__super__.constructor.call(this);
-}
-
-
-__extends(WaitingOverlayMediator, OverlayMediator);
-
-
-WaitingOverlayMediator.prototype.componentName = "waiting";
-
-WaitingOverlayMediator.prototype.bar = null;
-
-WaitingOverlayMediator.prototype.text = null;
-
-WaitingOverlayMediator.prototype.onRegister = function() {
-  WaitingOverlayMediator.__super__.onRegister.call(this);
-  this.bar = this.create("waiting-bar");
-  this.text = this.createText("waiting-text", this.localizationManager.getString(LocalizationConstants.MSG_BUFFERING));
-};
-
-/**
- * @constructor
- * @private
- * @extends {LayerMediator}
-*/
-function PosterMediator() {
-  PosterMediator.__super__.constructor.call(this);
-}
-
-
-__extends(PosterMediator, OverlayMediator);
-
-
-PosterMediator.prototype.componentName = "poster";
-
-PosterMediator.prototype.poster = null;
-
-PosterMediator.prototype.clickHandler = null;
-
-/**
- * @override
-*/
-PosterMediator.prototype.onRegister = function() {
-  PosterMediator.__super__.onRegister.call(this);
-  this.poster = this.create("poster-content");
-  this.poster.onclick = this.onclick.bind(this);
-};
-
-/**
-*/
-PosterMediator.prototype.onclick = function(event) {
-  event.stopImmediatePropagation();
-  event.preventDefault();
-  this.sendNotification(UserNotifications.TOGGLE_PLAY_PAUSE, true);
-  return false;
-};
-
-/**
- * @override
-*/
-PosterMediator.prototype.listNotificationInterests = function() {
-  return [Notifications.CHANGE_MEDIA];
-};
-
-/**
- * @override
-*/
-PosterMediator.prototype.handleNotification = function(notification) {
-  var html, src;
-  switch (notification.getName()) {
-    case Notifications.CHANGE_MEDIA:
-      src = notification.getBody().poster;
-      html = (src != null) && src !== "" ? "<img src=\"" + src + "\" class=\"" + this.cssPrefix + "poster-image\" />" : "";
-      this.poster.innerHTML = html;
-  }
-};
-
-/**
-*/
-/**
- * @constructor
- * @private
-*/
-function EndSlateMediator() {
-  EndSlateMediator.__super__.constructor.call(this);
-}
-
-
-__extends(EndSlateMediator, OverlayMediator);
-
-
-EndSlateMediator.prototype.componentName = "end-slate";
-
-/**
- * @override
-*/
-EndSlateMediator.prototype.onRegister = function() {
-  if (this.config.getEndSlate() != null) {
-    EndSlateMediator.__super__.onRegister.call(this);
-  }
-};
-
-EndSlateMediator.prototype.listNotificationInterests = function() {
-  return [Notifications.MEDIA_CHANGE];
-};
-
-EndSlateMediator.prototype.handleNotification = function(notification) {
-  var endslate, html, media, src, viewComponent;
-  switch (notification.getName()) {
-    case Notifications.MEDIA_CHANGE:
-      media = notification.getBody();
-      endslate = this.config.getEndSlate();
-      viewComponent = this.getViewComponent();
-      html = "";
-      if (endslate != null) {
-        src = endslate.usePoster === true ? media.poster : endslate.url;
-        if ((src != null) && src !== "") {
-          html = "<img src=\"" + src + "\" class=\"end-slate-image\" />";
+      if (track != null) {
+        track.mode = "hidden";
+      }
+      this.index = this.plugin.getTracks().indexOf(body);
+      this.lang = body.language;
+      this.updateTrack();
+      break;
+    case CaptioningNotifications.VISIBILITY_CHANGE:
+    case Notifications.CAN_PLAY_THROUGH:
+      this.updateTrack();
+      break;
+    case AdNotifications.BREAK_START:
+      this.clearCaption();
+      break;
+    case Notifications.LOADED_METADATA:
+      if (!(this.tracks != null)) {
+        return;
+      }
+      video = this.facade.player.getMediaElement();
+      crossorigin = this.plugin.getCrossOrigin();
+      if (crossorigin != null) {
+        video.setAttribute("crossorigin", crossorigin);
+      }
+      _ref = this.tracks;
+      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+        track = _ref[_i];
+        if (!(track.type === Utils.mimeTypes.vtt)) {
+          continue;
         }
+        element = document.createElement("track");
+        element.src = track.src;
+        if (track.kind != null) {
+          element.kind = track.kind;
+        }
+        if (track.language != null) {
+          element.srclang = track.language;
+        }
+        if (track.label != null) {
+          element.label = track.label;
+        }
+        element["default"] = "default" in track;
+        video.appendChild(element);
       }
-      if (viewComponent != null) {
-        viewComponent.innerHTML = html;
-      }
+      this.tracks = null;
   }
 };
 
-/** 
- * @constructor
- * @private
-*/
-function ButtonMediator(labelText, parent, element, componentName, onclick) {
-  this.labelText = labelText;
-  this.onclick = onclick != null ? onclick : this.onclick;
-  ButtonMediator.__super__.constructor.call(this, componentName, null, parent, element);
-}
-
-
-__extends(ButtonMediator, ComponentMediator);
-
-
-ButtonMediator.prototype.componentType = "button";
-
-ButtonMediator.prototype.icon = null;
-
-ButtonMediator.prototype.label = null;
-
-ButtonMediator.prototype.onclick = null;
-
-ButtonMediator.prototype.labelText = null;
-
-ButtonMediator.prototype.onRegister = function() {
-  ButtonMediator.__super__.onRegister.call(this);
-  this.icon = this.create("icon");
-  this.createLabel(this.labelText);
-};
-
-ButtonMediator.prototype.createLabel = function(label) {
-  if (label != null) {
-    this.label = this.createText("label", label);
+CaptioningNativeMediator.prototype.updateTrack = function(event) {
+  var config, etrack, i, track, _i, _len, _ref, _ref1, _ref2;
+  config = this.plugin.config;
+  _ref = this.facade.player.getMediaElement().textTracks;
+  for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
+    track = _ref[i];
+    if (!(/subtitles|captions/.test(track.kind) && (track.language === this.lang || !track.language.length))) {
+      continue;
+    }
+    if (!(track != null)) {
+      return;
+    }
+    this.index = i;
+    if (this.getTracksByKind(track.kind).length > 1) {
+      this.suppressDupeTracks(track.kind, [1]);
+      if (i === 1) {
+        track.mode = this.plugin.getHidden() ? "hidden" : "showing";
+      }
+    }
+    if (track.kind === "subtitles") {
+      track.mode = "hidden";
+    } else {
+      if (config.useparallelrendering === false) {
+        track.mode = this.plugin.getHidden() ? "hidden" : "showing";
+      }
+    }
   }
-};
-
-ButtonMediator.prototype.setLabel = function(value) {
-  if (!(this.label != null)) {
-    this.createLabel(value);
+  if (event) {
+    if (((_ref1 = event.track) != null ? _ref1.kind : void 0) === "metadata") {
+      return;
+    }
+  }
+  if (this.plugin.getHidden()) {
+    if ((this.plugin != null) && this.plugin.config.useparallelrendering) {
+      if ((this.parallelement != null)) {
+        this.parallelement.style.display = "none";
+      }
+    } else {
+      this.clearCaption();
+    }
   } else {
-    this.label.textContent = value;
+    if ((this.plugin != null) && this.plugin.config.useparallelrendering) {
+      if ((this.parallelement != null)) {
+        this.parallelement.style.display = "inline";
+      }
+    }
   }
-  return value;
+  if ((_ref2 = this.plugin) != null ? _ref2.config.useparallelrendering : void 0) {
+    etrack = null;
+    if (!this.parallelement) {
+      this.createParallelement();
+    }
+    if (event) {
+      etrack = event.track;
+    }
+    if (etrack && etrack.language !== null && etrack.language !== this.lang) {
+      return;
+    }
+    this.useParallelRendering(this.plugin.config.useparallelrendering, etrack);
+  }
 };
 
-ButtonMediator.prototype.getLabel = function() {
-  var _ref;
-  return (_ref = this.label) != null ? _ref.textContent : void 0;
+CaptioningNativeMediator.prototype.createParallelement = function() {
+  if (this.parallelement) {
+    return;
+  }
+  this.parallelement = document.createElement("div");
+  this.parallelement.className = "akamai-caption-container";
+  this.viewComponent.appendChild(this.parallelement);
+  return this.parallelement;
+};
+
+CaptioningNativeMediator.prototype.useParallelRendering = function(value, track) {
+  var _ref, _ref1;
+  if ((_ref = this.plugin) != null) {
+    _ref.config.useparallelrendering = value;
+  }
+  if (!track && ((_ref1 = this.facade.player.getMediaElement().textTracks) != null ? _ref1.length : void 0)) {
+    track = this.facade.player.getMediaElement().textTracks[this.index];
+  }
+  if (track) {
+    if (value === true) {
+      if (track.hasCueChangeListener === false || typeof track.hasCueChangeListener === 'undefined') {
+        track.hasCueChangeListener = true;
+        return track.addEventListener("cuechange", this.cueChangeListener);
+      }
+    } else {
+      track.hasCueChangeListener = false;
+      return track.removeEventListener("cuechange", this.cueChangeListener);
+    }
+  }
+};
+
+CaptioningNativeMediator.prototype.cueChange = function(event) {
+  var capText, captionTextContainerArray, computedFontSize, cssLh, currentHeight, delay, diff, endtime, i, isPriority, maxCueBottom, percentChanged, shouldScaleFont, starttime, stl, temp, xPos, yPos;
+  isPriority = this.proxy.track ? this.proxy.track.kind === event.target.kind : true;
+  if (this.plugin.getHidden() || !isPriority) {
+    return;
+  }
+  maxCueBottom = 0;
+  shouldScaleFont = false;
+  if (this.paralleltimer) {
+    clearTimeout(this.paralleltimer);
+    this.paralleltimer = null;
+  }
+  if (this.parallelement) {
+    this.parallelement.innerHTML = "";
+  }
+  captionTextContainerArray = [];
+  i = 0;
+  while (i < event.target.activeCues.length) {
+    if ((new RegExp("^\{\".*}$")).test(event.target.activeCues[i].text)) {
+      return;
+    }
+    this.parallelement.style.display = "inline";
+    captionTextContainerArray[i] = document.createElement('div');
+    captionTextContainerArray[i].className = 'akamai-caption-text';
+    this.viewComponent.getElementsByClassName('akamai-caption-container')[0].appendChild(captionTextContainerArray[i]);
+    capText = document.createElement('p');
+    captionTextContainerArray[i].appendChild(capText);
+    cssLh = window.getComputedStyle(capText).lineHeight.replace("px", "");
+    if (cssLh) {
+      this.lineheight = cssLh;
+    }
+    xPos = void 0;
+    if (navigator.userAgent.indexOf('Firefox') !== -1) {
+      xPos = event.target.activeCues[i].position - 50 + '%';
+    } else {
+      xPos = event.target.activeCues[i].position + '%';
+    }
+    yPos = void 0;
+    currentHeight = this.facade.player.getMediaElement().getBoundingClientRect().height;
+    percentChanged = currentHeight / this.playerDefaultHeight * 100;
+    stl = event.target.activeCues[i].snapToLines;
+    if (stl !== null && (event.target.activeCues[i].snapToLines === true || typeof stl === 'undefined')) {
+      yPos = event.target.activeCues[i].line * (this.lineheight / 100 * percentChanged);
+    } else {
+      yPos = currentHeight / 100 * event.target.activeCues[i].line * 10;
+    }
+    if (i > 0 && yPos) {
+      diff = this.viewComponent.getElementsByClassName('akamai-caption-container')[0].childNodes[0].offsetHeight - (this.lineheight / 100 * percentChanged);
+      yPos = yPos + diff * i;
+    }
+    yPos = yPos + 'px';
+    captionTextContainerArray[i].style.left = xPos;
+    captionTextContainerArray[i].style.top = yPos;
+    captionTextContainerArray[i].style.textAlign = 'left';
+    captionTextContainerArray[i].style.position = 'absolute';
+    captionTextContainerArray[i].style.bottom = 'auto';
+    captionTextContainerArray[i].style.display = 'inline';
+    captionTextContainerArray[i].style.padding = this.paddingvalue + 'px';
+    captionTextContainerArray[i].style.width = 'auto';
+    captionTextContainerArray[i].style['min-height'] = '0px';
+    capText.innerHTML = event.target.activeCues[i].text;
+    capText.style.margin = '0px';
+    capText.style.display = 'block';
+    capText.style.lineHeight = "normal";
+    computedFontSize = null;
+    try {
+      temp = document.createElement('span');
+      temp.style.fontSize = JSON.parse(localStorage.getItem("akamai-captioningDefault")).size;
+      captionTextContainerArray[i].appendChild(temp);
+      computedFontSize = window.getComputedStyle(temp).fontSize.replace("px", "");
+      temp = null;
+    } catch (_error) {}
+    if (computedFontSize) {
+      if (shouldScaleFont) {
+        computedFontSize = computedFontSize / 100 * percentChanged;
+        capText.style.fontSize = computedFontSize + "px";
+      }
+      maxCueBottom = Math.max(maxCueBottom, (Number(yPos.replace("px", "")) || 0) + captionTextContainerArray[i].getBoundingClientRect().height);
+    }
+    if (i === event.target.activeCues.length - 1) {
+      endtime = event.target.activeCues[i].endTime ? event.target.activeCues[i].endTime : 0;
+      starttime = event.target.activeCues[i].startTime ? event.target.activeCues[i].startTime : 0;
+      delay = (endtime - starttime) * 1000;
+      if (delay > 500) {
+        this.paralleltimer = setTimeout(this.clearCaption.bind(this), delay);
+      }
+    }
+    i++;
+  }
+  if (maxCueBottom > currentHeight) {
+    maxCueBottom = maxCueBottom - currentHeight;
+    i = 0;
+    while (i < captionTextContainerArray.length) {
+      captionTextContainerArray[i].style.top = (Number(captionTextContainerArray[i].style.top.replace("px", "")) - maxCueBottom) + "px";
+      i++;
+    }
+  }
+};
+
+CaptioningNativeMediator.prototype.clearCaption = function() {
+  if (this.paralleltimer) {
+    clearTimeout(this.paralleltimer);
+    this.paralleltimer = null;
+  }
+  if (this.parallelement) {
+    this.parallelement.innerHTML = "";
+  }
+};
+
+CaptioningNativeMediator.prototype.getTracksByKind = function(kind) {
+  var stracks, track, tracks, _i, _len;
+  tracks = this.facade.player.getMediaElement().textTracks;
+  stracks = [];
+  for (_i = 0, _len = tracks.length; _i < _len; _i++) {
+    track = tracks[_i];
+    if (track.kind === kind && track.language === "en") {
+      stracks.push(track);
+    }
+  }
+  return stracks;
+};
+
+CaptioningNativeMediator.prototype.suppressDupeTracks = function(kind, exclude) {
+  var i, track, _i, _len, _ref;
+  _ref = this.getTracksByKind(kind);
+  for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
+    track = _ref[i];
+    if (track.kind === kind && track.language === "en") {
+      if ((exclude != null) && (new RegExp(i)).test(exclude)) {
+        continue;
+      }
+      track.mode = "hidden";
+    }
+  }
+  return i > 0;
 };
 
 /**
- * The LogoMediator class.
- * 
+ * The CaptioningHTMLMediator class.
+ *
  * @constructor
  * @private
  * @extends {LocalizedMediator}
  * @param {Object} viewComponent
 */
-function LogoMediator(parent) {
-  LogoMediator.__super__.constructor.call(this, null, null, parent);
+function CaptioningHTMLMediator(viewComponent) {
+  CaptioningHTMLMediator.__super__.constructor.call(this, null, null, viewComponent, null);
 }
 
 
-__extends(LogoMediator, ComponentMediator);
+__extends(CaptioningHTMLMediator, PluginComponentMediator);
 
+
+CaptioningHTMLMediator.prototype.componentName = CaptioningProxy.TEXT_TRACK_RENDERER;
+
+CaptioningHTMLMediator.prototype.captionText = null;
 
 /**
- * The name of the this Mediator.
- * 
- * @static
- * @type {string}
 */
-LogoMediator.prototype.componentName = "logo";
+CaptioningHTMLMediator.prototype.getRendererName = function() {
+  return "html";
+};
 
-LogoMediator.prototype.url = null;
+/** @override
+*/
+CaptioningHTMLMediator.prototype.onRemove = function() {
+  if (this.viewComponent !== null) {
+    while (this.viewComponent.firstChild) {
+      this.viewComponent.removeChild(this.viewComponent.firstChild);
+    }
+  }
+};
+
+/**
+*/
+CaptioningHTMLMediator.prototype.canUseResource = function(resource) {
+  var types;
+  if (!(resource != null)) {
+    return false;
+  }
+  types = [Utils.mimeTypes.srt, Utils.mimeTypes.ttml, Utils.mimeTypes.vtt];
+  return types.indexOf(resource.type) !== -1;
+};
+
+/* Get Caption Container Display Height
+*/
+CaptioningHTMLMediator.prototype.getCaptionDisplayHeight = function() {
+  var height, i, length;
+  height = 0;
+  i = length = this.viewComponent.childNodes.length;
+  while (i) {
+    --i;
+    if (length === 3 && i === 0) {
+      break;
+    }
+    height += Utils.getActualSize(this.viewComponent.childNodes[i]).height;
+  }
+  return height + "px";
+};
+
+/* Scroll Captions
+*/
+CaptioningHTMLMediator.prototype.scrollCaptions = function(scrollHeight, scrollTop, steps) {
+  var scroll, stepSize,
+    _this = this;
+  if (scrollHeight == null) {
+    scrollHeight = this.viewComponent.scrollHeight;
+  }
+  if (scrollTop == null) {
+    scrollTop = this.viewComponent.scrollTop;
+  }
+  if (steps == null) {
+    steps = 20;
+  }
+  stepSize = (scrollHeight - scrollTop) / steps;
+  scroll = function() {
+    var _results;
+    if (scrollTop < scrollHeight) {
+      _this.viewComponent.scrollTop = scrollTop += stepSize;
+      return setTimeout(scroll, 20);
+    } else {
+      _results = [];
+      while (_this.viewComponent.childNodes.length > 2) {
+        _results.push(_this.viewComponent.removeChild(_this.viewComponent.firstChild));
+      }
+      return _results;
+    }
+  };
+  scroll();
+};
 
 /**
  * @override
 */
-LogoMediator.prototype.onRegister = function() {
-  LogoMediator.__super__.onRegister.call(this);
-  this.sendNotification(Notifications.ADD_CONTROL_STATE, this.componentName + "-enabled");
-};
-
-LogoMediator.prototype.onclick = function(event) {
-  event.stopImmediatePropagation();
-  this.sendNotification(Notifications.DISPATCH_EVENT, new Event("controlsLogoClicked"));
-  return false;
-};
-
-/**
- * The FullScreenMediator class.
- * 
- * @constructor
- * @private
- * @extends {ModuleMediator}
- * @param {Object} viewComponent
-*/
-function FullScreenMediator(parent) {
-  FullScreenMediator.__super__.constructor.call(this, null, parent);
-}
-
-
-__extends(FullScreenMediator, ButtonMediator);
-
-
-FullScreenMediator.prototype.componentName = "full-screen";
-
-FullScreenMediator.prototype.onRegister = function() {
-  FullScreenMediator.__super__.onRegister.call(this);
-  this.sendNotification(Notifications.ADD_CONTROL_STATE, this.componentName + "-enabled");
-};
-
-FullScreenMediator.prototype.onclick = function(event) {
-  event.stopImmediatePropagation();
-  this.sendNotification(Notifications.TOGGLE_FULL_SCREEN);
-  return false;
+CaptioningHTMLMediator.prototype.listNotificationInterests = function() {
+  return [CaptioningNotifications.CUE_CHANGE, Notifications.CHANGE_MEDIA];
 };
 
 /**
  * @override
 */
-FullScreenMediator.prototype.listNotificationInterests = function() {
-  return [Notifications.DISABLE_FULL_SCREEN, Notifications.ENABLE_FULL_SCREEN];
-};
-
-/**
- * @override
-*/
-FullScreenMediator.prototype.handleNotification = function(notification) {
-  var body, name;
+CaptioningHTMLMediator.prototype.handleNotification = function(notification) {
+  var body, captions, child, childNode, cue, i, name, settings, temp, _i, _j, _k, _len, _len1, _len2, _ref, _ref1;
   name = notification.getName();
   body = notification.getBody();
   switch (name) {
-    case Notifications.DISABLE_FULL_SCREEN:
-      this.setDisabled(true);
+    case Notifications.CHANGE_MEDIA:
+      this.viewComponent.innerHTML = "";
       break;
-    case Notifications.ENABLE_FULL_SCREEN:
-      this.setDisabled(false);
+    case CaptioningNotifications.CUE_CHANGE:
+      settings = this.facade.player.settings.captions || {};
+      captions = "";
+      settings.scroll = settings.scroll.toLowerCase().replace('-', '');
+      for (_i = 0, _len = body.length; _i < _len; _i++) {
+        cue = body[_i];
+        _ref = this.viewComponent.children;
+        for (_j = 0, _len1 = _ref.length; _j < _len1; _j++) {
+          child = _ref[_j];
+          if ((new RegExp(cue.html)).test(child.outerHTML) && settings.scroll === "popout") {
+            continue;
+          }
+        }
+        captions += cue.html;
+      }
+      if (settings.scroll === "painton") {
+        this.classList.add("captioning-typed");
+      } else {
+        this.classList.remove("captioning-typed");
+      }
+      switch (settings.scroll) {
+        case "popout":
+          this.viewComponent.innerHTML = captions;
+          break;
+        case "rollon":
+        case "painton":
+          temp = document.createElement("div");
+          temp.innerHTML = captions;
+          _ref1 = temp.childNodes;
+          for (i = _k = 0, _len2 = _ref1.length; _k < _len2; i = ++_k) {
+            childNode = _ref1[i];
+            if (this.viewComponent.children.length && (new RegExp(childNode.innerText)).test(this.viewComponent.lastChild.innerText)) {
+              continue;
+            }
+            this.viewComponent.appendChild(childNode);
+          }
+          this.viewComponent.style.maxHeight = this.getCaptionDisplayHeight();
+          this.scrollCaptions();
+      }
   }
 };
-
-/**
- * The VolumeMediator class.
- * 
- * @constructor
- * @private
- * @extends {ModuleMediator}
- * @param {Object} viewComponent
-*/
-function SliderMediator(parent, direction) {
-  this.direction = direction != null ? direction : this.direction;
-  SliderMediator.__super__.constructor.call(this, null, null, parent);
-}
-
-
-__extends(SliderMediator, ComponentMediator);
-
-
-SliderMediator.prototype.componentType = "slider";
-
-SliderMediator.prototype.trackView = null;
-
-SliderMediator.prototype.handleView = null;
-
-SliderMediator.prototype.valueView = null;
-
-SliderMediator.prototype.startCapView = null;
-
-SliderMediator.prototype.endCapView = null;
-
-SliderMediator.prototype.clickView = null;
-
-SliderMediator.prototype.min = 0;
-
-SliderMediator.prototype.max = 1;
-
-SliderMediator.prototype.value = 0;
-
-SliderMediator.prototype.draggable = false;
-
-SliderMediator.prototype.dragging = false;
-
-SliderMediator.prototype.draggingInterval = null;
-
-SliderMediator.prototype.draggingDelay = 250;
-
-SliderMediator.prototype.direction = "vertical";
-
-SliderMediator.prototype.pressHandler = null;
-
-SliderMediator.prototype.releaseHandler = null;
-
-SliderMediator.prototype.moveHandler = null;
-
-SliderMediator.prototype.clickHandler = null;
-
-/**
- * @override
-*/
-SliderMediator.prototype.onRegister = function() {
-  SliderMediator.__super__.onRegister.call(this);
-  this.startCapView = this.create("start-cap");
-  this.endCapView = this.create("end-cap");
-  this.trackView = this.create("track");
-  this.valueView = this.create("value", this.trackView);
-  this.clickView = this.create("click", this.trackView);
-  this.handleView = this.create("handle", this.trackView);
-  this.pressHandler = EventHandler.create(this.handleView, EventHandler.PRESS, this.handlePressHandler.bind(this));
-  this.releaseHandler = EventHandler.create(window, EventHandler.RELEASE, this.handleReleaseHandler.bind(this));
-  this.releaseHandler.unbind();
-  this.moveHandler = EventHandler.create(window, EventHandler.MOVE, this.updateHandler.bind(this, this.draggable));
-  this.moveHandler.unbind();
-  this.clickHandler = EventHandler.create(this.clickView, EventHandler.CLICK, this.updateHandler.bind(this, true));
-};
-
-/** sets the value
-*/
-SliderMediator.prototype.setDirection = function(value) {
-  this.direction = value;
-  return value;
-};
-
-SliderMediator.prototype.getDirection = function() {
-  return this.direction;
-};
-
-/** sets the value
-*/
-SliderMediator.prototype.setValue = function(value) {
-  this.updateValue(value);
-  this.valueChanged();
-  return value;
-};
-
-SliderMediator.prototype.getValue = function() {
-  return this.value;
-};
-
-SliderMediator.prototype.setDragging = function(value) {
-  if (value === this.dragging) {
-    return;
-  }
-  this.dragging = value;
-  this.sendNotification(Notifications.IS_USER_ACTIVE, this.dragging);
-  if (this.dragging === true) {
-    this.draggingInterval = setInterval(this.valueChanged.bind(this), this.draggingDelay);
-  } else {
-    clearInterval(this.draggingInterval);
-    this.valueChanged();
-  }
-  return this.dragging;
-};
-
-SliderMediator.prototype.getDragging = function() {
-  return this.dragging;
-};
-
-SliderMediator.prototype.setDraggable = function(value) {
-  if (value === this.draggable) {
-    return;
-  }
-  this.draggable = value;
-  return value;
-};
-
-SliderMediator.prototype.getDraggable = function() {
-  return this.draggable;
-};
-
-/** updates the view
-*/
-SliderMediator.prototype.updateValue = function(value) {
-  var handle;
-  if (value === this.value) {
-    return;
-  }
-  this.value = Utils.clamp(value, this.min, this.max);
-  if (this.direction === "vertical") {
-    value = "height";
-    handle = "bottom";
-  } else {
-    value = "width";
-    handle = "left";
-  }
-  this.valueView.style[value] = this.handleView.style[handle] = "" + (this.value * 100) + "%";
-};
-
-/** calculates the value based on mouse/touch point
-*/
-SliderMediator.prototype.calculateValue = function(event) {
-  var offset, pos, value;
-  pos = {
-    x: event.clientX || event.targetTouches[0].clientX,
-    y: event.clientY || event.targetTouches[0].clientY
-  };
-  offset = Utils.getElementOffset(this.viewComponent);
-  if (this.getDirection() === "vertical") {
-    value = 1 - ((pos.y - offset.top) / offset.height);
-  } else {
-    value = (pos.x - offset.left) / offset.width;
-  }
-  return Utils.clamp(value, 0, 1);
-};
-
-SliderMediator.prototype.handlePressHandler = function(event) {
-  this.moveHandler.bind();
-  this.releaseHandler.bind();
-  this.clickHandler.unbind();
-  this.setDragging(true);
-  if (event != null) {
-    event.stopImmediatePropagation();
-  }
-  return false;
-};
-
-SliderMediator.prototype.handleReleaseHandler = function(event) {
-  this.moveHandler.unbind();
-  this.releaseHandler.unbind();
-  this.clickHandler.bind();
-  this.setDragging(false);
-  if (event != null) {
-    event.stopImmediatePropagation();
-  }
-  return false;
-};
-
-SliderMediator.prototype.updateHandler = function(setValue, event) {
-  var value;
-  if (event != null) {
-    event.stopImmediatePropagation();
-  }
-  value = this.calculateValue(event);
-  if (setValue === true) {
-    this.setValue(value);
-  } else {
-    this.updateValue(value);
-  }
-  return false;
-};
-
-SliderMediator.prototype.valueChanged = function() {};
 
 /**
  * @enum {string}
@@ -14459,690 +17170,1107 @@ SliderMediator.prototype.valueChanged = function() {};
  * @private
 */
 
-var PanelNotifications = {
-  ADD_PANEL: "addPanel",
-  REMOVE_PANEL: "removePanel",
-  OPEN_PANEL: "openPanel",
-  CLOSE_PANEL: "closePanel",
-  TOGGLE_PANEL: "togglePanel",
-  CLOSE_ALL_PANELS: "closeAllPanels"
+var CaptioningNotifications = {
+  VISIBILITY_CHANGE: "captioningvisibilitychange",
+  ENABLED: "captioningenabled",
+  TRACKS_LOADED: "captioningtracksloaded",
+  TRACK_SELECTED: "captioningtrackselected",
+  CUE_CHANGE: "captioningcuechange",
+  SETTINGS_VISIBILITY_CHANGE: "captioningsettingsvisibility",
+  TOGGLE_SETTINGS_VISIBILITY: "togglesettingsvisibility",
+  SETTINGS_CHANGE: "captioningsettingschange"
 };
 
-/**
- * The TimeDisplayMediator class.
- * 
- * @constructor
- * @private
- * @extends {LocalizedMediator}
- * @param {Object} viewComponent
-*/
-function TimeDisplayMediator(parent) {
-  TimeDisplayMediator.__super__.constructor.call(this, null, null, parent);
-}
-
-
-__extends(TimeDisplayMediator, ComponentMediator);
-
-
-/**
- * The name of the this Mediator.
- * 
- * @static
- * @type {string}
-*/
-TimeDisplayMediator.prototype.componentName = "time-display";
-
-TimeDisplayMediator.prototype.duration = null;
-
-TimeDisplayMediator.prototype.currentTimeDisplay = null;
-
-TimeDisplayMediator.prototype.separatorDisplay = null;
-
-TimeDisplayMediator.prototype.durationDisplay = null;
-
-TimeDisplayMediator.prototype.liveDisplay = null;
-
-/**
- * @override
-*/
-TimeDisplayMediator.prototype.onRegister = function() {
-  TimeDisplayMediator.__super__.onRegister.call(this);
-  this.liveDisplay = this.createText("live-display", this.localizationManager.getString(LocalizationConstants.MSG_LIVE));
-  this.currentTimeDisplay = this.createText("current-time-display", "00:00", this, "span");
-  this.separatorDisplay = this.createText("separator-display", this.localizationManager.getString(LocalizationConstants.MSG_TIME_SEPARATOR), this, "span");
-  this.durationDisplay = this.createText("duration-display", "00:00", this, "span");
-};
-
-/**
- * @override
-*/
-TimeDisplayMediator.prototype.listNotificationInterests = function() {
-  return [Notifications.PLAY, Notifications.DURATION_CHANGE, Notifications.ENDED, Notifications.DISPLAY_TIME];
-};
-
-/**
- * @override
-*/
-TimeDisplayMediator.prototype.handleNotification = function(notification) {
-  var body, name;
-  name = notification.getName();
-  body = notification.getBody();
-  switch (name) {
-    case Notifications.PLAY:
-      this.updateDuration();
-      break;
-    case Notifications.DURATION_CHANGE:
-      this.duration = body;
-      this.updateCurrentTime();
-      this.updateDuration();
-      break;
-    case Notifications.ENDED:
-      this.updateCurrentTime(this.duration);
-      this.updateDuration();
-      break;
-    case Notifications.DISPLAY_TIME:
-      this.updateCurrentTime(body.currentTime, body.duration);
-      this.updateDuration(body.duration);
-  }
-};
-
-TimeDisplayMediator.prototype.updateCurrentTime = function(currentTime, duration) {
-  if (currentTime == null) {
-    currentTime = this.currentTime;
-  }
-  if (duration == null) {
-    duration = this.duration;
-  }
-  this.currentTimeDisplay.textContent = Utils.formatTimecode(currentTime, duration);
-};
-
-TimeDisplayMediator.prototype.updateDuration = function(duration) {
-  if (duration == null) {
-    duration = this.duration;
-  }
-  this.durationDisplay.textContent = Utils.formatTimecode(duration);
-};
-
-/**
- * The PlayPauseMediator class.
- * 
- * @constructor
- * @private
- * @extends {ButtonMediator}
-*/
-function GoLiveMediator(parent) {
-  GoLiveMediator.__super__.constructor.call(this, null, parent);
-}
-
-
-__extends(GoLiveMediator, ButtonMediator);
-
-
-GoLiveMediator.prototype.componentName = "go-live";
-
-GoLiveMediator.prototype.onRegister = function() {
-  GoLiveMediator.__super__.onRegister.call(this);
-  this.createLabel(this.localizationManager.getString("MSG_LIVE"));
-};
-
-/**
- * @override
-*/
-GoLiveMediator.prototype.listNotificationInterests = function() {
-  return [Notifications.IS_LIVE];
-};
-
-/**
- * @override
-*/
-GoLiveMediator.prototype.handleNotification = function(notification) {
-  var body, name;
-  name = notification.getName();
-  body = notification.getBody();
-  switch (name) {
-    case Notifications.IS_LIVE:
-      this.setLabel(body === true ? this.localizationManager.getString("MSG_LIVE") : this.localizationManager.getString("MSG_GO_LIVE"));
-  }
-};
-
-/**
-*/
-GoLiveMediator.prototype.onclick = function(event) {
-  event.stopImmediatePropagation();
-  event.preventDefault();
-  return false;
-};
-
-/**
- * The PanelsMediator class.
- * 
- * @constructor
- * @private
- * @extends {LayerMediator}
-*/
-function PanelsMediator(parent) {
-  this.panels = [];
-  this.closeHandler = this.mouseupHandler.bind(this);
-  PanelsMediator.__super__.constructor.call(this, null, null, parent);
-}
-
-
-__extends(PanelsMediator, ComponentMediator);
-
-
-PanelsMediator.prototype.componentName = "panels";
-
-PanelsMediator.prototype.activePanel = null;
-
-PanelsMediator.prototype.panels = null;
-
-PanelsMediator.prototype.closeHandler = null;
-
-/**
- * @override
-*/
-PanelsMediator.prototype.listNotificationInterests = function() {
-  var key, value;
-  return ((function() {
-    var _results;
-    _results = [];
-    for (key in PanelNotifications) {
-      value = PanelNotifications[key];
-      _results.push(value);
-    }
-    return _results;
-  })()).concat([]);
-};
-
-/**
- * @override
-*/
-PanelsMediator.prototype.handleNotification = function(notification) {
-  var body, name;
-  name = notification.getName();
-  body = notification.getBody();
-  switch (name) {
-    case PanelNotifications.ADD_PANEL:
-      this.addPanel(body);
-      break;
-    case PanelNotifications.REMOVE_PANEL:
-      this.removePanel(body);
-      break;
-    case PanelNotifications.OPEN_PANEL:
-      this.openPanel(body);
-      break;
-    case PanelNotifications.CLOSE_PANEL:
-      this.closePanel(body);
-      break;
-    case PanelNotifications.CLOSE_ALL_PANELS:
-      this.closeAllPanels(body);
-      break;
-    case PanelNotifications.TOGGLE_PANEL:
-      this.togglePanel(body);
-  }
-};
-
-PanelsMediator.prototype.addPanel = function(panel) {
-  this.panels.push(panel);
-  this.viewComponent.appendChild(panel.getViewComponent());
-};
-
-PanelsMediator.prototype.removePanel = function(panel) {
-  this.panels.splice(this.panels.indexOf(panel), 1);
-  this.viewComponent.removeChild(panel.getViewComponent());
-};
-
-PanelsMediator.prototype.openPanel = function(panel) {
-  if (panel === this.activePanel || !(panel != null)) {
-    return;
-  }
-  this.closeAllPanels();
-  this.activePanel = panel;
-  this.activePanel.classList.add("active");
-  if (Utils.getDevice() !== "desktop") {
-    this.sendNotification(Notifications.IS_USER_ACTIVE, true);
-  }
-  document.addEventListener("mouseup", this.closeHandler);
-};
-
-PanelsMediator.prototype.closePanel = function(panel) {
-  panel.classList.remove("active");
-  if (this.activePanel != null) {
-    this.activePanel = null;
-    if (Utils.getDevice() !== "desktop") {
-      this.sendNotification(Notifications.IS_USER_ACTIVE, false);
-    }
-    document.removeEventListener("mouseup", this.closeHandler);
-  }
-};
-
-PanelsMediator.prototype.togglePanel = function(panel) {
-  if (panel === this.activePanel) {
-    this.closePanel(panel);
-  } else {
-    this.openPanel(panel);
-  }
-};
-
-PanelsMediator.prototype.closeAllPanels = function() {
-  var panel, _i, _len, _ref;
-  _ref = this.panels;
-  for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-    panel = _ref[_i];
-    this.closePanel(panel);
-  }
-};
-
-PanelsMediator.prototype.mouseupHandler = function(event) {
-  var button, element, panel;
-  element = document.elementFromPoint(event.clientX, event.clientY);
-  panel = this.activePanel.getViewComponent();
-  button = this.activePanel.control.getViewComponent();
-  if (element !== panel && panel.contains(element) === false && element !== button && button.contains(element) === false) {
-    this.closeAllPanels();
-  }
-};
-
-/**
- * The ProgressMediator class.
- * 
- * @constructor
- * @private
- * @extends {ModuleMediator}
- * @param {Object} viewComponent
-*/
-function ProgressMediator(parent) {
-  ProgressMediator.__super__.constructor.call(this, parent, "horizontal");
-}
-
-
-__extends(ProgressMediator, SliderMediator);
-
-
-/**
- * The name of the this Mediator.
- * 
- * @static
- * @type {string}
-*/
-ProgressMediator.prototype.componentName = "progress";
-
-ProgressMediator.prototype.bufferValue = null;
-
-ProgressMediator.prototype.scrubTime = null;
-
-ProgressMediator.prototype.scrubTimeSeparator = null;
-
-ProgressMediator.prototype.cuePoints = null;
-
-ProgressMediator.prototype.cues = null;
-
-ProgressMediator.prototype.duration = 0;
-
-ProgressMediator.prototype.isLive = false;
-
-ProgressMediator.prototype.seeking = false;
-
-ProgressMediator.prototype.previewData = {
-  src: null,
-  previewWidth: null,
-  previewHeight: null,
-  imgWidth: null,
-  imgHeight: null,
-  count: null
-};
-
-ProgressMediator.prototype.hoverHandler = null;
-
-ProgressMediator.prototype.mouseoutHandler = null;
-
-ProgressMediator.prototype.mouseMoveHandler = null;
-
-ProgressMediator.prototype.previewMoveHandler = null;
-
-/**
- * @override
-*/
-ProgressMediator.prototype.onRegister = function() {
-  ProgressMediator.__super__.onRegister.call(this);
-  this.bufferValue = this.create("buffer-value", false);
-  this.trackView.insertBefore(this.bufferValue, this.trackView.lastChild);
-  this.cuePoints = this.create("cue-points", this.trackView);
-  this.scrubTimeSeparator = this.create("scrub-time-separator");
-  this.scrubTime = this.create("scrub-time");
-  this.thumbPreview = this.create("thumb-preview", this.trackView);
-  this.previewMoveHandler = EventHandler.create(this.clickView, EventHandler.MOVE, this.updatePreviewHandler.bind(this));
-  this.previewMoveHandler.unbind();
-  this.hoverHandler = EventHandler.create(this.clickView, EventHandler.HOVER, this.handlehoverHandler.bind(this));
-  this.mouseoutHandler = EventHandler.create(this.clickView, EventHandler.HOVEROUT, this.handlemouseoutHandler.bind(this));
-  this.mouseoutHandler.unbind();
-  EventHandler.create(this.clickView, EventHandler.HOVER, this.mouseOverHandler.bind(this));
-  EventHandler.create(this.clickView, EventHandler.HOVEROUT, this.mouseOutHandler.bind(this));
-  this.mouseMoveBinding = EventHandler.create(document, EventHandler.MOVE, this.mouseMoveHandler.bind(this));
-  this.mouseMoveBinding.unbind();
-};
-
-/**
- * @override
-*/
-ProgressMediator.prototype.listNotificationInterests = function() {
-  return [Notifications.ENDED, Notifications.MEDIA_CHANGE, Notifications.DURATION_CHANGE, Notifications.PROGRESS, Notifications.ADD_CUE_POINTS, Notifications.REMOVE_CUE_POINTS, Notifications.DISPLAY_TIME];
-};
-
-/**
- * @override
-*/
-ProgressMediator.prototype.handleNotification = function(notification) {
-  var body, name, value;
-  name = notification.getName();
-  body = notification.getBody();
-  switch (name) {
-    case Notifications.MEDIA_CHANGE:
-      this.isLive = body.temporalType === "live";
-      this.updateValue(0);
-      this.bufferValue.style.width = "0%";
-      this.updatePreview(body.metadata);
-      break;
-    case Notifications.PROGRESS:
-      value = Utils.clamp(body / this.duration * 100, 0, 100);
-      this.bufferValue.style.width = value + "%";
-      break;
-    case Notifications.DURATION_CHANGE:
-      this.duration = body;
-      this.updateCuePoints();
-      break;
-    case Notifications.ENDED:
-      this.updateValue(1.0);
-      break;
-    case Notifications.ADD_CUE_POINTS:
-      this.cues = body;
-      this.updateCuePoints();
-      break;
-    case Notifications.REMOVE_CUE_POINTS:
-      this.removeCuePoints();
-      break;
-    case Notifications.DISPLAY_TIME:
-      if (this.dragging === false) {
-        this.updateValue(body.currentTime / body.duration, body.duration);
-      }
-  }
-};
-
-ProgressMediator.prototype.updateCuePoints = function() {
-  var cue, cuePoint, _i, _len, _ref, _ref1, _ref2;
-  if (!(this.cues != null) || this.cues.length === 0) {
-    return;
-  }
-  if (((_ref = this.facade.player.config) != null ? (_ref1 = _ref.controls) != null ? _ref1.displaySceneMarkers : void 0 : void 0) != null) {
-    if (this.facade.player.config.controls.displaySceneMarkers === false) {
-      return;
-    }
-  }
-  this.removeCuePoints();
-  _ref2 = this.cues;
-  for (_i = 0, _len = _ref2.length; _i < _len; _i++) {
-    cue = _ref2[_i];
-    if (!(cue !== 0 && cue !== -1)) {
-      continue;
-    }
-    cuePoint = this.create("cue-point", this.cuePoints);
-    cuePoint.style.left = (cue / this.duration * 100) + "%";
-  }
-};
-
-ProgressMediator.prototype.preloadPreviewImages = function(metadata) {
-  var i, image;
-  i = 1;
-  while (i < metadata.previewThumbnailCount) {
-    image = new Image;
-    image.src = metadata.previewThumbnailSrc + "out" + i + ".png";
-    i++;
-  }
-};
-
-ProgressMediator.prototype.updatePreview = function(metadata) {
-  this.preloadPreviewImages(metadata);
-  this.previewData.src = metadata.previewThumbnailSrc;
-  this.previewData.previewHeight = metadata.previewThumbnailHeight;
-  this.previewData.previewWidth = metadata.previewThumbnailWidth;
-  this.previewData.count = metadata.previewThumbnailCount;
-  if (this.previewData.src === void 0) {
-    this.hoverHandler.unbind();
-  }
-};
-
-ProgressMediator.prototype.handlehoverHandler = function(event) {
-  this.previewMoveHandler.bind();
-  this.mouseoutHandler.bind();
-  this.hoverHandler.unbind();
-  this.updatePreviewHandler(event);
-  event.stopImmediatePropagation();
-  return false;
-};
-
-ProgressMediator.prototype.handlemouseoutHandler = function(event) {
-  this.previewMoveHandler.unbind();
-  this.mouseoutHandler.unbind();
-  this.hoverHandler.bind();
-  event.stopImmediatePropagation();
-  return false;
-};
-
-ProgressMediator.prototype.mouseOverHandler = function(event) {
-  this.mouseOver = true;
-  this.classList.add("active");
-  this.mouseMoveBinding.bind();
-};
-
-ProgressMediator.prototype.mouseOutHandler = function(event) {
-  this.mouseOver = false;
-  if (this.getDragging() === true) {
-    return;
-  }
-  this.classList.remove("active");
-  this.mouseMoveBinding.unbind();
-};
-
-ProgressMediator.prototype.mouseMoveHandler = function(event) {
-  var value;
-  value = this.calculateValue(event);
-  this.scrubTime.textContent = Utils.formatTimecode(Math.round(value * this.duration));
-  this.scrubTime.style.left = this.scrubTimeSeparator.style.left = "" + ((value * 100).toFixed(2)) + "%";
-};
-
-ProgressMediator.prototype.updatePreviewHandler = function(event) {
-  var thumbPreviewPos, value;
-  value = this.calculateValue(event);
-  this.previewInterval = this.duration / this.previewData.count;
-  this.previewImgIndex = Math.floor(value * this.duration / this.previewInterval);
-  if (this.previewData.src) {
-    this.thumbPreview.style.backgroundImage = "url(" + this.previewData.src + "out" + (this.previewImgIndex + 1) + ".png)";
-  }
-  this.thumbPreview.style.width = this.previewData.previewWidth + "px";
-  this.thumbPreview.style.height = this.previewData.previewHeight + "px";
-  thumbPreviewPos = Utils.clamp(((value * 100) - 10).toFixed(2), 1, 80);
-  this.thumbPreview.style.left = "" + thumbPreviewPos + "%";
-};
-
-ProgressMediator.prototype.removeCuePoints = function() {
-  if (!(this.cuePoints != null)) {
-    return;
-  }
-  this.cuePoints.innerHTML = "";
-};
+function LocalizationConstants() {}
+
+LocalizationConstants.MSG_LIVE = "MSG_LIVE";
+
+LocalizationConstants.MSG_REPLAY = "MSG_REPLAY";
+
+LocalizationConstants.MSG_BUFFERING = "MSG_BUFFERING_TEXT";
+
+LocalizationConstants.MSG_CC = "MSG_CC";
+
+LocalizationConstants.MSG_CC_TITLE = "MSG_CC_TITLE";
+
+LocalizationConstants.MSG_CC_LANGUAGE = "MSG_CC_LANGUAGE";
+
+LocalizationConstants.MSG_CC_PRESETS = "MSG_CC_PRESETS";
+
+LocalizationConstants.MSG_CC_FONT = "MSG_CC_FONT";
+
+LocalizationConstants.MSG_CC_EDGE = "MSG_CC_EDGE";
+
+LocalizationConstants.MSG_CC_SIZE = "MSG_CC_SIZE";
+
+LocalizationConstants.MSG_CC_SCROLL = "MSG_CC_SCROLL";
+
+LocalizationConstants.MSG_CC_COLOR = "MSG_CC_COLOR";
+
+LocalizationConstants.MSG_CC_BACKGROUND = "MSG_CC_BACKGROUND";
+
+LocalizationConstants.MSG_CC_EDGE = "MSG_CC_EDGE";
+
+LocalizationConstants.MSG_CC_WINDOW = "MSG_CC_WINDOW";
+
+LocalizationConstants.MSG_CC_OPACITY = "MSG_CC_OPACITY";
+
+LocalizationConstants.MSG_CC_SHOW_ADVANCED = "MSG_CC_SHOW_ADVANCED";
+
+LocalizationConstants.MSG_CC_HIDE_ADVANCED = "MSG_CC_HIDE_ADVANCED";
+
+LocalizationConstants.MSG_CC_RESET = "MSG_CC_RESET";
+
+LocalizationConstants.MSG_CC_CANCEL = "MSG_CC_CANCEL";
+
+LocalizationConstants.MSG_CC_APPLY = "MSG_CC_APPLY";
+
+LocalizationConstants.MSG_CC_PREVIEW_TEXT = "MSG_CC_PREVIEW_TEXT";
+
+LocalizationConstants.MSG_SECONDS = "MSG_SECONDS";
+
+LocalizationConstants.MSG_RECOMMENDATIONS_TITLE = "MSG_RECOMMENDATIONS_TITLE";
+
+LocalizationConstants.MSG_NEXT_VIDEO = "MSG_NEXT_VIDEO";
+
+LocalizationConstants.MSG_NEXT_AD = "MSG_NEXT_AD";
+
+LocalizationConstants.MSG_TIME_SEPARATOR = "MSG_TIME_SEPARATOR";
+
+LocalizationConstants.MSG_VIEW_ALL = "MSG_VIEW_ALL";
+
+LocalizationConstants.MSG_VIDEO = "MSG_VIDEO";
 
 /** 
- * @override
-*/
-ProgressMediator.prototype.valueChanged = function() {
-  this.sendNotification(UserNotifications.SEEK, this.value * this.facade.player.retrieveProxy(MediaProxy.NAME).getDuration());
-};
-
-/** updates the view
-*/
-ProgressMediator.prototype.updateValue = function(value) {
-  if (value === this.value) {
-    return;
-  }
-  if (this.isLive === true) {
-    value = 1;
-  }
-  if (isNaN(value) === true) {
-    value = 0;
-  }
-  ProgressMediator.__super__.updateValue.call(this, value);
-  if (this.getDragging() && this.value >= this.max) {
-    this.handleReleaseHandler();
-    this.sendNotification(Notifications.END);
-  }
-};
-
-ProgressMediator.prototype.updateHandler = function(setValue, event) {
-  ProgressMediator.__super__.updateHandler.call(this, setValue, event);
-  this.mouseMoveHandler(event);
-};
-
-ProgressMediator.prototype.handlePressHandler = function(event) {
-  ProgressMediator.__super__.handlePressHandler.call(this, event);
-  this.classList.add("scrubbing");
-};
-
-ProgressMediator.prototype.handleReleaseHandler = function(event) {
-  ProgressMediator.__super__.handleReleaseHandler.call(this, event);
-  this.classList.remove("scrubbing");
-  if (this.mouseOver === false) {
-    this.mouseOutHandler();
-  }
-};
-
-/**
- * The PlayPauseMediator class.
- * 
- * @constructor
- * @private
- * @extends {ButtonMediator}
-*/
-function PlayPauseMediator(parent) {
-  PlayPauseMediator.__super__.constructor.call(this, null, parent);
-}
-
-
-__extends(PlayPauseMediator, ButtonMediator);
-
-
-PlayPauseMediator.prototype.componentName = "play-pause";
-
-PlayPauseMediator.prototype.onclick = function(event) {
-  event.stopImmediatePropagation();
-  event.preventDefault();
-  this.sendNotification(UserNotifications.TOGGLE_PLAY_PAUSE);
-  return false;
-};
-
-/**
+ * PluginMediator class.
+ *   
  * @constructor
  * @private
  * @extends {OverlayMediator}
 */
-function ReplayOverlayMediator() {
-  ReplayOverlayMediator.__super__.constructor.call(this);
+function PluginMediator() {
+  PluginMediator.__super__.constructor.call(this);
 }
 
 
-__extends(ReplayOverlayMediator, OverlayMediator);
+__extends(PluginMediator, OverlayMediator);
 
 
-ReplayOverlayMediator.prototype.componentName = "replay";
-
-ReplayOverlayMediator.prototype.replay = null;
-
-ReplayOverlayMediator.prototype.icon = null;
-
-ReplayOverlayMediator.prototype.label = null;
-
-/**
- * @override
+/** @override
 */
-ReplayOverlayMediator.prototype.onRegister = function() {
-  ReplayOverlayMediator.__super__.onRegister.call(this);
-  this.replay = this.create("replay-button");
-  this.replay.onclick = this.onclick.bind(this);
-  this.icon = this.create("replay-icon", this.replay);
-  this.label = this.createText("replay-label", this.localizationManager.getString(LocalizationConstants.MSG_REPLAY), this.replay);
+PluginMediator.prototype.initializeNotifier = function(key) {
+  PluginMediator.__super__.initializeNotifier.call(this, key);
+  this.plugin = this.facade.retrieveProxy(ModuleProxy.NAME);
+  this.media = this.facade.player.retrieveProxy(MediaProxy.NAME);
+};
+
+/** @override
+*/
+PluginMediator.prototype.onRegister = function() {
+  PluginMediator.__super__.onRegister.call(this);
+  this.facade.viewComponent = this.viewComponent;
 };
 
 /**
-*/
-ReplayOverlayMediator.prototype.onclick = function(event) {
-  event.stopImmediatePropagation();
-  this.sendNotification(Notifications.REPLAY);
-  return false;
-};
-
-/**
+ * The CaptioningMediator class.
+ *
  * @constructor
  * @private
- * @extends {contextMenuMediator}
+ * @extends {PluginMediator}
+ * @param {Object} viewComponent
 */
-function contextMenuMediator() {
-  contextMenuMediator.__super__.constructor.call(this);
+function CaptioningMediator(viewComponent) {
+  CaptioningMediator.__super__.constructor.call(this, viewComponent);
 }
 
 
-__extends(contextMenuMediator, OverlayMediator);
+__extends(CaptioningMediator, PluginMediator);
 
 
-contextMenuMediator.prototype.componentName = "context-menu";
-
-contextMenuMediator.prototype.contextMenu = null;
+CaptioningMediator.prototype.componentName = "captioning";
 
 /**
  * @override
 */
-contextMenuMediator.prototype.onRegister = function() {
-  var _this = this;
-  contextMenuMediator.__super__.onRegister.call(this);
-  EventHandler.create(this.facade.player.viewComponent, EventHandler.CONTEXTMENU, function(event) {
-    event.preventDefault();
-    _this.contextMenuHandler(event);
-    return false;
-  });
+CaptioningMediator.prototype.onRegister = function() {
+  CaptioningMediator.__super__.onRegister.call(this);
+  this.captioningStyle = this.create(null, document.getElementsByTagName("head")[0], "style");
+  this.captioningStyle.type = "text/css";
+  this.applyStyles();
 };
 
-/** Context Menu Click Handler
+/**
+ * @override
 */
-contextMenuMediator.prototype.contextMenuHandler = function(event) {
-  var id, item,
-    _this = this;
-  if (this.contextMenu) {
-    this.removeContextMenu();
+CaptioningMediator.prototype.listNotificationInterests = function() {
+  return [CaptioningNotifications.VISIBILITY_CHANGE, CaptioningNotifications.ENABLED, CaptioningNotifications.TRACK_SELECTED, Notifications.SETTINGS_CHANGE];
+};
+
+/** @override
+*/
+CaptioningMediator.prototype.onRemove = function() {
+  var parent;
+  if (this.captioningStyle) {
+    parent = document.getElementsByTagName("head")[0];
+    parent.removeChild(this.captioningStyle);
   }
-  this.contextMenu = UI.create("context-menu", document.body, "ul");
-  UI.create("context-item", this.contextMenu, "li", this.facade.player.getVersion());
-  if (typeof akamaiGetViewerId !== "undefined" && akamaiGetViewerId !== null) {
-    id = akamaiGetViewerId();
-    item = UI.create("context-item", this.contextMenu, "li", "" + (this.localizationManager.getString("MSG_VIEWER_ID") || "Viewer ID: "));
-    UI.create("selectable", item, "span", "" + (id != null ? id : "N/A"));
+};
+
+/**
+ * @override
+*/
+CaptioningMediator.prototype.handleNotification = function(notification) {
+  var body, note, state;
+  body = notification.getBody();
+  note = body ? Notifications.ADD_APPLICATION_STATE : Notifications.REMOVE_APPLICATION_STATE;
+  switch (notification.getName()) {
+    case CaptioningNotifications.TRACK_SELECTED:
+      state = "cc-embedded";
+      note = body.type === "embedded" ? Notifications.ADD_APPLICATION_STATE : Notifications.REMOVE_APPLICATION_STATE;
+      break;
+    case CaptioningNotifications.VISIBILITY_CHANGE:
+      state = "cc-active";
+      break;
+    case CaptioningNotifications.ENABLED:
+      note = body ? Notifications.ADD_CONTROL_STATE : Notifications.REMOVE_CONTROL_STATE;
+      state = "cc-enabled";
+      if (!body) {
+        this.sendNotification(Notifications.REMOVE_APPLICATION_STATE, "cc-active");
+      }
+      break;
+    case Notifications.SETTINGS_CHANGE:
+      if (body.captions != null) {
+        this.applyStyles();
+      }
   }
-  this.contextMenu.style.top = event.pageY + "px";
-  this.contextMenu.style.left = event.pageX + "px";
-  EventHandler.create(document.body, EventHandler.CLICK, function(event) {
-    if (/selectable/.test(event.target.className)) {
-      return false;
+  this.sendNotification(note, state);
+};
+
+CaptioningMediator.prototype.applyStyles = function() {
+  var backgroundColor, color, containerStyle, edgeType, fontFamily, fontSize, id, styles, windowColor, windowColorValue;
+  styles = this.facade.settings;
+  if (styles.visible != null) {
+    this.facade.hidden = !styles.visible;
+  }
+  fontFamily = "font-family: " + styles.fontFamily + " !important;";
+  edgeType = "" + styles.edgeType + " " + styles.edgeColor + " !important;";
+  fontSize = "font-size: " + styles.size + " !important;";
+  color = "color: " + styles.fontColor + " !important;";
+  backgroundColor = "background-color: " + styles.backgroundColor + " !important;";
+  windowColor = "background-color: " + styles.windowColor + " !important;";
+  containerStyle = "line-height:2.2em;";
+  windowColorValue = windowColor.match(/rgba\([^)]+\)/g);
+  if ((windowColorValue != null) && windowColorValue instanceof Array && windowColorValue.length > 0) {
+    containerStyle = Number(windowColorValue[0].replace(/^.*, (.+)\)/, '$1')) === 0 ? "" : containerStyle;
+  }
+  id = this.facade.player.viewComponent.id;
+  this.captioningStyle.innerHTML = '#' + id + ' .akamai-caption-text { ' + fontFamily + fontSize + edgeType + windowColor + ' } #' + id + ' .akamai-caption-text p { ' + color + backgroundColor + ' } ' + 'video::-webkit-media-text-track-display { ' + windowColor + ' } video::-webkit-media-text-track-display span { ' + fontFamily + fontSize + edgeType + backgroundColor + ' } video::-webkit-media-text-track-display { ' + windowColor + ' } video::cue { ' + color + fontFamily + fontSize + edgeType + backgroundColor + ' } video::-webkit-media-text-track-container {' + containerStyle + '} video::-webkit-media-text-track-display-backdrop { background-color: rgba(0, 0, 0, 0) !important;}';
+};
+
+/**
+ * The CaptioningWrapper class.
+ *
+ * @constructor
+ * @private
+ * @extends {PluginWrapper}
+ * @param {FlashPlayer}     player  The FlashPlayer
+ * @param {Object}          config  The plugin config
+*/
+function CaptioningWrapper(player, config) {
+  CaptioningWrapper.__super__.constructor.call(this, player, config);
+  Object.defineProperties(this, {
+    enabled: {
+      get: this.getEnabled,
+      set: this.setEnabled,
+      enumerable: true,
+      configurable: false
+    },
+    hidden: {
+      get: this.getHidden,
+      set: this.setHidden,
+      enumerable: true,
+      configurable: false
+    },
+    visible: {
+      get: this.getVisible,
+      set: this.setVisible,
+      enumerable: true,
+      configurable: false
+    },
+    tracks: {
+      get: this.getTracks,
+      enumerable: true,
+      configurable: false
+    },
+    track: {
+      get: this.getTrack,
+      set: this.setTrack,
+      enumerable: true,
+      configurable: false
     }
-    _this.removeContextMenu(event);
-    return false;
+  });
+}
+
+
+__extends(CaptioningWrapper, PluginWrapper);
+
+
+CaptioningWrapper.NAME = "CaptioningWrapper";
+
+CaptioningWrapper.prototype.flashPlugins = [
+  {
+    id: "AdobeCaptionPlugin",
+    src: '#{paths.resources}plugins/AdobeCaptionPlugin.swf',
+    blocking: false,
+    host: "akamai",
+    main: "AdobeCaptionPlugin",
+    type: "application/x-shockwave-flash"
+  }, {
+    id: "AMPCaptionPlugin",
+    src: '#{paths.resources}plugins/AMPCaptionPlugin.swf',
+    blocking: false,
+    host: "akamai",
+    main: "AMPCaptionPlugin",
+    type: "application/x-shockwave-flash"
+  }, {
+    id: "CaptionSettingsPlugin",
+    src: '#{paths.resources}plugins/CaptionSettingsPlugin.swf',
+    blocking: false,
+    host: "akamai",
+    main: "CaptionSettingsPlugin",
+    type: "application/x-shockwave-flash"
+  }
+];
+
+CaptioningWrapper.prototype.flashView = {
+  elements: {
+    captionDisplay: {
+      attributes: {
+        defaultMessage: "Sorry! No captions available for this stream",
+        initState: "cookie",
+        position: "relative",
+        settingsEnabled: "true",
+        style: "bottom: 0px; windowColor :0x000000; windowOpacity: 0; font: Monospaced Serif; fontColor: 0xffffff; fontOpacity: 1; fontBGColor: 0x000000; fontBGOpacity: 0; edgeType: none; edgeColor: 0x000000; edgeOpacity: 1; scroll: Pop-Out; fontSize: 12;"
+      }
+    },
+    controls: {
+      elements: {
+        captionBtn: {}
+      }
+    }
+  }
+};
+
+CaptioningWrapper.prototype._hidden = true;
+
+/** @override
+*/
+CaptioningWrapper.prototype.createXML = function(xml) {
+  var application, player, subply, _ref;
+  subply = (_ref = this.config.flash) != null ? _ref.subply : void 0;
+  if (subply != null) {
+    try {
+      if (subply.timeMethod != null) {
+        player = xml.getElementsByTagName("player")[0];
+        player.setAttribute("subply_time_method", subply.timeMethod);
+      }
+      if (subply.plugin != null) {
+        application = xml.firstChild;
+        subply = xml.getElementsByTagName("subply")[0];
+        if (!(subply != null)) {
+          subply = xml.createElement("subply");
+          application.appendChild(subply);
+        }
+        this.createProperty(xml, "SUBPLY_URL", this.config.flash.subply.plugin, subply);
+      }
+    } catch (error) {
+      this.facade.logger.error("[AMP CAPTIONING ERROR]", error);
+    }
+  }
+};
+
+/** @override
+*/
+CaptioningWrapper.prototype.createFlashVars = function(flashvars) {
+  var captionLangArr, captionUrlArr, config, track, _i, _len, _ref, _ref1;
+  config = this.player.config;
+  if (((_ref = config.media) != null ? _ref.track : void 0) != null) {
+    track = Utils.selectTrack(config.media.track, "captions");
+    if ((track.src != null) && track.src !== "") {
+      flashvars.caption_url = track.src;
+    }
+    if (config.media.track.length > 0) {
+      captionUrlArr = [];
+      captionLangArr = [];
+      _ref1 = config.media.track;
+      for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
+        track = _ref1[_i];
+        captionUrlArr.push(track.src);
+        captionLangArr.push(track.srclang);
+      }
+      flashvars.caption_url = captionUrlArr.join(",");
+      flashvars.caption_language = captionLangArr.join(",");
+    }
+    flashvars.caption_type = track.type != null ? encodeURIComponent(track.type) : "application/ttml+xml";
+  }
+  if (flashvars.caption_language == null) {
+    flashvars.caption_language = "en-us";
+  }
+};
+
+/** @override
+*/
+CaptioningWrapper.prototype.listNotificationInterests = function() {
+  return CaptioningWrapper.__super__.listNotificationInterests.apply(this, arguments).concat([Notifications.MEDIA_CHANGE, FlashNotifications.CAPTIONING_REQUEST, FlashNotifications.CAPTION_LANG_CHANGE, FlashNotifications.INITIALIZED]);
+};
+
+/**
+*/
+CaptioningWrapper.prototype.handleNotification = function(notification) {
+  var body, media, name, track, type,
+    _this = this;
+  CaptioningWrapper.__super__.handleNotification.call(this, notification);
+  name = notification.getName();
+  body = notification.getBody();
+  switch (name) {
+    case FlashNotifications.CAPTION_LANG_CHANGE:
+      type = "";
+      break;
+    case FlashNotifications.CAPTIONING_REQUEST:
+      type = "visibilitychange";
+      body = body.enabled;
+      this.hidden = !body;
+      break;
+    case Notifications.MEDIA_CHANGE:
+      media = body;
+      if (media.track != null) {
+        this._tracks = media.track.map(function(track) {
+          return Object.assign({
+            language: track.srclang
+          }, track);
+        });
+        track = Utils.selectTrack(this._tracks, "captions");
+        if (!(track != null)) {
+          return;
+        }
+        if ((track.src != null) && track.src !== "") {
+          media.captioningUrl = track.src;
+        }
+        if (track.type != null) {
+          media.captioningType = track.type || "application/ttml+xml";
+        }
+        this._track = track;
+      }
+      break;
+    case FlashNotifications.INITIALIZED:
+      this.hidden = !this.player.getMediaElement().getPlayerProperty("isCaptionVisible");
+  }
+  if ((type != null) && type !== "") {
+    this.dispatchEvent(new Event(type, body));
+  }
+};
+
+/**
+*/
+CaptioningWrapper.prototype.getHidden = function() {
+  return this._hidden;
+};
+
+CaptioningWrapper.prototype.setHidden = function(value) {
+  this._hidden = value;
+  this.facade.getMediaElement().setPlayerProperty("captionDisplay", {
+    visible: !value
+  });
+  return value;
+};
+
+/**
+*/
+CaptioningWrapper.prototype.getVisible = function() {
+  return !this._hidden;
+};
+
+CaptioningWrapper.prototype.setVisible = function(value) {
+  this.setHidden(!value);
+  return value;
+};
+
+/**
+ * Returns an array of caption tracks
+ *
+ * @return {Array.<CaptionTrack>} The list of text tracks.
+ * @expose
+*/
+CaptioningWrapper.prototype.getTracks = function() {
+  return this._tracks || [];
+};
+
+/**
+ * Returns the currently selected track.
+ *
+ * @return {CaptionTrack} The currently selected caption track.
+ * @expose
+*/
+CaptioningWrapper.prototype.getTrack = function() {
+  return this._track;
+};
+
+/**
+ * Selects a caption track by its index in the getTracks array.
+ *
+ * @param {number}        index   The index to select
+ * @return {CaptionTrack}         The selected caption track.
+ * @expose
+*/
+CaptioningWrapper.prototype.selectTrackByIndex = function(index) {};
+
+/**
+ * Selects a caption track by it's language property.
+ *
+ * @param {string}        lang  The language to select
+ * @return {CaptionTrack}       The selected caption track.
+ * @expose
+*/
+CaptioningWrapper.prototype.selectTrackByLanguage = function(lang) {
+  this.facade.getMediaElement().setTrackByLanguage(lang);
+};
+
+/**
+ * Sets a caption Settings Object (styles)
+ *
+ * @param {Object}  object  The caption settings object.
+ * @expose
+*/
+CaptioningWrapper.prototype.changeSettings = function(object) {
+  if (((object != null ? object.fontFamily : void 0) != null) && typeof object.fontFamily === "object") {
+    return this.facade.getMediaElement().setPlayerProperty("captionSettingsUI", object);
+  }
+  if ((object != null ? object.visible : void 0) != null) {
+    this.hidden = !object.visible;
+  }
+  this.facade.getMediaElement().setPlayerProperty("captionDisplay", {
+    visible: !this.hidden,
+    style: this.parseObject(object)
   });
 };
 
-/** Remove ContextMenu Handler and DOM Object
+/**
+ * Parse Object
+ *
 */
-contextMenuMediator.prototype.removeContextMenu = function(event) {
+CaptioningWrapper.prototype.parseObject = function(object) {
+  var flashObject, keyString, prop, _ref;
+  flashObject = {};
   try {
-    EventHandler.clear(document.body, EventHandler.CLICK);
-    document.body.removeChild(this.contextMenu);
-    this.contextMenu = null;
+    for (prop in object) {
+      switch (prop) {
+        case "fontFamily":
+          flashObject['font'] = object[prop];
+          break;
+        case "fontColor":
+        case "backgroundColor":
+        case "edgeColor":
+        case "windowColor":
+          keyString = prop === "fontColor" ? "font" : prop === "backgroundColor" ? "fontBG" : prop === "edgeColor" ? "edge" : "window";
+          if (((_ref = object[prop]) != null ? _ref.indexOf('rgba') : void 0) !== -1) {
+            flashObject[keyString + 'Color'] = this.parseRGBA(object[prop]);
+            flashObject[keyString + 'Opacity'] = object[prop].replace(/^.*,(.+)\)/, '$1');
+          }
+          break;
+        default:
+          flashObject[prop] = object[prop];
+      }
+    }
+    delete flashObject['visible'];
+  } catch (error) {
+    this.facade.logger.error('Captioning Settings Parse Error', error);
+  }
+  return flashObject;
+};
+
+CaptioningWrapper.prototype.parseRGBA = function(rgb) {
+  rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
+  if (rgb && rgb.length === 4) {
+    return "0x" + ("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) + ("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) + ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2);
+  }
+  return "";
+};
+
+
+AMP.registerPlugin("captioning", "flash", CaptioningWrapper);
+
+/** 
+ * The Feature class. Acts as a base for features.
+ *   
+ * @param {Module}  app     The parent module of this plugin.
+ * @param {Object}  config  The plugin's configuration object.
+ * @constructor
+ * @private
+ * @extends {Plugin}
+*/
+function Feature() {
+  Feature.__super__.constructor.call(this);
+}
+
+
+__extends(Feature, Plugin);
+
+
+Feature.NAME = "Feature";
+
+Feature.prototype.featureName = null;
+
+/**
+*/
+Feature.prototype.getFeatureName = function() {
+  return this.featureName;
+};
+
+/**
+*/
+Feature.prototype.registerFeature = function() {
+  if (this.getFeatureName() != null) {
+    this.player.sendNotification(FeatureNotifications.REGISTER_FEATURE, this);
+  }
+};
+
+/** @override
+*/
+Feature.prototype.onRegister = function() {
+  this.registerFeature();
+  Feature.__super__.onRegister.call(this);
+};
+
+/** @override
+*/
+Feature.prototype.listNotificationPublications = function() {
+  return Feature.__super__.listNotificationPublications.call(this).concat([FeatureNotifications.REGISTER_FEATURE]);
+};
+
+/** 
+ * @constructor
+ * @extends {PluginWrapper}
+ * @private
+*/
+function HLSWrapper(player, config) {
+  HLSWrapper.__super__.constructor.call(this, player, config);
+  Utils.flashTypes.push(Utils.mimeTypes.m3u8);
+}
+
+
+__extends(HLSWrapper, PluginWrapper);
+
+
+HLSWrapper.NAME = "HLSWrapper";
+
+HLSWrapper.prototype.flashPlugins = [
+  {
+    id: "flashlsOSMF",
+    src: '#{paths.resources}plugins/flashlsOSMF.swf',
+    host: "osmf",
+    type: "application/x-shockwave-flash"
+  }
+];
+
+
+AMP.registerPlugin("hls", "flash", HLSWrapper);
+
+/**
+ * HLSPlaybackProxy constructor.
+ *
+ * @constructor
+ * @private
+ * @extends {PlaybackCoreProxy}
+*/
+function HLSPlaybackProxy(config, plugin) {
+  this.plugin = plugin;
+  HLSPlaybackProxy.__super__.constructor.call(this, config.types, config);
+  this.temporalTypes = ["vod", "live", "dvr"];
+}
+
+
+__extends(HLSPlaybackProxy, PlaybackCoreProxy);
+
+
+HLSPlaybackProxy.prototype.playbackCoreName = "hls";
+
+HLSPlaybackProxy.prototype.player = null;
+
+HLSPlaybackProxy.prototype.hlsConfig = null;
+
+HLSPlaybackProxy.prototype.fragErrorTime = 0;
+
+HLSPlaybackProxy.prototype.timedMedatadata = null;
+
+HLSPlaybackProxy.prototype.currentMedatadata = null;
+
+HLSPlaybackProxy.prototype.id3Track = null;
+
+HLSPlaybackProxy.prototype.manifestParsed = false;
+
+HLSPlaybackProxy.prototype.details = null;
+
+HLSPlaybackProxy.prototype.quality = -1;
+
+HLSPlaybackProxy.prototype.qualityMode = "auto";
+
+/**
+ *
+*/
+HLSPlaybackProxy.prototype.canPlayMedium = function(medium) {
+  return HLSPlaybackProxy.__super__.canPlayMedium.call(this, medium) || medium === "audio";
+};
+
+/**
+*/
+HLSPlaybackProxy.prototype.getUseMAE = function() {
+  return HLSPlaybackProxy.__super__.getUseMAE.call(this) && (typeof MediaAccelerationHlsJsWrapper !== "undefined" && MediaAccelerationHlsJsWrapper !== null);
+};
+
+HLSPlaybackProxy.prototype.getConfig = function() {
+  var config;
+  config = Utils.clone(this.config.data);
+  if (this.config.withCredentials === true) {
+    config.xhrSetup = function(xhr, url) {
+      xhr.withCredentials = true;
+    };
+  }
+  config.debug = this.plugin.proxy.getDebug();
+  if (!this.getUseMAE()) {
+    config.enableSoftwareAES = config.enableSoftwareAES != null ? config.enableSoftwareAES : true;
+  }
+  return config;
+};
+
+/** @override
+*/
+HLSPlaybackProxy.prototype.load = function() {
+  var config, key, player, value, _ref, _ref1,
+    _this = this;
+  if (this.player != null) {
+    this.destroy();
+  }
+  this.manifestParsed = false;
+  config = this.getConfig();
+  if (!this.getUseMAE()) {
+    player = new Hls(config);
+  } else {
+    this.facade.mae = new MediaAccelerationHlsJsWrapper(this.config.mae, config);
+    player = this.facade.mae.getPlayer();
+  }
+  player.attachMedia(this.getMediaElement());
+  _ref = Hls.Events;
+  for (key in _ref) {
+    value = _ref[key];
+    player.on(value, function(event, data) {
+      _this.plugin.dispatcher.dispatchEvent(new Event(event, data));
+    });
+  }
+  player.on(Hls.Events.MANIFEST_PARSED, this.onManifestParsed.bind(this));
+  player.on(Hls.Events.ERROR, this.onError.bind(this));
+  player.on(Hls.Events.FRAG_PARSING_METADATA, this.onFragParsingMetadata.bind(this));
+  player.on(Hls.Events.LEVEL_LOADED, this.onLevelLoaded.bind(this));
+  player.on(Hls.Events.LEVEL_SWITCHING, this.onLevelSwitching.bind(this));
+  player.on(Hls.Events.LEVEL_SWITCHED, this.onLevelSwitched.bind(this));
+  player.on(Hls.Events.FRAG_LOADING, this.onFragmentLoadStart.bind(this));
+  player.on(Hls.Events.FRAG_LOADED, this.onFragmentLoaded.bind(this));
+  try {
+    _ref1 = this.config.quality;
+    for (key in _ref1) {
+      value = _ref1[key];
+      player[key] = value;
+    }
   } catch (_error) {}
+  this.player = player;
+  this.details = null;
+  HLSPlaybackProxy.__super__.load.call(this);
+};
+
+HLSPlaybackProxy.prototype.applySrc = function() {
+  this.currentMedatadata = null;
+  this.player.loadSource(this.getSrc());
+  this.getMediaElement().load();
+};
+
+/**
+*/
+HLSPlaybackProxy.prototype.onManifestParsed = function(event, data) {
+  this.plugin.sendNotification(Notifications.DISPATCH_EVENT, new Event(Hls.Events.MANIFEST_PARSED, {
+    event: event,
+    data: data
+  }));
+  this.manifestParsed = true;
+  this.sendNotification(Notifications.QUALITY_LEVELS_LOADED, data.levels);
+  this.player.loadLevel = -1;
+};
+
+/**
+*/
+HLSPlaybackProxy.prototype.onLevelLoaded = function(event, data) {
+  var duration;
+  this.plugin.sendNotification(Notifications.DISPATCH_EVENT, new Event(Hls.Events.LEVEL_LOADED, {
+    event: event,
+    data: data
+  }));
+  this.player.levels[data.level].level = data.level;
+  this.sendNotification(Notifications.QUALITY_CHANGE, this.player.levels[data.level]);
+  this.details = data.details;
+  duration = this.details.totalduration;
+  if (duration !== this.data.duration) {
+    this.data.duration = this.details.totalduration;
+    this.sendNotification(Notifications.CHANGE_DURATION, this.data.duration);
+  }
+  if (data.details.live === true && this.facade.mediaProxy.getTemporalType() !== "dvr") {
+    this.facade.mediaProxy.setTemporalType("live");
+  }
+};
+
+/**
+*/
+HLSPlaybackProxy.prototype.onLevelSwitching = function(event, data) {
+  this.plugin.sendNotification(Notifications.DISPATCH_EVENT, new Event(Hls.Events.LEVEL_SWITCHING, {
+    event: event,
+    data: data
+  }));
+  this.sendNotification(Notifications.QUALITY_CHANGING, this.player.levels[data.level]);
+};
+
+HLSPlaybackProxy.prototype.onLevelSwitched = function(event, data) {
+  this.plugin.sendNotification(Notifications.DISPATCH_EVENT, new Event(Hls.Events.LEVEL_SWITCHED, {
+    event: event,
+    data: data
+  }));
+  return this.sendNotification(Notifications.QUALITY_SWITCHED, this.player.levels[data.level]);
+};
+
+/**
+*/
+HLSPlaybackProxy.prototype.onFragParsingMetadata = function(event, data) {
+  this.plugin.sendNotification(Notifications.DISPATCH_EVENT, new Event(Hls.Events.FRAG_PARSING_METADATA, {
+    event: event,
+    data: data
+  }));
+};
+
+HLSPlaybackProxy.prototype.onFragmentLoadStart = function(event, data) {
+  var bitrate;
+  this.plugin.sendNotification(Notifications.DISPATCH_EVENT, new Event(Hls.Events.FRAG_LOADING, {
+    event: event,
+    data: data
+  }));
+  bitrate = this.player.levels[data.frag.level].bitrate;
+  this.sendNotification(Notifications.FRAGMENT_LOAD_START, bitrate);
+};
+
+HLSPlaybackProxy.prototype.onFragmentLoaded = function(event, data) {
+  var bitrate;
+  this.plugin.sendNotification(Notifications.DISPATCH_EVENT, new Event(Hls.Events.FRAG_LOADED, {
+    event: event,
+    data: data
+  }));
+  bitrate = this.player.levels[data.frag.level].bitrate;
+  this.sendNotification(Notifications.FRAGMENT_LOADED, bitrate);
+};
+
+HLSPlaybackProxy.prototype.ontimeupdate = function(event) {
+  var _ref;
+  if (((_ref = this.facade.ads) != null ? _ref.inProgress : void 0) === true) {
+    return;
+  }
+  this.data.currentTime = this.getCurrentTime();
+  this.sendNotification(Notifications.TIME_CHANGE, {
+    currentTime: this.data.currentTime
+  });
+};
+
+/**
+*/
+HLSPlaybackProxy.prototype.ondurationchange = function(event) {
+  var duration;
+  duration = this.getDetails().totalduration;
+  if (duration === this.data.duration || duration === 0 || isNaN(duration)) {
+    return;
+  }
+  this.data.duration = duration;
+  this.sendNotification(Notifications.CHANGE_DURATION, duration);
+};
+
+HLSPlaybackProxy.prototype.oncanplaythrough = function(event) {
+  this.createTracks();
+  this.sendNotification(Notifications.CAN_PLAY_THROUGH);
+  this.sendNotification(Notifications.PROGRESS, this.getDuration());
+  if (this.qualityMode === "manual" && this.player.currentLevel !== this.quality) {
+    this.setQuality(this.quality);
+  }
+};
+
+HLSPlaybackProxy.prototype.getCurrentTime = function() {
+  return this.getMediaElement().currentTime - this.getStartTime();
+};
+
+HLSPlaybackProxy.prototype.getDetails = function() {
+  return this.details || {};
+};
+
+HLSPlaybackProxy.prototype.getFragmentDuration = function() {
+  return this.getDetails().targetduration;
+};
+
+HLSPlaybackProxy.prototype.getUTCStart = function() {
+  return this.getDetails().startSN * 10000;
+};
+
+HLSPlaybackProxy.prototype.getUTCTime = function() {
+  return this.getUTCStart() + (this.getCurrentTime() * 1000);
+};
+
+HLSPlaybackProxy.prototype.getUTCEnd = function() {
+  return this.getDetails().endSN * 10000;
+};
+
+HLSPlaybackProxy.prototype.getStartTime = function() {
+  return this.getMediaElement().duration - this.getDuration();
+};
+
+/**
+*/
+HLSPlaybackProxy.prototype.goLive = function() {
+  this.setCurrentTime(this.getLiveTime());
+};
+
+/**
+*/
+HLSPlaybackProxy.prototype.getLiveTime = function() {
+  return this.getDuration() - this.getFragmentDuration();
+};
+
+/**
+*/
+HLSPlaybackProxy.prototype.isLive = function() {
+  return this.getStartTime() + this.getCurrentTime() >= this.getLiveTime();
+};
+
+/** @override
+*/
+HLSPlaybackProxy.prototype.seek = function(value) {
+  var _this = this;
+  return HLSPlaybackProxy.__super__.seek.call(this, value + this.getStartTime()).then(function(time) {
+    if (_this.mediaProxy.getTemporalType() === "dvr") {
+      _this.sendNotification(Notifications.IS_LIVE, _this.isLive());
+    }
+  });
+};
+
+/** override
+*/
+HLSPlaybackProxy.prototype.onplaying = function(event) {
+  HLSPlaybackProxy.__super__.onplaying.call(this);
+  this.retried = false;
+};
+
+/**
+*/
+HLSPlaybackProxy.prototype.onError = function(event, data) {
+  this.plugin.sendNotification(Notifications.DISPATCH_EVENT, new Event("error", {
+    event: event,
+    data: data
+  }));
+  if (this.config.ignoreErrors === true) {
+    return;
+  }
+  if (this.config.retryOnError === false || this.retried === true) {
+    this.retried = false;
+    this.error(data);
+    return;
+  }
+  if (data.fatal && data.type === Hls.ErrorTypes.MEDIA_ERROR && data.details === Hls.ErrorDetails.FRAG_LOOP_LOADING_ERROR) {
+    data.fatal = false;
+  }
+  if (data.fatal) {
+    switch (data.type) {
+      case Hls.ErrorTypes.NETWORK_ERROR:
+        this.retried = true;
+        if (this.manifestParsed) {
+          this.player.startLoad();
+        } else {
+          this.player.loadSource(this.getSrc());
+        }
+        this.facade.logger.error("[AMP HLS] Playback Error trying to recover:", event);
+        break;
+      case Hls.ErrorTypes.MEDIA_ERROR:
+        this.retried = true;
+        this.player.recoverMediaError();
+        this.facade.logger.error("[AMP HLS] Playback Error trying to recover:", event);
+        break;
+      default:
+        this.facade.logger.error("[AMP HLS] Playback Error:", event);
+        this.error(data);
+    }
+  } else {
+    if (data.details === Hls.ErrorDetails.FRAG_LOOP_LOADING_ERROR) {
+      if (this.fragErrorTime === this.getMediaElement().currentTime) {
+        this.getMediaElement().currentTime++;
+        this.facade.logger.error("[AMP HLS] Frag Loop Load Error, Seeking to :", this.getMediaElement().currentTime);
+      } else {
+        this.fragErrorTime = this.getMediaElement().currentTime;
+      }
+    }
+  }
+};
+
+HLSPlaybackProxy.prototype.error = function(data) {
+  switch (data.type) {
+    case Hls.ErrorTypes.NETWORK_ERROR:
+      data.code = MediaError.MEDIA_ERR_NETWORK;
+      break;
+    case Hls.ErrorTypes.MEDIA_ERROR:
+      data.code = MediaError.MEDIA_ERR_DECODE;
+      break;
+    default:
+      data.toString = function() {
+        return data.details;
+      };
+  }
+  this.sendNotification(Notifications.ERROR, data);
+};
+
+/** @override
+*/
+HLSPlaybackProxy.prototype.createTracks = function() {
+  var audio, changeEnabled, count, current, index, item, track, tracks, _i, _len;
+  audio = this.player.audioTracks;
+  current = this.player.audioTrack;
+  tracks = this.facade.tracks.getAudioTracks();
+  count = audio.length;
+  changeEnabled = function(track, enabled) {
+    var _this = this;
+    this.facade.tracks.getAudioTracks().forEach(function(track) {
+      return track.data.enabled = false;
+    });
+    if (enabled !== true) {
+      return;
+    }
+    this.facade.tracks.getAudioTracks()[track.id].data.enabled = true;
+    this.player.audioTrack = track.id;
+  };
+  for (index = _i = 0, _len = audio.length; _i < _len; index = ++_i) {
+    item = audio[index];
+    if (Utils.fieldIsUnique(tracks, 'id', item.id) === false) {
+      continue;
+    }
+    track = new Track({
+      kind: item.type,
+      label: item.name || item.id,
+      language: item.lang,
+      id: item.id,
+      enabled: item.id === current,
+      data: item
+    });
+    track.changeEnabled = changeEnabled.bind(this, item);
+    tracks.add(track, index + 1 === count);
+  }
+};
+
+/** @override
+*/
+HLSPlaybackProxy.prototype.setQuality = function(value) {
+  var mode, _ref;
+  mode = this.qualityMode;
+  if (value > -1) {
+    mode = "manual";
+  } else {
+    mode = "auto";
+  }
+  this.setQualityMode(mode);
+  if (value === this.player.currentLevel) {
+    this.onLevelSwitching("hlsLevelSwitching", this.player.levels[value]);
+    this.onLevelSwitched("hlsLevelSwitched", {
+      level: value
+    });
+    return;
+  }
+  if ((_ref = this.player) != null) {
+    _ref.currentLevel = this.quality = value;
+  }
+  return this.quality;
+};
+
+/** @override
+*/
+HLSPlaybackProxy.prototype.getQuality = function() {
+  var level, _ref, _ref1;
+  level = (_ref = this.player) != null ? _ref.currentLevel : void 0;
+  if (level === -1) {
+    level = (_ref1 = this.player) != null ? _ref1.nextLoadLevel : void 0;
+  }
+  return level;
+};
+
+/** @override
+*/
+HLSPlaybackProxy.prototype.getQualityLevels = function() {
+  var _ref;
+  return ((_ref = this.player) != null ? _ref.levels : void 0) || HLSPlaybackProxy.__super__.getQualityLevels.call(this);
+};
+
+/** @override
+*/
+HLSPlaybackProxy.prototype.getQualityMode = function() {
+  return this.qualityMode;
+};
+
+/** @override
+*/
+HLSPlaybackProxy.prototype.setQualityMode = function(value) {
+  if (value !== "auto" && value !== "manual") {
+    value += " is not a valid key";
+  } else {
+    this.qualityMode = value;
+  }
+  return value;
+};
+
+/** @override
+*/
+HLSPlaybackProxy.prototype.destroy = function() {
+  if (!(this.player != null)) {
+    return;
+  }
+  HLSPlaybackProxy.__super__.destroy.call(this);
+  this.player.destroy();
+  this.player = null;
+};
+
+/**
+ * The HLSAdBreakStartCommand class.
+ *   
+ * @constructor
+ * @private
+ * @extends {puremvc.SimpleCommand}
+*/
+function HLSAdBreakStartCommand() {
+  HLSAdBreakStartCommand.__super__.constructor.call(this);
+}
+
+
+__extends(HLSAdBreakStartCommand, PluginCommand);
+
+
+/**
+ * Executes the command.
+ * 
+ * @param {puremvc.Notification} notification 
+ *    The notification.
+ * 
+ * @override
+*/
+HLSAdBreakStartCommand.prototype.execute = function(notification) {
+  var rate, _ref;
+  if (((_ref = notification.getBody()) != null ? _ref.partner : void 0) === "freewheel") {
+    rate = this.facade.player.getPlaybackRate();
+    this.proxy.destroy();
+    this.facade.player.setPlaybackRate(rate);
+  }
 };
 
 /**
@@ -15182,566 +18310,722 @@ var AdNotifications = {
   IMPRESSION: "adsimpression"
 };
 
-/**
- * The ControlsMediator class.
- * 
+/** 
+ * @param {Object}  config  The plugin configuration object.
  * @constructor
  * @private
- * @extends {LayerMediator}
+ * @extends {PluginProxy}
 */
-function ControlsMediator() {
-  ControlsMediator.__super__.constructor.call(this);
+function PlaybackPluginProxy(config) {
+  PlaybackPluginProxy.__super__.constructor.call(this, config);
 }
 
 
-__extends(ControlsMediator, LayerMediator);
+__extends(PlaybackPluginProxy, PluginProxy);
 
 
-ControlsMediator.prototype.componentName = "controls";
-
-ControlsMediator.prototype.activeControlPanel = null;
-
-ControlsMediator.prototype.controlBar = null;
-
-ControlsMediator.prototype.panels = null;
-
-/**
- * @override
+/** @static
 */
-ControlsMediator.prototype.onRegister = function() {
-  var separator, _ref;
-  this.facade.registerMediator(new ErrorLayerMediator());
-  if (this.facade.player.config.debug !== true) {
-    if (this.facade.player.config.contextmenu && this.facade.player.config.contextmenu.enabled !== false) {
-      this.facade.registerMediator(new contextMenuMediator());
-    }
-  }
-  ControlsMediator.__super__.onRegister.call(this);
-  this.facade.viewComponent = this.viewComponent;
-  this.facade.registerMediator(new PosterMediator());
-  this.facade.registerMediator(new LoadingOverlayMediator());
-  this.facade.registerMediator(new WaitingOverlayMediator());
-  this.facade.registerMediator(new ReplayOverlayMediator());
-  this.facade.registerMediator(new EndSlateMediator());
-  if (((_ref = this.config.titlebar) != null ? _ref.enabled : void 0) !== false) {
-    this.facade.registerMediator(new TitleBarMediator());
-  }
-  this.controlBar = this.create("control-bar");
-  this.facade.registerMediator(new PanelsMediator(this.viewComponent));
-  this.facade.registerMediator(new PlayPauseMediator(this.controlBar));
-  this.facade.registerMediator(new TimeDisplayMediator(this.controlBar));
-  this.facade.registerMediator(new ProgressMediator(this.controlBar));
-  if (this.facade.config.logo != null) {
-    this.facade.registerMediator(new LogoMediator(this.controlBar));
-  }
-  this.facade.registerMediator(new GoLiveMediator(this.controlBar));
-  separator = this.create("separator", this.controlBar);
-};
+PlaybackPluginProxy.NAME = ModuleProxy.NAME;
 
-/**
- * @override
-*/
-ControlsMediator.prototype.listNotificationInterests = function() {
-  return [Notifications.READY, Notifications.ADD_CONTROL, Notifications.REMOVE_CONTROL, Notifications.ADD_CONTROL_STATE, Notifications.REMOVE_CONTROL_STATE];
-};
+PlaybackPluginProxy.prototype.playbackProxy = null;
 
-/**
- * @override
-*/
-ControlsMediator.prototype.handleNotification = function(notification) {
-  var body, name, _ref;
-  name = notification.getName();
-  body = notification.getBody();
-  switch (name) {
-    case Notifications.READY:
-      if (((_ref = body.fullscreen) != null ? _ref.enabled : void 0) !== false) {
-        this.facade.registerMediator(new FullScreenMediator(this.controlBar));
-      }
-      break;
-    case Notifications.ADD_CONTROL_STATE:
-      this.classList.add(body);
-      break;
-    case Notifications.REMOVE_CONTROL_STATE:
-      this.classList.remove(body);
-      break;
-    case Notifications.ADD_CONTROL:
-      this.controlBar.appendChild(body);
-      break;
-    case Notifications.REMOVE_CONTROL:
-      if (this.controlBar.contains(body)) {
-        this.controlBar.removeChild(body);
-      }
-  }
-};
+PlaybackPluginProxy.prototype.createPlaybackProxy = function() {};
 
-/**
- * @constructor
-*/
-function AMP() {}
-
-/**
- * Create a player based on the configuration object and container. 
- *   
- * @param {string|HTMLElement} container          
- *    The id of the div the player will be attached to.
- * 
- * @param {?(Object|string)} config        
- *    The configuration override object.
- * 
- * @param {?Function} onready  
- *    Optional ready handler.
- * 
- * @return {Player}
- *
-*/
-AMP.create = function(container, config, onready) {
-  var element, player, version;
-  if (typeof container === "string") {
-    element = document.getElementById(container);
-    if (!(element != null)) {
-      element = document.querySelector(container);
-    }
-  } else {
-    element = container;
-  }
-  if (!(element != null)) {
-    throw new Error("[AMP ERROR] Invalid container. Could not find DOM element: " + container);
-  }
-  config = config instanceof Config ? config : Config.create(config);
-  Logger.enable(config.debug);
-  version = this.getVersion();
-  if (element.dataset == null) {
-    element.dataset = {};
-  }
-  element.dataset["amp.version"] = version;
-  Logger.log("[AMP] " + version);
-  player = this.createPlayer(config, element);
-  try {
-    Object.defineProperties(player, {
-      src: {
-        get: player.getSrc,
-        set: player.setSrc,
-        enumerable: true,
-        configurable: false
-      },
-      media: {
-        get: player.getMedia,
-        set: player.setMedia,
-        enumerable: true,
-        configurable: false
-      },
-      currentTime: {
-        get: player.getCurrentTime,
-        set: player.setCurrentTime,
-        enumerable: true,
-        configurable: false
-      },
-      autoplay: {
-        get: player.getAutoplay,
-        set: player.setAutoplay,
-        enumerable: true,
-        configurable: false
-      },
-      duration: {
-        get: player.getDuration,
-        enumerable: true,
-        configurable: false
-      },
-      playState: {
-        get: player.getPlayState,
-        enumerable: true,
-        configurable: false
-      },
-      seeking: {
-        get: player.getSeeking,
-        enumerable: true,
-        configurable: false
-      },
-      paused: {
-        get: player.getPaused,
-        enumerable: true,
-        configurable: false
-      },
-      ended: {
-        get: player.getEnded,
-        enumerable: true,
-        configurable: false
-      },
-      volume: {
-        get: player.getVolume,
-        set: player.setVolume,
-        enumerable: true,
-        configurable: false
-      },
-      muted: {
-        get: player.getMuted,
-        set: player.setMuted,
-        enumerable: true,
-        configurable: false
-      },
-      mediaElement: {
-        get: player.getMediaElement,
-        enumerable: true,
-        configurable: false
-      },
-      textTracks: {
-        get: (function() {
-          return player.getMediaElement().textTracks;
-        }),
-        enumerable: true,
-        configurable: false
-      },
-      container: {
-        get: player.getContainer,
-        enumerable: true,
-        configurable: false
-      },
-      loop: {
-        get: player.getLoop,
-        set: player.setLoop,
-        enumerable: true,
-        configurable: false
-      },
-      displayState: {
-        get: player.getDisplayState,
-        set: player.setDisplayState,
-        enumerable: true,
-        configurable: false
-      },
-      playbackRate: {
-        get: player.getPlaybackRate,
-        set: player.setPlaybackRate,
-        enumerable: true,
-        configurable: false
-      },
-      language: {
-        get: player.getLanguage,
-        set: player.setLanguage,
-        enumerable: true,
-        configurable: false
-      },
-      localization: {
-        get: (function() {
-          return player.retrieveProxy(LocalizationProxy.NAME);
-        }),
-        enumerable: true,
-        configurable: false
-      },
-      version: {
-        get: player.getVersion,
-        enumerable: true,
-        configurable: false
-      },
-      error: {
-        get: player.getError,
-        enumerable: true,
-        configurable: false
-      },
-      hidden: {
-        get: player.getHidden,
-        set: player.setHidden,
-        enumerable: true,
-        configurable: false
-      }
-    });
-  } catch (error) {
-    console.error(error);
-  }
-  element.amp = player;
-  player.request = this.request.bind(this);
-  player.loadResources = this.loadResources.bind(this);
-  player.onready = onready;
-  player.initialize(config);
-  return player;
-};
-
-/**
- *
-*/
-AMP.createPlayer = function(config, container) {
+PlaybackPluginProxy.prototype.initialize = function() {
   var player;
-  player = this.players[config.mode];
-  if (player != null) {
-    player = new player(container);
+  this.playbackProxy = this.createPlaybackProxy();
+  if (!(this.playbackProxy != null)) {
+    return;
   }
-  return player;
+  this.sendNotification(Notifications.INITIALIZED);
+  player = this.facade.player.retrieveProxy(PlayerProxy.NAME);
+  player.registerPlaybackCore(this.playbackProxy);
 };
 
-/**
- * Returns the version string for this player library.
- * 
- * @return {string} The version string.
-*/
-AMP.getVersion = function() {
-  return this.VERSION;
-};
-
-/**
- * The player version string
- * 
- * @type {string}
- * @private
- * @static
-*/
-AMP.VERSION = "AMP Premier v2.68.16";
-
-/** 
- * @private
-*/
-AMP.defaults = new AMPConfig();
-
-/** 
- * @private
-*/
-AMP.plugins = [];
-
-/** 
- * @private
-*/
-AMP.players = {};
-
-/** 
- * Loads a default configuration object from a url. 
- * 
- * @param {string} url
- *    A url to a configuration json file to use at the defaults object.
- * 
- * @param {?Function} loaded
- *    Callback function triggered when the file has been loaded and 
- *    sucessfully parsed.
- * 
- * @param {?Function} error
- *    Callback function triggered when the file has failed to load
- *    or cannot be parsed.
- * 
- * @param {boolean} [withCredentials=false]
- *    Whether or not to use credntials when making XMLHttpRequest.
- * 
- * @static
-*/
-AMP.loadDefaults = function(url, loaded, error, withCredentials) {
-  if (withCredentials == null) {
-    withCredentials = false;
-  }
-  if (loaded != null) {
-    this.defaults.addEventListener("load", loaded);
-  }
-  if (error != null) {
-    this.defaults.addEventListener("error", error);
-  }
-  this.defaults.load(url, withCredentials);
-};
-
-/**
- * Returns the playback mode best suited for the current environment.
- * 
- * @return {PlaybackMode}
- *    The playback mode.
- *  
- * @static
-*/
-AMP.getPlaybackMode = function() {
-  return Utils.getPlaybackMode();
-};
-
-/** 
- * @private
- * @static
-*/
-AMP.registerPlayer = function(mode, player) {
-  this.players[mode] = player;
-};
-
-/**
- * Registers a plugin factory function. This function is 
- * called when akamai.amp.AMP.create is called and the 
- * config object contains the plugin key.
- *
- * @param {String} key
- *    The plugin key. Used to configure the plugin.
- *
- * @param {String|Array.<String>} mode
- *    The player mode(s) in which the plugin can be used.
- *
- * @param {Function} factory
- *
- * @static
-*/
-AMP.registerPlugin = function(id, mode, plugin) {
-  var item, _base, _i, _len, _ref;
-  if ((_base = this.plugins)[id] == null) {
-    _base[id] = {};
-  }
-  if (typeof mode === "function") {
-    _ref = [plugin, mode], mode = _ref[0], plugin = _ref[1];
-  }
-  if (typeof mode === "string") {
-    mode = [mode];
-  }
-  if (!(mode != null)) {
-    mode = ["html", "flash"];
-  }
-  for (_i = 0, _len = mode.length; _i < _len; _i++) {
-    item = mode[_i];
-    this.plugins[id][item] = plugin;
+PlaybackPluginProxy.prototype.destroy = function() {
+  var _ref;
+  if ((_ref = this.playbackProxy) != null) {
+    _ref.destroy();
   }
 };
 
 /**
- * @type {akamai.amp.ResourceManager}
- * @private
-*/
-AMP.resourceManager = null;
-
-/**
- * Short cut getter for the global renderer manager
- * 
- * @return {akamai.amp.ResourceManager}
- * 
- * @static
- * @private
-*/
-AMP.getResourceManager = function() {
-  if (!(this.resourceManager != null)) {
-    this.resourceManager = new ResourceManager();
-  }
-  return this.resourceManager;
-};
-
-/**
- * @param {akamai.amp.Resource} resource
- *    The resource definition
- * 
- * @param {Function} callback
- * 
- * @static
- * @private
-*/
-AMP.addResource = function(resource, callback, onerror) {
-  return this.getResourceManager().add(resource, callback, onerror);
-};
-
-/**
- * @param {Array.<akamai.amp.Resource>} resources
- *    The list of resources
- * 
- * @param {Function} callback
- * 
- * @static
- * @private
-*/
-AMP.addResources = function(resources, callback, onerror) {
-  return this.getResourceManager().addResources(resources, callback, onerror);
-};
-
-/**
- * Loads a list of JS and CSS resources.
+ * The HLSProxy class.
  *
- * @param {Array.<akamai.amp.Resource>} resources
- *    The list of js and css resources
- * 
- * @param {Function} callback
- * 
- * @return {Promise}
- *   Promise which resolves once all resources have been loaded.
- *
- * @static
-*/
-AMP.loadResources = function(resources) {
-  var _this = this;
-  return new Promise(function(resolve, reject) {
-    return _this.addResources(resources, resolve, reject);
-  });
-};
-
-/**
- * Request a http resource.
- *
- * @param {String|Object} options
- *    A url string or an object containing the following properties:
- *
- * @return {Promise.<XHR>}
- *     Promise which resolves to a XHR object
- *
- * @static
-*/
-AMP.request = function(options) {
-  return Utils.request(options);
-};
-
-/**
- * @param {!string} key
- *     The resource's key
- * 
- * @return {akamai.amp.Resource}
- *     The resource definition
- * 
- * @static
- * @private
-*/
-AMP.getResource = function(key) {
-  return this.getResourceManager().item(key);
-};
-
-/**
- * @param {!string} key
- *     The resource's key
- * 
- * @return {Function}
- *     The resource's constructor
- *
- * @static
- * @private
-*/
-AMP.removeResource = function(key) {
-  return this.getResourceManager().remove(key);
-};
-
-
-AMP.registerPlayer("html", HTMLPlayer);
-AMP.registerPlayer("flash", FlashPlayer);
-AMP.registerPlayer("none", InstallPlayer);
-AMP.registerPlayer("external", ExternalPlayer);
-
-function PlayOverlayWrapper() {
-  return PlayOverlayWrapper.__super__.constructor.apply(this, arguments);
-}
-
-
-__extends(PlayOverlayWrapper, PluginWrapper);
-
-
-PlayOverlayWrapper.NAME = "PlayOverlayWrapper";
-
-/**
-*/
-PlayOverlayWrapper.prototype.createFlashVars = function(flashvars) {
-  flashvars.show_play_button_overlay = this.config.enabled != null ? this.config.enabled : true;
-  return flashvars;
-};
-
-
-AMP.registerPlugin("playoverlay", "flash", PlayOverlayWrapper);
-
-/** 
+ * @param {Object}  config  The plugin configuration object.
  * @constructor
  * @private
+ * @extends {PluginProxy}
 */
-function PlayOverlayMediator() {
-  PlayOverlayMediator.__super__.constructor.call(this);
+function HLSProxy(config) {
+  HLSProxy.__super__.constructor.call(this, config);
 }
 
 
-__extends(PlayOverlayMediator, OverlayMediator);
+__extends(HLSProxy, PlaybackPluginProxy);
 
 
-PlayOverlayMediator.prototype.componentName = "play";
+/** @static
+*/
+HLSProxy.NAME = ModuleProxy.NAME;
 
-PlayOverlayMediator.prototype.onclick = function(event) {
-  event.stopImmediatePropagation();
-  event.preventDefault();
-  this.sendNotification(UserNotifications.TOGGLE_PLAY_PAUSE);
-  return false;
+HLSProxy.prototype.defaults = {
+  types: ["application/x-mpegURL"],
+  data: {
+    enableWorker: true,
+    enableCEA708Captions: true
+  },
+  mae: null,
+  buffer: null,
+  quality: null,
+  withCredentials: null,
+  retryOnError: true,
+  ignoreErrors: false
+};
+
+HLSProxy.prototype.createPlaybackProxy = function() {
+  var mediaSource;
+  mediaSource = window.MediaSource || window.WebKitMediaSource;
+  if (!(mediaSource != null) || !Hls.isSupported()) {
+    return;
+  }
+  return new HLSPlaybackProxy(this.getConfigurationData(), this.facade);
+};
+
+/**
+ * DASHPlaybackProxy constructor.
+ *
+ * @constructor
+ * @private
+ * @extends {PlaybackCoreProxy}
+*/
+function DASHPlaybackProxy(data) {
+  DASHPlaybackProxy.__super__.constructor.call(this, data.types, data);
+  this.buffer = data.buffer;
+  this.temporalTypes = ["vod", "live", "dvr"];
+}
+
+
+__extends(DASHPlaybackProxy, PlaybackCoreProxy);
+
+
+DASHPlaybackProxy.prototype.playbackCoreName = "dash";
+
+DASHPlaybackProxy.prototype.context = null;
+
+DASHPlaybackProxy.prototype.player = null;
+
+DASHPlaybackProxy.prototype.buffer = null;
+
+/** @override
+*/
+DASHPlaybackProxy.prototype.resumecomplete = function() {
+  var track, tracks, _ref;
+  try {
+    tracks = (_ref = this.facade.getMediaElement()) != null ? _ref.textTracks : void 0;
+    if ((tracks != null ? tracks.length : void 0) !== 0) {
+      track = tracks[0];
+      if (track != null) {
+        track.mode = "hidden";
+      }
+    }
+  } catch (error) {
+
+  }
+  DASHPlaybackProxy.__super__.resumecomplete.call(this);
+};
+
+DASHPlaybackProxy.prototype.onerror = function() {};
+
+/**
+ *
+*/
+DASHPlaybackProxy.prototype.canPlayMedium = function(medium) {
+  return DASHPlaybackProxy.__super__.canPlayMedium.call(this, medium) || medium === "audio";
+};
+
+/** @override
+*/
+DASHPlaybackProxy.prototype.createTracks = function() {
+  var audio, changeEnabled, count, current, index, item, track, tracks, _i, _len;
+  audio = this.player.getTracksFor("audio");
+  current = this.player.getCurrentTrackFor("audio");
+  tracks = this.facade.tracks.getAudioTracks();
+  count = audio.length;
+  changeEnabled = function(audio, track, enabled) {
+    var _this = this;
+    this.facade.tracks.getAudioTracks().forEach(function(item) {
+      return item.data.enabled = item === track;
+    });
+    if (enabled !== true) {
+      return;
+    }
+    this.player.setCurrentTrack(audio);
+  };
+  for (index = _i = 0, _len = audio.length; _i < _len; index = ++_i) {
+    item = audio[index];
+    if (Utils.fieldIsUnique(tracks, 'id', item.id) === false) {
+      continue;
+    }
+    track = new Track({
+      kind: item.roles.join(" "),
+      label: item.id,
+      language: item.lang,
+      id: item.id,
+      enabled: item === current,
+      data: item
+    });
+    track.changeEnabled = changeEnabled.bind(this, item, track);
+    tracks.add(track, index + 1 === count);
+  }
+};
+
+/**
+*/
+DASHPlaybackProxy.prototype.getUseMAE = function() {
+  return DASHPlaybackProxy.__super__.getUseMAE.call(this) && (typeof MediaAccelerationDashJsWrapper !== "undefined" && MediaAccelerationDashJsWrapper !== null);
+};
+
+/** @override
+*/
+DASHPlaybackProxy.prototype.load = function() {
+  var useMAE, _ref;
+  if (!(this.player != null)) {
+    useMAE = ((_ref = this.config.mae) != null ? _ref.enabled : void 0) !== false && (typeof MediaAccelerationDashJsWrapper !== "undefined" && MediaAccelerationDashJsWrapper !== null);
+    if (!this.getUseMAE()) {
+      this.player = dashjs.MediaPlayer().create();
+    } else {
+      this.facade.mae = new MediaAccelerationDashJsWrapper(this.config.mae);
+      this.player = this.facade.mae.getPlayer();
+    }
+    this.player.on("error", this.onError.bind(this));
+    this.player.on("fragmentLoadingStarted", this.onFragmentLoadStart.bind(this));
+    this.player.on("fragmentLoadingCompleted", this.onFragmentLoaded.bind(this));
+    this.player.on("qualityChangeRequested", this.onLevelSwitching.bind(this));
+    this.player.getDebug().setLogToBrowserConsole(this.facade.logger.enabled);
+    this.player.initialize(this.getMediaElement(), null, false);
+    if (this.config.initialBitrate != null) {
+      this.player.setInitialBitrateFor(this.facade.getMedia().medium, this.config.initialBitrate);
+    }
+  }
+  DASHPlaybackProxy.__super__.load.call(this);
+};
+
+/** @override
+*/
+DASHPlaybackProxy.prototype.applySrc = function() {
+  var keys;
+  keys = this.facade.getMedia().keys;
+  if (keys != null) {
+    this.player.setProtectionData(keys);
+  }
+  this.player.attachSource(this.getSrc());
+  this.getMediaElement().load();
+};
+
+/** @override
+*/
+DASHPlaybackProxy.prototype.seek = function(value) {
+  return Promise.resolve(this.player.seek(value));
+};
+
+/** @override
+*/
+DASHPlaybackProxy.prototype.getCurrentTime = function() {
+  var _ref;
+  return ((_ref = this.player) != null ? _ref.time() : void 0) || 0;
+};
+
+/** @override
+*/
+DASHPlaybackProxy.prototype.getDuration = function() {
+  var _ref;
+  return ((_ref = this.player) != null ? _ref.duration() : void 0) || 0;
+};
+
+/**
+*/
+DASHPlaybackProxy.prototype.getStats = function() {
+  return {};
+};
+
+/**
+*/
+DASHPlaybackProxy.prototype.onFragmentLoadStart = function(event) {
+  var bitrate;
+  bitrate = event.request.mediaInfo.bitrateList[event.request.quality].bandwidth;
+  this.sendNotification(Notifications.FRAGMENT_LOAD_START, bitrate);
+};
+
+/**
+*/
+DASHPlaybackProxy.prototype.onFragmentLoaded = function(event) {
+  var bitrate;
+  bitrate = event.request.mediaInfo.bitrateList[event.request.quality].bandwidth;
+  this.sendNotification(Notifications.FRAGMENT_LOADED, bitrate);
+};
+
+/**
+*/
+DASHPlaybackProxy.prototype.onLevelSwitching = function(event) {
+  this.sendNotification(Notifications.QUALITY_CHANGING, this.getQualityLevels()[event.newQuality]);
+};
+
+/**
+*/
+DASHPlaybackProxy.prototype.onError = function(event) {
+  this.facade.logger.error("DASH JS Playback Error:", event);
+};
+
+/** @override
+*/
+DASHPlaybackProxy.prototype.setQuality = function(value) {
+  var _ref, _ref1, _ref2;
+  if ((_ref = this.player) != null) {
+    _ref.setAutoSwitchQualityFor((_ref1 = this.facade.getMedia()) != null ? _ref1.medium : void 0, value === -1);
+  }
+  if (value === -1) {
+    return;
+  }
+  return (_ref2 = this.player) != null ? _ref2.setQualityFor("video", value) : void 0;
+};
+
+/** @override
+*/
+DASHPlaybackProxy.prototype.getQuality = function() {
+  var _ref;
+  return (_ref = this.player) != null ? _ref.getQualityFor("video") : void 0;
+};
+
+/** @override
+*/
+DASHPlaybackProxy.prototype.getQualityLevels = function() {
+  var _ref;
+  return ((_ref = this.player) != null ? _ref.getBitrateInfoListFor("video") : void 0) || DASHPlaybackProxy.__super__.getQualityLevels.call(this);
+};
+
+/** @override
+*/
+DASHPlaybackProxy.prototype.getQualityMode = function() {
+  var _ref, _ref1;
+  if (((_ref = this.player) != null ? _ref.getAutoSwitchQualityFor((_ref1 = this.facade.getMedia()) != null ? _ref1.medium : void 0) : void 0) === true) {
+    return "auto";
+  } else {
+    return "abr";
+  }
+};
+
+/** @override
+*/
+DASHPlaybackProxy.prototype.setQualityMode = function(value) {
+  var _ref, _ref1;
+  if (value !== "auto") {
+    return value + " is not a valid key";
+  }
+  return (_ref = this.player) != null ? _ref.setAutoSwitchQualityFor((_ref1 = this.facade.getMedia()) != null ? _ref1.medium : void 0, value) : void 0;
+};
+
+/** @override
+*/
+DASHPlaybackProxy.prototype.destroy = function() {
+  if (!(this.player != null)) {
+    return;
+  }
+  this.player.reset();
+  DASHPlaybackProxy.__super__.destroy.call(this);
+};
+
+/**
+ * The CaptioningPlugin class.
+ *
+ * @param {Module}  app     The parent module of this plugin.
+ * @constructor
+ * @private
+ * @extends {Feature}
+*/
+function CaptioningPlugin() {
+  CaptioningPlugin.__super__.constructor.call(this);
+  Object.defineProperties(this, {
+    enabled: {
+      get: this.getEnabled,
+      set: this.setEnabled,
+      enumerable: true,
+      configurable: false
+    },
+    hidden: {
+      get: this.getHidden,
+      set: this.setHidden,
+      enumerable: true,
+      configurable: false
+    },
+    visible: {
+      get: this.getVisible,
+      set: this.setVisible,
+      enumerable: true,
+      configurable: false
+    },
+    tracks: {
+      get: this.getTracks,
+      enumerable: true,
+      configurable: false
+    },
+    track: {
+      get: this.getTrack,
+      set: this.setTrack,
+      enumerable: true,
+      configurable: false
+    },
+    settings: {
+      get: this.getSettings,
+      enumerable: true,
+      configurable: false
+    }
+  });
+}
+
+
+__extends(CaptioningPlugin, Feature);
+
+
+CaptioningPlugin.prototype.featureName = "captioning";
+
+CaptioningPlugin.prototype.moduleName = "captioning";
+
+CaptioningPlugin.prototype.mediatorname = "";
+
+/** @override
+*/
+CaptioningPlugin.prototype.createController = function() {
+  CaptioningPlugin.__super__.createController.call(this);
+  this.registerCommand(Notifications.CHANGE_MEDIA, CaptioningChangeMediaCommand);
+  this.registerCommand(Notifications.STARTED, CaptioningStartedCommand);
+  this.registerCommand(Notifications.TIME_UPDATE, CaptioningTimeUpdateCommand);
+  this.registerCommand(CaptioningNotifications.VISIBILITY_CHANGE, CaptioningVisibilityChangeCommand);
+  this.registerCommand(CaptioningNotifications.ENABLED, CaptioningEnabledCommand);
+  this.registerCommand(CaptioningNotifications.TRACK_SELECTED, PluginEventCommand);
+  this.registerCommand(CaptioningNotifications.TRACKS_LOADED, PluginEventCommand);
+  this.registerCommand(CaptioningNotifications.CUE_CHANGE, PluginEventCommand);
+};
+
+/** @override
+*/
+CaptioningPlugin.prototype.createModel = function() {
+  this.proxy = new CaptioningProxy(this.config);
+  this.registerProxy(this.proxy);
+};
+
+/** @override
+*/
+CaptioningPlugin.prototype.createView = function() {
+  var mediator, viewComponent;
+  mediator = new CaptioningMediator();
+  this.registerMediator(mediator);
+  this.mediatorname = mediator.getMediatorName();
+  viewComponent = mediator.viewComponent;
+  this.proxy.registerRenderer(new CaptioningNativeMediator(viewComponent));
+  this.proxy.registerRenderer(new CaptioningHTMLMediator(viewComponent));
+};
+
+/** @override
+*/
+CaptioningPlugin.prototype.destroy = function() {
+  var name, renderer;
+  while (this.proxy.rendererMap.length >= 1) {
+    renderer = this.proxy.rendererMap[0];
+    name = renderer.getMediatorName();
+    this.removeMediator(name);
+    this.proxy.removeRenderer(renderer.getRendererName());
+  }
+  this.removeMediator(this.mediatorname);
+};
+
+/**
+*/
+CaptioningPlugin.prototype.listNotificationInterests = function() {
+  return [Notifications.LOADED_METADATA, Notifications.CAN_PLAY_THROUGH, Notifications.CHANGE_MEDIA, Notifications.STARTED, Notifications.TIME_UPDATE, Notifications.SETTINGS_CHANGE, CaptioningNotifications.TRACK_SELECTED];
+};
+
+/**
+*/
+CaptioningPlugin.prototype.listNotificationPublications = function() {
+  return CaptioningPlugin.__super__.listNotificationPublications.call(this).concat([CaptioningNotifications.CUE_CHANGE, Notifications.ADD_CONTROL_STATE, Notifications.REMOVE_CONTROL_STATE, Notifications.CHANGE_SETTINGS, CaptioningNotifications.VISIBILITY_CHANGE, CaptioningNotifications.SETTINGS_CHANGE]);
+};
+
+/**
+ * @return {boolean} The hidden flag.
+ * @expose
+*/
+CaptioningPlugin.prototype.getEnabled = function() {
+  return this.proxy.getEnabled();
+};
+
+/**
+ * @param {boolean} value The hidden flag.
+ * @expose
+*/
+CaptioningPlugin.prototype.setEnabled = function(value) {
+  this.sendNotification(CaptioningNotifications.ENABLED, value);
+  return value;
+};
+
+/**
+ * @return {boolean} The hidden flag.
+ * @expose
+*/
+CaptioningPlugin.prototype.getHidden = function() {
+  return this.proxy.getHidden();
+};
+
+/**
+ * @param {boolean} value The hidden flag.
+ * @expose
+*/
+CaptioningPlugin.prototype.setHidden = function(value) {
+  this.setVisible(!value);
+  return value;
+};
+
+/**
+ * @return {boolean} The hidden flag.
+ * @expose
+*/
+CaptioningPlugin.prototype.getVisible = function() {
+  return !this.proxy.getHidden();
+};
+
+/**
+ * @param {boolean} value The hidden flag.
+ * @expose
+*/
+CaptioningPlugin.prototype.setVisible = function(value) {
+  this.sendNotification(Notifications.CHANGE_SETTINGS, {
+    captions: {
+      visible: value
+    }
+  });
+  this.sendNotification(CaptioningNotifications.VISIBILITY_CHANGE, value);
+  return value;
+};
+
+/**
+ * Returns an array of caption tracks
+ *
+ * @return {Array.<CaptionTrack>} The list of text tracks.
+ * @expose
+*/
+CaptioningPlugin.prototype.getTracks = function() {
+  return this.proxy.getTracks();
+};
+
+/**
+ * Returns the currently selected track.
+ *
+ * @return {CaptionTrack} The currently selected caption track.
+ * @expose
+*/
+CaptioningPlugin.prototype.getTrack = function() {
+  return this.proxy.getTrack();
+};
+
+/**
+ * Selects a caption track
+ *
+ * @param {CaptionTrack} value The caption track to select
+ * @expose
+*/
+CaptioningPlugin.prototype.setTrack = function(value) {
+  this.proxy.setTrack(value);
+  return value;
+};
+
+/**
+ * Selects a caption track by its index in the getTracks array.
+ *
+ * @param {number}        index   The index to select
+ * @return {CaptionTrack}         The selected caption track.
+ * @expose
+*/
+CaptioningPlugin.prototype.selectTrackByIndex = function(index) {
+  return this.proxy.selectTrackByIndex(index);
+};
+
+/**
+ * Selects a caption track by it's language property.
+ *
+ * @param {string}        lang  The language to select
+ * @return {CaptionTrack}       The selected caption track.
+ * @expose
+*/
+CaptioningPlugin.prototype.selectTrackByLanguage = function(lang) {
+  return this.proxy.selectTrackByLanguage(lang);
+};
+
+/**
+ * Sets a caption Settings Object (styles)
+ *
+ * @param {Object}  object  The caption settings object.
+ * @expose
+*/
+CaptioningPlugin.prototype.changeSettings = function(object) {
+  this.sendNotification(Notifications.CHANGE_SETTINGS, {
+    captions: object
+  });
+  this.sendNotification(CaptioningNotifications.SETTINGS_CHANGE, object);
+  return object;
+};
+
+/**
+ * Return the captions settings object
+ *
+ * @return {Object}       The captions settings object.
+ * @expose
+*/
+CaptioningPlugin.prototype.getSettings = function() {
+  return this.player.settings.captions;
+};
+
+/**
+ * Allows parallel rendering to be toggled
+ *
+ * @param {value}  number  The value to use.
+ * @expose
+*/
+CaptioningPlugin.prototype.useParallelRendering = function(value) {
+  var renderer;
+  renderer = this.proxy.getRenderer();
+  if (renderer) {
+    renderer.useParallelRendering(value);
+  }
+  return value;
+};
+
+
+AMP.registerPlugin("captioning", "html", CaptioningPlugin);
+
+/**
+ * The DASHChangeDisplayStateCommand class.
+ *   
+ * @constructor
+ * @private
+ * @extends {puremvc.SimpleCommand}
+*/
+function DASHChangeDisplayStateCommand() {
+  DASHChangeDisplayStateCommand.__super__.constructor.call(this);
+}
+
+
+__extends(DASHChangeDisplayStateCommand, puremvc.SimpleCommand);
+
+
+/**
+ * Executes the command.
+ * 
+ * @param {puremvc.Notification} notification 
+ *    The notification.
+ * 
+ * @override
+*/
+DASHChangeDisplayStateCommand.prototype.execute = function(notification) {
+  var core, fullscreen, playback, proxy, state, target,
+    _this = this;
+  state = notification.getBody();
+  playback = this.facade.retrieveProxy(PlaybackProxy.NAME);
+  core = this.facade.getMediaElement();
+  if (!(core != null) || !core.webkitSupportsFullscreen) {
+    return;
+  }
+  proxy = this.facade.retrieveProxy(ApplicationStateProxy.NAME);
+  proxy.setDisplayState(state);
+  fullscreen = {};
+  target = this.facade.viewComponent;
+  if (target.requestFullscreen != null) {
+    fullscreen.enter = function() {
+      return target.requestFullscreen();
+    };
+    fullscreen.exit = function() {
+      return document.cancelFullscreen();
+    };
+    fullscreen.event = "onfullscreenchange";
+    fullscreen.element = "fullscreenElement";
+  } else if (target.webkitRequestFullScreen != null) {
+    fullscreen.enter = function() {
+      return target.webkitRequestFullScreen();
+    };
+    fullscreen.exit = function() {
+      return document.webkitCancelFullScreen();
+    };
+    fullscreen.event = "onwebkitfullscreenchange";
+    fullscreen.element = "webkitFullscreenElement";
+  } else if (target.mozRequestFullScreen != null) {
+    fullscreen.enter = function() {
+      return target.mozRequestFullscreen();
+    };
+    fullscreen.exit = function() {
+      return document.mozCancelFullScreen();
+    };
+    fullscreen.event = "onmozfullscreenchange";
+    fullscreen.element = "mozFullscreenElement";
+  } else if (target.msRequestFullScreen != null) {
+    fullscreen.enter = function() {
+      return target.msRequestFullscreen();
+    };
+    fullscreen.exit = function() {
+      return document.msCancelFullScreen();
+    };
+    fullscreen.event = "onmozfullscreenchange";
+    fullscreen.element = "mozFullscreenElement";
+  }
+  if (state === DisplayState.FULL_SCREEN) {
+    fullscreen.enter();
+    if (fullscreen.event != null) {
+      core[fullscreen.event] = function(event) {
+        if (!(document[fullscreen.element] != null)) {
+          return _this.sendNotification(Notifications.CHANGE_DISPLAY_STATE, DisplayState.NORMAL);
+        }
+      };
+    }
+  } else if (state === DisplayState.NORMAL) {
+    fullscreen.exit();
+    core[fullscreen.event] = null;
+  }
+  this.facade.dispatchEvent(new Event("fullscreenchange", state === DisplayState.FULL_SCREEN));
+};
+
+/** 
+ * The DASHProxy class.
+ *   
+ * @param {Object}  config  The plugin configuration object.
+ * @constructor
+ * @private
+ * @extends {PluginProxy}
+*/
+function DASHProxy(config) {
+  DASHProxy.__super__.constructor.call(this, config);
+}
+
+
+__extends(DASHProxy, PlaybackPluginProxy);
+
+
+/** @static
+*/
+DASHProxy.NAME = ModuleProxy.NAME;
+
+DASHProxy.prototype.defaults = {
+  types: ["application/dash+xml"],
+  buffer: null,
+  mae: null,
+  initialBitrate: null
+};
+
+DASHProxy.prototype.createPlaybackProxy = function() {
+  var mediaSource;
+  mediaSource = window.MediaSource || window.WebKitMediaSource;
+  if (!(mediaSource != null)) {
+    return;
+  }
+  return new DASHPlaybackProxy(this.getConfigurationData());
 };
 
 /**
@@ -15754,144 +19038,85 @@ var MediaAnalyticsNotifications = {
   SET_DIMENSIONS: "mediaanalytics:setDimensions"
 };
 
-/** 
- * The ControlsPlugin class.
- *   
+/**
+ * The HLSPlugin class.
+ *
  * @param {Module}  app     The parent module of this plugin.
  * @constructor
  * @private
  * @extends {Plugin}
 */
-function ControlsPlugin() {
-  ControlsPlugin.__super__.constructor.call(this);
+function HLSPlugin() {
+  HLSPlugin.__super__.constructor.call(this);
+  Object.defineProperties(this, {
+    instance: {
+      get: this.getInstance,
+      enumerable: true,
+      configurable: false
+    }
+  });
 }
 
 
-__extends(ControlsPlugin, Plugin);
+__extends(HLSPlugin, Plugin);
 
 
-ControlsPlugin.prototype.moduleName = "controls";
-
-/** @override
-*/
-ControlsPlugin.prototype.createFramework = function() {
-  if (this.config["native"] === true) {
-    this.player.getMediaElement().controls = true;
-    this.player.sendNotification(Notifications.ADD_APPLICATION_STATE, "controls-native");
-    this.registerCommand(Notifications.MEDIA_VALIDATED, ControlsMediaValidatedCommand);
-    this.registerCommand(AdNotifications.BREAK_START, ControlsAdBreakStartCommand);
-    this.registerCommand(AdNotifications.BREAK_END, ControlsAdBreakEndCommand);
-    this.registerCommand(Notifications.PLAY_REQUEST, ControlsStartedCommand);
-    this.createView = function() {};
-    return;
-  } else {
-    ControlsPlugin.__super__.createFramework.call(this);
-  }
-};
-
-/**
-*/
-ControlsPlugin.prototype.applyClickHandler = function(apply) {
-  if (apply == null) {
-    apply = true;
-  }
-  this.player.getMediaElement().onclick = apply ? this.clickHandler.bind(this) : null;
-  this.player.getMediaElement().onplay = apply ? this.clickHandler.bind(this) : null;
-};
-
-/**
-*/
-ControlsPlugin.prototype.clickHandler = function(event) {
-  this.sendNotification(UserNotifications.TOGGLE_PLAY_PAUSE, true);
-};
+HLSPlugin.prototype.moduleName = "hls";
 
 /** @override
 */
-ControlsPlugin.prototype.createController = function() {
-  ControlsPlugin.__super__.createController.call(this);
-  this.registerCommand(Notifications.START, ControlsStartCommand);
-  this.registerCommand(Notifications.PLAY, ControlsPlayCommand);
-  this.registerCommand(Notifications.PAUSE, ControlsPauseCommand);
-  this.registerCommand(Notifications.ACTIVE_STATE_CHANGE, ControlsActiveStateChangeCommand);
-  this.registerCommand(AdNotifications.BREAK_START, ControlsAdBreakStartCommand);
-  this.registerCommand(AdNotifications.BREAK_END, ControlsAdBreakEndCommand);
-};
-
-/** @override
-*/
-ControlsPlugin.prototype.createModel = function() {
-  this.proxy = new ControlsProxy(this.config);
+HLSPlugin.prototype.createModel = function() {
+  this.proxy = new HLSProxy(this.config);
   this.registerProxy(this.proxy);
 };
 
-/** @override
-*/
-ControlsPlugin.prototype.createView = function() {
-  this.registerMediator(new ControlsMediator());
+HLSPlugin.prototype.createController = function() {
+  this.registerCommand(AdNotifications.BREAK_START, HLSAdBreakStartCommand);
+  HLSPlugin.__super__.createController.call(this);
 };
 
 /**
 */
-ControlsPlugin.prototype.listNotificationInterests = function() {
-  var key, value;
-  return ((function() {
-    var _results;
-    _results = [];
-    for (key in PanelNotifications) {
-      value = PanelNotifications[key];
-      _results.push(value);
-    }
-    return _results;
-  })()).concat([Notifications.MEDIA_CHANGE, Notifications.TIME_UPDATE, Notifications.DURATION_CHANGE, Notifications.PROGRESS, Notifications.ENDED, Notifications.ADD_CUE_POINTS, Notifications.REMOVE_CUE_POINTS, Notifications.DISABLE_FULL_SCREEN, Notifications.ENABLE_FULL_SCREEN, Notifications.READY, Notifications.ADD_CONTROL, Notifications.REMOVE_CONTROL, Notifications.ADD_CONTROL_STATE, Notifications.REMOVE_CONTROL_STATE, Notifications.ACTIVE_STATE_CHANGE, Notifications.START, Notifications.PLAY, Notifications.PAUSE, Notifications.ERROR, AdNotifications.BREAK_START, AdNotifications.BREAK_END, Notifications.CHANGE_MEDIA, Notifications.DISPLAY_TIME, Notifications.MEDIA_VALIDATED, Notifications.STARTED, Notifications.PLAY_REQUEST, Notifications.IS_LIVE]);
+HLSPlugin.prototype.logEvent = function(event) {
+  if (/(hlsFragLoading|hlsFragLoaded)/.test(event.type) === true) {
+    return;
+  }
+  HLSPlugin.__super__.logEvent.call(this, event);
+};
+
+/**
+ * Returns HLS PlaybackProxy
+ *
+*/
+HLSPlugin.prototype.getPlaybackProxy = function() {
+  return this.proxy.playbackProxy;
+};
+
+/**
+ * Returns instance of HLS player
+ *
+*/
+HLSPlugin.prototype.getInstance = function() {
+  return this.getPlaybackProxy().player;
 };
 
 /**
 */
-ControlsPlugin.prototype.listNotificationPublications = function() {
-  return ControlsPlugin.__super__.listNotificationPublications.call(this).concat([Notifications.CHANGE_ACTIVE_STATE, Notifications.TOGGLE_FULL_SCREEN, UserNotifications.SEEK, Notifications.TOGGLE_ACTIVE, UserNotifications.TOGGLE_PLAY_PAUSE, Notifications.END, Notifications.REPLAY]);
+HLSPlugin.prototype.listNotificationInterests = function() {
+  return HLSPlugin.__super__.listNotificationInterests.call(this).concat([AdNotifications.BREAK_START]);
 };
 
 /**
- * @param {string} value The contorls mode.
- * @expose
 */
-ControlsPlugin.prototype.setMode = function(value) {
-  this.proxy.setMode(value);
-  return value;
+HLSPlugin.prototype.listNotificationPublications = function() {
+  return HLSPlugin.__super__.listNotificationPublications.call(this).concat([Notifications.TIMED_METADATA, Notifications.QUALITY_LEVELS_LOADED, Notifications.QUALITY_CHANGE, Notifications.QUALITY_CHANGING, Notifications.FRAGMENT_LOAD_START, Notifications.FRAGMENT_LOADED]);
 };
+
+
+AMP.registerPlugin("hls", "html", HLSPlugin);
 
 /**
- * @return {string} The controls mode.
- * @expose
-*/
-ControlsPlugin.prototype.getMode = function() {
-  return this.proxy.getMode();
-};
-
-/**
- * @param {boolean} value The autohide flag.
- * @expose
-*/
-ControlsPlugin.prototype.setAutoHide = function(value) {
-  this.proxy.setAutoHide(value);
-  return value;
-};
-
-/**
- * @return {boolean} The autohide flag.
- * @expose
-*/
-ControlsPlugin.prototype.getAutoHide = function() {
-  return this.proxy.getAutoHide();
-};
-
-
-AMP.registerPlugin("controls", "html", ControlsPlugin);
-AMP.registerPlugin("controls", "flash", ControlsWrapper);
-AMP.registerPlugin("controls", "external", ControlsPlugin);
-
-/** 
- * @constructor 
+ * @constructor
  * @private
 */
 function MediaAnalyticsProxy(config) {
@@ -15908,7 +19133,8 @@ MediaAnalyticsProxy.NAME = ModuleProxy.NAME;
 
 MediaAnalyticsProxy.prototype.defaults = {
   config: null,
-  dimensions: null
+  dimensions: null,
+  iplookup: true
 };
 
 /**
@@ -15922,20 +19148,22 @@ MediaAnalyticsProxy.prototype.ready = function() {
   } catch (error) {
     this.facade.logger.error("[AMP MEDIA ANALYTICS ERROR]", "Could not set video tag", error);
   }
+  if (this.value.iplookup === false && typeof akamaiDisableServerIpLookup === "function") {
+    akamaiDisableServerIpLookup();
+  }
 };
 
 /**
 */
 MediaAnalyticsProxy.prototype.setDimensions = function(value) {
   var dimensions, key, val;
-  dimensions = this.configurationData.source.dimensions;
+  dimensions = this.data.dimensions;
   for (key in value) {
     val = value[key];
     if (val != null) {
       dimensions[key] = val;
     }
   }
-  this.configurationData.parse(this.configurationData.source);
   this.applyDimensions(dimensions);
   return value;
 };
@@ -16521,43 +19749,89 @@ MediaAnalyticsWrapper.prototype.setDimensions = function(value) {
   return value;
 };
 
-/** 
- * The PlayOverlayPlugin class.
- *   
+/**
+ * The DASHPlugin class.
+ *
  * @param {Module}  app     The parent module of this plugin.
  * @constructor
  * @private
  * @extends {Plugin}
 */
-function PlayOverlayPlugin() {
-  PlayOverlayPlugin.__super__.constructor.call(this);
+function DASHPlugin() {
+  DASHPlugin.__super__.constructor.call(this);
+  Object.defineProperties(this, {
+    instance: {
+      get: this.getInstance,
+      enumerable: true,
+      configurable: false
+    }
+  });
 }
 
 
-__extends(PlayOverlayPlugin, Plugin);
+__extends(DASHPlugin, Plugin);
 
 
-PlayOverlayPlugin.prototype.moduleName = "playoverlay";
-
-/** @override
-*/
-PlayOverlayPlugin.prototype.createModel = function() {};
+DASHPlugin.prototype.moduleName = "dash";
 
 /** @override
 */
-PlayOverlayPlugin.prototype.createView = function() {
-  this.registerMediator(new PlayOverlayMediator());
+DASHPlugin.prototype.createModel = function() {
+  this.proxy = new DASHProxy(this.config);
+  this.registerProxy(this.proxy);
 };
 
-/** @override
+/**
+ * Returns DASH PlaybackProxy
+ *
 */
-PlayOverlayPlugin.prototype.listNotificationPublications = function() {
-  return PlayOverlayPlugin.__super__.listNotificationPublications.call(this).concat([UserNotifications.TOGGLE_PLAY_PAUSE]);
+DASHPlugin.prototype.getPlaybackProxy = function() {
+  return this.proxy.playbackProxy;
+};
+
+/**
+ * Returns instance of DASH player
+ *
+*/
+DASHPlugin.prototype.getInstance = function() {
+  return this.getPlaybackProxy().player;
+};
+
+DASHPlugin.prototype.registered = function() {
+  this.player.registerCommand(Notifications.CHANGE_DISPLAY_STATE, DASHChangeDisplayStateCommand);
+  DASHPlugin.__super__.registered.call(this);
+};
+
+/**
+*/
+DASHPlugin.prototype.listNotificationPublications = function() {
+  return DASHPlugin.__super__.listNotificationPublications.call(this).concat([Notifications.FRAGMENT_LOAD_START, Notifications.FRAGMENT_LOADED]);
 };
 
 
-AMP.registerPlugin("playoverlay", "html", PlayOverlayPlugin);
-AMP.registerPlugin("playoverlay", "external", PlayOverlayPlugin);
+AMP.registerPlugin("dash", "html", DASHPlugin);
+
+function OctoshapeWrapper(player, config) {
+  OctoshapeWrapper.__super__.constructor.call(this, player, config);
+}
+
+
+__extends(OctoshapeWrapper, PluginWrapper);
+
+
+OctoshapeWrapper.NAME = "OctoshapeWrapper";
+
+OctoshapeWrapper.prototype.flashPlugins = [
+  {
+    id: "OctoShapeStreamingPlugin",
+    src: '#{paths.resources}plugins/infinitehd-osmf-plugin-1511180@v330-OSMF_1_6_MA.swf',
+    host: "osmf",
+    main: "com.octoshape.osmf.streamingplugin.OctoshapeStreamingPluginInfo"
+  }
+];
+
+
+AMP.registerPlugin("octoshape", "flash", OctoshapeWrapper);
 
 /**
  * @enum {string}
@@ -16565,477 +19839,11 @@ AMP.registerPlugin("playoverlay", "external", PlayOverlayPlugin);
  * @private
 */
 
-var EventManagementNotifications = {
-  EVENT_STATE_CHANGED: "eventStateChanged"
-};
-
-/**
- * Poller class
- *   
- * @constructor
- * @private
- * @extends {EventDispatcher}
- * @param {string} url
- * @param {number} interval
- * @param {string} type
- * @param {Object} headers
-*/
-function Poller(url, interval, type, headers) {
-  this.url = url;
-  this.interval = interval != null ? interval : 10000;
-  this.type = type != null ? type : null;
-  this.headers = headers != null ? headers : null;
-  Poller.__super__.constructor.call(this);
-}
-
-
-__extends(Poller, EventDispatcher);
-
-
-Poller.prototype.timeout = null;
-
-Poller.prototype.interval = null;
-
-Poller.prototype.url = null;
-
-Poller.prototype.lastModified = null;
-
-Poller.prototype.contentLenght = null;
-
-Poller.prototype.data = null;
-
-Poller.prototype.text = null;
-
-Poller.prototype.type = null;
-
-Poller.prototype.headers = null;
-
-Poller.prototype.useHeadRequest = true;
-
-Poller.prototype.xhr = null;
-
-/**
-*/
-Poller.prototype.start = function() {
-  if ((this.url != null) && this.url !== "") {
-    this.poll();
-  }
-};
-
-/**
-*/
-Poller.prototype.poll = function() {
-  var xhr,
-    _this = this;
-  xhr = Utils.getXHR();
-  if (!this.useHeadRequest) {
-    this.updateData();
-  } else {
-    xhr.onload = function(event) {
-      var contentLength, lastModified;
-      if (xhr.status === 304) {
-        _this.invoke();
-        return;
-      }
-      lastModified = xhr.getResponseHeader("Last-Modified");
-      contentLength = xhr.getResponseHeader("Content-Length");
-      if ((!(lastModified != null) && !(contentLength != null)) || ((lastModified != null) && lastModified !== _this.lastModified) || ((contentLength != null) && contentLength !== _this.contentLength)) {
-        _this.lastModified = lastModified;
-        _this.contentLength = contentLength;
-        _this.updateData();
-      } else {
-        _this.invoke();
-      }
-    };
-    xhr.onerror = function(event) {
-      _this.error(event);
-    };
-    xhr.open("HEAD", Utils.cacheBust(this.url), false);
-    this.applyHeaders();
-    if (this.lastModified != null) {
-      xhr.setRequestHeader("If-Modified-Since", this.lastModified);
-    }
-    xhr.send();
-  }
-};
-
-/**
-*/
-Poller.prototype.applyHeaders = function() {
-  if (!(this.headers != null)) {
-    return;
-  }
-  this.xhr.setRequestHeaders(this.headers);
-};
-
-/**
-*/
-Poller.prototype.updateData = function() {
-  var xhr,
-    _this = this;
-  xhr = Utils.getXHR();
-  xhr.open("GET", Utils.cacheBust(this.url), true);
-  xhr.onload = function(event) {
-    var text;
-    text = xhr.responseText;
-    _this.setText(text);
-    _this.invoke();
-  };
-  xhr.onerror = function(event) {
-    _this.error(event);
-  };
-  this.applyHeaders();
-  return xhr.send();
-};
-
-/**
-*/
-Poller.prototype.setText = function(value) {
-  var data;
-  if (value !== this.text) {
-    this.text = value;
-    data = this.text;
-    if (this.type === Utils.mimeTypes.json) {
-      try {
-        data = this.xhr.response;
-      } catch (error) {
-        data = this.text;
-      }
-    }
-    this.setData(data);
-  }
-  return value;
-};
-
-/**
-*/
-Poller.prototype.setData = function(value) {
-  if (value !== this.data) {
-    this.data = value;
-    this.dispatchEvent(new Event("datachanged", this.data));
-  }
-  return value;
-};
-
-/**
-*/
-Poller.prototype.error = function(error) {
-  Logger.error(event);
-  this.stop();
-};
-
-/**
-*/
-Poller.prototype.invoke = function() {
-  var _this = this;
-  this.stop();
-  this.timeout = setTimeout(function() {
-    _this.poll();
-  }, this.interval);
-};
-
-/**
-*/
-Poller.prototype.stop = function() {
-  clearTimeout(this.timeout);
-};
-
-function EventManagementWrapper() {
-  return EventManagementWrapper.__super__.constructor.apply(this, arguments);
-}
-
-
-__extends(EventManagementWrapper, PluginWrapper);
-
-
-EventManagementWrapper.NAME = "EventManagementWrapper";
-
-/** @override
-*/
-EventManagementWrapper.prototype.createFlashVars = function(flashvars) {
-  if (this.config.enabled != null) {
-    flashvars.eventmanagementstates_enabled = this.config.enabled;
-  }
-  if (this.config.url != null) {
-    flashvars.eventmanagementstates_status_url = this.config.url;
-  }
-  if (this.config.interval != null) {
-    flashvars.eventmanagementstates_status_interval = this.config.interval;
-  }
-  return flashvars;
-};
-
-/** @override
-*/
-EventManagementWrapper.prototype.createXML = function(xml) {
-  var application, eventmanagementstates, node, property, state, states, _i, _len, _ref;
-  application = xml.firstChild;
-  eventmanagementstates = xml.getElementsByTagName("eventmanagementstates");
-  if (!(eventmanagementstates != null) || eventmanagementstates.length === 0) {
-    eventmanagementstates = xml.createElement("eventmanagementstates");
-    application.appendChild(eventmanagementstates);
-  } else {
-    eventmanagementstates = eventmanagementstates[0];
-  }
-  states = xml.createElement("states");
-  eventmanagementstates.appendChild(states);
-  _ref = this.config.states;
-  for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-    state = _ref[_i];
-    node = xml.createElement("state");
-    states.appendChild(node);
-    property = xml.createElement("property");
-    property.setAttribute("key", "ID");
-    property.appendChild(XMLUtils.createTextContent(xml, state.id));
-    node.appendChild(property);
-    property = xml.createElement("property");
-    property.setAttribute("key", "POSTER_SRC");
-    property.appendChild(XMLUtils.createTextContent(xml, state.poster));
-    node.appendChild(property);
-    if (state.url != null) {
-      property = xml.createElement("property");
-      property.setAttribute("key", "URL");
-      property.appendChild(XMLUtils.createTextContent(xml, state.url));
-      node.appendChild(property);
-    }
-  }
-  return xml;
-};
-
-/**
- * The EventManagementMediator class.
- * 
- * @constructor
- * @private
- * @extends {OverlayMediator}
- * @param {Object} viewComponent
-*/
-function EventManagementMediator() {
-  EventManagementMediator.__super__.constructor.call(this);
-}
-
-
-__extends(EventManagementMediator, OverlayMediator);
-
-
-EventManagementMediator.prototype.componentName = "event-management";
-
-EventManagementMediator.prototype.poster = null;
-
-/**
- * @override
-*/
-EventManagementMediator.prototype.onRegister = function() {
-  EventManagementMediator.__super__.onRegister.call(this);
-  this.classList.add("hidden");
-  this.poster = this.create("event-poster", false, "img");
-};
-
-/**
- * @override
-*/
-EventManagementMediator.prototype.listNotificationInterests = function() {
-  return [EventManagementNotifications.EVENT_STATE_CHANGED];
-};
-
-/**
- * @override
-*/
-EventManagementMediator.prototype.handleNotification = function(notification) {
-  var state;
-  switch (notification.getName()) {
-    case EventManagementNotifications.EVENT_STATE_CHANGED:
-      state = notification.getBody();
-      if (state.id !== "on") {
-        if (state.poster != null) {
-          this.poster.src = state.poster;
-          this.viewComponent.appendChild(this.poster);
-        }
-        this.classList.remove("hidden");
-        this.sendNotification(Notifications.PAUSE);
-        this.sendNotification(Notifications.CHANGE_DISPLAY_STATE, DisplayState.NORMAL);
-      } else {
-        if (this.viewComponent.contains(this.poster)) {
-          this.viewComponent.removeChild(this.poster);
-        }
-        this.classList.add("hidden");
-      }
-  }
-};
-
-/**
- * @constructor
- * @private
- * @extends {amp.player.controller.PlayerCommand}
-*/
-function PluginEventCommand() {
-  PluginEventCommand.__super__.constructor.call(this);
-}
-
-
-__extends(PluginEventCommand, PluginCommand);
-
-
-/**
- *
-*/
-PluginEventCommand.prototype.dispatchEvent = function(type, detail) {
-  var event, name, _base;
-  if (typeof type !== "string") {
-    detail = type.getBody();
-    if (!(detail != null)) {
-      detail = {};
-    }
-    type = type.getName();
-  }
-  name = typeof (_base = this.plugin).getFeatureName === "function" ? _base.getFeatureName() : void 0;
-  if (name != null) {
-    type = type.replace(new RegExp("^(" + name + ")"), "");
-  }
-  name = this.plugin.getModuleName();
-  type = type.replace(new RegExp("^(" + name + ")"), "");
-  event = new Event(type, detail);
-  this.sendNotification(Notifications.DISPATCH_EVENT, event);
-};
-
-/**
- *
-*/
-PluginEventCommand.prototype.dispatchEventAfterCommand = function(type, detail) {
-  setTimeout(this.dispatchEvent.bind(this, type, detail), 0);
-};
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-PluginEventCommand.prototype.execute = function(notification) {
-  this.dispatchEvent(notification);
-};
-
-/**
- * The EventManagementStateChangeCommand class.
- *   
- * @constructor
- * @private
- * @extends {amp.plugins.PluginCommand}
-*/
-function EventManagementStateChangeCommand() {
-  EventManagementStateChangeCommand.__super__.constructor.call(this);
-}
-
-
-__extends(EventManagementStateChangeCommand, PluginEventCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-EventManagementStateChangeCommand.prototype.execute = function(notification) {
-  var locked;
-  locked = notification.getBody().id !== EventManagementProxy.ON.id;
-  this.sendNotification(Notifications.LOCK, locked);
-  EventManagementStateChangeCommand.__super__.execute.call(this, notification);
-  if (locked === false && this.facade.player.getAutoplay() === true) {
-    this.sendNotification(Notifications.PLAY);
-  }
-};
-
-/** 
- * @constructor
- * @private
-*/
-function EventManagementProxy(config) {
-  var _this = this;
-  EventManagementProxy.__super__.constructor.call(this, config);
-  this.poller = new Poller();
-  this.poller.ondatachanged = function(event) {
-    var id, state, _i, _len, _ref;
-    id = event.detail;
-    if (id === "on") {
-      state = EventManagementProxy.ON;
-    } else {
-      _ref = _this.data.states;
-      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        state = _ref[_i];
-        if (state.id === id) {
-          break;
-        }
-      }
-    }
-    if (state != null) {
-      return _this.setState(state);
-    }
-  };
-}
-
-
-__extends(EventManagementProxy, ModuleProxy);
-
-
-EventManagementProxy.NAME = ModuleProxy.NAME;
-
-EventManagementProxy.ON = {
-  id: "on"
-};
-
-EventManagementProxy.prototype.defaults = {
-  url: null,
-  interval: null,
-  states: null,
-  enabled: false
-};
-
-EventManagementProxy.prototype.poller = null;
-
-EventManagementProxy.prototype.state = null;
-
-EventManagementProxy.prototype.initialize = function() {
-  if (this.data.enabled === true) {
-    this.setURL(this.data.url);
-    this.setInterval(this.data.interval);
-    this.poller.start();
-  }
-};
-
-EventManagementProxy.prototype.setURL = function(value) {
-  this.data.url = this.poller.url = value;
-  return value;
-};
-
-EventManagementProxy.prototype.getURL = function() {
-  return this.data.url;
-};
-
-/**
- *
-*/
-EventManagementProxy.prototype.getInterval = function() {
-  return this.data.interval;
-};
-
-EventManagementProxy.prototype.setInterval = function(value) {
-  this.data.interval = this.poller.interval = value * 1000;
-  return value;
-};
-
-EventManagementProxy.prototype.setState = function(value) {
-  this.state = value;
-  this.sendNotification(EventManagementNotifications.EVENT_STATE_CHANGED, value);
-  return value;
-};
-
-EventManagementProxy.prototype.getState = function() {
-  return this.state;
+var FeedNotifications = {
+  LOAD_FEED: "loadfeed",
+  FEED_CHANGED: "feedchanged",
+  FEED_LOADED: "feedloaded",
+  FEED_ERROR: "feederror"
 };
 
 /** 
@@ -17086,13 +19894,13 @@ MediaAnalyticsPlugin.prototype.createController = function() {
   this.registerCommand(Notifications.CONTENT_CHANGED, MediaAnalyticsContentChangedCommand);
   this.registerCommand(Notifications.FRAGMENT_LOAD_START, MediaAnalyticsFragmentLoadStartCommand);
   this.registerCommand(Notifications.FRAGMENT_LOADED, MediaAnalyticsFragmentLoadedCommand);
-  this.registerCommand(Notifications.BITRATE_CHANGE, MediaAnalyticsBitrateSwitchCommand);
+  this.registerCommand(Notifications.QUALITY_CHANGE, MediaAnalyticsBitrateSwitchCommand);
 };
 
 /**
 */
 MediaAnalyticsPlugin.prototype.listNotificationInterests = function() {
-  return [Notifications.READY, Notifications.MEDIA_CHANGE, AdNotifications.BREAK_START, AdNotifications.BREAK_END, AdNotifications.AD_LOADED, AdNotifications.AD_STARTED, AdNotifications.AD_TIME_UPDATE, AdNotifications.AD_ENDED, MediaAnalyticsNotifications.SET_DIMENSIONS, Notifications.CONTENT_CHANGED, Notifications.FRAGMENT_LOAD_START, Notifications.FRAGMENT_LOADED, Notifications.BITRATE_CHANGE];
+  return [Notifications.READY, Notifications.MEDIA_CHANGE, AdNotifications.BREAK_START, AdNotifications.BREAK_END, AdNotifications.AD_LOADED, AdNotifications.AD_STARTED, AdNotifications.AD_TIME_UPDATE, AdNotifications.AD_ENDED, MediaAnalyticsNotifications.SET_DIMENSIONS, Notifications.CONTENT_CHANGED, Notifications.FRAGMENT_LOAD_START, Notifications.FRAGMENT_LOADED, Notifications.QUALITY_CHANGE];
 };
 
 /**
@@ -17110,252 +19918,9 @@ MediaAnalyticsPlugin.prototype.setDimensions = function(value) {
 AMP.registerPlugin("mediaanalytics", "html", MediaAnalyticsPlugin);
 AMP.registerPlugin("mediaanalytics", "flash", MediaAnalyticsWrapper);
 
-function BrandingWrapper() {
-  return BrandingWrapper.__super__.constructor.apply(this, arguments);
-}
-
-
-__extends(BrandingWrapper, PluginWrapper);
-
-
-BrandingWrapper.NAME = "BrandingWrapper";
-
-BrandingWrapper.prototype.flashView = {
-  elements: {
-    logoOverlay: {
-      attributes: {
-        style: "width: 150px; height: 53px; right: 15px; top: 15px; opacity: 0.5;"
-      }
-    }
-  }
-};
-
-BrandingWrapper.prototype.createFlashVars = function(flashvars) {
-  if (this.config.id != null) {
-    flashvars.branding = this.config.id;
-  }
-  return flashvars;
-};
-
-BrandingWrapper.prototype.createXML = function(xml) {
-  var backgroundImage, style, view, _ref, _ref1, _ref2;
-  view = this.player.flashView;
-  if ((((_ref = this.config) != null ? _ref.logo : void 0) != null) && (view != null)) {
-    backgroundImage = "background-image: url('" + this.config.logo + "');";
-    style = ((_ref1 = view.elements.logoOverlay) != null ? (_ref2 = _ref1.attributes) != null ? _ref2.style : void 0 : void 0) || "";
-    if (style.indexOf("background-image:") !== -1) {
-      style = style.replace(/background-image: [A-Za-z0-9_\-\.\/\\;\(\)"'#{}]+/, backgroundImage);
-    } else {
-      style = backgroundImage + style;
-    }
-    view.elements.logoOverlay.attributes.style = style;
-  }
-  return xml;
-};
-
-/**
- * The AdChoicesMediator class.
- * 
- * @constructor
- * @private
- * @extends {OverlayMediator}
- * @param {Object} viewComponent
-*/
-function BrandingMediator() {
-  BrandingMediator.__super__.constructor.call(this);
-}
-
-
-__extends(BrandingMediator, OverlayMediator);
-
-
-BrandingMediator.prototype.componentName = "branding";
-
-BrandingMediator.prototype.logo = null;
-
-BrandingMediator.prototype.text = null;
-
-BrandingMediator.prototype.container = null;
-
-BrandingMediator.prototype.onRegister = function() {
-  BrandingMediator.__super__.onRegister.call(this);
-  this.container = this.create("branding-container");
-  this.logo = this.create(["branding-image", "hidden"], this.container, "img");
-  this.text = this.create("branding-text", this.container);
-};
-
-/**
- * @override
-*/
-BrandingMediator.prototype.listNotificationInterests = function() {
-  return [Notifications.READY];
-};
-
-/**
- * @override
-*/
-BrandingMediator.prototype.handleNotification = function(notification) {
-  var branding, href;
-  switch (notification.getName()) {
-    case Notifications.READY:
-      branding = notification.getBody().branding;
-      if (!(branding != null)) {
-        return;
-      }
-      if (branding.logo != null) {
-        this.logo.src = this.facade.evaluatePaths(branding.logo);
-        ClassList.remove("hidden", this.logo, Namespace.PREFIX);
-      } else {
-        ClassList.add("hidden", this.logo, Namespace.PREFIX);
-      }
-      href = this.config.getDomain();
-      if ((href != null) && href.indexOf("http") !== 0) {
-        href = location.protocol + "//" + href;
-        this.text.innerHTML = "<span>" + (this.localizationManager.getString(LocalizationConstants.MSG_VIEW_ALL)) + "<a href=\"" + href + "\" target=\"" + (this.config.getTarget()) + "\">" + (this.config.getDomain()) + "</a> " + (this.localizationManager.getString(LocalizationConstants.MSG_VIDEO)) + ".";
-      }
-  }
-};
-
-/** 
- * @constructor 
- * @private
-*/
-function BrandingProxy(config) {
-  BrandingProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(BrandingProxy, ModuleProxy);
-
-
-/** @static
-*/
-BrandingProxy.NAME = ModuleProxy.NAME;
-
-BrandingProxy.prototype.defaults = {
-  id: null,
-  title: null,
-  link: null,
-  logo: null,
-  target: null
-};
-
-/**
- *
-*/
-BrandingProxy.prototype.getID = function() {
-  return this.data.id;
-};
-
-BrandingProxy.prototype.setID = function(value) {
-  return this.data.id = value;
-};
-
-/**
- *
-*/
-BrandingProxy.prototype.getTarget = function() {
-  return this.data.target;
-};
-
-BrandingProxy.prototype.setTarget = function(value) {
-  return this.data.target = value;
-};
-
-/**
- *
-*/
-BrandingProxy.prototype.getTitle = function() {
-  return this.data.title;
-};
-
-BrandingProxy.prototype.setTitle = function(value) {
-  return this.data.title = value;
-};
-
-/**
- *
-*/
-BrandingProxy.prototype.getLink = function() {
-  return this.data.link;
-};
-
-BrandingProxy.prototype.setLink = function(value) {
-  return this.data.link = value;
-};
-
-/**
- *
-*/
-BrandingProxy.prototype.getLogo = function() {
-  return this.data.logo;
-};
-
-BrandingProxy.prototype.setLogo = function(value) {
-  return this.data.logo = value;
-};
-
-/**
- * @enum {string}
- * @const
- * @private
-*/
-
-var FeedNotifications = {
-  LOAD_FEED: "loadfeed",
-  FEED_CHANGED: "feedchanged",
-  FEED_LOADED: "feedloaded",
-  FEED_ERROR: "feederror"
-};
-
-/** 
- * The EventManagementPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @extends {Plugin}
- * @private
-*/
-function EventManagementPlugin() {
-  EventManagementPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(EventManagementPlugin, Plugin);
-
-
-EventManagementPlugin.prototype.moduleName = "eventmanagement";
-
-/** @override
-*/
-EventManagementPlugin.prototype.createModel = function() {
-  this.registerProxy(new EventManagementProxy(this.config));
-};
-
-/** @override
-*/
-EventManagementPlugin.prototype.createController = function() {
-  EventManagementPlugin.__super__.createController.call(this);
-  this.registerCommand(EventManagementNotifications.EVENT_STATE_CHANGED, EventManagementStateChangeCommand);
-};
-
-EventManagementPlugin.prototype.createView = function() {
-  this.registerMediator(new EventManagementMediator());
-};
-
-/** @override
-*/
-EventManagementPlugin.prototype.listNotificationPublications = function() {
-  return EventManagementPlugin.__super__.listNotificationPublications.call(this).concat([Notifications.CHANGE_DISPLAY_STATE, Notifications.PLAY, Notifications.PAUSE, Notifications.LOCK, EventManagementNotifications.EVENT_STATE_CHANGED]);
-};
-
-
-AMP.registerPlugin("eventmanagement", "html", EventManagementPlugin);
-AMP.registerPlugin("eventmanagement", "flash", EventManagementWrapper);
-
 /**
  * The FeedProxy class.
- *   
+ *
  * @constructor
  * @private
  * @extends {ModuleProxy}
@@ -17385,15 +19950,15 @@ FeedProxy.prototype.setURL = function(value) {
   var _this = this;
   this.data.url = this.facade.evaluatePaths(value);
   this.sendNotification(Notifications.DISPATCH_EVENT, new Event("request", this.data.url));
-  this.helper.getFeed(this.data.url, function(feed) {
+  this.helper.getFeed(this.data.url).then(function(feed) {
     _this.sendNotification(FeedNotifications.FEED_LOADED, feed);
     _this.sendNotification(FeedNotifications.CHANGE_FEED, feed);
-  }, function(error) {
+  })["catch"](function(error) {
     _this.sendNotification(FeedNotifications.FEED_ERROR, {
       error: error,
       url: value
     });
-    Logger.error("[AMP Feed Load Error]", _this.data.url, error);
+    Logger.instance.error("[AMP Feed Load Error]", _this.data.url, error);
   });
   return value;
 };
@@ -17414,10 +19979,14 @@ FeedProxy.prototype.getFeedData = function() {
 };
 
 FeedProxy.prototype.invoke = function() {
+  var func;
   if ((this.data.url != null) && this.data.url !== "") {
-    this.sendNotification(FeedNotifications.LOAD_FEED, this.data.url);
+    func = this.sendNotification.bind(this, FeedNotifications.LOAD_FEED, this.data.url);
   } else if (this.data.data != null) {
-    setTimeout(this.sendNotification.bind(this, FeedNotifications.CHANGE_FEED, this.data.data), 1);
+    func = this.sendNotification.bind(this, FeedNotifications.CHANGE_FEED, this.data.data);
+  }
+  if (func != null) {
+    setTimeout(func, 1);
   }
 };
 
@@ -17638,54 +20207,25 @@ FeedWrapper.prototype.getData = function() {
 };
 
 /** 
- * The BrandingPlugin class.
+ * The OctoShapePlugin class.
  *   
  * @param {Module}  app     The parent module of this plugin.
  * @constructor
  * @private
  * @extends {Plugin}
 */
-function BrandingPlugin() {
-  BrandingPlugin.__super__.constructor.call(this);
+function OctoshapePlugin() {
+  OctoshapePlugin.__super__.constructor.call(this);
 }
 
 
-__extends(BrandingPlugin, Plugin);
+__extends(OctoshapePlugin, Plugin);
 
 
-BrandingPlugin.NAME = "BrandingPlugin";
-
-BrandingPlugin.prototype.moduleName = "branding";
-
-/** @override
-*/
-BrandingPlugin.prototype.createModel = function() {
-  this.registerProxy(new BrandingProxy(this.config));
-};
-
-BrandingPlugin.prototype.createView = function() {
-  this.registerMediator(new BrandingMediator());
-};
-
-/** @override
-*/
-BrandingPlugin.prototype.onRegister = function() {
-  if (this.config.id != null) {
-    this.sendNotification(Notifications.ADD_APPLICATION_STATE, "branding-" + this.config.id);
-  }
-  BrandingPlugin.__super__.onRegister.call(this);
-};
-
-/**
-*/
-BrandingPlugin.prototype.listNotificationInterests = function() {
-  return [Notifications.READY];
-};
+OctoshapePlugin.prototype.moduleName = "octoshape";
 
 
-AMP.registerPlugin("branding", "html", BrandingPlugin);
-AMP.registerPlugin("branding", "flash", BrandingWrapper);
-AMP.registerPlugin("branding", "external", BrandingPlugin);
+AMP.registerPlugin("octoshape", "html", OctoshapePlugin);
 
 /**
  * @enum {string}
@@ -17987,9 +20527,9 @@ AutoAdvanceMediator.prototype.handleNotification = function(notification) {
   }
 };
 
-/** 
+/**
  * The FeedPlugin class.
- *   
+ *
  * @param {Module}  app     The parent module of this plugin.
  * @constructor
  * @private
@@ -17997,6 +20537,24 @@ AutoAdvanceMediator.prototype.handleNotification = function(notification) {
 */
 function FeedPlugin() {
   FeedPlugin.__super__.constructor.call(this);
+  try {
+    Object.defineProperties(this, {
+      url: {
+        get: this.getURL,
+        set: this.setURL,
+        enumerable: true,
+        configurable: false
+      },
+      data: {
+        get: this.getData,
+        set: this.setData,
+        enumerable: true,
+        configurable: false
+      }
+    });
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 
@@ -18082,90 +20640,6 @@ FeedPlugin.prototype.getData = function() {
 
 AMP.registerPlugin("feed", "html", FeedPlugin);
 AMP.registerPlugin("feed", "flash", FeedWrapper);
-
-/**
- * @enum {string}
- * @const
- * @private
-*/
-
-var FeatureNotifications = {
-  REGISTER_FEATURE: "registerfeature"
-};
-
-/** 
- * The AutoadvancePlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Plugin}
-*/
-function AutoAdvancePlugin() {
-  AutoAdvancePlugin.__super__.constructor.call(this);
-}
-
-
-__extends(AutoAdvancePlugin, Plugin);
-
-
-AutoAdvancePlugin.NAME = "AutoAdvancePlugin";
-
-AutoAdvancePlugin.prototype.moduleName = "autoadvance";
-
-/** @override
-*/
-AutoAdvancePlugin.prototype.createController = function() {
-  AutoAdvancePlugin.__super__.createController.call(this);
-  this.registerCommand(AutoAdvanceNotifications.START, AutoAdvanceStartCommand);
-  this.registerCommand(AutoAdvanceNotifications.ADVANCE, AutoAdvanceAdvanceCommand);
-  this.registerCommand(Notifications.MEDIA_SEQUENCE_ENDED, AutoAdvanceEndedCommand);
-  this.registerCommand(Notifications.CHANGE_MEDIA, AutoAdvanceStopCommand);
-  this.registerCommand(Notifications.PLAY, AutoAdvanceStopCommand);
-  this.registerCommand(Notifications.PLAYING, AutoAdvanceStopCommand);
-  this.registerCommand(Notifications.REPLAY, AutoAdvanceStopCommand);
-  this.registerCommand(Notifications.SEEK, AutoAdvanceStopCommand);
-  this.registerCommand(UserNotifications.SEEK, AutoAdvanceStopCommand);
-  this.registerCommand(Notifications.TIME_UPDATE, PluginEventCommand);
-  this.registerCommand(Notifications.STOP, PluginEventCommand);
-};
-
-/** @override
-*/
-AutoAdvancePlugin.prototype.createModel = function() {
-  this.registerProxy(new AutoAdvanceProxy(this.config));
-};
-
-/** @override
-*/
-AutoAdvancePlugin.prototype.createView = function() {
-  this.registerMediator(new AutoAdvanceMediator());
-};
-
-/** @override
-*/
-AutoAdvancePlugin.prototype.listNotificationInterests = function() {
-  return [Notifications.CHANGE_MEDIA, Notifications.PLAY, Notifications.PLAYING, Notifications.REPLAY, Notifications.MEDIA_SEQUENCE_ENDED, Notifications.SEEK, UserNotifications.SEEK];
-};
-
-/**
-*/
-AutoAdvancePlugin.prototype.listNotificationPublications = function() {
-  var key, value;
-  return AutoAdvancePlugin.__super__.listNotificationPublications.call(this).concat((function() {
-    var _results;
-    _results = [];
-    for (key in AutoAdvanceNotifications) {
-      value = AutoAdvanceNotifications[key];
-      _results.push(value);
-    }
-    return _results;
-  })());
-};
-
-
-AMP.registerPlugin("autoadvance", "html", AutoAdvancePlugin);
-AMP.registerPlugin("autoadvance", "flash", AutoAdvanceWrapper);
 
 /**
  * @enum {string}
@@ -18437,10 +20911,10 @@ RecommendationsPlayStateChangeCommand.prototype.execute = function(notification)
   }
 };
 
-/** 
+/**
  * Proxy for recommendations feature
- * 
- * @constructor 
+ *
+ * @constructor
  * @private
 */
 function RecommendationsProxy(config) {
@@ -18500,21 +20974,21 @@ RecommendationsProxy.prototype.setTarget = function(value) {
 
 /**
  *
- * 
- * @param {String} value 
+ *
+ * @param {String} value
  *    The new display state of the player
- * @returns {String} 
+ * @returns {String}
  *    The display state of the player
  * @type {String}
 */
 RecommendationsProxy.prototype.invoke = function() {
-  var url, xhr;
+  var url;
   url = this.getURL();
   if (!(url != null) || url === "") {
     this.facade.logger.error("[AMP RECOMMENDATIONS ERROR]", "Load Error: No url provided");
     return;
   }
-  xhr = Utils.getJson(url, this.onload.bind(this), this.onerror.bind(this));
+  Utils.getFeed(url).then(this.onload.bind(this))["catch"](this.onerror.bind(this));
 };
 
 RecommendationsProxy.prototype.onload = function(json) {
@@ -18614,52 +21088,78 @@ RecommendationsMediator.prototype.addElement = function(recommendation) {
 };
 
 /** 
- * The Feature class. Acts as a base for features.
+ * The AutoadvancePlugin class.
  *   
  * @param {Module}  app     The parent module of this plugin.
- * @param {Object}  config  The plugin's configuration object.
  * @constructor
  * @private
  * @extends {Plugin}
 */
-function Feature() {
-  Feature.__super__.constructor.call(this);
+function AutoAdvancePlugin() {
+  AutoAdvancePlugin.__super__.constructor.call(this);
 }
 
 
-__extends(Feature, Plugin);
+__extends(AutoAdvancePlugin, Plugin);
 
 
-Feature.NAME = "Feature";
+AutoAdvancePlugin.NAME = "AutoAdvancePlugin";
 
-Feature.prototype.featureName = null;
+AutoAdvancePlugin.prototype.moduleName = "autoadvance";
 
-/**
+/** @override
 */
-Feature.prototype.getFeatureName = function() {
-  return this.featureName;
-};
-
-/**
-*/
-Feature.prototype.registerFeature = function() {
-  if (this.getFeatureName() != null) {
-    this.player.sendNotification(FeatureNotifications.REGISTER_FEATURE, this);
-  }
+AutoAdvancePlugin.prototype.createController = function() {
+  AutoAdvancePlugin.__super__.createController.call(this);
+  this.registerCommand(AutoAdvanceNotifications.START, AutoAdvanceStartCommand);
+  this.registerCommand(AutoAdvanceNotifications.ADVANCE, AutoAdvanceAdvanceCommand);
+  this.registerCommand(Notifications.MEDIA_SEQUENCE_ENDED, AutoAdvanceEndedCommand);
+  this.registerCommand(Notifications.CHANGE_MEDIA, AutoAdvanceStopCommand);
+  this.registerCommand(Notifications.PLAY, AutoAdvanceStopCommand);
+  this.registerCommand(Notifications.PLAYING, AutoAdvanceStopCommand);
+  this.registerCommand(Notifications.REPLAY, AutoAdvanceStopCommand);
+  this.registerCommand(Notifications.SEEK, AutoAdvanceStopCommand);
+  this.registerCommand(UserNotifications.SEEK, AutoAdvanceStopCommand);
+  this.registerCommand(Notifications.TIME_UPDATE, PluginEventCommand);
+  this.registerCommand(Notifications.STOP, PluginEventCommand);
 };
 
 /** @override
 */
-Feature.prototype.onRegister = function() {
-  this.registerFeature();
-  Feature.__super__.onRegister.call(this);
+AutoAdvancePlugin.prototype.createModel = function() {
+  this.registerProxy(new AutoAdvanceProxy(this.config));
 };
 
 /** @override
 */
-Feature.prototype.listNotificationPublications = function() {
-  return Feature.__super__.listNotificationPublications.call(this).concat([FeatureNotifications.REGISTER_FEATURE]);
+AutoAdvancePlugin.prototype.createView = function() {
+  this.registerMediator(new AutoAdvanceMediator());
 };
+
+/** @override
+*/
+AutoAdvancePlugin.prototype.listNotificationInterests = function() {
+  return [Notifications.CHANGE_MEDIA, Notifications.PLAY, Notifications.PLAYING, Notifications.REPLAY, Notifications.MEDIA_SEQUENCE_ENDED, Notifications.SEEK, UserNotifications.SEEK];
+};
+
+/**
+*/
+AutoAdvancePlugin.prototype.listNotificationPublications = function() {
+  var key, value;
+  return AutoAdvancePlugin.__super__.listNotificationPublications.call(this).concat((function() {
+    var _results;
+    _results = [];
+    for (key in AutoAdvanceNotifications) {
+      value = AutoAdvanceNotifications[key];
+      _results.push(value);
+    }
+    return _results;
+  })());
+};
+
+
+AMP.registerPlugin("autoadvance", "html", AutoAdvancePlugin);
+AMP.registerPlugin("autoadvance", "flash", AutoAdvanceWrapper);
 
 /**
  * The AdChoicesMediator class.
@@ -18879,6 +21379,7 @@ RecommendationsPlugin.prototype.moduleName = "recommendations";
 /** @override
 */
 RecommendationsPlugin.prototype.createController = function() {
+  RecommendationsPlugin.__super__.createController.call(this);
   this.registerCommand(RecommendationsNotifications.RECOMMENDATION_SELECTED, RecommendationSelectedCommand);
   this.registerCommand(Notifications.START, RecommendationsPlayCommand);
   this.registerCommand(Notifications.PLAY_STATE_CHANGE, RecommendationsPlayStateChangeCommand);
@@ -18970,763 +21471,6 @@ RecommendationsPlugin.prototype.setTarget = function(value) {
 
 AMP.registerPlugin("recommendations", "html", RecommendationsPlugin);
 AMP.registerPlugin("recommendations", "flash", RecommendationsWrapper);
-
-/** 
- * @constructor 
- * @private
-*/
-function NielsenProxy(config) {
-  NielsenProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(NielsenProxy, DataBoundConfigurationProxy);
-
-
-NielsenProxy.prototype.configurationName = "nielsen";
-
-/** @static
-*/
-NielsenProxy.NAME = ModuleProxy.NAME;
-
-NielsenProxy.cg = "OnDemand";
-
-NielsenProxy.url = "http://secure-us.imrworldwide.com/cgi-bin/m";
-
-NielsenProxy.prototype.defaults = {
-  url: null,
-  data: {
-    ci: null,
-    c6: null,
-    cg: null,
-    tl: null
-  },
-  events: null
-};
-
-NielsenProxy.prototype.getTitle = function() {
-  return this.title;
-};
-
-NielsenProxy.prototype.setTitle = function(value) {
-  return this.title = value;
-};
-
-/**
-*/
-NielsenProxy.prototype.start = function() {
-  var url;
-  url = this.constructURL("video", "started");
-  Utils.beacon(url, "nielsenBeacon");
-};
-
-NielsenProxy.prototype.end = function() {
-  var url;
-  url = this.constructURL("video", "ended");
-  Utils.beacon(url, "nielsenBeacon");
-};
-
-NielsenProxy.prototype.constructURL = function(target, type) {
-  var c6, cg, ci, event, events, item, tl, url, _i, _len, _ref, _ref1, _ref2, _ref3, _ref4;
-  url = this.url || NielsenProxy.url;
-  events = (_ref = this.value.events) != null ? _ref[target] : void 0;
-  if (events != null) {
-    for (_i = 0, _len = events.length; _i < _len; _i++) {
-      item = events[_i];
-      if (item.type === type) {
-        event = item;
-      }
-    }
-  }
-  ci = (event != null ? (_ref1 = event.data) != null ? _ref1.ci : void 0 : void 0) || this.value.data.ci;
-  c6 = (event != null ? (_ref2 = event.data) != null ? _ref2.c6 : void 0 : void 0) || this.value.data.c6;
-  cg = (event != null ? (_ref3 = event.data) != null ? _ref3.cg : void 0 : void 0) || this.value.data.cg || NielsenProxy.cg;
-  tl = (event != null ? (_ref4 = event.data) != null ? _ref4.tl : void 0 : void 0) || this.value.data.tl;
-  return "" + url + "?ci=" + ci + "&c6=" + c6 + "&cc=1&tl=" + tl + "&cg=" + cg + "&rnd=" + (Date.now());
-};
-
-function NielsenWrapper() {
-  return NielsenWrapper.__super__.constructor.apply(this, arguments);
-}
-
-
-__extends(NielsenWrapper, PluginWrapper);
-
-
-NielsenWrapper.NAME = "NielsenWrapper";
-
-NielsenWrapper.prototype.flashPlugins = [
-  {
-    id: "NielsenPlugin",
-    src: '#{paths.resources}plugins/NielsenPlugin.swf',
-    blocking: false,
-    host: "akamai",
-    main: "NielsenPlugin",
-    type: "application/x-shockwave-flash"
-  }
-];
-
-/** @override
-*/
-NielsenWrapper.prototype.createXML = function(xml) {
-  var application, element, event, events, map, metrics, node, prop, props, text, txtTest, type, urlElement, vendor, _i, _j, _len, _len1, _ref, _ref1, _ref2, _ref3;
-  if (!(((_ref = this.config) != null ? _ref.events : void 0) != null)) {
-    return;
-  }
-  application = xml.firstChild;
-  metrics = xml.getElementsByTagName("metrics")[0];
-  if (!(metrics != null)) {
-    metrics = xml.createElement("metrics");
-    application.appendChild(metrics);
-  }
-  vendor = xml.createElement("vendor");
-  vendor.setAttribute("id", "nielsen");
-  metrics.appendChild(vendor);
-  map = {
-    ads: {
-      started: "adStart",
-      ended: "adComplete"
-    },
-    video: {
-      started: "videoStart",
-      ended: "videoComplete"
-    }
-  };
-  props = [
-    {
-      value: "ci",
-      key: "NIELSEN_CI"
-    }, {
-      value: "cg",
-      key: "NIELSEN_CG"
-    }, {
-      value: "tl",
-      key: "NIELSEN_TL"
-    }, {
-      value: "c6",
-      key: "NIELSEN_C6"
-    }
-  ];
-  if (this.config.url != null) {
-    urlElement = xml.createElement("property");
-    urlElement.setAttribute("key", "serviceURL");
-    txtTest = XMLUtils.createTextContent(xml, this.config.url.toString());
-    urlElement.appendChild(txtTest);
-    vendor.appendChild(urlElement);
-  }
-  _ref1 = this.config.events;
-  for (type in _ref1) {
-    events = _ref1[type];
-    if ((events != null) && events.length > 0) {
-      for (_i = 0, _len = events.length; _i < _len; _i++) {
-        event = events[_i];
-        node = xml.createElement("property");
-        node.setAttribute("key", map[type][event.type]);
-        vendor.appendChild(node);
-        for (_j = 0, _len1 = props.length; _j < _len1; _j++) {
-          prop = props[_j];
-          text = ((_ref2 = event.data) != null ? _ref2[prop.value] : void 0) || ((_ref3 = this.config.data) != null ? _ref3[prop.value] : void 0);
-          if ((text != null) && text !== "") {
-            element = xml.createElement("property");
-            element.setAttribute("key", prop.key);
-            text = XMLUtils.createTextContent(xml, text);
-            element.appendChild(text);
-            node.appendChild(element);
-          }
-        }
-      }
-    }
-  }
-  return xml;
-};
-
-/**
- * The NielsenEndCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function NielsenEndCommand() {
-  NielsenEndCommand.__super__.constructor.call(this);
-}
-
-
-__extends(NielsenEndCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-NielsenEndCommand.prototype.execute = function(notification) {
-  var nielsen;
-  nielsen = this.facade.retrieveProxy(NielsenProxy.NAME);
-  nielsen.end();
-};
-
-/**
- * The NielsenStartCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function NielsenStartCommand() {
-  NielsenStartCommand.__super__.constructor.call(this);
-}
-
-
-__extends(NielsenStartCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-NielsenStartCommand.prototype.execute = function(notification) {
-  var nielsen;
-  nielsen = this.facade.retrieveProxy(NielsenProxy.NAME);
-  nielsen.start();
-};
-
-/** 
- * The RecommendationsGridPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {RecommendationsPlugin}
-*/
-function RecommendationsGridPlugin() {
-  RecommendationsGridPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(RecommendationsGridPlugin, RecommendationsPlugin);
-
-
-RecommendationsGridPlugin.prototype.moduleName = "recommendationsgrid";
-
-/** @override
-*/
-RecommendationsGridPlugin.prototype.createView = function() {
-  if (this.config.view === "tile") {
-    this.registerMediator(new RecommendationsFluidGridMediator());
-  } else {
-    this.registerMediator(new RecommendationsGridMediator());
-  }
-};
-
-/**
-*/
-RecommendationsGridPlugin.prototype.listNotificationInterests = function() {
-  return RecommendationsGridPlugin.__super__.listNotificationInterests.call(this).concat([Notifications.ENDED, Notifications.CHANGE_MEDIA, Notifications.PLAY, Notifications.PLAYING, Notifications.REPLAY]);
-};
-
-
-AMP.registerPlugin("recommendationsgrid", "html", RecommendationsGridPlugin);
-AMP.registerPlugin("recommendationsgrid", "flash", RecommendationsWrapper);
-
-function NielsensdkWrapper() {
-  return NielsensdkWrapper.__super__.constructor.apply(this, arguments);
-}
-
-
-__extends(NielsensdkWrapper, PluginWrapper);
-
-
-NielsensdkWrapper.NAME = "NielsensdkWrapper";
-
-NielsensdkWrapper.prototype.flashPlugins = [
-  {
-    id: "NielsenSDKPlugin",
-    src: '#{paths.resources}plugins/NielsenSDKPlugin.swf',
-    blocking: false,
-    host: "akamai",
-    main: "NielsenSDKPlugin"
-  }
-];
-
-/** @override
-*/
-NielsensdkWrapper.prototype.createXML = function(xml) {
-  var application, element, event, events, map, metrics, node, pluginProp, pluginProps, prop, props, text, type, vendor, _i, _j, _k, _len, _len1, _len2, _ref, _ref1, _ref2, _ref3;
-  if (!(((_ref = this.config) != null ? _ref.events : void 0) != null)) {
-    return;
-  }
-  application = xml.firstChild;
-  metrics = xml.getElementsByTagName("metrics")[0];
-  if (!(metrics != null)) {
-    metrics = xml.createElement("metrics");
-    application.appendChild(metrics);
-  }
-  vendor = xml.createElement("vendor");
-  vendor.setAttribute("id", "nielsenSDK");
-  metrics.appendChild(vendor);
-  map = {
-    ads: {
-      started: "adStart",
-      ended: "adComplete"
-    },
-    video: {
-      started: "videoStart",
-      resume: "videoResume",
-      ended: "videoComplete"
-    }
-  };
-  props = [
-    {
-      value: "censusCategory",
-      key: "NIELSEN_CENSUS_CATEGORY"
-    }, {
-      value: "category",
-      key: "NIELSEN_CATEGORY"
-    }, {
-      value: "episodeTitle",
-      key: "NIELSEN_EPISODE_TITLE"
-    }, {
-      value: "videoType",
-      key: "NIELSEN_VIDEO_TYPE"
-    }, {
-      value: "length",
-      key: "NIELSEN_LENGTH"
-    }, {
-      value: "assetId",
-      key: "NIELSEN_ASSET_ID"
-    }, {
-      value: "dprFlag",
-      key: "NIELSEN_DPR_FLAG"
-    }
-  ];
-  pluginProps = [
-    {
-      value: "apid",
-      key: "NIELSEN_APID"
-    }, {
-      value: "sfcode",
-      key: "NIELSEN_SF_CODE"
-    }, {
-      value: "apn",
-      key: "NIELSEN_APN"
-    }, {
-      value: "fbTag",
-      key: "NIELSEN_FBTAG"
-    }
-  ];
-  for (_i = 0, _len = pluginProps.length; _i < _len; _i++) {
-    pluginProp = pluginProps[_i];
-    if (this.config.data[pluginProp.value] != null) {
-      this.createProperty(xml, pluginProp.key, this.config.data[pluginProp.value], vendor);
-    }
-  }
-  _ref1 = this.config.events;
-  for (type in _ref1) {
-    events = _ref1[type];
-    if ((events != null) && events.length > 0) {
-      for (_j = 0, _len1 = events.length; _j < _len1; _j++) {
-        event = events[_j];
-        node = xml.createElement("property");
-        node.setAttribute("key", map[type][event.type]);
-        vendor.appendChild(node);
-        for (_k = 0, _len2 = props.length; _k < _len2; _k++) {
-          prop = props[_k];
-          text = ((_ref2 = event.data) != null ? _ref2[prop.value] : void 0) || ((_ref3 = this.config.data) != null ? _ref3[prop.value] : void 0);
-          if ((text != null) && text !== "") {
-            element = xml.createElement("property");
-            element.setAttribute("key", prop.key);
-            text = XMLUtils.createTextContent(xml, text);
-            element.appendChild(text);
-            node.appendChild(element);
-          }
-        }
-      }
-    }
-  }
-  return xml;
-};
-
-/** 
- * @constructor 
- * @private
-*/
-function NielsensdkProxy(config) {
-  NielsensdkProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(NielsensdkProxy, PluginProxy);
-
-
-/** @static
-*/
-NielsensdkProxy.NAME = ModuleProxy.NAME;
-
-NielsensdkProxy.prototype.defaults = {
-  data: null,
-  events: null,
-  plugin: {
-    js: "http://secure-us.imrworldwide.com/novms/js/2/ggcmb400.js"
-  }
-};
-
-NielsensdkProxy.prototype.nielsensdkSDK = null;
-
-NielsensdkProxy.prototype.cur_position = 0;
-
-NielsensdkProxy.prototype.timer = null;
-
-NielsensdkProxy.prototype.queryInterval = 2;
-
-NielsensdkProxy.prototype.isLive = null;
-
-/** Overrides
-*/
-NielsensdkProxy.prototype.initialize = function() {
-  NielsensdkProxy.__super__.initialize.call(this);
-  this.nielsensdkSDK = new NOLCMB.ggInitialize(this.value.data);
-};
-
-/** Populate Nielsen VO
-*/
-NielsensdkProxy.prototype.generateNielsenVO = function(adVO, eventName) {
-  var event, events, key, media, type, vo, _i, _len, _ref;
-  if (adVO == null) {
-    adVO = null;
-  }
-  if (eventName == null) {
-    eventName = null;
-  }
-  vo = new Object();
-  media = this.facade.player.getMedia();
-  this.isLive = media.isLive;
-  vo.assetid = media.guid;
-  vo.category = media.category;
-  vo.censuscategory = media.category;
-  vo.dprflag = "true";
-  vo.episodetitle = media.title ? media.title : episode_url;
-  vo.length = adVO != null ? adVO.duration : String(media.duration.toFixed(1)) === "NaN" ? 86400 : String(media.duration.toFixed(1));
-  vo.videotype = adVO != null ? adVO.type : "content";
-  _ref = this.value.events;
-  for (type in _ref) {
-    events = _ref[type];
-    if ((eventName != null) && (events != null) && events.length > 0) {
-      for (_i = 0, _len = events.length; _i < _len; _i++) {
-        event = events[_i];
-        if ((event != null ? event.type : void 0) === eventName) {
-          for (key in event.data) {
-            vo[key.toLowerCase()] = event.data[key];
-          }
-        }
-      }
-    }
-  }
-  return vo;
-};
-
-/** MetaData Loaded
-*/
-NielsensdkProxy.prototype.metaLoad = function() {
-  this.nielsensdkSDK.ggPM("15", this.generateNielsenVO());
-  this.facade.logger.log("[AMP Nielsensdk Event] : loadMetadata");
-};
-
-NielsensdkProxy.prototype.adStart = function(adVO) {
-  if ((adVO != null ? adVO.type : void 0) === "midroll") {
-    this.nielsensdkSDK.ggPM("7", this.generateNielsenVO());
-    this.facade.logger.log("[AMP Nielsensdk Event] : stop");
-  }
-  this.nielsensdkSDK.ggPM("15", this.generateNielsenVO(adVO));
-  this.facade.logger.log("[AMP Nielsensdk Event] : Ad Start");
-};
-
-NielsensdkProxy.prototype.adEnd = function(adVO) {
-  this.nielsensdkSDK.ggPM("7", this.generateNielsenVO(adVO));
-  this.facade.logger.log("[AMP Nielsensdk Event] : Ad End");
-  if ((adVO != null ? adVO.type : void 0) === "midroll") {
-    this.nielsensdkSDK.ggPM("15", this.generateNielsenVO());
-    this.facade.logger.log("[AMP Nielsensdk Event] : Video Resume");
-  }
-};
-
-/** Media Started
-*/
-NielsensdkProxy.prototype.start = function(adVO) {
-  if (adVO == null) {
-    adVO = null;
-  }
-  if ((adVO != null ? adVO.type : void 0) === "midroll") {
-    this.nielsensdkSDK.ggPM("15", this.generateNielsenVO(adVO, 'resume'));
-    this.facade.logger.log("[AMP Nielsensdk Event] : Content Resume");
-  } else {
-    this.nielsensdkSDK.ggPM("15", this.generateNielsenVO(null, 'started'));
-    this.facade.logger.log("[AMP Nielsensdk Event] : Content Play");
-  }
-};
-
-/** Media Ended
-*/
-NielsensdkProxy.prototype.end = function() {
-  var currentTime;
-  currentTime = this.facade.player.getCurrentTime().toFixed(1);
-  this.nielsensdkSDK.ggPM("57", currentTime);
-  this.facade.logger.log("[AMP Nielsensdk Event] : Video Ended");
-  this.cur_position = 0;
-};
-
-/** Time update
-*/
-NielsensdkProxy.prototype.timeupdate = function() {
-  if (this.isLive) {
-    this.nielsensdkSDK.ggPM("49", Math.floor(Date.now() / 1000));
-    this.facade.logger.log("[AMP nielsensdk Event] : timeupdate Live");
-  } else {
-    this.cur_position = this.facade.player.getCurrentTime().toFixed(1);
-    if (Math.abs(this.timer - this.cur_position) > this.queryInterval) {
-      this.timer = this.cur_position;
-      this.nielsensdkSDK.ggPM("49", this.cur_position);
-      this.facade.logger.log("[AMP Nielsensdk Event] : timeupdate", this.cur_position);
-    }
-  }
-};
-
-/**
- * The NielsensdkStartCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function NielsensdkStartCommand() {
-  NielsensdkStartCommand.__super__.constructor.call(this);
-}
-
-
-__extends(NielsensdkStartCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-NielsensdkStartCommand.prototype.execute = function(notification) {
-  var nielsensdk;
-  nielsensdk = this.facade.retrieveProxy(NielsensdkProxy.NAME);
-  nielsensdk.start();
-};
-
-/**
- * The NielsensdkAdStartCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function NielsensdkAdStartCommand() {
-  NielsensdkAdStartCommand.__super__.constructor.call(this);
-}
-
-
-__extends(NielsensdkAdStartCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-NielsensdkAdStartCommand.prototype.execute = function(notification) {
-  var nielsensdk;
-  nielsensdk = this.facade.retrieveProxy(NielsensdkProxy.NAME);
-  nielsensdk.adStart(notification.body);
-};
-
-/**
- * The NielsensdkAdEndCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function NielsensdkAdEndCommand() {
-  NielsensdkAdEndCommand.__super__.constructor.call(this);
-}
-
-
-__extends(NielsensdkAdEndCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-NielsensdkAdEndCommand.prototype.execute = function(notification) {
-  var nielsensdk;
-  nielsensdk = this.facade.retrieveProxy(NielsensdkProxy.NAME);
-  nielsensdk.adEnd(notification.body);
-};
-
-/**
- * The NielsensdkEndCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function NielsensdkEndCommand() {
-  NielsensdkEndCommand.__super__.constructor.call(this);
-}
-
-
-__extends(NielsensdkEndCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-NielsensdkEndCommand.prototype.execute = function(notification) {
-  var nielsensdk;
-  nielsensdk = this.facade.retrieveProxy(NielsensdkProxy.NAME);
-  nielsensdk.end();
-};
-
-/**
- * The NielsensdkMetaloadCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function NielsensdkMetaloadCommand() {
-  NielsensdkMetaloadCommand.__super__.constructor.call(this);
-}
-
-
-__extends(NielsensdkMetaloadCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-NielsensdkMetaloadCommand.prototype.execute = function(notification) {
-  var nielsensdk;
-  nielsensdk = this.facade.retrieveProxy(NielsensdkProxy.NAME);
-  nielsensdk.metaLoad();
-};
-
-/**
- * The NielsensdkTimeupdateCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function NielsensdkTimeupdateCommand() {
-  NielsensdkTimeupdateCommand.__super__.constructor.call(this);
-}
-
-
-__extends(NielsensdkTimeupdateCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-NielsensdkTimeupdateCommand.prototype.execute = function(notification) {
-  var nielsensdk;
-  nielsensdk = this.facade.retrieveProxy(NielsensdkProxy.NAME);
-  nielsensdk.timeupdate();
-};
-
-/** 
- * The NielsenPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Plugin}
-*/
-function NielsenPlugin() {
-  NielsenPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(NielsenPlugin, Plugin);
-
-
-NielsenPlugin.prototype.moduleName = "nielsen";
-
-/** @override
-*/
-NielsenPlugin.prototype.createController = function() {
-  var event, events, _i, _len, _ref, _ref1;
-  NielsenPlugin.__super__.createController.call(this);
-  events = (_ref = this.config) != null ? (_ref1 = _ref.events) != null ? _ref1.video : void 0 : void 0;
-  if (!(events != null)) {
-    return;
-  }
-  for (_i = 0, _len = events.length; _i < _len; _i++) {
-    event = events[_i];
-    if (event.type === "started") {
-      this.registerCommand(Notifications.STARTED, NielsenStartCommand);
-      this.registerCommand(Notifications.CONTENT_CHANGED, NielsenStartCommand);
-    }
-    if (event.type === "ended") {
-      this.registerCommand(Notifications.ENDED, NielsenEndCommand);
-      this.registerCommand(Notifications.CHANGE_CONTENT, NielsenEndCommand);
-    }
-  }
-};
-
-/** @override
-*/
-NielsenPlugin.prototype.createModel = function() {
-  this.registerProxy(new NielsenProxy(this.config));
-};
-
-/** @override
-*/
-NielsenPlugin.prototype.listNotificationInterests = function() {
-  return [Notifications.STARTED, Notifications.ENDED, Notifications.CONTENT_CHANGED, Notifications.CHANGE_CONTENT];
-};
-
-
-AMP.registerPlugin("nielsen", "html", NielsenPlugin);
-AMP.registerPlugin("nielsen", "flash", NielsenWrapper);
 
 function ComscoreStreamsenseWrapper() {
   return ComscoreStreamsenseWrapper.__super__.constructor.apply(this, arguments);
@@ -20080,53 +21824,45 @@ ComscoreStreamsenseEndedCommand.prototype.execute = function(notification) {
 };
 
 /** 
- * The NielsenPlugin class.
+ * The RecommendationsGridPlugin class.
  *   
  * @param {Module}  app     The parent module of this plugin.
  * @constructor
  * @private
- * @extends {Plugin}
+ * @extends {RecommendationsPlugin}
 */
-function NielsensdkPlugin() {
-  NielsensdkPlugin.__super__.constructor.call(this);
+function RecommendationsGridPlugin() {
+  RecommendationsGridPlugin.__super__.constructor.call(this);
 }
 
 
-__extends(NielsensdkPlugin, Plugin);
+__extends(RecommendationsGridPlugin, RecommendationsPlugin);
 
 
-NielsensdkPlugin.prototype.moduleName = "nielsensdk";
-
-/** @override
-*/
-NielsensdkPlugin.prototype.createModel = function() {
-  this.registerProxy(new NielsensdkProxy(this.config));
-};
+RecommendationsGridPlugin.prototype.moduleName = "recommendationsgrid";
 
 /** @override
 */
-NielsensdkPlugin.prototype.createController = function() {
-  NielsensdkPlugin.__super__.createController.call(this);
-  this.registerCommand(AdNotifications.BREAK_END, NielsensdkAdEndCommand);
-  this.registerCommand(AdNotifications.AD_STARTED, NielsensdkAdStartCommand);
-  this.registerCommand(Notifications.STARTED, NielsensdkStartCommand);
-  this.registerCommand(Notifications.ENDED, NielsensdkEndCommand);
-  this.registerCommand(Notifications.TIME_UPDATE, NielsensdkTimeupdateCommand);
-  this.registerCommand(AdNotifications.AD_TIME_REMAINING, NielsensdkTimeupdateCommand);
+RecommendationsGridPlugin.prototype.createView = function() {
+  if (this.config.view === "tile") {
+    this.registerMediator(new RecommendationsFluidGridMediator());
+  } else {
+    this.registerMediator(new RecommendationsGridMediator());
+  }
 };
 
-/** @override
+/**
 */
-NielsensdkPlugin.prototype.listNotificationInterests = function() {
-  return [AdNotifications.AD_STARTED, AdNotifications.BREAK_END, Notifications.STARTED, Notifications.ENDED, Notifications.LOADED_METADATA, Notifications.TIME_UPDATE, Notifications.CONTENT_CHANGED, Notifications.CHANGE_CONTENT, AdNotifications.AD_TIME_REMAINING];
+RecommendationsGridPlugin.prototype.listNotificationInterests = function() {
+  return RecommendationsGridPlugin.__super__.listNotificationInterests.call(this).concat([Notifications.ENDED, Notifications.CHANGE_MEDIA, Notifications.PLAY, Notifications.PLAYING, Notifications.REPLAY]);
 };
 
 
-AMP.registerPlugin("nielsensdk", "html", NielsensdkPlugin);
-AMP.registerPlugin("nielsensdk", "flash", NielsensdkWrapper);
+AMP.registerPlugin("recommendationsgrid", "html", RecommendationsGridPlugin);
+AMP.registerPlugin("recommendationsgrid", "flash", RecommendationsWrapper);
 
-/** 
- * @constructor 
+/**
+ * @constructor
  * @private
 */
 function ComscoreProxy(config) {
@@ -20144,7 +21880,7 @@ ComscoreProxy.prototype.configurationName = "comscore";
 ComscoreProxy.NAME = ModuleProxy.NAME;
 
 ComscoreProxy.prototype.defaults = {
-  url: "http://b.scorecardresearch.com/b",
+  url: "//b.scorecardresearch.com/b",
   events: {
     ads: null,
     video: null
@@ -20896,9 +22632,9 @@ OmnitureProxy.prototype.adEnded = function() {
   this.play();
 };
 
-/** 
+/**
  * The HeartbeatProxy class.
- *   
+ *
  * @param {Object} config
  * @constructor
  * @private
@@ -20999,7 +22735,7 @@ HeartbeatProxy.prototype.calculateLiveLinear = function() {
     updating: false
   };
   start = Date.now();
-  Utils.getUTC(function(utc) {
+  Utils.getUTC().then(function(utc) {
     var date, day, end, timezone;
     end = Date.now();
     date = new Date(utc);
@@ -21014,8 +22750,9 @@ HeartbeatProxy.prototype.calculateLiveLinear = function() {
     date = new Date(day + "23:59:59.999" + timezone);
     liveLinear.end = date.getTime();
     liveLinear.duration = Math.round((liveLinear.end - liveLinear.start) / 1000);
-    _this.liveLinear = liveLinear;
+    return _this.liveLinear = liveLinear;
   });
+  return;
 };
 
 /**
@@ -21610,33 +23347,6 @@ OmnitureMediaChangeCommand.prototype.execute = function(notification) {
   this.proxy.mediaChange();
 };
 
-/**
- * The CaptionCue class.
- *   
- * @constructor
- * @private
- * @param {number} startTime  The start time of the cue in seconds
- * @param {number} endTime    The end time of the cue in seconds
- * @param {number} text       The text of the cue
-*/
-function CaptionCue(startTime, endTime, id) {
-  this.startTime = startTime;
-  this.endTime = endTime;
-  this.id = id;
-}
-
-CaptionCue.prototype.id = null;
-
-CaptionCue.prototype.startTime = null;
-
-CaptionCue.prototype.endTime = null;
-
-CaptionCue.prototype.text = null;
-
-CaptionCue.prototype.html = null;
-
-CaptionCue.prototype.align = null;
-
 /** 
  * The ComscorePlugin class.
  *   
@@ -21679,2209 +23389,6 @@ ComscorePlugin.prototype.listNotificationInterests = function() {
 
 AMP.registerPlugin("comscore", "html", ComscorePlugin);
 AMP.registerPlugin("comscore", "flash", ComscoreWrapper);
-
-function SRTParser() {}
-
-/**
- * Parses a SRT (subrip) file into CaptionCue objects and attaches them to a given track.
- * 
- * @param   {CaptionTrack}  track The caption track to populate
- * @param   {String}        txt   The text of the srt file
- * @return  {CaptionTrack}        The populated caption track
-*/
-SRTParser.prototype.parse = function(track, txt) {
-  var caption, captions, cue, end, index, parts, start, text, times, _i, _len;
-  txt = txt.replace(/\r/g, '');
-  captions = txt.split("\n\n");
-  for (_i = 0, _len = captions.length; _i < _len; _i++) {
-    caption = captions[_i];
-    parts = caption.split("\n");
-    try {
-      index = parts[0];
-      times = parts[1].match(/([0-9:\,]+)\s*-->\s*([0-9:\,]+)/).slice(1);
-      start = Utils.flattenTimecode(times[0]);
-      end = Utils.flattenTimecode(times[1]);
-      text = parts.slice(2);
-    } catch (err) {
-      Logger.warn("SRT Parsing Warning");
-    }
-    cue = new CaptionCue(start, end, "cue_" + index);
-    cue.html = "<p>" + text.join("<br />") + "</p>";
-    cue.text = text.join("\n");
-    track.cues.push(cue);
-  }
-  return track;
-};
-
-function WebVTTParser() {}
-
-/**
- * Parses a SRT (subrip) file into CaptionCue objects and attaches them to a given track.
- * 
- * @param   {CaptionTrack}  track The caption track to populate
- * @param   {String}        txt   The text of the srt file
- * @return  {CaptionTrack}        The populated caption track
-*/
-WebVTTParser.prototype.parse = function(track, txt) {
-  var caption, captions, cue, end, index, parts, settings, start, text, times, _i, _len;
-  txt = txt.replace(/\r/g, '');
-  captions = txt.split("\n\n");
-  index = 0;
-  if (/^WEBVTT/.test(captions[0])) {
-    captions.shift();
-  }
-  for (_i = 0, _len = captions.length; _i < _len; _i++) {
-    caption = captions[_i];
-    if (!(caption !== "")) {
-      continue;
-    }
-    parts = caption.split("\n");
-    try {
-      index = /^[0-9]+$/.test(parts[0]) ? parts.shift() : ++index;
-      times = parts[0].match(/([0-9:\.]+)\s*-->\s*([0-9:\.]+)([^\n]*)/).slice(1);
-      settings = times[2];
-      start = Utils.flattenTimecode(times[0]);
-      end = Utils.flattenTimecode(times[1]);
-      text = parts.slice(1);
-    } catch (err) {
-      Logger.error("WebVTT Parse Error");
-    }
-    cue = new CaptionCue(start, end, "cue_" + index);
-    cue.html = "<p>" + text.join("<br />") + "</p>";
-    cue.text = text.join("\n");
-    if (settings != null) {
-      settings.replace(/\s*([A-Za-z]+)\s*:\s*([\w\-\%]+)/g, function(match, $1, $2) {
-        cue[$1] = $2;
-        return "";
-      });
-    }
-    track.cues.push(cue);
-  }
-  return track;
-};
-
-function SMPTETTParser() {}
-
-/**
- * Parses a SMPTETT file into CaptionCue objects and attaches them to a given track.
- * 
- * @param   {CaptionTrack}  track The caption track to populate
- * @param   {XMLDocument}   xml   The SMPTETT xml document
- * @return  {CaptionTrack}        The populated caption track
-*/
-SMPTETTParser.prototype.parse = function(track, xml) {
-  var captions, lang, styledElements, styles, tt,
-    _this = this;
-  if (typeof xml === "string") {
-    xml = XMLUtils.parse(xml);
-  }
-  styles = Array.prototype.slice.call(xml.querySelectorAll("styling style"));
-  styles.forEach(function(item, index, list) {
-    var attributes, id, style;
-    style = "";
-    id = item.getAttribute("id") || item.getAttribute("xml:id");
-    attributes = Array.prototype.slice.call(item.attributes);
-    attributes.forEach(function(item, index, array) {
-      if (item.prefix === "tts") {
-        return style += Utils.formatStyleName(item.localName) + ":" + item.nodeValue + ";";
-      }
-    });
-    track.styles[id] = style;
-  });
-  styledElements = Array.prototype.slice.call(xml.querySelectorAll("body [style]"));
-  styledElements.forEach(function(item, index, array) {
-    var id;
-    id = item.getAttribute("style");
-    item.setAttribute("style", track.styles[id]);
-  });
-  tt = xml.querySelector("tt");
-  lang = tt.getAttribute("lang") || tt.getAttribute("xml:lang");
-  if (track.language === void 0 || track.language === null) {
-    track.language = lang;
-  }
-  captions = Array.prototype.slice.call(xml.querySelectorAll("body p[begin]"));
-  captions.forEach(function(item, index, array) {
-    var align, cue, end, start, text;
-    start = item.getAttribute("begin");
-    item.removeAttribute("begin");
-    if (item.getAttribute("end") != null) {
-      end = item.getAttribute("end");
-      item.removeAttribute("end");
-    } else if (captions[index + 1] != null) {
-      end = captions[index + 1].getAttribute("begin");
-    }
-    cue = new CaptionCue(Utils.flattenTimecode(start), Utils.flattenTimecode(end), "cue_" + index);
-    align = item.getAttributeNS("http://www.w3.org/ns/ttml#styling", "textAlign");
-    if (align != null) {
-      cue.align = align === "center" ? "middle" : align;
-      item.removeAttributeNS("http://www.w3.org/ns/ttml#styling", "textAlign");
-    }
-    text = XMLUtils.serialize(item);
-    text = text.replace(/\s*xmlns="[^"]*"/, "");
-    cue.html = text;
-    text = text.replace(/^<p[^>]*>/, "");
-    text = text.replace(/<\/p>$/, "");
-    text = text.replace(/<br\/>/, "\n");
-    text = text.replace(/<span style="([^"]*)"/, "<c.$1");
-    text = text.replace(/<\/span>/, "</c>");
-    cue.text = text;
-    track.cues.push(cue);
-  });
-  return track;
-};
-
-/** 
- * @constructor 
- * @private
-*/
-function LiveCaptionProxy() {
-  var com,
-    _this = this;
-  this.captions = [];
-  this.head = document.getElementsByTagName("head")[0];
-  com = window.com || {};
-  com.akamai = com.akamai || {};
-  com.akamai.amp = com.akamai.amp || {};
-  com.akamai.amp.plugins = com.akamai.amp.plugins || {};
-  com.akamai.amp.plugins.subply = com.akamai.amp.plugins.subply || {};
-  com.akamai.amp.plugins.subply.response = function(json) {
-    _this.parse(json);
-    _this.poll();
-  };
-  if (!(window.com != null)) {
-    window.com = com;
-  }
-  LiveCaptionProxy.__super__.constructor.call(this, this.constructor.NAME);
-}
-
-
-__extends(LiveCaptionProxy, puremvc.Proxy);
-
-
-/** @static
-*/
-LiveCaptionProxy.NAME = "LiveCaptionProxy";
-
-LiveCaptionProxy.prototype.data = {
-  base: "http://test.plymedia.com.s3.amazonaws.com/online/Akamai_",
-  interval: 1000
-};
-
-LiveCaptionProxy.prototype.caption = null;
-
-LiveCaptionProxy.prototype.head = null;
-
-LiveCaptionProxy.prototype.script = null;
-
-LiveCaptionProxy.prototype.timeout = null;
-
-/**
- *
-*/
-LiveCaptionProxy.prototype.getURL = function() {
-  return this.data.url;
-};
-
-LiveCaptionProxy.prototype.setURL = function(value) {
-  this.data.url = value;
-  return value;
-};
-
-LiveCaptionProxy.prototype.start = function() {
-  this.send();
-};
-
-LiveCaptionProxy.prototype.poll = function() {
-  var timeout,
-    _this = this;
-  timeout = setTimeout(function() {
-    _this.send();
-  }, this.data.interval || 1000);
-};
-
-LiveCaptionProxy.prototype.send = function() {
-  if (this.script != null) {
-    this.head.removeChild(this.script);
-  }
-  this.script = Utils.loadScript(this.data.base + this.data.url + ".js?nocache=" + Date.now());
-};
-
-LiveCaptionProxy.prototype.stop = function() {
-  clearTimeout(timeout);
-};
-
-/**
- *
-*/
-LiveCaptionProxy.prototype.parse = function(response) {
-  var html, text, _i, _len, _ref;
-  if (response.Stream !== this.data.url) {
-    return;
-  }
-  if ((this.caption != null) && this.caption.id >= response.Ticks) {
-    return;
-  }
-  this.caption = new CaptionCue(Utils.flattenTimecode(response.From), Utils.flattenTimecode(response.To), response.Ticks);
-  this.caption.text = response.Text;
-  html = "";
-  _ref = response.Text.split("\n");
-  for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-    text = _ref[_i];
-    if (html !== "") {
-      html += "<br />";
-    }
-    html += "<span>" + text + "</span>";
-  }
-  this.caption.html = "<p>" + html + "</p>";
-  this.sendNotification(CaptioningNotifications.CUE_CHANGE, [this.caption]);
-  return this.caption;
-};
-
-/** 
- * The CaptioningWrapper class.
- *   
- * @constructor
- * @private
- * @extends {PluginWrapper}
- * @param {FlashPlayer}     player  The FlashPlayer
- * @param {Object}          config  The plugin config
-*/
-function CaptioningWrapper(player, config) {
-  CaptioningWrapper.__super__.constructor.call(this, player, config);
-}
-
-
-__extends(CaptioningWrapper, PluginWrapper);
-
-
-CaptioningWrapper.NAME = "CaptioningWrapper";
-
-CaptioningWrapper.prototype.flashPlugins = [
-  {
-    id: "AdobeCaptionPlugin",
-    src: '#{paths.resources}plugins/AdobeCaptionPlugin.swf',
-    blocking: false,
-    host: "akamai",
-    main: "AdobeCaptionPlugin",
-    type: "application/x-shockwave-flash"
-  }, {
-    id: "AMPCaptionPlugin",
-    src: '#{paths.resources}plugins/AMPCaptionPlugin.swf',
-    blocking: false,
-    host: "akamai",
-    main: "AMPCaptionPlugin",
-    type: "application/x-shockwave-flash"
-  }, {
-    id: "CaptionSettingsPlugin",
-    src: '#{paths.resources}plugins/CaptionSettingsPlugin.swf',
-    blocking: false,
-    host: "akamai",
-    main: "CaptionSettingsPlugin",
-    type: "application/x-shockwave-flash"
-  }
-];
-
-CaptioningWrapper.prototype.flashView = {
-  elements: {
-    captionDisplay: {
-      attributes: {
-        defaultMessage: "Sorry! No captions available for this stream",
-        initState: "cookie",
-        position: "relative",
-        settingsEnabled: "true",
-        style: "bottom: 0px; windowColor :0x000000; windowOpacity: 0; font: Monospaced Serif; fontColor: 0xffffff; fontOpacity: 1; fontBGColor: 0x000000; fontBGOpacity: 0; edgeType: none; edgeColor: 0x000000; edgeOpacity: 1; scroll: Pop-Out; fontSize: 12;"
-      }
-    },
-    controls: {
-      elements: {
-        captionBtn: {}
-      }
-    }
-  }
-};
-
-CaptioningWrapper.prototype.hidden = true;
-
-/** @override
-*/
-CaptioningWrapper.prototype.createXML = function(xml) {
-  var application, player, subply, _ref;
-  subply = (_ref = this.config.flash) != null ? _ref.subply : void 0;
-  if (subply != null) {
-    try {
-      if (subply.timeMethod != null) {
-        player = xml.getElementsByTagName("player")[0];
-        player.setAttribute("subply_time_method", subply.timeMethod);
-      }
-      if (subply.plugin != null) {
-        application = xml.firstChild;
-        subply = xml.getElementsByTagName("subply")[0];
-        if (!(subply != null)) {
-          subply = xml.createElement("subply");
-          application.appendChild(subply);
-        }
-        this.createProperty(xml, "SUBPLY_URL", this.config.flash.subply.plugin, subply);
-      }
-    } catch (error) {
-      this.facade.logger.error("[AMP CAPTIONING ERROR]", error);
-    }
-  }
-};
-
-/** @override
-*/
-CaptioningWrapper.prototype.createFlashVars = function(flashvars) {
-  var captionLangArr, captionUrlArr, config, track, _i, _len, _ref, _ref1;
-  config = this.player.config;
-  if (((_ref = config.media) != null ? _ref.track : void 0) != null) {
-    track = Utils.selectTrack(config.media.track, "captions");
-    if ((track.src != null) && track.src !== "") {
-      flashvars.caption_url = track.src;
-    }
-    if (config.media.track.length > 0) {
-      captionUrlArr = [];
-      captionLangArr = [];
-      _ref1 = config.media.track;
-      for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
-        track = _ref1[_i];
-        captionUrlArr.push(track.src);
-        captionLangArr.push(track.srclang);
-      }
-      flashvars.caption_url = captionUrlArr.join(",");
-      flashvars.caption_language = captionLangArr.join(",");
-    }
-    flashvars.caption_type = track.type != null ? encodeURIComponent(track.type) : "application/ttml+xml";
-  }
-  if (flashvars.caption_language == null) {
-    flashvars.caption_language = "en-us";
-  }
-};
-
-/** @override
-*/
-CaptioningWrapper.prototype.listNotificationInterests = function() {
-  return CaptioningWrapper.__super__.listNotificationInterests.apply(this, arguments).concat([Notifications.MEDIA_CHANGE, FlashNotifications.CAPTIONING_REQUEST, FlashNotifications.CAPTION_LANG_CHANGE, FlashNotifications.INITIALIZED]);
-};
-
-/**
-*/
-CaptioningWrapper.prototype.handleNotification = function(notification) {
-  var body, media, name, track, type;
-  CaptioningWrapper.__super__.handleNotification.call(this, notification);
-  name = notification.getName();
-  body = notification.getBody();
-  switch (name) {
-    case FlashNotifications.CAPTION_LANG_CHANGE:
-      type = "";
-      break;
-    case FlashNotifications.CAPTIONING_REQUEST:
-      type = "visibilitychange";
-      body = body.enabled;
-      this.hidden = !body;
-      break;
-    case Notifications.MEDIA_CHANGE:
-      media = body;
-      if (media.track != null) {
-        track = Utils.selectTrack(media.track, "captions");
-        if (!(track != null)) {
-          return;
-        }
-        if ((track.src != null) && track.src !== "") {
-          media.captioningUrl = track.src;
-        }
-        if (track.type != null) {
-          media.captioningType = track.type || "application/ttml+xml";
-        }
-      }
-      break;
-    case FlashNotifications.INITIALIZED:
-      this.hidden = !this.player.getMediaElement().getPlayerProperty("isCaptionVisible");
-  }
-  if ((type != null) && type !== "") {
-    this.dispatchEvent(new Event(type, body));
-  }
-};
-
-/**
-*/
-CaptioningWrapper.prototype.getHidden = function() {
-  return this.hidden;
-};
-
-CaptioningWrapper.prototype.setHidden = function(value) {
-  this.hidden = value;
-  this.facade.getMediaElement().setPlayerProperty("captionDisplay", {
-    visible: !value
-  });
-  return value;
-};
-
-/**
- * Selects a caption track by its index in the getTracks array.
- * 
- * @param {number}        index   The index to select 
- * @return {CaptionTrack}         The selected caption track.
- * @expose
-*/
-CaptioningWrapper.prototype.selectTrackByIndex = function(index) {};
-
-/**
- * Selects a caption track by it's language property.
- * 
- * @param {string}        lang  The language to select 
- * @return {CaptionTrack}       The selected caption track.
- * @expose
-*/
-CaptioningWrapper.prototype.selectTrackByLanguage = function(lang) {
-  this.facade.getMediaElement().setTrackByLanguage(lang);
-};
-
-/**
- * Sets a caption Settings Object (styles)
- * 
- * @param {Object}  object  The caption settings object. 
- * @expose
-*/
-CaptioningWrapper.prototype.changeSettings = function(object) {
-  if (((object != null ? object.fontFamily : void 0) != null) && typeof object.fontFamily === "object") {
-    return this.facade.getMediaElement().setPlayerProperty("captionSettingsUI", object);
-  }
-  this.hidden = !object.visible;
-  this.facade.getMediaElement().setPlayerProperty("captionDisplay", {
-    'visible': object.visible,
-    'style': this.parseObject(object)
-  });
-};
-
-/**
- * Parse Object
- *
-*/
-CaptioningWrapper.prototype.parseObject = function(object) {
-  var flashObject, keyString, prop, _ref;
-  flashObject = {};
-  try {
-    for (prop in object) {
-      switch (prop) {
-        case "fontFamily":
-          flashObject['font'] = object[prop];
-          break;
-        case "fontColor":
-        case "backgroundColor":
-        case "edgeColor":
-        case "windowColor":
-          keyString = prop === "fontColor" ? "font" : prop === "backgroundColor" ? "fontBG" : prop === "edgeColor" ? "edge" : "window";
-          if (((_ref = object[prop]) != null ? _ref.indexOf('rgba') : void 0) !== -1) {
-            flashObject[keyString + 'Color'] = this.parseRGBA(object[prop]);
-            flashObject[keyString + 'Opacity'] = object[prop].replace(/^.*,(.+)\)/, '$1');
-          }
-          break;
-        default:
-          flashObject[prop] = object[prop];
-      }
-    }
-    delete flashObject['visible'];
-  } catch (error) {
-    this.facade.logger.error('Captioning Settings Parse Error', error);
-  }
-  return flashObject;
-};
-
-CaptioningWrapper.prototype.parseRGBA = function(rgb) {
-  rgb = rgb.match(/^rgba?[\s+]?\([\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?,[\s+]?(\d+)[\s+]?/i);
-  if (rgb && rgb.length === 4) {
-    return "0x" + ("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) + ("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) + ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2);
-  }
-  return "";
-};
-
-
-AMP.registerPlugin("captioning", "flash", CaptioningWrapper);
-
-/**
- * The CaptioningTimeUpdateCommand class.
- *   
- * @constructor
- * @private
- * @extends {amp.plugins.PluginCommand}
-*/
-function CaptioningTimeUpdateCommand() {
-  CaptioningTimeUpdateCommand.__super__.constructor.call(this);
-}
-
-
-__extends(CaptioningTimeUpdateCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-CaptioningTimeUpdateCommand.prototype.execute = function(notification) {
-  var active, changed, cue, cues, index, time, track, _i, _len;
-  time = notification.getBody();
-  track = this.proxy.getTrack();
-  if (!(track != null)) {
-    return;
-  }
-  active = track.activeCues;
-  cues = track.cues;
-  changed = false;
-  for (_i = 0, _len = cues.length; _i < _len; _i++) {
-    cue = cues[_i];
-    if (time >= cue.startTime && time < cue.endTime) {
-      if (!(__indexOf.call(active, cue) >= 0)) {
-        active.push(cue);
-        changed = true;
-      }
-    } else {
-      index = active.indexOf(cue);
-      if (index !== -1) {
-        active.splice(index, 1);
-        changed = true;
-      }
-    }
-  }
-  if (changed === true) {
-    this.sendNotification(CaptioningNotifications.CUE_CHANGE, active);
-  }
-};
-
-/**
- * The CaptioningChangeMediaCommand class.
- *   
- * @constructor
- * @private
- * @extends {amp.plugins.PluginCommand}
-*/
-function CaptioningChangeMediaCommand() {
-  CaptioningChangeMediaCommand.__super__.constructor.call(this);
-}
-
-
-__extends(CaptioningChangeMediaCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-CaptioningChangeMediaCommand.prototype.execute = function(notification) {
-  var media, track;
-  media = notification.getBody();
-  track = notification.getBody().track;
-  this.proxy.setTracks(track);
-  if (!(track != null)) {
-    this.sendNotification(CaptioningNotifications.ENABLED, false);
-    return;
-  }
-  this.proxy.selectRenderer(media);
-  this.sendNotification(CaptioningNotifications.ENABLED, true);
-};
-
-/**
- * The ChangeVisibilityCommand class.
- *   
- * @constructor
- * @private
- * @extends {amp.plugins.PluginEventCommand}
-*/
-function CaptioningVisibilityChangeCommand() {
-  CaptioningVisibilityChangeCommand.__super__.constructor.call(this);
-}
-
-
-__extends(CaptioningVisibilityChangeCommand, PluginEventCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-CaptioningVisibilityChangeCommand.prototype.execute = function(notification) {
-  this.proxy.setHidden(!notification.getBody());
-  CaptioningVisibilityChangeCommand.__super__.execute.call(this, notification);
-};
-
-/**
- * @enum {string}
- * @const
- * @private
-*/
-
-var UserSettingsNotifications = {
-  SETTING_CHANGE: "settingchange",
-  UPDATE_SETTINGS: "updatesettings"
-};
-
-/**
- * The CaptioningStartedCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function CaptioningStartedCommand() {
-  CaptioningStartedCommand.__super__.constructor.call(this);
-}
-
-
-__extends(CaptioningStartedCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-CaptioningStartedCommand.prototype.execute = function(notification) {
-  var proxy, track, _ref;
-  proxy = this.facade.retrieveProxy(CaptioningProxy.NAME);
-  track = proxy.getTrack();
-  if (!(track != null) && ((_ref = proxy.getTracks()) != null ? _ref.length : void 0) > 0) {
-    track = proxy.autoSelectTrack();
-  }
-  if ((track != null ? track.isLive : void 0) === true) {
-    this.facade.removeCommand(Notifications.TIME_UPDATE);
-    proxy = this.facade.retrieveProxy(LiveCaptionProxy.NAME);
-    if (!(proxy != null)) {
-      proxy = new LiveCaptionProxy();
-      this.facade.registerProxy(proxy);
-    }
-    proxy.setURL(track.src);
-    proxy.start();
-  }
-};
-
-/** 
- * @private
-*/
-
-CaptionParsers = {
-  "application/ttml+xml": new SMPTETTParser(),
-  "application/x-subrip": new SRTParser(),
-  "text/vtt": new WebVTTParser(),
-  undefined: new SMPTETTParser()
-};
-
-/**
- * @enum {string}
- * @const
- * @private
-*/
-
-var CaptioningNotifications = {
-  VISIBILITY_CHANGE: "captioningvisibilitychange",
-  ENABLED: "captioningenabled",
-  TRACKS_LOADED: "captioningtracksloaded",
-  TRACK_SELECTED: "captioningtrackselected",
-  CUE_CHANGE: "captioningcuechange",
-  SETTINGS_VISIBILITY_CHANGE: "captioningsettingsvisibility",
-  TOGGLE_SETTINGS_VISIBILITY: "togglesettingsvisibility",
-  SETTINGS_CHANGE: "captioningsettingschange"
-};
-
-/**
- * The CaptionTrack class.
- *   
- * @constructor
- * @private
- * @param {?Object} track A generic track object.
-*/
-function CaptionTrack(track, onload) {
-  var xhr,
-    _this = this;
-  this.kind = track.kind;
-  this.type = track.type;
-  this.src = track.src;
-  this.language = track.srclang;
-  this.label = track.label || this.srclang || this.kind;
-  this.cues = track.cues || [];
-  this.styles = track.styles || {};
-  this.activeCues = [];
-  this.isLive = /live-subply/.test(this.type);
-  if ((this.src != null) && this.src !== "" && !this.isLive) {
-    xhr = Utils.get(this.src, {
-      onload: function() {
-        try {
-          CaptionParsers[_this.type].parse(_this, xhr.response);
-        } catch (error) {
-          Logger.error("Could not parse caption track: " + _this.src);
-          return;
-        }
-        if (typeof onload === "function") {
-          onload();
-        }
-      },
-      onerror: function() {
-        Logger.error("Could not load caption track: " + _this.src);
-      }
-    });
-  } else {
-    setTimeout(onload, 1);
-  }
-}
-
-CaptionTrack.prototype.kind = null;
-
-CaptionTrack.prototype.src = null;
-
-CaptionTrack.prototype.language = null;
-
-CaptionTrack.prototype.cues = null;
-
-CaptionTrack.prototype.label = null;
-
-CaptionTrack.prototype.activeCues = null;
-
-CaptionTrack.prototype.type = null;
-
-CaptionTrack.prototype.styles = null;
-
-CaptionTrack.prototype.isLive = false;
-
-/** 
- * PluginMediator class.
- *   
- * @constructor
- * @private
- * @extends {OverlayMediator}
-*/
-function PluginComponentMediator(componentName, componentType, parent, element) {
-  PluginComponentMediator.__super__.constructor.call(this, componentName, componentType, parent, element);
-}
-
-
-__extends(PluginComponentMediator, ComponentMediator);
-
-
-/** @override
-*/
-PluginComponentMediator.prototype.initializeNotifier = function(key) {
-  PluginComponentMediator.__super__.initializeNotifier.call(this, key);
-  this.plugin = this.facade.retrieveProxy(ModuleProxy.NAME);
-  this.media = this.facade.player.retrieveProxy(MediaProxy.NAME);
-};
-
-/** 
- * The CaptioningProxy class
- * 
- * @constructor
- * @private 
- * @extends {PluginProxy}
- * @param   {Object}  config  The configuration object.
-*/
-function CaptioningProxy(config) {
-  this.activeCaptions = [];
-  this.providers = {};
-  this.tracks = [];
-  this.rendererMap = [];
-  this.settings = {};
-  CaptioningProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(CaptioningProxy, PluginProxy);
-
-
-/** @static
-*/
-CaptioningProxy.NAME = ModuleProxy.NAME;
-
-CaptioningProxy.TEXT_TRACK_RENDERER = "caption-text";
-
-CaptioningProxy.prototype.defaults = {
-  useNative: false,
-  crossorigin: null
-};
-
-CaptioningProxy.prototype.hidden = true;
-
-CaptioningProxy.prototype.tracks = null;
-
-CaptioningProxy.prototype.track = null;
-
-CaptioningProxy.prototype.activeCaptions = null;
-
-CaptioningProxy.prototype.captions = null;
-
-CaptioningProxy.prototype.loaded = true;
-
-CaptioningProxy.prototype.rendererMap = null;
-
-CaptioningProxy.prototype.settings = null;
-
-CaptioningProxy.prototype.getSettings = function() {
-  return this.settings;
-};
-
-CaptioningProxy.prototype.setSettings = function(value) {
-  this.settings = value;
-};
-
-/**
- *
-*/
-CaptioningProxy.prototype.getUseNative = function() {
-  return this.getValue("useNative");
-};
-
-/**
- *
-*/
-CaptioningProxy.prototype.getCrossOrigin = function() {
-  return this.getValue("crossorigin");
-};
-
-/**
- *
-*/
-CaptioningProxy.prototype.getTracks = function() {
-  return this.tracks;
-};
-
-CaptioningProxy.prototype.setTracks = function(value) {
-  var count, item, loaded, track, trackLoaded, _i, _len,
-    _this = this;
-  this.tracks = [];
-  this.track = null;
-  if (!(value != null)) {
-    return;
-  }
-  count = value.length;
-  loaded = 0;
-  trackLoaded = function() {
-    loaded++;
-    if (loaded === count) {
-      _this.sendNotification(CaptioningNotifications.TRACKS_LOADED, _this.tracks);
-      _this.autoSelectTrack();
-    }
-  };
-  for (_i = 0, _len = value.length; _i < _len; _i++) {
-    item = value[_i];
-    track = new CaptionTrack(item, trackLoaded);
-    this.tracks.push(track);
-  }
-  return value;
-};
-
-/**
-*/
-CaptioningProxy.prototype.registerRenderer = function(value) {
-  if (!(value != null)) {
-    return;
-  }
-  value.proxy = this;
-  this.rendererMap.push(value);
-};
-
-/**
-*/
-CaptioningProxy.prototype.retrieveRenderer = function(name) {
-  var value, _i, _len, _ref;
-  _ref = this.rendererMap;
-  for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-    value = _ref[_i];
-    if (value.getRendererName() === name) {
-      return value;
-    }
-  }
-};
-
-/**
-*/
-CaptioningProxy.prototype.removeRenderer = function(name) {
-  var index, value;
-  value = this.retrieveRenderer(name);
-  value.proxy = null;
-  if (!(value != null)) {
-    return null;
-  }
-  index = this.rendererMap.indexOf(value);
-  this.rendererMap.splice(index, 1);
-  return value;
-};
-
-/**
- *
-*/
-CaptioningProxy.prototype.getRenderer = function() {
-  return this.renderer;
-};
-
-CaptioningProxy.prototype.setRenderer = function(value) {
-  if (value === this.renderer) {
-    return value;
-  }
-  if (this.renderer != null) {
-    this.facade.removeMediator(CaptioningProxy.TEXT_TRACK_RENDERER);
-  }
-  this.renderer = value;
-  if (this.renderer != null) {
-    this.facade.registerMediator(this.renderer);
-  }
-  return value;
-};
-
-/**
- *
-*/
-CaptioningProxy.prototype.selectRenderer = function(media) {
-  var item, renderer, track, tracks, _i, _j, _len, _len1, _ref;
-  renderer = null;
-  tracks = media.track;
-  if (!(tracks != null)) {
-    return;
-  }
-  for (_i = 0, _len = tracks.length; _i < _len; _i++) {
-    track = tracks[_i];
-    _ref = this.rendererMap;
-    for (_j = 0, _len1 = _ref.length; _j < _len1; _j++) {
-      item = _ref[_j];
-      if (!(item.canUseResource(track) === true)) {
-        continue;
-      }
-      renderer = item;
-      break;
-    }
-    if (renderer != null) {
-      break;
-    }
-  }
-  this.setRenderer(renderer);
-  return renderer;
-};
-
-/**
- *
-*/
-CaptioningProxy.prototype.getTrack = function() {
-  return this.track;
-};
-
-CaptioningProxy.prototype.setTrack = function(value) {
-  this.track = value;
-  this.captions = this.track.cues;
-  this.activeCaptions = [];
-  this.sendNotification(CaptioningNotifications.TRACK_SELECTED, this.track);
-  return value;
-};
-
-/**
- *
-*/
-CaptioningProxy.prototype.selectTrackByIndex = function(index) {
-  var track;
-  if ((0 <= index && index < this.tracks.length)) {
-    track = this.tracks[index];
-    this.setTrack(track);
-  }
-  return track;
-};
-
-/**
- *
-*/
-CaptioningProxy.prototype.selectTrackByLanguage = function(lang) {
-  var item, track, _i, _len, _ref;
-  _ref = this.tracks;
-  for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-    item = _ref[_i];
-    if (!(item.language === lang)) {
-      continue;
-    }
-    track = item;
-    break;
-  }
-  if (track != null) {
-    this.setTrack(track);
-  }
-  return track;
-};
-
-/**
- *
-*/
-CaptioningProxy.prototype.getHidden = function() {
-  return this.hidden;
-};
-
-CaptioningProxy.prototype.setHidden = function(value) {
-  this.hidden = value;
-  try {
-    localStorage.setItem(Namespace.PREFIX + "caption-enabled", !this.hidden);
-  } catch (localStorageError) {
-    this.facade.logger.error("LocalStorage Not Supported on this Browser", localStorageError);
-  }
-  return value;
-};
-
-/**
- *
-*/
-CaptioningProxy.prototype.autoSelectTrack = function() {
-  var lang, track, _ref;
-  lang = (_ref = this.facade.player.retrieveProxy(LocalizationProxy.NAME)) != null ? _ref.getLanguage() : void 0;
-  if (lang != null) {
-    lang = lang.split("-").shift();
-    track = this.selectTrackByLanguage(lang);
-  }
-  if (!(track != null)) {
-    track = this.tracks[0];
-    this.setTrack(track);
-  }
-  return track;
-};
-
-/**
- * The CaptioningHTMLMediator class.
- * 
- * @constructor
- * @private
- * @extends {LocalizedMediator}
- * @param {Object} viewComponent
-*/
-function CaptioningHTMLMediator(viewComponent) {
-  CaptioningHTMLMediator.__super__.constructor.call(this, null, null, viewComponent, null);
-}
-
-
-__extends(CaptioningHTMLMediator, PluginComponentMediator);
-
-
-CaptioningHTMLMediator.prototype.componentName = CaptioningProxy.TEXT_TRACK_RENDERER;
-
-CaptioningHTMLMediator.prototype.captionText = null;
-
-/**
-*/
-CaptioningHTMLMediator.prototype.getRendererName = function() {
-  return "html";
-};
-
-/**
-*/
-CaptioningHTMLMediator.prototype.canUseResource = function(resource) {
-  var types;
-  if (!(resource != null)) {
-    return false;
-  }
-  types = [Utils.mimeTypes.srt, Utils.mimeTypes.ttml, Utils.mimeTypes.vtt];
-  return types.indexOf(resource.type) !== -1;
-};
-
-/* Get Caption Container Display Height
-*/
-CaptioningHTMLMediator.prototype.getCaptionDisplayHeight = function() {
-  var height, i, length;
-  height = 0;
-  i = length = this.viewComponent.childNodes.length;
-  while (i) {
-    --i;
-    if (length === 3 && i === 0) {
-      break;
-    }
-    height += Utils.getActualSize(this.viewComponent.childNodes[i]).height;
-  }
-  return height + "px";
-};
-
-/* Scroll Captions
-*/
-CaptioningHTMLMediator.prototype.scrollCaptions = function(scrollHeight, scrollTop, steps) {
-  var scroll, stepSize,
-    _this = this;
-  if (scrollHeight == null) {
-    scrollHeight = this.viewComponent.scrollHeight;
-  }
-  if (scrollTop == null) {
-    scrollTop = this.viewComponent.scrollTop;
-  }
-  if (steps == null) {
-    steps = 20;
-  }
-  stepSize = (scrollHeight - scrollTop) / steps;
-  scroll = function() {
-    var _results;
-    if (scrollTop < scrollHeight) {
-      _this.viewComponent.scrollTop = scrollTop += stepSize;
-      return setTimeout(scroll, 20);
-    } else {
-      _results = [];
-      while (_this.viewComponent.childNodes.length > 2) {
-        _results.push(_this.viewComponent.removeChild(_this.viewComponent.firstChild));
-      }
-      return _results;
-    }
-  };
-  scroll();
-};
-
-/**
- * @override
-*/
-CaptioningHTMLMediator.prototype.listNotificationInterests = function() {
-  return [CaptioningNotifications.CUE_CHANGE, Notifications.CHANGE_MEDIA];
-};
-
-/**
- * @override
-*/
-CaptioningHTMLMediator.prototype.handleNotification = function(notification) {
-  var body, captions, childNode, cue, i, name, temp, _i, _j, _len, _len1, _ref;
-  name = notification.getName();
-  body = notification.getBody();
-  switch (name) {
-    case Notifications.CHANGE_MEDIA:
-      this.viewComponent.innerHTML = "";
-      break;
-    case CaptioningNotifications.CUE_CHANGE:
-      captions = "";
-      for (_i = 0, _len = body.length; _i < _len; _i++) {
-        cue = body[_i];
-        captions += cue.html;
-      }
-      switch (this.plugin.getSettings().scroll) {
-        case "popout":
-          this.viewComponent.innerHTML = captions;
-          break;
-        case "rollon":
-        case "painton":
-          temp = document.createElement("div");
-          temp.innerHTML = captions;
-          _ref = temp.childNodes;
-          for (i = _j = 0, _len1 = _ref.length; _j < _len1; i = ++_j) {
-            childNode = _ref[i];
-            this.viewComponent.appendChild(childNode);
-          }
-          this.viewComponent.style.maxHeight = this.getCaptionDisplayHeight();
-          this.scrollCaptions();
-      }
-  }
-};
-
-/**
- * The CaptioningMediator class.
- * 
- * @constructor
- * @private
- * @extends {PluginMediator}
- * @param {Object} viewComponent
-*/
-function CaptioningNativeMediator(viewComponent) {
-  CaptioningNativeMediator.__super__.constructor.call(this, viewComponent);
-}
-
-
-__extends(CaptioningNativeMediator, LocalizedMediator);
-
-
-CaptioningNativeMediator.prototype.video = null;
-
-CaptioningNativeMediator.prototype.index = -1;
-
-CaptioningNativeMediator.prototype.plugin = null;
-
-CaptioningNativeMediator.NAME = CaptioningProxy.TEXT_TRACK_RENDERER;
-
-/**
-*/
-CaptioningNativeMediator.prototype.getRendererName = function() {
-  return "native";
-};
-
-/**
-*/
-CaptioningNativeMediator.prototype.canUseResource = function(resource) {
-  var hasNative, type, types, useNative;
-  if (!(resource != null)) {
-    return false;
-  }
-  hasNative = document.createElement("video").textTracks != null;
-  if (!hasNative) {
-    return false;
-  }
-  types = [Utils.mimeTypes.vtt, Utils.mimeTypes.cea608, Utils.mimeTypes.cea708];
-  type = resource.type;
-  if (type === types[1] || type === types[2]) {
-    return true;
-  }
-  useNative = /iphone|ipad/.test(Utils.getDevice()) || this.proxy.getUseNative();
-  if (!useNative) {
-    return false;
-  }
-  return types.indexOf(resource.type) !== -1;
-};
-
-/**
- * @override
-*/
-CaptioningNativeMediator.prototype.onRegister = function() {
-  this.plugin = this.facade.retrieveProxy(CaptioningProxy.NAME);
-  this.facade.player.getMediaElement().textTracks.addEventListener("addtrack", this.updateTrack.bind(this));
-};
-
-/**
- * @override
-*/
-CaptioningNativeMediator.prototype.listNotificationInterests = function() {
-  return [CaptioningNotifications.VISIBILITY_CHANGE, CaptioningNotifications.TRACK_SELECTED, CaptioningNotifications.TRACKS_LOADED, Notifications.LOADED_METADATA, Notifications.CAN_PLAY_THROUGH];
-};
-
-/**
- * @override
-*/
-CaptioningNativeMediator.prototype.handleNotification = function(notification) {
-  var body, crossorigin, element, track, video, _i, _len, _ref;
-  body = notification.getBody();
-  switch (notification.getName()) {
-    case CaptioningNotifications.TRACKS_LOADED:
-      this.tracks = body;
-      break;
-    case CaptioningNotifications.TRACK_SELECTED:
-      if (this.facade.player.getMediaElement().textTracks.length) {
-        track = this.facade.player.getMediaElement().textTracks[this.index];
-      }
-      if (track != null) {
-        track.mode = "hidden";
-      }
-      this.index = this.plugin.getTracks().indexOf(body);
-      this.lang = body.language;
-      this.updateTrack();
-      break;
-    case CaptioningNotifications.VISIBILITY_CHANGE:
-    case Notifications.CAN_PLAY_THROUGH:
-      this.updateTrack();
-      break;
-    case Notifications.LOADED_METADATA:
-      if (!(this.tracks != null)) {
-        return;
-      }
-      video = this.facade.player.getMediaElement();
-      crossorigin = this.plugin.getCrossOrigin();
-      if (crossorigin != null) {
-        video.setAttribute("crossorigin", crossorigin);
-      }
-      _ref = this.tracks;
-      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        track = _ref[_i];
-        if (!(track.type === Utils.mimeTypes.vtt)) {
-          continue;
-        }
-        element = document.createElement("track");
-        element.src = track.src;
-        if (track.kind != null) {
-          element.kind = track.kind;
-        }
-        if (track.language != null) {
-          element.srclang = track.language;
-        }
-        if (track.label != null) {
-          element.label = track.label;
-        }
-        element["default"] = "default" in track;
-        video.appendChild(element);
-      }
-      this.tracks = null;
-  }
-};
-
-CaptioningNativeMediator.prototype.updateTrack = function() {
-  var i, track, _i, _len, _ref;
-  _ref = this.facade.player.getMediaElement().textTracks;
-  for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
-    track = _ref[i];
-    if (!(/subtitles|captions/.test(track.kind) && (track.language === this.lang || !track.language.length))) {
-      continue;
-    }
-    if (!(track != null)) {
-      return;
-    }
-    this.index = i;
-    track.mode = this.plugin.getHidden() ? "hidden" : "showing";
-  }
-};
-
-/**
- * The CaptioningSettingsMediator class.
- * 
- * @constructor
- * @private
- * @extends {LocalizedMediator}
- * @param {Object} viewComponent
-*/
-function CaptioningSettingsMediator(viewComponent) {
-  this.list = {
-    font: null,
-    language: null,
-    edge: null,
-    size: null,
-    scroll: null
-  };
-  this.picker = {
-    color: null,
-    background: null,
-    edge: null,
-    window: null
-  };
-  this.toggle = {
-    ON: null,
-    OFF: null,
-    disabled: false
-  };
-  this.captioningObject = {
-    "default": {
-      fontFamily: "'Courier New', Courier, 'Nimbus Mono L', 'Cutive Mono', monospace",
-      size: "small",
-      scroll: "popout",
-      fontColor: "rgba(255,255,255,1)",
-      edgeType: "text-shadow: 0px 0px 0px",
-      edgeColor: "rgba(0, 0, 0, 0)",
-      backgroundColor: "rgba(0,0,0,0)",
-      windowColor: "rgba(0,0,0,0.5)"
-    },
-    appliedStyleText: "",
-    selected: {
-      fontFamily: null,
-      size: null,
-      fontColor: null,
-      edgeType: null,
-      edgeColor: null,
-      backgroundColor: null,
-      windowColor: null
-    },
-    preset1: {
-      fontFamily: "'Courier New', Courier, 'Nimbus Mono L', 'Cutive Mono', monospace",
-      size: "medium",
-      fontColor: "rgba(255,255,255,1)",
-      edgeType: "text-shadow: 0px 0px 0px",
-      edgeColor: "rgba(0, 0, 0, 0)",
-      backgroundColor: "rgba(0,0,0,0)",
-      windowColor: "rgba(0,0,0,0)"
-    },
-    preset2: {
-      fontFamily: "'Courier New', Courier, 'Nimbus Mono L', 'Cutive Mono', monospace",
-      size: "medium",
-      fontColor: "rgba(255,255,0,1)",
-      edgeType: "text-shadow: 0px 0px 0px",
-      edgeColor: "rgba(0, 0, 0, 0)",
-      backgroundColor: "rgba(0,0,0,0)",
-      windowColor: "rgba(0,0,0,0)"
-    },
-    preset3: {
-      fontFamily: "'Courier New', Courier, 'Nimbus Mono L', 'Cutive Mono', monospace",
-      size: "medium",
-      fontColor: "rgba(255,255,255,1)",
-      edgeType: "text-shadow: 0px 0px 0px",
-      edgeColor: "rgba(0, 0, 0, 0)",
-      backgroundColor: "rgba(0,0,0,1)",
-      windowColor: "rgba(0,0,0,0)"
-    },
-    preset4: {
-      fontFamily: "'Courier New', Courier, 'Nimbus Mono L', 'Cutive Mono', monospace",
-      size: "medium",
-      fontColor: "rgba(255,255,0,1)",
-      edgeType: "text-shadow: 0px 0px 0px",
-      edgeColor: "rgba(0, 0, 0, 1)",
-      backgroundColor: "rgba(0,0,0,0)",
-      windowColor: "rgba(0,0,0,0.5)"
-    },
-    instance: null
-  };
-  CaptioningSettingsMediator.__super__.constructor.call(this, null, null, viewComponent, null);
-}
-
-
-__extends(CaptioningSettingsMediator, PluginComponentMediator);
-
-
-CaptioningSettingsMediator.prototype.componentName = "captioning-settings";
-
-CaptioningSettingsMediator.prototype.settingsUiVisible = false;
-
-CaptioningSettingsMediator.prototype.captionningStyle = null;
-
-CaptioningSettingsMediator.prototype.swatchColorCurr = null;
-
-CaptioningSettingsMediator.prototype.swatchOpacityCurr = null;
-
-CaptioningSettingsMediator.prototype.colorPicker = null;
-
-CaptioningSettingsMediator.prototype.colorPickerOpacity = null;
-
-CaptioningSettingsMediator.prototype.advancedSettingContainer = null;
-
-CaptioningSettingsMediator.prototype.scroll = {
-  type: "popout",
-  typeSpeed: 5,
-  lines: 2,
-  scrollTimer: [],
-  speed: 10,
-  popout: null,
-  rollup: null,
-  painton: null
-};
-
-/**
- * @override
-*/
-CaptioningSettingsMediator.prototype.onRegister = function() {
-  var applyButton, cancelButton, captionContainer, captionLabel, clonedSwatch, color, colorArray, isDefault, preset1, preset2, preset3, preset4, previewContainer, previewPara, resetButton, swatch, titleBar, titleText, toggleAdvancedButton, _i, _len,
-    _this = this;
-  CaptioningSettingsMediator.__super__.onRegister.call(this);
-  titleBar = this.create("captioning-titlebar");
-  titleText = this.create("captioning-title", titleBar, "span", this.localizationManager.getString(LocalizationConstants.MSG_CC_TITLE));
-  this.toggle.OFF = this.create("captioning-toggle-btn", titleBar, "div", "OFF");
-  this.toggle.ON = this.create("captioning-toggle-btn", titleBar, "div", "ON");
-  EventHandler.create(this.toggle.ON, EventHandler.CLICK, function(event) {
-    event.stopImmediatePropagation();
-    if (!_this.toggle.disabled) {
-      _this.toggleButtonHandler(true);
-    }
-    return false;
-  });
-  if (!this.toggle.disabled) {
-    ClassList.add("captioning-floater-btnselected", this.toggle.OFF, this.classList.prefix);
-  }
-  EventHandler.create(this.toggle.OFF, EventHandler.CLICK, function(event) {
-    event.stopImmediatePropagation();
-    if (!_this.toggle.disabled) {
-      _this.toggleButtonHandler(false);
-    }
-    return false;
-  });
-  captionContainer = this.create("captioning-row");
-  captionLabel = this.create("captioning-label", captionContainer, "span", this.localizationManager.getString(LocalizationConstants.MSG_CC_LANGUAGE));
-  this.list.language = this.create("captioning-dropdown", captionContainer, "select");
-  this.languageListPopulate();
-  EventHandler.create(this.list.language, "change", function(event) {
-    var langIsSelected;
-    event.stopImmediatePropagation();
-    langIsSelected = event.target.selectedValue !== "None";
-    _this.sendNotification(CaptioningNotifications.VISIBILITY_CHANGE, langIsSelected);
-    if (langIsSelected) {
-      _this.facade.setTrack(_this.facade.selectTrackByIndex(event.target.selectedIndex));
-    }
-    return false;
-  });
-  captionLabel = this.create("captioning-label", captionContainer, "span", this.localizationManager.getString(LocalizationConstants.MSG_CC_PRESETS));
-  preset1 = this.create(["captioning-preset", "captioning-preset1"], captionContainer, null, "Aa");
-  preset2 = this.create(["captioning-preset", "captioning-preset2"], captionContainer, null, "Aa");
-  preset3 = this.create(["captioning-preset", "captioning-preset3"], captionContainer, null, "Aa");
-  preset4 = this.create(["captioning-preset", "captioning-preset4"], captionContainer, null, "Aa");
-  EventHandler.create(preset1, EventHandler.CLICK, function(event) {
-    event.stopImmediatePropagation();
-    _this.captioningObject.selected = _this.cloneObject(_this.captioningObject.preset1);
-    _this.applyCaptioningStyle();
-    return false;
-  });
-  EventHandler.create(preset2, EventHandler.CLICK, function(event) {
-    event.stopImmediatePropagation();
-    _this.captioningObject.selected = _this.cloneObject(_this.captioningObject.preset2);
-    _this.applyCaptioningStyle();
-    return false;
-  });
-  EventHandler.create(preset3, EventHandler.CLICK, function(event) {
-    event.stopImmediatePropagation();
-    _this.captioningObject.selected = _this.cloneObject(_this.captioningObject.preset3);
-    _this.applyCaptioningStyle();
-    return false;
-  });
-  EventHandler.create(preset4, EventHandler.CLICK, function(event) {
-    event.stopImmediatePropagation();
-    _this.captioningObject.selected = _this.cloneObject(_this.captioningObject.preset4);
-    _this.applyCaptioningStyle();
-    return false;
-  });
-  this.advancedSettingContainer = this.create("captioning-advanced-container");
-  captionContainer = this.create("captioning-row", this.advancedSettingContainer);
-  captionLabel = this.create("captioning-label", captionContainer, "span", this.localizationManager.getString(LocalizationConstants.MSG_CC_FONT));
-  this.list.font = this.create("captioning-dropdown", captionContainer, "select");
-  this.create(null, this.list.font, "option", "Monospaced Serif").value = "'Courier New', Courier, 'Nimbus Mono L', 'Cutive Mono', monospace";
-  this.create(null, this.list.font, "option", "Proportional Serif").value = "'Times New Roman', Times, Georgia, Cambria, 'PT Serif Caption', serif";
-  this.create(null, this.list.font, "option", "Monospaced Sans-Serif").value = "'Deja Vu Sans Mono', 'Lucida Console', Monaco, Consolas, 'PT Mono', monospace";
-  this.create(null, this.list.font, "option", "Proportional Sans-Serif").value = "Roboto, 'Arial Unicode Ms', Arial, Helvetica, Verdana, 'PT Sans Caption', sans-serif";
-  this.create(null, this.list.font, "option", "Casual").value = "'Comic Sans MS', Impact, Handlee, fantasy";
-  this.create(null, this.list.font, "option", "Cursive").value = "'Monotype Corsiva', 'URW Chancery L', 'Apple Chancery', 'Dancing Script', cursive";
-  this.create(null, this.list.font, "option", "Small Capitals").value = "'Arial Unicode Ms', Arial, Helvetica, Verdana, 'Marcellus SC', sans-serif; font-variant: small-caps";
-  EventHandler.create(this.list.font, "change", function(event) {
-    event.stopImmediatePropagation();
-    _this.captioningObject.selected.fontFamily = event.target.value;
-    _this.applyCaptioningStyle(false);
-    return false;
-  });
-  captionContainer.appendChild(this.list.font);
-  captionLabel = this.create("captioning-label", captionContainer, "span", this.localizationManager.getString(LocalizationConstants.MSG_CC_EDGE));
-  this.list.edge = this.create("captioning-dropdown", captionContainer, "select");
-  this.create(null, this.list.edge, "option", "None").value = "text-shadow: 0px 0px 0px";
-  this.create(null, this.list.edge, "option", "Depressed").value = "text-shadow: 0px 1px 0px";
-  this.create(null, this.list.edge, "option", "Left Drop Shadow").value = "text-shadow: -3px 3px 2px";
-  this.create(null, this.list.edge, "option", "Raised").value = "text-shadow: 0px 1px 1px";
-  this.create(null, this.list.edge, "option", "Right Drop Shadow").value = "text-shadow: 3px 3px 2px";
-  this.create(null, this.list.edge, "option", "Uniform").value = "text-shadow: 0px 0px 4px";
-  EventHandler.create(this.list.edge, "change", function(event) {
-    event.stopImmediatePropagation();
-    _this.captioningObject.selected.edgeType = event.target.value;
-    _this.applyCaptioningStyle(false);
-    return false;
-  });
-  captionContainer = this.create("captioning-row", this.advancedSettingContainer);
-  this.create("captioning-label", captionContainer, "span", this.localizationManager.getString(LocalizationConstants.MSG_CC_SIZE));
-  this.list.size = this.create("captioning-dropdown", captionContainer, "select");
-  this.create(null, this.list.size, "option", "Small").value = "small";
-  this.create(null, this.list.size, "option", "Medium").value = "medium";
-  this.create(null, this.list.size, "option", "Large").value = "large";
-  this.create(null, this.list.size, "option", "Extra Large").value = "x-large";
-  this.list.size.selectedIndex = 1;
-  EventHandler.create(this.list.size, "change", function(event) {
-    event.stopImmediatePropagation();
-    _this.captioningObject.selected.size = event.target.value;
-    _this.applyCaptioningStyle(false);
-    return false;
-  });
-  this.create("captioning-label", captionContainer, "span", this.localizationManager.getString(LocalizationConstants.MSG_CC_SCROLL));
-  this.list.scroll = this.create("captioning-dropdown", captionContainer, "select");
-  this.create(null, this.list.scroll, "option", "Pop-Out").value = "popout";
-  this.create(null, this.list.scroll, "option", "Roll-On").value = "rollon";
-  this.create(null, this.list.scroll, "option", "Paint-On").value = "painton";
-  EventHandler.create(this.list.scroll, "change", function(event) {
-    event.stopImmediatePropagation();
-    _this.onScrollListChange(event.target.value);
-    return false;
-  });
-  captionContainer = this.create("captioning-row", this.advancedSettingContainer);
-  this.create("captioning-label-small", captionContainer, "span", this.localizationManager.getString(LocalizationConstants.MSG_CC_COLOR));
-  this.picker.color = this.create("captioning-color-picker", captionContainer);
-  this.picker.color.style.backgroundColor = this.captioningObject["default"].fontColor;
-  EventHandler.create(this.picker.color, EventHandler.CLICK, function(event) {
-    var alpha, _ref;
-    event.stopImmediatePropagation();
-    _this.colorPickerHandler();
-    _this.colorPicker.style.display = _this.colorPicker.style.display === "block" ? "none" : "block";
-    if (_this.colorPicker.style.display === "block") {
-      if ((_ref = _this.swatchColorCurr) != null) {
-        _ref.style.borderColor = "rgba(0,0,0,0.3)";
-      }
-      _this.colorPicker.style.left = "152px";
-      _this.colorPicker.name = "fontColor";
-      _this.captioningObject.instance = _this.picker.color;
-      if (_this.picker.color.style.backgroundColor.indexOf('rgba') !== -1) {
-        alpha = _this.picker.color.style.backgroundColor.replace(/^rgba?\(|\s+|\)$/g, '').split(',')[3];
-      }
-      _this.colorPickerOpacity.value = alpha != null ? alpha : 1;
-    }
-    return false;
-  });
-  this.create("captioning-label-small", captionContainer, "span", this.localizationManager.getString(LocalizationConstants.MSG_CC_BACKGROUND));
-  this.picker.background = this.create("captioning-color-picker", captionContainer);
-  this.picker.background.style.backgroundColor = this.captioningObject["default"].backgroundColor;
-  EventHandler.create(this.picker.background, EventHandler.CLICK, function(event) {
-    var alpha, _ref;
-    event.stopImmediatePropagation();
-    _this.colorPickerHandler();
-    _this.colorPicker.style.display = _this.colorPicker.style.display === "block" ? "none" : "block";
-    if (_this.colorPicker.style.display === "block") {
-      if ((_ref = _this.swatchColorCurr) != null) {
-        _ref.style.borderColor = "rgba(0,0,0,0.3)";
-      }
-      _this.colorPicker.style.left = "264px";
-      _this.colorPicker.name = "backgroundColor";
-      _this.captioningObject.instance = _this.picker.background;
-      if (_this.picker.background.style.backgroundColor.indexOf('rgba') !== -1) {
-        alpha = _this.picker.background.style.backgroundColor.replace(/^rgba?\(|\s+|\)$/g, '').split(',')[3];
-      }
-      _this.colorPickerOpacity.value = alpha != null ? alpha : 1;
-    }
-    return false;
-  });
-  this.create("captioning-label-small", captionContainer, "span", this.localizationManager.getString(LocalizationConstants.MSG_CC_EDGE));
-  this.picker.edge = this.create("captioning-color-picker", captionContainer);
-  this.picker.edge.style.backgroundColor = this.captioningObject["default"].edgeColor;
-  EventHandler.create(this.picker.edge, EventHandler.CLICK, function(event) {
-    var alpha, _ref;
-    event.stopImmediatePropagation();
-    _this.colorPickerHandler();
-    _this.colorPicker.style.display = _this.colorPicker.style.display === "block" ? "none" : "block";
-    if (_this.colorPicker.style.display === "block") {
-      if ((_ref = _this.swatchColorCurr) != null) {
-        _ref.style.borderColor = "rgba(0,0,0,0.3)";
-      }
-      _this.colorPicker.style.left = "212px";
-      _this.colorPicker.name = "edgeColor";
-      _this.captioningObject.instance = _this.picker.edge;
-      if (_this.picker.edge.style.backgroundColor.indexOf('rgba') !== -1) {
-        alpha = _this.picker.edge.style.backgroundColor.replace(/^rgba?\(|\s+|\)$/g, '').split(',')[3];
-      }
-      _this.colorPickerOpacity.value = alpha != null ? alpha : 1;
-    }
-    return false;
-  });
-  this.create("captioning-label-small", captionContainer, "span", this.localizationManager.getString(LocalizationConstants.MSG_CC_WINDOW));
-  this.picker.window = this.create("captioning-color-picker", captionContainer);
-  this.picker.window.style.backgroundColor = this.captioningObject["default"].windowColor;
-  EventHandler.create(this.picker.window, EventHandler.CLICK, function(event) {
-    var alpha, _ref;
-    event.stopImmediatePropagation();
-    _this.colorPickerHandler();
-    _this.colorPicker.style.display = _this.colorPicker.style.display === "block" ? "none" : "block";
-    if (_this.colorPicker.style.display === "block") {
-      if ((_ref = _this.swatchColorCurr) != null) {
-        _ref.style.borderColor = "rgba(0,0,0,0.3)";
-      }
-      _this.colorPicker.style.left = "300px";
-      _this.colorPicker.name = "windowColor";
-      _this.captioningObject.instance = _this.picker.window;
-      if (_this.picker.window.style.backgroundColor.indexOf('rgba') !== -1) {
-        alpha = _this.picker.window.style.backgroundColor.replace(/^rgba?\(|\s+|\)$/g, '').split(',')[3];
-      }
-      _this.colorPickerOpacity.value = alpha != null ? alpha : 1;
-    }
-    return false;
-  });
-  previewContainer = this.create(["caption-text", "caption-text-preview"]);
-  previewPara = this.create(null, previewContainer, "p", this.localizationManager.getString(LocalizationConstants.MSG_CC_PREVIEW_TEXT));
-  captionContainer = this.create("captioning-footer-container");
-  applyButton = this.create("captioning-footer-button", captionContainer, "div", this.localizationManager.getString(LocalizationConstants.MSG_CC_APPLY));
-  cancelButton = this.create("captioning-footer-button", captionContainer, "div", this.localizationManager.getString(LocalizationConstants.MSG_CC_CANCEL));
-  resetButton = this.create("captioning-footer-button", captionContainer, "div", this.localizationManager.getString(LocalizationConstants.MSG_CC_RESET));
-  if (this.facade.getViewComponent().clientWidth >= 0) {
-    toggleAdvancedButton = this.create("captioning-advanced-button", captionContainer, "div", this.localizationManager.getString(LocalizationConstants.MSG_CC_SHOW_ADVANCED));
-    EventHandler.create(toggleAdvancedButton, EventHandler.CLICK, function(event) {
-      event.stopImmediatePropagation();
-      if (_this.advancedSettingContainer.style.display === "block") {
-        event.target.innerHTML = _this.localizationManager.getString(LocalizationConstants.MSG_CC_SHOW_ADVANCED);
-        _this.advancedSettingContainer.style.display = "none";
-        _this.colorPicker.style.display = "none";
-      } else {
-        event.target.innerHTML = _this.localizationManager.getString(LocalizationConstants.MSG_CC_HIDE_ADVANCED);
-        _this.advancedSettingContainer.style.display = "block";
-      }
-      return false;
-    });
-  }
-  EventHandler.create(applyButton, EventHandler.CLICK, function(event) {
-    event.stopImmediatePropagation();
-    _this.sendNotification(CaptioningNotifications.SETTINGS_VISIBILITY_CHANGE, _this.settingsUiVisible);
-    _this.applyCaptioningStyle(false, true);
-    _this.sendNotification(CaptioningNotifications.SETTINGS_CHANGE, _this.captioningObject.selected);
-    return false;
-  });
-  EventHandler.create(cancelButton, EventHandler.CLICK, function(event) {
-    event.stopImmediatePropagation();
-    _this.sendNotification(CaptioningNotifications.SETTINGS_VISIBILITY_CHANGE, _this.settingsUiVisible);
-    return false;
-  });
-  EventHandler.create(resetButton, EventHandler.CLICK, function(event) {
-    event.stopImmediatePropagation();
-    _this.colorPicker.style.display = "none";
-    _this.applyCaptioningStyle(true);
-    return false;
-  });
-  this.captionningStyle = this.create(null, document.getElementsByTagName('head')[0], "style");
-  this.captionningStyle.type = 'text/css';
-  colorArray = ["#000000", "#660000", "#990000", "#ff0000", "#000066", "#660066", "#990066", "#ff0066", "#006600", "#666600", "#996600", "#ff6600", "#006666", "#666666", "#996666", "#ff6666", "#009900", "#669966", "#999900", "#ff9900", "#009966", "#669966", "#999966", "#ff9966", "#00ff00", "#66ff00", "#99ff00", "#ffff00", "#00ff66", "#66ff66", "#99ff66", "#ffff66", "#000099", "#660099", "#990099", "#ff0099", "#0000ff", "#6600ff", "#9900ff", "#ff00ff", "#006699", "#666699", "#996699", "#ff6699", "#0066ff", "#6666ff", "#9966ff", "#ff66ff", "#009999", "#669999", "#999999", "#ff9999", "#0099ff", "#6699ff", "#9999ff", "#ff99ff", "#0099ff", "#66ff99", "#99ff99", "#ffff99", "#00ffff", "#66ffff", "#99ffff", "#ffffff"];
-  this.colorPicker = this.create("colorpicker-palette", this.viewComponent.parentElement);
-  swatch = this.create("colorpicker-swatch", false, null, "&nbsp;");
-  for (_i = 0, _len = colorArray.length; _i < _len; _i++) {
-    color = colorArray[_i];
-    swatch.style.backgroundColor = color;
-    clonedSwatch = swatch.cloneNode();
-    EventHandler.create(clonedSwatch, EventHandler.CLICK, function(event) {
-      event.stopImmediatePropagation();
-      if (_this.swatchColorCurr !== null) {
-        _this.swatchColorCurr.style.borderColor = "rgba(0,0,0,0.3)";
-      }
-      _this.swatchColorCurr = event.target;
-      _this.swatchColorCurr.style.borderColor = "rgba(255, 50, 50, 1)";
-      _this.captioningObject.instance.style.backgroundColor = _this.captioningObject.selected[_this.colorPicker.name] = _this.toRGBA(event.target.style.backgroundColor);
-      _this.applyCaptioningStyle(false);
-      return false;
-    });
-    this.colorPicker.appendChild(clonedSwatch);
-  }
-  this.create("opacity-label", this.colorPicker, "span", this.localizationManager.getString(LocalizationConstants.MSG_CC_OPACITY));
-  this.colorPickerOpacity = this.create("colorpicker-slider", this.colorPicker, "input");
-  this.colorPickerOpacity.type = "range";
-  this.colorPickerOpacity.min = 0;
-  this.colorPickerOpacity.max = 1;
-  this.colorPickerOpacity.step = .1;
-  this.colorPickerOpacity.value = 1;
-  EventHandler.create(this.colorPickerOpacity, "change", function(event) {
-    event.stopImmediatePropagation();
-    _this.captioningObject.instance.style.backgroundColor = _this.captioningObject.selected[_this.colorPicker.name] = _this.toRGBA(_this.captioningObject.instance.style.backgroundColor);
-    _this.applyCaptioningStyle(false);
-    return false;
-  });
-  this.swatchOpacityCurr = this.colorPickerOpacity;
-  try {
-    if (localStorage.getItem(Namespace.PREFIX + "captioningDefault") != null) {
-      this.captioningObject.selected = JSON.parse(localStorage.getItem(Namespace.PREFIX + "captioningDefault"));
-      this.applyCaptioningStyle(false, !this.facade.getHidden());
-    } else {
-      isDefault = !((this.facade.config.style != null) || this.facade.config.style !== "undefined");
-      if (!isDefault) {
-        this.captioningObject.selected = this.cloneObject(this.facade.config.style);
-      }
-      this.applyCaptioningStyle(isDefault);
-    }
-  } catch (_error) {}
-  this.plugin.setSettings(Object.keys(this.captioningObject.selected).length > 0 ? this.captioningObject.selected : this.captioningObject["default"]);
-  this.toggleButtonHandler(!this.facade.getHidden(), false);
-};
-
-CaptioningSettingsMediator.prototype.toRGBA = function(colorCode) {
-  var rbga, rgb;
-  rgb = colorCode.replace(/^rgba?\(|\s+|\)$/g, '').split(',');
-  rbga = 'rgba(' + rgb[0] + "," + rgb[1] + "," + rgb[2] + "," + this.swatchOpacityCurr.value + ')';
-  return rbga;
-};
-
-CaptioningSettingsMediator.prototype.onScrollListChange = function(value) {
-  this.captioningObject.selected.scroll = this.scroll.type = value;
-  this.plugin.setSettings({
-    scroll: this.scroll.type
-  });
-  try {
-    if (value === "painton") {
-      ClassList.add("akamai-captioning-typed", this.facade.proxy.renderer.viewComponent);
-    } else {
-      ClassList.remove("akamai-captioning-typed", this.facade.proxy.renderer.viewComponent);
-    }
-  } catch (error) {
-    this.facade.logger.error("AMP Captioning Error", error);
-  }
-};
-
-CaptioningSettingsMediator.prototype.languageListPopulate = function() {
-  var language, track, tracks, _i, _len, _ref;
-  tracks = this.facade.getTracks();
-  if (!(tracks != null)) {
-    return;
-  }
-  this.list.language.innerHTML = "";
-  for (_i = 0, _len = tracks.length; _i < _len; _i++) {
-    track = tracks[_i];
-    language = track.language;
-    language = this.facade.player.retrieveProxy(LocalizationProxy.NAME).getLanguageString(language);
-    if ((language != null) && language !== "") {
-      this.create(null, this.list.language, "option", language).value = track.language;
-    }
-  }
-  this.toggle.disabled = this.list.language.childElementCount === 0;
-  if (this.toggle.disabled) {
-    this.create(null, this.list.language, "option", "None");
-  }
-  this.list.language.value = (_ref = this.facade.getTrack()) != null ? _ref.language : void 0;
-};
-
-CaptioningSettingsMediator.prototype.colorPickerHandler = function(unbind) {
-  var _this = this;
-  if (unbind == null) {
-    unbind = false;
-  }
-  if (unbind) {
-    return EventHandler.unbind(document, EventHandler.CLICK);
-  }
-  EventHandler.create(document, EventHandler.CLICK, function(event) {
-    event.stopImmediatePropagation();
-    _this.colorPickerHandler(true);
-    if (event.target.className !== "akamai-colorpicker-palette" && event.target.className !== "akamai-opacity-label" && event.target.className !== "akamai-colorpicker-slider" && _this.colorPicker.style.display !== "none") {
-      _this.colorPicker.style.display = "none";
-    }
-    return false;
-  });
-};
-
-CaptioningSettingsMediator.prototype.cloneObject = function(clone) {
-  var cloned, key;
-  cloned = {};
-  for (key in clone) {
-    cloned[key] = clone[key];
-  }
-  return cloned;
-};
-
-CaptioningSettingsMediator.prototype.applyCaptioningStyle = function(isDefault, isApply, settingsDefault) {
-  var backgroundColor, color, containerStyle, edgeType, fontFamily, fontSize, windowColor, windowColorValue;
-  if (isDefault == null) {
-    isDefault = false;
-  }
-  if (isApply == null) {
-    isApply = false;
-  }
-  if (settingsDefault == null) {
-    settingsDefault = false;
-  }
-  if (isDefault) {
-    this.captioningObject.selected = this.cloneObject(this.captioningObject["default"]);
-    this.list.font.value = this.captioningObject["default"].fontFamily;
-    this.list.edge.value = this.captioningObject["default"].edgeType != null ? this.captioningObject["default"].edgeType : "text-shadow: 0px 0px 0px";
-    this.list.size.value = this.captioningObject["default"].size;
-    this.list.scroll.value = this.captioningObject["default"].scroll;
-    this.picker.color.style.backgroundColor = this.captioningObject["default"].fontColor;
-    this.picker.background.style.backgroundColor = this.captioningObject["default"].backgroundColor;
-    this.picker.edge.style.backgroundColor = this.captioningObject["default"].edgeColor;
-    this.picker.window.style.backgroundColor = this.captioningObject["default"].windowColor;
-  } else {
-    if ((this.captioningObject.selected.fontFamily != null) && !settingsDefault) {
-      this.list.font.value = this.captioningObject.selected.fontFamily;
-    }
-    this.list.edge.value = this.captioningObject.selected.edgeType != null ? this.captioningObject.selected.edgeType : "text-shadow: 0px 0px 0px";
-    if (this.captioningObject.selected.size != null) {
-      this.list.size.value = this.captioningObject.selected.size;
-    }
-    if (this.captioningObject.selected.scroll != null) {
-      this.list.scroll.value = this.captioningObject.selected.scroll;
-    } else {
-      this.captioningObject.selected.scroll = this.list.scroll.value;
-    }
-    this.picker.color.style.backgroundColor = this.captioningObject.selected.fontColor;
-    if (this.captioningObject.selected.backgroundColor != null) {
-      this.picker.background.style.backgroundColor = this.captioningObject.selected.backgroundColor;
-    }
-    if (this.captioningObject.selected.edgeColor != null) {
-      this.picker.edge.style.backgroundColor = this.captioningObject.selected.edgeColor;
-    }
-    if (this.captioningObject.selected.windowColor != null) {
-      this.picker.window.style.backgroundColor = this.captioningObject.selected.windowColor;
-    }
-  }
-  fontFamily = "font-family: " + (isDefault ? this.captioningObject["default"].fontFamily : settingsDefault ? this.captioningObject.selected.fontFamily : this.list.font.value) + " !important;";
-  edgeType = (isDefault ? this.captioningObject["default"].edgeType + this.captioningObject["default"].edgeColor : this.list.edge.value + " " + this.picker.edge.style.backgroundColor) + " !important;";
-  fontSize = "font-size: " + (isDefault ? this.captioningObject["default"].size : this.list.size.value) + " !important;";
-  color = "color: " + (isDefault ? this.captioningObject["default"].fontColor : this.picker.color.style.backgroundColor) + " !important;";
-  backgroundColor = "background-color: " + (isDefault ? this.captioningObject["default"].backgroundColor : this.picker.background.style.backgroundColor) + " !important;";
-  windowColor = "background-color: " + (isDefault ? this.captioningObject["default"].windowColor : this.picker.window.style.backgroundColor) + " !important;";
-  containerStyle = "line-height:1.7em;";
-  windowColorValue = windowColor.match(/rgba\([^)]+\)/g);
-  if ((windowColorValue != null) && windowColorValue instanceof Array && windowColorValue.length > 0) {
-    containerStyle = Number(windowColorValue[0].replace(/^.*, (.+)\)/, '$1')) === 0 ? "" : containerStyle;
-  }
-  if (isApply) {
-    this.captionningStyle.innerHTML = this.captioningObject.appliedStyleText = '#' + this.facade.player.viewComponent.id + ' .akamai-caption-text { ' + fontFamily + fontSize + edgeType + windowColor + ' } #' + this.facade.player.viewComponent.id + ' .akamai-caption-text p { ' + color + backgroundColor + ' } ' + 'video::-webkit-media-text-track-display { ' + windowColor + ' } video::-webkit-media-text-track-display span { ' + fontFamily + fontSize + edgeType + backgroundColor + ' } video::-webkit-media-text-track-display { ' + windowColor + ' } video::cue { ' + color + fontFamily + fontSize + edgeType + backgroundColor + ' } video::-webkit-media-text-track-container {' + containerStyle + '}';
-    try {
-      if (isDefault === false && !settingsDefault) {
-        localStorage.setItem(Namespace.PREFIX + "captioningDefault", JSON.stringify(this.captioningObject.selected));
-      }
-    } catch (localStorageError) {
-      this.facade.logger.error("LocalStorage Not Supported on this Browser", localStorageError);
-    }
-  } else {
-    this.captionningStyle.innerHTML = this.captioningObject.appliedStyleText + '.akamai-caption-text-preview { ' + fontFamily + fontSize + edgeType + windowColor + ' }' + '.akamai-caption-text-preview p { ' + color + backgroundColor + ' }';
-  }
-};
-
-CaptioningSettingsMediator.prototype.toggleButtonHandler = function(isON, isTargetButton) {
-  if (isON == null) {
-    isON = false;
-  }
-  if (isTargetButton == null) {
-    isTargetButton = true;
-  }
-  if (isON) {
-    ClassList.add("captioning-floater-btnselected", this.toggle.ON, this.classList.prefix);
-    ClassList.remove("captioning-floater-btnselected", this.toggle.OFF, this.classList.prefix);
-  } else {
-    ClassList.add("captioning-floater-btnselected", this.toggle.OFF, this.classList.prefix);
-    ClassList.remove("captioning-floater-btnselected", this.toggle.ON, this.classList.prefix);
-  }
-  if (isTargetButton) {
-    this.sendNotification(CaptioningNotifications.VISIBILITY_CHANGE, isON);
-  }
-  this.sendNotification(UserSettingsNotifications.UPDATE_SETTINGS, {
-    captioning: {
-      hidden: !isON
-    }
-  });
-};
-
-/**
- * @override
-*/
-CaptioningSettingsMediator.prototype.listNotificationInterests = function() {
-  return [CaptioningNotifications.SETTINGS_VISIBILITY_CHANGE, CaptioningNotifications.TOGGLE_SETTINGS_VISIBILITY, CaptioningNotifications.SETTINGS_CHANGE, CaptioningNotifications.TRACK_SELECTED, CaptioningNotifications.VISIBILITY_CHANGE];
-};
-
-/**
- * @override
-*/
-CaptioningSettingsMediator.prototype.handleNotification = function(notification) {
-  var body, fName, fValue, i, isDefault, k, listString, name, note, option, state, v, _i, _len, _ref;
-  name = notification.getName();
-  body = notification.getBody();
-  switch (name) {
-    case CaptioningNotifications.SETTINGS_VISIBILITY_CHANGE:
-    case CaptioningNotifications.TOGGLE_SETTINGS_VISIBILITY:
-      if (this.settingsUiVisible) {
-        this.colorPicker.style.display = "none";
-      }
-      this.settingsUiVisible = !this.settingsUiVisible;
-      if (this.settingsUiVisible && this.list.language.length === 1) {
-        this.languageListPopulate();
-      }
-      note = this.settingsUiVisible ? Notifications.ADD_APPLICATION_STATE : Notifications.REMOVE_APPLICATION_STATE;
-      state = "cc-setting-active";
-      this.sendNotification(note, state);
-      break;
-    case CaptioningNotifications.SETTINGS_CHANGE:
-      isDefault = false;
-      for (k in body) {
-        v = body[k];
-        switch (k) {
-          case "fontFamily":
-          case "fontSize":
-          case "scroll":
-          case "edgeType":
-            listString = k === "fontFamily" ? "font" : k === "fontSize" ? "size" : k === "edgeType" ? "edge" : "scroll";
-            _ref = this.list[listString].options;
-            for (i = _i = 0, _len = _ref.length; _i < _len; i = ++_i) {
-              option = _ref[i];
-              if (k === "fontFamily" && typeof v === "object") {
-                for (fName in v) {
-                  fValue = v[fName];
-                  if (fName === "default") {
-                    this.captioningObject.selected.fontFamily = fValue;
-                    isDefault = true;
-                  }
-                  if ((new RegExp(fName, "i")).test(option.label)) {
-                    if (!(new RegExp("^" + fValue)).test(option.value)) {
-                      option.value = fValue + "," + option.value;
-                    }
-                    if (option.selected) {
-                      this.captioningObject.selected.fontFamily = option.value;
-                    }
-                  }
-                }
-              } else if ((new RegExp("^" + v + "$", "i")).test(option.label)) {
-                this.list[listString].selectedIndex = i;
-                if (k === "fontSize") {
-                  k = "size";
-                }
-                this.captioningObject.selected[k] = option.value;
-                if (k === "scroll") {
-                  this.scroll.type = this.captioningObject.selected.scroll = option.value;
-                  this.plugin.setSettings({
-                    scroll: this.scroll.type
-                  });
-                  try {
-                    if (option.value === "painton") {
-                      ClassList.add("akamai-captioning-typed", this.facade.proxy.renderer.viewComponent);
-                    } else {
-                      ClassList.remove("akamai-captioning-typed", this.facade.proxy.renderer.viewComponent);
-                    }
-                  } catch (error) {
-                    this.facade.logger.error("AMP Captioning Error", error);
-                  }
-                }
-              }
-            }
-            break;
-          case "backgroundColor":
-          case "edgeColor":
-          case "fontColor":
-          case "windowColor":
-            this.captioningObject.selected[k] = v;
-        }
-      }
-      this.applyCaptioningStyle(false, true, isDefault);
-      if ((body.visible != null) && body.visible !== !this.facade.getHidden()) {
-        this.facade.setHidden(!body.visible);
-      }
-      break;
-    case CaptioningNotifications.TRACK_SELECTED:
-      this.list.language.value = notification.body.language;
-      this.onScrollListChange(this.captioningObject.selected.scroll);
-      break;
-    case CaptioningNotifications.VISIBILITY_CHANGE:
-      this.toggleButtonHandler(body, false);
-  }
-};
-
-/** 
- * PluginMediator class.
- *   
- * @constructor
- * @private
- * @extends {OverlayMediator}
-*/
-function PluginMediator() {
-  PluginMediator.__super__.constructor.call(this);
-}
-
-
-__extends(PluginMediator, OverlayMediator);
-
-
-/** @override
-*/
-PluginMediator.prototype.initializeNotifier = function(key) {
-  PluginMediator.__super__.initializeNotifier.call(this, key);
-  this.plugin = this.facade.retrieveProxy(ModuleProxy.NAME);
-  this.media = this.facade.player.retrieveProxy(MediaProxy.NAME);
-};
-
-/** @override
-*/
-PluginMediator.prototype.onRegister = function() {
-  PluginMediator.__super__.onRegister.call(this);
-  this.facade.viewComponent = this.viewComponent;
-};
-
-/**
- * The CaptioningMediator class.
- * 
- * @constructor
- * @private
- * @extends {PluginMediator}
- * @param {Object} viewComponent
-*/
-function CaptioningMediator(viewComponent) {
-  CaptioningMediator.__super__.constructor.call(this, viewComponent);
-}
-
-
-__extends(CaptioningMediator, PluginMediator);
-
-
-CaptioningMediator.prototype.componentName = "captioning";
-
-CaptioningMediator.prototype.captionButton = null;
-
-/**
- * @override
-*/
-CaptioningMediator.prototype.onRegister = function() {
-  var button;
-  button = new ButtonMediator(this.localizationManager.getString(LocalizationConstants.MSG_CC), this.viewComponent, null, "caption", this.onclick.bind(this));
-  this.facade.registerMediator(button);
-  this.captionButton = button.getViewComponent();
-  this.sendNotification(Notifications.ADD_CONTROL, this.captionButton);
-  CaptioningMediator.__super__.onRegister.call(this);
-  try {
-    if ((typeof localStorage !== "undefined" && localStorage !== null ? localStorage.getItem(Namespace.PREFIX + "caption-enabled") : void 0) === "true") {
-      this.facade.setHidden(false);
-    }
-  } catch (_error) {}
-};
-
-/**
-*/
-CaptioningMediator.prototype.onclick = function(event) {
-  var _ref;
-  event.stopImmediatePropagation();
-  if (((_ref = this.plugin.getTrack()) != null ? _ref.type : void 0) === "embedded") {
-    this.sendNotification(CaptioningNotifications.VISIBILITY_CHANGE, this.plugin.getHidden());
-  } else if (event.currentTarget === this.captionButton) {
-    this.sendNotification(CaptioningNotifications.SETTINGS_VISIBILITY_CHANGE, this.plugin.getHidden());
-  }
-  return false;
-};
-
-/**
- * @override
-*/
-CaptioningMediator.prototype.listNotificationInterests = function() {
-  return [CaptioningNotifications.VISIBILITY_CHANGE, CaptioningNotifications.ENABLED, CaptioningNotifications.TRACK_SELECTED];
-};
-
-/**
- * @override
-*/
-CaptioningMediator.prototype.handleNotification = function(notification) {
-  var body, note, state;
-  body = notification.getBody();
-  note = body ? Notifications.ADD_APPLICATION_STATE : Notifications.REMOVE_APPLICATION_STATE;
-  switch (notification.getName()) {
-    case CaptioningNotifications.TRACK_SELECTED:
-      state = "cc-embedded";
-      note = body.type === "embedded" ? Notifications.ADD_APPLICATION_STATE : Notifications.REMOVE_APPLICATION_STATE;
-      break;
-    case CaptioningNotifications.VISIBILITY_CHANGE:
-      state = "cc-active";
-      break;
-    case CaptioningNotifications.ENABLED:
-      note = body ? Notifications.ADD_CONTROL_STATE : Notifications.REMOVE_CONTROL_STATE;
-      state = "cc-enabled";
-      if (!body) {
-        this.sendNotification(Notifications.REMOVE_APPLICATION_STATE, "cc-active");
-      }
-  }
-  this.sendNotification(note, state);
-};
-
-/** 
- * The OmniturePlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Plugin}
-*/
-function OmniturePlugin() {
-  OmniturePlugin.__super__.constructor.call(this);
-}
-
-
-__extends(OmniturePlugin, Plugin);
-
-
-OmniturePlugin.prototype.moduleName = "omniture";
-
-/** @override
-*/
-OmniturePlugin.prototype.createController = function() {
-  this.registerCommand(Notifications.MEDIA_CHANGE, OmnitureMediaChangeCommand);
-  this.registerCommand(Notifications.ENDED, OmnitureEndedCommand);
-  this.registerCommand(Notifications.STARTED, OmnitureStartCommand);
-  this.registerCommand(Notifications.PLAY, OmniturePlayCommand);
-  this.registerCommand(Notifications.PAUSE, OmniturePauseCommand);
-  this.registerCommand(Notifications.SEEKING, OmnitureSeekingCommand);
-  this.registerCommand(Notifications.SEEKED, OmnitureSeekedCommand);
-  this.registerCommand(Notifications.CHANGE_CONTENT, OmnitureEndedCommand);
-  this.registerCommand(Notifications.CONTENT_CHANGED, OmnitureContentChangedCommand);
-  this.registerCommand(AdNotifications.AD_LOADED, OmnitureAdLoadedCommand);
-  this.registerCommand(AdNotifications.AD_STARTED, OmnitureAdStartedCommand);
-  this.registerCommand(AdNotifications.AD_PLAY, OmnitureAdPlayCommand);
-  this.registerCommand(AdNotifications.AD_PAUSE, OmnitureAdPauseCommand);
-  this.registerCommand(AdNotifications.AD_TIME_UPDATE, OmnitureAdTimeUpdateCommand);
-  this.registerCommand(AdNotifications.BREAK_END, OmnitureAdBreakEndCommand);
-};
-
-/** @override
-*/
-OmniturePlugin.prototype.createModel = function() {
-  var _ref;
-  if (((_ref = this.config.heartbeat) != null ? _ref.enabled : void 0) === true) {
-    this.registerProxy(new HeartbeatProxy(this.config));
-  } else {
-    this.registerProxy(new OmnitureProxy(this.config));
-  }
-};
-
-/**
-*/
-OmniturePlugin.prototype.listNotificationInterests = function() {
-  return [Notifications.CHANGE_MEDIA, Notifications.MEDIA_CHANGE, Notifications.CHANGE_CONTENT, Notifications.CONTENT_CHANGED, Notifications.TIME_UPDATE, Notifications.ENDED, Notifications.STARTED, Notifications.PLAY, Notifications.PAUSE, Notifications.SEEKING, Notifications.SEEKED, AdNotifications.AD_LOADED, AdNotifications.AD_STARTED, AdNotifications.AD_PLAY, AdNotifications.AD_PAUSE, AdNotifications.AD_TIME_REMAINING, AdNotifications.BREAK_START, AdNotifications.BREAK_END];
-};
-
-
-AMP.registerPlugin("omniture", "html", OmniturePlugin);
-AMP.registerPlugin("omniture", "flash", OmnitureWrapper);
 
 /** 
  * @constructor
@@ -24106,11 +23613,11 @@ InfoMediator.prototype.truncateDescription = function(desc) {
   }
 };
 
-/** 
+/**
  * The InfoProxy class.
- *   
+ *
  * @constructor
- * @private 
+ * @private
  * @extends {DataBoundConfigurationProxy}
  * @param {Object} data
 */
@@ -24135,166 +23642,6 @@ InfoProxy.prototype.defaults = {
   more: "read more",
   less: "less"
 };
-
-/** 
- * The CaptioningPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Feature}
-*/
-function CaptioningPlugin() {
-  CaptioningPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(CaptioningPlugin, Feature);
-
-
-CaptioningPlugin.prototype.featureName = "captioning";
-
-CaptioningPlugin.prototype.moduleName = "captioning";
-
-/** @override
-*/
-CaptioningPlugin.prototype.createController = function() {
-  CaptioningPlugin.__super__.createController.call(this);
-  this.registerCommand(Notifications.CHANGE_MEDIA, CaptioningChangeMediaCommand);
-  this.registerCommand(Notifications.STARTED, CaptioningStartedCommand);
-  this.registerCommand(Notifications.TIME_UPDATE, CaptioningTimeUpdateCommand);
-  this.registerCommand(CaptioningNotifications.VISIBILITY_CHANGE, CaptioningVisibilityChangeCommand);
-  this.registerCommand(CaptioningNotifications.ENABLED, PluginEventCommand);
-  this.registerCommand(CaptioningNotifications.TRACK_SELECTED, PluginEventCommand);
-  this.registerCommand(CaptioningNotifications.TRACKS_LOADED, PluginEventCommand);
-  this.registerCommand(CaptioningNotifications.CUE_CHANGE, PluginEventCommand);
-};
-
-/** @override
-*/
-CaptioningPlugin.prototype.createModel = function() {
-  this.proxy = new CaptioningProxy(this.config);
-  this.registerProxy(this.proxy);
-};
-
-/** @override
-*/
-CaptioningPlugin.prototype.createView = function() {
-  var mediator, viewComponent;
-  mediator = new CaptioningMediator();
-  this.registerMediator(mediator);
-  viewComponent = mediator.viewComponent;
-  this.registerMediator(new CaptioningSettingsMediator(viewComponent));
-  this.proxy.registerRenderer(new CaptioningNativeMediator(viewComponent));
-  this.proxy.registerRenderer(new CaptioningHTMLMediator(viewComponent));
-};
-
-/**
-*/
-CaptioningPlugin.prototype.listNotificationInterests = function() {
-  return [Notifications.LOADED_METADATA, Notifications.CAN_PLAY_THROUGH, Notifications.CHANGE_MEDIA, Notifications.STARTED, Notifications.TIME_UPDATE, CaptioningNotifications.TOGGLE_SETTINGS_VISIBILITY];
-};
-
-/**
-*/
-CaptioningPlugin.prototype.listNotificationPublications = function() {
-  var key, value;
-  return CaptioningPlugin.__super__.listNotificationPublications.call(this).concat((function() {
-    var _results;
-    _results = [];
-    for (key in CaptioningNotifications) {
-      value = CaptioningNotifications[key];
-      if (value !== CaptioningNotifications.TOGGLE_SETTINGS_VISIBILITY) {
-        _results.push(value);
-      }
-    }
-    return _results;
-  })()).concat([Notifications.ADD_CONTROL, Notifications.REMOVE_CONTROL, UserSettingsNotifications.UPDATE_SETTINGS, Notifications.ADD_CONTROL_STATE, Notifications.REMOVE_CONTROL_STATE]);
-};
-
-/**
- * @return {boolean} The hidden flag.
- * @expose
-*/
-CaptioningPlugin.prototype.getHidden = function() {
-  return this.proxy.getHidden();
-};
-
-/**
- * @param {boolean} value The hidden flag.
- * @expose
-*/
-CaptioningPlugin.prototype.setHidden = function(value) {
-  this.sendNotification(CaptioningNotifications.VISIBILITY_CHANGE, !value);
-  return value;
-};
-
-/**
- * Returns an array of caption tracks
- * 
- * @return {Array.<CaptionTrack>} The list of text tracks.
- * @expose
-*/
-CaptioningPlugin.prototype.getTracks = function() {
-  return this.proxy.getTracks();
-};
-
-/**
- * Returns the currently selected track.
- * 
- * @return {CaptionTrack} The currently selected caption track.
- * @expose
-*/
-CaptioningPlugin.prototype.getTrack = function() {
-  return this.proxy.getTrack();
-};
-
-/**
- * Selects a caption track
- * 
- * @param {CaptionTrack} value The caption track to select
- * @expose
-*/
-CaptioningPlugin.prototype.setTrack = function(value) {
-  this.proxy.setTrack(value);
-  return value;
-};
-
-/**
- * Selects a caption track by its index in the getTracks array.
- * 
- * @param {number}        index   The index to select 
- * @return {CaptionTrack}         The selected caption track.
- * @expose
-*/
-CaptioningPlugin.prototype.selectTrackByIndex = function(index) {
-  return this.proxy.selectTrackByIndex(index);
-};
-
-/**
- * Selects a caption track by it's language property.
- * 
- * @param {string}        lang  The language to select 
- * @return {CaptionTrack}       The selected caption track.
- * @expose
-*/
-CaptioningPlugin.prototype.selectTrackByLanguage = function(lang) {
-  return this.proxy.selectTrackByLanguage(lang);
-};
-
-/**
- * Sets a caption Settings Object (styles)
- * 
- * @param {Object}  object  The caption settings object. 
- * @expose
-*/
-CaptioningPlugin.prototype.changeSettings = function(object) {
-  this.sendNotification(CaptioningNotifications.SETTINGS_CHANGE, object);
-  return object;
-};
-
-
-AMP.registerPlugin("captioning", "html", CaptioningPlugin);
 
 /** 
  * The AdContentStartedCommand class.
@@ -24410,9 +23757,9 @@ AdLoadedCommand.prototype.execute = function(notification) {
   AdLoadedCommand.__super__.execute.call(this, notification);
 };
 
-/** 
+/**
  * The AdBreakStartCommand class.
- *   
+ *
  * @constructor
  * @private
  * @extends {AdCommand}
@@ -24427,21 +23774,20 @@ __extends(AdBreakStartCommand, PluginEventCommand);
 
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
 AdBreakStartCommand.prototype.execute = function(notification) {
-  this.player.sendNotification(Notifications.ADD_APPLICATION_STATE, "ad-mode");
   AdBreakStartCommand.__super__.execute.call(this, notification);
   this.proxy.breakStart();
 };
 
-/** 
+/**
  * The AdBreakEndCommand class.
- *   
+ *
  * @constructor
  * @private
  * @extends {AdCommand}
@@ -24456,16 +23802,23 @@ __extends(AdBreakEndCommand, PluginEventCommand);
 
 /**
  * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
+ *
+ * @param {puremvc.Notification} notification
  *    The notification.
- * 
+ *
  * @override
 */
 AdBreakEndCommand.prototype.execute = function(notification) {
+  var rate, _ref;
   AdBreakEndCommand.__super__.execute.call(this, notification);
   this.proxy.breakEnd();
-  this.player.sendNotification(Notifications.REMOVE_APPLICATION_STATE, "ad-mode");
+  if (((_ref = notification.getBody()) != null ? _ref.partner : void 0) === "ima") {
+    rate = this.applicationState.getPlaybackRate();
+    this.facade.player.setPlaybackRate(rate);
+  }
+  if (this.applicationState.getEnded() && this.applicationState.getHasPostContent() === true) {
+    this.sendNotification(Notifications.MEDIA_SEQUENCE_ENDED);
+  }
 };
 
 /** 
@@ -24521,6 +23874,37 @@ __extends(AdContainerCreatedCommand, PluginEventCommand);
 AdContainerCreatedCommand.prototype.execute = function(notification) {
   this.proxy.container = notification.getBody();
   AdContainerCreatedCommand.__super__.execute.call(this, notification);
+};
+
+/** 
+ * The AdReplayCommand class.
+ * 
+ * Added to address ad replay workflow FLASHPLR 
+ *   
+ * @constructor
+ * @private
+ * @extends {AdCommand}
+*/
+function AdReplayCommand() {
+  AdReplayCommand.__super__.constructor.call(this);
+}
+
+
+__extends(AdReplayCommand, PluginCommand);
+
+
+/**
+ * Executes the command.
+ * 
+ * @param {puremvc.Notification} notification 
+ *    The notification.
+ * 
+ * @override
+*/
+AdReplayCommand.prototype.execute = function(notification) {
+  if (typeof this.proxy.replay === "function" && this.facade.player.getAutoplay() === false) {
+    this.proxy.replay();
+  }
 };
 
 /** 
@@ -24659,6 +24043,12 @@ __extends(AdPauseCommand, PluginCommand);
  * @override
 */
 AdPauseCommand.prototype.execute = function(notification) {
+  var duration, time;
+  time = this.proxy.adVO.time;
+  duration = this.proxy.adVO.duration;
+  if (time === "undefined" || !time || time === duration) {
+    return;
+  }
   this.proxy.pause();
   this.player.sendNotification(Notifications.CHANGE_PLAY_STATE, PlayState.PAUSED);
 };
@@ -24753,102 +24143,70 @@ AdPlayStateChangeCommand.prototype.execute = function(notification) {
   }
 };
 
-/**
+/** 
+ * The OmniturePlugin class.
+ *   
+ * @param {Module}  app     The parent module of this plugin.
  * @constructor
  * @private
- * @extends {OverlayMediator}
+ * @extends {Plugin}
 */
-function AdMediator() {
-  AdMediator.__super__.constructor.call(this);
+function OmniturePlugin() {
+  OmniturePlugin.__super__.constructor.call(this);
 }
 
 
-__extends(AdMediator, OverlayMediator);
+__extends(OmniturePlugin, Plugin);
 
 
-AdMediator.prototype.duration = null;
+OmniturePlugin.prototype.moduleName = "omniture";
 
-AdMediator.prototype.currentTime = null;
-
-AdMediator.prototype.container = null;
-
-AdMediator.prototype.banner = null;
-
-AdMediator.prototype.text = null;
-
-AdMediator.prototype.adText = null;
-
-AdMediator.prototype.bg = null;
-
-AdMediator.prototype.totalAds = null;
-
-AdMediator.prototype.adPosition = null;
-
-AdMediator.prototype.adContainerRequired = true;
-
-AdMediator.prototype.componentName = "ads";
-
-/**
- * @override
+/** @override
 */
-AdMediator.prototype.onRegister = function() {
-  AdMediator.__super__.onRegister.call(this);
-  if (this.adContainerRequired) {
-    this.container = this.create("ad-container");
-  }
-  this.banner = this.create("ad-banner");
-  this.bg = this.create("ad-text-bg", this.banner);
-  this.adText = this.create("ad-text-title", this.banner);
-  this.text = this.create("ad-text", this.banner);
-  if (this.adContainerRequired) {
-    this.viewComponent.container = this.container;
-  }
-  this.sendNotification(AdNotifications.AD_CONTAINER_CREATED, this.viewComponent);
-  this.facade.setViewComponent(this.viewComponent);
+OmniturePlugin.prototype.createController = function() {
+  this.registerCommand(Notifications.MEDIA_CHANGE, OmnitureMediaChangeCommand);
+  this.registerCommand(Notifications.ENDED, OmnitureEndedCommand);
+  this.registerCommand(Notifications.STARTED, OmnitureStartCommand);
+  this.registerCommand(Notifications.PLAY, OmniturePlayCommand);
+  this.registerCommand(Notifications.PAUSE, OmniturePauseCommand);
+  this.registerCommand(Notifications.SEEKING, OmnitureSeekingCommand);
+  this.registerCommand(Notifications.SEEKED, OmnitureSeekedCommand);
+  this.registerCommand(Notifications.CHANGE_CONTENT, OmnitureEndedCommand);
+  this.registerCommand(Notifications.CONTENT_CHANGED, OmnitureContentChangedCommand);
+  this.registerCommand(AdNotifications.AD_LOADED, OmnitureAdLoadedCommand);
+  this.registerCommand(AdNotifications.AD_STARTED, OmnitureAdStartedCommand);
+  this.registerCommand(AdNotifications.AD_PLAY, OmnitureAdPlayCommand);
+  this.registerCommand(AdNotifications.AD_PAUSE, OmnitureAdPauseCommand);
+  this.registerCommand(AdNotifications.AD_TIME_UPDATE, OmnitureAdTimeUpdateCommand);
+  this.registerCommand(AdNotifications.BREAK_END, OmnitureAdBreakEndCommand);
 };
 
-/**
- * @override
+/** @override
 */
-AdMediator.prototype.listNotificationInterests = function() {
-  return [AdNotifications.BREAK_START, AdNotifications.BREAK_END, AdNotifications.AD_TIME_REMAINING, AdNotifications.AD_STARTED];
-};
-
-/**
- * @override
-*/
-AdMediator.prototype.handleNotification = function(notification) {
-  var adVO, msg, time;
-  switch (notification.getName()) {
-    case AdNotifications.BREAK_END:
-      this.text.textContent = "";
-      this.adText.textContent = "";
-      break;
-    case AdNotifications.AD_TIME_REMAINING:
-      time = Math.round(notification.getBody());
-      if ((this.totalAds != null) && this.totalAds > 0 && (this.adPosition != null) && this.adPosition !== this.totalAds) {
-        msg = time > 0 ? "" + (this.localizationManager.getString(LocalizationConstants.MSG_NEXT_AD)) + time + " " + (this.localizationManager.getString(LocalizationConstants.MSG_SECONDS)) : "";
-      } else {
-        msg = time > 0 ? "" + (this.localizationManager.getString(LocalizationConstants.MSG_NEXT_VIDEO)) + time + " " + (this.localizationManager.getString(LocalizationConstants.MSG_SECONDS)) : "";
-      }
-      this.text.textContent = msg;
-      break;
-    case AdNotifications.AD_STARTED:
-      adVO = notification.getBody();
-      this.totalAds = adVO.totalAds;
-      this.adPosition = adVO.position;
-      msg = "Ad " + adVO.position + " of " + adVO.totalAds;
-      if ((adVO.position != null) && (adVO.totalAds != null) && adVO.totalAds >= 1) {
-        this.adText.textContent = msg;
-      }
+OmniturePlugin.prototype.createModel = function() {
+  var _ref;
+  if (((_ref = this.config.heartbeat) != null ? _ref.enabled : void 0) === true) {
+    this.registerProxy(new HeartbeatProxy(this.config));
+  } else {
+    this.registerProxy(new OmnitureProxy(this.config));
   }
 };
 
-/** 
+/**
+*/
+OmniturePlugin.prototype.listNotificationInterests = function() {
+  return [Notifications.CHANGE_MEDIA, Notifications.MEDIA_CHANGE, Notifications.CHANGE_CONTENT, Notifications.CONTENT_CHANGED, Notifications.TIME_UPDATE, Notifications.ENDED, Notifications.STARTED, Notifications.PLAY, Notifications.PAUSE, Notifications.SEEKING, Notifications.SEEKED, AdNotifications.AD_LOADED, AdNotifications.AD_STARTED, AdNotifications.AD_PLAY, AdNotifications.AD_PAUSE, AdNotifications.AD_TIME_REMAINING, AdNotifications.BREAK_START, AdNotifications.BREAK_END];
+};
+
+
+AMP.registerPlugin("omniture", "html", OmniturePlugin);
+AMP.registerPlugin("omniture", "flash", OmnitureWrapper);
+
+/**
  * The AdProxy class.
- *   
+ *
  * @constructor
- * @private 
+ * @private
  * @extends {PluginProxy}
  * @param {Object} config
  * @implements {IDataBindingContext}
@@ -24866,7 +24224,7 @@ __extends(AdProxy, PluginProxy);
 */
 AdProxy.NAME = PluginProxy.NAME;
 
-AdProxy.prototype.inprogress = false;
+AdProxy.prototype.inProgress = false;
 
 AdProxy.prototype.paused = false;
 
@@ -24888,7 +24246,7 @@ AdProxy.prototype.createDefaultAdVO = function() {
 
 /**
  * Gets the context data for this proxy.
- * 
+ *
  * @returns {Object} The contenxt data for this proxy
 */
 AdProxy.prototype.getContextData = function() {
@@ -24911,11 +24269,11 @@ AdProxy.prototype.getCompanions = function() {
 /**
 */
 AdProxy.prototype.getInProgress = function() {
-  return this.inprogress;
+  return this.inProgress;
 };
 
 AdProxy.prototype.setInProgress = function(value) {
-  this.inprogress = value;
+  this.inProgress = value;
   return value;
 };
 
@@ -24940,6 +24298,20 @@ AdProxy.prototype.getPaused = function() {
 
 AdProxy.prototype.setPaused = function(value) {
   this.paused = value;
+  return value;
+};
+
+AdProxy.prototype.setCues = function(value) {
+  var cue, cues, _i, _len;
+  cues = [];
+  for (_i = 0, _len = value.length; _i < _len; _i++) {
+    cue = value[_i];
+    cues.push({
+      startTime: cue,
+      endTime: cue
+    });
+  }
+  this.facade.player.mediaProxy.setCues(cues);
   return value;
 };
 
@@ -25086,7 +24458,14 @@ AdProxy.prototype.setPodLocks = function(pods) {
 
 /**
 */
-AdProxy.prototype.startBreak = function() {
+AdProxy.prototype.resize = function(state) {};
+
+/**
+*/
+AdProxy.prototype.startBreak = function(adVO) {
+  if (adVO != null) {
+    this.adVO = adVO;
+  }
   this.setStarted(true);
   this.sendNotification(AdNotifications.BREAK_START, this.adVO);
   if (this.getEnabled() === false) {
@@ -25214,7 +24593,8 @@ var FlashAdNotifications = {
   AD_TIME_UPDATE: "adComponentPlaybackProgress",
   AD_TIME_REMAINING: "adComponentTimeElapsed",
   AD_DURATION_CHANGE: "addurationchange",
-  AD_ENDED: "adComponentAdComplete",
+  AD_ENDED: "adComponentImpressionEnd",
+  COMPLETE: "adComponentAdComplete",
   AD_ERROR: "adComponentInitFailed",
   AD_PLAY: "adComponentPlaybackResumed",
   AD_PAUSE: "adComponentPlaybackPaused",
@@ -25233,10 +24613,10 @@ var FlashAdNotifications = {
   AD_IMPRESSION: "adComponentImpression"
 };
 
-/** 
+/**
  * Used to trigger overlay ads for Google IMA
- * 
- * @constructor 
+ *
+ * @constructor
  * @private
 */
 function IMAOverlayProxy(config) {
@@ -25357,11 +24737,11 @@ var IMANotifications = {
   REMOVE_OVERLAY: "ima/removeOverlay"
 };
 
-/** 
+/**
  * The IMAProxy class.
- *   
+ *
  * @constructor
- * @private 
+ * @private
  * @extends {AdProxy}
  * @param {Object} config
 */
@@ -25458,7 +24838,7 @@ IMAProxy.prototype.initialize = function() {};
 /** @override
 */
 IMAProxy.prototype.ready = function() {
-  var mode;
+  var isAndroidChrome, mode, userAgentMatch, _ref;
   this.viewMode = google.ima.ViewMode.NORMAL;
   window.addEventListener("resize", this.resize.bind(this));
   if (this.config.vpaidAllowed != null) {
@@ -25467,8 +24847,16 @@ IMAProxy.prototype.ready = function() {
   if ((this.config.vpaidMode != null) && ((mode = google.ima.ImaSdkSettings.VpaidMode[this.config.vpaidMode.toUpperCase()]) != null)) {
     google.ima.settings.setVpaidMode(mode);
   }
+  if (this.config.disableFlashAds != null) {
+    google.ima.settings.setDisableFlashAds(this.config.disableFlashAds);
+  }
   this.adDisplayContainer = this.createPlugin();
   this.adsLoader = new google.ima.AdsLoader(this.adDisplayContainer);
+  userAgentMatch = navigator.userAgent.match(/Chrom(e|ium)\/([0-9]+)\./);
+  isAndroidChrome = userAgentMatch ? parseInt(userAgentMatch[2], 10) > 52 : false;
+  if ((((_ref = Utils.getIOSversion()) != null ? _ref[0] : void 0) >= 10 || isAndroidChrome) && this.facade.player.getConfig().playsinline !== false) {
+    google.ima.settings.setDisableCustomPlaybackForIOS10Plus(true);
+  }
   this.adsRenderingSettings = new google.ima.AdsRenderingSettings();
   this.adsLoader.addEventListener(google.ima.AdsManagerLoadedEvent.Type.ADS_MANAGER_LOADED, this.onAdsManagerLoaded.bind(this), false);
   this.adsLoader.addEventListener(google.ima.AdErrorEvent.Type.AD_ERROR, this.onAdError.bind(this), false);
@@ -25477,7 +24865,7 @@ IMAProxy.prototype.ready = function() {
 /** @override
 */
 IMAProxy.prototype.createPlugin = function() {
-  return new google.ima.AdDisplayContainer(this.facade.getViewComponent().container);
+  return new google.ima.AdDisplayContainer(this.getContainer());
 };
 
 /** @override
@@ -25577,9 +24965,8 @@ IMAProxy.prototype.start = function(load) {
   if (load === true) {
     this.playbackCore = this.facade.player.retrieveProxy(PlayerProxy.NAME).getActivePlaybackCore();
     video = this.getMediaElement();
-    this.playbackCore.setEnabled(false);
-    video.src = this.playbackCore.getSrc();
     video.once("loadedmetadata", this.loadedmetadata);
+    this.playbackCore.setEnabled(false);
     video.load();
   } else {
     this.engage();
@@ -25651,14 +25038,14 @@ IMAProxy.prototype.onAdsManagerLoaded = function(adsManagerLoadedEvent) {
     }
   }
   this.adsManager = adsManagerLoadedEvent.getAdsManager(this.facade.player.mediaElement, this.adsRenderingSettings);
-  this.facade.player.sendNotification(AdNotifications.AD_MANAGER_LOADED, {
+  this.sendNotification(AdNotifications.AD_MANAGER_LOADED, {
     "adManager": this.adsManager,
     "viewMode": google.ima.ViewMode.NORMAL,
-    "adContainer": this.facade.getViewComponent()
+    "adContainer": this.getContainer()
   });
   this.adsManagerLoaded = true;
   this.cuePoints = this.adsManager.getCuePoints();
-  this.sendNotification(Notifications.ADD_CUE_POINTS, this.cuePoints);
+  this.setCues(this.cuePoints);
   if (this.cuePoints.indexOf(-1) !== -1) {
     this.sendNotification(Notifications.HAS_POST_CONTENT, true);
   }
@@ -25678,9 +25065,7 @@ IMAProxy.prototype.onAdsManagerLoaded = function(adsManagerLoadedEvent) {
   this.adsManager.addEventListener(google.ima.AdEvent.Type.MIDPOINT, adEventHandler);
   this.adsManager.addEventListener(google.ima.AdEvent.Type.THIRD_QUARTILE, adEventHandler);
   this.adsManager.addEventListener(google.ima.AdEvent.Type.SKIPPED, adEventHandler);
-  if (this.getValue("logEventsEnabled") === true) {
-    this.adsManager.addEventListener(google.ima.AdEvent.Type.LOG, adEventHandler);
-  }
+  this.adsManager.addEventListener(google.ima.AdEvent.Type.LOG, adEventHandler);
   this.sendNotification(AdNotifications.REQUEST_COMPLETE, {
     pods: this.cuePoints
   });
@@ -25726,7 +25111,7 @@ IMAProxy.prototype.onAdResumed = function(adEvent) {
 /**
 */
 IMAProxy.prototype.onAdEvent = function(adEvent) {
-  var ad, companion, companions, config, pos, type, _i, _len, _ref;
+  var ad, companion, companions, config, pos, type, _i, _len, _ref, _ref1;
   ad = adEvent.getAd();
   if (this.adVO != null) {
     if (ad != null) {
@@ -25741,6 +25126,7 @@ IMAProxy.prototype.onAdEvent = function(adEvent) {
       break;
     case google.ima.AdEvent.Type.LOADED:
       if (ad.isLinear()) {
+        this.facade.player.sendNotification(Notifications.REMOVE_APPLICATION_STATE, "ad-overlaymode");
         pos = ad.getAdPodInfo().getPodIndex();
         type = pos === 0 ? "preroll" : pos === -1 ? "postroll" : "midroll";
         this.adVO = new AdVO(ad.getAdId(), ad.getAdId(), ad.getDuration(), pos, type, "ima", null, null, this.adTagUrl, ad, ad.getAdPodInfo().getTotalAds());
@@ -25751,7 +25137,7 @@ IMAProxy.prototype.onAdEvent = function(adEvent) {
         this.resize();
         this.sendNotification(AdNotifications.AD_LOADED, this.adVO);
         this.sendNotification(AdNotifications.AD_DURATION_CHANGE, this.adVO);
-        this.setVolume(this.facade.player.getVolume());
+        this.setVolume(this.facade.player.retrieveProxy(ApplicationStateProxy.NAME).getVolume());
       } else {
         this.facade.player.sendNotification(Notifications.ADD_APPLICATION_STATE, "ad-overlaymode");
         this.contentPlay();
@@ -25794,16 +25180,19 @@ IMAProxy.prototype.onAdEvent = function(adEvent) {
       this.sendNotification(AdNotifications.THIRD_QUARTILE, this.adVO);
       break;
     case google.ima.AdEvent.Type.LOG:
-      this.sendNotification(AdNotifications.LOG, this.adVO);
+      if (this.facade.player.retrieveProxy(ApplicationStateProxy.NAME).getEnded() === true && (((_ref1 = adEvent.getAdData()) != null ? _ref1.adError : void 0) != null)) {
+        this.forceBreakEnd = true;
+      }
+      if (this.getValue("logEventsEnabled") === true) {
+        this.sendNotification(AdNotifications.LOG, this.adVO);
+      }
       break;
     case google.ima.AdEvent.Type.SKIPPED:
       this.sendNotification(AdNotifications.SKIPPED, this.adVO);
       break;
     case google.ima.AdEvent.Type.ALL_ADS_COMPLETED:
-      if (this.appState.getHasPostContent() === true) {
-        this.sendNotification(Notifications.MEDIA_SEQUENCE_ENDED);
-      }
-      if (this.getInProgress() === true) {
+      if (this.getInProgress() === true || this.forceBreakEnd === true) {
+        this.forceBreakEnd = false;
         this.endBreak();
       }
   }
@@ -25811,9 +25200,16 @@ IMAProxy.prototype.onAdEvent = function(adEvent) {
 
 /**
 */
+IMAProxy.prototype.getContainer = function() {
+  var _ref, _ref1;
+  return ((_ref = this.facade.player.ui) != null ? (_ref1 = _ref.ads) != null ? _ref1.container : void 0 : void 0) || this.facade.player.container;
+};
+
+/**
+*/
 IMAProxy.prototype.getDimensions = function() {
   var container;
-  container = this.facade.player.getViewComponent();
+  container = this.getContainer();
   return {
     width: container.clientWidth,
     height: container.clientHeight
@@ -25822,11 +25218,13 @@ IMAProxy.prototype.getDimensions = function() {
 
 /**
 */
-IMAProxy.prototype.onAdTimeUpdate = function(adErrorEvent) {
-  var remaining;
+IMAProxy.prototype.onAdTimeUpdate = function(adEvent) {
+  var remaining, time;
   this.resize();
-  remaining = this.adsManager.getRemainingTime();
-  this.sendNotification(AdNotifications.AD_TIME_UPDATE, this.adVO.duration - remaining);
+  remaining = Utils.clamp(this.adsManager.getRemainingTime(), 0, this.adVO.duration);
+  time = this.adVO.duration - remaining;
+  this.adVO.time = time;
+  this.sendNotification(AdNotifications.AD_TIME_UPDATE, time);
   this.sendNotification(AdNotifications.AD_TIME_REMAINING, remaining);
 };
 
@@ -25871,13 +25269,20 @@ IMAProxy.prototype.pause = function() {
 
 /**
 */
-IMAProxy.prototype.breakEnd = function() {
-  var interval, overlayProxy, _i, _len, _ref;
+IMAProxy.prototype.clearIntervals = function() {
+  var interval, _i, _len, _ref;
   _ref = this.intervals;
   for (_i = 0, _len = _ref.length; _i < _len; _i++) {
     interval = _ref[_i];
     clearInterval(this.intervals.pop());
   }
+};
+
+/**
+*/
+IMAProxy.prototype.breakEnd = function() {
+  var overlayProxy;
+  this.clearIntervals();
   IMAProxy.__super__.breakEnd.call(this);
   overlayProxy = this.facade.retrieveProxy(IMAOverlayProxy.NAME);
   if (overlayProxy != null) {
@@ -25977,6 +25382,9 @@ IMAProxy.prototype.terminateAd = function() {
   } catch (error) {
     this.facade.logger.error("[AMP IMA ERROR]", "terminateAd", error);
   }
+  if (this.adVO.type === "postrol") {
+    this.sendNotification(Notifications.HAS_POST_CONTENT, false);
+  }
   this.endBreak();
   this.contentPlay();
 };
@@ -25992,6 +25400,7 @@ IMAProxy.prototype.terminateAllAds = function() {
   } catch (error) {
     this.facade.logger.error("[AMP IMA ERROR]", "terminateAllAds", error);
   }
+  this.sendNotification(Notifications.HAS_POST_CONTENT, false);
   this.endBreak();
   this.contentPlay();
 };
@@ -26000,6 +25409,7 @@ IMAProxy.prototype.terminateAllAds = function() {
 */
 IMAProxy.prototype.destroy = function() {
   var _ref;
+  this.clearIntervals();
   if ((_ref = this.adsManager) != null) {
     if (typeof _ref.destroy === "function") {
       _ref.destroy();
@@ -26221,9 +25631,9 @@ IMAActiveStateChangeCommand.prototype.execute = function(notification) {
   this.facade.retrieveProxy(IMAProxy.NAME).resize(notification.getBody());
 };
 
-/** 
+/**
  * The IMAFullscreenProxy class.
- *   
+ *
  * @constructor
  * @private
  * @extends {IMAProxy}
@@ -26244,7 +25654,15 @@ IMAFullscreenProxy.NAME = IMAProxy.NAME;
 /**
 */
 IMAFullscreenProxy.prototype.createPlugin = function() {
-  return new google.ima.AdDisplayContainer(this.facade.getViewComponent().container, this.facade.player.getMediaElement(), this.facade.getViewComponent().container);
+  var container, _ref, _ref1;
+  container = this.facade.player.ui.ads.container;
+  if (Utils.isIPhone() && (((_ref = Utils.getIOSversion()) != null ? _ref[0] : void 0) < 10)) {
+    return new google.ima.AdDisplayContainer(container, this.facade.player.getMediaElement(), container);
+  }
+  if (((_ref1 = Utils.getIOSversion()) != null ? _ref1[0] : void 0) >= 10) {
+    this.facade.player.getMediaElement().playsInline = this.facade.player.getConfig().playsinline != null ? this.facade.player.getConfig().playsinline : true;
+  }
+  return new google.ima.AdDisplayContainer(container, this.facade.player.getMediaElement());
 };
 
 /** @override
@@ -26276,12 +25694,45 @@ IMAFullscreenProxy.prototype.breakEnd = function() {
   this.playbackCore.setEnabled(true);
 };
 
-/** 
+/**
  * @constructor
  * @private
 */
 function AdWrapper(player, init) {
   AdWrapper.__super__.constructor.call(this, player, init);
+  Object.defineProperties(this, {
+    enabled: {
+      get: this.getEnabled,
+      set: this.setEnabled,
+      enumerable: true,
+      configurable: false
+    },
+    inProgress: {
+      get: this.getInProgress,
+      enumerable: true,
+      configurable: false
+    },
+    started: {
+      get: this.getStarted,
+      enumerable: true,
+      configurable: false
+    },
+    paused: {
+      get: this.getPaused,
+      enumerable: true,
+      configurable: false
+    },
+    companions: {
+      get: this.getCompanions,
+      enumerable: true,
+      configurable: false
+    },
+    currentAd: {
+      get: this.getCurrentAd,
+      enumerable: true,
+      configurable: false
+    }
+  });
 }
 
 
@@ -26333,6 +25784,10 @@ AdWrapper.prototype.getEnabled = function() {
   return this.enabled;
 };
 
+AdWrapper.prototype.getCurrentAd = function() {
+  return this.adVO;
+};
+
 AdWrapper.prototype.enable = function() {
   this.setEnabled(true);
 };
@@ -26366,7 +25821,8 @@ AdWrapper.prototype.listNotificationInterests = function() {
 /** @override
 */
 AdWrapper.prototype.handleNotification = function(notification) {
-  var body, cues, event, name, pods, scene, target, type, _i, _len;
+  var body, cuepoints, cues, event, name, pods, remaining, scene, target, type, _i, _len, _ref,
+    _this = this;
   AdWrapper.__super__.handleNotification.call(this, notification);
   name = notification.getName();
   body = notification.getBody();
@@ -26375,6 +25831,18 @@ AdWrapper.prototype.handleNotification = function(notification) {
   switch (name) {
     case FlashAdNotifications.BREAK_START:
       type = AdNotifications.BREAK_START;
+      this.facade.setPlayState("playing");
+      if (((_ref = body.cuePoints) != null ? _ref.length : void 0) > 0) {
+        cuepoints = body.cuePoints.map(function(cue) {
+          var start;
+          start = !isNaN(cue.sceneStartSeconds) ? cue.sceneStartSeconds : cue.sceneEndSeconds;
+          return {
+            startTime: start,
+            endTime: cue.sceneEndSeconds
+          };
+        });
+        this.facade.setCues(cuepoints);
+      }
       break;
     case FlashAdNotifications.BREAK_END:
       type = AdNotifications.BREAK_END;
@@ -26385,6 +25853,7 @@ AdWrapper.prototype.handleNotification = function(notification) {
     case FlashAdNotifications.AD_MEDIA_LOADED:
       type = AdNotifications.AD_LOADED;
       this.start = false;
+      target.dispatchEvent(new Event(AdNotifications.AD_DURATION_CHANGE.replace(/^ads/, ""), this.adVO));
       break;
     case FlashAdNotifications.AD_STARTED:
       type = AdNotifications.AD_STARTED;
@@ -26393,15 +25862,22 @@ AdWrapper.prototype.handleNotification = function(notification) {
       break;
     case FlashAdNotifications.AD_TIME_UPDATE:
       type = AdNotifications.AD_TIME_UPDATE;
+      remaining = body.duration - body.currentTime;
+      target.dispatchEvent(new Event(AdNotifications.AD_TIME_REMAINING.replace(/^ads/, ""), remaining));
+      body = body.currentTime;
       break;
     case FlashAdNotifications.AD_TIME_REMAINING:
       type = AdNotifications.AD_TIME_REMAINING;
+      body = body.timeElapsed;
       break;
     case FlashAdNotifications.AD_ERROR:
     case FlashAdNotifications.AD_PLAYBACK_FAILED:
       type = AdNotifications.AD_ERROR;
       this.start = false;
       this.sendNotification(Notifications.REMOVE_APPLICATION_STATE, "ad-mode");
+      break;
+    case FlashAdNotifications.COMPLETE:
+      type = AdNotifications.COMPLETE;
       break;
     case FlashAdNotifications.AD_ENDED:
     case FlashAdNotifications.AD_PLAYBACK_TERMINATED:
@@ -26466,8 +25942,8 @@ AdWrapper.prototype.handleNotification = function(notification) {
   }
   if (type != null) {
     this.sendNotification(type, this.adVO);
-    if (type === AdNotifications.AD_TIME_REMAINING) {
-      event = new Event(type.replace(/^ads/, ""), body.timeElapsed);
+    if (type === AdNotifications.AD_TIME_REMAINING || type === AdNotifications.AD_TIME_UPDATE) {
+      event = new Event(type.replace(/^ads/, ""), body);
     } else {
       event = new Event(type.replace(/^ads/, ""), this.adVO);
     }
@@ -26660,9 +26136,20 @@ IMAWrapper.prototype.createXML = function(xml) {
   return xml;
 };
 
-/** 
+/**
+ * @enum {string}
+ * @const
+ * @private
+*/
+
+var StatsNotifications = {
+  VISIBILITY_CHANGE: "statsvisibilitychange",
+  BITRATES_UPDATE: "bitratesUpdate"
+};
+
+/**
  * The AdPlugin class.
- *   
+ *
  * @param {Module}  app     The parent module of this plugin.
  * @constructor
  * @private
@@ -26670,6 +26157,39 @@ IMAWrapper.prototype.createXML = function(xml) {
 */
 function AdPlugin() {
   AdPlugin.__super__.constructor.call(this);
+  Object.defineProperties(this, {
+    enabled: {
+      get: this.getEnabled,
+      set: this.setEnabled,
+      enumerable: true,
+      configurable: false
+    },
+    inProgress: {
+      get: this.getInProgress,
+      enumerable: true,
+      configurable: false
+    },
+    started: {
+      get: this.getStarted,
+      enumerable: true,
+      configurable: false
+    },
+    paused: {
+      get: this.getPaused,
+      enumerable: true,
+      configurable: false
+    },
+    companions: {
+      get: this.getCompanions,
+      enumerable: true,
+      configurable: false
+    },
+    currentAd: {
+      get: this.getCurrentAd,
+      enumerable: true,
+      configurable: false
+    }
+  });
 }
 
 
@@ -26697,9 +26217,9 @@ AdPlugin.prototype.createController = function() {
   this.registerCommand(AdNotifications.BREAK_START, AdBreakStartCommand);
   this.registerCommand(AdNotifications.AD_LOADED, AdLoadedCommand);
   this.registerCommand(AdNotifications.BREAK_END, AdBreakEndCommand);
-  this.registerCommand(Notifications.SEEK, AdSeekCommand);
-  this.registerCommand(UserNotifications.SEEK, AdSeekCommand);
+  this.registerCommand(UserNotifications.SEEKED, AdSeekCommand);
   this.registerCommand(AdNotifications.AD_CONTAINER_CREATED, AdContainerCreatedCommand);
+  this.registerCommand(Notifications.REPLAY, AdReplayCommand);
   this.registerCommand(AdNotifications.AD_STARTED, PluginEventCommand);
   this.registerCommand(AdNotifications.SKIPPED, PluginEventCommand);
   this.registerCommand(AdNotifications.AD_MANAGER_LOADED, PluginEventCommand);
@@ -26726,12 +26246,6 @@ AdPlugin.prototype.createController = function() {
   this.registerCommand(AdNotifications.BREAK_SKIPPED, PluginEventCommand);
 };
 
-/** @override
-*/
-AdPlugin.prototype.createView = function() {
-  return this.registerMediator(new AdMediator());
-};
-
 AdPlugin.prototype.isFullscreenDevice = function() {
   return Utils.isFullscreenDevice();
 };
@@ -26743,7 +26257,7 @@ AdPlugin.prototype.createFullscreenProxy = function() {};
 /**
 */
 AdPlugin.prototype.listNotificationInterests = function() {
-  return [Notifications.MEDIA_CHANGE, Notifications.PLAY, Notifications.PAUSE, Notifications.PAUSED, Notifications.START, Notifications.STARTED, Notifications.ENDED, Notifications.READY, Notifications.SEEK, Notifications.VOLUME_CHANGE, Notifications.FULL_SCREEN_CHANGE, Notifications.CHANGE_ACTIVE_STATE, Notifications.PLAY_STATE_CHANGE, UserNotifications.PLAY, UserNotifications.PAUSE, UserNotifications.SEEK, UserNotifications.TOGGLE_PLAY_PAUSE];
+  return [Notifications.MEDIA_CHANGE, Notifications.REPLAY, Notifications.PLAY, Notifications.PAUSE, Notifications.PAUSED, Notifications.START, Notifications.STARTED, Notifications.ENDED, Notifications.READY, Notifications.VOLUME_CHANGE, Notifications.FULL_SCREEN_CHANGE, Notifications.CHANGE_ACTIVE_STATE, Notifications.PLAY_STATE_CHANGE, UserNotifications.PLAY, UserNotifications.PAUSE, UserNotifications.SEEKED, UserNotifications.TOGGLE_PLAY_PAUSE];
 };
 
 /**
@@ -26758,7 +26272,7 @@ AdPlugin.prototype.listNotificationPublications = function() {
       _results.push(value);
     }
     return _results;
-  })()).concat([Notifications.PLAY_REQUEST, Notifications.UPDATE_DATA_BINDINGS, Notifications.DISPLAY_TIME, Notifications.ADD_CUE_POINTS, Notifications.DISABLE_FULL_SCREEN, Notifications.ENABLE_VIDEO_EVENTS, Notifications.DISABLE_VIDEO_EVENTS, Notifications.HAS_POST_CONTENT, Notifications.MEDIA_SEQUENCE_ENDED, Notifications.CHANGE_PLAY_STATE]);
+  })()).concat([Notifications.PLAY_REQUEST, Notifications.UPDATE_DATA_BINDINGS, Notifications.DISPLAY_TIME, Notifications.DISABLE_FULL_SCREEN, Notifications.ENABLE_VIDEO_EVENTS, Notifications.DISABLE_VIDEO_EVENTS, Notifications.HAS_POST_CONTENT, Notifications.MEDIA_SEQUENCE_ENDED, Notifications.CHANGE_PLAY_STATE, Notifications.AUTOPLAY_BLOCKED]);
 };
 
 /**
@@ -26810,10 +26324,25 @@ AdPlugin.prototype.getCompanions = function() {
 };
 
 /**
+ * @return {Array.<Object>} The list of companion ads.
+ * @expose
+*/
+AdPlugin.prototype.getCurrentAd = function() {
+  return this.proxy.adVO;
+};
+
+/**
  * @expose
 */
 AdPlugin.prototype.setPodLocks = function(pods) {
   this.proxy.setPodLocks(pods);
+};
+
+/**
+ * @expose
+*/
+AdPlugin.prototype.resize = function(state) {
+  this.proxy.resize(state);
 };
 
 /**
@@ -26836,369 +26365,6 @@ AdPlugin.prototype.terminateAllAds = function() {
 AdPlugin.prototype.requestAd = function() {
   this.proxy.start(false);
 };
-
-/** 
- * @constructor
- * @private
-*/
-function ShareWrapper(player, config) {
-  if (config == null) {
-    config = {};
-  }
-  ShareWrapper.__super__.constructor.call(this, player, config);
-}
-
-
-__extends(ShareWrapper, PluginWrapper);
-
-
-/** 
- * @static
-*/
-ShareWrapper.NAME = "ShareWrapper";
-
-ShareWrapper.prototype.controls = ["share", "facebook", "twitter"];
-
-ShareWrapper.prototype.flashView = {
-  elements: {
-    controls: {
-      elements: {
-        shareBtn: {}
-      }
-    }
-  }
-};
-
-/**
-*/
-ShareWrapper.prototype.getFeatureName = function() {
-  return "share";
-};
-
-/** @override
-*/
-ShareWrapper.prototype.createFlashVars = function(flashvars) {
-  if (flashvars.share_mode == null) {
-    flashvars.share_mode = 2;
-  }
-  return flashvars;
-};
-
-/** @override
-*/
-ShareWrapper.prototype.createXML = function(xml) {
-  var controls, id, _i, _len, _ref, _ref1, _ref2, _ref3, _ref4;
-  controls = (_ref = this.player.config) != null ? (_ref1 = _ref.flash) != null ? (_ref2 = _ref1.view) != null ? (_ref3 = _ref2.elements) != null ? _ref3.controls : void 0 : void 0 : void 0 : void 0;
-  if (!(controls != null)) {
-    return;
-  }
-  if (controls.elements == null) {
-    controls.elements = {};
-  }
-  _ref4 = this.controls;
-  for (_i = 0, _len = _ref4.length; _i < _len; _i++) {
-    id = _ref4[_i];
-    if (this.config[id] === true && !(controls.elements[id + "Btn"] != null)) {
-      controls.elements[id + "Btn"] = {};
-    }
-  }
-  return xml;
-};
-
-/** @override
-*/
-ShareWrapper.prototype.listNotificationInterests = function() {
-  return ShareWrapper.__super__.listNotificationInterests.call(this).concat([FlashNotifications.SHARE, FlashNotifications.SHARE_REQUEST]);
-};
-
-/** @override
-*/
-ShareWrapper.prototype.handleNotification = function(notification) {
-  var body, name, type;
-  ShareWrapper.__super__.handleNotification.call(this, notification);
-  name = notification.getName();
-  body = notification.getBody();
-  switch (name) {
-    case FlashNotifications.SHARE:
-    case FlashNotifications.SHARE_REQUEST:
-      type = "share";
-  }
-  if (type != null) {
-    this.dispatchEvent(new Event(type, body));
-  }
-};
-
-
-AMP.registerPlugin("share", "flash", ShareWrapper);
-
-/**
- * The ShareMediator class.
- * 
- * @constructor
- * @private
- * @extends {PluginMediator}
-*/
-function ShareMediator() {
-  ShareMediator.__super__.constructor.call(this);
-}
-
-
-__extends(ShareMediator, PluginMediator);
-
-
-ShareMediator.prototype.componentName = "share";
-
-ShareMediator.prototype.shareControl = null;
-
-ShareMediator.prototype.shareSeparator = null;
-
-ShareMediator.prototype.embed = null;
-
-/**
- * @override
-*/
-ShareMediator.prototype.onRegister = function() {
-  this.sendNotification(Notifications.ADD_CONTROL_STATE, "share-enabled");
-  this.shareControl = this.create(["share", "control"], false);
-  this.shareSeparator = this.create(["share", "separator"], this.shareControl);
-  this.createButton("share");
-  if (this.plugin.getFacebook() === true) {
-    this.createButton("facebook");
-  }
-  if (this.plugin.getTwitter() === true) {
-    this.createButton("twitter");
-  }
-  this.sendNotification(Notifications.ADD_CONTROL, this.shareControl);
-  ShareMediator.__super__.onRegister.call(this);
-};
-
-/**
-*/
-ShareMediator.prototype.createButton = function(id) {
-  var button;
-  button = new ButtonMediator(null, this.shareControl, null, id, this.clickHandler.bind(this, id));
-  this.facade.registerMediator(button);
-};
-
-/**
-*/
-ShareMediator.prototype.clickHandler = function(provider, event) {
-  event.stopImmediatePropagation();
-  this.sendNotification(Notifications.DISPATCH_EVENT, new Event("share", {
-    provider: provider,
-    link: this.plugin.getLink(),
-    embed: this.plugin.getEmbed()
-  }));
-  return false;
-};
-
-/**
- * @override
-*/
-ShareMediator.prototype.listNotificationInterests = function() {
-  return [Notifications.MEDIA_CHANGE];
-};
-
-/**
- * @override
-*/
-ShareMediator.prototype.handleNotification = function(notification) {
-  var body, media, name;
-  name = notification.getName();
-  body = notification.getBody();
-  switch (name) {
-    case Notifications.MEDIA_CHANGE:
-      media = body;
-      if (media.embed != null) {
-        this.sendNotification(Notifications.ADD_CONTROL_STATE, "share-enabled");
-      } else {
-        this.sendNotification(Notifications.REMOVE_CONTROL_STATE, "share-enabled");
-      }
-  }
-};
-
-/** 
- * The ShareProxy class.
- * 
- * @constructor
- * @private
- * @extends {PluginProxy}
-*/
-function ShareProxy(config) {
-  ShareProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(ShareProxy, PluginProxy);
-
-
-/** @static
-*/
-ShareProxy.NAME = ModuleProxy.NAME;
-
-ShareProxy.prototype.defaults = {
-  facebook: false,
-  twitter: false
-};
-
-ShareProxy.prototype.loaded = true;
-
-ShareProxy.prototype.link = null;
-
-ShareProxy.prototype.embed = null;
-
-/**
- *
-*/
-ShareProxy.prototype.getEmbed = function() {
-  return this.embed;
-};
-
-ShareProxy.prototype.setEmbed = function(value) {
-  return this.embed = value;
-};
-
-/**
- *
-*/
-ShareProxy.prototype.getLink = function() {
-  return this.link;
-};
-
-ShareProxy.prototype.setLink = function(value) {
-  return this.link = value;
-};
-
-/**
- *
-*/
-ShareProxy.prototype.getFacebook = function() {
-  return this.getConfigurationData().facebook;
-};
-
-ShareProxy.prototype.setFacebook = function(value) {
-  return this.data.facebook = value;
-};
-
-/**
- *
-*/
-ShareProxy.prototype.getTwitter = function() {
-  return this.getConfigurationData().twitter;
-};
-
-ShareProxy.prototype.setTwitter = function(value) {
-  return this.data.twitter = value;
-};
-
-/**
- * The ShareMediaChangeCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function ShareMediaChangeCommand() {
-  ShareMediaChangeCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ShareMediaChangeCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ShareMediaChangeCommand.prototype.execute = function(notification) {
-  var media, proxy;
-  media = notification.getBody();
-  proxy = this.facade.retrieveProxy(ShareProxy.NAME);
-  proxy.setEmbed(media.embed);
-  proxy.setLink(media.link);
-};
-
-/**
- * @enum {string}
- * @const
- * @private
-*/
-
-var StatsNotifications = {
-  VISIBILITY_CHANGE: "statsvisibilitychange",
-  BITRATES_UPDATE: "bitratesUpdate"
-};
-
-/** 
- * The IMAPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {AdPlugin}
-*/
-function IMAPlugin() {
-  IMAPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(IMAPlugin, AdPlugin);
-
-
-IMAPlugin.prototype.moduleName = "ima";
-
-IMAPlugin.prototype.createFullscreenProxy = function() {
-  return new IMAFullscreenProxy(this.config);
-};
-
-IMAPlugin.prototype.createProxy = function() {
-  return new IMAProxy(this.config);
-};
-
-IMAPlugin.prototype.isFullscreenDevice = function() {
-  var ua;
-  ua = navigator.userAgent;
-  return Utils.isFullscreenDevice() || /Android 4\.[0-1]/.test(ua) || /CrKey/.test(ua);
-};
-
-/** @override
-*/
-IMAPlugin.prototype.createModel = function() {
-  IMAPlugin.__super__.createModel.call(this);
-  if (this.config.overlay != null) {
-    this.registerProxy(new IMAOverlayProxy(this.config.overlay));
-  }
-};
-
-/** @override
-*/
-IMAPlugin.prototype.createController = function() {
-  IMAPlugin.__super__.createController.call(this);
-  if (this.config.overlay != null) {
-    this.registerCommand(IMANotifications.ADD_OVERLAY, IMAAddOverlayCommand);
-    this.registerCommand(IMANotifications.REMOVE_OVERLAY, IMARemoveOverlayCommand);
-  }
-  this.registerCommand(Notifications.READY, IMAReadyCommand);
-  this.registerCommand(Notifications.FULL_SCREEN_CHANGE, IMADisplayStateChangeCommand);
-  this.registerCommand(Notifications.CHANGE_ACTIVE_STATE, IMAActiveStateChangeCommand);
-};
-
-/** @override
-*/
-IMAPlugin.prototype.createView = function() {
-  IMAPlugin.__super__.createView.call(this);
-  if (this.config.overlay != null) {
-    this.registerMediator(new IMAOverlayMediator());
-  }
-};
-
-
-AMP.registerPlugin("ima", "html", IMAPlugin);
-AMP.registerPlugin("ima", "flash", IMAWrapper);
 
 /** 
  * @constructor 
@@ -27454,936 +26620,6 @@ StatsMediator.prototype.createBitrateText = function(item, index) {
 };
 
 /**
- * @enum {string}
- * @const
- * @private
-*/
-
-var AISNotifications = {
-  START_AUTHENTICATION: "aisauthenticationstarted",
-  AUTHENTICATED: "aisauthenticated",
-  AUTHENTICATING: "aisauthenticating",
-  AUTHENTICATION_COMPLETE: "aisauthenticationcomplete",
-  CHOOSE_AUTH_PROVIDER: "aischooseprovider",
-  CHOOSE_PLAY_OPTIONS: "aischooseplayoptions",
-  LAUNCH_IDP_LOGIN: "aislaunchidplogin"
-};
-
-/**
- * The AISLaunchIDPLoginCommand class.
- *   
- * @constructor
- * @private
- * @extends {amp.plugins.PluginEventCommand}
-*/
-function AISLaunchIDPLoginCommand() {
-  AISLaunchIDPLoginCommand.__super__.constructor.call(this);
-}
-
-
-__extends(AISLaunchIDPLoginCommand, PluginEventCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-AISLaunchIDPLoginCommand.prototype.execute = function(notification) {
-  AISLaunchIDPLoginCommand.__super__.execute.call(this, notification);
-  this.proxy.launchIDPLogin(notification.getBody());
-};
-
-/**
- * The AISChooserMediator class.
- * 
- * @constructor
- * @private
- * @extends {LocalizedMediator}
-*/
-function AISChooserMediator(parent) {
-  AISChooserMediator.__super__.constructor.call(this, null, null, parent);
-}
-
-
-__extends(AISChooserMediator, ComponentMediator);
-
-
-AISChooserMediator.prototype.componentName = "ais-chooser";
-
-AISChooserMediator.prototype.menu = null;
-
-AISChooserMediator.prototype.label = null;
-
-AISChooserMediator.prototype.grid = null;
-
-AISChooserMediator.prototype.select = null;
-
-AISChooserMediator.prototype.login = null;
-
-AISChooserMediator.prototype.title = null;
-
-/**
- * @override
-*/
-AISChooserMediator.prototype.onRegister = function() {
-  var _this = this;
-  AISChooserMediator.__super__.onRegister.call(this);
-  this.classList.add("hidden");
-  this.title = this.createText("ais-chooser-title", "Choose your provider");
-  this.grid = this.create("ais-chooser-grid");
-  this.menu = this.create("ais-chooser-menu");
-  this.label = this.createText("ais-chooser-label", "Providers: ", this.menu);
-  this.select = this.create("ais-chooser-select", this.menu, "select");
-  this.login = this.create("ais-chooser-login", false, "input");
-  this.login.type = "button";
-  this.login.value = "Login";
-  EventHandler.create(this.login, EventHandler.CLICK, function(event) {
-    var idpID;
-    if (typeof event.stopImmediatePropagation === "function") {
-      event.stopImmediatePropagation();
-    }
-    idpID = _this.select.options[_this.select.selectedIndex].value;
-    _this.sendNotification(AISNotifications.LAUNCH_IDP_LOGIN, idpID);
-    return false;
-  });
-  this.menu.appendChild(this.login);
-};
-
-/**
- * @override
-*/
-AISChooserMediator.prototype.listNotificationInterests = function() {
-  return [AISNotifications.CHOOSE_AUTH_PROVIDER, AISNotifications.AUTHENTICATING];
-};
-
-/**
- * @override
-*/
-AISChooserMediator.prototype.handleNotification = function(notification) {
-  var baseURL, div, featuredGroup, footprints, group, groups, idp, idps, img, index, key, logos, member, option, options, proxy, resp, span, src, value, _i, _j, _k, _l, _len, _len1, _len2, _len3, _ref, _ref1,
-    _this = this;
-  switch (notification.getName()) {
-    case AISNotifications.CHOOSE_AUTH_PROVIDER:
-      resp = notification.getBody();
-      idps = resp.possible_idps;
-      footprints = resp.footprints || [];
-      groups = resp.grouped_idps || [];
-      proxy = this.facade.retrieveProxy(ModuleProxy.NAME);
-      logos = proxy.value.logos;
-      baseURL = logos != null ? logos.base : void 0;
-      this.grid.innerHTML = "";
-      if ((groups != null) && ((logos != null ? logos.group : void 0) != null)) {
-        for (_i = 0, _len = groups.length; _i < _len; _i++) {
-          group = groups[_i];
-          if (!(group.name === logos.group)) {
-            continue;
-          }
-          featuredGroup = group;
-          break;
-        }
-        if (featuredGroup != null) {
-          _ref = featuredGroup.members;
-          for (index = _j = 0, _len1 = _ref.length; _j < _len1; index = ++_j) {
-            member = _ref[index];
-            idp = idps[member];
-            div = this.create(["ais-chooser-grid-item", "ais-chooser-grid-index-" + (index + 1)], this.grid);
-            if (div.dataset == null) {
-              div.dataset = {};
-            }
-            div.dataset.key = member;
-            div.onclick = function(event) {
-              var idpID, target;
-              if (typeof event.stopImmediatePropagation === "function") {
-                event.stopImmediatePropagation();
-              }
-              target = (event.currentTarget != null) ? event.currentTarget : event.srcElement;
-              idpID = target.dataset.key;
-              _this.sendNotification(AISNotifications.LAUNCH_IDP_LOGIN, idpID);
-              return false;
-            };
-            if (((_ref1 = idps[member].logos) != null ? _ref1[logos.key] : void 0) != null) {
-              img = this.create("ais-chooser-grid-cell-img", div, "img");
-              img.alt = idp.display_name;
-              src = idp.logos[logos.key];
-              if (src.indexOf("http") === -1) {
-                src = baseURL + src;
-              }
-              img.src = src;
-              if (img.dataset == null) {
-                img.dataset = {};
-              }
-              img.dataset.key = member;
-              span = this.create("ais-chooser-grid-cell-label", div, "span");
-              span.innerHTML = idp.display_name;
-            } else {
-              div.innerHTML = idp.display_name;
-            }
-          }
-        }
-      }
-      if (this.grid.innerHTML !== "") {
-        this.classList.add("ais-chooser-featured");
-        this.label.textContent = "Other ";
-      }
-      options = this.select.options;
-      for (index = _k = 0, _len2 = options.length; _k < _len2; index = ++_k) {
-        option = options[index];
-        this.select.options.remove(index);
-      }
-      if (footprints.length > 0) {
-        for (_l = 0, _len3 = footprints.length; _l < _len3; _l++) {
-          key = footprints[_l];
-          options[options.length] = new Option("" + idps[key].display_name, "" + key);
-        }
-      }
-      for (key in idps) {
-        value = idps[key];
-        options[options.length] = new Option("" + value.display_name, "" + key);
-      }
-      this.classList.remove("hidden");
-      break;
-    case AISNotifications.AUTHENTICATING:
-      this.classList.add("hidden");
-  }
-};
-
-/**
- * The AISPlayMediator class.
- * 
- * @constructor
- * @private
- * @extends {LocalizedMediator}
- * @param {Object} viewComponent
-*/
-function AISPlayMediator(parent) {
-  AISPlayMediator.__super__.constructor.call(this, null, null, parent);
-}
-
-
-__extends(AISPlayMediator, ComponentMediator);
-
-
-AISPlayMediator.prototype.componentName = "ais-play";
-
-AISPlayMediator.prototype.menu = null;
-
-AISPlayMediator.prototype.restart = null;
-
-AISPlayMediator.prototype.resume = null;
-
-AISPlayMediator.prototype.resumeTime = null;
-
-/**
- * @override
-*/
-AISPlayMediator.prototype.onRegister = function() {
-  var _this = this;
-  AISPlayMediator.__super__.onRegister.call(this);
-  this.classList.add("hidden");
-  this.menu = this.create("ais-play-menu");
-  this.restart = this.create("ais-play-restart", this.menu);
-  this.restart.type = "button";
-  this.restart.textContent = "Restart";
-  this.restart.onclick = function(event) {
-    if (typeof event.stopImmediatePropagation === "function") {
-      event.stopImmediatePropagation();
-    }
-    _this.play();
-    return false;
-  };
-  this.resume = this.create("ais-play-resume", this.menu);
-  this.resume.type = "button";
-  this.resume.value = "Resume";
-  this.restart.onclick = function(event) {
-    if (typeof event.stopImmediatePropagation === "function") {
-      event.stopImmediatePropagation();
-    }
-    _this.play(_this.resumeTime);
-    return false;
-  };
-};
-
-AISPlayMediator.prototype.play = function(time) {
-  var proxy;
-  proxy = this.facade.retrieveProxy(AISProxy.NAME);
-  proxy.play(time);
-};
-
-/**
- * @override
-*/
-AISPlayMediator.prototype.listNotificationInterests = function() {
-  return [AISNotifications.CHOOSE_PLAY_OPTIONS];
-};
-
-/**
- * @override
-*/
-AISPlayMediator.prototype.handleNotification = function(notification) {
-  switch (notification.getName()) {
-    case AISNotifications.CHOOSE_PLAY_OPTIONS:
-      this.resumeTime = notification.getBody();
-      this.classList.remove("hidden");
-  }
-};
-
-/**
- * The AISAuthenticateMediaCommand class.
- * 
- * @constructor
- * @private
- * @extends {amp.plugins.PluginCommand}
-*/
-function AISAuthorizeCommand() {
-  AISAuthorizeCommand.__super__.constructor.call(this);
-}
-
-
-__extends(AISAuthorizeCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-AISAuthorizeCommand.prototype.execute = function(notification) {
-  var reason;
-  reason = this.media.getData().status.reason;
-  if (reason === "ais" || reason === "token") {
-    this.proxy.authorize();
-  }
-};
-
-/**
- * The AISAuthenticatingMediator class.
- * 
- * @constructor
- * @private
- * @extends {LocalizedMediator}
-*/
-function AISAuthenticatingMediator(parent) {
-  AISAuthenticatingMediator.__super__.constructor.call(this, null, null, parent);
-}
-
-
-__extends(AISAuthenticatingMediator, ComponentMediator);
-
-
-AISAuthenticatingMediator.prototype.componentName = "ais-authenticating";
-
-AISAuthenticatingMediator.prototype.retry = null;
-
-/**
- * @override
-*/
-AISAuthenticatingMediator.prototype.onRegister = function() {
-  AISAuthenticatingMediator.__super__.onRegister.call(this);
-  this.classList.add("hidden");
-  this.retry = this.create("ais-authenticating-button");
-  this.retry.type = "button";
-  this.retry.value = "Back to Providers";
-  this.retry.onclick = this.onclick.bind(this);
-};
-
-/**
-*/
-AISAuthenticatingMediator.prototype.onclick = function(event) {
-  if (typeof event.stopImmediatePropagation === "function") {
-    event.stopImmediatePropagation();
-  }
-  this.classList.add("hidden");
-  this.sendNotification(AISNotifications.START_AUTHENTICATION);
-  return false;
-};
-
-/**
- * @override
-*/
-AISAuthenticatingMediator.prototype.listNotificationInterests = function() {
-  return [AISNotifications.AUTHENTICATING];
-};
-
-/**
- * @override
-*/
-AISAuthenticatingMediator.prototype.handleNotification = function(notification) {
-  switch (notification.getName()) {
-    case AISNotifications.AUTHENTICATING:
-      if (notification.getBody() === true) {
-        this.classList.remove("hidden");
-      } else {
-        this.classList.add("hidden");
-      }
-  }
-};
-
-/**
- * The AISStartAuthenticationCommand class.
- *   
- * @constructor
- * @private
- * @extends {amp.plugins.PluginEventCommand}
-*/
-function AISStartAuthenticationCommand() {
-  AISStartAuthenticationCommand.__super__.constructor.call(this);
-}
-
-
-__extends(AISStartAuthenticationCommand, PluginEventCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-AISStartAuthenticationCommand.prototype.execute = function(notification) {
-  this.proxy.bounce();
-  AISStartAuthenticationCommand.__super__.execute.call(this, notification);
-};
-
-/** 
- * @constructor
- * @private
-*/
-function AISMediator() {
-  AISMediator.__super__.constructor.call(this);
-}
-
-
-__extends(AISMediator, OverlayMediator);
-
-
-AISMediator.prototype.componentName = "ais";
-
-AISMediator.prototype.chooser = null;
-
-AISMediator.prototype.auth = null;
-
-AISMediator.prototype.play = null;
-
-AISMediator.prototype.onRegister = function() {
-  var _this = this;
-  AISMediator.__super__.onRegister.call(this);
-  this.classList.add("hidden");
-  setTimeout(function() {
-    _this.chooser = new AISChooserMediator(_this);
-    _this.facade.registerMediator(_this.chooser);
-    _this.auth = new AISAuthenticatingMediator(_this);
-    _this.facade.registerMediator(_this.auth);
-    _this.play = new AISPlayMediator(_this);
-    return _this.facade.registerMediator(_this.play);
-  }, 20);
-};
-
-AISMediator.prototype.listNotificationInterests = function() {
-  return [AISNotifications.START_AUTHENTICATION, AISNotifications.AUTHENTICATION_COMPLETE, AISNotifications.CHOOSE_PLAY_OPTIONS, Notifications.MEDIA_CHANGE];
-};
-
-AISMediator.prototype.handleNotification = function(notification) {
-  switch (notification.getName()) {
-    case AISNotifications.CHOOSE_PLAY_OPTIONS:
-    case AISNotifications.START_AUTHENTICATION:
-      this.classList.remove("hidden");
-      break;
-    case AISNotifications.AUTHENTICATION_COMPLETE:
-    case Notifications.MEDIA_CHANGE:
-      this.classList.add("hidden");
-      this.facade.player.sendNotification(Notifications.REMOVE_APPLICATION_STATE, "authenticating");
-  }
-};
-
-/** 
- * The AISPlugin class.
- *   
- * @param {Module}  app     
- *    The parent module of this plugin.
- * 
- * @constructor
- * @private
- * @extends {Feature}
-*/
-function AISPlugin() {
-  AISPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(AISPlugin, Feature);
-
-
-AISPlugin.NAME = "AISPlugin";
-
-AISPlugin.prototype.moduleName = "ais";
-
-AISPlugin.prototype.featureName = "auth";
-
-AISPlugin.prototype.idps = null;
-
-/** @override
-*/
-AISPlugin.prototype.createController = function() {
-  AISPlugin.__super__.createController.call(this);
-  this.registerCommand(SecurityNotifications.AUTHORIZE, AISAuthorizeCommand);
-  this.registerCommand(AISNotifications.LAUNCH_IDP_LOGIN, AISLaunchIDPLoginCommand);
-  this.registerCommand(AISNotifications.START_AUTHENTICATION, AISStartAuthenticationCommand);
-  this.registerCommand(AISNotifications.AUTHENTICATED, PluginEventCommand);
-  this.registerCommand(AISNotifications.AUTHENTICATING, PluginEventCommand);
-  this.registerCommand(AISNotifications.AUTHENTICATION_COMPLETE, PluginEventCommand);
-  this.registerCommand(AISNotifications.CHOOSE_AUTH_PROVIDER, PluginEventCommand);
-  this.registerCommand(AISNotifications.CHOOSE_PLAY_OPTIONS, PluginEventCommand);
-  this.registerCommand(SecurityNotifications.AUTHORIZATION_FAILED, PluginEventCommand);
-};
-
-/** @override
-*/
-AISPlugin.prototype.createModel = function() {
-  this.proxy = new AISProxy(this.config);
-  this.registerProxy(this.proxy);
-};
-
-/** @override
-*/
-AISPlugin.prototype.createView = function() {
-  this.registerMediator(new AISMediator());
-};
-
-/** @override
-*/
-AISPlugin.prototype.createNotificationEvent = function(notificationName, body, type) {
-  var event;
-  event = Module.prototype.createNotificationEvent.call(this, notificationName, body, type);
-  if (!(event != null)) {
-    return;
-  }
-  event.type = event.type.replace(new RegExp("^" + (this.getModuleName())), "");
-  return event;
-};
-
-/** @override
-*/
-AISPlugin.prototype.listNotificationInterests = function() {
-  return AISPlugin.__super__.listNotificationInterests.call(this).concat([Notifications.MEDIA_CHANGE, SecurityNotifications.AUTHORIZE]);
-};
-
-/**
-*/
-AISPlugin.prototype.listNotificationPublications = function() {
-  return AISPlugin.__super__.listNotificationPublications.call(this).concat([SecurityNotifications.AUTHORIZED, SecurityNotifications.AUTHORIZATION_FAILED, Notifications.INITIALIZED, Notifications.PLAY, Notifications.SEEK]);
-};
-
-/**
- * @expose
-*/
-AISPlugin.prototype.authorize = function(media) {
-  this.proxy.authorize(media);
-  return media;
-};
-
-/**
- * @expose
-*/
-AISPlugin.prototype.logout = function() {
-  this.proxy.logout();
-};
-
-/**
- * @return {Array.<Object>} The list of IDPs.
- * @expose
-*/
-AISPlugin.prototype.getIdps = function() {
-  return this.idps;
-};
-
-
-AMP.registerPlugin("ais", "html", AISPlugin);
-
-/** 
- * The AISFlashPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Plugin}
-*/
-function AISFlashPlugin() {
-  AISFlashPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(AISFlashPlugin, AISPlugin);
-
-
-AISFlashPlugin.NAME = "AISFlashPlugin";
-
-AISFlashPlugin.prototype.proxy = null;
-
-AISFlashPlugin.prototype.startTime = null;
-
-/**
-*/
-AISFlashPlugin.prototype.createController = function() {
-  this.registerCommand(Notifications.DISPATCH_EVENT, DispatchEventCommand);
-  this.registerCommand(AISNotifications.LAUNCH_IDP_LOGIN, AISLaunchIDPLoginCommand);
-  this.registerCommand(AISNotifications.START_AUTHENTICATION, AISStartAuthenticationCommand);
-  this.registerCommand(AISNotifications.AUTHENTICATED, PluginEventCommand);
-  this.registerCommand(AISNotifications.AUTHENTICATING, PluginEventCommand);
-  this.registerCommand(AISNotifications.AUTHENTICATION_COMPLETE, PluginEventCommand);
-  this.registerCommand(AISNotifications.CHOOSE_AUTH_PROVIDER, PluginEventCommand);
-  this.registerCommand(AISNotifications.CHOOSE_PLAY_OPTIONS, PluginEventCommand);
-  this.registerCommand(SecurityNotifications.AUTHORIZATION_FAILED, PluginEventCommand);
-};
-
-/**
-*/
-AISFlashPlugin.prototype.setData = function(data) {
-  var proxy;
-  proxy = this.retrieveProxy(AISProxy.NAME);
-  proxy.data.platformID = data.platformID;
-  proxy.data.resourceID = data.resourceID;
-  proxy.data.contentID = data.contentID;
-};
-
-/**
-*/
-AISFlashPlugin.prototype.authorize = function(media) {
-  this.retrieveProxy(AISProxy.NAME).authorize(media);
-};
-
-/**
- * The AISTimeUpdateCommand class.
- *   
- * @constructor
- * @private
- * @extends {amp.plugins.PluginCommand}
-*/
-function AISTimeUpdateCommand() {
-  AISTimeUpdateCommand.__super__.constructor.call(this);
-}
-
-
-__extends(AISTimeUpdateCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-AISTimeUpdateCommand.prototype.execute = function(notification) {
-  var currentTime;
-  currentTime = Math.floor(notification.getBody());
-  if (currentTime !== 0 && currentTime % 30 === 0 && currentTime !== this.proxy.currentTime) {
-    this.proxy.vcsSet(currentTime);
-  }
-  this.proxy.currentTime = currentTime;
-};
-
-/** 
- * @constructor
- * @private
- * @extends {PluginWrapper}
-*/
-function AISWrapper(player, config) {
-  var dispatchEvent, key, value;
-  AISWrapper.__super__.constructor.call(this, player, config);
-  this.plugin = new AISFlashPlugin();
-  dispatchEvent = this.dispatcher.dispatchEvent.bind(this.dispatcher);
-  for (key in AISNotifications) {
-    value = AISNotifications[key];
-    this.plugin.addEventListener(value.replace(/^(ais)/, ""), dispatchEvent);
-  }
-  for (key in SecurityNotifications) {
-    value = SecurityNotifications[key];
-    this.plugin.addEventListener(value.replace(/^(auth)/, ""), dispatchEvent);
-  }
-  this.plugin.oninitialized = this.player.registerModule.bind(this.player, this.plugin);
-  this.plugin.initialize(config, this.player);
-}
-
-
-__extends(AISWrapper, PluginWrapper);
-
-
-AISWrapper.NAME = "AISWrapper";
-
-AISWrapper.prototype.plugin = null;
-
-/**
-*/
-AISWrapper.prototype.getFeatureName = function() {
-  return "auth";
-};
-
-/**
-*/
-AISWrapper.prototype.createXML = function(xml) {
-  var application, auth, element, prop, props, text, vendor, _i, _len;
-  application = xml.firstChild;
-  auth = xml.getElementsByTagName("authentication");
-  if (!(auth != null) || auth.length === 0) {
-    auth = xml.createElement("authentication");
-    application.appendChild(auth);
-  } else {
-    auth = auth[0];
-  }
-  vendor = xml.createElement("vendor");
-  vendor.setAttribute("id", "ais");
-  auth.appendChild(vendor);
-  props = [
-    {
-      value: this.config.platformID,
-      key: "platformID"
-    }, {
-      value: this.config.resourceID,
-      key: "resourceID"
-    }, {
-      value: this.config.contentID,
-      key: "contentID"
-    }
-  ];
-  for (_i = 0, _len = props.length; _i < _len; _i++) {
-    prop = props[_i];
-    if (!(prop.value != null)) {
-      continue;
-    }
-    element = xml.createElement("property");
-    element.setAttribute("key", prop.key);
-    text = XMLUtils.createTextContent(xml, prop.value);
-    element.appendChild(text);
-    vendor.appendChild(element);
-  }
-  return xml;
-};
-
-/**
-*/
-AISWrapper.prototype.listNotificationInterests = function() {
-  return AISWrapper.__super__.listNotificationInterests.apply(this, arguments).concat([SecurityNotifications.AUTHORIZE, FlashNotifications.TIME_UPDATE, FlashNotifications.ENDED, FlashNotifications.PAUSED, FlashNotifications.CAPABILITY_CHANGE, FlashNotifications.RESET]);
-};
-
-/**
-*/
-AISWrapper.prototype.handleNotification = function(notification) {
-  var body, mediaProxy, name;
-  AISWrapper.__super__.handleNotification.call(this, notification);
-  name = notification.getName();
-  body = notification.getBody();
-  switch (name) {
-    case SecurityNotifications.AUTHORIZE:
-      this.plugin.startTime = null;
-      this.plugin.setData(body);
-      mediaProxy = this.player.retrieveProxy(MediaProxy.NAME);
-      if (!(mediaProxy.getSrc() != null)) {
-        mediaProxy.setSrc(body.media.src);
-      }
-      this.plugin.authorize();
-      break;
-    case FlashNotifications.TIME_UPDATE:
-      this.plugin.sendNotification(Notifications.TIME_UPDATE, body);
-      break;
-    case FlashNotifications.ENDED:
-      this.plugin.sendNotification(Notifications.ENDED, body);
-      break;
-    case FlashNotifications.PAUSED:
-      this.plugin.sendNotification(Notifications.PAUSE, body);
-      break;
-    case FlashNotifications.RESET:
-      this.plugin.sendNotification(Notifications.MEDIA_CHANGE, body);
-      break;
-    case FlashNotifications.CAPABILITY_CHANGE:
-      if ((this.plugin.startTime != null) && body.type === "canSeekChange" && body.enabled) {
-        this.player.setCurrentTime(this.plugin.startTime);
-      }
-  }
-};
-
-/**
- * @expose
-*/
-AISWrapper.prototype.authorize = function(media) {
-  this.plugin.authorize(media);
-  return media;
-};
-
-/**
- * @expose
-*/
-AISWrapper.prototype.logout = function() {
-  this.plugin.logout();
-};
-
-/**
- * @return {Array.<Object>} The list of IDPs.
- * @expose
-*/
-AISWrapper.prototype.getIdps = function() {
-  return this.plugin.getIdps();
-};
-
-
-AMP.registerPlugin("ais", "flash", AISWrapper);
-
-/**
- * The AISPauseCommand class.
- *   
- * @constructor
- * @private
- * @extends {amp.plugins.PluginCommand}
-*/
-function AISPauseCommand() {
-  AISPauseCommand.__super__.constructor.call(this);
-}
-
-
-__extends(AISPauseCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-AISPauseCommand.prototype.execute = function(notification) {
-  this.proxy.vcsSet(this.proxy.currentTime);
-};
-
-/**
- * The AISEndedCommand class.
- *   
- * @constructor
- * @private
- * @extends {amp.plugins.PluginCommand}
-*/
-function AISEndedCommand() {
-  AISEndedCommand.__super__.constructor.call(this);
-}
-
-
-__extends(AISEndedCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-AISEndedCommand.prototype.execute = function(notification) {
-  this.proxy.vcsSet(0);
-};
-
-function Cookies() {}
-
-Cookies.setCookie = function(name, value, days, path, domain) {
-  var expires;
-  value = escape(value);
-  if (days != null) {
-    expires = new Date();
-    expires.setDate(expires.getDate() + days);
-    value += "; expires=" + expires.toUTCString();
-  }
-  if (domain != null) {
-    value += "; domain=" + domain;
-  }
-  if (path != null) {
-    value += "; path=" + path;
-  }
-  return document.cookie = name + "=" + value;
-};
-
-Cookies.getCookie = function(name) {
-  var cookie, cookies, index, key, value, _i, _len;
-  cookies = document.cookie.split(";");
-  for (_i = 0, _len = cookies.length; _i < _len; _i++) {
-    cookie = cookies[_i];
-    index = cookie.indexOf("=");
-    key = cookie.substr(0, index).replace(/^\s+|\s+$/g, "");
-    value = unescape(cookie.substr(index + 1));
-    if (key === name) {
-      return value;
-    }
-  }
-};
-
-Cookies.deleteCookie = function(name) {
-  return this.setCookie(name, "", -1);
-};
-
-/** 
- * The SharePlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Feature}
-*/
-function SharePlugin() {
-  SharePlugin.__super__.constructor.call(this);
-}
-
-
-__extends(SharePlugin, Feature);
-
-
-SharePlugin.prototype.moduleName = "share";
-
-SharePlugin.prototype.featureName = "share";
-
-/** @override
-*/
-SharePlugin.prototype.createModel = function() {
-  this.registerProxy(new ShareProxy(this.config));
-};
-
-/** @override
-*/
-SharePlugin.prototype.createController = function() {
-  SharePlugin.__super__.createController.call(this);
-  this.registerCommand(Notifications.MEDIA_CHANGE, ShareMediaChangeCommand);
-};
-
-/** @override
-*/
-SharePlugin.prototype.createView = function() {
-  this.registerMediator(new ShareMediator());
-};
-
-/** @override
-*/
-SharePlugin.prototype.listNotificationInterests = function() {
-  return [Notifications.MEDIA_CHANGE];
-};
-
-/** @override
-*/
-SharePlugin.prototype.listNotificationPublications = function() {
-  return SharePlugin.__super__.listNotificationPublications.apply(this, arguments).concat([Notifications.ADD_CONTROL, Notifications.REMOVE_CONTROL, Notifications.ADD_CONTROL_STATE, Notifications.REMOVE_CONTROL_STATE]);
-};
-
-
-AMP.registerPlugin("share", "html", SharePlugin);
-AMP.registerPlugin("share", "external", SharePlugin);
-
-/**
  * The AdContentPausedCommand class.
  *
  * @constructor
@@ -28412,358 +26648,72 @@ AdContentPausedCommand.prototype.execute = function(notification) {
   fw.contentPaused();
 };
 
-/** 
+/**
+ * The IMAPlugin class.
+ *
+ * @param {Module}  app     The parent module of this plugin.
  * @constructor
- * @private 
- * @extends {PluginProxy}
+ * @private
+ * @extends {AdPlugin}
 */
-function AISProxy(config) {
-  AISProxy.__super__.constructor.call(this, config);
+function IMAPlugin() {
+  IMAPlugin.__super__.constructor.call(this);
 }
 
 
-__extends(AISProxy, PluginProxy);
+__extends(IMAPlugin, AdPlugin);
 
 
-/** @static
+IMAPlugin.prototype.moduleName = "ima";
+
+IMAPlugin.prototype.createFullscreenProxy = function() {
+  return new IMAFullscreenProxy(this.config);
+};
+
+IMAPlugin.prototype.createProxy = function() {
+  return new IMAProxy(this.config);
+};
+
+IMAPlugin.prototype.isFullscreenDevice = function() {
+  var ua;
+  ua = navigator.userAgent;
+  return this.config.fullscreen === true || Utils.isFullscreenDevice() || /Android 4\.[0-1]/.test(ua) || /CrKey/.test(ua);
+};
+
+/** @override
 */
-AISProxy.NAME = ModuleProxy.NAME;
-
-AISProxy.prototype.client = null;
-
-AISProxy.prototype.currentTime = null;
-
-AISProxy.prototype.idps = null;
-
-AISProxy.prototype.idp = null;
-
-AISProxy.prototype.token = null;
-
-AISProxy.prototype.authz = null;
-
-AISProxy.prototype.defaults = {
-  platformID: null,
-  resourceID: null,
-  contentID: null,
-  responseTargets: null,
-  query: "hdnts",
-  vcs: false,
-  logos: {
-    base: null,
-    group: null,
-    key: "full"
+IMAPlugin.prototype.createModel = function() {
+  IMAPlugin.__super__.createModel.call(this);
+  if (this.config.overlay != null) {
+    this.registerProxy(new IMAOverlayProxy(this.config.overlay));
   }
 };
 
 /** @override
 */
-AISProxy.prototype.getScript = function() {
-  return this.value.plugin;
-};
-
-/**
-*/
-AISProxy.prototype.initialize = function() {
-  this.client = window.ais_client;
-  this.client.setLogging(this.facade.logger.enabled);
-  this.client.setPlatformId(this.value.platformID);
-  this.client.setUseCache(!/MSIE [7-8]/.test(navigator.userAgent));
-  this.client.assignhandler('bounce', this.bounceHandler.bind(this));
-  this.client.assignhandler('chooser', this.chooserHandler.bind(this));
-  this.client.assignhandler('init', this.initHandler.bind(this));
-  this.client.assignhandler('authz_query', this.authz_queryHandler.bind(this));
-  this.client.assignhandler('identity', this.identityHandler.bind(this));
-  this.client.assignhandler('logout_result', this.logoutHandler.bind(this));
-  this.client.assignhandler('vcs', this.vcsHandler.bind(this));
-  window.onunload = function() {};
-};
-
-/**
-*/
-AISProxy.prototype.authorize = function() {
-  this.authz = null;
-  this.token = null;
-  this.disengage();
-  this.sendNotification(AISNotifications.START_AUTHENTICATION);
-};
-
-/**
-*/
-AISProxy.prototype.authorized = function(token) {
-  if (token == null) {
-    token = this.token;
+IMAPlugin.prototype.createController = function() {
+  IMAPlugin.__super__.createController.call(this);
+  if (this.config.overlay != null) {
+    this.registerCommand(IMANotifications.ADD_OVERLAY, IMAAddOverlayCommand);
+    this.registerCommand(IMANotifications.REMOVE_OVERLAY, IMARemoveOverlayCommand);
   }
-  this.engage();
-  this.sendNotification(AISNotifications.AUTHENTICATION_COMPLETE);
-  this.sendNotification(SecurityNotifications.AUTHORIZED, token);
+  this.registerCommand(Notifications.READY, IMAReadyCommand);
+  this.registerCommand(Notifications.FULL_SCREEN_CHANGE, IMADisplayStateChangeCommand);
+  this.registerCommand(Notifications.CHANGE_ACTIVE_STATE, IMAActiveStateChangeCommand);
 };
 
-/**
+/** @override
 */
-AISProxy.prototype.play = function(time) {
-  this.sendNotification(Notifications.INITIALIZED);
-  this.sendNotification(Notifications.PLAY);
-  if (time != null) {
-    return this.sendNotification(Notifications.SEEK, time);
+IMAPlugin.prototype.createView = function() {
+  IMAPlugin.__super__.createView.call(this);
+  if (this.config.overlay != null) {
+    this.registerMediator(new IMAOverlayMediator());
   }
 };
 
-/**
-*/
-AISProxy.prototype.engage = function() {
-  this.facade.registerCommand(Notifications.TIME_UPDATE, AISTimeUpdateCommand);
-  this.facade.registerCommand(Notifications.PAUSE, AISPauseCommand);
-  this.facade.registerCommand(Notifications.ENDED, AISEndedCommand);
-};
 
-/**
-*/
-AISProxy.prototype.disengage = function() {
-  this.facade.removeCommand(Notifications.TIME_UPDATE);
-  this.facade.removeCommand(Notifications.PAUSE);
-  this.facade.removeCommand(Notifications.ENDED);
-};
-
-/**
-*/
-AISProxy.prototype.logout = function() {
-  var height, method, target, width, _ref;
-  method = ((_ref = this.idp.window_display) != null ? _ref.method : void 0) || "redirect";
-  target = this.getTarget(method);
-  this.setRedirect(method);
-  switch (method) {
-    case "redirect":
-      window.open(this.client.logoutFormat(target), "_top");
-      break;
-    case "popup":
-      width = this.idp.window_display.width || 320;
-      height = this.idp.window_display.height || 240;
-      window.open(this.client.logoutFormat(target), 'ais_popup', 'width=' + width + ',height=' + height);
-  }
-};
-
-/**
-*/
-AISProxy.prototype.bounce = function(resource) {
-  this.client.bounce();
-};
-
-/**
-*/
-AISProxy.prototype.init = function(resource) {
-  this.client.init();
-};
-
-/**
-*/
-AISProxy.prototype.choose = function() {
-  this.client.chooser();
-};
-
-/**
-*/
-AISProxy.prototype.resourceAccess = function(resource) {
-  if (resource == null) {
-    resource = this.value.resourceID;
-  }
-  this.client.resourceAccess(resource);
-};
-
-/**
-*/
-AISProxy.prototype.vcsSet = function(time) {
-  time = Utils.formatTimecode(time);
-  this.client.vcsSet(this.value.contentID, time);
-};
-
-/**
-*/
-AISProxy.prototype.bounceHandler = function(type, resp) {
-  var auth;
-  auth = resp['authenticated'].toString() === 'true';
-  if (auth === false) {
-    this.sendNotification(Notifications.DISPATCH_EVENT, new Event("authenticationfailed"));
-    this.choose();
-  } else if (auth === true) {
-    this.init();
-  }
-};
-
-/**
-*/
-AISProxy.prototype.initHandler = function(type, resp) {
-  var key, key2, value, value2, _ref;
-  this.idp = resp.idps;
-  this.facade.idps = {};
-  _ref = resp.idps;
-  for (key in _ref) {
-    value = _ref[key];
-    this.facade.idps.key = key;
-    for (key2 in value) {
-      value2 = value[key2];
-      this.facade.idps[key2] = value2;
-    }
-    break;
-  }
-  for (key in resp) {
-    value = resp[key];
-    if (key !== "idps" && (value != null)) {
-      this.facade[key] = value;
-    }
-  }
-  if ((this.value.logos != null) && (this.facade.idps.logos != null)) {
-    this.facade.idps.logo = this.value.logos.base + this.facade.idps.logos[this.value.logos.key];
-  }
-  this.facade.player.sendNotification(Notifications.REMOVE_APPLICATION_STATE, "authenticating");
-  this.sendNotification(AISNotifications.AUTHENTICATED, this.facade.idps);
-  this.resourceAccess(this.value.resourceID);
-};
-
-/**
-*/
-AISProxy.prototype.chooserHandler = function(type, resp) {
-  this.facade.sendNotification(Notifications.ADD_APPLICATION_STATE, "authenticating");
-  resp.possible_idps = this.idps = this.sort(resp.possible_idps, 'value', 'display_name');
-  this.sendNotification(AISNotifications.CHOOSE_AUTH_PROVIDER, resp);
-};
-
-AISProxy.prototype.launchIDPLogin = function(idp_platform_id) {
-  var height, idp, method, target, width, _ref;
-  this.sendNotification(AISNotifications.AUTHENTICATING, true);
-  idp = this.idps[idp_platform_id];
-  method = ((_ref = idp.window_display) != null ? _ref.method : void 0) || "redirect";
-  target = this.getTarget(method);
-  this.setRedirect(method);
-  switch (method) {
-    case "redirect":
-      window.open(this.client.loginFormat(idp_platform_id, target), "_top");
-      break;
-    case "popup":
-      method = idp.window_display.method || "popup";
-      width = idp.window_display.width || 320;
-      height = idp.window_display.height || 240;
-      window.open(this.client.loginFormat(idp_platform_id, target), 'ais_popup', 'width=' + width + ',height=' + height);
-  }
-};
-
-/**
-*/
-AISProxy.prototype.identityHandler = function(type, resp) {
-  var aisuid;
-  aisuid = resp['identity']['attributes']['aisuid'];
-};
-
-/**
-*/
-AISProxy.prototype.authz_queryHandler = function(type, resp) {
-  var auth, dimensions, resource, security;
-  auth = resp['authorization'].toString() === "true";
-  if (auth === false) {
-    this.sendNotification(SecurityNotifications.AUTHORIZATION_FAILED, resp);
-  } else if (auth === true) {
-    this.authz = resp;
-    dimensions = {
-      mvpdName: this.facade.idps.name,
-      viewerId: this.client.aisuid,
-      "std:viewerId": this.client.aisuid
-    };
-    this.facade.player.setParams({
-      "mvpdname": dimensions.mvpdName
-    });
-    this.facade.player.sendNotification(MediaAnalyticsNotifications.SET_DIMENSIONS, dimensions);
-    this.facade.viewerId = this.client.aisuid;
-    resource = resp['resource'];
-    if (resource != null) {
-      this.facade.resource = resource;
-    }
-    security = this.facade.player.security;
-    security.setKey(this.value.query || this.getDefaults().query);
-    security.setToken(resp['security_token']);
-    this.token = security.getSecret();
-    this.sendNotification(AISNotifications.AUTHENTICATING, false);
-    if (this.value.vcs === true && (this.value.contentID != null)) {
-      this.client.vcsGet(this.value.contentID);
-    } else {
-      this.authorized(this.token);
-    }
-  }
-};
-
-/**
-*/
-AISProxy.prototype.logoutHandler = function(type, resp) {
-  top.location.href = top.location.href;
-};
-
-/**
-*/
-AISProxy.prototype.vcsHandler = function(type, resp) {
-  if (resp['operation'] === 'get') {
-    if (resp['ph_pos'] === '00:00:00' || resp['ph_pos'] === "00:00") {
-      this.client.vcsSet(this.value.contentID, resp['ph_pos']);
-      this.authorized(this.token);
-    } else {
-      this.sendNotification(AISNotifications.CHOOSE_PLAY_OPTIONS, Utils.flattenTimecode(resp['ph_pos']));
-    }
-  }
-};
-
-/**
-*/
-AISProxy.prototype.sort = function(obj, sortType, valueName) {
-  var data, index, item, key, returnObj, value, _i, _len;
-  returnObj = {};
-  data = [];
-  index = 0;
-  for (key in obj) {
-    value = obj[key];
-    data[index] = {
-      key: key,
-      value: value[valueName]
-    };
-    index++;
-  }
-  data.sort(function(a, b) {
-    var valueA, valueB, _ref, _ref1, _ref2, _ref3;
-    valueA = sortType === 'value' ? (_ref = a.value) != null ? _ref.toLowerCase() : void 0 : (_ref1 = a.key) != null ? _ref1.toLowercase() : void 0;
-    valueB = sortType === 'value' ? (_ref2 = b.value) != null ? _ref2.toLowerCase() : void 0 : (_ref3 = b.key) != null ? _ref3.toLowercase() : void 0;
-    if (valueA < valueB) {
-      return -1;
-    } else if (valueA > valueB) {
-      return 1;
-    } else {
-      return 0;
-    }
-  });
-  for (index = _i = 0, _len = data.length; _i < _len; index = ++_i) {
-    item = data[index];
-    returnObj[item.key] = obj[item.key];
-  }
-  return returnObj;
-};
-
-/**
-*/
-AISProxy.prototype.setRedirect = function(method) {
-  var devToken, domain, loc;
-  try {
-    devToken = /\/dev\./;
-    loc = window.top.location.href || window.top.location;
-    domain = devToken.test(loc) ? loc.replace(devToken, "/") : null;
-    Cookies.setCookie(this.getTarget(method), loc, 1, "/", domain);
-  } catch (error) {
-
-  }
-};
-
-/**
-*/
-AISProxy.prototype.getTarget = function(method) {
-  if (method == null) {
-    method = "redirect";
-  }
-  return this.value.responseTargets[method];
-};
+AMP.registerPlugin("ima", "html", IMAPlugin);
+AMP.registerPlugin("ima", "flash", IMAWrapper);
 
 function FreeWheelWrapper() {
   return FreeWheelWrapper.__super__.constructor.apply(this, arguments);
@@ -28890,8 +26840,14 @@ FreeWheelWrapper.prototype.createXML = function(xml) {
   }
 };
 
-/** 
- * @constructor 
+var isOverlayDisplayed;
+
+
+
+
+
+/**
+ * @constructor
  * @private
 */
 function FreeWheelProxy(config) {
@@ -28906,6 +26862,7 @@ function FreeWheelProxy(config) {
     onResume: this.onResume.bind(this),
     adtimeupdate: this.adTimeupdate.bind(this),
     timeupdate: this.midrollCheck.bind(this),
+    overlaytimeupdate: this.overlayCheck.bind(this),
     seekupdate: this.seekingHandler.bind(this),
     onAdEvent: this.onAdEvent.bind(this)
   };
@@ -28945,6 +26902,8 @@ FreeWheelProxy.prototype.nextMidroll = null;
 
 FreeWheelProxy.prototype.midrollEngaged = false;
 
+FreeWheelProxy.prototype.overlayEngaged = false;
+
 FreeWheelProxy.prototype.timeout = null;
 
 FreeWheelProxy.prototype.curTime = 0;
@@ -28954,6 +26913,8 @@ FreeWheelProxy.prototype.mediator = null;
 FreeWheelProxy.prototype.adPosition = 1;
 
 FreeWheelProxy.prototype.currentAd = null;
+
+isOverlayDisplayed = false;
 
 FreeWheelProxy.prototype.defaults = {
   networkId: "96749",
@@ -29006,6 +26967,7 @@ FreeWheelProxy.prototype.createPlugin = function() {
 /**
 */
 FreeWheelProxy.prototype.engage = function(media) {
+  this.terminateAd(true);
   this.media = media;
   FreeWheelProxy.__super__.engage.call(this, media);
   this.requestAd();
@@ -29014,7 +26976,7 @@ FreeWheelProxy.prototype.engage = function(media) {
 /**
 */
 FreeWheelProxy.prototype.requestAd = function() {
-  var cuePoints, index, key, keyValue, mediaElement, pair, pairs, parameter, renderer, renderers, scene, time, value, _i, _j, _k, _l, _len, _len1, _len2, _len3, _ref, _ref1, _ref2, _ref3;
+  var cues, index, key, keyValue, mediaElement, pair, pairs, parameter, renderer, renderers, scene, time, value, _i, _j, _k, _l, _len, _len1, _len2, _len3, _ref, _ref1, _ref2, _ref3;
   this.terminateAllAds(true);
   this.context = this.plugin.newContext();
   if (this.value.synchronizeMultipleRequests != null) {
@@ -29063,6 +27025,7 @@ FreeWheelProxy.prototype.requestAd = function() {
   this.context.addEventListener(tv.freewheel.SDK.EVENT_AD_IMPRESSION_END, this.handlers.onAdImpressionEnd);
   this.context.addEventListener(tv.freewheel.SDK.EVENT_AD_CLICK, this.handlers.onAdClick);
   this.context.addEventListener(tv.freewheel.SDK.EVENT_AD, this.handlers.onAdEvent);
+  this.context.addEventListener(tv.freewheel.SDK.EVENT_ERROR, this.handlers.onAdEvent);
   this.context.setParameter(tv.freewheel.SDK.PARAMETER_RENDERER_VIDEO_START_DETECT_TIMEOUT, 10000, tv.freewheel.SDK.PARAMETER_LEVEL_GLOBAL);
   this.context.setParameter(tv.freewheel.SDK.PARAMETER_RENDERER_VIDEO_PROGRESS_DETECT_TIMEOUT, 10000, tv.freewheel.SDK.PARAMETER_LEVEL_GLOBAL);
   this.context.setParameter(tv.freewheel.SDK.PARAMETER_EXTENSION_CONTENT_VIDEO_AUTO_SOURCE_RESTORE, false, tv.freewheel.SDK.PARAMETER_LEVEL_GLOBAL);
@@ -29079,7 +27042,7 @@ FreeWheelProxy.prototype.requestAd = function() {
     this.context.addTemporalSlot(this.value.prerollSlotId, tv.freewheel.SDK.ADUNIT_PREROLL, 0);
   }
   if (((_ref2 = this.media.scenes) != null ? _ref2.length : void 0) > 0 && (this.value.midrollSlotId != null)) {
-    cuePoints = [];
+    cues = [];
     _ref3 = this.media.scenes;
     for (index = _k = 0, _len2 = _ref3.length; _k < _len2; index = ++_k) {
       scene = _ref3[index];
@@ -29087,10 +27050,10 @@ FreeWheelProxy.prototype.requestAd = function() {
         continue;
       }
       time = Utils.flattenTimecode(scene.sceneStartTime);
-      cuePoints.push(time);
+      cues.push(time);
       this.context.addTemporalSlot(this.value.midrollSlotId, tv.freewheel.SDK.ADUNIT_MIDROLL, time);
     }
-    this.facade.player.sendNotification(Notifications.ADD_CUE_POINTS, cuePoints);
+    this.setCues(cues);
   }
   if (this.value.postrollSlotId != null) {
     this.context.addTemporalSlot(this.value.postrollSlotId, tv.freewheel.SDK.ADUNIT_POSTROLL, this.media.duration);
@@ -29105,7 +27068,11 @@ FreeWheelProxy.prototype.requestAd = function() {
   this.initialized = false;
   FreeWheelProxy.__super__.requestAd.call(this);
   this.context.submitRequest();
-  this.facade.getViewComponent().container.style.pointerEvents = "none";
+  try {
+    this.facade.player.ui.ads.container.style.pointerEvents = "none";
+  } catch (error) {
+
+  }
 };
 
 /**
@@ -29122,7 +27089,7 @@ FreeWheelProxy.prototype.reset = function() {
 /**
 */
 FreeWheelProxy.prototype.onRequestComplete = function(event) {
-  var createAdBreakVO, cues, slot, slots, _i, _len,
+  var createAdBreakVO, cues, pod, podPosition, slot, slots, _i, _j, _len, _len1, _ref,
     _this = this;
   cues = [];
   this.pods = [];
@@ -29152,11 +27119,15 @@ FreeWheelProxy.prototype.onRequestComplete = function(event) {
             this.pods.push(createAdBreakVO(slot));
             this.postrollSlots.push(slot);
           }
+          break;
+        case tv.freewheel.SDK.TIME_POSITION_CLASS_OVERLAY:
+          this.pods.push(createAdBreakVO(slot));
+          this.overlaySlotsArray.push(slot);
       }
     }
   }
   if (cues.length > 0) {
-    this.sendNotification(Notifications.ADD_CUE_POINTS, cues);
+    this.setCues(cues);
   }
   if (this.postrollSlots.length > 0) {
     this.sendNotification(Notifications.HAS_POST_CONTENT, true);
@@ -29165,9 +27136,12 @@ FreeWheelProxy.prototype.onRequestComplete = function(event) {
   this.pods.sort(function(a, b) {
     return a.time - b.time;
   });
-  this.pods.forEach(function(pod, index) {
-    return pod.position = index;
-  });
+  podPosition = -1;
+  _ref = this.pods;
+  for (_j = 0, _len1 = _ref.length; _j < _len1; _j++) {
+    pod = _ref[_j];
+    pod.position = pod.type !== "overlay" ? ++podPosition : podPosition;
+  }
   this.sendNotification(AdNotifications.REQUEST_COMPLETE, {
     pods: this.pods
   });
@@ -29201,6 +27175,10 @@ FreeWheelProxy.prototype.breakStart = function() {
   if (this.adVO.type === "midroll") {
     this.contentPause();
   }
+  if (this.facade.player.playbackRate !== 1) {
+    this.playbackRate = this.facade.player.playbackRate;
+    this.facade.player.playbackRate = 1;
+  }
 };
 
 /** Prevent seeking during pre-roll
@@ -29214,20 +27192,31 @@ FreeWheelProxy.prototype.seekingHandler = function(event) {
 /**
 */
 FreeWheelProxy.prototype.onAdImpression = function(event) {
-  var creativeParameters, id, rendition, _base, _ref, _ref1, _ref2;
-  if (((_ref = event.adInstance) != null ? typeof _ref.getSlot === "function" ? typeof (_base = _ref.getSlot()).getTimePositionClass === "function" ? _base.getTimePositionClass() : void 0 : void 0 : void 0) === tv.freewheel.SDK.TIME_POSITION_CLASS_DISPLAY) {
+  var adType, ctrlBrHi, curBtm, metadata, qryString, rendition, _base, _ref, _ref1, _ref2;
+  adType = (_ref = event.adInstance) != null ? typeof _ref.getSlot === "function" ? typeof (_base = _ref.getSlot()).getTimePositionClass === "function" ? _base.getTimePositionClass() : void 0 : void 0 : void 0;
+  try {
+    if (adType === tv.freewheel.SDK.TIME_POSITION_CLASS_OVERLAY) {
+      qryString = '[id^="_fw_ad_container_iframe_' + this.slot.getCustomId();
+      curBtm = document.getElementById(document.querySelector(qryString).id).style.bottom;
+      ctrlBrHi = window.getComputedStyle(document.getElementsByClassName("akamai-control-bar")[0]).height;
+      if (parseInt(curBtm, 10) < parseInt(ctrlBrHi, 10)) {
+        document.getElementById(document.querySelector(qryString).id).style.bottom = ctrlBrHi;
+      }
+    }
+  } catch (_error) {}
+  if (adType === tv.freewheel.SDK.TIME_POSITION_CLASS_DISPLAY || adType === tv.freewheel.SDK.TIME_POSITION_CLASS_OVERLAY) {
     return;
   }
   this.currentAd = event.adInstance;
   this.adVO.position = this.adPosition++;
   this.adVO.id = this.currentAd.getAdId();
   this.adVO.duration = (_ref1 = event.adInstance) != null ? _ref1.getDuration() : void 0;
-  creativeParameters = this.value.creativeParameters;
-  if (creativeParameters != null) {
-    try {
-      id = event.adInstance.getAdId();
-      this.adVO.metadata.creativeparameters[id] = this.getCreativeParameters(event.adInstance);
-    } catch (_error) {}
+  if ((this.slot != null) === !null) {
+    metadata = {
+      adtype: this.slot.getType()
+    };
+    this.updateAdMetadata(this.slot, metadata);
+    this.adVO.metadata = metadata;
   }
   rendition = (_ref2 = this.currentAd) != null ? _ref2.getActiveCreativeRendition() : void 0;
   if (rendition != null) {
@@ -29253,6 +27242,16 @@ FreeWheelProxy.prototype.onAdEvent = function(event) {
       break;
     case tv.freewheel.SDK.EVENT_AD_COMPLETE:
       this.sendNotification(AdNotifications.COMPLETE, this.adVO);
+      break;
+    case tv.freewheel.SDK.EVENT_AD_AUTO_PLAY_BLOCKED:
+      this.sendNotification(Notifications.AUTOPLAY_BLOCKED);
+      break;
+    case tv.freewheel.SDK.EVENT_ERROR:
+      this.adVO.error = {};
+      this.adVO.error.errorcode = event.errorCode;
+      this.adVO.error.errorinfo = event.errorInfo;
+      this.adVO.error.errormodule = event.errorModule;
+      this.facade.sendNotification(Notifications.DISPATCH_EVENT, new Event("error", this.adVO));
   }
 };
 
@@ -29283,13 +27282,16 @@ FreeWheelProxy.prototype.onResume = function(event) {
 /**
 */
 FreeWheelProxy.prototype.adTimeupdate = function(event) {
+  var time;
   try {
     if (this.slot != null) {
       this.currentAd = this.slot.getCurrentAdInstance();
       if (this.currentAd != null) {
         this.adVO.duration = this.currentAd.getDuration();
+        time = this.currentAd.getDuration() - this.currentAd.getPlayheadTime();
+        this.adVO.time = time;
         this.sendNotification(AdNotifications.AD_TIME_UPDATE, this.currentAd.getPlayheadTime());
-        this.sendNotification(AdNotifications.AD_TIME_REMAINING, this.currentAd.getDuration() - this.currentAd.getPlayheadTime());
+        this.sendNotification(AdNotifications.AD_TIME_REMAINING, time);
       }
     }
   } catch (error) {
@@ -29300,10 +27302,19 @@ FreeWheelProxy.prototype.adTimeupdate = function(event) {
 /**
 */
 FreeWheelProxy.prototype.onSlotStarted = function(event) {
-  var slot;
+  var prevSlot, prevSlotType, slot;
+  prevSlot = this.slot;
   slot = event.slot;
   if (slot.getType() !== "temporal") {
     return;
+  }
+  if (prevSlot) {
+    prevSlotType = typeof prevSlot.getTimePositionClass === "function" ? prevSlot.getTimePositionClass() : void 0;
+    if ((prevSlotType === tv.freewheel.SDK.TIME_POSITION_CLASS_OVERLAY) && this.isOverlayDisplayed) {
+      if (typeof prevSlot.stop === "function") {
+        prevSlot.stop();
+      }
+    }
   }
   this.slot = slot;
   this.getMediaElement().addEventListener("timeupdate", this.handlers.adtimeupdate);
@@ -29312,7 +27323,7 @@ FreeWheelProxy.prototype.onSlotStarted = function(event) {
 /**
 */
 FreeWheelProxy.prototype.onSlotEnded = function(event) {
-  var complete, index, midroll, pod, slot, slotTimePositionClass;
+  var complete, index, midroll, overlay, pod, slot, slotTimePositionClass;
   slot = event.slot;
   complete = event.skipped === true ? this.sendNotification.bind(this, AdNotifications.BREAK_SKIPPED, slot) : this.endBreak.bind(this);
   if (slot.getType() !== "temporal") {
@@ -29342,6 +27353,14 @@ FreeWheelProxy.prototype.onSlotEnded = function(event) {
       this.nextMidroll = null;
       complete();
       break;
+    case tv.freewheel.SDK.TIME_POSITION_CLASS_OVERLAY:
+      this.isOverlayDisplayed = false;
+      index = this.overlaySlotsArray.indexOf(this.nextOverlay);
+      if (index > -1) {
+        overlay = this.overlaySlotsArray.splice(index, 1);
+      }
+      this.nextOverlay = null;
+      break;
     case tv.freewheel.SDK.TIME_POSITION_CLASS_POSTROLL:
       if (this.postrollSlots.length) {
         this.postrollSlots.shift();
@@ -29357,7 +27376,7 @@ FreeWheelProxy.prototype.onSlotEnded = function(event) {
 /**
 */
 FreeWheelProxy.prototype.playAd = function(ad) {
-  var activeCreativeRendition, adId, adInstance, creativeParameters, id, instance, key, metadata, pod, val, _i, _len, _ref, _ref1;
+  var activeCreativeRendition, adId, adInstance, adType, metadata, pod, _ref;
   pod = this.getPodById(ad.getCustomId());
   if ((pod != null ? pod.locked : void 0) === true) {
     this.onSlotEnded({
@@ -29375,23 +27394,7 @@ FreeWheelProxy.prototype.playAd = function(ad) {
     metadata.adunit = adInstance.getSoAdUnit();
     activeCreativeRendition = adInstance.getActiveCreativeRendition();
     if (activeCreativeRendition != null) {
-      for (key in activeCreativeRendition) {
-        val = activeCreativeRendition[key];
-        if (key.indexOf('get') === 0 && typeof val === 'function') {
-          metadata[key.substring(3).toLowerCase()] = val();
-        }
-      }
-      metadata.baseunit = activeCreativeRendition.getBaseUnit();
-      creativeParameters = this.value.creativeParameters;
-      if (creativeParameters != null) {
-        metadata.creativeparameters = {};
-        _ref1 = ad.getAdInstances();
-        for (_i = 0, _len = _ref1.length; _i < _len; _i++) {
-          instance = _ref1[_i];
-          id = instance.getAdId();
-          metadata.creativeparameters[id] = this.getCreativeParameters(instance);
-        }
-      }
+      this.updateAdMetadata(ad, metadata);
     }
   }
   if (!(adId != null)) {
@@ -29399,7 +27402,15 @@ FreeWheelProxy.prototype.playAd = function(ad) {
   }
   this.adVO = new AdVO(adId, ad.getCustomId(), (adInstance != null ? adInstance.getDuration() : NaN), this.adPosition, ad.getTimePositionClass().toLowerCase(), "freewheel", null, null, null, metadata, ad.getAdCount());
   this.sendNotification(AdNotifications.AD_LOADED, this.adVO);
-  this.context.setVideoState(tv.freewheel.SDK.VIDEO_STATE_STOPPED);
+  this.sendNotification(AdNotifications.AD_DURATION_CHANGE, this.adVO);
+  adType = typeof ad.getTimePositionClass === "function" ? ad.getTimePositionClass() : void 0;
+  if (adType !== tv.freewheel.SDK.TIME_POSITION_CLASS_OVERLAY) {
+    this.context.setVideoState(tv.freewheel.SDK.VIDEO_STATE_STOPPED);
+    this.getMediaElement().load();
+  }
+  if (adType === tv.freewheel.SDK.TIME_POSITION_CLASS_OVERLAY) {
+    this.isOverlayDisplayed = true;
+  }
   ad.play();
 };
 
@@ -29437,8 +27448,9 @@ FreeWheelProxy.prototype.startAd = function() {
       if (adLocked) {
         this.breakEnd();
       } else {
-        this.startBreak();
-        this.playAd(this.prerollSlots[0]);
+        slot = this.prerollSlots[0];
+        this.startBreak(this.getPodById(slot.getCustomId()));
+        this.playAd(slot);
       }
     }
   } else {
@@ -29449,8 +27461,12 @@ FreeWheelProxy.prototype.startAd = function() {
 /**
 */
 FreeWheelProxy.prototype.play = function() {
+  var _ref;
   FreeWheelProxy.__super__.play.call(this);
   this.getMediaElement().play();
+  if ((_ref = this.slot) != null) {
+    _ref.resume();
+  }
   if (this.terminateAdOnPlay === true) {
     this.terminateAdOnPlay = false;
     this.terminateAd();
@@ -29460,10 +27476,13 @@ FreeWheelProxy.prototype.play = function() {
 /**
 */
 FreeWheelProxy.prototype.pause = function() {
-  var video;
+  var video, _ref;
   FreeWheelProxy.__super__.pause.call(this);
   video = this.getMediaElement();
   video.pause();
+  if ((_ref = this.slot) != null) {
+    _ref.pause();
+  }
   setTimeout(function() {
     return video.controls = false;
   }, 0);
@@ -29484,17 +27503,21 @@ FreeWheelProxy.prototype.breakEnd = function() {
   video.removeEventListener("waiting", this.playbackCore.handlers.waiting);
   video.removeEventListener("seeking", this.handlers.seekupdate);
   clearInterval(this.timeout);
-  this.playbackCore.setEnabled(true);
   if (this.appState.getEnded()) {
     this.context.setVideoState(tv.freewheel.SDK.VIDEO_STATE_COMPLETED);
-    this.sendNotification(Notifications.MEDIA_SEQUENCE_ENDED);
   } else {
+    this.playbackCore.setEnabled(true);
     setTimeout(function() {
       _this.contentPlay();
+      if (_this.playbackRate != null) {
+        _this.facade.player.playbackRate = _this.playbackRate;
+        _this.playbackRate = null;
+      }
       _this.getMediaElement().addEventListener("playing", _this.handlers.onResume);
     }, 1);
     setTimeout(function() {
       _this.engageMidrollCheck();
+      _this.engageOverlayCheck();
     }, 500);
     return;
   }
@@ -29504,18 +27527,37 @@ FreeWheelProxy.prototype.breakEnd = function() {
 */
 FreeWheelProxy.prototype.contentStarted = function() {
   this.engageMidrollCheck();
+  this.engageOverlayCheck();
 };
 
 /** @override
 */
 FreeWheelProxy.prototype.contentSeek = function(time) {
+  var nextime;
+  if (this.appState.getSeekRequested() === true) {
+    return;
+  }
   this.nextMidroll = this.getPreviousMidroll(time);
+  this.nextOverlay = this.getPreviousOverlay(time);
   if (!(this.nextMidroll != null)) {
     this.nextMidroll = this.getNextMidroll(time);
+    if (this.nextMidroll != null) {
+      nextime = this.nextMidroll.getTimePosition();
+      if (nextime - time < 1 || time < nextime) {
+        this.nextMidroll = null;
+      }
+    }
+    return;
+  }
+  if (!(this.nextOverlay != null)) {
+    this.nextOverlay = this.getNextOverlay(time);
     return;
   }
   if (!this.midrollEngaged) {
     this.engageMidrollCheck();
+  }
+  if (!this.overlayEngaged) {
+    this.engageOverlayCheck();
   }
 };
 
@@ -29527,8 +27569,10 @@ FreeWheelProxy.prototype.contentEnded = function() {
   this.context.setVideoState(tv.freewheel.SDK.VIDEO_STATE_STOPPED);
   if (((_ref = this.postrollSlots) != null ? _ref.length : void 0)) {
     setTimeout(function() {
-      _this.startBreak();
-      _this.playAd(_this.postrollSlots[0]);
+      var slot;
+      slot = _this.postrollSlots[0];
+      _this.startBreak(_this.getPodById(slot.getCustomId()));
+      _this.playAd(slot);
     }, 0);
   } else {
     this.context.setVideoState(tv.freewheel.SDK.VIDEO_STATE_COMPLETED);
@@ -29547,28 +27591,50 @@ FreeWheelProxy.prototype.engageMidrollCheck = function() {
 };
 
 FreeWheelProxy.prototype.disengageMidrollCheck = function() {
+  this.midrollEngaged = false;
   this.getMediaElement().removeEventListener("timeupdate", this.handlers.timeupdate);
+};
+
+FreeWheelProxy.prototype.engageOverlayCheck = function() {
+  var _ref;
+  if (((_ref = this.overlaySlotsArray) != null ? _ref.length : void 0) === 0 || this.overlayEngaged === true) {
+    return;
+  }
+  this.overlayEngaged = true;
+  this.getMediaElement().addEventListener("timeupdate", this.handlers.overlaytimeupdate);
+};
+
+FreeWheelProxy.prototype.disengageOverlayCheck = function() {
+  this.overlayEngaged = false;
+  this.getMediaElement().removeEventListener("timeupdate", this.handlers.overlaytimeupdate);
 };
 
 /**
 */
 FreeWheelProxy.prototype.midrollCheck = function(event) {
-  var count, _base;
+  var count, cur, next, nextime, pod, time, _base;
   if (this.getMediaElement().paused) {
     return;
   }
-  if (this.appState.getSeeking() === true) {
+  if (this.appState.getSeeking() === true || this.appState.getSeekRequested() === true) {
     return;
   }
+  time = this.playbackCore.getCurrentTime();
   if (!(this.nextMidroll != null)) {
-    this.nextMidroll = this.getNextMidroll(this.playbackCore.getCurrentTime());
+    next = this.getNextMidroll(time);
+    cur = this.getPreviousMidroll(time);
+    if ((cur != null) && time >= (cur != null ? cur.getTimePosition() : void 0) && (!(next != null) || ((next != null) && time <= next.getTimePosition()))) {
+      this.nextMidroll = cur;
+    }
     return;
   }
-  if (this.playbackCore.getCurrentTime() < this.nextMidroll.getTimePosition()) {
+  nextime = this.nextMidroll.getTimePosition();
+  if (time < nextime) {
     return;
   }
   count = typeof (_base = this.nextMidroll).getAdCount === "function" ? _base.getAdCount() : void 0;
-  if (!(count != null)) {
+  pod = this.getPodById(this.nextMidroll.getCustomId());
+  if (!(count != null) || pod.locked) {
     return;
   }
   if (count === 0) {
@@ -29579,10 +27645,10 @@ FreeWheelProxy.prototype.midrollCheck = function(event) {
     return;
   }
   this.disengageMidrollCheck();
+  this.disengageOverlayCheck();
   this.adVO.type = "midroll";
-  this.startBreak();
+  this.startBreak(this.getPodById(this.nextMidroll.getCustomId()));
   this.engageAds();
-  this.midrollEngaged = false;
   this.playAd(this.nextMidroll);
 };
 
@@ -29621,17 +27687,82 @@ FreeWheelProxy.prototype.getPreviousMidroll = function(time) {
   }
 };
 
+FreeWheelProxy.prototype.overlayCheck = function(event) {
+  var count, _base;
+  if (this.getMediaElement().paused) {
+    return;
+  }
+  if (this.appState.getSeeking() === true || this.appState.getSeekRequested() === true) {
+    return;
+  }
+  if (!(this.nextOverlay != null)) {
+    this.nextOverlay = this.getNextOverlay(this.playbackCore.getCurrentTime());
+    return;
+  }
+  if (this.playbackCore.getCurrentTime() < this.nextOverlay.getTimePosition()) {
+    return;
+  }
+  count = typeof (_base = this.nextOverlay).getAdCount === "function" ? _base.getAdCount() : void 0;
+  if (!(count != null)) {
+    return;
+  }
+  if (count === 0) {
+    this.onSlotEnded({
+      slot: this.nextOverlay,
+      skipped: true
+    });
+    return;
+  }
+  this.disengageOverlayCheck();
+  this.adVO.type = "overlay";
+  this.playAd(this.nextOverlay);
+};
+
 /**
 */
-FreeWheelProxy.prototype.terminateAd = function() {
-  var _base;
-  if (this.started === true && this.getMediaElement().paused === true) {
+FreeWheelProxy.prototype.getNextOverlay = function(time) {
+  var overlay, _i, _len, _ref;
+  time = time >= 0 ? time : 0;
+  _ref = this.overlaySlotsArray;
+  for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+    overlay = _ref[_i];
+    if (time < overlay.getTimePosition()) {
+      return overlay;
+    }
+  }
+};
+
+/**
+*/
+FreeWheelProxy.prototype.getPreviousOverlay = function(time) {
+  var overlay, pod, pods, _i, _len;
+  pods = this.pods.slice().reverse();
+  for (_i = 0, _len = pods.length; _i < _len; _i++) {
+    pod = pods[_i];
+    if (!(pod.type === "overlay")) {
+      continue;
+    }
+    overlay = pod.metadata;
+    if (time > overlay.getTimePosition()) {
+      if (pod.locked !== true) {
+        return overlay;
+      } else {
+        return null;
+      }
+    }
+  }
+};
+
+/**
+*/
+FreeWheelProxy.prototype.terminateAd = function(stopactive) {
+  if (this.started === true && this.getMediaElement().paused === true && stopactive === false) {
     this.terminateAdOnPlay = true;
     return;
   }
   if (this.slot != null) {
-    if (typeof (_base = this.slot).stop === "function") {
-      _base.stop();
+    if (this.slot.getTimePositionClass() === tv.freewheel.SDK.TIME_POSITION_CLASS_POSTROLL) {
+      this.sendNotification(Notifications.HAS_POST_CONTENT, false);
     }
   }
 };
@@ -29645,11 +27776,24 @@ FreeWheelProxy.prototype.terminateAllAds = function(listeners) {
     this.context.removeEventListener(tv.freewheel.SDK.EVENT_SLOT_ENDED, this.handlers.onSlotEnded);
     this.context.removeEventListener(tv.freewheel.SDK.EVENT_AD_IMPRESSION, this.handlers.onAdImpression);
     this.context.removeEventListener(tv.freewheel.SDK.EVENT_AD_IMPRESSION_END, this.handlers.onAdImpressionEnd);
+    this.context.removeEventListener(tv.freewheel.SDK.EVENT_ERROR, this.handlers.onAdEvent);
   }
   this.terminateAd();
+  this.clearSlots();
+  this.disengageMidrollCheck();
+  this.disengageOverlayCheck();
+  this.sendNotification(Notifications.HAS_POST_CONTENT, false);
+  this.isOverlayDisplayed = false;
+  /**
+  */
+};
+
+FreeWheelProxy.prototype.clearSlots = function() {
   this.prerollSlots = [];
   this.midrollSlots = [];
   this.postrollSlots = [];
+  this.overlaySlotsArray = [];
+  this.nextMidroll = null;
 };
 
 /**
@@ -29686,8 +27830,57 @@ FreeWheelProxy.prototype.contentPaused = function() {
 
 /**
 */
+FreeWheelProxy.prototype.setVolume = function(value) {
+  var _ref;
+  if ((_ref = this.context) != null) {
+    _ref.setAdVolume(value);
+  }
+  return value;
+};
+
+/**
+*/
 FreeWheelProxy.prototype.destroy = function() {
   this.terminateAllAds(true);
+};
+
+/**
+*/
+FreeWheelProxy.prototype.updateAdMetadata = function(ad, metadata) {
+  var creativeParameters, id, instance, key, rendition, val, _i, _len, _ref;
+  if ((ad != null) && (metadata != null)) {
+    metadata.time = ad.getTimePosition();
+    instance = ad.getCurrentAdInstance();
+    if (instance != null) {
+      rendition = instance.getActiveCreativeRendition();
+    }
+    if (rendition != null) {
+      for (key in rendition) {
+        val = rendition[key];
+        if (key.indexOf('get') === 0 && typeof val === 'function') {
+          metadata[key.substring(3).toLowerCase()] = val();
+        }
+      }
+      metadata.baseunit = rendition.getBaseUnit();
+      creativeParameters = this.value.creativeParameters;
+      if (creativeParameters != null) {
+        metadata.creativeparameters = {};
+        _ref = ad.getAdInstances();
+        for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+          instance = _ref[_i];
+          id = instance.getAdId();
+          metadata.creativeparameters[id] = this.getCreativeParameters(instance);
+        }
+      }
+    }
+  }
+  return metadata;
+};
+
+/**
+*/
+FreeWheelProxy.prototype.replay = function() {
+  this.playWhenLoaded = true;
 };
 
 /** 
@@ -29761,3211 +27954,6 @@ StatsPlugin.prototype.setHidden = function(value) {
 
 AMP.registerPlugin("stats", "html", StatsPlugin);
 
-/** 
- * The IMAProxy class.
- *   
- * @constructor
- * @private 
- * @extends {AdProxy}
- * @param {Object} config
-*/
-function MOATProxy(config) {
-  MOATProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(MOATProxy, PluginProxy);
-
-
-/** @static
-*/
-MOATProxy.NAME = ModuleProxy.NAME;
-
-MOATProxy.prototype.defaults = {
-  data: {
-    partnerCode: null
-  }
-};
-
-/**
-*/
-MOATProxy.prototype.initSDK = function(adsManagerVO) {
-  var data, _ref;
-  if (typeof initMoatTracking !== "undefined" && initMoatTracking !== null) {
-    data = (_ref = this.getConfigurationData()) != null ? _ref.data : void 0;
-    initMoatTracking(adsManagerVO.adManager, {
-      "partnerCode": data.partnerCode,
-      "viewMode": adsManagerVO.viewMode,
-      "slicer1": data.slicer1,
-      "slicer2": data.slicer2
-    }, adsManagerVO.adContainer);
-  }
-};
-
-function MOATWrapper() {
-  return MOATWrapper.__super__.constructor.apply(this, arguments);
-}
-
-
-__extends(MOATWrapper, PluginWrapper);
-
-
-MOATWrapper.NAME = "MOATWrapper";
-
-MOATWrapper.prototype.flashPlugins = [
-  {
-    id: "MOATAnalyticsPlugin",
-    src: '#{paths.resources}plugins/MOATAnalyticsPlugin.swf',
-    blocking: false,
-    host: "akamai",
-    main: "MOATAnalyticsPlugin"
-  }
-];
-
-/** @override
-*/
-MOATWrapper.prototype.createXML = function(xml) {
-  var application, metrics, prop, props, vendor, _i, _len;
-  application = xml.firstChild;
-  metrics = xml.getElementsByTagName("metrics")[0];
-  if (!(metrics != null)) {
-    metrics = xml.createElement("metrics");
-    application.appendChild(metrics);
-  }
-  vendor = xml.createElement("vendor");
-  vendor.setAttribute("id", "moat");
-  metrics.appendChild(vendor);
-  props = [
-    {
-      value: this.config.data.partnerCode,
-      key: "partnerCode"
-    }, {
-      value: this.config.data.slicer1,
-      key: "slicer1"
-    }, {
-      value: this.config.data.slicer2,
-      key: "slicer2"
-    }
-  ];
-  for (_i = 0, _len = props.length; _i < _len; _i++) {
-    prop = props[_i];
-    if (prop.value != null) {
-      this.createProperty(xml, prop.key, prop.value, vendor);
-    }
-  }
-  return xml;
-};
-
-/**
- * The MOATAdManagerLoadedCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function MOATAdManagerLoadedCommand() {
-  MOATAdManagerLoadedCommand.__super__.constructor.call(this);
-}
-
-
-__extends(MOATAdManagerLoadedCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-MOATAdManagerLoadedCommand.prototype.execute = function(notification) {
-  var moatProxy;
-  moatProxy = this.facade.retrieveProxy(MOATProxy.NAME);
-  if (notification.getBody()) {
-    moatProxy.initSDK(notification.getBody());
-  }
-};
-
-/** 
- * @constructor 
- * @private
-*/
-function FreeWheelPlugin() {
-  FreeWheelPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(FreeWheelPlugin, AdPlugin);
-
-
-FreeWheelPlugin.prototype.moduleName = "freewheel";
-
-FreeWheelPlugin.prototype.featureName = "ads";
-
-/** @override
-*/
-FreeWheelPlugin.prototype.createProxy = function() {
-  return new FreeWheelProxy(this.config);
-};
-
-/** @override
-*/
-FreeWheelPlugin.prototype.isFullscreenDevice = function() {
-  return false;
-};
-
-
-AMP.registerPlugin("freewheel", "html", FreeWheelPlugin);
-AMP.registerPlugin("freewheel", "flash", FreeWheelWrapper);
-
-/**
- * DASHPlaybackProxy constructor.
- * 
- * @constructor
- * @private
- * @extends {PlaybackCoreProxy}
-*/
-function DASHPlaybackProxy(data) {
-  DASHPlaybackProxy.__super__.constructor.call(this, data.types, data);
-  this.buffer = data.buffer;
-  this.temporalTypes = ["vod", "live", "dvr"];
-}
-
-
-__extends(DASHPlaybackProxy, PlaybackCoreProxy);
-
-
-DASHPlaybackProxy.prototype.playbackCoreName = "dash";
-
-DASHPlaybackProxy.prototype.context = null;
-
-DASHPlaybackProxy.prototype.player = null;
-
-DASHPlaybackProxy.prototype.buffer = null;
-
-/** @override
-*/
-DASHPlaybackProxy.prototype.resumecomplete = function() {
-  var track, _ref, _ref1;
-  track = (_ref = this.facade.getMediaElement()) != null ? (_ref1 = _ref.textTracks) != null ? _ref1[0] : void 0 : void 0;
-  if (track != null) {
-    track.mode = "hidden";
-  }
-  DASHPlaybackProxy.__super__.resumecomplete.call(this);
-};
-
-DASHPlaybackProxy.prototype.onerror = function() {};
-
-/** @override
-*/
-DASHPlaybackProxy.prototype.createTracks = function() {
-  var audio, count, current, index, item, tracks, _i, _len;
-  audio = this.player.getTracksFor("audio");
-  current = this.player.getCurrentTrackFor("audio");
-  tracks = this.facade.tracks.getAudioTracks();
-  count = audio.length;
-  for (index = _i = 0, _len = audio.length; _i < _len; index = ++_i) {
-    item = audio[index];
-    tracks.add(new Track({
-      kind: item.roles.join(" "),
-      label: item.id,
-      language: item.lang,
-      id: item.id,
-      enabled: item === current
-    }), index + 1 === count);
-  }
-};
-
-/** @override
-*/
-DASHPlaybackProxy.prototype.load = function() {
-  if (!(this.player != null)) {
-    this.player = dashjs.MediaPlayer().create();
-    this.player.enableBufferOccupancyABR(true);
-    this.player.on("error", this.onError.bind(this));
-    this.player.on("fragmentLoadingStarted", this.onFragmentLoadStart.bind(this));
-    this.player.on("fragmentLoadingCompleted", this.onFragmentLoaded.bind(this));
-    this.player.getDebug().setLogToBrowserConsole(this.facade.logger.enabled);
-    this.player.initialize(this.getMediaElement(), null, false);
-  }
-  DASHPlaybackProxy.__super__.load.call(this);
-};
-
-/** @override
-*/
-DASHPlaybackProxy.prototype.applySrc = function() {
-  var keys;
-  keys = this.facade.getMedia().keys;
-  if (keys != null) {
-    this.player.setProtectionData(keys);
-  }
-  this.player.attachSource(this.getSrc());
-};
-
-/** @override
-*/
-DASHPlaybackProxy.prototype.seek = function(value) {
-  return Promise.resolve(this.player.seek(value));
-};
-
-/** @override
-*/
-DASHPlaybackProxy.prototype.getCurrentTime = function() {
-  var _ref;
-  return ((_ref = this.player) != null ? _ref.time() : void 0) || 0;
-};
-
-/** @override
-*/
-DASHPlaybackProxy.prototype.getDuration = function() {
-  var _ref;
-  return ((_ref = this.player) != null ? _ref.duration() : void 0) || 0;
-};
-
-/**
-*/
-DASHPlaybackProxy.prototype.getStats = function() {
-  return {};
-};
-
-/**
-*/
-DASHPlaybackProxy.prototype.onFragmentLoadStart = function(event) {
-  var bitrate;
-  bitrate = event.request.mediaInfo.bitrateList[event.request.quality].bandwidth;
-  this.sendNotification(Notifications.FRAGMENT_LOAD_START, bitrate);
-};
-
-/**
-*/
-DASHPlaybackProxy.prototype.onFragmentLoaded = function(event) {
-  var bitrate;
-  bitrate = event.request.mediaInfo.bitrateList[event.request.quality].bandwidth;
-  this.sendNotification(Notifications.FRAGMENT_LOADED, bitrate);
-};
-
-/**
-*/
-DASHPlaybackProxy.prototype.onError = function(event) {
-  this.facade.logger.error("DASH JS Playback Error:", event);
-};
-
-/** @override
-*/
-DASHPlaybackProxy.prototype.setQuality = function(value) {
-  var _ref;
-  return (_ref = this.player) != null ? _ref.setQualityFor("video", value) : void 0;
-};
-
-/** @override
-*/
-DASHPlaybackProxy.prototype.getQuality = function() {
-  var _ref;
-  return (_ref = this.player) != null ? _ref.getQualityFor("video") : void 0;
-};
-
-/** @override
-*/
-DASHPlaybackProxy.prototype.getQualityLevels = function() {
-  var _ref;
-  return ((_ref = this.player) != null ? _ref.getBitrateInfoListFor("video") : void 0) || DASHPlaybackProxy.__super__.getQualityLevels.call(this);
-};
-
-/** @override
-*/
-DASHPlaybackProxy.prototype.destroy = function() {
-  var _ref;
-  if ((_ref = this.player) != null) {
-    _ref.reset();
-  }
-};
-
-/**
- * The DASHChangeDisplayStateCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function DASHChangeDisplayStateCommand() {
-  DASHChangeDisplayStateCommand.__super__.constructor.call(this);
-}
-
-
-__extends(DASHChangeDisplayStateCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-DASHChangeDisplayStateCommand.prototype.execute = function(notification) {
-  var core, fullscreen, playback, proxy, state, target,
-    _this = this;
-  state = notification.getBody();
-  playback = this.facade.retrieveProxy(PlaybackProxy.NAME);
-  core = this.facade.getMediaElement();
-  if (!(core != null) || !core.webkitSupportsFullscreen) {
-    return;
-  }
-  proxy = this.facade.retrieveProxy(ApplicationStateProxy.NAME);
-  proxy.setDisplayState(state);
-  fullscreen = {};
-  target = this.facade.viewComponent;
-  if (target.requestFullscreen != null) {
-    fullscreen.enter = function() {
-      return target.requestFullscreen();
-    };
-    fullscreen.exit = function() {
-      return document.cancelFullscreen();
-    };
-    fullscreen.event = "onfullscreenchange";
-    fullscreen.element = "fullscreenElement";
-  } else if (target.webkitRequestFullScreen != null) {
-    fullscreen.enter = function() {
-      return target.webkitRequestFullScreen();
-    };
-    fullscreen.exit = function() {
-      return document.webkitCancelFullScreen();
-    };
-    fullscreen.event = "onwebkitfullscreenchange";
-    fullscreen.element = "webkitFullscreenElement";
-  } else if (target.mozRequestFullScreen != null) {
-    fullscreen.enter = function() {
-      return target.mozRequestFullscreen();
-    };
-    fullscreen.exit = function() {
-      return document.mozCancelFullScreen();
-    };
-    fullscreen.event = "onmozfullscreenchange";
-    fullscreen.element = "mozFullscreenElement";
-  } else if (target.msRequestFullScreen != null) {
-    fullscreen.enter = function() {
-      return target.msRequestFullscreen();
-    };
-    fullscreen.exit = function() {
-      return document.msCancelFullScreen();
-    };
-    fullscreen.event = "onmozfullscreenchange";
-    fullscreen.element = "mozFullscreenElement";
-  }
-  if (state === DisplayState.FULL_SCREEN) {
-    fullscreen.enter();
-    if (fullscreen.event != null) {
-      core[fullscreen.event] = function(event) {
-        if (!(document[fullscreen.element] != null)) {
-          return _this.sendNotification(Notifications.CHANGE_DISPLAY_STATE, DisplayState.NORMAL);
-        }
-      };
-    }
-  } else if (state === DisplayState.NORMAL) {
-    fullscreen.exit();
-    core[fullscreen.event] = null;
-  }
-  this.facade.dispatchEvent(new Event("fullscreenchange", state === DisplayState.FULL_SCREEN));
-};
-
-/** 
- * @param {Object}  config  The plugin configuration object.
- * @constructor
- * @private
- * @extends {PluginProxy}
-*/
-function PlaybackPluginProxy(config) {
-  PlaybackPluginProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(PlaybackPluginProxy, PluginProxy);
-
-
-/** @static
-*/
-PlaybackPluginProxy.NAME = ModuleProxy.NAME;
-
-PlaybackPluginProxy.prototype.playbackProxy = null;
-
-PlaybackPluginProxy.prototype.createPlaybackProxy = function() {};
-
-PlaybackPluginProxy.prototype.initialize = function() {
-  var player;
-  this.playbackProxy = this.createPlaybackProxy();
-  if (!(this.playbackProxy != null)) {
-    return;
-  }
-  this.sendNotification(Notifications.INITIALIZED);
-  player = this.facade.player.retrieveProxy(PlayerProxy.NAME);
-  player.registerPlaybackCore(this.playbackProxy);
-};
-
-PlaybackPluginProxy.prototype.destroy = function() {
-  var _ref;
-  if ((_ref = this.playbackProxy) != null) {
-    _ref.destroy();
-  }
-};
-
-/** 
- * The DASHProxy class.
- *   
- * @param {Object}  config  The plugin configuration object.
- * @constructor
- * @private
- * @extends {PluginProxy}
-*/
-function DASHProxy(config) {
-  DASHProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(DASHProxy, PlaybackPluginProxy);
-
-
-/** @static
-*/
-DASHProxy.NAME = ModuleProxy.NAME;
-
-DASHProxy.prototype.defaults = {
-  types: ["application/dash+xml"],
-  buffer: null
-};
-
-DASHProxy.prototype.createPlaybackProxy = function() {
-  var mediaSource;
-  mediaSource = window.MediaSource || window.WebKitMediaSource;
-  if (!(mediaSource != null)) {
-    return;
-  }
-  return new DASHPlaybackProxy(this.getConfigurationData());
-};
-
-/**
- * The AMPChromeCastPlayer class.
- *
- * @param {Object} player
- *    The player instance
- * 
- * @constructor
-*/
-function ChromeCastPlayer(shim) {
-  var index, rule, sheet, style;
-  this.shim = shim;
-  ChromeCastPlayer.__super__.constructor.call(this);
-  this.state = cast.receiver.media.PlayerState.IDLE;
-  try {
-    style = document.createElement('style');
-    style.type = 'text/css';
-    style.appendChild(document.createTextNode(""));
-    document.head.appendChild(style);
-    sheet = style.sheet;
-    rule = ".akamai-html5.akamai-video::cue {color: #FFFFFF; background: #000000; visibility: hidden;}";
-    index = sheet.insertRule(rule, 0);
-    this.cssRule = sheet.rules[index];
-  } catch (error) {
-    Logger.error(error);
-  }
-}
-
-
-__extends(ChromeCastPlayer, EventDispatcher);
-
-
-ChromeCastPlayer.prototype.player = null;
-
-ChromeCastPlayer.prototype.callbackMap = null;
-
-ChromeCastPlayer.prototype.state = null;
-
-ChromeCastPlayer.prototype.activeTrackId = null;
-
-ChromeCastPlayer.prototype.cssRule = null;
-
-ChromeCastPlayer.prototype.textTrackStyle = null;
-
-ChromeCastPlayer.prototype.ccHandler = null;
-
-ChromeCastPlayer.prototype.feed = null;
-
-ChromeCastPlayer.prototype.media = null;
-
-ChromeCastPlayer.prototype.tracks = null;
-
-/**
- *
-*/
-ChromeCastPlayer.prototype.registerPlayer = function(player) {
-  var events, listener, readyHandler,
-    _this = this;
-  this.player = player;
-  events = ["loadedmetadata", "ended", "error"];
-  listener = this.dispatchEvent.bind(this);
-  events.forEach(function(type) {
-    return player.addEventListener(type, listener);
-  });
-  readyHandler = function() {
-    _this.applyMedia();
-    _this.applyFeed();
-    _this.applyClassName();
-  };
-  this.player.once("ready", readyHandler);
-  this.player.addEventListener("playing", this.setState.bind(this, cast.receiver.media.PlayerState.PLAYING));
-  this.player.addEventListener("pause", this.setState.bind(this, cast.receiver.media.PlayerState.PAUSED));
-  this.player.addEventListener("waiting", this.setState.bind(this, cast.receiver.media.PlayerState.BUFFERING));
-};
-
-/**
- * @private
-*/
-ChromeCastPlayer.prototype.setState = function(state) {
-  if (state === this.state) {
-    return;
-  }
-  this.state = state;
-  this.shim.mediaManager.broadcastStatus(true);
-  return state;
-};
-
-/**
- * Registers an API that the player should call when there is an error.
- *
- * @param {function(Object)} errorCallback
- *    The callback method called when the player has an error.
-*/
-ChromeCastPlayer.prototype.registerErrorCallback = function(errorCallback) {
-  this.onerror = errorCallback;
-};
-
-/**
- * Registers an API that the player should call when the media has ended.
- *
- * @param {function()} endedCallback
- *    The callback method called when the player has ended.
-*/
-ChromeCastPlayer.prototype.registerEndedCallback = function(endedCallback) {
-  this.onended = endedCallback;
-};
-
-/**
- * Registers an API that the player should call when load is complete.
- *
- * @param {function()} loadCallback
- *    The callback method called when the player has completed load succesfully.
-*/
-ChromeCastPlayer.prototype.registerLoadCallback = function(loadCallback) {
-  this.onloadedmetadata = loadCallback;
-};
-
-/**
- * Called to unregister for error callbacks.
-*/
-ChromeCastPlayer.prototype.unregisterErrorCallback = function() {
-  this.onerror = null;
-};
-
-/**
- * Called to unregister for ended callbacks.
-*/
-ChromeCastPlayer.prototype.unregisterEndedCallback = function() {
-  this.onended = null;
-};
-
-/**
- * Called to unregister for load callbacks.
-*/
-ChromeCastPlayer.prototype.unregisterLoadCallback = function() {
-  this.onloadedmetadata = null;
-};
-
-/**
- * Loads content to be played.
- *
- * @param {string} contentId
- *    The content ID. Should be treated as an opaque string.
- *
- * @param {boolean} autoplay
- *    Whether the content should play after load.
- *
- * @param {number} opt_time
- *    The expected current time after load (in seconds). Optional.
- *
- * @param {cast.receiver.media.TracksInfo} opt_tracksInfo
- *    The tracks information. Optional.
-*/
-ChromeCastPlayer.prototype.load = function(contentId, autoplay, opt_time, opt_tracksInfo) {
-  var customData, info, key, media, metadata, value, _ref, _ref1, _ref2, _ref3;
-  info = this.shim.mediaManager.getMediaInformation();
-  customData = info.customData || {};
-  metadata = info.metadata || {};
-  if (opt_tracksInfo != null) {
-    this.editTracksInfo(opt_tracksInfo);
-  } else {
-    this.activeTrackId = null;
-  }
-  if ((customData.feed != null) && (((_ref = this.player) != null ? _ref.feed : void 0) != null)) {
-    this.feed = customData.feed;
-    this.media = null;
-    this.applyFeed();
-    return;
-  }
-  this.feed = null;
-  media = {
-    src: contentId,
-    type: info.contentType,
-    title: metadata.title,
-    poster: (_ref1 = metadata.images) != null ? _ref1.url : void 0,
-    description: metadata.subtitle,
-    pubDate: new Date(info.releaseDate),
-    metadata: customData,
-    duration: info.duration,
-    startTime: opt_time || ((_ref2 = customData.media) != null ? _ref2.startTime : void 0),
-    autoplay: autoplay
-  };
-  if (customData.media != null) {
-    _ref3 = customData.media;
-    for (key in _ref3) {
-      value = _ref3[key];
-      if (!(media[key] != null)) {
-        media[key] = value;
-      }
-    }
-  }
-  this.tracks = info.tracks;
-  this.media = media;
-  this.applyMedia();
-};
-
-/**
- *
-*/
-ChromeCastPlayer.prototype.applyMedia = function() {
-  if (!(this.player != null) || !(this.media != null)) {
-    return;
-  }
-  this.player.once("loadedmetadata", this.loadTracks.bind(this, this.tracks));
-  this.player.setMedia(this.media);
-  this.setState(cast.receiver.media.PlayerState.BUFFERING);
-};
-
-/**
- *
-*/
-ChromeCastPlayer.prototype.loadTracks = function(tracks, event) {
-  var playbackCore, track, type;
-  if ((tracks != null ? tracks.length : void 0) > 0) {
-    track = this.getTrack(0);
-    if (track != null) {
-      type = /ttml/.test(track.trackContentType) ? "ttml" : track.trackContentType;
-      playbackCore = this.player.retrieveProxy("PlayerProxy").getActivePlaybackCore();
-      playbackCore.player.enableCaptions(true, type, track.trackContentId);
-    }
-  }
-};
-
-/**
- *
-*/
-ChromeCastPlayer.prototype.applyFeed = function() {
-  if (!(this.player != null) || !(this.feed != null)) {
-    return;
-  }
-  this.player.once("mediachange", this.mediachangeHandler.bind(this));
-  if (this.feed.data != null) {
-    this.player.feed.setData(this.feed.data);
-  } else if (feed.url != null) {
-    this.player.feed.setURL(this.feed.url);
-  }
-};
-
-/**
- *
-*/
-ChromeCastPlayer.prototype.mediachangeHandler = function(event) {
-  var media, mediaInfo;
-  media = this.player.getMedia();
-  mediaInfo = new cast.receiver.media.MediaInformation();
-  mediaInfo.contentId = media.src;
-  mediaInfo.contentType = media.type;
-  mediaInfo.customData = media.metadata;
-  mediaInfo.duration = media.duration;
-  mediaInfo.metadata = {
-    title: media.title,
-    subtitle: media.description,
-    images: [
-      {
-        url: media.poster
-      }
-    ],
-    releaseDate: media.pubDate.toISOString()
-  };
-  this.media = media;
-  this.shim.mediaManager.setMediaInformation(mediaInfo, true);
-};
-
-/**
- * Resets the player.
-*/
-ChromeCastPlayer.prototype.reset = function() {};
-
-/**
- * Starts playback.
-*/
-ChromeCastPlayer.prototype.play = function() {
-  this.player.play();
-};
-
-/**
- * Sets playback to start at a new time position.
- *
- * @param {number} time
- *    The expected current time after seek (in seconds).
- *
- * @param {cast.receiver.media.SeekResumeState} opt_resumeState
- *    The expected state after seek. Optional.
-*/
-ChromeCastPlayer.prototype.seek = function(time, opt_resumeState) {
-  this.player.setCurrentTime(time);
-  switch (opt_resumeState) {
-    case cast.receiver.media.SeekResumeState.PLAYBACK_PAUSE:
-      this.player.pause();
-      break;
-    case cast.receiver.media.SeekResumeState.PLAYBACK_START:
-      this.player.play();
-  }
-};
-
-/**
- * Pauses playback.
-*/
-ChromeCastPlayer.prototype.pause = function() {
-  return this.player.pause();
-};
-
-/**
- * Provides the state of the player.
- *
- * @return {cast.receiver.media.PlayerState
- *    The current state of the player
-*/
-ChromeCastPlayer.prototype.getState = function() {
-  return this.state;
-};
-
-/**
- * Provides the current time of the media in seconds.
- *
- * @return {number
- *    The current time of the video, in seconds.
-*/
-ChromeCastPlayer.prototype.getCurrentTimeSec = function() {
-  if (this.player != null) {
-    return this.player.getCurrentTime();
-  } else {
-    return 0;
-  }
-};
-
-/**
- * Provides the duration of the media in seconds.
- *
- * @return {number
- *    Duration of the video, in seconds.
-*/
-ChromeCastPlayer.prototype.getDurationSec = function() {
-  if (this.player != null) {
-    return this.player.getDuration();
-  } else {
-    return 0;
-  }
-};
-
-/**
- * Provides the stream volume.
- *
- * @return {cast.receiver.media.Volume
- *    The media volume
-*/
-ChromeCastPlayer.prototype.getVolume = function() {
-  var volume;
-  volume = new cast.receiver.media.Volume();
-  volume.level = this.player.getVolume();
-  volume.muted = this.player.getMuted();
-  return volume;
-};
-
-/**
- * Sets the stream volume.
- *
- * @param {cast.receiver.media.Volume} volume
- *    New volume
-*/
-ChromeCastPlayer.prototype.setVolume = function(volume) {
-  if (volume.level != null) {
-    this.player.setVolume(volume.level);
-  }
-  if (volume.muted === true) {
-    this.player.setMuted(true);
-  } else {
-    if (this.player.getMuted() === true) {
-      this.player.setMuted(false);
-    }
-  }
-  return volume;
-};
-
-/**
- * Allows to edit the tracks information (active tracks and style).
- *
- * @param {cast.receiver.MediaManager.EditTracksInfoData} data
- *    The tracks information. The tracks definition can not change so
- *    the tracks field will be undefined (and should be ignored).
-*/
-ChromeCastPlayer.prototype.editTracksInfo = function(data) {
-  var activeTrack, style;
-  if (data.activeTrackIds != null) {
-    activeTrack = data.activeTrackIds[0];
-    if (this.activeTrackId !== activeTrack) {
-      this.activeTrackId = activeTrack;
-      this.applyClassName();
-    }
-  }
-  style = data.textTrackStyle;
-  if ((style != null) && (this.cssRule != null)) {
-    this.textTrackStyle = style;
-    if (style.foregroundColor != null) {
-      this.cssRule.style.color = this.hexToRgba(style.foregroundColor);
-    }
-    if (style.backgroundColor != null) {
-      this.cssRule.style.backgroundColor = this.hexToRgba(style.backgroundColor);
-    }
-    if (style.windowType === cast.receiver.media.TextTrackWindowType.ROUNDED_CORNERS) {
-      this.cssRule.style.borderRadius = style.windowRoundedCornerRadius + "px";
-    }
-    if (style.fontScale != null) {
-      this.cssRule.style.fontSize = style.fontScale + "em";
-    }
-    if (style.fontFamily != null) {
-      this.cssRule.style.fontFamily = style.fontFamily;
-    }
-  }
-};
-
-ChromeCastPlayer.prototype.applyClassName = function(hex) {
-  var classList, className;
-  if (!(this.player != null)) {
-    return;
-  }
-  className = "akamai-cc";
-  classList = this.player.getMediaElement().classList;
-  if (this.activeTrackId != null) {
-    classList.add(className);
-  } else {
-    classList.remove(className);
-  }
-};
-
-ChromeCastPlayer.prototype.hexToRgba = function(hex) {
-  var a, b, g, r;
-  if (!/^#[A-Fa-f0-9]{6}([A-Fa-f0-9]{2})?$/.test(hex)) {
-    return hex;
-  }
-  r = parseInt(hex.substring(1, 3), 16);
-  g = parseInt(hex.substring(3, 5), 16);
-  b = parseInt(hex.substring(5, 7), 16);
-  a = hex.length === 9 ? parseInt(hex.substring(7, 9), 16) / 256 : 1;
-  return "rgba(" + r + "," + g + "," + b + "," + a + ")";
-};
-
-ChromeCastPlayer.prototype.getTrack = function(id) {
-  var track;
-  if (!(id != null)) {
-    id = this.activeTrackId;
-  }
-  track = this.tracks.filter(function(item) {
-    return item.trackId === id;
-  })[0];
-  if (track != null) {
-    if (!(track.trackContentType != null)) {
-      track.trackContentType = cast.player.api.CaptionsType.CEA608;
-    }
-  }
-  return track;
-};
-
-/**
- * @enum {string}
- * @const
- * @private
-*/
-
-var ChromeCastConstants = {
-  CHANNEL_ID: "urn:x-cast:com.akamai.amp.cast",
-  APPLICATION_ID: "CC1AD845",
-  SUPPORTED_TYPES: [Utils.mimeTypes.m3u8, Utils.mimeTypes.mp4, Utils.mimeTypes.mpd, Utils.mimeTypes.ism, Utils.mimeTypes.webm, Utils.mimeTypes.mp3]
-};
-
-/** 
- * The ChromeCastSenderProxy class.
- *   
- * @param {Object}  config  The plugin configuration object.
- * @constructor
- * @private
- * @extends {PluginProxy}
-*/
-function ChromeCastSenderProxy(config) {
-  this.messageBus = config.messageBus || ChromeCastConstants.CHANNEL_ID;
-  ChromeCastSenderProxy.__super__.constructor.call(this, config.sender);
-}
-
-
-__extends(ChromeCastSenderProxy, PluginProxy);
-
-
-/** @static
-*/
-ChromeCastSenderProxy.NAME = ModuleProxy.NAME;
-
-ChromeCastSenderProxy.prototype.defaults = {
-  applicationID: ChromeCastConstants.APPLICATION_ID
-};
-
-ChromeCastSenderProxy.prototype.session = null;
-
-ChromeCastSenderProxy.prototype.media = null;
-
-ChromeCastSenderProxy.prototype.messageBus = null;
-
-ChromeCastSenderProxy.prototype.feed = null;
-
-ChromeCastSenderProxy.prototype.currentTime = null;
-
-ChromeCastSenderProxy.prototype.duration = null;
-
-ChromeCastSenderProxy.prototype.receiverAvailable = false;
-
-ChromeCastSenderProxy.prototype.currentTime = 0;
-
-ChromeCastSenderProxy.prototype.duration = 0;
-
-ChromeCastSenderProxy.prototype.playerState = null;
-
-ChromeCastSenderProxy.prototype.displayTimeTimeout = null;
-
-/** @override
-*/
-ChromeCastSenderProxy.prototype.initialize = function() {
-  var _ref,
-    _this = this;
-  if (typeof chrome !== "undefined" && chrome !== null ? (_ref = chrome.cast) != null ? _ref.isAvailable : void 0 : void 0) {
-    this.initializeCastApi();
-  } else {
-    window['__onGCastApiAvailable'] = function(loaded, errorInfo) {
-      if (loaded === true) {
-        _this.initializeCastApi();
-      } else {
-        _this.logError("cast load error", errorInfo);
-      }
-    };
-  }
-};
-
-ChromeCastSenderProxy.prototype.initializeCastApi = function() {
-  var apiConfig, applicationID, sessionRequest;
-  applicationID = this.getConfigurationData().applicationID;
-  sessionRequest = new chrome.cast.SessionRequest(applicationID);
-  apiConfig = new chrome.cast.ApiConfig(sessionRequest, this.sessionListener.bind(this), this.receiverListener.bind(this), chrome.cast.AutoJoinPolicy.ORIGIN_SCOPED);
-  chrome.cast.initialize(apiConfig, this.onInitSuccess.bind(this), this.onInitError.bind(this));
-};
-
-ChromeCastSenderProxy.prototype.onInitSuccess = function(event) {
-  this.logEvent("init success", event);
-};
-
-ChromeCastSenderProxy.prototype.onInitError = function(event) {
-  this.logError("init error", event);
-};
-
-ChromeCastSenderProxy.prototype.receiverListener = function(event) {
-  this.receiverAvailable = event === 'available';
-  this.sendNotification(ChromeCastNotifications.AVAILABILITY_CHANGE, this.receiverAvailable);
-  this.logEvent("receiver " + (this.receiverAvailable ? "found" : "list empty"));
-};
-
-ChromeCastSenderProxy.prototype.sessionListener = function(event) {
-  var session;
-  this.logEvent("session listener", event);
-  session = event;
-  if (session.media.length !== 0) {
-    this.onMediaDiscovered(session.media[0]);
-  } else {
-    this.onRequestSessionSuccess(event);
-  }
-};
-
-ChromeCastSenderProxy.prototype.launch = function() {
-  chrome.cast.requestSession(this.onRequestSessionSuccess.bind(this), this.onLaunchError.bind(this));
-};
-
-ChromeCastSenderProxy.prototype.send = function(msg) {
-  var _ref;
-  if ((_ref = this.session) != null) {
-    if (typeof _ref.sendMessage === "function") {
-      _ref.sendMessage(this.messageBus, msg, this.onMessageSuccess.bind(this), this.onMessageError.bind(this));
-    }
-  }
-};
-
-ChromeCastSenderProxy.prototype.onLaunchError = function(event) {
-  this.logError("launch error.", event);
-};
-
-ChromeCastSenderProxy.prototype.onRequestSessionSuccess = function(event) {
-  var playbackProxy;
-  this.logEvent("request session success.", event);
-  this.session = event;
-  this.session.addMessageListener(this.messageBus, this.onMessage.bind(this));
-  this.session.addUpdateListener(this.onUpdate.bind(this));
-  this.session.sendMessage(this.messageBus, {
-    type: "createPlayer",
-    config: this.facade.player.getConfig()
-  }, this.onCreateSucess.bind(this), this.onMessageError.bind(this));
-  playbackProxy = this.facade.player.retrieveProxy(PlaybackProxy.NAME);
-  if (this.session.media.length === 0) {
-    this.loadMedia(playbackProxy.getCurrentTime());
-  }
-};
-
-ChromeCastSenderProxy.prototype.onUpdate = function(isAlive) {
-  if (!isAlive) {
-    this.sendNotification(Notifications.CHANGE_PLAYBACK_TARGET, "amp");
-    this.stopDisplayTimeUpdate();
-  }
-};
-
-ChromeCastSenderProxy.prototype.onCreateSucess = function(event) {
-  this.logEvent("MPL created", event);
-  this.sendNotification(Notifications.CHANGE_PLAYBACK_TARGET, "chromecast");
-};
-
-ChromeCastSenderProxy.prototype.onMessageSuccess = function(event) {
-  this.logEvent("message sent", event);
-};
-
-ChromeCastSenderProxy.prototype.onMessageError = function(event) {
-  this.logError("message error", event);
-};
-
-ChromeCastSenderProxy.prototype.onMessage = function(namespace, message) {
-  var detail, target, type;
-  message = JSON.parse(message);
-  type = message.type;
-  detail = message.detail || {};
-  switch (type) {
-    case "dispatchevent":
-      target = detail.target === "player" ? this.facade.player : this.facade.player[detail.target];
-      if (target != null) {
-        target.dispatchEvent(detail.event);
-      }
-  }
-  this.sendNotification(Notifications.DISPATCH_EVENT, {
-    type: "message",
-    message: message
-  });
-};
-
-ChromeCastSenderProxy.prototype.onStop = function(event) {
-  this.logEvent("stop");
-  this.session.stop(this.onStopSuccess.bind(this), this.onStopError.bind(this));
-};
-
-ChromeCastSenderProxy.prototype.onStopSuccess = function(event) {
-  this.logEvent("stop success", event);
-};
-
-ChromeCastSenderProxy.prototype.onStopError = function(event) {
-  this.logError("stop error", event);
-};
-
-ChromeCastSenderProxy.prototype.logEvent = function(message, data) {
-  if (message == null) {
-    message = data.type || "";
-  }
-  this.facade.logger.log("[AMP CHROMECAST] " + message, data);
-};
-
-ChromeCastSenderProxy.prototype.logError = function(message, data) {
-  this.facade.logger.error("[AMP CHROMECAST ERROR] " + message, data);
-};
-
-ChromeCastSenderProxy.prototype.loadMedia = function(startTime) {
-  var customData, feed, media, receiverCanPlay, request, source, _ref;
-  if (startTime == null) {
-    startTime = 0;
-  }
-  media = this.facade.player.retrieveProxy(MediaProxy.NAME).getData();
-  if (!(media != null)) {
-    return;
-  }
-  receiverCanPlay = function(type) {
-    if (ChromeCastConstants.SUPPORTED_TYPES.indexOf(type) > -1) {
-      return "maybe";
-    } else {
-      return "";
-    }
-  };
-  source = Utils.selectSource(media.source, receiverCanPlay);
-  if (!(source != null)) {
-    return;
-  }
-  customData = {
-    media: media
-  };
-  feed = (_ref = this.facade.player.getModules()) != null ? _ref.feed : void 0;
-  if (feed != null) {
-    customData.feed = {
-      data: feed.getData(),
-      url: feed.getURL()
-    };
-  }
-  request = this.mediaToLoadRequest(media, source, startTime, customData);
-  this.session.loadMedia(request, this.onMediaDiscovered.bind(this), this.onMediaError.bind(this));
-};
-
-ChromeCastSenderProxy.prototype.mediaToLoadRequest = function(media, source, startTime, customData) {
-  var index, mediaInfo, metadata, request, track, value, _i, _len, _ref, _ref1, _ref2;
-  metadata = new chrome.cast.media.GenericMediaMetadata();
-  metadata.title = media.title;
-  metadata.subtitle = media.description;
-  metadata.image = [new chrome.cast.Image(media.poster)];
-  metadata.releaseDate = (_ref = media.pubDate) != null ? typeof _ref.toISOString === "function" ? _ref.toISOString() : void 0 : void 0;
-  mediaInfo = new chrome.cast.media.MediaInfo(source.src, source.type);
-  mediaInfo.duration = media.duration;
-  mediaInfo.customData = customData;
-  mediaInfo.metadata = metadata;
-  if (((_ref1 = media.track) != null ? _ref1.length : void 0) > 0) {
-    mediaInfo.tracks = [];
-    _ref2 = media.track;
-    for (index = _i = 0, _len = _ref2.length; _i < _len; index = ++_i) {
-      value = _ref2[index];
-      track = new chrome.cast.media.Track(index, chrome.cast.media.TrackType.TEXT);
-      track.subtype = chrome.cast.media.TextTrackType.CAPTIONS;
-      track.name = "Closed Captions";
-      track.language = value.srclang;
-      track.customData = value;
-      track.trackContentId = value.src;
-      track.trackContentType = value.type;
-      mediaInfo.tracks.push(track);
-    }
-  }
-  request = new chrome.cast.media.LoadRequest(mediaInfo);
-  request.currentTime = startTime;
-  return request;
-};
-
-ChromeCastSenderProxy.prototype.onMediaDiscovered = function(media) {
-  if (this.media != null) {
-    this.media.removeUpdateListener(this.mediaStatusUpdate);
-  }
-  this.media = media;
-  this.mediaStatusUpdate = this.onMediaStatusUpdate.bind(this);
-  this.media.addUpdateListener(this.mediaStatusUpdate);
-  this.sendNotification(Notifications.CHANGE_PLAYBACK_TARGET, "chromecast");
-};
-
-ChromeCastSenderProxy.prototype.onMediaStatusUpdate = function(status) {
-  this.logEvent("mediastatusupdate", status);
-  this.updatePlayerState(this.media.playerState);
-  this.updateDisplayTime();
-  if (status === false) {
-    this.stopDisplayTimeUpdate();
-  }
-};
-
-ChromeCastSenderProxy.prototype.updatePlayerState = function(playerState) {
-  var state;
-  if (playerState === this.playerState) {
-    return;
-  }
-  this.playerState = playerState;
-  switch (this.playerState) {
-    case chrome.cast.media.PlayerState.BUFFERING:
-      state = PlayState.WAITING;
-      break;
-    case chrome.cast.media.PlayerState.PLAYING:
-      state = PlayState.PLAYING;
-      break;
-    case chrome.cast.media.PlayerState.PAUSED:
-      state = PlayState.PAUSED;
-  }
-  this.sendNotification(Notifications.CHANGE_PLAY_STATE, state);
-  if (this.playerState === chrome.cast.media.PlayerState.PLAYING) {
-    this.startDisplayTimeUpdate();
-  } else {
-    this.stopDisplayTimeUpdate();
-  }
-};
-
-ChromeCastSenderProxy.prototype.startDisplayTimeUpdate = function() {
-  this.stopDisplayTimeUpdate();
-  this.displayTimeTimeout = setInterval(this.updateDisplayTime.bind(this), 100);
-};
-
-ChromeCastSenderProxy.prototype.stopDisplayTimeUpdate = function() {
-  clearInterval(this.displayTimeTimeout);
-  this.displayTimeTimeout = null;
-};
-
-ChromeCastSenderProxy.prototype.updateDisplayTime = function() {
-  var currentTime, duration, _ref;
-  currentTime = this.media.getEstimatedTime() || 0;
-  duration = ((_ref = this.media.media) != null ? _ref.duration : void 0) || currentTime;
-  if (duration !== this.duration) {
-    this.duration = duration;
-    this.sendNotification(Notifications.CHANGE_DURATION, this.duration);
-    return;
-  }
-  if (currentTime !== this.currentTime) {
-    this.currentTime = currentTime;
-    this.sendNotification(Notifications.DISPLAY_TIME, {
-      currentTime: this.currentTime,
-      duration: this.duration
-    });
-  }
-};
-
-ChromeCastSenderProxy.prototype.onMediaError = function(error) {
-  this.logError("media error", error);
-  this.stopDisplayTimeUpdate();
-};
-
-ChromeCastSenderProxy.prototype.play = function() {
-  this.media.play();
-};
-
-ChromeCastSenderProxy.prototype.pause = function() {
-  this.media.pause();
-};
-
-ChromeCastSenderProxy.prototype.setCurrentTime = function(time) {
-  var request;
-  request = new chrome.cast.media.SeekRequest();
-  request.currentTime = time;
-  this.media.seek(request);
-};
-
-ChromeCastSenderProxy.prototype.getCurrentTime = function() {
-  return this.currentTime;
-};
-
-ChromeCastSenderProxy.prototype.isReceiverAvailable = function() {
-  return this.receiverAvailable;
-};
-
-/**
- * The ChromeCastLaunchCommand class.
- *   
- * @constructor
- * @private
- * @extends {PluginCommand}
-*/
-function ChromeCastLaunchCommand() {
-  ChromeCastLaunchCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastLaunchCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ChromeCastLaunchCommand.prototype.execute = function(notification) {
-  this.proxy.launch();
-};
-
-/**
- * The ChromeCastCaptioningVisibilityChangeCommand class.
- *   
- * @constructor
- * @private
- * @extends {PluginCommand}
-*/
-function ChromeCastCaptioningVisibilityChangeCommand() {
-  ChromeCastCaptioningVisibilityChangeCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastCaptioningVisibilityChangeCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ChromeCastCaptioningVisibilityChangeCommand.prototype.execute = function(notification) {
-  this.proxy.send({
-    type: "captioning.visibilitychange",
-    detail: {
-      visibility: notification.getBody()
-    }
-  });
-};
-
-/**
- * The ChromeCastCaptioningSettingsChangeCommand class.
- *   
- * @constructor
- * @private
- * @extends {PluginCommand}
-*/
-function ChromeCastCaptioningSettingsChangeCommand() {
-  ChromeCastCaptioningSettingsChangeCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastCaptioningSettingsChangeCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ChromeCastCaptioningSettingsChangeCommand.prototype.execute = function(notification) {
-  this.proxy.send({
-    type: "captioning.settingschange",
-    detail: notification.getBody()
-  });
-};
-
-/**
- * The ChromeCastReceiverReadyCommand class.
- *   
- * @constructor
- * @private
- * @extends {PluginCommand}
-*/
-function ChromeCastReceiverReadyCommand() {
-  ChromeCastReceiverReadyCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastReceiverReadyCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ChromeCastReceiverReadyCommand.prototype.execute = function(notification) {
-  this.facade.player.getViewComponent().hidden = false;
-  this.proxy.ready();
-};
-
-/**
- * The ChromeCastBreakStartCommand class.
- *   
- * @constructor
- * @private
- * @extends {PluginCommand}
-*/
-function ChromeCastBreakStartCommand() {
-  ChromeCastBreakStartCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastBreakStartCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ChromeCastBreakStartCommand.prototype.execute = function(notification) {
-  var playbackCore;
-  this.facade.logger.debug("ChromeCastBreakStartCommand");
-  playbackCore = this.facade.player.retrieveProxy(PlayerProxy.NAME).getActivePlaybackCore();
-  if (playbackCore.getPlaybackCoreName() === "chromecast") {
-    playbackCore.unload();
-    playbackCore.src = null;
-  }
-};
-
-/**
- * ChromeCastPlaybackProxy constructor.
- * 
- * @constructor
- * @private
- * @extends {PlaybackCoreProxy}
-*/
-function ChromeCastPlaybackProxy(types, receiver) {
-  this.receiver = receiver;
-  ChromeCastPlaybackProxy.__super__.constructor.call(this, types);
-}
-
-
-__extends(ChromeCastPlaybackProxy, PlaybackCoreProxy);
-
-
-ChromeCastPlaybackProxy.prototype.initialized = true;
-
-ChromeCastPlaybackProxy.prototype.player = null;
-
-ChromeCastPlaybackProxy.prototype.host = null;
-
-ChromeCastPlaybackProxy.prototype.protocol = null;
-
-ChromeCastPlaybackProxy.prototype.playbackCoreName = "chromecast";
-
-ChromeCastPlaybackProxy.prototype.manifest = null;
-
-ChromeCastPlaybackProxy.prototype.xhr = null;
-
-ChromeCastPlaybackProxy.prototype.trackInfo = null;
-
-ChromeCastPlaybackProxy.prototype.receiver = null;
-
-/** 
- * @override
- * @private
-*/
-ChromeCastPlaybackProxy.prototype.reset = function() {
-  ChromeCastPlaybackProxy.__super__.reset.call(this);
-  this.xhr = null;
-  this.manifest = null;
-};
-
-ChromeCastPlaybackProxy.prototype.unload = function() {
-  if (this.player != null) {
-    this.trackInfo = {
-      activeTrackIds: [this.receiver.chromecastPlayer.activeTrackId],
-      textTrackStyle: this.receiver.chromecastPlayer.textTrackStyle
-    };
-    this.receiver.chromecastPlayer.activeTrackId = null;
-    this.receiver.chromecastPlayer.textTrackStyle = null;
-    this.player.unload();
-    this.player = null;
-  }
-};
-
-/** @override
-*/
-ChromeCastPlaybackProxy.prototype.load = function() {
-  var _this = this;
-  if (this.xhr != null) {
-    if (this.manifest != null) {
-      this.loadMediaPlayer();
-    }
-  } else {
-    this.xhr = new XMLHttpRequest();
-    this.xhr.onload = function(event) {
-      if (_this.xhr.status === 200) {
-        _this.manifest = _this.xhr.responseText;
-        _this.loadMediaPlayer();
-      }
-    };
-    this.xhr.onerror = function(event) {
-      _this.facade.logger.error(event);
-      _this.player.unload();
-    };
-    this.xhr.open("GET", this.getSrc());
-    this.xhr.send();
-  }
-};
-
-ChromeCastPlaybackProxy.prototype.loadMediaPlayer = function() {
-  var initStart, mediaProxy, type, types, video,
-    _this = this;
-  this.data.loading = true;
-  this.playWhenLoaded = true;
-  this.unload();
-  video = this.facade.getMediaElement();
-  video.addEventListener("loadedmetadata", this.resumeHandlers.loadedmetadata);
-  video.addEventListener("loadedmetadata", this.handlers.loadedmetadata);
-  video.addEventListener("durationchange", this.handlers.durationchange);
-  video.addEventListener("canplaythrough", this.handlers.canplaythrough);
-  if (video.src != null) {
-    video.src = null;
-  }
-  initStart = 0;
-  if (Logger.enabled === true) {
-    cast.player.api.setLoggerLevel(cast.player.api.LoggerLevel.DEBUG);
-  }
-  this.host = new cast.player.api.Host({
-    'mediaElement': video,
-    'url': this.getSrc()
-  });
-  this.host.updateManifestRequestInfo = function(requestInfo) {
-    if (requestInfo.url === _this.getSrc()) {
-      requestInfo.skipRequest = true;
-      requestInfo.setResponse(_this.manifest);
-    }
-  };
-  this.host.onError = function(errorCode) {
-    _this.facade.logger.error("Google Media Player Fatal Error - " + errorCode);
-    _this.player.unload();
-  };
-  mediaProxy = this.facade.retrieveProxy(MediaProxy.NAME);
-  type = mediaProxy.getType();
-  types = Utils.mimeTypes;
-  switch (type) {
-    case types.m3u8:
-      this.protocol = cast.player.api.CreateHlsStreamingProtocol(this.host);
-      break;
-    case types.mpd:
-      this.protocol = cast.player.api.CreateDashStreamingProtocol(this.host);
-      break;
-    case types.ism:
-      this.protocol = cast.player.api.CreateSmoothStreamingProtocol(this.host);
-  }
-  if (this.protocol != null) {
-    this.player = new cast.player.api.Player(this.host);
-    this.player.load(this.protocol, initStart);
-  } else {
-    this.facade.logger.error("Google Media Player Error: Could not create protocol");
-  }
-};
-
-/** 
- * @override
-*/
-ChromeCastPlaybackProxy.prototype.resumecomplete = function() {
-  ChromeCastPlaybackProxy.__super__.resumecomplete.call(this);
-};
-
-/**
- * The ChromeCastSeekCommand class.
- *   
- * @constructor
- * @private
- * @extends {PluginCommand}
-*/
-function ChromeCastMediaChangeCommand() {
-  ChromeCastMediaChangeCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastMediaChangeCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ChromeCastMediaChangeCommand.prototype.execute = function(notification) {
-  if (this.applicationState.getPlaybackTarget() !== "chromecast") {
-    return;
-  }
-  this.facade.logger.debug("ChromeCastMediaChangeCommand");
-  this.proxy.loadMedia();
-};
-
-/**
- * The ChromeCastReceiverMediator class.
- * 
- * @constructor
- * @private
- * @extends {PluginMediator}
-*/
-function ChromeCastReceiverMediator() {
-  ChromeCastReceiverMediator.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastReceiverMediator, PluginMediator);
-
-
-/**
- * @override
-*/
-ChromeCastReceiverMediator.prototype.onRegister = function() {
-  ChromeCastReceiverMediator.__super__.onRegister.call(this);
-  this.sendNotification(Notifications.ADD_APPLICATION_STATE, "chromecast-receiver");
-};
-
-/**
- * The ChromeCastSenderMediator class.
- * 
- * @constructor
- * @private
- * @extends {PluginMediator}
-*/
-function ChromeCastSenderMediator() {
-  ChromeCastSenderMediator.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastSenderMediator, PluginMediator);
-
-
-ChromeCastSenderMediator.prototype.componentName = "chromecast";
-
-ChromeCastSenderMediator.prototype.controls = null;
-
-/**
- * @override
-*/
-ChromeCastSenderMediator.prototype.onRegister = function() {
-  ChromeCastSenderMediator.__super__.onRegister.call(this);
-  this.controls = new ChromeCastControlsMediator();
-};
-
-/**
- * @override
-*/
-ChromeCastSenderMediator.prototype.registerOverlay = function() {};
-
-/**
- * @override
-*/
-ChromeCastSenderMediator.prototype.listNotificationInterests = function() {
-  return [Notifications.PLAYBACK_TARGET_CHANGE, Notifications.CHANGE_PLAY_STATE];
-};
-
-/**
- * @override
-*/
-ChromeCastSenderMediator.prototype.handleNotification = function(notification) {
-  var body, name, target;
-  name = notification.getName();
-  body = notification.getBody();
-  switch (name) {
-    case Notifications.PLAYBACK_TARGET_CHANGE:
-      target = body.value;
-      if (target === "chromecast") {
-        this.facade.registerMediator(this.controls);
-      } else {
-        this.facade.removeMediator(this.controls.getMediatorName());
-      }
-      break;
-    case Notifications.CHANGE_PLAY_STATE:
-      this.controls.setState(body);
-  }
-};
-
-/**
- * The ChromeCastSenderMediator class.
- * 
- * @constructor
- * @extends {ChromeCastSenderMediator}
- * @private
-*/
-function ChromeCastHTMLSenderMediator() {
-  ChromeCastHTMLSenderMediator.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastHTMLSenderMediator, ChromeCastSenderMediator);
-
-
-ChromeCastHTMLSenderMediator.prototype.chromeCastButton = null;
-
-/**
- * @override
-*/
-ChromeCastHTMLSenderMediator.prototype.onRegister = function() {
-  ChromeCastHTMLSenderMediator.__super__.onRegister.call(this);
-  this.chromeCastButton = new ChromeCastButtonMediator();
-  this.facade.registerMediator(this.chromeCastButton);
-};
-
-/**
- * @override
-*/
-ChromeCastHTMLSenderMediator.prototype.listNotificationInterests = function() {
-  return ChromeCastHTMLSenderMediator.__super__.listNotificationInterests.call(this).concat([ChromeCastNotifications.AVAILABILITY_CHANGE]);
-};
-
-/**
- * @override
-*/
-ChromeCastHTMLSenderMediator.prototype.handleNotification = function(notification) {
-  var body, name;
-  ChromeCastHTMLSenderMediator.__super__.handleNotification.call(this, notification);
-  name = notification.getName();
-  body = notification.getBody();
-  switch (name) {
-    case ChromeCastNotifications.AVAILABILITY_CHANGE:
-      if (body === true) {
-        this.sendNotification(Notifications.ADD_CONTROL_STATE, "chromecast");
-        this.facade.player.sendNotification(Notifications.ADD_CONTROL, this.chromeCastButton.getViewComponent());
-      } else {
-        this.sendNotification(Notifications.REMOVE_CONTROL_STATE, "chromecast");
-        this.facade.player.sendNotification(Notifications.REMOVE_CONTROL, this.chromeCastButton.getViewComponent());
-      }
-  }
-};
-
-/** 
- * The ChromeCastReceiverProxy class.
- *   
- * @param {Object}  config  The plugin configuration object.
- * @constructor
- * @private
- * @extends {PluginProxy}
-*/
-function ChromeCastReceiverProxy(config) {
-  this.messageBus = config.messageBus || ChromeCastConstants.CHANNEL_ID;
-  ChromeCastReceiverProxy.__super__.constructor.call(this, config.receiver);
-}
-
-
-__extends(ChromeCastReceiverProxy, PluginProxy);
-
-
-/** @static
-*/
-ChromeCastReceiverProxy.NAME = ModuleProxy.NAME;
-
-ChromeCastReceiverProxy.prototype.defaults = {
-  shim: null,
-  types: ["application/x-mpegURL", "application/dash+xml", "application/vnd.ms-sstr+xml"]
-};
-
-ChromeCastReceiverProxy.prototype.messageBus = null;
-
-ChromeCastReceiverProxy.prototype.castReceiverManager = null;
-
-ChromeCastReceiverProxy.prototype.castMessageBus = null;
-
-ChromeCastReceiverProxy.prototype.startTime = 0;
-
-ChromeCastReceiverProxy.prototype.currentTime = 0;
-
-ChromeCastReceiverProxy.prototype.boundHandler = null;
-
-ChromeCastReceiverProxy.prototype.amp = null;
-
-ChromeCastReceiverProxy.prototype.mediaManager = null;
-
-ChromeCastReceiverProxy.prototype.playbackCore = null;
-
-ChromeCastReceiverProxy.prototype.teardownTimeout = null;
-
-ChromeCastReceiverProxy.prototype.chromecastPlayer = null;
-
-ChromeCastReceiverProxy.prototype.initialize = function() {
-  var core, player;
-  ChromeCastReceiverProxy.__super__.initialize.call(this);
-  this.sendNotification(Notifications.INITIALIZED);
-  core = new ChromeCastPlaybackProxy(this.getConfigurationData().types, this);
-  player = this.facade.player.retrieveProxy(PlayerProxy.NAME);
-  player.registerPlaybackCore(core);
-};
-
-ChromeCastReceiverProxy.prototype.ready = function() {
-  if (this.facade.logger.enabled === true) {
-    cast.receiver.logger.setLevelValue(cast.receiver.LoggerLevel.DEBUG);
-  }
-  this.shim = ChromeCastShim.getInstance();
-  this.castReceiverManager = this.shim.castReceiverManager;
-  this.castReceiverManager.onReady = this.castReceiverManager.onSystemVolumeChanged = this.castReceiverManager.onVisibilityChanged = this.logEvent.bind(this);
-  this.castReceiverManager.onSenderConnected = this.onSenderConnected.bind(this);
-  this.castReceiverManager.onSenderDisconnected = this.onSenderDisconnected.bind(this);
-  this.amp = this.facade.player;
-  this.chromecastPlayer = this.shim.player;
-  this.chromecastPlayer.registerPlayer(this.amp);
-  this.mediaManager = this.shim.mediaManager;
-  this.castMessageBus = this.shim.castMessageBuses[this.messageBus];
-  this.castMessageBus.onMessage = this.onMessage.bind(this);
-  this.amp.addEventListener("seeking", this.eventHandler.bind(this));
-  this.amp.addEventListener("seeked", this.eventHandler.bind(this));
-  this.amp.addEventListener("pause", this.startTeardownTimeout.bind(this, 20 * 60));
-  this.amp.addEventListener("ended", this.startTeardownTimeout.bind(this, 5 * 60));
-  this.amp.addEventListener("error", this.startTeardownTimeout.bind(this, 5 * 60));
-  this.amp.addEventListener("playing", this.stopTeardownTimeout.bind(this));
-  this.amp.addEventListener("loadedmetadata", this.stopTeardownTimeout.bind(this));
-  if (this.amp.ads != null) {
-    this["amp"].ads.addEventListener("breakstart", this.dispatchEvent.bind(this, "ads"));
-    this["amp"].ads.addEventListener("breakend", this.onBreakEnd.bind(this));
-    this["amp"].ads.addEventListener("started", this.dispatchEvent.bind(this, "ads"));
-    this["amp"].ads.addEventListener("ended", this.dispatchEvent.bind(this, "ads"));
-    this["amp"].ads.addEventListener("companion", this.dispatchEvent.bind(this, "ads"));
-  }
-  this.startTeardownTimeout(5 * 60);
-};
-
-ChromeCastReceiverProxy.prototype.onBreakEnd = function(event) {
-  this.dispatchEvent("ads", event);
-  if (this.amp.getEnded() === true) {
-    this.startTeardownTimeout(5 * 60);
-  }
-};
-
-ChromeCastReceiverProxy.prototype.logEvent = function(message, data) {
-  if (!(message != null)) {
-    message = data.type || "";
-  } else if (!(data != null)) {
-    data = message.data;
-    message = data.type;
-  }
-  this.facade.logger.log("[CHROMECAST] ", message, data);
-};
-
-ChromeCastReceiverProxy.prototype.onSenderConnected = function(event) {
-  this.logEvent("senderconnected", event);
-  setTimeout(this.sendNotification.bind(this, Notifications.DISPATCH_EVENT, new Event("senderconnected", event)), 0);
-};
-
-ChromeCastReceiverProxy.prototype.onSenderDisconnected = function(event) {
-  this.logEvent("sender disconnected", event);
-  if (this.castReceiverManager.getSenders().length === 0 && event.reason === cast.receiver.system.DisconnectReason.REQUESTED_BY_SENDER) {
-    this.teardown();
-  }
-  setTimeout(this.sendNotification.bind(this, Notifications.DISPATCH_EVENT, new Event("senderdisconnected", event)), 0);
-};
-
-ChromeCastReceiverProxy.prototype.onMessage = function(event) {
-  var detail, ids, message, textTrackStyle, type;
-  this.logEvent("message from sender", event);
-  try {
-    message = event.data || event.message;
-    if (!(message != null)) {
-      return;
-    }
-    type = message.type;
-    detail = message.detail;
-    if (typeof detail === "string") {
-      detail = JSON.parse(detail);
-    }
-    if (!(detail != null)) {
-      return;
-    }
-    switch (type) {
-      case "captioning.visibilitychange":
-        ids = [];
-        if (detail.visibility === true) {
-          ids.push(0);
-        }
-        this.chromecastPlayer.editTracksInfo({
-          activeTrackIds: ids
-        });
-        break;
-      case "captioning.settingschange":
-        textTrackStyle = new cast.receiver.media.TextTrackStyle();
-        textTrackStyle.foregroundColor = detail.fontColor;
-        textTrackStyle.backgroundColor = detail.backgroundColor;
-        textTrackStyle.fontScale = detail.size;
-        textTrackStyle.windowColor = detail.windowColor;
-        textTrackStyle.fontFamily = detail.fontFamily;
-        textTrackStyle.edgeColor = detail.edgeColor;
-        textTrackStyle.edgeType = detail.edgeType;
-        this.chromecastPlayer.editTracksInfo({
-          textTrackStyle: textTrackStyle
-        });
-        break;
-      case "stats.visibilitychange":
-        this["amp"].stats.setHidden(!detail.visibility);
-    }
-    this.sendNotification(Notifications.DISPATCH_EVENT, event);
-  } catch (error) {
-    this.error(error);
-  }
-};
-
-ChromeCastReceiverProxy.prototype.onClose = function(event) {
-  this.logEvent("message channel closed", event);
-};
-
-ChromeCastReceiverProxy.prototype.eventHandler = function(event) {
-  var msg;
-  msg = {
-    type: event.type
-  };
-  if (event.detail != null) {
-    msg.detail = event.detail;
-  }
-  this.send(msg);
-};
-
-ChromeCastReceiverProxy.prototype.dispatchEvent = function(target, event) {
-  this.send({
-    type: "dispatchevent",
-    detail: {
-      target: target,
-      event: {
-        type: event.type,
-        detail: event.detail
-      }
-    }
-  });
-};
-
-ChromeCastReceiverProxy.prototype.send = function(message) {
-  this.castMessageBus.broadcast(message);
-};
-
-ChromeCastReceiverProxy.prototype.startTeardownTimeout = function(seconds) {
-  this.stopTeardownTimeout();
-  this.teardownTimeout = setTimeout(this.teardown.bind(this), seconds * 1000);
-};
-
-ChromeCastReceiverProxy.prototype.stopTeardownTimeout = function() {
-  clearTimeout(this.teardownTimeout);
-};
-
-ChromeCastReceiverProxy.prototype.teardown = function() {
-  window.close();
-};
-
-/**
- * The ChromeCastFeedChangedCommand class.
- *   
- * @constructor
- * @private
- * @extends {PluginCommand}
-*/
-function ChromeCastFeedChangedCommand() {
-  ChromeCastFeedChangedCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastFeedChangedCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ChromeCastFeedChangedCommand.prototype.execute = function(notification) {
-  var _base;
-  if (typeof (_base = this.proxy).setFeed === "function") {
-    _base.setFeed(notification.getBody());
-  }
-};
-
-/**
- * The ChromeCastSeekCommand class.
- *   
- * @constructor
- * @private
- * @extends {PluginCommand}
-*/
-function ChromeCastSeekCommand() {
-  ChromeCastSeekCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastSeekCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ChromeCastSeekCommand.prototype.execute = function(notification) {
-  this.facade.logger.debug("ChromeCastSeekCommand");
-  this.plugin.setCurrentTime(notification.getBody());
-};
-
-/**
- * The ChromeCastButtonMediator class.
- * 
- * @constructor
- * @extends {PluginMediator}
- * @param {Object} parent
- * @private
-*/
-function ChromeCastButtonMediator() {
-  ChromeCastButtonMediator.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastButtonMediator, ButtonMediator);
-
-
-ChromeCastButtonMediator.prototype.componentName = "chromecast";
-
-ChromeCastButtonMediator.prototype.onclick = function(event) {
-  event.stopImmediatePropagation();
-  this.sendNotification(ChromeCastNotifications.LAUNCH);
-  return false;
-};
-
-/**
- * The ChromeCastTogglePlayPauseCommand class.
- *   
- * @constructor
- * @private
- * @extends {PluginCommand}
-*/
-function ChromeCastTogglePlayPauseCommand() {
-  ChromeCastTogglePlayPauseCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastTogglePlayPauseCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ChromeCastTogglePlayPauseCommand.prototype.execute = function(notification) {
-  switch (this.applicationState.getPlayState()) {
-    case PlayState.ENDED:
-      this.plugin.setCurrentTime(0);
-      this.plugin.play();
-      break;
-    case PlayState.PAUSED:
-    case PlayState.READY:
-      this.plugin.play();
-      break;
-    case PlayState.PLAYING:
-    case PlayState.WAITING:
-      this.plugin.pause();
-  }
-};
-
-/**
- * The ChromeCastControlsMediator class.
- * 
- * @constructor
- * @extends {PluginMediator}
- * @private
-*/
-function ChromeCastControlsMediator() {
-  ChromeCastControlsMediator.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastControlsMediator, ControlsMediator);
-
-
-ChromeCastControlsMediator.prototype.componentName = "chromecast-controls";
-
-ChromeCastControlsMediator.prototype.message = null;
-
-ChromeCastControlsMediator.prototype.messageContainer = null;
-
-ChromeCastControlsMediator.prototype.button = null;
-
-ChromeCastControlsMediator.prototype.captioningActive = false;
-
-/** @override
-*/
-ChromeCastControlsMediator.prototype.onRegister = function() {
-  var button, fullscreen, _ref, _ref1;
-  ChromeCastControlsMediator.__super__.onRegister.call(this);
-  this.messageContainer = this.create("chromecast-message-container");
-  this.message = this.createText("chromecast-message", this.localizationManager.getString("MSG_CHROMECAST_MESSAGE"), this.messageContainer);
-  this.button = new ChromeCastButtonMediator();
-  this.facade.registerMediator(this.button);
-  fullscreen = new FullScreenMediator(this.controlBar);
-  this.facade.registerMediator(fullscreen);
-  fullscreen.setDisabled(true);
-  this.sendNotification(Notifications.ADD_CONTROL, this.button.getViewComponent());
-  if (!this.viewComponent.getElementsByClassName("akamai-caption akamai-button").length && ((_ref = this.facade.player.captioning) != null ? (_ref1 = _ref.config) != null ? _ref1.enabled : void 0 : void 0) === true) {
-    button = new ButtonMediator(this.localizationManager.getString(LocalizationConstants.MSG_CC), this.viewComponent.getElementsByClassName("akamai-control-bar")[0], null, "caption", this.captionButtonClick.bind(this));
-    this.facade.registerMediator(button);
-    this.captionButton = button.getViewComponent();
-    this.sendNotification(Notifications.ADD_CONTROL, this.captionButton);
-    this.sendNotification(Notifications.ADD_CONTROL_STATE, "cc-enabled");
-  }
-};
-
-ChromeCastControlsMediator.prototype.captionButtonClick = function() {
-  var note;
-  this.captioningActive = !this.captioningActive;
-  try {
-    this.facade.player.parent.chromecast.postMessage({
-      type: "captioning.visibilitychange",
-      detail: {
-        visibility: this.captioningActive
-      }
-    });
-  } catch (error) {
-    this.facade.logger.error("[AMP Chromecast Captioning Error]", error);
-  }
-  note = this.captioningActive ? Notifications.ADD_APPLICATION_STATE : Notifications.REMOVE_APPLICATION_STATE;
-  this.sendNotification(note, "cc-active");
-};
-
-/**
- * The ChromeCastPlaybackTargetChangeCommand class.
- *   
- * @constructor
- * @private
- * @extends {PluginCommand}
-*/
-function ChromeCastPlaybackTargetChangeCommand() {
-  ChromeCastPlaybackTargetChangeCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastPlaybackTargetChangeCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ChromeCastPlaybackTargetChangeCommand.prototype.execute = function(notification) {
-  var body, currentTime, duration, target,
-    _this = this;
-  body = notification.getBody();
-  target = body.target;
-  if (target === "chromecast") {
-    this.player.pause();
-  } else if (target === "amp") {
-    currentTime = this.proxy.getCurrentTime();
-    duration = this.player.getDuration();
-    if (currentTime !== 0) {
-      if (currentTime !== duration) {
-        this.seekedHandler = this.seeked.bind(this);
-        this.player.once("seeked", function(event) {
-          _this.player.play();
-        });
-      }
-      this.player.setCurrentTime(currentTime);
-    }
-  }
-};
-
-/** 
- * The ChromeCastPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Plugin}
-*/
-function ChromeCastPlugin() {
-  ChromeCastPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastPlugin, Plugin);
-
-
-ChromeCastPlugin.prototype.moduleName = "chromecast";
-
-/** @override
-*/
-ChromeCastPlugin.prototype.isAvailable = function() {
-  return this.isSender() || this.isReceiver();
-};
-
-/** @override
-*/
-ChromeCastPlugin.prototype.createModel = function() {
-  this.proxy = this.isSender() ? new ChromeCastSenderProxy(this.config) : new ChromeCastReceiverProxy(this.config);
-  this.registerProxy(this.proxy);
-};
-
-/** @override
-*/
-ChromeCastPlugin.prototype.createController = function() {
-  ChromeCastPlugin.__super__.createController.call(this);
-  if (this.isSender()) {
-    this.registerCommand(Notifications.PLAYBACK_TARGET_CHANGE, ChromeCastPlaybackTargetChangeCommand);
-    this.registerCommand(ChromeCastNotifications.LAUNCH, ChromeCastLaunchCommand);
-    this.registerCommand(UserNotifications.TOGGLE_PLAY_PAUSE, ChromeCastTogglePlayPauseCommand);
-    this.registerCommand(UserNotifications.SEEK, ChromeCastSeekCommand);
-    this.registerCommand(CaptioningNotifications.VISIBILITY_CHANGE, ChromeCastCaptioningVisibilityChangeCommand);
-    this.registerCommand(CaptioningNotifications.SETTINGS_CHANGE, ChromeCastCaptioningSettingsChangeCommand);
-    this.registerCommand(Notifications.MEDIA_CHANGE, ChromeCastMediaChangeCommand);
-    this.registerCommand(ChromeCastNotifications.AVAILABILITY_CHANGE, PluginEventCommand);
-  } else if (this.isReceiver()) {
-    this.registerCommand(Notifications.READY, ChromeCastReceiverReadyCommand);
-    this.registerCommand(AdNotifications.BREAK_START, ChromeCastBreakStartCommand);
-  }
-};
-
-/** @override
-*/
-ChromeCastPlugin.prototype.createView = function() {
-  if (this.isSender()) {
-    this.registerMediator(new ChromeCastHTMLSenderMediator());
-  } else if (this.isReceiver()) {
-    this.registerMediator(new ChromeCastReceiverMediator());
-  }
-};
-
-ChromeCastPlugin.prototype.isSender = function() {
-  return !ChromeCastPlugin.prototype.isReceiver() && /Chrome/.test(navigator.userAgent);
-};
-
-ChromeCastPlugin.prototype.isReceiver = function() {
-  return /CrKey/.test(navigator.userAgent);
-};
-
-/** @override
-*/
-ChromeCastPlugin.prototype.listNotificationInterests = function() {
-  return [Notifications.READY, CaptioningNotifications.VISIBILITY_CHANGE, CaptioningNotifications.SETTINGS_CHANGE, AdNotifications.BREAK_START, Notifications.PLAYBACK_TARGET_CHANGE, Notifications.MEDIA_CHANGE];
-};
-
-/** @override
-*/
-ChromeCastPlugin.prototype.listNotificationPublications = function() {
-  return ChromeCastPlugin.__super__.listNotificationPublications.apply(this, arguments).concat([Notifications.INITIALIZED, Notifications.ADD_CONTROL, Notifications.REMOVE_CONTROL, Notifications.ADD_CONTROL_STATE, Notifications.REMOVE_CONTROL_STATE, Notifications.CHANGE_PLAYBACK_TARGET, ChromeCastNotifications.AVAILABILITY_CHANGE, Notifications.CHANGE_PLAY_STATE, Notifications.CHANGE_DURATION, Notifications.DISPLAY_TIME]);
-};
-
-/**
- * @expose
-*/
-ChromeCastPlugin.prototype.play = function() {
-  var _base;
-  if (typeof (_base = this.proxy).play === "function") {
-    _base.play();
-  }
-};
-
-/**
- * @expose
-*/
-ChromeCastPlugin.prototype.pause = function() {
-  var _base;
-  if (typeof (_base = this.proxy).pause === "function") {
-    _base.pause();
-  }
-};
-
-/**
- * @param {Number}  value   The time in seconds to seek to.
- * @expose
-*/
-ChromeCastPlugin.prototype.setCurrentTime = function(value) {
-  this.proxy.setCurrentTime(value);
-  return value;
-};
-
-/**
- * Returns if The chromecast device's Availability 
- * @expose
-*/
-ChromeCastPlugin.prototype.isReceiverAvailable = function() {
-  var _ref;
-  return ((_ref = this.proxy) != null ? typeof _ref.isReceiverAvailable === "function" ? _ref.isReceiverAvailable() : void 0 : void 0) || false;
-};
-
-ChromeCastPlugin.prototype.getMedia = function() {
-  return this.proxy.media;
-};
-
-ChromeCastPlugin.prototype.getSession = function() {
-  return this.proxy.session;
-};
-
-ChromeCastPlugin.prototype.getMediaManager = function() {
-  return this.proxy.mediaManager;
-};
-
-ChromeCastPlugin.prototype.getCastReceiverManager = function() {
-  return this.proxy.castReceiverManager;
-};
-
-ChromeCastPlugin.prototype.getCastMessageBus = function() {
-  return this.proxy.shim.castMessageBuses[this.proxy.messageBus];
-};
-
-/**
- * sends a message across the message bus.
- * 
- * @param {Object} msg 
- * @expose
-*/
-ChromeCastPlugin.prototype.postMessage = function(msg) {
-  this.proxy.send(msg);
-};
-
-
-AMP.registerPlugin("chromecast", "html", ChromeCastPlugin);
-
-/** 
- * The ChromeCastFlashPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @param {Object}  config  The plugin's configuration object.
- * @constructor
- * @extends {ChromeCastPlugin}
- * @private
-*/
-function ChromeCastFlashPlugin() {
-  ChromeCastFlashPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(ChromeCastFlashPlugin, ChromeCastPlugin);
-
-
-ChromeCastFlashPlugin.NAME = "ChromeCastFlashPlugin";
-
-/** @override
-*/
-ChromeCastFlashPlugin.prototype.createModel = function() {
-  this.proxy = new ChromeCastSenderProxy(this.config);
-  this.registerProxy(this.proxy);
-};
-
-/** @override
-*/
-ChromeCastFlashPlugin.prototype.createController = function() {
-  ChromeCastFlashPlugin.__super__.createController.call(this);
-  this.registerCommand(Notifications.PLAYBACK_TARGET_CHANGE, ChromeCastPlaybackTargetChangeCommand);
-  this.registerCommand(ChromeCastNotifications.LAUNCH, ChromeCastLaunchCommand);
-  this.registerCommand(FeedNotifications.FEED_CHANGED, ChromeCastFeedChangedCommand);
-  this.registerCommand(UserNotifications.TOGGLE_PLAY_PAUSE, ChromeCastTogglePlayPauseCommand);
-  this.registerCommand(UserNotifications.SEEK, ChromeCastSeekCommand);
-};
-
-/** @override
-*/
-ChromeCastFlashPlugin.prototype.createView = function() {
-  this.registerMediator(new ChromeCastSenderMediator());
-};
-
-/** @override
-*/
-ChromeCastFlashPlugin.prototype.listNotificationInterests = function() {
-  return [FeedNotifications.FEED_CHANGED, Notifications.CHANGE_MEDIA, Notifications.PLAYBACK_TARGET_CHANGE];
-};
-
-/**
- * @enum {string}
- * @const
- * @private
-*/
-
-var ChromeCastNotifications = {
-  LAUNCH: "launch",
-  AVAILABILITY_CHANGE: "availabilitychange"
-};
-
-/** 
- * @constructor
- * @extends {PluginWrapper}
- * @private
-*/
-function ChromeCastWrapper(player, init) {
-  if (!ChromeCastPlugin.prototype.isSender()) {
-    throw new Error("Chromecast not supported on this platform. Skipping plugin initialization.");
-  }
-  ChromeCastWrapper.__super__.constructor.call(this, player, init);
-  this.plugin = new ChromeCastFlashPlugin();
-  this.plugin.initialize(init, this.player);
-  player.registerModule(this.plugin);
-}
-
-
-__extends(ChromeCastWrapper, PluginWrapper);
-
-
-ChromeCastWrapper.NAME = "ChromeCastWrapper";
-
-ChromeCastWrapper.prototype.buttonId = "chromecastBtn";
-
-ChromeCastWrapper.prototype.plugin = null;
-
-ChromeCastWrapper.prototype.flashView = {
-  elements: {
-    controls: {
-      elements: {
-        chromecastBtn: {}
-      }
-    }
-  }
-};
-
-/**
-*/
-ChromeCastWrapper.prototype.listNotificationInterests = function() {
-  return ChromeCastWrapper.__super__.listNotificationInterests.call(this).concat([FlashNotifications.ELEMENT_EVENT, FlashNotifications.LOAD_STATE_READY, FlashNotifications.LOAD_STATE_LOADING, FlashNotifications.APPLICATION_STATE_CHANGE, ChromeCastNotifications.AVAILABILITY_CHANGE]);
-};
-
-/**
-*/
-ChromeCastWrapper.prototype.handleNotification = function(notification) {
-  var body, isReceiverAvailable, name, _ref;
-  ChromeCastWrapper.__super__.handleNotification.call(this, notification);
-  name = notification.getName();
-  body = notification.getBody();
-  switch (name) {
-    case FlashNotifications.ELEMENT_EVENT:
-      if (body.type === "click" && body.element === this.buttonId) {
-        this.plugin.sendNotification(ChromeCastNotifications.LAUNCH);
-      }
-      break;
-    case ChromeCastNotifications.AVAILABILITY_CHANGE:
-      if (((_ref = this.player.mediaElement) != null ? _ref.setPlayerProperty : void 0) != null) {
-        this.player.mediaElement.setPlayerProperty(this.buttonId, {
-          visible: body
-        });
-      }
-      break;
-    case FlashNotifications.APPLICATION_STATE_CHANGE:
-    case FlashNotifications.LOAD_STATE_READY:
-    case FlashNotifications.LOAD_STATE_LOADING:
-      isReceiverAvailable = this.plugin.isReceiverAvailable();
-      if (isReceiverAvailable) {
-        this.player.mediaElement.setPlayerProperty(this.buttonId, {
-          state: 1
-        });
-      }
-      this.player.mediaElement.setPlayerProperty(this.buttonId, {
-        visible: isReceiverAvailable
-      });
-  }
-};
-
-/**
- * @expose
-*/
-ChromeCastWrapper.prototype.play = function() {
-  this.plugin.play();
-};
-
-/**
- * @expose
-*/
-ChromeCastWrapper.prototype.pause = function() {
-  this.plugin.pause();
-};
-
-/**
- * @param {Number}  value   The time in seconds to seek to.
- * @expose
-*/
-ChromeCastWrapper.prototype.setCurrentTime = function(value) {
-  this.plugin.setCurrentTime(value);
-  return value;
-};
-
-ChromeCastWrapper.prototype.getMedia = function() {
-  return this.plugin.getMedia();
-};
-
-ChromeCastWrapper.prototype.getSession = function() {
-  return this.plugin.getSession();
-};
-
-ChromeCastWrapper.prototype.getMediaManager = function() {
-  return this.plugin.getMediaManager();
-};
-
-ChromeCastWrapper.prototype.getCastReceiverManager = function() {
-  return this.plugin.getCastReceiverManager();
-};
-
-ChromeCastWrapper.prototype.getCastMessageBus = function() {
-  return this.plugin.getCastMessageBuses();
-};
-
-/**
- * sends a message across the message bus.
- * 
- * @param {Object} msg 
- * @expose
-*/
-ChromeCastWrapper.prototype.postMessage = function(msg) {
-  this.plugin.postMessage(msg);
-};
-
-
-AMP.registerPlugin("chromecast", "flash", ChromeCastWrapper);
-
-/** 
- * The MOATPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {AdPlugin}
-*/
-function MOATPlugin() {
-  MOATPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(MOATPlugin, Plugin);
-
-
-MOATPlugin.prototype.moduleName = "moat";
-
-/** @override
-*/
-MOATPlugin.prototype.createModel = function() {
-  this.proxy = new MOATProxy(this.config);
-  this.registerProxy(this.proxy);
-};
-
-/** @override
-*/
-MOATPlugin.prototype.createController = function() {
-  MOATPlugin.__super__.createController.call(this);
-  return this.registerCommand(AdNotifications.AD_MANAGER_LOADED, MOATAdManagerLoadedCommand);
-};
-
-/** @override
-*/
-MOATPlugin.prototype.listNotificationInterests = function() {
-  return [AdNotifications.AD_MANAGER_LOADED];
-};
-
-
-AMP.registerPlugin("moat", "html", MOATPlugin);
-AMP.registerPlugin("moat", "flash", MOATWrapper);
-
-/**
- * Create a ChromeCastShim.
- * 
- * @param {?cast.receiver.CastReceiverManager.Config} config
- * @param {Object.<string, string>} messageBuses
-*/
-function ChromeCastShim(config, messageBuses) {
-  var key, value;
-  if (!/CrKey/.test(navigator.userAgent) || !(typeof cast !== "undefined" && cast !== null)) {
-    return;
-  }
-  ChromeCastShim.__super__.constructor.call(this);
-  this.castReceiverManager = cast.receiver.CastReceiverManager.getInstance();
-  this.castReceiverManager.onReady = this.dispatchEvent.bind(this, {
-    type: "ready"
-  });
-  this.castReceiverManager.onSenderConnected = this.dispatchEvent.bind(this, {
-    type: "senderconnected"
-  });
-  this.castReceiverManager.onSenderDisconnected = this.dispatchEvent.bind(this, {
-    type: "senderdisconnected"
-  });
-  this.castReceiverManager.onShutdown = this.dispatchEvent.bind(this, {
-    type: "shutdown"
-  });
-  this.castReceiverManager.onStandbyChanged = this.dispatchEvent.bind(this, {
-    type: "standbychange"
-  });
-  this.castReceiverManager.onSystemVolumeChanged = this.dispatchEvent.bind(this, {
-    type: "systemvolumechanged"
-  });
-  this.castReceiverManager.onVisibilityChanged = this.dispatchEvent.bind(this, {
-    type: "visibilitychanged"
-  });
-  this.player = new ChromeCastPlayer(this);
-  this.mediaManager = new cast.receiver.MediaManager(this.player);
-  if (!(messageBuses != null)) {
-    messageBuses = {};
-  }
-  messageBuses[ChromeCastConstants.CHANNEL_ID] = cast.receiver.CastMessageBus.MessageType.JSON;
-  this.castMessageBuses = {};
-  for (key in messageBuses) {
-    value = messageBuses[key];
-    this.castMessageBuses[key] = this.castReceiverManager.getCastMessageBus(key, value);
-    this.castMessageBuses[key].addEventListener("message", this.dispatchEvent.bind(this));
-  }
-  this.castReceiverManager.start(config);
-  return;
-}
-
-
-__extends(ChromeCastShim, EventDispatcher);
-
-
-/**
- * @type {cast.receiver.CastReceiverManager}
-*/
-ChromeCastShim.prototype.castReceiverManager = null;
-
-/**
- * @type {cast.receiver.MediaManager}
-*/
-ChromeCastShim.prototype.mediaManager = null;
-
-/**
- * @type {Object.<string, cast.receiver.CastMessageBus>}
-*/
-ChromeCastShim.prototype.castMessageBuses = null;
-
-/**
- * @type {cast.receiver.media.Player}
-*/
-ChromeCastShim.prototype.player = null;
-
-/**
-*/
-ChromeCastShim.prototype.isSender = function() {
-  return !this.isReceiver() && /Chrome/.test(navigator.userAgent);
-};
-
-/**
-*/
-ChromeCastShim.prototype.isReceiver = function() {
-  return /CrKey/.test(navigator.userAgent);
-};
-
-ChromeCastShim.getInstance = function() {
-  return this.instance;
-};
-
-ChromeCastShim.instance = new ChromeCastShim();
-
-/** 
- * The DASHPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Plugin}
-*/
-function DASHPlugin() {
-  DASHPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(DASHPlugin, Plugin);
-
-
-DASHPlugin.prototype.moduleName = "dash";
-
-/** @override
-*/
-DASHPlugin.prototype.createModel = function() {
-  this.registerProxy(new DASHProxy(this.config));
-};
-
-/**
- * Returns DASH PlaybackProxy
- *
-*/
-DASHPlugin.prototype.getPlaybackProxy = function() {
-  return this.proxy.playbackProxy;
-};
-
-/**
- * Returns instance of DASH player
- *
-*/
-DASHPlugin.prototype.getInstance = function() {
-  return this.getPlaybackProxy().player;
-};
-
-DASHPlugin.prototype.registered = function() {
-  this.player.registerCommand(Notifications.CHANGE_DISPLAY_STATE, DASHChangeDisplayStateCommand);
-  DASHPlugin.__super__.registered.call(this);
-};
-
-/**
-*/
-DASHPlugin.prototype.listNotificationPublications = function() {
-  return DASHPlugin.__super__.listNotificationPublications.call(this).concat([Notifications.FRAGMENT_LOAD_START, Notifications.FRAGMENT_LOADED]);
-};
-
-
-AMP.registerPlugin("dash", "html", DASHPlugin);
-
-/** 
- * The ControlPanelPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Plugin}
-*/
-function ControlPlugin() {
-  ControlPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(ControlPlugin, Plugin);
-
-
-/** @override
-*/
-ControlPlugin.prototype.listNotificationPublications = function() {
-  return ControlPlugin.__super__.listNotificationPublications.apply(this, arguments).concat([Notifications.ADD_CONTROL, Notifications.REMOVE_CONTROL, Notifications.ADD_CONTROL_STATE, Notifications.REMOVE_CONTROL_STATE]);
-};
-
-/**
- * The PanelControlMediator class.
- * 
- * @constructor
- * @private
- * @extends {ButtonMediator}
-*/
-function PanelControlMediator(componentName) {
-  PanelControlMediator.__super__.constructor.call(this, null, null, null, componentName, onclick);
-}
-
-
-__extends(PanelControlMediator, ButtonMediator);
-
-
-PanelControlMediator.prototype.panel = null;
-
-PanelControlMediator.prototype.timeout = null;
-
-PanelControlMediator.prototype.closePanelDelayed = null;
-
-/**
- * @override
-*/
-PanelControlMediator.prototype.onRegister = function() {
-  this.closePanelDelayed = this.delayedClosePanel.bind(this);
-  if (Utils.getDevice() === "desktop") {
-    this.onmouseleave = this.closePanelDelayed;
-    this.onmouseenter = this.openPanel;
-    this.onclick = this.clickHandler;
-  } else {
-    this.onclick = this.togglePanel;
-  }
-  PanelControlMediator.__super__.onRegister.call(this);
-  this.sendNotification(Notifications.ADD_CONTROL_STATE, "" + this.componentName + "-enabled");
-  this.sendNotification(Notifications.ADD_CONTROL, this.viewComponent);
-};
-
-PanelControlMediator.prototype.openPanel = function() {
-  clearTimeout(this.timeout);
-  this.sendNotification(PanelNotifications.OPEN_PANEL, this.panel);
-  this.panel.viewComponent.addEventListener("mouseleave", this.closePanelDelayed);
-};
-
-PanelControlMediator.prototype.closePanel = function() {
-  if (Utils.isMouseOverElement(this.panel.viewComponent) || Utils.isMouseOverElement(this.viewComponent) || this.facade.player.retrieveProxy(ApplicationStateProxy.NAME).getIsUserActive()) {
-    return;
-  }
-  this.panel.viewComponent.addEventListener("mouseleave", this.closePanelDelayed);
-  this.sendNotification(PanelNotifications.CLOSE_PANEL, this.panel);
-};
-
-PanelControlMediator.prototype.delayedClosePanel = function() {
-  this.timeout = setTimeout(this.closePanel.bind(this), 350);
-};
-
-PanelControlMediator.prototype.togglePanel = function(event) {
-  event.stopImmediatePropagation();
-  this.sendNotification(PanelNotifications.TOGGLE_PANEL, this.panel);
-};
-
-PanelControlMediator.prototype.clickPanel = function() {};
-
-/**
- * The PlayPauseMediator class.
- * 
- * @constructor
- * @private
- * @extends {ButtonMediator}
-*/
-function PanelMediator(componentName) {
-  PanelMediator.__super__.constructor.call(this, componentName, null, null, null);
-}
-
-
-__extends(PanelMediator, ComponentMediator);
-
-
-PanelMediator.prototype.componentType = "panel";
-
-PanelMediator.prototype.control = null;
-
-/**
- * @override
-*/
-PanelMediator.prototype.onRegister = function() {
-  PanelMediator.__super__.onRegister.call(this);
-  this.sendNotification(PanelNotifications.ADD_PANEL, this);
-};
-
-/** 
- * The ControlProxy class.
- * 
- * @constructor
- * @private
- * @extends {PluginProxy}
-*/
-function ControlProxy(config) {
-  ControlProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(ControlProxy, PluginProxy);
-
-
-/** @static
-*/
-ControlProxy.NAME = ModuleProxy.NAME;
-
-ControlProxy.prototype.loaded = true;
-
-ControlProxy.prototype.controlName = null;
-
-/**
- *
-*/
-ControlProxy.prototype.getControlName = function() {
-  return this.controlName;
-};
-
-ControlProxy.prototype.setControlName = function(value) {
-  return this.controlName = value;
-};
-
-/** 
- * The ControlPanelProxy class.
- * 
- * @constructor
- * @private
- * @extends {PluginProxy}
-*/
-function ControlPanelProxy(config) {
-  ControlPanelProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(ControlPanelProxy, ControlProxy);
-
-
-/** @static
-*/
-ControlPanelProxy.NAME = ModuleProxy.NAME;
-
-ControlPanelProxy.prototype.hidden = true;
-
-/**
- *
-*/
-ControlPanelProxy.prototype.getHidden = function() {
-  return this.hidden;
-};
-
-ControlPanelProxy.prototype.setHidden = function(value) {
-  this.hidden = value;
-  return value;
-};
-
-/** 
- * The VolumePanelProxy class.
- * 
- * @constructor
- * @private
- * @extends {ControlPanelProxy}
-*/
-function VolumePanelProxy(config) {
-  VolumePanelProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(VolumePanelProxy, ControlPanelProxy);
-
-
-/** @static
-*/
-VolumePanelProxy.NAME = ModuleProxy.NAME;
-
-VolumePanelProxy.prototype.controlName = "volume";
-
-VolumePanelProxy.prototype.defaults = {
-  direction: "vertical"
-};
-
-VolumePanelProxy.prototype.getDirection = function() {
-  return this.data.direction;
-};
-
-/**
-*/
-function VolumePanelWrapper(player, config) {
-  if (config == null) {
-    config = {};
-  }
-  VolumePanelWrapper.__super__.constructor.call(this, player, config);
-}
-
-
-__extends(VolumePanelWrapper, PluginWrapper);
-
-
-VolumePanelWrapper.NAME = "VolumePanelWrapper";
-
-
-AMP.registerPlugin("volumepanel", "flash", VolumePanelWrapper);
-
-function VolumePanelControlMediator(componentName) {
-  VolumePanelControlMediator.__super__.constructor.call(this, componentName);
-}
-
-
-__extends(VolumePanelControlMediator, PanelControlMediator);
-
-
-VolumePanelControlMediator.prototype.clickHandler = function() {
-  this.sendNotification(Notifications.TOGGLE_MUTED);
-};
-
-/**
- * The VolumeMediator class.
- * 
- * @constructor
- * @private
- * @extends {ModuleMediator}
- * @param {Object} viewComponent
-*/
-function VolumeMediator(parent, direction) {
-  VolumeMediator.__super__.constructor.call(this, parent, direction);
-}
-
-
-__extends(VolumeMediator, SliderMediator);
-
-
-VolumeMediator.prototype.componentName = "volume";
-
-VolumeMediator.prototype.draggable = true;
-
-/** 
- * @override
-*/
-VolumeMediator.prototype.valueChanged = function() {
-  this.sendNotification(Notifications.CHANGE_VOLUME, this.value);
-  this.sendNotification(UserSettingsNotifications.UPDATE_SETTINGS, {
-    volume: this.value
-  });
-};
-
-/** 
- * @override
-*/
-VolumeMediator.prototype.listNotificationInterests = function() {
-  return [Notifications.VOLUME_CHANGE, Notifications.READY];
-};
-
-/** 
- * @override
-*/
-VolumeMediator.prototype.handleNotification = function(notification) {
-  switch (notification.getName()) {
-    case Notifications.READY:
-      this.updateValue(this.facade.player.retrieveProxy(PlaybackProxy.NAME).getVolume());
-      break;
-    case Notifications.VOLUME_CHANGE:
-      this.updateValue(notification.getBody());
-  }
-};
-
-/**
- * The ControlPanelMediator class.
- * 
- * @constructor
- * @private
- * @extends {PluginMediator}
-*/
-function ControlPanelMediator() {
-  ControlPanelMediator.__super__.constructor.call(this);
-  this.controls = {};
-}
-
-
-__extends(ControlPanelMediator, PluginMediator);
-
-
-ControlPanelMediator.prototype.panel = null;
-
-ControlPanelMediator.prototype.control = null;
-
-ControlPanelMediator.prototype.separator = null;
-
-ControlPanelMediator.prototype.controls = null;
-
-ControlPanelMediator.prototype.labels = null;
-
-ControlPanelMediator.prototype.closed = true;
-
-ControlPanelMediator.prototype.panelClass = PanelMediator;
-
-ControlPanelMediator.prototype.controlClass = PanelControlMediator;
-
-/**
- * @override
-*/
-ControlPanelMediator.prototype.onRegister = function() {
-  this.panel = this.createPanel(this.componentName);
-  this.control = this.createControl(this.componentName);
-  this.separator = this.createSeparator(this.componentName);
-  this.panel.control = this.control;
-  this.control.panel = this.panel;
-  if (this.labels == null) {
-    this.labels = {};
-  }
-  this.createPanelControls(name);
-};
-
-ControlPanelMediator.prototype.createControl = function(name) {
-  var control;
-  control = new this.controlClass(name);
-  this.facade.registerMediator(control);
-  return control;
-};
-
-ControlPanelMediator.prototype.createPanel = function(name) {
-  var panel;
-  panel = new this.panelClass(name);
-  this.facade.registerMediator(panel);
-  return panel;
-};
-
-ControlPanelMediator.prototype.createSeparator = function(name) {
-  return this.create(["separator", "icon"], this.panel);
-};
-
-ControlPanelMediator.prototype.createPanelControls = function(name) {
-  var data, key, value, _ref;
-  data = this.plugin.getConfigurationData();
-  for (key in data) {
-    value = data[key];
-    if (value === true) {
-      this.controls[key] = this.addPanelControl(new ButtonMediator(this.localizationManager.getString(this.labels[key]), null, null, key, (_ref = this.panelButtonClickHandler) != null ? typeof _ref.bind === "function" ? _ref.bind(this, key) : void 0 : void 0));
-    }
-  }
-};
-
-ControlPanelMediator.prototype.addPanelControl = function(control) {
-  this.facade.registerMediator(control);
-  this.panel.getViewComponent().appendChild(control.getViewComponent());
-  return control;
-};
-
-/**
-*/
-ControlPanelMediator.prototype.panelButtonClickHandler = function() {
-  this.sendNotification(PanelNotifications.CLOSE_PANEL, this.panel);
-};
-
-/**
- * The VolumePanelMediator class.
- * 
- * @constructor
- * @private
- * @extends {ControlPanelMediator}
-*/
-function VolumePanelMediator() {
-  VolumePanelMediator.__super__.constructor.call(this);
-}
-
-
-__extends(VolumePanelMediator, ControlPanelMediator);
-
-
-VolumePanelMediator.prototype.componentName = "volume";
-
-VolumePanelMediator.prototype.slider = null;
-
-VolumePanelMediator.prototype.level = null;
-
-VolumePanelMediator.prototype.controlClass = VolumePanelControlMediator;
-
-/**
-*/
-VolumePanelMediator.prototype.onRegister = function() {
-  VolumePanelMediator.__super__.onRegister.call(this);
-  this.slider = new VolumeMediator(this.panel, this.plugin.getDirection());
-  this.facade.registerMediator(this.slider);
-};
-
-VolumePanelMediator.prototype.updateVolumeButton = function(percent) {
-  var level;
-  level = Math.ceil(percent * 10);
-  if (level === this.level) {
-    return;
-  }
-  if (this.level != null) {
-    this.sendNotification(Notifications.REMOVE_CONTROL_STATE, "volume-" + this.level);
-  }
-  this.level = level;
-  this.sendNotification(Notifications.ADD_CONTROL_STATE, "volume-" + this.level);
-};
-
-/** 
- * @override
-*/
-VolumePanelMediator.prototype.listNotificationInterests = function() {
-  return VolumePanelMediator.__super__.listNotificationInterests.apply(this, arguments).concat([Notifications.VOLUME_CHANGE]);
-};
-
-/** 
- * @override
-*/
-VolumePanelMediator.prototype.handleNotification = function(notification) {
-  VolumePanelMediator.__super__.handleNotification.call(this, notification);
-  switch (notification.getName()) {
-    case Notifications.VOLUME_CHANGE:
-      this.updateVolumeButton(notification.body);
-  }
-};
-
-/** 
- * The ControlPanelPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Plugin}
-*/
-function ControlPanelPlugin() {
-  ControlPanelPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(ControlPanelPlugin, ControlPlugin);
-
-
-/** @override
-*/
-ControlPanelPlugin.prototype.listNotificationPublications = function() {
-  var key, value;
-  return ControlPanelPlugin.__super__.listNotificationPublications.call(this).concat((function() {
-    var _results;
-    _results = [];
-    for (key in PanelNotifications) {
-      value = PanelNotifications[key];
-      _results.push(value);
-    }
-    return _results;
-  })());
-};
-
 /**
  * The PlaylistMediator class.
  * 
@@ -33010,217 +27998,36 @@ PlaylistMediator.prototype.playlistOnClick = function(event) {
 };
 
 /** 
- * The VolumePanelPlugin class.
- *   
- * @constructor
+ * @constructor 
  * @private
- * @extends {Plugin}
 */
-function VolumePanelPlugin() {
-  VolumePanelPlugin.__super__.constructor.call(this);
+function FreeWheelPlugin() {
+  FreeWheelPlugin.__super__.constructor.call(this);
 }
 
 
-__extends(VolumePanelPlugin, ControlPanelPlugin);
+__extends(FreeWheelPlugin, AdPlugin);
 
 
-VolumePanelPlugin.prototype.moduleName = "volumepanel";
+FreeWheelPlugin.prototype.moduleName = "freewheel";
 
-/** @override
-*/
-VolumePanelPlugin.prototype.createFramework = function() {
-  if (!Utils.isVolumeSettable()) {
-    return;
-  } else {
-    VolumePanelPlugin.__super__.createFramework.call(this);
-  }
-};
+FreeWheelPlugin.prototype.featureName = "ads";
 
 /** @override
 */
-VolumePanelPlugin.prototype.createModel = function() {
-  this.registerProxy(new VolumePanelProxy(this.config));
+FreeWheelPlugin.prototype.createProxy = function() {
+  return new FreeWheelProxy(this.config);
 };
 
 /** @override
 */
-VolumePanelPlugin.prototype.createView = function() {
-  if (!Utils.isVolumeSettable()) {
-    return;
-  }
-  this.registerMediator(new VolumePanelMediator());
-};
-
-/** @override
-*/
-VolumePanelPlugin.prototype.listNotificationPublications = function() {
-  return VolumePanelPlugin.__super__.listNotificationPublications.apply(this, arguments).concat([Notifications.CHANGE_VOLUME, Notifications.TOGGLE_MUTED, UserSettingsNotifications.UPDATE_SETTINGS]);
-};
-
-/** @override
-*/
-VolumePanelPlugin.prototype.listNotificationInterests = function() {
-  return VolumePanelPlugin.__super__.listNotificationInterests.apply(this, arguments).concat([Notifications.VOLUME_CHANGE, Notifications.READY]);
+FreeWheelPlugin.prototype.isFullscreenDevice = function() {
+  return false;
 };
 
 
-AMP.registerPlugin("volumepanel", "html", VolumePanelPlugin);
-
-/**
-*/
-/** @constructor
-*/
-function OutbrainProxy(config) {
-  OutbrainProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(OutbrainProxy, RecommendationsProxy);
-
-
-/** @static
-*/
-OutbrainProxy.NAME = ModuleProxy.NAME;
-
-/** @override
-*/
-OutbrainProxy.prototype.data = {
-  url: null,
-  target: null,
-  apiKey: null,
-  jsWidgetId: null
-};
-
-/** @override
-*/
-OutbrainProxy.prototype.createRecommendations = function(feed) {
-  var item, rec, recs, _i, _len, _ref;
-  recs = [];
-  _ref = feed.documents.doc;
-  for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-    item = _ref[_i];
-    rec = new RecommendationVO(item.video.id, item.url, item.video.title, item.video.title, item.thumbnail.url, 0, null, this.getTarget(), item);
-    recs.push(rec);
-  }
-  return recs;
-};
-
-/** @override
-*/
-OutbrainProxy.prototype.getURL = function() {
-  var format, href, key, url, widgetJSId;
-  format = "json";
-  widgetJSId = encodeURIComponent(this.data.jsWidgetId);
-  key = encodeURIComponent(this.data.apiKey);
-  href = encodeURIComponent(document.location.href);
-  url = this.data.url + "?format=" + format + "&widgetJSId=" + widgetJSId + "&settings=false&url=" + href + "&idx=0&key=" + key + "&rand=" + Date.now() + "&recs=true";
-  return url;
-};
-
-/**
- * @constructor
- * @private
- * @extends {RecommendationsWrapper}
-*/
-function OutbrainWrapper(player, config) {
-  if (config == null) {
-    config = {};
-  }
-  OutbrainWrapper.__super__.constructor.call(this, player, config);
-}
-
-
-__extends(OutbrainWrapper, RecommendationsWrapper);
-
-
-OutbrainWrapper.NAME = "OutbrainWrapper";
-
-/**
-*/
-OutbrainWrapper.prototype.createFlashVars = function(flashvars) {
-  OutbrainWrapper.__super__.createFlashVars.call(this, flashvars);
-  flashvars.recommendations_partner = "outbrain";
-  return flashvars;
-};
-
-/**
-*/
-OutbrainWrapper.prototype.createXML = function(xml) {
-  var application, prop, props, recommendations, vendor, _i, _len;
-  application = xml.firstChild;
-  recommendations = xml.getElementsByTagName("recommendations")[0];
-  if (!(recommendations != null)) {
-    recommendations = xml.createElement("recommendations");
-    application.appendChild(recommendations);
-  }
-  vendor = xml.createElement("vendor");
-  vendor.setAttribute("id", "outbrain");
-  recommendations.appendChild(vendor);
-  props = [
-    {
-      value: this.config.url,
-      key: "OUTBRAIN_BASE_URL"
-    }, {
-      value: this.config.apiKey,
-      key: "OUTBRAIN_API_KEY"
-    }, {
-      value: this.config.jsWidgetId,
-      key: "OUTBRAIN_WIDGET_JS_ID"
-    }, {
-      value: this.config.mode,
-      key: "OUTBRAIN_MODE"
-    }, {
-      value: this.config.playerSrcId,
-      key: "OUTBRAIN_PLAYER_SRC_ID"
-    }, {
-      value: "internal",
-      key: "OUTBRAIN_VIEW_PROVIDER"
-    }, {
-      value: this.config.videoData,
-      key: "videoData"
-    }
-  ];
-  for (_i = 0, _len = props.length; _i < _len; _i++) {
-    prop = props[_i];
-    if (prop.value != null) {
-      this.createProperty(xml, prop.key, prop.value, vendor);
-    }
-  }
-  return xml;
-};
-
-/** 
- * The PlaylistPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Plugin}
-*/
-function PlaylistPlugin() {
-  PlaylistPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(PlaylistPlugin, Plugin);
-
-
-PlaylistPlugin.prototype.moduleName = "playlist";
-
-/** @override
-*/
-PlaylistPlugin.prototype.createView = function() {
-  this.registerMediator(new PlaylistMediator());
-};
-
-/** @override
-*/
-PlaylistPlugin.prototype.listNotificationPublications = function() {
-  return PlaylistPlugin.__super__.listNotificationPublications.call(this).concat([Notifications.ADD_CONTROL, Notifications.REMOVE_CONTROL, Notifications.ADD_CONTROL_STATE, Notifications.REMOVE_CONTROL_STATE]);
-};
-
-
-AMP.registerPlugin("playlist", "html", PlaylistPlugin);
+AMP.registerPlugin("freewheel", "html", FreeWheelPlugin);
+AMP.registerPlugin("freewheel", "flash", FreeWheelWrapper);
 
 function AdChoicesWrapper() {
   return AdChoicesWrapper.__super__.constructor.apply(this, arguments);
@@ -33337,33 +28144,37 @@ AdChoicesProxy.prototype.setTarget = function(value) {
 };
 
 /** 
- * The OutbrainPlugin class.
+ * The PlaylistPlugin class.
  *   
  * @param {Module}  app     The parent module of this plugin.
  * @constructor
  * @private
- * @extends {RecommendationsPlugin}
+ * @extends {Plugin}
 */
-function OutbrainPlugin() {
-  OutbrainPlugin.__super__.constructor.call(this);
+function PlaylistPlugin() {
+  PlaylistPlugin.__super__.constructor.call(this);
 }
 
 
-__extends(OutbrainPlugin, RecommendationsPlugin);
+__extends(PlaylistPlugin, Plugin);
 
 
-OutbrainPlugin.prototype.moduleName = "outbrain";
+PlaylistPlugin.prototype.moduleName = "playlist";
 
 /** @override
 */
-OutbrainPlugin.prototype.createModel = function() {
-  OutbrainPlugin.__super__.createModel.call(this);
-  this.registerProxy(new OutbrainProxy(this.config));
+PlaylistPlugin.prototype.createView = function() {
+  this.registerMediator(new PlaylistMediator());
+};
+
+/** @override
+*/
+PlaylistPlugin.prototype.listNotificationPublications = function() {
+  return PlaylistPlugin.__super__.listNotificationPublications.call(this).concat([Notifications.ADD_CONTROL, Notifications.REMOVE_CONTROL, Notifications.ADD_CONTROL_STATE, Notifications.REMOVE_CONTROL_STATE]);
 };
 
 
-AMP.registerPlugin("outbrain", "html", OutbrainPlugin);
-AMP.registerPlugin("outbrain", "flash", OutbrainWrapper);
+AMP.registerPlugin("playlist", "html", PlaylistPlugin);
 
 function UplynkWrapper(player, config) {
   UplynkWrapper.__super__.constructor.call(this, player, config);
@@ -33426,50 +28237,6 @@ AdChoicesPlugin.prototype.listNotificationInterests = function() {
 AMP.registerPlugin("adchoices", "html", AdChoicesPlugin);
 AMP.registerPlugin("adchoices", "flash", AdChoicesWrapper);
 
-function OctoshapeWrapper(player, config) {
-  OctoshapeWrapper.__super__.constructor.call(this, player, config);
-}
-
-
-__extends(OctoshapeWrapper, PluginWrapper);
-
-
-OctoshapeWrapper.NAME = "OctoshapeWrapper";
-
-OctoshapeWrapper.prototype.flashPlugins = [
-  {
-    id: "OctoShapeStreamingPlugin",
-    src: '#{paths.resources}plugins/infinitehd-osmf-plugin-1511180@v330-OSMF_1_6_MA.swf',
-    host: "osmf",
-    main: "com.octoshape.osmf.streamingplugin.OctoshapeStreamingPluginInfo"
-  }
-];
-
-
-AMP.registerPlugin("octoshape", "flash", OctoshapeWrapper);
-
-/** 
- * The MediaAnalyticsPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Plugin}
-*/
-function UplynkPlugin() {
-  UplynkPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(UplynkPlugin, Plugin);
-
-
-UplynkPlugin.prototype.moduleName = "uplynk";
-
-
-AMP.registerPlugin("uplynk", "html", UplynkPlugin);
-AMP.registerPlugin("uplynk", "flash", UplynkWrapper);
-
 function CustomAuthWrapper(player, config) {
   CustomAuthWrapper.__super__.constructor.call(this, player, config);
 }
@@ -33495,25 +28262,26 @@ CustomAuthWrapper.prototype.flashPlugins = [
 AMP.registerPlugin("customauth", "flash", CustomAuthWrapper);
 
 /** 
- * The OctoShapePlugin class.
+ * The MediaAnalyticsPlugin class.
  *   
  * @param {Module}  app     The parent module of this plugin.
  * @constructor
  * @private
  * @extends {Plugin}
 */
-function OctoshapePlugin() {
-  OctoshapePlugin.__super__.constructor.call(this);
+function UplynkPlugin() {
+  UplynkPlugin.__super__.constructor.call(this);
 }
 
 
-__extends(OctoshapePlugin, Plugin);
+__extends(UplynkPlugin, Plugin);
 
 
-OctoshapePlugin.prototype.moduleName = "octoshape";
+UplynkPlugin.prototype.moduleName = "uplynk";
 
 
-AMP.registerPlugin("octoshape", "html", OctoshapePlugin);
+AMP.registerPlugin("uplynk", "html", UplynkPlugin);
+AMP.registerPlugin("uplynk", "flash", UplynkWrapper);
 
 /** 
  * @constructor
@@ -33544,2261 +28312,6 @@ LinkedMenuWrapper.prototype.flashPlugins = [
 
 
 AMP.registerPlugin("linkedmenu", "flash", LinkedMenuWrapper);
-
-/** 
- * The CustomAuthPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Plugin}
-*/
-function CustomAuthPlugin() {
-  CustomAuthPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(CustomAuthPlugin, Plugin);
-
-
-CustomAuthPlugin.prototype.moduleName = "customauth";
-
-
-AMP.registerPlugin("customauth", "html", CustomAuthPlugin);
-
-/**
- * RaptPlaybackProxy constructor.
- * 
- * @constructor
- * @private
- * @extends {PlaybackCoreProxy}
-*/
-function RaptPlaybackProxy(data) {
-  this.name = this.playbackCoreName + "-" + Date.now();
-  RaptPlaybackProxy.__super__.constructor.call(this, data.types);
-}
-
-
-__extends(RaptPlaybackProxy, PlaybackCoreProxy);
-
-
-RaptPlaybackProxy.prototype.playbackCoreName = "rapt";
-
-RaptPlaybackProxy.prototype.mediaElement = null;
-
-RaptPlaybackProxy.prototype.mediator = null;
-
-/** @override
-*/
-RaptPlaybackProxy.prototype.getMediaElement = function() {
-  return this.mediaElement;
-};
-
-RaptPlaybackProxy.prototype.onRegister = function() {
-  var iframe;
-  if (!(this.mediator != null)) {
-    this.mediator = new MediaElementMediator("rapt", "iframe");
-    this.mediator.onRegister();
-    iframe = this.mediator.getViewComponent();
-    iframe.player = this.facade;
-    iframe.name = this.name;
-    iframe.setAttribute("allowfullscreen", "true");
-    iframe.setAttribute("webkitallowfullscreen", "true");
-    iframe.setAttribute("mozallowfullscreen", "true");
-    iframe.setAttribute("scrolling", "no");
-    iframe.setAttribute("frameborder", "0");
-    iframe.setAttribute("marginwidth", "0");
-    iframe.setAttribute("marginheight", "0");
-    this.sendNotification(Notifications.PLAYBACK_CORE_CHANGE, this.mediator);
-    this.mediaElement = new RaptHTML5Video(this.name);
-    this.mediaElement.addEventListener("interactivebreakstart", this.oninteractivebreakstart.bind(this));
-    this.mediaElement.addEventListener("interactivebreakend", this.oninteractivebreakend.bind(this));
-    this.initialized = true;
-  }
-};
-
-RaptPlaybackProxy.prototype.replay = function() {
-  this.mediaElement.replay();
-};
-
-RaptPlaybackProxy.prototype.oninteractivebreakstart = function() {
-  this.sendNotification(Notifications.ADD_APPLICATION_STATE, "interactive");
-};
-
-RaptPlaybackProxy.prototype.oninteractivebreakend = function() {
-  this.sendNotification(Notifications.REMOVE_APPLICATION_STATE, "interactive");
-};
-
-function RaptHTML5Video(name) {
-  var logEvent,
-    _this = this;
-  this.name = name;
-  this.data = {
-    paused: false,
-    ended: false,
-    error: null,
-    duration: 0,
-    currentTime: 0,
-    src: null
-  };
-  this.startNode = null;
-  this.iframe = document.querySelector("iframe[name=" + this.name + "]");
-  this.iframe.video = this;
-  this.iframe.onload = function() {
-    raptor.api.init(_this.iframe);
-  };
-  raptor.api.on("ready", function(event, data) {
-    raptor.settings("defaultIFrame", _this.name);
-    raptor.api.load();
-  });
-  raptor.api.on("play", function(event, data) {
-    if (data.frameName !== _this.name) {
-      return;
-    }
-    _this.data.paused = false;
-    _this.dispatchEvent("play");
-    _this.dispatchEvent("playing");
-  });
-  raptor.api.on("pause", function(event, data) {
-    if (data.frameName !== _this.name) {
-      return;
-    }
-    _this.updateData();
-    _this.data.paused = true;
-    _this.dispatchEvent("pause");
-  });
-  raptor.api.on("error", function(event, data) {
-    if (data.frameName !== _this.name) {
-      return;
-    }
-    _this.data.error = data;
-    _this.dispatchEvent("error");
-  });
-  raptor.api.on("inboundReady", function(event, data) {
-    if (data && data.frameName !== _this.name) {
-      return;
-    }
-    _this.updateData();
-    _this.dispatchEvent("loadedmetadata");
-    _this.dispatchEvent("canplaythrough");
-  });
-  raptor.api.on("timeUpdate", function(event, data) {
-    if (data && data.frameName !== _this.name) {
-      return;
-    }
-    _this.updateData(data);
-  });
-  raptor.api.on("clipEnd", function(event, data) {
-    if (data && data.frameName !== _this.name) {
-      return;
-    }
-    _this.dispatchEvent("interactivebreakstart");
-  });
-  raptor.api.on("clipStart", function(event, data) {
-    if (data && data.frameName !== _this.name) {
-      return;
-    }
-    if (data.isStart === "true") {
-      _this.startNode = raptor.api.nodes(_this.name)[data.clipname];
-    }
-    _this.dispatchEvent("interactivebreakend");
-  });
-  raptor.api.on("projectEnd", function(event, data) {
-    if (data && data.frameName !== _this.name) {
-      return;
-    }
-    _this.data.ended = true;
-    _this.dispatchEvent("ended");
-  });
-  logEvent = function(event, data) {
-    console.log("RAPT: ", event.type, event, data);
-  };
-  raptor.api.on("inboundReady", logEvent);
-  raptor.api.on("play", logEvent);
-  raptor.api.on("pause", logEvent);
-  raptor.api.on("error", logEvent);
-  raptor.api.on("clipStart", logEvent);
-  raptor.api.on("clipEnd", logEvent);
-  raptor.api.on("clipSwitch", logEvent);
-  raptor.api.on("projectStart", logEvent);
-  raptor.api.on("projectEnd", logEvent);
-  raptor.api.on("progress", logEvent);
-  raptor.api.on("button", logEvent);
-  raptor.api.on("windowed", logEvent);
-  raptor.api.on("userTimed", logEvent);
-  raptor.api.on("fullscreen", logEvent);
-  raptor.api.on("volume", logEvent);
-  raptor.api.on("mute", logEvent);
-  raptor.api.on("unmute", logEvent);
-}
-
-RaptHTML5Video.prototype.updateData = function(data) {
-  var time;
-  if (data == null) {
-    data = raptor.api.state(this.name);
-  }
-  if (!(data != null)) {
-    return;
-  }
-  time = parseFloat(data.duration);
-  if (time !== this.data.duration) {
-    this.data.duration = time;
-    this.dispatchEvent("durationchange");
-  }
-  time = parseFloat(data.time || data.progressTime);
-  if (time !== this.data.currentTime) {
-    this.data.currentTime = time;
-    this.dispatchEvent("timeupdate");
-  }
-};
-
-RaptHTML5Video.prototype.load = function() {
-  this.iframe.src = this.src;
-};
-
-RaptHTML5Video.prototype.play = function() {
-  raptor.api.play(this.name);
-};
-
-RaptHTML5Video.prototype.pause = function() {
-  raptor.api.pause(this.name);
-  this.updateData();
-};
-
-RaptHTML5Video.prototype.replay = function() {
-  raptor.api.setNode(this.startNode, this.name);
-};
-
-RaptHTML5Video.prototype.canPlayType = function(type) {
-  if (type === "application/rapt") {
-    return "maybe";
-  } else {
-    return "";
-  }
-};
-
-RaptHTML5Video.prototype.addEventListener = function(type, listener, capture) {
-  this.iframe.addEventListener(type, listener, capture);
-};
-
-RaptHTML5Video.prototype.once = function(type, listener) {
-  this.iframe.once(type, listener);
-};
-
-RaptHTML5Video.prototype.dispatchEvent = function(event) {
-  if (typeof event === "string") {
-    event = new CustomEvent(event);
-  }
-  return this.iframe.dispatchEvent(event);
-};
-
-RaptHTML5Video.prototype.removeEventListener = function(type, listener, capture) {
-  this.iframe.removeEventListener(type, listener, capture);
-};
-
-
-if (Object.defineProperties != null) {
-Object.defineProperties(RaptHTML5Video.prototype, {
-  src: {
-    set: function(value) {
-      this.data.src = value;
-    },
-    get: function() {
-      return this.data.src;
-    }
-  },
-  currentTime: {
-    set: function(value) {
-      raptor.api.setTime(value, this.name);
-    },
-    get: function() {
-      return this.data.currentTime;
-    }
-  },
-  duration: {
-    get: function() {
-      return this.data.duration;
-    }
-  },
-  paused: {
-    get: function() {
-      return this.data.paused;
-    }
-  },
-  ended: {
-    get: function() {
-      return this.data.ended;
-    }
-  },
-  error: {
-    get: function() {
-      return this.data.error;
-    }
-  },
-  readyState: {
-    get: function() {
-      return 1;
-    }
-  }
-});
-}
-
-/** 
- * The DASHProxy class.
- *   
- * @param {Object}  config  The plugin configuration object.
- * @constructor
- * @private
- * @extends {PluginProxy}
-*/
-function RaptProxy(config) {
-  RaptProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(RaptProxy, PluginProxy);
-
-
-/** @static
-*/
-RaptProxy.NAME = ModuleProxy.NAME;
-
-RaptProxy.prototype.defaults = {
-  types: ["application/rapt"]
-};
-
-RaptProxy.prototype.player = null;
-
-RaptProxy.prototype.initialize = function() {
-  var player;
-  this.sendNotification(Notifications.INITIALIZED);
-  this.player = new RaptPlaybackProxy(this.getConfigurationData());
-  player = this.facade.player.retrieveProxy(PlayerProxy.NAME);
-  player.registerPlaybackCore(this.player);
-};
-
-/** 
- * The LinkedMenuPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Plugin}
-*/
-function LinkedMenuPlugin() {
-  LinkedMenuPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(LinkedMenuPlugin, Plugin);
-
-
-LinkedMenuPlugin.prototype.moduleName = "linkedmenu";
-
-
-AMP.registerPlugin("linkedmenu", "html", LinkedMenuPlugin);
-
-/**
- * HLSPlaybackProxy constructor.
- * 
- * @constructor
- * @private
- * @extends {PlaybackCoreProxy}
-*/
-function HLSPlaybackProxy(config, plugin) {
-  this.hlsConfig = config.data;
-  if (config.withCredentials === true) {
-    this.hlsConfig.xhrSetup = function(xhr, url) {
-      xhr.withCredentials = true;
-    };
-  }
-  this.plugin = plugin;
-  HLSPlaybackProxy.__super__.constructor.call(this, config.types, config);
-  this.temporalTypes = ["vod", "live", "dvr"];
-}
-
-
-__extends(HLSPlaybackProxy, PlaybackCoreProxy);
-
-
-HLSPlaybackProxy.prototype.playbackCoreName = "hls";
-
-HLSPlaybackProxy.prototype.player = null;
-
-HLSPlaybackProxy.prototype.hlsConfig = null;
-
-HLSPlaybackProxy.prototype.fragErrorTime = 0;
-
-HLSPlaybackProxy.prototype.timedMedatadata = null;
-
-HLSPlaybackProxy.prototype.currentMedatadata = null;
-
-HLSPlaybackProxy.prototype.id3Track = null;
-
-/** @override
-*/
-HLSPlaybackProxy.prototype.load = function() {
-  var hls, key, value, _ref, _ref1,
-    _this = this;
-  if (this.player != null) {
-    this.destroy();
-  }
-  hls = new Hls(this.hlsConfig);
-  hls.attachMedia(this.getMediaElement());
-  _ref = Hls.Events;
-  for (key in _ref) {
-    value = _ref[key];
-    hls.on(value, function(event, data) {
-      _this.plugin.dispatcher.dispatchEvent(new Event(event, data));
-    });
-  }
-  hls.on(Hls.Events.MANIFEST_PARSED, this.onManifestParsed.bind(this));
-  hls.on(Hls.Events.ERROR, this.onError.bind(this));
-  hls.on(Hls.Events.FRAG_PARSING_METADATA, this.onFragParsingMetadata.bind(this));
-  hls.on(Hls.Events.LEVEL_LOADED, this.onLevelLoaded.bind(this));
-  hls.on(Hls.Events.LEVEL_SWITCH, this.onLevelSwitch.bind(this));
-  hls.on(Hls.Events.FRAG_LOADING, this.onFragmentLoadStart.bind(this));
-  hls.on(Hls.Events.FRAG_LOADED, this.onFragmentLoaded.bind(this));
-  try {
-    _ref1 = this.config.quality;
-    for (key in _ref1) {
-      value = _ref1[key];
-      hls[key] = value;
-    }
-  } catch (_error) {}
-  this.player = hls;
-  HLSPlaybackProxy.__super__.load.call(this);
-};
-
-/** override
-*/
-HLSPlaybackProxy.prototype.applyTextTrackHandlers = function(event) {
-  if ((this.id3Track != null) && event) {
-    return;
-  }
-  HLSPlaybackProxy.__super__.applyTextTrackHandlers.call(this, event);
-  if (event === false) {
-    return this.id3Track = null;
-  }
-  this.addMTextTrack();
-};
-
-HLSPlaybackProxy.prototype.addMTextTrack = function() {
-  if ((this.getMediaElement().addTextTrack != null) && !(this.id3Track != null)) {
-    this.id3Track = this.getMediaElement().addTextTrack("metadata");
-  }
-};
-
-HLSPlaybackProxy.prototype.applySrc = function() {
-  this.currentMedatadata = null;
-  this.player.loadSource(this.getSrc());
-};
-
-/**
-*/
-HLSPlaybackProxy.prototype.onManifestParsed = function(event, data) {
-  this.sendNotification(Notifications.BITRATE_LEVELS_LOADED, data);
-  this.player.loadLevel = -1;
-};
-
-/**
-*/
-HLSPlaybackProxy.prototype.onLevelLoaded = function(event, data) {
-  var live;
-  this.player.levels[data.level].level = data.level;
-  this.sendNotification(Notifications.BITRATE_CHANGE, this.player.levels[data.level]);
-  live = data.details.live;
-  if (live === true) {
-    this.facade.mediaProxy.setTemporalType("live");
-  }
-};
-
-/**
-*/
-HLSPlaybackProxy.prototype.onLevelSwitch = function(event, data) {
-  this.sendNotification(Notifications.BITRATE_CHANGING, this.player.levels[data.level]);
-};
-
-/**
-*/
-HLSPlaybackProxy.prototype.onFragParsingMetadata = function(events, data) {
-  var VTTCue, id3, str, time, _i, _len, _ref, _ref1;
-  if (!(this.id3Track != null)) {
-    this.applyTextTrackHandlers(true);
-  }
-  _ref = data.samples;
-  for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-    data = _ref[_i];
-    time = data.dts;
-    if (!((data != null ? data.data : void 0) != null)) {
-      continue;
-    }
-    str = String.fromCharCode.apply(null, data.data.subarray(0, -1));
-    str = str.replace(/\0/g, '');
-    id3 = {
-      startTime: time,
-      endTime: time,
-      key: str.replace(/(\S*)\{.*/, "$1").split(" ")[1],
-      info: str.replace(/[^\{]+\{/, ""),
-      data: data
-    };
-    try {
-      VTTCue = window.VTTCue || window.TextTrackCue;
-      if (window.TextTrackCue === VTTCue) {
-        id3.endTime += 0.5;
-      }
-      if ((_ref1 = this.id3Track) != null) {
-        _ref1.addCue(new VTTCue(id3.startTime, id3.endTime, JSON.stringify(id3)));
-      }
-    } catch (_error) {}
-  }
-};
-
-HLSPlaybackProxy.prototype.onFragmentLoadStart = function(event, data) {
-  var bitrate;
-  bitrate = this.player.levels[data.frag.level].bitrate;
-  this.sendNotification(Notifications.FRAGMENT_LOAD_START, bitrate);
-};
-
-HLSPlaybackProxy.prototype.onFragmentLoaded = function(event, data) {
-  var bitrate;
-  bitrate = this.player.levels[data.frag.level].bitrate;
-  this.sendNotification(Notifications.FRAGMENT_LOADED, bitrate);
-};
-
-HLSPlaybackProxy.prototype.seek = function(value) {
-  return HLSPlaybackProxy.__super__.seek.call(this, value + this.getStartTime());
-};
-
-HLSPlaybackProxy.prototype.getCurrentTime = function() {
-  return this.getMediaElement().currentTime - this.getStartTime();
-};
-
-HLSPlaybackProxy.prototype.getDuration = function() {
-  var _ref, _ref1, _ref2, _ref3;
-  return ((_ref = this.player) != null ? (_ref1 = _ref.levels) != null ? (_ref2 = _ref1[this.player.currentLevel]) != null ? (_ref3 = _ref2.details) != null ? _ref3.totalduration : void 0 : void 0 : void 0 : void 0) || this.getMediaElement().duration;
-};
-
-HLSPlaybackProxy.prototype.getStartTime = function() {
-  return this.getMediaElement().duration - this.getDuration();
-};
-
-/** override
-*/
-HLSPlaybackProxy.prototype.onplaying = function(event) {
-  HLSPlaybackProxy.__super__.onplaying.call(this);
-  this.retried = false;
-};
-
-/**
-*/
-HLSPlaybackProxy.prototype.onError = function(event, data) {
-  this.plugin.sendNotification(Notifications.DISPATCH_EVENT, new Event("error", data));
-  if (this.config.retryOnError === false || this.retried === true) {
-    this.retried = false;
-    this.error(data);
-    return;
-  }
-  if (data.fatal) {
-    switch (data.type) {
-      case Hls.ErrorTypes.NETWORK_ERROR:
-        this.retried = true;
-        this.player.startLoad();
-        this.facade.logger.error("[AMP HLS] Playback Error trying to recover:", event);
-        break;
-      case Hls.ErrorTypes.MEDIA_ERROR:
-        this.retried = true;
-        this.player.recoverMediaError();
-        this.facade.logger.error("[AMP HLS] Playback Error trying to recover:", event);
-        break;
-      default:
-        this.facade.logger.error("[AMP HLS] Playback Error:", event);
-        this.error(data);
-    }
-  } else {
-    if (data.details === Hls.ErrorDetails.FRAG_LOOP_LOADING_ERROR) {
-      if (this.fragErrorTime === this.getMediaElement().currentTime) {
-        this.getMediaElement().currentTime++;
-        this.facade.logger.error("[AMP HLS] Frag Loop Load Error, Seeking to :", this.getMediaElement().currentTime);
-      } else {
-        this.fragErrorTime = this.getMediaElement().currentTime;
-      }
-    }
-  }
-};
-
-HLSPlaybackProxy.prototype.error = function(data) {
-  switch (data.type) {
-    case Hls.ErrorTypes.NETWORK_ERROR:
-      data.code = MediaError.MEDIA_ERR_NETWORK;
-      break;
-    case Hls.ErrorTypes.MEDIA_ERROR:
-      data.code = MediaError.MEDIA_ERR_DECODE;
-      break;
-    default:
-      data.toString = function() {
-        return data.details;
-      };
-  }
-  this.sendNotification(Notifications.ERROR, data);
-};
-
-/** @override
-*/
-HLSPlaybackProxy.prototype.setQuality = function(value) {
-  var _ref;
-  return (_ref = this.player) != null ? _ref.currentLevel = value : void 0;
-};
-
-/** @override
-*/
-HLSPlaybackProxy.prototype.getQuality = function() {
-  var _ref;
-  return (_ref = this.player) != null ? _ref.currentLevel : void 0;
-};
-
-/** @override
-*/
-HLSPlaybackProxy.prototype.getQualityLevels = function() {
-  var _ref;
-  return ((_ref = this.player) != null ? _ref.levels : void 0) || HLSPlaybackProxy.__super__.getQualityLevels.call(this);
-};
-
-/** @override
-*/
-HLSPlaybackProxy.prototype.destroy = function() {
-  if (!(this.player != null)) {
-    return;
-  }
-  this.player.destroy();
-  this.player = null;
-};
-
-/** 
- * @constructor
- * @extends {PluginWrapper}
- * @private
-*/
-function HLSWrapper(player, config) {
-  HLSWrapper.__super__.constructor.call(this, player, config);
-  Utils.flashTypes.push(Utils.mimeTypes.m3u8);
-}
-
-
-__extends(HLSWrapper, PluginWrapper);
-
-
-HLSWrapper.NAME = "HLSWrapper";
-
-HLSWrapper.prototype.flashPlugins = [
-  {
-    id: "flashlsOSMF",
-    src: '#{paths.resources}plugins/flashlsOSMF.swf',
-    host: "osmf",
-    type: "application/x-shockwave-flash"
-  }
-];
-
-
-AMP.registerPlugin("hls", "flash", HLSWrapper);
-
-/**
- * The HLSAdBreakStartCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function HLSAdBreakStartCommand() {
-  HLSAdBreakStartCommand.__super__.constructor.call(this);
-}
-
-
-__extends(HLSAdBreakStartCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-HLSAdBreakStartCommand.prototype.execute = function(notification) {
-  var _ref;
-  if (((_ref = notification.getBody()) != null ? _ref.partner : void 0) === "freewheel") {
-    this.proxy.destroy();
-  }
-};
-
-/** 
- * The HLSProxy class.
- *   
- * @param {Object}  config  The plugin configuration object.
- * @constructor
- * @private
- * @extends {PluginProxy}
-*/
-function HLSProxy(config) {
-  HLSProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(HLSProxy, PlaybackPluginProxy);
-
-
-/** @static
-*/
-HLSProxy.NAME = ModuleProxy.NAME;
-
-HLSProxy.prototype.defaults = {
-  types: ["application/x-mpegURL"],
-  data: {
-    enableWorker: true,
-    enableSoftwareAES: true,
-    enableCEA708Captions: true
-  },
-  buffer: null,
-  quality: null,
-  withCredentials: null
-};
-
-HLSProxy.prototype.createPlaybackProxy = function() {
-  var mediaSource;
-  mediaSource = window.MediaSource || window.WebKitMediaSource;
-  if (!(mediaSource != null) || !Hls.isSupported()) {
-    return;
-  }
-  return new HLSPlaybackProxy(this.getConfigurationData(), this.facade);
-};
-
-/** 
- * The RaptPlugin class.
- * 
- * @constructor
- * @private
- * @extends {Plugin}
-*/
-function RaptPlugin() {
-  RaptPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(RaptPlugin, Plugin);
-
-
-RaptPlugin.prototype.moduleName = "rapt";
-
-/** @override
-*/
-RaptPlugin.prototype.createModel = function() {
-  this.registerProxy(new RaptProxy(this.config));
-};
-
-
-AMP.registerPlugin("rapt", "html", RaptPlugin);
-
-/** 
- * @constructor 
- * @private
-*/
-function NielsendcrProxy(config) {
-  NielsendcrProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(NielsendcrProxy, PluginProxy);
-
-
-/** @static
-*/
-NielsendcrProxy.NAME = ModuleProxy.NAME;
-
-NielsendcrProxy.prototype.defaults = {
-  data: null,
-  events: null,
-  plugin: {
-    js: "//secure-dcr-cert.imrworldwide.com/novms/js/2/ggcmb500.js"
-  }
-};
-
-NielsendcrProxy.prototype.nielsendcrSDK = null;
-
-NielsendcrProxy.prototype.end_flag = false;
-
-NielsendcrProxy.prototype.mediaChange_flag = false;
-
-NielsendcrProxy.prototype.adVO = null;
-
-NielsendcrProxy.prototype.cur_position = 0;
-
-NielsendcrProxy.prototype.timer = null;
-
-NielsendcrProxy.prototype.isLive = null;
-
-NielsendcrProxy.prototype.isFlash = false;
-
-/** Overrides
-*/
-NielsendcrProxy.prototype.initialize = function() {
-  NielsendcrProxy.__super__.initialize.call(this);
-  this.nielsendcrSDK = window.NOLCMB.getInstance();
-  this.nielsendcrSDK.ggInitialize(this.value.data);
-  this.facade.logger.log("[AMP Nielsen DCR Event] : SDKInitialize");
-  this.isFlash = this.facade.player.playerType === "flash";
-  this.bindBeforeUnload();
-};
-
-/** Populate Nielsen VO
-*/
-NielsendcrProxy.prototype.generateNielsenVO = function(type) {
-  var vo;
-  vo = new Object();
-  switch (type) {
-    case "content":
-      if (this.value.events.video != null) {
-        vo = this.value.events.video;
-      }
-      break;
-    case "static":
-      vo = this.value.events["static"];
-      break;
-    default:
-      vo = this.value.events.ad;
-      vo.type = type;
-  }
-  return vo;
-};
-
-NielsendcrProxy.prototype.fireBeacon = function(eventName, object) {
-  var eventCode;
-  switch (eventName) {
-    case "loadmetadata":
-      eventCode = 3;
-      break;
-    case "play":
-      eventCode = 5;
-      break;
-    case "stop":
-      eventCode = 7;
-      break;
-    case "timeupdate":
-      eventCode = 49;
-      break;
-    case "end":
-      eventCode = 57;
-  }
-  this.facade.logger.log("[AMP Nielsen DCR Event] : Event - " + eventName, object);
-  this.nielsendcrSDK.ggPM(eventCode, object);
-};
-
-/** Browser close Event handler
-*/
-NielsendcrProxy.prototype.bindBeforeUnload = function() {
-  window.addEventListener("beforeunload", function() {
-    return this.fireBeacon("end", this.cur_position.toFixed(0));
-  });
-};
-
-/** Ad Started
-*/
-NielsendcrProxy.prototype.adStart = function(adVO) {
-  this.adVO = adVO;
-  if (this.adVO.type === "midroll" && this.adVO.position === 1) {
-    this.fireBeacon("stop", this.cur_position.toFixed(0));
-  }
-  if (this.adVO.type === "preroll") {
-    this.fireBeacon("loadmetadata", this.generateNielsenVO("content"));
-  }
-  if (this.adVO != null) {
-    if (this.adVO.type === "postroll" && this.isFlash) {
-      this.end();
-    }
-    this.fireBeacon("loadmetadata", this.generateNielsenVO(adVO.type));
-  }
-};
-
-/** Ad Ended
-*/
-NielsendcrProxy.prototype.adEnd = function(adVO) {
-  this.fireBeacon("stop", this.cur_position.toFixed(0));
-  if ((adVO != null ? adVO.type : void 0) === "midroll" && adVO.totalAds === adVO.position) {
-    this.fireBeacon("loadmetadata", this.generateNielsenVO("content"));
-  }
-};
-
-/** Static Start
-*/
-NielsendcrProxy.prototype.staticStart = function() {};
-
-/** Media Started
-*/
-NielsendcrProxy.prototype.start = function(adVO) {
-  var _ref;
-  if (adVO == null) {
-    adVO = null;
-  }
-  if (((_ref = this.adVO) != null ? _ref.type : void 0) === "midroll") {
-    this.fireBeacon("stop", this.generateNielsenVO(this.adVO.type));
-  } else {
-    this.fireBeacon("loadmetadata", this.generateNielsenVO('content'));
-    this.end_flag = this.mediaChange_flag = true;
-  }
-};
-
-/** Media Ended
-*/
-NielsendcrProxy.prototype.end = function() {
-  if (this.end_flag) {
-    this.fireBeacon("end", this.cur_position.toFixed(0));
-  }
-  this.end_flag = false;
-};
-
-/** Media change
-*/
-NielsendcrProxy.prototype.mediaChange = function() {
-  if (this.mediaChange_flag) {
-    this.fireBeacon("end", this.cur_position.toFixed(0));
-  }
-};
-
-/** Time update
-*/
-NielsendcrProxy.prototype.timeupdate = function(notificationObj) {
-  var currentTime, isAd;
-  if (this.isFlash) {
-    currentTime = notificationObj.body.currentTime;
-    isAd = notificationObj.name === FlashAdNotifications.AD_TIME_UPDATE;
-  } else {
-    currentTime = notificationObj.body;
-    isAd = notificationObj.name === AdNotifications.AD_TIME_REMAINING;
-  }
-  if (this.isLive() && !isAd) {
-    this.fireBeacon("timeupdate", Math.floor(Date.now() / 1000));
-  } else {
-    this.cur_position = isAd && !this.isFlash ? this.adVO.duration - currentTime : currentTime;
-    if (this.timer !== this.cur_position.toFixed(0)) {
-      if (isAd && ((this.cur_position > this.adVO.duration) || (this.cur_position < 1))) {
-        return;
-      }
-      this.timer = this.cur_position.toFixed(0);
-      this.fireBeacon("timeupdate", this.timer);
-    }
-  }
-};
-
-/** returns playhead position
-*/
-NielsendcrProxy.prototype.getPlayheadPosition = function() {
-  if (this.isLive()) {
-    return Math.floor(Date.now() / 1000);
-  } else {
-    return this.facade.player.getCurrentTime().toFixed(1);
-  }
-};
-
-/** returns media is Live
-*/
-NielsendcrProxy.prototype.isLive = function() {
-  return this.facade.player.getMedia().isLive;
-};
-
-/**
- * The NielsendcrAdStartCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function NielsendcrAdStartCommand() {
-  NielsendcrAdStartCommand.__super__.constructor.call(this);
-}
-
-
-__extends(NielsendcrAdStartCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-NielsendcrAdStartCommand.prototype.execute = function(notification) {
-  var nielsendcr;
-  nielsendcr = this.facade.retrieveProxy(NielsendcrProxy.NAME);
-  nielsendcr.adStart(notification.body);
-};
-
-/**
- * The NielsendcrAdEndCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function NielsendcrAdEndCommand() {
-  NielsendcrAdEndCommand.__super__.constructor.call(this);
-}
-
-
-__extends(NielsendcrAdEndCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-NielsendcrAdEndCommand.prototype.execute = function(notification) {
-  var nielsendcr;
-  nielsendcr = this.facade.retrieveProxy(NielsendcrProxy.NAME);
-  nielsendcr.adEnd(notification.body);
-};
-
-/**
- * The NielsendcrStaticStartCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function NielsendcrStaticStartCommand() {
-  NielsendcrStaticStartCommand.__super__.constructor.call(this);
-}
-
-
-__extends(NielsendcrStaticStartCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-NielsendcrStaticStartCommand.prototype.execute = function(notification) {
-  var nielsendcr;
-  nielsendcr = this.facade.retrieveProxy(NielsendcrProxy.NAME);
-  nielsendcr.staticStart();
-};
-
-/**
- * The NielsendcrStartCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function NielsendcrStartCommand() {
-  NielsendcrStartCommand.__super__.constructor.call(this);
-}
-
-
-__extends(NielsendcrStartCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-NielsendcrStartCommand.prototype.execute = function(notification) {
-  var nielsendcr;
-  nielsendcr = this.facade.retrieveProxy(NielsendcrProxy.NAME);
-  nielsendcr.start();
-};
-
-/**
- * The NielsendcrEndCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function NielsendcrEndCommand() {
-  NielsendcrEndCommand.__super__.constructor.call(this);
-}
-
-
-__extends(NielsendcrEndCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-NielsendcrEndCommand.prototype.execute = function(notification) {
-  var nielsendcr;
-  nielsendcr = this.facade.retrieveProxy(NielsendcrProxy.NAME);
-  nielsendcr.end();
-};
-
-/**
- * The NielsendcrTimeupdateCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function NielsendcrTimeupdateCommand() {
-  NielsendcrTimeupdateCommand.__super__.constructor.call(this);
-}
-
-
-__extends(NielsendcrTimeupdateCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-NielsendcrTimeupdateCommand.prototype.execute = function(notification) {
-  var nielsendcr;
-  nielsendcr = this.facade.retrieveProxy(NielsendcrProxy.NAME);
-  nielsendcr.timeupdate(notification);
-};
-
-/**
- * The NielsendcrChangeMediaCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function NielsendcrChangeMediaCommand() {
-  NielsendcrChangeMediaCommand.__super__.constructor.call(this);
-}
-
-
-__extends(NielsendcrChangeMediaCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-NielsendcrChangeMediaCommand.prototype.execute = function(notification) {
-  var nielsendcr;
-  nielsendcr = this.facade.retrieveProxy(NielsendcrProxy.NAME);
-  nielsendcr.mediaChange();
-};
-
-/**
- * @enum {string}
- * @const
- * @private
-*/
-
-var AirplayNotifications = {
-  LAUNCH: "launch",
-  AVAILABILITY_CHANGE: "availabilitychange"
-};
-
-/** 
- * @constructor
- * @private
- * @extends {PluginWrapper}
-*/
-function NielsendcrWrapper(player, config) {
-  this.plugin = new NielsendcrPlugin();
-  this.plugin.oninitialized = player.registerModule.bind(player, this.plugin);
-  this.plugin.initialize(config, player);
-  NielsendcrWrapper.__super__.constructor.call(this, player, config);
-}
-
-
-__extends(NielsendcrWrapper, PluginWrapper);
-
-
-NielsendcrWrapper.NAME = "NielsendcrWrapper";
-
-/**
- * The ChromeCastButtonMediator class.
- * 
- * @constructor
- * @extends {PluginMediator}
- * @param {Object} parent
- * @private
-*/
-function AirplayButtonMediator() {
-  AirplayButtonMediator.__super__.constructor.call(this);
-}
-
-
-__extends(AirplayButtonMediator, ButtonMediator);
-
-
-AirplayButtonMediator.prototype.componentName = "airplay";
-
-AirplayButtonMediator.prototype.onclick = function(event) {
-  event.stopImmediatePropagation();
-  this.sendNotification(AirplayNotifications.LAUNCH);
-  return false;
-};
-
-/**
- * The AirplayReadyCommand class.
- *   
- * @constructor
- * @private
- * @extends {PluginCommand}
-*/
-function AirplayReadyCommand() {
-  AirplayReadyCommand.__super__.constructor.call(this);
-}
-
-
-__extends(AirplayReadyCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-AirplayReadyCommand.prototype.execute = function(notification) {
-  this.proxy.ready();
-};
-
-/**
- * The AirplayReadyCommand class.
- *   
- * @constructor
- * @private
- * @extends {PluginCommand}
-*/
-function AirplayLaunchCommand() {
-  AirplayLaunchCommand.__super__.constructor.call(this);
-}
-
-
-__extends(AirplayLaunchCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-AirplayLaunchCommand.prototype.execute = function(notification) {
-  this.proxy.launch();
-};
-
-/** 
- * The ChromeCastSenderProxy class.
- *   
- * @param {Object}  config  The plugin configuration object.
- * @constructor
- * @private
- * @extends {PluginProxy}
-*/
-function AirplayProxy(config) {
-  AirplayProxy.__super__.constructor.call(this, config);
-  this.handlers = {
-    availabilitychanged: this.availabilitychanged.bind(this),
-    playbacktargetchanged: this.playbacktargetchanged.bind(this)
-  };
-}
-
-
-__extends(AirplayProxy, PluginProxy);
-
-
-/** @static
-*/
-AirplayProxy.NAME = ModuleProxy.NAME;
-
-AirplayProxy.prototype.handlers = null;
-
-AirplayProxy.prototype.ready = function() {
-  var video;
-  video = this.getVideo();
-  video.setAttribute("x-webkit-airplay", "allow");
-  video.addEventListener("webkitplaybacktargetavailabilitychanged", this.handlers.availabilitychanged);
-  video.addEventListener("webkitcurrentplaybacktargetiswireless", this.handlers.playbacktargetchanged);
-};
-
-AirplayProxy.prototype.destroy = function() {
-  video.removeEventListener("webkitplaybacktargetavailabilitychanged", this.handlers.availabilitychanged);
-  video.removeEventListener("webkitcurrentplaybacktargetiswireless", this.handlers.playbacktargetchanged);
-};
-
-AirplayProxy.prototype.availabilitychanged = function(event) {
-  this.sendNotification(AirplayNotifications.AVAILABILITY_CHANGE, event.availability === "available");
-};
-
-AirplayProxy.prototype.playbacktargetchanged = function(event) {
-  console.log(this.getVideo().webkitCurrentPlaybackTargetIsWireless);
-};
-
-AirplayProxy.prototype.getVideo = function() {
-  return this.facade.player.getMediaElement();
-};
-
-AirplayProxy.prototype.launch = function() {
-  this.getVideo().webkitShowPlaybackTargetPicker();
-};
-
-/** 
- * The HLSPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Plugin}
-*/
-function HLSPlugin() {
-  HLSPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(HLSPlugin, Plugin);
-
-
-HLSPlugin.prototype.moduleName = "hls";
-
-/** @override
-*/
-HLSPlugin.prototype.createModel = function() {
-  this.proxy = new HLSProxy(this.config);
-  this.registerProxy(this.proxy);
-};
-
-HLSPlugin.prototype.createController = function() {
-  this.registerCommand(AdNotifications.BREAK_START, HLSAdBreakStartCommand);
-  HLSPlugin.__super__.createController.call(this);
-};
-
-/**
- * Returns HLS PlaybackProxy
- *
-*/
-HLSPlugin.prototype.getPlaybackProxy = function() {
-  return this.proxy.playbackProxy;
-};
-
-/**
- * Returns instance of HLS player
- *
-*/
-HLSPlugin.prototype.getInstance = function() {
-  return this.getPlaybackProxy().player;
-};
-
-/**
-*/
-HLSPlugin.prototype.listNotificationInterests = function() {
-  return HLSPlugin.__super__.listNotificationInterests.call(this).concat([AdNotifications.BREAK_START]);
-};
-
-/**
-*/
-HLSPlugin.prototype.listNotificationPublications = function() {
-  return HLSPlugin.__super__.listNotificationPublications.call(this).concat([Notifications.TIMED_METADATA, Notifications.BITRATE_LEVELS_LOADED, Notifications.BITRATE_CHANGE, Notifications.BITRATE_CHANGING, Notifications.FRAGMENT_LOAD_START, Notifications.FRAGMENT_LOADED]);
-};
-
-
-AMP.registerPlugin("hls", "html", HLSPlugin);
-
-/**
- * The ChromeCastSenderMediator class.
- * 
- * @constructor
- * @extends {ChromeCastSenderMediator}
- * @private
-*/
-function AirplayMediator() {
-  AirplayMediator.__super__.constructor.call(this);
-}
-
-
-__extends(AirplayMediator, PluginMediator);
-
-
-AirplayMediator.prototype.button = null;
-
-/**
- * @override
-*/
-AirplayMediator.prototype.onRegister = function() {
-  AirplayMediator.__super__.onRegister.call(this);
-  this.button = new AirplayButtonMediator();
-  this.facade.registerMediator(this.button);
-};
-
-/**
- * @override
-*/
-AirplayMediator.prototype.listNotificationInterests = function() {
-  return AirplayMediator.__super__.listNotificationInterests.call(this).concat([AirplayNotifications.AVAILABILITY_CHANGE]);
-};
-
-/**
- * @override
-*/
-AirplayMediator.prototype.handleNotification = function(notification) {
-  var body, name;
-  AirplayMediator.__super__.handleNotification.call(this, notification);
-  name = notification.getName();
-  body = notification.getBody();
-  switch (name) {
-    case AirplayNotifications.AVAILABILITY_CHANGE:
-      if (body === true) {
-        this.sendNotification(Notifications.ADD_CONTROL_STATE, "airplay");
-        this.facade.player.sendNotification(Notifications.ADD_CONTROL, this.button.getViewComponent());
-      } else {
-        this.sendNotification(Notifications.REMOVE_CONTROL_STATE, "airplay");
-        this.facade.player.sendNotification(Notifications.REMOVE_CONTROL, this.button.getViewComponent());
-      }
-  }
-};
-
-/** 
- * The NielsendcrPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Plugin}
-*/
-function NielsendcrPlugin() {
-  NielsendcrPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(NielsendcrPlugin, Plugin);
-
-
-NielsendcrPlugin.prototype.moduleName = "nielsendcr";
-
-/** @override
-*/
-NielsendcrPlugin.prototype.createModel = function() {
-  this.registerProxy(new NielsendcrProxy(this.config));
-};
-
-/** @override
-*/
-NielsendcrPlugin.prototype.createController = function() {
-  NielsendcrPlugin.__super__.createController.call(this);
-  this.registerCommand(AdNotifications.AD_STARTED, NielsendcrAdStartCommand);
-  this.registerCommand(AdNotifications.AD_ENDED, NielsendcrAdEndCommand);
-  this.registerCommand(Notifications.STARTED, NielsendcrStartCommand);
-  this.registerCommand(Notifications.ENDED, NielsendcrEndCommand);
-  this.registerCommand(Notifications.TIME_UPDATE, NielsendcrTimeupdateCommand);
-  this.registerCommand(AdNotifications.AD_TIME_REMAINING, NielsendcrTimeupdateCommand);
-  this.registerCommand(FlashNotifications.TIME_UPDATE, NielsendcrTimeupdateCommand);
-  this.registerCommand(FlashAdNotifications.AD_TIME_UPDATE, NielsendcrTimeupdateCommand);
-  this.registerCommand(Notifications.MEDIA_CHANGE, NielsendcrChangeMediaCommand);
-  this.registerCommand(FlashNotifications.FEED_LOADED, NielsendcrChangeMediaCommand);
-};
-
-/** @override
-*/
-NielsendcrPlugin.prototype.listNotificationInterests = function() {
-  return [AdNotifications.AD_STARTED, AdNotifications.AD_ENDED, AdNotifications.BREAK_START, Notifications.MEDIA_CHANGE, Notifications.STARTED, Notifications.ENDED, Notifications.TIME_UPDATE, AdNotifications.AD_TIME_REMAINING, FlashNotifications.FEED_LOADED, FlashNotifications.TIME_UPDATE, FlashAdNotifications.AD_TIME_UPDATE];
-};
-
-
-AMP.registerPlugin("nielsendcr", "html", NielsendcrPlugin);
-AMP.registerPlugin("nielsendcr", "flash", NielsendcrWrapper);
-
-var trackEvent;
-
-
-
-
-
-/** 
- * @constructor 
- * @private
-*/
-function GoogleAnalyticsProxy(config) {
-  GoogleAnalyticsProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(GoogleAnalyticsProxy, PluginProxy);
-
-
-/** @static
-*/
-GoogleAnalyticsProxy.NAME = ModuleProxy.NAME;
-
-GoogleAnalyticsProxy.prototype.defaults = {
-  data: null
-};
-
-GoogleAnalyticsProxy.prototype.googleanalyticsSDK = null;
-
-GoogleAnalyticsProxy.prototype.isLive = null;
-
-GoogleAnalyticsProxy.prototype.config = null;
-
-GoogleAnalyticsProxy.prototype.started = false;
-
-GoogleAnalyticsProxy.prototype.timeViewed = 0;
-
-GoogleAnalyticsProxy.prototype.currentTime = 0;
-
-/** Overrides
-*/
-GoogleAnalyticsProxy.prototype.onRegister = function() {
-  GoogleAnalyticsProxy.__super__.onRegister.call(this);
-  this.config = this.facade.getConfig();
-  (function(i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r;
-    i[r] = i[r] || function() {
-      (i[r].q = i[r].q || []).push(arguments);
-    };
-    i[r].l = 1 * new Date;
-    a = s.createElement(o);
-    m = s.getElementsByTagName(o)[0];
-    a.async = 1;
-    a.src = g;
-    m.parentNode.insertBefore(a, m);
-  })(window, document, 'script', this.config.resources.src, 'ga');
-};
-
-GoogleAnalyticsProxy.prototype.initialize = function() {
-  ga('create', this.config.plugin.trackingId, 'auto');
-  ga('send', 'pageview');
-};
-
-/** Populate Google Analytics VO
-*/
-GoogleAnalyticsProxy.prototype.generateGoogleAnalyticsVO = function(adVO, eventName) {
-  var cdim, dim, event, eventExists, events, key, media, mediaElement, type, vo, _i, _len, _ref;
-  if (adVO == null) {
-    adVO = null;
-  }
-  if (eventName == null) {
-    eventName = null;
-  }
-  vo = new Object();
-  media = this.facade.player.getMedia();
-  mediaElement = this.facade.player.getMediaElement();
-  this.isLive = media.isLive;
-  eventExists = false;
-  cdim = new Object();
-  vo.trackingid = this.config.plugin.trackingId;
-  _ref = this.config.events;
-  for (type in _ref) {
-    events = _ref[type];
-    if ((eventName != null) && (events != null) && events.length > 0) {
-      for (_i = 0, _len = events.length; _i < _len; _i++) {
-        event = events[_i];
-        if ((event != null ? event.type : void 0) === eventName) {
-          eventExists = true;
-          for (key in event.data) {
-            if (key === "customDimension") {
-              for (dim in event.data.customDimension) {
-                if (event.data.customDimension[dim] === "viewDuration") {
-                  ga('set', dim, this.timeViewed);
-                  cdim[dim] = this.timeViewed;
-                } else {
-                  ga('set', dim, this.facade.player.evaluateBinding(event.data.customDimension[dim]));
-                  cdim[dim] = this.facade.player.evaluateBinding(event.data.customDimension[dim]);
-                }
-              }
-              vo["customDimension"] = cdim;
-            } else {
-              vo[key.toLowerCase()] = this.facade.player.evaluateBinding(event.data[key]);
-            }
-          }
-        }
-      }
-    }
-  }
-  if (eventExists === true) {
-    return vo;
-  } else {
-    return null;
-  }
-};
-
-trackEvent = function(obj) {
-  var dim;
-  if (obj) {
-    ga('send', 'event', obj.eventcategory, obj.eventaction, obj.eventlabel, obj.eventvalue);
-    if (obj["customDimension"]) {
-      for (dim in obj["customDimension"]) {
-        ga('set', dim, null);
-      }
-    }
-  }
-};
-
-/** Ad Started
-*/
-GoogleAnalyticsProxy.prototype.adStart = function(adVO) {
-  trackEvent(this.generateGoogleAnalyticsVO(adVO, 'adStarted'));
-};
-
-/** Ad Started
-*/
-GoogleAnalyticsProxy.prototype.adEnd = function(adVO) {
-  trackEvent(this.generateGoogleAnalyticsVO(adVO, 'adEnded'));
-};
-
-/** Media Started
-*/
-GoogleAnalyticsProxy.prototype.start = function() {
-  this.started = true;
-  this.currentTime = 0;
-  this.timeViewed = 0;
-  trackEvent(this.generateGoogleAnalyticsVO(null, 'started'));
-};
-
-/** Media Ended
-*/
-GoogleAnalyticsProxy.prototype.end = function() {
-  if (this.started === true) {
-    this.started = false;
-    trackEvent(this.generateGoogleAnalyticsVO(null, 'ended'));
-  }
-};
-
-GoogleAnalyticsProxy.prototype.timeUpdate = function(obj) {
-  var curTime;
-  curTime = isNaN(obj) && !isNaN(obj.currentTime) ? obj.currentTime : obj;
-  if (Math.round(curTime) > this.currentTime) {
-    this.timeViewed++;
-    this.currentTime = Math.round(curTime);
-  }
-};
-
-/**
- * The GoogleAnalyticsStartCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function GoogleAnalyticsStartCommand() {
-  GoogleAnalyticsStartCommand.__super__.constructor.call(this);
-}
-
-
-__extends(GoogleAnalyticsStartCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-GoogleAnalyticsStartCommand.prototype.execute = function(notification) {
-  var googleanalytics;
-  googleanalytics = this.facade.retrieveProxy(GoogleAnalyticsProxy.NAME);
-  googleanalytics.start();
-};
-
-/**
- * The NielsensdkEndCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function GoogleAnalyticsEndCommand() {
-  GoogleAnalyticsEndCommand.__super__.constructor.call(this);
-}
-
-
-__extends(GoogleAnalyticsEndCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-GoogleAnalyticsEndCommand.prototype.execute = function(notification) {
-  var googleanalytics;
-  googleanalytics = this.facade.retrieveProxy(GoogleAnalyticsProxy.NAME);
-  googleanalytics.end();
-};
-
-/** 
- * @constructor
- * @private
- * @extends {PluginWrapper}
-*/
-function GoogleAnalyticsWrapper(player, config) {
-  this.plugin = new GoogleAnalyticsPlugin();
-  this.plugin.oninitialized = player.registerModule.bind(player, this.plugin);
-  this.plugin.initialize(config, player);
-  GoogleAnalyticsWrapper.__super__.constructor.call(this, player, config);
-}
-
-
-__extends(GoogleAnalyticsWrapper, PluginWrapper);
-
-
-GoogleAnalyticsWrapper.NAME = "GoogleAnalyticsWrapper";
-
-/**
- * The GoogleAnalyticsMediaChangedCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function GoogleAnalyticsMediaChangedCommand() {
-  GoogleAnalyticsMediaChangedCommand.__super__.constructor.call(this);
-}
-
-
-__extends(GoogleAnalyticsMediaChangedCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-GoogleAnalyticsMediaChangedCommand.prototype.execute = function(notification) {
-  var googleanalytics;
-  googleanalytics = this.facade.retrieveProxy(GoogleAnalyticsProxy.NAME);
-  googleanalytics.end();
-};
-
-/**
- * The GoogleAnalyticsAdStartedCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function GoogleAnalyticsAdStartedCommand() {
-  GoogleAnalyticsAdStartedCommand.__super__.constructor.call(this);
-}
-
-
-__extends(GoogleAnalyticsAdStartedCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-GoogleAnalyticsAdStartedCommand.prototype.execute = function(notification) {
-  var googleanalytics;
-  googleanalytics = this.facade.retrieveProxy(GoogleAnalyticsProxy.NAME);
-  googleanalytics.adStart(notification.body);
-};
-
-/**
- * The GoogleAnalyticsTimeUpdateCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function GoogleAnalyticsTimeUpdateCommand() {
-  GoogleAnalyticsTimeUpdateCommand.__super__.constructor.call(this);
-}
-
-
-__extends(GoogleAnalyticsTimeUpdateCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-GoogleAnalyticsTimeUpdateCommand.prototype.execute = function(notification) {
-  var googleanalytics;
-  googleanalytics = this.facade.retrieveProxy(GoogleAnalyticsProxy.NAME);
-  googleanalytics.timeUpdate(notification.body);
-};
-
-/**
- * The GoogleAnalyticsAdEndedCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function GoogleAnalyticsAdEndedCommand() {
-  GoogleAnalyticsAdEndedCommand.__super__.constructor.call(this);
-}
-
-
-__extends(GoogleAnalyticsAdEndedCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-GoogleAnalyticsAdEndedCommand.prototype.execute = function(notification) {
-  var googleanalytics;
-  googleanalytics = this.facade.retrieveProxy(GoogleAnalyticsProxy.NAME);
-  googleanalytics.adEnd(notification.body);
-};
-
-/** 
- * The AirplayPlugin class.
- *   
- * @param {Module}  app     The parent module of this plugin.
- * @constructor
- * @private
- * @extends {Plugin}
-*/
-function AirplayPlugin() {
-  AirplayPlugin.__super__.constructor.call(this);
-}
-
-
-__extends(AirplayPlugin, Plugin);
-
-
-AirplayPlugin.prototype.moduleName = "airplay";
-
-/** @override
-*/
-AirplayPlugin.prototype.isAvailable = function() {
-  return window.WebKitPlaybackTargetAvailabilityEvent !== null;
-};
-
-/** @override
-*/
-AirplayPlugin.prototype.createModel = function() {
-  AirplayPlugin.__super__.createModel.call(this);
-  this.registerProxy(new AirplayProxy(this.config));
-};
-
-/** @override
-*/
-AirplayPlugin.prototype.createController = function() {
-  AirplayPlugin.__super__.createController.call(this);
-  this.registerCommand(Notifications.READY, AirplayReadyCommand);
-  this.registerCommand(AirplayNotifications.LAUNCH, AirplayLaunchCommand);
-};
-
-/** @override
-*/
-AirplayPlugin.prototype.createView = function() {
-  this.registerMediator(new AirplayMediator());
-};
-
-/** @override
-*/
-AirplayPlugin.prototype.listNotificationInterests = function() {
-  return [Notifications.READY];
-};
-
-/** @override
-*/
-AirplayPlugin.prototype.listNotificationPublications = function() {
-  return AirplayPlugin.__super__.listNotificationPublications.apply(this, arguments).concat([Notifications.ADD_CONTROL, Notifications.REMOVE_CONTROL, Notifications.ADD_CONTROL_STATE, Notifications.REMOVE_CONTROL_STATE, Notifications.CHANGE_PLAYBACK_TARGET]);
-};
-
-
-AMP.registerPlugin("airplay", "html", AirplayPlugin);
-
-/**
- * @constructor
- * @private
-*/
-function ConvivaProxy(config) {
-  ConvivaProxy.__super__.constructor.call(this, config);
-}
-
-
-__extends(ConvivaProxy, PluginProxy);
-
-
-/** @static
-*/
-ConvivaProxy.NAME = ModuleProxy.NAME;
-
-ConvivaProxy.prototype.defaults = {
-  data: null,
-  events: null,
-  plugin: {
-    js: "../resources/js/conviva-core-sdk-2.119.0.32091.min.js"
-  },
-  conviva: null
-};
-
-ConvivaProxy.prototype.convivaVideoSession = null;
-
-ConvivaProxy.prototype.serviceURL = null;
-
-ConvivaProxy.prototype.customerKey = null;
-
-ConvivaProxy.prototype.media = null;
-
-ConvivaProxy.prototype.mediaElement = null;
-
-ConvivaProxy.prototype.systemSettings = null;
-
-ConvivaProxy.prototype.systemInterface = null;
-
-ConvivaProxy.prototype.systemFactory = null;
-
-ConvivaProxy.prototype.clientSettings = null;
-
-ConvivaProxy.prototype.client = null;
-
-ConvivaProxy.prototype.playerStateManager = null;
-
-ConvivaProxy.prototype.sessionKey = null;
-
-ConvivaProxy.prototype.html5PlayerInterface = null;
-
-ConvivaProxy.prototype.contentMetadata = null;
-
-/** Overrides
-*/
-/** Initialize the plugin
-*/
-ConvivaProxy.prototype.initialize = function() {
-  var _ref, _ref1, _ref2, _ref3;
-  ConvivaProxy.__super__.initialize.call(this);
-  this.customerKey = (_ref = this.value) != null ? (_ref1 = _ref.data) != null ? _ref1.customerKey : void 0 : void 0;
-  this.serviceURL = (_ref2 = this.value) != null ? (_ref3 = _ref2.data) != null ? _ref3.serviceUrl : void 0 : void 0;
-  if (typeof Conviva !== "undefined" && Conviva !== null) {
-    this.systemSettings = new Conviva.SystemSettings();
-    this.systemInterface = new Html5SystemInterfaceFactory().build();
-    this.systemFactory = new Conviva.SystemFactory(this.systemInterface, this.systemSettings);
-    this.clientSettings = new Conviva.ClientSettings(this.customerKey);
-    this.clientSettings.gatewayUrl = this.serviceURL;
-    this.client = new Conviva.Client(this.clientSettings, this.systemFactory);
-    this.playerStateManager = this.client.getPlayerStateManager();
-  }
-};
-
-/** Media Changed handler
-*/
-ConvivaProxy.prototype.contentChanged = function() {
-  var scope;
-  if (typeof Conviva !== "undefined" && Conviva !== null) {
-    this.mediaElement = null;
-    this.media = this.facade.player.getMedia();
-    this.mediaElement = this.facade.player.getMediaElement();
-    this.contentMetadata = this.generateConvivaSessionMetadata();
-    if ((this.client != null) && (this.sessionKey != null)) {
-      this.client.cleanupSession(this.sessionKey);
-    }
-    this.sessionKey = this.client.createSession(this.contentMetadata);
-    this.html5PlayerInterface = new Html5PlayerInterface(this.playerStateManager, this.mediaElement);
-    this.client.attachPlayer(this.sessionKey, this.playerStateManager);
-    scope = this;
-    this.mediaElement.addEventListener('error', function() {
-      scope.cleanupSession();
-    });
-    this.mediaElement.addEventListener('ended', function() {
-      scope.cleanupSession();
-    });
-  }
-};
-
-ConvivaProxy.prototype.cleanupSession = function() {
-  return this.client.cleanupSession(this.sessionKey);
-};
-
-/** Utility to generate conviva session metadata
-*/
-ConvivaProxy.prototype.generateConvivaSessionMetadata = function() {
-  var configData, convivaMetadata, _ref;
-  if (typeof Conviva !== "undefined" && Conviva !== null) {
-    convivaMetadata = new Conviva.ContentMetadata();
-    convivaMetadata.assetName = this.media.guid;
-    convivaMetadata.streamUrl = this.media.src;
-    convivaMetadata.streamType = this.media.isLive ? Conviva.ContentMetadata.StreamType.LIVE : Conviva.ContentMetadata.StreamType.VOD;
-    convivaMetadata.duration = this.media.duration;
-    configData = (_ref = this.value) != null ? _ref.data : void 0;
-    if (configData != null) {
-      this.getMetadataFromConfig(convivaMetadata);
-    }
-  }
-  return convivaMetadata;
-};
-
-/** Utility to get metadata tags
-*/
-ConvivaProxy.prototype.getMetadataFromConfig = function(convivaMetadata) {
-  var configData, key, value, _ref, _ref1;
-  configData = (_ref = this.value) != null ? (_ref1 = _ref.data) != null ? _ref1.metadata : void 0 : void 0;
-  if (configData != null) {
-    for (key in configData) {
-      value = configData[key];
-      if (!(value !== "null")) {
-        continue;
-      }
-      if (!convivaMetadata.hasOwnProperty(key)) {
-        this.facade.logger.warn("[AMP Conviva] : ''" + key + "'' is not an eplicit property of convivaMetadata obejct");
-      }
-      convivaMetadata[key] = value;
-    }
-  }
-};
-
-/** Ad start event handler
-*/
-ConvivaProxy.prototype.adStart = function(adVO) {
-  if ((typeof Conviva !== "undefined" && Conviva !== null) && (this.client != null) && (this.sessionKey != null)) {
-    if ((adVO != null ? adVO.type : void 0) === "preroll") {
-      this.client.adStart(this.sessionKey, Conviva.Client.AdStream.SEPARATE, Conviva.Client.AdPlayer.SEPARATE, Conviva.Client.AdPosition.PREROLL);
-    } else {
-      this.client.detachStreamer(this.sessionKey);
-    }
-  }
-};
-
-/** ad end event handler
-*/
-ConvivaProxy.prototype.adEnd = function(adVO) {
-  if ((typeof Conviva !== "undefined" && Conviva !== null) && (this.sessionKey != null) && this.client) {
-    if ((adVO != null ? adVO.type : void 0) === "preroll") {
-      this.client.adEnd(this.sessionKey);
-    } else if ((adVO != null ? adVO.type : void 0) === "midroll") {
-      this.client.attachPlayer(this.sessionKey, this.playerStateManager);
-    } else if ((adVO != null ? adVO.type : void 0) === "postroll") {
-      this.client.cleanupSession(this.sessionKey);
-    }
-  }
-};
-
-/* Media Started Event Handler
-*/
-ConvivaProxy.prototype.bitrateSwitch = function(data) {
-  this.playerStateManager.setBitrateKbps(data.bitrate);
-};
-
-/** Method to report error
-*/
-ConvivaProxy.prototype.reportError = function(message) {
-  if ((typeof Conviva !== "undefined" && Conviva !== null) && this.client && (message != null)) {
-    this.client.reportError(this.sessionKey, message, Conviva.Client.ErrorSeverity.FATAL);
-  }
-};
-
-/**
- * The ConvivaStartCommand class.
- *
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function ConvivaStartCommand() {
-  ConvivaStartCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ConvivaStartCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- *
- * @param {puremvc.Notification} notification
- *    The notification.
- *
- * @override
-*/
-ConvivaStartCommand.prototype.execute = function(notification) {
-  var conviva;
-  conviva = this.facade.retrieveProxy(ConvivaProxy.NAME);
-};
-
-/**
- * The ConvivaAdStartCommand class.
- *
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function ConvivaAdStartCommand() {
-  ConvivaAdStartCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ConvivaAdStartCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- *
- * @param {puremvc.Notification} notification
- *    The notification.
- *
- * @override
-*/
-ConvivaAdStartCommand.prototype.execute = function(notification) {
-  var conviva;
-  conviva = this.facade.retrieveProxy(ConvivaProxy.NAME);
-  conviva.adStart(notification.body);
-};
-
-/**
- * The ConvivaAdEndCommand class.
- *
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function ConvivaAdEndCommand() {
-  ConvivaAdEndCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ConvivaAdEndCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- *
- * @param {puremvc.Notification} notification
- *    The notification.
- *
- * @override
-*/
-ConvivaAdEndCommand.prototype.execute = function(notification) {
-  var conviva;
-  conviva = this.facade.retrieveProxy(ConvivaProxy.NAME);
-  conviva.adEnd(notification.body);
-};
-
-/**
- * The ConvivaEndCommand class.
- *
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function ConvivaEndCommand() {
-  ConvivaEndCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ConvivaEndCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- *
- * @param {puremvc.Notification} notification
- *    The notification.
- *
- * @override
-*/
-ConvivaEndCommand.prototype.execute = function(notification) {
-  var conviva;
-  conviva = this.facade.retrieveProxy(ConvivaProxy.NAME);
-};
-
-/**
- * The ConvivaMediaChangeCommand class.
- *
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function ConvivaMediaChangeCommand() {
-  ConvivaMediaChangeCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ConvivaMediaChangeCommand, puremvc.SimpleCommand);
-
-
-/**
- * Executes the command.
- *
- * @param {puremvc.Notification} notification
- *    The notification.
- *
- * @override
-*/
-ConvivaMediaChangeCommand.prototype.execute = function(notification) {
-  var conviva;
-  conviva = this.facade.retrieveProxy(ConvivaProxy.NAME);
-  conviva.contentChanged(notification.body);
-};
-
-/**
- * The ConvivaBitrateSwitchCommand class.
- *   
- * @constructor
- * @private
- * @extends {puremvc.SimpleCommand}
-*/
-function ConvivaBitrateSwitchCommand() {
-  ConvivaBitrateSwitchCommand.__super__.constructor.call(this);
-}
-
-
-__extends(ConvivaBitrateSwitchCommand, PluginCommand);
-
-
-/**
- * Executes the command.
- * 
- * @param {puremvc.Notification} notification 
- *    The notification.
- * 
- * @override
-*/
-ConvivaBitrateSwitchCommand.prototype.execute = function(notification) {
-  this.proxy.bitrateSwitch(notification.getBody());
-};
 
 function ChartbeatAnalyticsStrategy(player) {
   this._player = player;
@@ -35925,50 +28438,25 @@ ChartbeatAnalyticsStrategy.prototype.onVideoEnd = function() {
 };
 
 /** 
- * The GoogleAnalyticsPlugin class.
+ * The CustomAuthPlugin class.
  *   
  * @param {Module}  app     The parent module of this plugin.
  * @constructor
  * @private
  * @extends {Plugin}
 */
-function GoogleAnalyticsPlugin() {
-  GoogleAnalyticsPlugin.__super__.constructor.call(this);
+function CustomAuthPlugin() {
+  CustomAuthPlugin.__super__.constructor.call(this);
 }
 
 
-__extends(GoogleAnalyticsPlugin, Plugin);
+__extends(CustomAuthPlugin, Plugin);
 
 
-GoogleAnalyticsPlugin.prototype.moduleName = "googleanalytics";
-
-/** @override
-*/
-GoogleAnalyticsPlugin.prototype.createModel = function() {
-  this.registerProxy(new GoogleAnalyticsProxy(this.config));
-};
-
-/** @override
-*/
-GoogleAnalyticsPlugin.prototype.createController = function() {
-  GoogleAnalyticsPlugin.__super__.createController.call(this);
-  this.registerCommand(Notifications.STARTED, GoogleAnalyticsStartCommand);
-  this.registerCommand(Notifications.MEDIA_SEQUENCE_ABORTED, GoogleAnalyticsEndCommand);
-  this.registerCommand(Notifications.ENDED, GoogleAnalyticsEndCommand);
-  this.registerCommand(AdNotifications.AD_STARTED, GoogleAnalyticsAdStartedCommand);
-  this.registerCommand(Notifications.TIME_UPDATE, GoogleAnalyticsTimeUpdateCommand);
-  this.registerCommand(AdNotifications.AD_ENDED, GoogleAnalyticsAdEndedCommand);
-};
-
-/** @override
-*/
-GoogleAnalyticsPlugin.prototype.listNotificationInterests = function() {
-  return [AdNotifications.AD_STARTED, AdNotifications.AD_ENDED, AdNotifications.BREAK_END, Notifications.STARTED, Notifications.ENDED, Notifications.LOADED_METADATA, Notifications.TIME_UPDATE, Notifications.CONTENT_CHANGED, Notifications.MEDIA_CHANGE, Notifications.CHANGE_CONTENT, AdNotifications.AD_TIME_REMAINING, Notifications.MEDIA_SEQUENCE_ABORTED];
-};
+CustomAuthPlugin.prototype.moduleName = "customauth";
 
 
-AMP.registerPlugin("googleanalytics", "html", GoogleAnalyticsPlugin);
-AMP.registerPlugin("googleanalytics", "flash", GoogleAnalyticsWrapper);
+AMP.registerPlugin("customauth", "html", CustomAuthPlugin);
 
 /**
  * The ChartbeatAnalyticsStartCommand class.
@@ -36259,7 +28747,7 @@ ChartbeatAnalyticsProxy.prototype.initialize = function() {
     _cbv.push(mediaElement);
     this.setConfigMetadata();
   } catch (_error) {}
-  AMP.addResources(this.facade.pluginResources, this.resourcesLoaded.bind(this), this.resourcesError.bind(this));
+  AMP.addResources(this.facade.pluginResources);
   ChartbeatAnalyticsProxy.__super__.initialize.call(this);
 };
 
@@ -36276,10 +28764,6 @@ ChartbeatAnalyticsProxy.prototype.setConfigMetadata = function() {
     }
   }
 };
-
-ChartbeatAnalyticsProxy.prototype.resourcesLoaded = function() {};
-
-ChartbeatAnalyticsProxy.prototype.resourcesError = function() {};
 
 ChartbeatAnalyticsProxy.prototype.contentChanged = function() {
   this.media = this.facade.player.getMedia();
@@ -36341,57 +28825,26 @@ ChartbeatAnalyticsProxy.prototype.canPlay = function(adVO) {
   ChartbeatAnalyticsStrategy.prototype.playbackReady = true;
 };
 
-/**
- * The ConvivaPlugin class.
- *
+/** 
+ * The LinkedMenuPlugin class.
+ *   
  * @param {Module}  app     The parent module of this plugin.
  * @constructor
  * @private
  * @extends {Plugin}
 */
-function ConvivaPlugin() {
-  ConvivaPlugin.__super__.constructor.call(this);
+function LinkedMenuPlugin() {
+  LinkedMenuPlugin.__super__.constructor.call(this);
 }
 
 
-__extends(ConvivaPlugin, Plugin);
+__extends(LinkedMenuPlugin, Plugin);
 
 
-ConvivaPlugin.prototype.moduleName = "conviva";
-
-/** @override
-*/
-ConvivaPlugin.prototype.createModel = function() {
-  this.registerProxy(new ConvivaProxy(this.config));
-};
-
-/** @override
-*/
-ConvivaPlugin.prototype.createController = function() {
-  ConvivaPlugin.__super__.createController.call(this);
-  this.registerCommand(AdNotifications.BREAK_END, ConvivaAdEndCommand);
-  this.registerCommand(AdNotifications.AD_STARTED, ConvivaAdStartCommand);
-  this.registerCommand(Notifications.STARTED, ConvivaStartCommand);
-  this.registerCommand(Notifications.ENDED, ConvivaEndCommand);
-  this.registerCommand(Notifications.MEDIA_CHANGE, ConvivaMediaChangeCommand);
-  this.registerCommand(Notifications.BITRATE_SWITCH, ConvivaBitrateSwitchCommand);
-};
-
-/** @override
-*/
-ConvivaPlugin.prototype.listNotificationInterests = function() {
-  return [AdNotifications.AD_STARTED, AdNotifications.BREAK_END, Notifications.STARTED, Notifications.ENDED, Notifications.MEDIA_CHANGE, Notifications.BITRATE_SWITCH];
-};
-
-ConvivaPlugin.prototype.reportError = function(message) {
-  this.convivaProxy = this.model.retrieveProxy(ConvivaProxy.NAME);
-  if ((this.convivaProxy != null) && (message != null)) {
-    this.convivaProxy.reportError(message);
-  }
-};
+LinkedMenuPlugin.prototype.moduleName = "linkedmenu";
 
 
-AMP.registerPlugin("conviva", "html", ConvivaPlugin);
+AMP.registerPlugin("linkedmenu", "html", LinkedMenuPlugin);
 
 /**
  * The ChartbeatAnalyticsPlugin class.
@@ -36425,7 +28878,7 @@ ChartbeatAnalyticsPlugin.prototype.loadModuleResources = function() {
   var _ref;
   this.pluginResources = (_ref = this.config) != null ? _ref.resources : void 0;
   this.config.resources = null;
-  ChartbeatAnalyticsPlugin.__super__.loadModuleResources.call(this);
+  return ChartbeatAnalyticsPlugin.__super__.loadModuleResources.call(this);
 };
 
 /** @override
@@ -36453,18 +28906,171 @@ AMP.registerPlugin("chartbeatanalytics", "html", ChartbeatAnalyticsPlugin);
 AMP.registerPlugin("chartbeatanalytics", "flash", ChartbeatAnalyticsWrapper);
 
 
+var PromisePlugin = function (_EventDispatcher) {
+  babelHelpers.inherits(PromisePlugin, _EventDispatcher);
+
+  function PromisePlugin(player, config) {
+    babelHelpers.classCallCheck(this, PromisePlugin);
+
+    var _this = babelHelpers.possibleConstructorReturn(this, (PromisePlugin.__proto__ || Object.getPrototypeOf(PromisePlugin)).call(this));
+
+    _this.player = player;
+    _this.config = config || {};
+    _this.logger = new Logger(_this.debug)
+
+    var events = Events.values;
+    var prop = void 0,
+        event = void 0;
+
+    events.forEach(function (event) {
+      prop = _this["on" + event];
+      if (prop == null || typeof prop != "function") return;
+
+      prop = _this["on" + event] = prop.bind(_this);
+      _this.player.addEventListener(event, prop);
+    });
+    return _this;
+  }
+
+  babelHelpers.createClass(PromisePlugin, [{
+    key: "bindHandlers",
+    value: function bindHandlers(handlers) {
+      var _this2 = this;
+
+      if (handlers instanceof Array == false) handlers = [handlers];
+
+      handlers.forEach(function (func) {
+        _this2[func] = _this2[func].bind(_this2);
+      });
+    }
+  }, {
+    key: "debug",
+    get: function get() {
+      return this.config.debug != null ? this.config.debug : this.player.config.debug;
+    }
+  }, {
+    key: "data",
+    get: function get() {
+      return this.player.evaluateBindings(this.config);
+    }
+  }], [{
+    key: "createFactory",
+    value: function createFactory(def) {
+      return function (player, config) {
+        var _this = this;
+
+        return new Promise(function (resolve, reject) {
+          try {
+            var plugin = new _this(player, config);
+            resolve(plugin);
+          } catch (error) {
+            reject(error);
+          }
+        });
+      }.bind(def);
+    }
+  }]);
+
+  return PromisePlugin;
+}(EventDispatcher);
+
+var AdPromisePlugin = function (_PromisePlugin) {
+  babelHelpers.inherits(AdPromisePlugin, _PromisePlugin);
+
+  function AdPromisePlugin(player, config) {
+    babelHelpers.classCallCheck(this, AdPromisePlugin);
+
+    return babelHelpers.possibleConstructorReturn(this, (AdPromisePlugin.__proto__ || Object.getPrototypeOf(AdPromisePlugin)).call(this, player, config));
+  }
+
+  babelHelpers.createClass(AdPromisePlugin, [{
+    key: "dispatchEvent",
+    value: function dispatchEvent(event) {
+      this.player.logger.log("[AMP AD EVENT] " + event.type, event);
+      if (typeof this.player.sendNotification === "function")
+        this.player.sendNotification("ads" + event.type, event.detail);
+      babelHelpers.get(AdPromisePlugin.prototype.__proto__ || Object.getPrototypeOf(AdPromisePlugin.prototype), "dispatchEvent", this).call(this, event);
+    }
+  }]);
+
+  return AdPromisePlugin;
+}(PromisePlugin);
+
+var FlashPromisePlugin = function (_PromisePlugin) {
+  babelHelpers.inherits(FlashPromisePlugin, _PromisePlugin);
+
+  function FlashPromisePlugin(player, config) {
+    babelHelpers.classCallCheck(this, FlashPromisePlugin);
+
+    var _this = babelHelpers.possibleConstructorReturn(this, (FlashPromisePlugin.__proto__ || Object.getPrototypeOf(FlashPromisePlugin)).call(this, player, config));
+
+    _this.player.createDefaults.call(_this);
+    _this.player.addEventListener("createflashvars", _this.createFlashVars.bind(_this));
+    _this.player.addEventListener("createxml", _this.createXML.bind(_this));
+    return _this;
+  }
+
+  babelHelpers.createClass(FlashPromisePlugin, [{
+    key: "createFlashVars",
+    value: function createFlashVars(event) {}
+  }, {
+    key: "createXML",
+    value: function createXML(event) {}
+  }, {
+    key: "createProperty",
+    value: function createProperty(xml, key, value, parent) {
+      var property = xml.createElement("property");
+      property.setAttribute("key", key);
+
+      if (parent != null) {
+        parent.appendChild(property);
+      }
+
+      if (value != null) {
+        if ((typeof value === "undefined" ? "undefined" : babelHelpers.typeof(value)) === "object" && !(value instanceof Array)) {
+          for (var _key in value) {
+            var val = value[_key];
+            this.createProperty(xml, _key, val, property);
+          }
+        } else {
+          var text = akamai.amp.XMLUtils.createTextContent(xml, value.toString());
+          property.appendChild(text);
+        }
+      }
+      return property;
+    }
+  }, {
+    key: "flashPlugins",
+    get: function get() {
+      return [];
+    }
+  }]);
+
+  return FlashPromisePlugin;
+}(PromisePlugin);
+
 global["akamai"] = {
   "amp": {
     "AMP": AMP,
     "utils": {
+      "Timer": Timer,
       "Utils": Utils,
       "QueryString": QueryString,
-      "Logger": Logger
+      "Logger": Logger.instance,
+      "MRSSHelper": MRSSHelper
     },
+    "Timer": Timer,
     "Utils": Utils,
+    "Poller": Poller,
+    "Cookies": Cookies,
+    "PlayState": PlayState,
+    "DisplayState": DisplayState,
+    "PlaybackMode": PlaybackMode,
     "QueryString": QueryString,
     "Logger": Logger,
     "Config": Config,
+    "XMLUtils": XMLUtils,
+    "IdleUtil": IdleUtil,
     "chromecast": {
       "ChromeCastShim": (typeof ChromeCastShim != "undefined") ? ChromeCastShim.getInstance() : null
     },
@@ -36472,90 +29078,35 @@ global["akamai"] = {
     "Resource": Resource,
     "Media": MediaVO,
     "Authorization": Authorization,
+    "Event": Event,
     "Events": Events,
-    "AdEvents": (function () {
-      var key, value, events = {};
-      events.values = [];
-      for (key in AdNotifications) {
-        value = AdNotifications[key].replace(/^ads/, "");
-        events[key.replace(/^AD_/, "")] = value;
-        events.values.push(value);
-      }
-      return events;
-    }()),
     "EventDispatcher": EventDispatcher,
-    "Plugin": (function (_EventDispatcher) {
-      babelHelpers.inherits(Plugin, _EventDispatcher);
-
-      function Plugin(player, config) {
-        babelHelpers.classCallCheck(this, Plugin);
-
-        var _this = babelHelpers.possibleConstructorReturn(this, (Plugin.__proto__ || Object.getPrototypeOf(Plugin)).call(this));
-
-        _this.player = player;
-        _this.config = config;
-
-        var events = Events.values;
-        var prop = void 0,
-            event = void 0;
-
-        var _iteratorNormalCompletion = true;
-        var _didIteratorError = false;
-        var _iteratorError = undefined;
-
-        try {
-          for (var _iterator = events[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-            event = _step.value;
-
-            prop = _this["on" + event];
-            if (prop == null || typeof prop != "function") continue;
-
-            prop = _this["on" + event] = prop.bind(_this);
-            _this.player.addEventListener(event, prop);
-          }
-        } catch (err) {
-          _didIteratorError = true;
-          _iteratorError = err;
-        } finally {
-          try {
-            if (!_iteratorNormalCompletion && _iterator.return) {
-              _iterator.return();
-            }
-          } finally {
-            if (_didIteratorError) {
-              throw _iteratorError;
-            }
-          }
-        }
-
-        return _this;
-      }
-
-      babelHelpers.createClass(Plugin, null, [{
-        key: "create",
-        value: function create(player, config) {
-          var _this2 = this;
-
-          return new Promise(function (resolve, reject) {
-            try {
-              var plugin = new _this2(player, config);
-              resolve(plugin);
-            } catch (error) {
-              reject(error);
-            }
-          });
-        }
-      }, {
-        key: "factory",
-        get: function get() {
-          return this.create.bind(this);
-        }
-      }]);
-
-      return Plugin;
-    }(EventDispatcher))
+    "Plugin": PromisePlugin,
+    "FlashPlugin": FlashPromisePlugin,
+    "AdPlugin": AdPromisePlugin,
+    "DataBinding": DataBinding,
+    "Logger": Logger,
+    "Transformer": Transformer,
+    "TransformType": TransformType
   }
 };
+
+if (typeof AdVO != "undefined")
+  global["akamai"]["amp"]["AdVO"] = AdVO
+
+if (typeof AdNotifications != "undefined") {
+  global["akamai"]["amp"]["AdEvents"] = (function () {
+    var key, value, events = {};
+    events.values = [];
+    for (key in AdNotifications) {
+      value = AdNotifications[key].replace(/^ads/, "");
+      events[key.replace(/^AD_/, "")] = value;
+      events.values.push(value);
+    }
+    return events;
+  }())
+}
+
   /* End JS Lib
   */
   window["AKAMAI_MEDIA_PLAYER"].saveSDK(version, global);

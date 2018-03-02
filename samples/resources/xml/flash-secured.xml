@@ -17,7 +17,7 @@
 		show_sharing_overlay="false" 
 		netsession_install_prompt_frequency_secs = "1">
 	</player>
-	<view skin="http://mdtp-a.akamaihd.net/customers/akamai/mdt-html5-core/premier/2.68.16/amp.premier/premier.assets.swf">
+	<view skin="http://mdtp-a.akamaihd.net/customers/akamai/mdt-html5-core/premier/2.94.5/amp.premier/premier.assets.swf">
     		<element id="infoOverlay" style="top: 0px;" />
     		<element id="recommendationSlate" viewMode="grid" items="5" />
     		<element id="captionDisplay" style="bottom: 0px; opacity:1;"/>
