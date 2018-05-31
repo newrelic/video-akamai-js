@@ -51,10 +51,10 @@ export default class AmpAdsTracker extends nrvideo.VideoTracker {
   setValues (e) {
     if (e && e.data) {
       if (e.data.metadata) {
-        this.title = e.data.metadata.getTitle()
-        this.src = e.data.metadata.getMediaUrl()
-        this.height = e.data.metadata.getHeight() || e.data.metadata.getVastMediaWidth()
-        this.width = e.data.metadata.getWidth() || e.data.metadata.getVastMediaHeight()
+        try { this.title = e.data.metadata.getTitle() } catch (err) {}
+        try { this.src = e.data.metadata.getMediaUrl() } catch (err) {}
+        try { this.height = e.data.metadata.getHeight() || e.data.metadata.getVastMediaWidth() } catch (err) {}
+        try { this.width = e.data.metadata.getWidth() || e.data.metadata.getVastMediaHeight() } catch (err) {}
       }
       this.position = e.data.type
       this.duration = e.data.duration

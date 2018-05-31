@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 
 
+## [0.4.1] - 2018/03/31
+### Fix
+- Controlled some ads functions that may or may not be defined in freewheel.
+
 ## [0.4.0] - 2018/03/02
 ## Add
 - Add support for amp v2.86+
