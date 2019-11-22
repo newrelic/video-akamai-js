@@ -143,7 +143,12 @@ export default class AmpTracker extends nrvideo.VideoTracker {
   }
 
   onError (e) {
-    this.sendError({"errorMessage": e.data.stack, "errorCode": e.data.code})
+    if (e.data.stack && e.data.code) {
+      this.sendError({"errorMessage": e.data.stack, "errorCode": e.data.code})
+    }
+    else {
+      this.sendError()
+    }
   }
 
   onEnded () {
