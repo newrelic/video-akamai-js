@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>FOX News Player - Samples - IMA</title>
+	<link type="text/css" rel="stylesheet" href="../resources/styles/styles.css" />
+	<!--Player-->
+	<script src="https://foxnewsplayer-a.akamaihd.net/player/7.109.10/akamai/amp/newrelic/newrelic.spa.js"></script>
+	<script type="text/javascript" src="../amp.premier/amp.premier.js"></script>
+	<script type="text/javascript">
+		var amp;
+
+		function loadHandler(event) {
+			var config = {
+				plugins:{
+					newrelic: {
+					"enabled": true,
+					"resources": [
+						{
+							"src": '../../dist/newrelic-video-akamai.min.js',
+							"type": "text/javascript"
+						}
+					],
+					"debug": true,
+					"customAttributes": {
+						"fn.ContentLevel1": "test"
+					},
+					"metadata": {
+						"videoTitle": "#{media.title}"
+					}
+				}
+				},
+				ima: {
+					enabled: true,
+					resources: [
+						{
+							type: "text/javascript",
+							src: "http://imasdk.googleapis.com/js/sdkloader/ima3.js"
+						}],
+					maxBitrate: 3000,
+					//adTagUrl: "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/single_ad_samples&ciu_szs=300x250&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ct%3Dredirecterror&nofb=1&correlator=#{now}"
+					adTagUrl: "https://mdtp-a.akamaihd.net/sandbox/maverick/vast/in-stream-long-media.xml"
+				},
+				media: {
+					src: "https://media-demo-host.akamaized.net/test/video/kluge/hls/all.m3u8",
+					category: ['full_episode']
+				}
+
+			};
+
+			amp = akamai.amp.AMP.create("akamai-media-player", config, readyHandler);
+		}
+
+		var sizes = {
+			small: {
+				width: "604px",
+				height: "341px"
+			},
+			large: {
+				width: "960px",
+				height: "490px"
+			}
+		}
+
+		var currentSize = sizes.small;
+
+		function resize() {
+			var container = document.querySelector(".sample-player");
+			currentSize = (currentSize == sizes.small) ? sizes.large : sizes.small;
+			container.style.width = currentSize.width;
+			container.style.height = currentSize.height;
+		}
+
+		function readyHandler(event) {
+			if (amp.ads != null)
+				amp.ads.addEventListener("companion", companionHandler);
+
+
+			amp.addTransform(akamai.amp.TransformType.AD_REQUEST, function (ad) {
+
+				var categories = amp.media.category;
+				var result = "clip"
+
+				categories.filter(function (category, index) {
+					if (category.match(/full_episode/g)) {
+						result = 'full_episode';
+						return true;
+					}
+					if (category.match(/live_stream/g)) {
+						result = 'live_stream';
+						return true;
+					} else {
+						return false;
+					}
+				});
+
+				console.log(result)
+				ad.adsRequest.adTagUrl += result
+
+				return ad;
+			});
+		}
+
+		function companionHandler(event) {
+			var ads = event.detail.companions,
+				companions = document.getElementById("companions"),
+				i = 0;
+
+			companions.innerHTML = "";
+
+			for (; i < ads.length; i++) {
+				companions.innerHTML += ads[i].data;
+			}
+		}
+	</script>
+	<style>
+		#companions div {
+			text-align: center;
+			margin: auto;
+		}
+	</style>
+</head>
+<!-- HACK: ontouchstart="" is a workaround that enables the use of the CSS :active psuedo class on iOS -->
+
+<body onload="loadHandler(event)" ontouchstart="">
+	<div class="page">
+		<div class="header">
+			<div class="header-logo"></div>
+			<div class="header-text">
+				<h1>FOX News Player</h1>
+				<h2>v7.109.10</h2>
+			</div>
+		</div>
+
+		<div class="content">
+			<h1>FOX News Player: Samples</h1>
+			<h3>IMA</h3>
+			<div class="sample-player">
+				<div id="akamai-media-player"></div>
+			</div>
+			<div id="resize">
+				<button onclick="resize();">resize</button>
+			</div>
+			<div id="companions"></div>
+		</div>
+	</div>
+</body>
+
+</html>
