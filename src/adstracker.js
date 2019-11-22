@@ -2,6 +2,20 @@ import * as nrvideo from 'newrelic-video-core'
 import {version} from '../package.json'
 
 export default class AmpAdsTracker extends nrvideo.VideoTracker {
+  /**
+   * Add custom attributes for Akamai Ads
+   * @param {object} [att] Collection of key value attributes
+   * @return {object} Filled attributes
+   * @final
+   */
+  getAttributes (att) {
+    let baseAttr = super.getAttributes(att)
+    if (this._adId != null) {
+      baseAttr["adId"] = this._adId
+    }
+    return baseAttr
+  }
+
   getTrackerName () {
     return 'akamai-media-player-ads'
   }
@@ -59,6 +73,7 @@ export default class AmpAdsTracker extends nrvideo.VideoTracker {
       this.position = e.data.type
       this.duration = e.data.duration
       this.partner = e.data.partner
+      this._adId = e.data.id
     }
   }
 
@@ -95,6 +110,12 @@ export default class AmpAdsTracker extends nrvideo.VideoTracker {
       this.player.ads.addEventListener('pause', this.onPause.bind(this))
       this.player.ads.addEventListener('playing', this.onPlaying.bind(this))
       this.player.ads.addEventListener('error', this.onError.bind(this))
+
+      /**
+       * Ad ID
+       * @private
+       */
+      this._adId = null
     }
   }
 
