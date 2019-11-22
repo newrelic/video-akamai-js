@@ -142,12 +142,10 @@ export default class AmpTracker extends nrvideo.VideoTracker {
     this.sendSeekEnd()
   }
 
-  onError () {
-    if (this.adsTracker && this.adsTracker.state.isStarted) {
-      this.adsTracker.sendError()
-    } else {
-      this.sendError()
-    }
+  onError (e) {
+    nrvideo.Log.debug('Content Error Event e =', e)
+
+    this.sendError()
   }
 
   onEnded () {
