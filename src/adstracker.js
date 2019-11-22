@@ -184,6 +184,6 @@ export default class AmpAdsTracker extends nrvideo.VideoTracker {
 
   onError (e) {
     this.setValues(e)
-    this.sendError({"errorMessage": e.data.error.l, "errorCode": e.data.error.h})
+    this.sendError({"errorMessage": e.data.error.getMessage(), "errorCode": e.data.error.getErrorCode()})
   }
 }
