@@ -21,3 +21,4 @@ coverage/
 
 # ignore agent.js
 samples/agent.js
+samples/dist
