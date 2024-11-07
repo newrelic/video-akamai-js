@@ -1,6 +1,6 @@
 {
   "name": "newrelic-video-akamai",
-  "version": "0.6.1",
+  "version": "0.6.2",
   "description": "New relic tracker for Akamai Media Player",
   "main": "src/index.js",
   "scripts": {
@@ -28,7 +28,7 @@
   "devDependencies": {
     "aws-sdk": "^2.921.0",
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
+    "babel-loader": "^9.2.1",
     "babel-preset-env": "^1.7.0",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
@@ -36,7 +36,7 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12"
+    "webpack": "^5.96.0",
+    "webpack-cli": "^5.1.4"
   }
 }
