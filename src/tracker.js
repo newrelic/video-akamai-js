@@ -22,7 +22,7 @@ export default class AmpTracker extends nrvideo.VideoTracker {
   }
 
   getPlayerName() {
-    return "Bitmovin";
+    return "Akamai";
   }
 
   getInstrumentationProvider() {
