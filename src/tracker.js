@@ -1,172 +1,191 @@
-import * as nrvideo from 'newrelic-video-core'
-import AmpAdsTracker from './adstracker'
-import { version } from '../package.json'
+import * as nrvideo from "newrelic-video-core";
+import AmpAdsTracker from "./adstracker";
+import { version } from "../package.json";
 
 export default class AmpTracker extends nrvideo.VideoTracker {
-  setPlayer (player) {
-    this.player = player
-    this.tag = player.getMediaElement()
-    this.registerListeners()
+  constructor(player) {
+    super(player);
+    console.log("player", player);
+  }
+  setPlayer(player) {
+    this.player = player;
+    this.tag = player.getMediaElement();
+    this.registerListeners();
   }
 
-  getTrackerName () {
-    return 'akamai-media-player'
+  getTrackerName() {
+    return "akamai-media-player";
   }
 
-  getTrackerVersion () {
-    return version
+  getTrackerVersion() {
+    return version;
   }
 
-  getPlayhead () {
-    return this.player.getCurrentTime()
+  getPlayerName() {
+    return "Bitmovin";
   }
 
-  getDuration () {
-    return this.player.getDuration()
+  getInstrumentationProvider() {
+    return "New Relic";
   }
 
-  getSrc () {
-    return this.player.getSrc()
+  getInstrumentationName() {
+    return this.getPlayerName();
   }
 
-  getTitle () {
-    return this.player.getMedia().title
+  getInstrumentationVersion() {
+    return this.getPlayerVersion();
   }
 
-  getPlayerVersion () {
-    return this.player.getVersion()
+  getPlayhead() {
+    return this.player.getCurrentTime();
   }
 
-  isMuted () {
-    return this.player.getMuted()
+  getDuration() {
+    return this.player.getDuration();
   }
 
-  getRenditionBitrate () {
-    let level = this.player.getQuality()
+  getSrc() {
+    return this.player.getSrc();
+  }
+
+  getTitle() {
+    return this.player.getMedia().title;
+  }
+
+  getPlayerVersion() {
+    return this.player.getVersion();
+  }
+
+  isMuted() {
+    return this.player.getMuted();
+  }
+
+  getRenditionBitrate() {
+    let level = this.player.getQuality();
     if (level >= 0) {
-      let qty = this.player.getQualityLevels()[level]
-      return qty.bitrate
+      let qty = this.player.getQualityLevels()[level];
+      return qty.bitrate;
     }
   }
 
-  getRenditionHeight () {
-    let level = this.player.getQuality()
+  getRenditionHeight() {
+    let level = this.player.getQuality();
     if (level >= 0) {
-      let qty = this.player.getQualityLevels()[level]
-      return qty.height
+      let qty = this.player.getQualityLevels()[level];
+      return qty.height;
     }
   }
 
-  getRenditionWidth () {
-    let level = this.player.getQuality()
+  getRenditionWidth() {
+    let level = this.player.getQuality();
     if (level >= 0) {
-      let qty = this.player.getQualityLevels()[level]
-      return qty.width
+      let qty = this.player.getQualityLevels()[level];
+      return qty.width;
     }
   }
 
-  getPlayrate () {
-    return this.player.getPlaybackRate()
+  getPlayrate() {
+    return this.player.getPlaybackRate();
   }
 
-  isAutoplayed () {
-    return this.player.getAutoplay()
+  isAutoplayed() {
+    return this.player.getAutoplay();
   }
 
-  registerListeners () {
+  registerListeners() {
     nrvideo.Log.debugCommonVideoEvents(this.player, [
-      'displaystatechange',
-      'activestatechange',
-      'playstatechange',
-      'durationchange',
-      'initialized',
-      'mediasequencestarted',
-      'mediasequenceended',
-      'playrequest',
-      'started',
-      'ready',
-      'timedmetadata'
-    ])
+      "displaystatechange",
+      "activestatechange",
+      "playstatechange",
+      "durationchange",
+      "initialized",
+      "mediasequencestarted",
+      "mediasequenceended",
+      "playrequest",
+      "started",
+      "ready",
+      "timedmetadata",
+    ]);
 
-    this.player.addEventListener('ready', this.onReady.bind(this))
-    this.player.addEventListener('playrequest', this.onPlayrequest.bind(this))
-    this.player.addEventListener('pause', this.onPause.bind(this))
-    this.player.addEventListener('playing', this.onPlaying.bind(this))
-    this.player.addEventListener('seeking', this.onSeeking.bind(this))
-    this.player.addEventListener('seeked', this.onSeeked.bind(this))
-    this.player.addEventListener('error', this.onError.bind(this))
-    this.player.addEventListener('waiting', this.onWaiting.bind(this))
-    this.player.addEventListener('mediasequenceended', this.onEnded.bind(this))
+    this.player.addEventListener("ready", this.onReady.bind(this));
+    this.player.addEventListener("playrequest", this.onPlayrequest.bind(this));
+    this.player.addEventListener("pause", this.onPause.bind(this));
+    this.player.addEventListener("playing", this.onPlaying.bind(this));
+    this.player.addEventListener("seeking", this.onSeeking.bind(this));
+    this.player.addEventListener("seeked", this.onSeeked.bind(this));
+    this.player.addEventListener("error", this.onError.bind(this));
+    this.player.addEventListener("waiting", this.onWaiting.bind(this));
+    this.player.addEventListener("mediasequenceended", this.onEnded.bind(this));
   }
 
-  unregisterListeners () {
-    this.player.removeEventListener('ready', this.onReady)
-    this.player.removeEventListener('playrequest', this.onPlayrequest)
-    this.player.removeEventListener('pause', this.onPause)
-    this.player.removeEventListener('playing', this.onPlaying)
-    this.player.removeEventListener('seeking', this.onSeeking)
-    this.player.removeEventListener('seeked', this.onSeeked)
-    this.player.removeEventListener('error', this.onError)
-    this.player.removeEventListener('waiting', this.onWaiting)
-    this.player.removeEventListener('mediasequenceended', this.onEnded)
+  unregisterListeners() {
+    this.player.removeEventListener("ready", this.onReady);
+    this.player.removeEventListener("playrequest", this.onPlayrequest);
+    this.player.removeEventListener("pause", this.onPause);
+    this.player.removeEventListener("playing", this.onPlaying);
+    this.player.removeEventListener("seeking", this.onSeeking);
+    this.player.removeEventListener("seeked", this.onSeeked);
+    this.player.removeEventListener("error", this.onError);
+    this.player.removeEventListener("waiting", this.onWaiting);
+    this.player.removeEventListener("mediasequenceended", this.onEnded);
   }
 
-  onReady () {
-    this.sendPlayerReady()
-    this.setAdsTracker(new AmpAdsTracker(this.player, { tag: null }))
+  onReady() {
+    this.sendPlayerReady();
+    this.setAdsTracker(new AmpAdsTracker(this.player, { tag: null }));
   }
 
-  onPlayrequest () {
-    this.sendRequest()
+  onPlayrequest() {
+    this.sendRequest();
   }
 
-  onPlaying () {
+  onPlaying() {
     if (!this.adsTracker || !this.adsTracker.state.isRequested) {
-      this.sendStart()
-      this.sendResume()
-      this.sendBufferEnd()
+      this.sendStart();
+      this.sendResume();
+      this.sendBufferEnd();
     } else {
-      this.adsTracker.sendBufferEnd()
+      this.adsTracker.sendBufferEnd();
     }
   }
 
-  onPause () {
-    this.sendPause()
+  onPause() {
+    this.sendPause();
   }
 
-  onSeeking () {
-    this.sendSeekStart()
+  onSeeking() {
+    this.sendSeekStart();
   }
 
-  onSeeked () {
-    this.sendSeekEnd()
+  onSeeked() {
+    this.sendSeekEnd();
   }
 
-  onError (e) {
+  onError(e) {
     if (e.data.stack && e.data.code) {
-      this.sendError({"errorMessage": e.data.stack, "errorCode": e.data.code})
-    }
-    else {
-      this.sendError()
+      this.sendError({ errorMessage: e.data.stack, errorCode: e.data.code });
+    } else {
+      this.sendError();
     }
   }
 
-  onEnded () {
-    this.sendEnd()
+  onEnded() {
+    this.sendEnd();
   }
 
-  onWaiting () {
+  onWaiting() {
     if (
       this.tag.networkState === this.tag.NETWORK_LOADING &&
       this.tag.readyState < this.tag.HAVE_FUTURE_DATA
     ) {
       if (this.adsTracker && this.adsTracker.state.isStarted) {
-        this.adsTracker.sendBufferStart()
+        this.adsTracker.sendBufferStart();
       } else {
-        this.sendBufferStart()
+        this.sendBufferStart();
       }
     }
   }
 }
 
-AmpTracker.AmpAdsTracker = AmpAdsTracker
+AmpTracker.AmpAdsTracker = AmpAdsTracker;

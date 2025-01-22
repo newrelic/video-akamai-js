@@ -1,181 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<title>AMP Premier</title>
-		<!-- newrelic browser agent. REMEMBER TO REPLACE THIS SCRIPT WITH YOUR OWN BROWSER AGENT -->
-		<script type="text/javascript" src="../agent.js"></script>
+  <head>
+    <meta charset="utf-8" />
+    <title>AMP Premier</title>
+    <!-- newrelic browser agent. REMEMBER TO REPLACE THIS SCRIPT WITH YOUR OWN BROWSER AGENT -->
+    <script type="text/javascript" src="../agent.js"></script>
 
-		<!--Player-->
-		<link type="text/css" rel="stylesheet" href="../resources/styles/styles.css" />
-		<script type="text/javascript" src="../amp.premier/amp.premier.min.js"></script>
-		<script type="text/javascript">
-			var amp, config, value, tracker
-			
-			function loadHandler(event) {
-				var config = {
-					media : {
-            title : "Custom Plugin",
-            poster : '../resources/images/hd_world.jpg',
-            source : [{
-              src : "http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m",
-              type : "video/f4m"
-            }, {
-              src : "http://transdemohls-vh.akamaihd.net/i/Customer%20Demo/delivery/18/e6/18e66de8-1d2e-4fa8-8d68-521f578ce942/ITWLongClip_1080_8M_,3000k,3500k,260k,4001k,3700k,1600k,925k,700k,450k,3300k,2700k,1000k,2300k,.mp4.csmil/master.m3u8?start=0&end=108",
-              type : "application/x-mpegURL"
-            }]
-					},
-					
-					// Add NR plugin
-					plugins: {
-						newrelic: {
-							resources: [{ src:'../../dist/newrelic-video-akamai.min.js', type: 'text/javascript' }]
-						}
-					}
-				}
-					
-				amp = akamai.amp.AMP.create("akamai-media-player", config, readyHandler);
-			}
+    <!--Player-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="../resources/styles/styles.css"
+    />
+    <script
+      type="text/javascript"
+      src="../amp.premier/amp.premier.min.js"
+    ></script>
+    <script type="text/javascript">
+      var amp, config, value, tracker;
 
-			function readyHandler(event) {
-				var index;
+      function loadHandler(event) {
+        var config = {
+          media: {
+            title: "Custom Plugin",
+            poster: "../resources/images/hd_world.jpg",
+            source: [
+              {
+                src: "http://multiplatform-f.akamaihd.net/z/multi/april11/hdworld/hdworld_,512x288_450_b,640x360_700_b,768x432_1000_b,1024x576_1400_m,1280x720_1900_m,1280x720_2500_m,1280x720_3500_m,.mp4.csmil/manifest.f4m",
+                type: "video/f4m",
+              },
+              {
+                src: "https://dl11.webmfiles.org/big-buck-bunny_trailer.webm",
+                type: "video/mp4",
+              },
+            ],
+          },
 
-				amp.addEventListener("canplaythrough", logEvent);
-				amp.addEventListener("ended", endedHandler);
+          // Add NR plugin
+          plugins: {
+            newrelic: {
+              resources: [
+                {
+                  src: "../../dist/newrelic-video-akamai.min.js",
+                  type: "text/javascript",
+                },
+              ],
+            },
+          },
+        };
 
-				if (amp.ads != null) {
-					amp.ads.addEventListener("started", adStartedHandler);
-					amp.ads.addEventListener("ended", adEndedHandler);
-					amp.ads.addEventListener("companion", companionHandler);
-					amp.ads.addEventListener("request", adRequestHandler);
-					amp.ads.addEventListener("firstquartile", adProgressHandler);
-					amp.ads.addEventListener("midpoint", adProgressHandler);
-					amp.ads.addEventListener("thirdquartile", adProgressHandler);
-				}
+        amp = akamai.amp.AMP.create(
+          "akamai-media-player",
+          config,
+          readyHandler
+        );
+      }
 
-				if (amp.autoadvance != null)
-					amp.autoadvance.addEventListener("advance", advanceHandler);
+      function readyHandler(event) {
+        var index;
 
-				if (amp.recommendations != null)
-					amp.recommendations.addEventListener("selected", selectedHandler);
+        amp.addEventListener("canplaythrough", logEvent);
+        amp.addEventListener("ended", endedHandler);
 
-				if (amp.share != null)
-					amp.share.addEventListener("share", shareHandler);
+        if (amp.ads != null) {
+          amp.ads.addEventListener("started", adStartedHandler);
+          amp.ads.addEventListener("ended", adEndedHandler);
+          amp.ads.addEventListener("companion", companionHandler);
+          amp.ads.addEventListener("request", adRequestHandler);
+          amp.ads.addEventListener("firstquartile", adProgressHandler);
+          amp.ads.addEventListener("midpoint", adProgressHandler);
+          amp.ads.addEventListener("thirdquartile", adProgressHandler);
+        }
 
-				if (amp.auth != null)
-					amp.auth.addEventListener("authenticated", authenticatedHandler);
-			}
+        if (amp.autoadvance != null)
+          amp.autoadvance.addEventListener("advance", advanceHandler);
 
-			function logEvent(event) {
-				console.log(event.type, event);
-			}
+        if (amp.recommendations != null)
+          amp.recommendations.addEventListener("selected", selectedHandler);
 
-			function advanceHandler(event) {
-				loadVideo(menu.selectedIndex + 1);
-			}
+        if (amp.share != null)
+          amp.share.addEventListener("share", shareHandler);
 
-			function loadVideo(index) {
-				adEndedHandler();
-				menu.select(index);
-				location.hash = index;
-				amp.feed.setData(menu.value);
-			}
+        if (amp.auth != null)
+          amp.auth.addEventListener("authenticated", authenticatedHandler);
+      }
 
-			function endedHandler(event) {
-				console.log("ended");
-			}
+      function logEvent(event) {
+        console.log(event.type, event);
+      }
 
-			function selectedHandler(event) {
-				//do something
-				console.log(event.detail);
-			}
+      function advanceHandler(event) {
+        loadVideo(menu.selectedIndex + 1);
+      }
 
-			function adRequestHandler(event) {
-				console.log("Requesting Ad:", event);
-			}
+      function loadVideo(index) {
+        adEndedHandler();
+        menu.select(index);
+        location.hash = index;
+        amp.feed.setData(menu.value);
+      }
 
-			function adProgressHandler(event) {
-				console.log("Ad Progress: " + event.type, event);
-			}
+      function endedHandler(event) {
+        console.log("ended");
+      }
 
-			function adStartedHandler(event) {
-				document.getElementById("sample-video-area").className += " sample-ad-content";
-				document.getElementById("sample-companion-ad").className += " sample-ad-content";
-			}
+      function selectedHandler(event) {
+        //do something
+        console.log(event.detail);
+      }
 
-			function adEndedHandler(event) {
-				document.getElementById("sample-video-area").className = "sample-video-area";
-				document.getElementById("sample-companion-ad").className = "sample-companion-ad";
-			}
+      function adRequestHandler(event) {
+        console.log("Requesting Ad:", event);
+      }
 
-			function companionHandler(event) {
-				var ads = event.detail.companions,
-				    companions = document.getElementById("companion-ad"),
-				    i = 0;
+      function adProgressHandler(event) {
+        console.log("Ad Progress: " + event.type, event);
+      }
 
-				companions.innerHTML = "";
+      function adStartedHandler(event) {
+        document.getElementById("sample-video-area").className +=
+          " sample-ad-content";
+        document.getElementById("sample-companion-ad").className +=
+          " sample-ad-content";
+      }
 
-				for (; i < ads.length; i++) {
-					companions.innerHTML += ads[i].data;
-				}
-			}
+      function adEndedHandler(event) {
+        document.getElementById("sample-video-area").className =
+          "sample-video-area";
+        document.getElementById("sample-companion-ad").className =
+          "sample-companion-ad";
+      }
 
-			function shareHandler(event) {
-				//do something
-				console.log(event.detail);
-				alert("Link: " + event.detail.link + "\n\n" + "Embed: " + event.detail.embed.url + "\n" + "\twidth: " + event.detail.embed.width + "\n" + "\theight: " + event.detail.embed.height + "\n");
-			}
+      function companionHandler(event) {
+        var ads = event.detail.companions,
+          companions = document.getElementById("companion-ad"),
+          i = 0;
 
-			function authenticatedHandler(event) {
-				var div = document.getElementById("idps");
-				var idps = amp.auth.getIdps();
+        companions.innerHTML = "";
 
-				var innerHTML = '<div>Powered By: ' + idps.display_name + '</div>';
-				if (idps.logos != null && idps.logos.full != null) {
-					innerHTML += '<div><a href="' + idps.url + '"><img src="' + idps.logos.full + '" alt="' + idps.name + '" /></a></div>';
-				}
-				innerHTML += '<div class="logout" onclick="amp.auth.logout()">logout</div>';
+        for (; i < ads.length; i++) {
+          companions.innerHTML += ads[i].data;
+        }
+      }
 
-				div.innerHTML = innerHTML;
-			}
-		</script>
-		<style>
-			.sample-video-area {
-				background: #888888;
-			}
-		</style>
-	</head>
-	<!-- HACK: ontouchstart="" is a workaround that enables the use of the CSS :active psuedo class on iOS -->
-	<body onload="loadHandler(event)" ontouchstart="">
-		<div class="page">
-			<div class="header">
-				<div class="header-logo"></div>
-				<div class="header-text">
-					<h1>AMP Premier</h1>
-					<h2>v2.68.16</h2>
-				</div>
-			</div>
+      function shareHandler(event) {
+        //do something
+        console.log(event.detail);
+        alert(
+          "Link: " +
+            event.detail.link +
+            "\n\n" +
+            "Embed: " +
+            event.detail.embed.url +
+            "\n" +
+            "\twidth: " +
+            event.detail.embed.width +
+            "\n" +
+            "\theight: " +
+            event.detail.embed.height +
+            "\n"
+        );
+      }
 
-			<div class="content">
-				<div id="sample-video-area" class="sample-video-area">
-					<div class="sample-ad-video-text sample-label-text">
-						Advertisement
-					</div>
-					<div class="sample-player">
-						<div id="akamai-media-player"></div>
-					</div>
-				</div>
-				<div id="sample-menu" class="sample-menu"></div>
-				<div class="sample-footer">
-					<div id="sample-companion-ad" class="sample-companion-ad">
-						<div class="sample-label-text">
-							Sponsored by
-						</div>
-						<div id="companion-ad" class="companion-ad"></div>
-					</div>
-					<div id="idps" class="idps"></div>
-				</div>
-			</div>
-		</div>
-	</body>
+      function authenticatedHandler(event) {
+        var div = document.getElementById("idps");
+        var idps = amp.auth.getIdps();
+
+        var innerHTML = "<div>Powered By: " + idps.display_name + "</div>";
+        if (idps.logos != null && idps.logos.full != null) {
+          innerHTML +=
+            '<div><a href="' +
+            idps.url +
+            '"><img src="' +
+            idps.logos.full +
+            '" alt="' +
+            idps.name +
+            '" /></a></div>';
+        }
+        innerHTML +=
+          '<div class="logout" onclick="amp.auth.logout()">logout</div>';
+
+        div.innerHTML = innerHTML;
+      }
+    </script>
+    <style>
+      .sample-video-area {
+        background: #888888;
+      }
+    </style>
+  </head>
+  <!-- HACK: ontouchstart="" is a workaround that enables the use of the CSS :active psuedo class on iOS -->
+  <body onload="loadHandler(event)" ontouchstart="">
+    <div class="page">
+      <div class="header">
+        <div class="header-logo"></div>
+        <div class="header-text">
+          <h1>AMP Premier</h1>
+          <h2>v2.68.16</h2>
+        </div>
+      </div>
+
+      <div class="content">
+        <div id="sample-video-area" class="sample-video-area">
+          <div class="sample-ad-video-text sample-label-text">
+            Advertisement
+          </div>
+          <div class="sample-player">
+            <div id="akamai-media-player"></div>
+          </div>
+        </div>
+        <div id="sample-menu" class="sample-menu"></div>
+        <div class="sample-footer">
+          <div id="sample-companion-ad" class="sample-companion-ad">
+            <div class="sample-label-text">Sponsored by</div>
+            <div id="companion-ad" class="companion-ad"></div>
+          </div>
+          <div id="idps" class="idps"></div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
