@@ -5,7 +5,6 @@ import { version } from "../package.json";
 export default class AmpTracker extends nrvideo.VideoTracker {
   constructor(player) {
     super(player);
-    console.log("player", player);
   }
   setPlayer(player) {
     this.player = player;
@@ -164,7 +163,7 @@ export default class AmpTracker extends nrvideo.VideoTracker {
 
   onError(e) {
     if (e.data.stack && e.data.code) {
-      this.sendError({ errorMessage: e.data.stack, errorCode: e.data.code });
+      this.sendError({ errorName: e.data.stack, errorCode: e.data.code });
     } else {
       this.sendError();
     }
