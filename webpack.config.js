@@ -1,5 +1,6 @@
 var path = require("path");
 var webpack = require("webpack");
+var TerserPlugin = require("terser-webpack-plugin");
 
 var pkg = require("./package.json");
 var license =
@@ -34,6 +35,10 @@ module.exports = {
         },
       },
     ],
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
   },
   plugins: [
     new webpack.BannerPlugin({
