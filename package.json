@@ -4,9 +4,9 @@
   "description": "New relic tracker for Akamai Media Player",
   "main": "src/index.js",
   "scripts": {
-    "build": "webpack -p",
+    "build": "webpack --mode production",
     "build:dev": "webpack --mode development",
-    "watch": "webpack -p --progress --color --watch",
+    "watch": "webpack --mode production --progress --color --watch",
     "watch:dev": "webpack --progress --color --watch",
     "prezip": "npm run build",
     "zip": "zip -P newrelic -x '*.DS_Store' -r amp.zip dist samples README.md CHANGELOG.md EULA.md",
@@ -26,10 +26,10 @@
     "newrelic-video-core": "github:newrelic/video-core-js"
   },
   "devDependencies": {
-    "aws-sdk": "^2.921.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.1",
+    "aws-sdk": "^2.1692.0",
+    "babel-loader": "^8.4.1",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.23.4",
@@ -37,6 +37,6 @@
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
     "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^4.10.0"
   }
 }
